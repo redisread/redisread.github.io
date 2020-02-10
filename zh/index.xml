@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo Zzo Theme</title>
+    <link>https://redisread.github.io/zh/</link>
+    <description>Recent content on Hugo Zzo Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <managingEditor>1427298682@qq.com (redisread)</managingEditor>
+    <webMaster>1427298682@qq.com (redisread)</webMaster>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Mon, 10 Feb 2020 20:50:09 +0800</lastBuildDate>
+    
+        <atom:link href="https://redisread.github.io/zh/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+      
+      <item>
+        <title>First</title>
+        <link>https://redisread.github.io/zh/posts/hugo/first/</link>
+        <pubDate>Mon, 10 Feb 2020 20:50:09 +0800</pubDate>
+        <author>1427298682@qq.com (redisread)</author>
+        <guid>https://redisread.github.io/zh/posts/hugo/first/</guid>
+        <description>HUGO + Github + Github Action持续集成部署个人博客 HUGO本地环境 首先在HUGO的官网下载Hugo的Windows安装包，然后将路径添加到环境变量即</description>
+      </item>
+      
+      <item>
+        <title>About</title>
+        <link>https://redisread.github.io/zh/about/</link>
+        <pubDate>Thu, 30 Jan 2020 12:50:46 +0900</pubDate>
+        <author>1427298682@qq.com (redisread)</author>
+        <guid>https://redisread.github.io/zh/about/</guid>
+        <description></description>
+      </item>
+      
+      <item>
+        <title>Archive</title>
+        <link>https://redisread.github.io/zh/archive/</link>
+        <pubDate>Thu, 30 Jan 2020 12:50:46 +0900</pubDate>
+        <author>1427298682@qq.com (redisread)</author>
+        <guid>https://redisread.github.io/zh/archive/</guid>
+        <description>This is Archive</description>
+      </item>
+      
+      <item>
+        <title>Contact</title>
+        <link>https://redisread.github.io/zh/contact/</link>
+        <pubDate>Tue, 17 Dec 2019 23:58:33 +0900</pubDate>
+        <author>1427298682@qq.com (redisread)</author>
+        <guid>https://redisread.github.io/zh/contact/</guid>
+        <description>This is contact page.</description>
+      </item>
+      
+      <item>
+        <title>life</title>
+        <link>https://redisread.github.io/zh/gallery/life/</link>
+        <pubDate>Thu, 31 Oct 2019 10:20:16 +0900</pubDate>
+        <author>1427298682@qq.com (redisread)</author>
+        <guid>https://redisread.github.io/zh/gallery/life/</guid>
+        <description></description>
+      </item>
+      
+      <item>
+        <title>movie</title>
+        <link>https://redisread.github.io/zh/gallery/movie/</link>
+        <pubDate>Thu, 31 Oct 2019 10:20:16 +0900</pubDate>
+        <author>1427298682@qq.com (redisread)</author>
+        <guid>https://redisread.github.io/zh/gallery/movie/</guid>
+        <description></description>
+      </item>
+      
+    
+  </channel>
+</rss>

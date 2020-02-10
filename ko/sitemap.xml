@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://redisread.github.io/ko/en/showcase/hugo/hugo-theme-zzo/</loc>
+    <lastmod>2020-01-19T21:13:42+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://redisread.github.io/ko/en/showcase/hugo/hugo-theme-zdoc/</loc>
+    <lastmod>2020-01-19T21:13:42+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://redisread.github.io/ko/</loc>
+    <lastmod>2020-01-19T21:13:42+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://redisread.github.io/zh/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://redisread.github.io/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://redisread.github.io/ko/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://redisread.github.io/ko/en/showcase/hugo/</loc>
+    <lastmod>2020-01-19T21:04:11+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://redisread.github.io/ko/en/showcase/</loc>
+    <lastmod>2020-01-19T15:43:38+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://redisread.github.io/ko/tags/amoji/</loc>
+    <lastmod>2019-12-16T12:00:06+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://redisread.github.io/en/tags/amoji/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://redisread.github.io/ko/tags/amoji/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://redisread.github.io/ko/tags/bamoji/</loc>
+    <lastmod>2019-12-16T12:00:06+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://redisread.github.io/en/tags/bamoji/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://redisread.github.io/ko/tags/bamoji/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://redisread.github.io/ko/tags/emoji/</loc>
+    <lastmod>2019-12-16T12:00:06+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://redisread.github.io/en/tags/emoji/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://redisread.github.io/ko/tags/emoji/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://redisread.github.io/ko/en/posts/emoji-support/</loc>
+    <lastmod>2019-12-16T12:00:06+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://redisread.github.io/ko/tags/gamoji/</loc>
+    <lastmod>2019-12-16T12:00:06+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://redisread.github.io/en/tags/gamoji/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://redisread.github.io/ko/tags/gamoji/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://redisread.github.io/ko/tags/namoji/</loc>
+    <lastmod>2019-12-16T12:00:06+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://redisread.github.io/en/tags/namoji/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://redisread.github.io/ko/tags/namoji/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://redisread.github.io/ko/en/posts/</loc>
+    <lastmod>2019-12-16T12:00:06+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://redisread.github.io/ko/tags/</loc>
+    <lastmod>2019-12-16T12:00:06+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://redisread.github.io/zh/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://redisread.github.io/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://redisread.github.io/ko/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://redisread.github.io/ko/en/archive/</loc>
+    <lastmod>2019-10-19T11:44:14+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://redisread.github.io/ko/en/about/</loc>
+    <lastmod>2019-02-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://redisread.github.io/ko/en/</loc>
+    <lastmod>2019-02-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://redisread.github.io/ko/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://redisread.github.io/zh/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://redisread.github.io/en/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://redisread.github.io/ko/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://redisread.github.io/ko/series/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://redisread.github.io/zh/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://redisread.github.io/en/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://redisread.github.io/ko/series/"
+                />
+  </url>
+  
+</urlset>

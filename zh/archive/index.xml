@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Archives on Hugo Zzo Theme</title>
+    <link>https://redisread.github.io/zh/archive/</link>
+    <description>Recent content in Archives on Hugo Zzo Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <managingEditor>1427298682@qq.com (redisread)</managingEditor>
+    <webMaster>1427298682@qq.com (redisread)</webMaster>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Thu, 30 Jan 2020 12:50:46 +0900</lastBuildDate>
+    
+        <atom:link href="https://redisread.github.io/zh/archive/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+      
+      <item>
+        <title>Archive</title>
+        <link>https://redisread.github.io/zh/archive/</link>
+        <pubDate>Thu, 30 Jan 2020 12:50:46 +0900</pubDate>
+        <author>1427298682@qq.com (redisread)</author>
+        <guid>https://redisread.github.io/zh/archive/</guid>
+        <description>This is Archive</description>
+      </item>
+      
+    
+  </channel>
+</rss>
