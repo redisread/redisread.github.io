@@ -3,11 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://redisread.github.io/zh/posts/hugo/first/</loc>
-    <lastmod>2020-02-10T20:50:09+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://redisread.github.io/zh/</loc>
     <lastmod>2020-02-10T20:50:09+08:00</lastmod>
     <xhtml:link
@@ -28,6 +23,21 @@
   </url>
   
   <url>
+    <loc>https://redisread.github.io/zh/tags/github/</loc>
+    <lastmod>2020-02-10T20:50:09+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://redisread.github.io/zh/tags/hugo/</loc>
+    <lastmod>2020-02-10T20:50:09+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://redisread.github.io/zh/posts/hugo/first/</loc>
+    <lastmod>2020-02-10T20:50:09+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://redisread.github.io/zh/posts/</loc>
     <lastmod>2020-02-10T20:50:09+08:00</lastmod>
     <xhtml:link
@@ -39,6 +49,26 @@
                 rel="alternate"
                 hreflang="zh"
                 href="https://redisread.github.io/zh/posts/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://redisread.github.io/zh/tags/</loc>
+    <lastmod>2020-02-10T20:50:09+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://redisread.github.io/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://redisread.github.io/ko/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://redisread.github.io/zh/tags/"
                 />
   </url>
   
@@ -153,23 +183,7 @@
   </url>
   
   <url>
-    <loc>https://redisread.github.io/zh/tags/</loc>
-    <lastmod>2019-10-31T10:20:16+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://redisread.github.io/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://redisread.github.io/ko/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://redisread.github.io/zh/tags/"
-                />
+    <loc>https://redisread.github.io/zh/zh/</loc>
   </url>
   
 </urlset>

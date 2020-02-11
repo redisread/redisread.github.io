@@ -17,7 +17,7 @@
     
       
       <item>
-        <title>First</title>
+        <title>Hugo配置</title>
         <link>https://redisread.github.io/zh/posts/hugo/first/</link>
         <pubDate>Mon, 10 Feb 2020 20:50:09 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
@@ -31,7 +31,7 @@
         <pubDate>Thu, 30 Jan 2020 12:50:46 +0900</pubDate>
         <author>1427298682@qq.com (redisread)</author>
         <guid>https://redisread.github.io/zh/about/</guid>
-        <description></description>
+        <description>我是一个不够严谨的程序员🙉</description>
       </item>
       
       <item>
@@ -58,7 +58,7 @@
         <pubDate>Thu, 31 Oct 2019 10:20:16 +0900</pubDate>
         <author>1427298682@qq.com (redisread)</author>
         <guid>https://redisread.github.io/zh/gallery/life/</guid>
-        <description></description>
+        <description>Sample images about life.</description>
       </item>
       
       <item>
