@@ -9,7 +9,7 @@
     <managingEditor>1427298682@qq.com (redisread)</managingEditor>
     <webMaster>1427298682@qq.com (redisread)</webMaster>
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Tue, 11 Feb 2020 17:01:45 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 11 Feb 2020 18:01:16 +0800</lastBuildDate>
     
         <atom:link href="https://redisread.github.io/zh/posts/index.xml" rel="self" type="application/rss+xml" />
     
@@ -17,12 +17,12 @@
     
       
       <item>
-        <title>Image Bed</title>
-        <link>https://redisread.github.io/zh/posts/image-bed/</link>
-        <pubDate>Tue, 11 Feb 2020 17:01:45 +0800</pubDate>
+        <title>MinGW在Windows的使用</title>
+        <link>https://redisread.github.io/zh/posts/mingw-use/</link>
+        <pubDate>Tue, 11 Feb 2020 18:01:16 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>https://redisread.github.io/zh/posts/image-bed/</guid>
-        <description>&lt;p&gt;使用Github+PicGo搭建一个免费个人图床&lt;span&gt;&lt;code&gt;😄&lt;/code&gt;&lt;/span&gt;&lt;/p&gt;</description>
+        <guid>https://redisread.github.io/zh/posts/mingw-use/</guid>
+        <description>&lt;p&gt;安装&lt;code&gt;MinGW&lt;/code&gt;之后，我们可以那它来作为C或C++的编译器.&lt;span&gt;&lt;code&gt;🕸&lt;/code&gt;&lt;/span&gt;&lt;/p&gt;</description>
       </item>
       
       <item>
@@ -32,6 +32,34 @@
         <author>1427298682@qq.com (redisread)</author>
         <guid>https://redisread.github.io/zh/posts/hugo/first/</guid>
         <description>HUGO + Github + Github Action持续集成部署个人博客 HUGO本地环境 首先在HUGO的官网下载Hugo的Windows安装包，然后将路径添加到环境变量即</description>
+      </item>
+      
+      <item>
+        <title>配置基于Github的PicGo图床</title>
+        <link>https://redisread.github.io/zh/posts/image-bed/</link>
+        <pubDate>Tue, 04 Feb 2020 23:51:21 +0900</pubDate>
+        <author>1427298682@qq.com (redisread)</author>
+        <guid>https://redisread.github.io/zh/posts/image-bed/</guid>
+        <description>&lt;p&gt;使用Github+PicGo建立一个免费的个人图床。&lt;/p&gt;</description>
+      </item>
+      
+      <item>
+        <title>windows下gcc的安装和使用</title>
+        <link>https://redisread.github.io/zh/posts/gcc-windows/</link>
+        <pubDate>Tue, 04 Feb 2020 16:41:18 +0800</pubDate>
+        <author>1427298682@qq.com (redisread)</author>
+        <guid>https://redisread.github.io/zh/posts/gcc-windows/</guid>
+        <description>&lt;p&gt;写在源文件中的源代码是人类可读的源。它需要&amp;quot;编译&amp;rdquo;，转为机器语言，这样 CPU 可以按给定指令执行程序。C 语言编译器用于把源代码编译成最终的可执行程序。&lt;span&gt;&lt;code&gt;🐤&lt;/code&gt;&lt;/span&gt;&lt;/p&gt;</description>
+      </item>
+      
+      <item>
+        <title>Shortcodes</title>
+        <link>https://redisread.github.io/zh/posts/shortcodes/</link>
+        <pubDate>Sat, 25 Jan 2020 06:40:51 +0900</pubDate>
+        <author>1427298682@qq.com (redisread)</author>
+        <guid>https://redisread.github.io/zh/posts/shortcodes/</guid>
+        <description>Markdownify box This is boxmd shortcode Simple box This is **box** shortcode  Code tabs Make it easy to switch between different code
+java javascript  1  System.out.println(&amp;#39;Hello World!&amp;#39;);     1  console.log(&amp;#39;Hello World!&amp;#39;);       &#39;use strict&#39;; var containerId = JSON.parse(&#34;\&#34;642b4352e05d9e04\&#34;&#34;); var containerElem = document.getElementById(containerId); var codetabLinks = null; var codetabContents = null; var ids = []; if (containerElem) { codetabLinks = containerElem.</description>
       </item>
       
     
