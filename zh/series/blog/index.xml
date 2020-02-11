@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on Hugo Zzo Theme</title>
+    <link>https://redisread.github.io/zh/series/blog/</link>
+    <description>Recent content in Blog on Hugo Zzo Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <managingEditor>1427298682@qq.com (redisread)</managingEditor>
+    <webMaster>1427298682@qq.com (redisread)</webMaster>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Tue, 11 Feb 2020 17:01:45 +0800</lastBuildDate>
+    
+        <atom:link href="https://redisread.github.io/zh/series/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+      
+      <item>
+        <title>Image Bed</title>
+        <link>https://redisread.github.io/zh/posts/image-bed/</link>
+        <pubDate>Tue, 11 Feb 2020 17:01:45 +0800</pubDate>
+        <author>1427298682@qq.com (redisread)</author>
+        <guid>https://redisread.github.io/zh/posts/image-bed/</guid>
+        <description>&lt;p&gt;使用Github+PicGo搭建一个免费个人图床&lt;span&gt;&lt;code&gt;😄&lt;/code&gt;&lt;/span&gt;&lt;/p&gt;</description>
+      </item>
+      
+      <item>
+        <title>Hugo配置</title>
+        <link>https://redisread.github.io/zh/posts/hugo/first/</link>
+        <pubDate>Mon, 10 Feb 2020 20:50:09 +0800</pubDate>
+        <author>1427298682@qq.com (redisread)</author>
+        <guid>https://redisread.github.io/zh/posts/hugo/first/</guid>
+        <description>HUGO + Github + Github Action持续集成部署个人博客 HUGO本地环境 首先在HUGO的官网下载Hugo的Windows安装包，然后将路径添加到环境变量即</description>
+      </item>
+      
+    
+  </channel>
+</rss>

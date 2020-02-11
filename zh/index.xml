@@ -9,12 +9,21 @@
     <managingEditor>1427298682@qq.com (redisread)</managingEditor>
     <webMaster>1427298682@qq.com (redisread)</webMaster>
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Mon, 10 Feb 2020 20:50:09 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 11 Feb 2020 17:01:45 +0800</lastBuildDate>
     
         <atom:link href="https://redisread.github.io/zh/index.xml" rel="self" type="application/rss+xml" />
     
     
     
+      
+      <item>
+        <title>Image Bed</title>
+        <link>https://redisread.github.io/zh/posts/image-bed/</link>
+        <pubDate>Tue, 11 Feb 2020 17:01:45 +0800</pubDate>
+        <author>1427298682@qq.com (redisread)</author>
+        <guid>https://redisread.github.io/zh/posts/image-bed/</guid>
+        <description>&lt;p&gt;使用Github+PicGo搭建一个免费个人图床&lt;span&gt;&lt;code&gt;😄&lt;/code&gt;&lt;/span&gt;&lt;/p&gt;</description>
+      </item>
       
       <item>
         <title>Hugo配置</title>
@@ -23,6 +32,15 @@
         <author>1427298682@qq.com (redisread)</author>
         <guid>https://redisread.github.io/zh/posts/hugo/first/</guid>
         <description>HUGO + Github + Github Action持续集成部署个人博客 HUGO本地环境 首先在HUGO的官网下载Hugo的Windows安装包，然后将路径添加到环境变量即</description>
+      </item>
+      
+      <item>
+        <title>Resume</title>
+        <link>https://redisread.github.io/zh/resume/</link>
+        <pubDate>Sun, 09 Feb 2020 20:13:59 +0900</pubDate>
+        <author>1427298682@qq.com (redisread)</author>
+        <guid>https://redisread.github.io/zh/resume/</guid>
+        <description></description>
       </item>
       
       <item>
@@ -41,6 +59,15 @@
         <author>1427298682@qq.com (redisread)</author>
         <guid>https://redisread.github.io/zh/archive/</guid>
         <description>This is Archive</description>
+      </item>
+      
+      <item>
+        <title>My Awesome links</title>
+        <link>https://redisread.github.io/zh/talks/mylinks/</link>
+        <pubDate>Tue, 31 Dec 2019 00:04:50 +0900</pubDate>
+        <author>1427298682@qq.com (redisread)</author>
+        <guid>https://redisread.github.io/zh/talks/mylinks/</guid>
+        <description></description>
       </item>
       
       <item>
