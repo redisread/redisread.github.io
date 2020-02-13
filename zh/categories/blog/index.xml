@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>图床 on Hugo Zzo Theme</title>
-    <link>https://vhope.cf/zh/tags/%E5%9B%BE%E5%BA%8A/</link>
-    <description>Recent content in 图床 on Hugo Zzo Theme</description>
+    <title>Blog on Hugo Zzo Theme</title>
+    <link>https://vhope.cf/zh/categories/blog/</link>
+    <description>Recent content in Blog on Hugo Zzo Theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
     <managingEditor>1427298682@qq.com (redisread)</managingEditor>
@@ -11,7 +11,7 @@
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Thu, 13 Feb 2020 22:31:22 +0800</lastBuildDate>
     
-        <atom:link href="https://vhope.cf/zh/tags/%E5%9B%BE%E5%BA%8A/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://vhope.cf/zh/categories/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
     
@@ -23,15 +23,6 @@
         <author>1427298682@qq.com (redisread)</author>
         <guid>https://vhope.cf/zh/posts/free-image-bed/</guid>
         <description>SM.MS sm.ms 支持的图片格式包括 JPG、JPEG、GIF、PNG 及 BMP，单档不超过 5 MB，单次可上传图片最大 10 张。图片永久保存，请勿上传政治相关图片</description>
-      </item>
-      
-      <item>
-        <title>配置基于Github的PicGo图床</title>
-        <link>https://vhope.cf/zh/posts/image-bed/</link>
-        <pubDate>Tue, 04 Feb 2020 23:51:21 +0900</pubDate>
-        <author>1427298682@qq.com (redisread)</author>
-        <guid>https://vhope.cf/zh/posts/image-bed/</guid>
-        <description>&lt;p&gt;使用Github+PicGo建立一个免费的个人图床。&lt;/p&gt;</description>
       </item>
       
     
