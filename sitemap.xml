@@ -2,6 +2,13 @@
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	
 	<sitemap>
+	   	<loc>https://redisread.github.io/zh/sitemap.xml</loc>
+		
+	   	<lastmod>2020-02-13T15:12:33+08:00</lastmod>
+		
+	</sitemap>
+	
+	<sitemap>
 	   	<loc>https://redisread.github.io/ko/sitemap.xml</loc>
 		
 	   	<lastmod>2020-01-19T21:13:42+09:00</lastmod>
@@ -9,16 +16,9 @@
 	</sitemap>
 	
 	<sitemap>
-	   	<loc>https://redisread.github.io/zh/sitemap.xml</loc>
-		
-	   	<lastmod>2020-02-11T18:01:16+08:00</lastmod>
-		
-	</sitemap>
-	
-	<sitemap>
 	   	<loc>https://redisread.github.io/en/sitemap.xml</loc>
 		
-	   	<lastmod>2020-01-19T21:13:42+09:00</lastmod>
+	   	<lastmod>2019-12-16T12:00:06+09:00</lastmod>
 		
 	</sitemap>
 	
