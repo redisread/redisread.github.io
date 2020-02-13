@@ -17,6 +17,24 @@
     
       
       <item>
+        <title>My Hugo Lib</title>
+        <link>https://vhope.cf/zh/showcase/hugo/myblog/</link>
+        <pubDate>Sun, 19 Jan 2020 21:13:42 +0900</pubDate>
+        <author>1427298682@qq.com (redisread)</author>
+        <guid>https://vhope.cf/zh/showcase/hugo/myblog/</guid>
+        <description></description>
+      </item>
+      
+      <item>
+        <title>My Hugo Item</title>
+        <link>https://vhope.cf/zh/showcase/hugo/myitem/</link>
+        <pubDate>Sun, 19 Jan 2020 21:13:42 +0900</pubDate>
+        <author>1427298682@qq.com (redisread)</author>
+        <guid>https://vhope.cf/zh/showcase/hugo/myitem/</guid>
+        <description></description>
+      </item>
+      
+      <item>
         <title>几款好用的图床</title>
         <link>https://vhope.cf/zh/posts/free-image-bed/</link>
         <pubDate>Thu, 13 Feb 2020 22:31:22 +0800</pubDate>
@@ -85,7 +103,7 @@
         <pubDate>Thu, 30 Jan 2020 12:50:46 +0900</pubDate>
         <author>1427298682@qq.com (redisread)</author>
         <guid>https://vhope.cf/zh/about/</guid>
-        <description>我是一个不够严谨的程序员🙉</description>
+        <description>我是一个不够严谨的程序员🙉. 我喜欢📖,还有🏓.</description>
       </item>
       
       <item>
@@ -117,12 +135,12 @@ java javascript  1  System.out.println(&amp;#39;Hello World!&amp;#39;);     1  c
       </item>
       
       <item>
-        <title>Contact</title>
+        <title>Contact📧</title>
         <link>https://vhope.cf/zh/contact/</link>
         <pubDate>Tue, 17 Dec 2019 23:58:33 +0900</pubDate>
         <author>1427298682@qq.com (redisread)</author>
         <guid>https://vhope.cf/zh/contact/</guid>
-        <description>This is contact page.</description>
+        <description></description>
       </item>
       
       <item>
