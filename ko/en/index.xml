@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ens on Victor&#39;s Blog</title>
-    <link>https://redisread.github.io/ko/en/</link>
+    <link>https://vhope.cf/ko/en/</link>
     <description>Recent content in Ens on Victor&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko</language>
@@ -11,44 +11,44 @@
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Thu, 28 Feb 2019 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="https://redisread.github.io/ko/en/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://vhope.cf/ko/en/index.xml" rel="self" type="application/rss+xml" />
     
     
     
       
       <item>
         <title>Showcase overview</title>
-        <link>https://redisread.github.io/ko/en/showcase/</link>
+        <link>https://vhope.cf/ko/en/showcase/</link>
         <pubDate>Sun, 19 Jan 2020 15:43:38 +0900</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>https://redisread.github.io/ko/en/showcase/</guid>
+        <guid>https://vhope.cf/ko/en/showcase/</guid>
         <description></description>
       </item>
       
       <item>
         <title>Posts</title>
-        <link>https://redisread.github.io/ko/en/posts/</link>
+        <link>https://vhope.cf/ko/en/posts/</link>
         <pubDate>Mon, 16 Dec 2019 12:00:06 +0900</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>https://redisread.github.io/ko/en/posts/</guid>
+        <guid>https://vhope.cf/ko/en/posts/</guid>
         <description></description>
       </item>
       
       <item>
         <title>Archive</title>
-        <link>https://redisread.github.io/ko/en/archive/</link>
+        <link>https://vhope.cf/ko/en/archive/</link>
         <pubDate>Sat, 19 Oct 2019 11:44:14 +0900</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>https://redisread.github.io/ko/en/archive/</guid>
+        <guid>https://vhope.cf/ko/en/archive/</guid>
         <description>archive page</description>
       </item>
       
       <item>
         <title>About</title>
-        <link>https://redisread.github.io/ko/en/about/</link>
+        <link>https://vhope.cf/ko/en/about/</link>
         <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>https://redisread.github.io/ko/en/about/</guid>
+        <guid>https://vhope.cf/ko/en/about/</guid>
         <description>Written in Go, Hugo is an open source static site generator available under the Apache Licence 2.0. Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
 Hugo makes use of a variety of open source projects including:
  https://github.</description>

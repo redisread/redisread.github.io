@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Showcase overview on Hugo Zzo Theme</title>
-    <link>https://redisread.github.io/zh/showcase/</link>
+    <link>https://vhope.cf/zh/showcase/</link>
     <description>Recent content in Showcase overview on Hugo Zzo Theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
@@ -11,10 +11,19 @@
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Sun, 19 Jan 2020 15:43:38 +0900</lastBuildDate>
     
-        <atom:link href="https://redisread.github.io/zh/showcase/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://vhope.cf/zh/showcase/index.xml" rel="self" type="application/rss+xml" />
     
     
     
+      
+      <item>
+        <title>Hugo</title>
+        <link>https://vhope.cf/zh/showcase/hugo/</link>
+        <pubDate>Sun, 19 Jan 2020 21:04:11 +0900</pubDate>
+        <author>1427298682@qq.com (redisread)</author>
+        <guid>https://vhope.cf/zh/showcase/hugo/</guid>
+        <description></description>
+      </item>
       
     
   </channel>

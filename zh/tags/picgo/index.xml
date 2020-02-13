@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>PicGo on Hugo Zzo Theme</title>
-    <link>https://redisread.github.io/zh/tags/picgo/</link>
+    <link>https://vhope.cf/zh/tags/picgo/</link>
     <description>Recent content in PicGo on Hugo Zzo Theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
@@ -11,17 +11,17 @@
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Tue, 04 Feb 2020 23:51:21 +0900</lastBuildDate>
     
-        <atom:link href="https://redisread.github.io/zh/tags/picgo/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://vhope.cf/zh/tags/picgo/index.xml" rel="self" type="application/rss+xml" />
     
     
     
       
       <item>
         <title>配置基于Github的PicGo图床</title>
-        <link>https://redisread.github.io/zh/posts/image-bed/</link>
+        <link>https://vhope.cf/zh/posts/image-bed/</link>
         <pubDate>Tue, 04 Feb 2020 23:51:21 +0900</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>https://redisread.github.io/zh/posts/image-bed/</guid>
+        <guid>https://vhope.cf/zh/posts/image-bed/</guid>
         <description>&lt;p&gt;使用Github+PicGo建立一个免费的个人图床。&lt;/p&gt;</description>
       </item>
       

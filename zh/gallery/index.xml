@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Galleries on Hugo Zzo Theme</title>
-    <link>https://redisread.github.io/zh/gallery/</link>
+    <link>https://vhope.cf/zh/gallery/</link>
     <description>Recent content in Galleries on Hugo Zzo Theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
@@ -11,26 +11,26 @@
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Thu, 31 Oct 2019 10:20:16 +0900</lastBuildDate>
     
-        <atom:link href="https://redisread.github.io/zh/gallery/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://vhope.cf/zh/gallery/index.xml" rel="self" type="application/rss+xml" />
     
     
     
       
       <item>
         <title>life</title>
-        <link>https://redisread.github.io/zh/gallery/life/</link>
+        <link>https://vhope.cf/zh/gallery/life/</link>
         <pubDate>Thu, 31 Oct 2019 10:20:16 +0900</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>https://redisread.github.io/zh/gallery/life/</guid>
+        <guid>https://vhope.cf/zh/gallery/life/</guid>
         <description>Sample images about life.</description>
       </item>
       
       <item>
         <title>movie</title>
-        <link>https://redisread.github.io/zh/gallery/movie/</link>
+        <link>https://vhope.cf/zh/gallery/movie/</link>
         <pubDate>Thu, 31 Oct 2019 10:20:16 +0900</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>https://redisread.github.io/zh/gallery/movie/</guid>
+        <guid>https://vhope.cf/zh/gallery/movie/</guid>
         <description></description>
       </item>
       

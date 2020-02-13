@@ -3,276 +3,301 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://redisread.github.io/zh/</loc>
+    <loc>https://vhope.cf/zh/showcase/hugo/myblog/</loc>
+    <lastmod>2020-01-19T21:13:42+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://vhope.cf/zh/showcase/hugo/myitem/</loc>
+    <lastmod>2020-01-19T21:13:42+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://vhope.cf/zh/</loc>
     <lastmod>2020-02-13T15:12:33+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://redisread.github.io/en/"
+                href="https://vhope.cf/en/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="https://redisread.github.io/ko/"
+                href="https://vhope.cf/ko/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://redisread.github.io/zh/"
+                href="https://vhope.cf/zh/"
                 />
   </url>
   
   <url>
-    <loc>https://redisread.github.io/zh/series/blog/</loc>
+    <loc>https://vhope.cf/zh/series/blog/</loc>
     <lastmod>2020-02-13T15:12:33+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://redisread.github.io/zh/categories/</loc>
+    <loc>https://vhope.cf/zh/categories/</loc>
     <lastmod>2020-02-13T15:12:33+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://redisread.github.io/en/categories/"
+                href="https://vhope.cf/en/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="https://redisread.github.io/ko/categories/"
+                href="https://vhope.cf/ko/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://redisread.github.io/zh/categories/"
+                href="https://vhope.cf/zh/categories/"
                 />
   </url>
   
   <url>
-    <loc>https://redisread.github.io/zh/tags/freenom/</loc>
+    <loc>https://vhope.cf/zh/tags/freenom/</loc>
     <lastmod>2020-02-13T15:12:33+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://redisread.github.io/zh/posts/freenom-domain/</loc>
+    <loc>https://vhope.cf/zh/posts/freenom-domain/</loc>
     <lastmod>2020-02-13T15:12:33+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://redisread.github.io/zh/posts/</loc>
+    <loc>https://vhope.cf/zh/posts/</loc>
     <lastmod>2020-02-13T15:12:33+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://redisread.github.io/en/posts/"
+                href="https://vhope.cf/en/posts/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://redisread.github.io/zh/posts/"
+                href="https://vhope.cf/zh/posts/"
                 />
   </url>
   
   <url>
-    <loc>https://redisread.github.io/zh/series/</loc>
+    <loc>https://vhope.cf/zh/series/</loc>
     <lastmod>2020-02-13T15:12:33+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://redisread.github.io/en/series/"
+                href="https://vhope.cf/en/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="https://redisread.github.io/ko/series/"
+                href="https://vhope.cf/ko/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://redisread.github.io/zh/series/"
+                href="https://vhope.cf/zh/series/"
                 />
   </url>
   
   <url>
-    <loc>https://redisread.github.io/zh/tags/</loc>
+    <loc>https://vhope.cf/zh/tags/</loc>
     <lastmod>2020-02-13T15:12:33+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://redisread.github.io/en/tags/"
+                href="https://vhope.cf/en/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="https://redisread.github.io/ko/tags/"
+                href="https://vhope.cf/ko/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://redisread.github.io/zh/tags/"
+                href="https://vhope.cf/zh/tags/"
                 />
   </url>
   
   <url>
-    <loc>https://redisread.github.io/zh/tags/%E5%9F%9F%E5%90%8D/</loc>
+    <loc>https://vhope.cf/zh/tags/%E5%9F%9F%E5%90%8D/</loc>
     <lastmod>2020-02-13T15:12:33+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://redisread.github.io/zh/posts/mingw-use/</loc>
+    <loc>https://vhope.cf/zh/posts/mingw-use/</loc>
     <lastmod>2020-02-11T18:01:16+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://redisread.github.io/zh/tags/github/</loc>
+    <loc>https://vhope.cf/zh/tags/github/</loc>
     <lastmod>2020-02-10T20:50:09+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://redisread.github.io/zh/tags/hugo/</loc>
+    <loc>https://vhope.cf/zh/tags/hugo/</loc>
     <lastmod>2020-02-10T20:50:09+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://redisread.github.io/zh/posts/hugo/first/</loc>
+    <loc>https://vhope.cf/zh/posts/hugo/first/</loc>
     <lastmod>2020-02-10T20:50:09+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://redisread.github.io/zh/resume/</loc>
+    <loc>https://vhope.cf/zh/resume/</loc>
     <lastmod>2020-02-09T20:13:59+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://redisread.github.io/zh/tags/picgo/</loc>
+    <loc>https://vhope.cf/zh/tags/picgo/</loc>
     <lastmod>2020-02-04T23:51:21+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://redisread.github.io/zh/tags/%E5%9B%BE%E5%BA%8A/</loc>
+    <loc>https://vhope.cf/zh/tags/%E5%9B%BE%E5%BA%8A/</loc>
     <lastmod>2020-02-04T23:51:21+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://redisread.github.io/zh/posts/image-bed/</loc>
+    <loc>https://vhope.cf/zh/posts/image-bed/</loc>
     <lastmod>2020-02-04T23:51:21+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://redisread.github.io/zh/tags/gcc/</loc>
+    <loc>https://vhope.cf/zh/tags/gcc/</loc>
     <lastmod>2020-02-04T16:41:18+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://redisread.github.io/zh/tags/mingw/</loc>
+    <loc>https://vhope.cf/zh/tags/mingw/</loc>
     <lastmod>2020-02-04T16:41:18+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://redisread.github.io/zh/posts/gcc-windows/</loc>
+    <loc>https://vhope.cf/zh/posts/gcc-windows/</loc>
     <lastmod>2020-02-04T16:41:18+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://redisread.github.io/zh/series/%E9%85%8D%E7%BD%AE/</loc>
+    <loc>https://vhope.cf/zh/series/%E9%85%8D%E7%BD%AE/</loc>
     <lastmod>2020-02-04T16:41:18+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://redisread.github.io/zh/about/</loc>
+    <loc>https://vhope.cf/zh/about/</loc>
     <lastmod>2020-01-30T12:50:46+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://redisread.github.io/en/about/"
+                href="https://vhope.cf/en/about/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://redisread.github.io/zh/about/"
+                href="https://vhope.cf/zh/about/"
                 />
   </url>
   
   <url>
-    <loc>https://redisread.github.io/zh/archive/</loc>
+    <loc>https://vhope.cf/zh/archive/</loc>
     <lastmod>2020-01-30T12:50:46+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://redisread.github.io/zh/archive/</loc>
+    <loc>https://vhope.cf/zh/archive/</loc>
     <lastmod>2020-01-30T12:50:46+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://redisread.github.io/en/archive/"
+                href="https://vhope.cf/en/archive/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://redisread.github.io/zh/archive/"
+                href="https://vhope.cf/zh/archive/"
                 />
   </url>
   
   <url>
-    <loc>https://redisread.github.io/zh/tags/shortcode/</loc>
+    <loc>https://vhope.cf/zh/tags/shortcode/</loc>
     <lastmod>2020-01-25T06:40:51+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://redisread.github.io/zh/posts/shortcodes/</loc>
+    <loc>https://vhope.cf/zh/posts/shortcodes/</loc>
     <lastmod>2020-01-25T06:40:51+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://redisread.github.io/zh/showcase/</loc>
+    <loc>https://vhope.cf/zh/showcase/hugo/</loc>
+    <lastmod>2020-01-19T21:04:11+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://vhope.cf/en/showcase/hugo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://vhope.cf/zh/showcase/hugo/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://vhope.cf/zh/showcase/</loc>
     <lastmod>2020-01-19T15:43:38+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://redisread.github.io/en/showcase/"
+                href="https://vhope.cf/en/showcase/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://redisread.github.io/zh/showcase/"
+                href="https://vhope.cf/zh/showcase/"
                 />
   </url>
   
   <url>
-    <loc>https://redisread.github.io/zh/talks/mylinks/</loc>
+    <loc>https://vhope.cf/zh/talks/mylinks/</loc>
     <lastmod>2019-12-31T00:04:50+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://redisread.github.io/zh/talks/</loc>
+    <loc>https://vhope.cf/zh/talks/</loc>
     <lastmod>2019-12-30T11:14:14+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://redisread.github.io/zh/contact/</loc>
+    <loc>https://vhope.cf/zh/contact/</loc>
     <lastmod>2019-12-17T23:58:33+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://redisread.github.io/zh/gallery/</loc>
+    <loc>https://vhope.cf/zh/gallery/</loc>
     <lastmod>2019-10-31T10:20:16+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://redisread.github.io/zh/gallery/life/</loc>
+    <loc>https://vhope.cf/zh/gallery/life/</loc>
     <lastmod>2019-10-31T10:20:16+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://redisread.github.io/zh/gallery/movie/</loc>
+    <loc>https://vhope.cf/zh/gallery/movie/</loc>
     <lastmod>2019-10-31T10:20:16+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://redisread.github.io/zh/zh/</loc>
+    <loc>https://vhope.cf/zh/zh/</loc>
   </url>
   
   <url>
-    <loc>https://redisread.github.io/zh/pt/</loc>
+    <loc>https://vhope.cf/zh/pt/</loc>
   </url>
   
 </urlset>
