@@ -9,12 +9,21 @@
     <managingEditor>1427298682@qq.com (redisread)</managingEditor>
     <webMaster>1427298682@qq.com (redisread)</webMaster>
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Thu, 13 Feb 2020 22:31:22 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 14 Feb 2020 16:12:40 +0800</lastBuildDate>
     
         <atom:link href="https://vhope.cf/zh/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     
+      
+      <item>
+        <title>Markdown深入使用</title>
+        <link>https://vhope.cf/zh/posts/markdown-deep/</link>
+        <pubDate>Fri, 14 Feb 2020 16:12:40 +0800</pubDate>
+        <author>1427298682@qq.com (redisread)</author>
+        <guid>https://vhope.cf/zh/posts/markdown-deep/</guid>
+        <description>[toc] 任务列表✍ a task list item list syntax required normal formatting, @mentions, #1234 refs incomplete completed 上面的代码如下： 1 2 3 4 5 - [ ] a task list item - [ ] list syntax required - [ ] normal **formatting**, @mentions, #1234 refs - [ ] incomplete - [x] completed 数学公式📐 使用Ma</description>
+      </item>
       
       <item>
         <title>几款好用的图床</title>
