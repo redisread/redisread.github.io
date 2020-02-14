@@ -9,12 +9,21 @@
     <managingEditor>1427298682@qq.com (redisread)</managingEditor>
     <webMaster>1427298682@qq.com (redisread)</webMaster>
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Fri, 14 Feb 2020 16:12:40 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 14 Feb 2020 16:55:17 +0800</lastBuildDate>
     
         <atom:link href="https://vhope.cf/zh/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     
+      
+      <item>
+        <title>Agency</title>
+        <link>https://vhope.cf/zh/posts/agency/</link>
+        <pubDate>Fri, 14 Feb 2020 16:55:17 +0800</pubDate>
+        <author>1427298682@qq.com (redisread)</author>
+        <guid>https://vhope.cf/zh/posts/agency/</guid>
+        <description>&lt;p&gt;What is &lt;code&gt;agency&lt;/code&gt;?❔&lt;/p&gt;</description>
+      </item>
       
       <item>
         <title>Markdown深入使用</title>
