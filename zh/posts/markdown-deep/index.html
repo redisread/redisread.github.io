@@ -1188,7 +1188,7 @@
     "datePublished": "2020-02-14T16:12:40+08:00",
     "dateModified": "2020-02-14T16:12:40+08:00",
     "url" : "https://vhope.cf/zh/posts/markdown-deep/",
-    "description": "[toc] 任务列表✍ a task list item list syntax required normal formatting, @mentions, #1234 refs incomplete completed 上面的代码如下： 1 2 3 4 5 - [ ] a task list item - [ ] list …",
+    "description": "\u003cp\u003e👱‍♀介绍一些markdown中比较实用的一些写作方法。\u003c/p\u003e",
     "keywords": ["markdown","Typora"],
     "image" : "https://i.loli.net/2020/02/14/Qgcb4yzqUEYC3Of.png",
     "author": {
@@ -1504,7 +1504,36 @@
     </div>
     <article class="single__contents" data-dir="ltr">
       
-      <p>[toc]</p>
+<div class="expand">
+  <button type="button" class="expand__button" aria-label="Expand Button">
+    <span class="expand-icon expand-icon__right">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M9.29 15.88L13.17 12 9.29 8.12c-.39-.39-.39-1.02 0-1.41.39-.39 1.02-.39 1.41 0l4.59 4.59c.39.39.39 1.02 0 1.41L10.7 17.3c-.39.39-1.02.39-1.41 0-.38-.39-.39-1.03 0-1.42z"/></svg>
+    </span>
+    目录
+  </button>
+  <div class="expand__content expand__content--toc">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#任务列表">任务列表✍</a></li>
+        <li><a href="#数学公式">数学公式📐</a></li>
+        <li><a href="#脚注">脚注👣</a></li>
+        <li><a href="#水平线">水平线〰</a></li>
+        <li><a href="#ymal首要事项">YMAL首要事项🤔</a></li>
+        <li><a href="#目录">目录📑</a></li>
+        <li><a href="#内部链接">内部链接🔗</a></li>
+        <li><a href="#参考链接">参考链接📖</a></li>
+        <li><a href="#删除线">删除线❌</a></li>
+        <li><a href="#高亮">高亮🔆</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+
+      <p>👱‍♀介绍一些markdown中比较实用的一些写作方法。</p>
 <h3 id="任务列表">任务列表✍</h3>
 <ul>
 <li><input disabled="" type="checkbox" />a task list item</li>
@@ -1531,15 +1560,13 @@
 </code></pre></td></tr></table>
 </div>
 </div><h3 id="数学公式">数学公式📐</h3>
-<p>使用MathJax渲染LaTeX数学表达式。<br />
-$$<br />
-\mathbf{V}_1 \times \mathbf{V}_2 =  \begin{vmatrix}<br />
+<p>使用MathJax渲染LaTeX数学表达式。</p>
+<p>$$\mathbf{V}_1 \times \mathbf{V}_2 =  \begin{vmatrix}<br />
 \mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \<br />
 \frac{\partial X}{\partial u} &amp;  \frac{\partial Y}{\partial u} &amp; 0 \<br />
 \frac{\partial X}{\partial v} &amp;  \frac{\partial Y}{\partial v} &amp; 0 \<br />
-\end{vmatrix}<br />
-$$<br />
-上面的代码如下：</p>
+\end{vmatrix}$$</p>
+<p>上面的代码如下：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -1560,16 +1587,14 @@ $$<br />
 $$
 </code></pre></td></tr></table>
 </div>
-</div><p>$$<br />
-\begin{align*}<br />
+</div><p>$$\begin{align*}<br />
 y = y(x,t) &amp;= A e^{i\theta} \<br />
 &amp;= A (\cos \theta + i \sin \theta) \<br />
 &amp;= A (\cos(kx - \omega t) + i \sin(kx - \omega t)) \<br />
 &amp;= A\cos(kx - \omega t) + i A\sin(kx - \omega t)  \<br />
 &amp;= A\cos \Big(\frac{2\pi}{\lambda}x - \frac{2\pi v}{\lambda} t \Big) + i A\sin \Big(\frac{2\pi}{\lambda}x - \frac{2\pi v}{\lambda} t \Big)  \<br />
 &amp;= A\cos \frac{2\pi}{\lambda} (x - v t) + i A\sin \frac{2\pi}{\lambda} (x - v t)<br />
-\end{align*}<br />
-$$</p>
+\end{align*}$$</p>
 <p>上面的代码如下：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -2917,14 +2942,14 @@ document.addEventListener('DOMContentLoaded', function () {
       
       
         
-      
-        
         
           
             
               <a href="https://vhope.cf/zh/posts/markdown-deep/" data-lang="zh" class="dropdown-item is-active">中文</a>
             
           
+        
+      
         
       
         
