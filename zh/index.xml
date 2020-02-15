@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hugo Zzo Theme</title>
+    <title>✏Victor&#39;s Blog</title>
     <link>https://vhope.cf/zh/</link>
-    <description>Recent content on Hugo Zzo Theme</description>
+    <description>Recent content on ✏Victor&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
     <managingEditor>1427298682@qq.com (redisread)</managingEditor>
@@ -17,30 +17,12 @@
     
       
       <item>
-        <title>My Hugo Lib</title>
-        <link>https://vhope.cf/zh/showcase/hugo/myblog/</link>
-        <pubDate>Sun, 19 Jan 2020 21:13:42 +0900</pubDate>
-        <author>1427298682@qq.com (redisread)</author>
-        <guid>https://vhope.cf/zh/showcase/hugo/myblog/</guid>
-        <description></description>
-      </item>
-      
-      <item>
-        <title>My Hugo Item</title>
-        <link>https://vhope.cf/zh/showcase/hugo/myitem/</link>
-        <pubDate>Sun, 19 Jan 2020 21:13:42 +0900</pubDate>
-        <author>1427298682@qq.com (redisread)</author>
-        <guid>https://vhope.cf/zh/showcase/hugo/myitem/</guid>
-        <description></description>
-      </item>
-      
-      <item>
         <title>2020翻墙指南👈</title>
         <link>https://vhope.cf/zh/posts/2020-fanqiang/</link>
         <pubDate>Sat, 15 Feb 2020 16:10:21 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
         <guid>https://vhope.cf/zh/posts/2020-fanqiang/</guid>
-        <description></description>
+        <description>&lt;p&gt;一份还算可以的翻墙清单📇&lt;/p&gt;</description>
       </item>
       
       <item>

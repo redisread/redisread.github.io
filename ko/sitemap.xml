@@ -13,6 +13,26 @@
   </url>
   
   <url>
+    <loc>https://vhope.cf/ko/</loc>
+    <lastmod>2020-01-25T06:40:51+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://vhope.cf/zh/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://vhope.cf/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://vhope.cf/ko/"
+                />
+  </url>
+  
+  <url>
     <loc>https://vhope.cf/ko/categories/</loc>
     <lastmod>2020-01-25T06:40:51+09:00</lastmod>
     <xhtml:link
@@ -103,26 +123,6 @@
   </url>
   
   <url>
-    <loc>https://vhope.cf/ko/</loc>
-    <lastmod>2020-01-25T06:40:51+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://vhope.cf/zh/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://vhope.cf/en/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://vhope.cf/ko/"
-                />
-  </url>
-  
-  <url>
     <loc>https://vhope.cf/ko/en/showcase/hugo/</loc>
     <lastmod>2020-01-19T21:04:11+09:00</lastmod>
   </url>
@@ -130,6 +130,21 @@
   <url>
     <loc>https://vhope.cf/ko/en/showcase/</loc>
     <lastmod>2020-01-19T15:43:38+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://vhope.cf/ko/categories/hugo/</loc>
+    <lastmod>2019-12-18T10:33:41+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://vhope.cf/en/categories/hugo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://vhope.cf/ko/categories/hugo/"
+                />
   </url>
   
   <url>
@@ -149,21 +164,6 @@
                 rel="alternate"
                 hreflang="ko"
                 href="https://vhope.cf/ko/tags/hugo/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://vhope.cf/ko/categories/hugo/</loc>
-    <lastmod>2019-12-18T10:33:41+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://vhope.cf/en/categories/hugo/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://vhope.cf/ko/categories/hugo/"
                 />
   </url>
   
