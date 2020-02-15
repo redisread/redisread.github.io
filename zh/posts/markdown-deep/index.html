@@ -1560,8 +1560,14 @@
 </code></pre></td></tr></table>
 </div>
 </div><h3 id="数学公式">数学公式📐</h3>
-<p>使用MathJax渲染LaTeX数学表达式。💡</p>
-<p>$$ \mathbf{V}_1\times\mathbf{V}_2=\begin{vmatrix}\mathbf{i}&amp;mathbf{j} &amp; \mathbf{k} \\frac{\partial X}{\partial u}&amp;\frac{\partial Y}{\partial u} &amp; 0 \\frac{\partial X}{\partial v} &amp;\frac{\partial Y}{\partial v} &amp; 0 \\end{vmatrix} $$</p>
+<p>使用MathJax渲染LaTeX数学表达式。💡<br />
+$$<br />
+\mathbf{V}_1 \times \mathbf{V}_2 =  \begin{vmatrix}<br />
+\mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \<br />
+\frac{\partial X}{\partial u} &amp;  \frac{\partial Y}{\partial u} &amp; 0 \<br />
+\frac{\partial X}{\partial v} &amp;  \frac{\partial Y}{\partial v} &amp; 0 \<br />
+\end{vmatrix}<br />
+$$</p>
 <p>上面的代码如下：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1583,15 +1589,17 @@
 $$
 </code></pre></td></tr></table>
 </div>
-</div><p>$$ \begin{align*}<br />
+</div><p>$$<br />
+\begin{align*}<br />
 y = y(x,t) &amp;= A e^{i\theta} \<br />
 &amp;= A (\cos \theta + i \sin \theta) \<br />
 &amp;= A (\cos(kx - \omega t) + i \sin(kx - \omega t)) \<br />
 &amp;= A\cos(kx - \omega t) + i A\sin(kx - \omega t)  \<br />
 &amp;= A\cos \Big(\frac{2\pi}{\lambda}x - \frac{2\pi v}{\lambda} t \Big) + i A\sin \Big(\frac{2\pi}{\lambda}x - \frac{2\pi v}{\lambda} t \Big)  \<br />
 &amp;= A\cos \frac{2\pi}{\lambda} (x - v t) + i A\sin \frac{2\pi}{\lambda} (x - v t)<br />
-\end{align*} $$</p>
-<p>代码如下：</p>
+\end{align*}<br />
+$$</p>
+<p>上面代码如下：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt"> 1
