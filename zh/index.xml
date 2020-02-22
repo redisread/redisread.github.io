@@ -9,7 +9,7 @@
     <managingEditor>1427298682@qq.com (redisread)</managingEditor>
     <webMaster>1427298682@qq.com (redisread)</webMaster>
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Sat, 15 Feb 2020 16:10:21 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 22 Feb 2020 22:49:28 +0800</lastBuildDate>
     
         <atom:link href="https://vhope.cf/zh/index.xml" rel="self" type="application/rss+xml" />
     
@@ -17,21 +17,12 @@
     
       
       <item>
-        <title>My Hugo Lib</title>
-        <link>https://vhope.cf/zh/showcase/hugo/myblog/</link>
-        <pubDate>Sun, 19 Jan 2020 21:13:42 +0900</pubDate>
+        <title>Pytorch Begin</title>
+        <link>https://vhope.cf/zh/posts/pytorch-begin/</link>
+        <pubDate>Sat, 22 Feb 2020 22:49:28 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>https://vhope.cf/zh/showcase/hugo/myblog/</guid>
-        <description></description>
-      </item>
-      
-      <item>
-        <title>My Hugo Item</title>
-        <link>https://vhope.cf/zh/showcase/hugo/myitem/</link>
-        <pubDate>Sun, 19 Jan 2020 21:13:42 +0900</pubDate>
-        <author>1427298682@qq.com (redisread)</author>
-        <guid>https://vhope.cf/zh/showcase/hugo/myitem/</guid>
-        <description></description>
+        <guid>https://vhope.cf/zh/posts/pytorch-begin/</guid>
+        <description>&lt;p&gt;重新学习一下DL，这次使用PyTorch框架🔦&lt;/p&gt;</description>
       </item>
       
       <item>
