@@ -4,7 +4,7 @@
   
   <url>
     <loc>https://vhope.cf/zh/</loc>
-    <lastmod>2020-02-22T22:49:28+08:00</lastmod>
+    <lastmod>2020-02-23T15:49:10+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -24,7 +24,7 @@
   
   <url>
     <loc>https://vhope.cf/zh/categories/</loc>
-    <lastmod>2020-02-22T22:49:28+08:00</lastmod>
+    <lastmod>2020-02-23T15:49:10+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -43,8 +43,23 @@
   </url>
   
   <url>
+    <loc>https://vhope.cf/zh/tags/liner/</loc>
+    <lastmod>2020-02-23T15:49:10+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://vhope.cf/zh/tags/mxnet/</loc>
+    <lastmod>2020-02-23T15:49:10+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://vhope.cf/zh/posts/mxnet-begin/</loc>
+    <lastmod>2020-02-23T15:49:10+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://vhope.cf/zh/posts/</loc>
-    <lastmod>2020-02-22T22:49:28+08:00</lastmod>
+    <lastmod>2020-02-23T15:49:10+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -59,22 +74,12 @@
   
   <url>
     <loc>https://vhope.cf/zh/tags/python/</loc>
-    <lastmod>2020-02-22T22:49:28+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://vhope.cf/zh/tags/pytorch/</loc>
-    <lastmod>2020-02-22T22:49:28+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://vhope.cf/zh/posts/pytorch-begin/</loc>
-    <lastmod>2020-02-22T22:49:28+08:00</lastmod>
+    <lastmod>2020-02-23T15:49:10+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://vhope.cf/zh/series/</loc>
-    <lastmod>2020-02-22T22:49:28+08:00</lastmod>
+    <lastmod>2020-02-23T15:49:10+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -94,7 +99,7 @@
   
   <url>
     <loc>https://vhope.cf/zh/tags/</loc>
-    <lastmod>2020-02-22T22:49:28+08:00</lastmod>
+    <lastmod>2020-02-23T15:49:10+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -113,12 +118,27 @@
   </url>
   
   <url>
-    <loc>https://vhope.cf/zh/tags/tensor/</loc>
-    <lastmod>2020-02-22T22:49:28+08:00</lastmod>
+    <loc>https://vhope.cf/zh/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/</loc>
+    <lastmod>2020-02-23T15:49:10+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://vhope.cf/zh/series/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/</loc>
+    <lastmod>2020-02-23T15:49:10+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://vhope.cf/zh/tags/pytorch/</loc>
+    <lastmod>2020-02-22T22:49:28+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://vhope.cf/zh/posts/pytorch-begin/</loc>
+    <lastmod>2020-02-22T22:49:28+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://vhope.cf/zh/tags/tensor/</loc>
     <lastmod>2020-02-22T22:49:28+08:00</lastmod>
   </url>
   

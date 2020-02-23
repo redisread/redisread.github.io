@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>liner on ✏Victor&#39;s Blog</title>
+    <link>https://vhope.cf/zh/tags/liner/</link>
+    <description>Recent content in liner on ✏Victor&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <managingEditor>1427298682@qq.com (redisread)</managingEditor>
+    <webMaster>1427298682@qq.com (redisread)</webMaster>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 23 Feb 2020 15:49:10 +0800</lastBuildDate>
+    
+        <atom:link href="https://vhope.cf/zh/tags/liner/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+      
+      <item>
+        <title>Mxnet Begin</title>
+        <link>https://vhope.cf/zh/posts/mxnet-begin/</link>
+        <pubDate>Sun, 23 Feb 2020 15:49:10 +0800</pubDate>
+        <author>1427298682@qq.com (redisread)</author>
+        <guid>https://vhope.cf/zh/posts/mxnet-begin/</guid>
+        <description>&lt;p&gt;使用MXNet的好处你永远想象不到。🉑&lt;/p&gt;</description>
+      </item>
+      
+    
+  </channel>
+</rss>

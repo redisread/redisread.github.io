@@ -9,12 +9,21 @@
     <managingEditor>1427298682@qq.com (redisread)</managingEditor>
     <webMaster>1427298682@qq.com (redisread)</webMaster>
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Sat, 22 Feb 2020 22:49:28 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 23 Feb 2020 15:49:10 +0800</lastBuildDate>
     
         <atom:link href="https://vhope.cf/zh/series/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/index.xml" rel="self" type="application/rss+xml" />
     
     
     
+      
+      <item>
+        <title>Mxnet Begin</title>
+        <link>https://vhope.cf/zh/posts/mxnet-begin/</link>
+        <pubDate>Sun, 23 Feb 2020 15:49:10 +0800</pubDate>
+        <author>1427298682@qq.com (redisread)</author>
+        <guid>https://vhope.cf/zh/posts/mxnet-begin/</guid>
+        <description>&lt;p&gt;使用MXNet的好处你永远想象不到。🉑&lt;/p&gt;</description>
+      </item>
       
       <item>
         <title>Pytorch Begin</title>
