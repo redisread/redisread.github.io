@@ -17,6 +17,24 @@
     
       
       <item>
+        <title>My Hugo Lib</title>
+        <link>https://vhope.cf/zh/showcase/hugo/myblog/</link>
+        <pubDate>Sun, 19 Jan 2020 21:13:42 +0900</pubDate>
+        <author>1427298682@qq.com (redisread)</author>
+        <guid>https://vhope.cf/zh/showcase/hugo/myblog/</guid>
+        <description></description>
+      </item>
+      
+      <item>
+        <title>My Hugo Item</title>
+        <link>https://vhope.cf/zh/showcase/hugo/myitem/</link>
+        <pubDate>Sun, 19 Jan 2020 21:13:42 +0900</pubDate>
+        <author>1427298682@qq.com (redisread)</author>
+        <guid>https://vhope.cf/zh/showcase/hugo/myitem/</guid>
+        <description></description>
+      </item>
+      
+      <item>
         <title>Data Analysis Begin</title>
         <link>https://vhope.cf/zh/posts/data-analysis-begin/</link>
         <pubDate>Mon, 24 Feb 2020 13:46:59 +0800</pubDate>
@@ -187,6 +205,42 @@ Your browser does not support the video tag.</description>
         <pubDate>Thu, 31 Oct 2019 10:20:16 +0900</pubDate>
         <author>1427298682@qq.com (redisread)</author>
         <guid>https://vhope.cf/zh/gallery/movie/</guid>
+        <description></description>
+      </item>
+      
+      <item>
+        <title>Fourth</title>
+        <link>https://vhope.cf/zh/pt/dir/fourth/</link>
+        <pubDate>Wed, 30 Oct 2019 20:48:10 +0900</pubDate>
+        <author>1427298682@qq.com (redisread)</author>
+        <guid>https://vhope.cf/zh/pt/dir/fourth/</guid>
+        <description></description>
+      </item>
+      
+      <item>
+        <title>Third</title>
+        <link>https://vhope.cf/zh/pt/third/</link>
+        <pubDate>Wed, 30 Oct 2019 20:46:30 +0900</pubDate>
+        <author>1427298682@qq.com (redisread)</author>
+        <guid>https://vhope.cf/zh/pt/third/</guid>
+        <description></description>
+      </item>
+      
+      <item>
+        <title>Second</title>
+        <link>https://vhope.cf/zh/pt/second/</link>
+        <pubDate>Wed, 30 Oct 2019 20:45:24 +0900</pubDate>
+        <author>1427298682@qq.com (redisread)</author>
+        <guid>https://vhope.cf/zh/pt/second/</guid>
+        <description></description>
+      </item>
+      
+      <item>
+        <title>First</title>
+        <link>https://vhope.cf/zh/pt/first/</link>
+        <pubDate>Wed, 30 Oct 2019 19:45:20 +0900</pubDate>
+        <author>1427298682@qq.com (redisread)</author>
+        <guid>https://vhope.cf/zh/pt/first/</guid>
         <description></description>
       </item>
       
