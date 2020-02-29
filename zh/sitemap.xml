@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://vhope.cf/zh/showcase/hugo/myblog/</loc>
+    <lastmod>2020-01-19T21:13:42+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://vhope.cf/zh/showcase/hugo/myitem/</loc>
+    <lastmod>2020-01-19T21:13:42+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://vhope.cf/zh/</loc>
     <lastmod>2020-03-01T00:24:52+08:00</lastmod>
     <xhtml:link
@@ -378,6 +388,21 @@
   </url>
   
   <url>
+    <loc>https://vhope.cf/zh/showcase/hugo/</loc>
+    <lastmod>2020-01-19T21:04:11+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://vhope.cf/en/showcase/hugo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://vhope.cf/zh/showcase/hugo/"
+                />
+  </url>
+  
+  <url>
     <loc>https://vhope.cf/zh/showcase/</loc>
     <lastmod>2020-01-19T15:43:38+09:00</lastmod>
     <xhtml:link
@@ -420,6 +445,21 @@
   <url>
     <loc>https://vhope.cf/zh/gallery/movie/</loc>
     <lastmod>2019-10-31T10:20:16+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://vhope.cf/zh/pt/dir/fourth/</loc>
+    <lastmod>2019-10-30T20:48:10+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://vhope.cf/zh/pt/third/</loc>
+    <lastmod>2019-10-30T20:46:30+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://vhope.cf/zh/pt/second/</loc>
+    <lastmod>2019-10-30T20:45:24+09:00</lastmod>
   </url>
   
   <url>
