@@ -128,7 +128,7 @@
   </url>
   
   <url>
-    <loc>https://vhope.cf/zh/posts/mxnet-begin/</loc>
+    <loc>https://vhope.cf/zh/posts/dl/mxnet-begin/</loc>
     <lastmod>2020-02-23T15:49:10+08:00</lastmod>
   </url>
   
@@ -153,7 +153,7 @@
   </url>
   
   <url>
-    <loc>https://vhope.cf/zh/posts/pytorch-begin/</loc>
+    <loc>https://vhope.cf/zh/posts/dl/pytorch-begin/</loc>
     <lastmod>2020-02-22T22:49:28+08:00</lastmod>
   </url>
   
@@ -180,31 +180,6 @@
   <url>
     <loc>https://vhope.cf/zh/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/</loc>
     <lastmod>2020-02-15T16:10:21+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://vhope.cf/zh/posts/agency/</loc>
-    <lastmod>2020-02-14T16:55:17+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://vhope.cf/zh/categories/it/</loc>
-    <lastmod>2020-02-14T16:55:17+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://vhope.cf/zh/tags/%E4%BB%A3%E7%90%86/</loc>
-    <lastmod>2020-02-14T16:55:17+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://vhope.cf/zh/series/%E7%88%AC%E8%99%AB/</loc>
-    <lastmod>2020-02-14T16:55:17+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://vhope.cf/zh/tags/%E7%88%AC%E8%99%AB/</loc>
-    <lastmod>2020-02-14T16:55:17+08:00</lastmod>
   </url>
   
   <url>
@@ -393,18 +368,8 @@
   </url>
   
   <url>
-    <loc>https://vhope.cf/zh/posts/shortcodes/</loc>
+    <loc>https://vhope.cf/zh/posts/hugo/shortcodes/</loc>
     <lastmod>2020-01-25T06:40:51+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://vhope.cf/en/posts/shortcodes/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://vhope.cf/zh/posts/shortcodes/"
-                />
   </url>
   
   <url>

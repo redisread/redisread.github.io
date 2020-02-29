@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Agency – ✏Victor&#39;s Blog</title>
+    <title>MXNet回顾 – ✏Victor&#39;s Blog</title>
     
 
   
@@ -497,7 +497,7 @@
 
   
     
-    var permalink = JSON.parse("\"https://vhope.cf/zh/posts/agency/\"");
+    var permalink = JSON.parse("\"https://vhope.cf/zh/posts/dl/mxnet-begin/\"");
     var searchResults = null;
     var searchMenu = null;
     var searchText = null;
@@ -1151,24 +1151,24 @@
     
 <meta name="description" content="" />
 <meta name="keywords" content="">
-<meta name="created" content="2020-02-14T16:55:17&#43;0800">
-<meta name="modified" content="2020-02-14T16:55:17&#43;0800">
-<meta property="article:published_time" content="2020-02-14T16:55:17&#43;0800">
+<meta name="created" content="2020-02-23T15:49:10&#43;0800">
+<meta name="modified" content="2020-02-23T15:49:10&#43;0800">
+<meta property="article:published_time" content="2020-02-23T15:49:10&#43;0800">
 
 <meta name="author" content="Victor">
-<meta property="article:author" content="https://vhope.cf/zh/posts/agency/@Victor">
+<meta property="article:author" content="https://vhope.cf/zh/posts/dl/mxnet-begin/@Victor">
 
 
 <meta property="og:site_name" content="✏Victor&#39;s Blog">
-<meta property="og:title" content="Agency">
-<meta property="og:url" content="https://vhope.cf/zh/posts/agency/">
+<meta property="og:title" content="MXNet回顾">
+<meta property="og:url" content="https://vhope.cf/zh/posts/dl/mxnet-begin/">
 <meta property="og:type" content="article">
 <meta property="og:description" content="">
 
 <meta name="generator" content="Hugo 0.64.1" />
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="theme-color" content="#ffffff">
-<link rel="canonical" href="https://vhope.cf/zh/posts/agency/">
+<link rel="canonical" href="https://vhope.cf/zh/posts/dl/mxnet-begin/">
 <link rel="manifest" href="/manifest.json">
 
   <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
@@ -1192,12 +1192,13 @@
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "headline": "Agency",
-    "datePublished": "2020-02-14T16:55:17+08:00",
-    "dateModified": "2020-02-14T16:55:17+08:00",
-    "url" : "https://vhope.cf/zh/posts/agency/",
-    "description": "\u003cp\u003eWhat is \u003ccode\u003eagency\u003c/code\u003e?❔\u003c/p\u003e",
-    "keywords": ["代理","python","爬虫"],
+    "headline": "MXNet回顾",
+    "datePublished": "2020-02-23T15:49:10+08:00",
+    "dateModified": "2020-02-23T15:49:10+08:00",
+    "url" : "https://vhope.cf/zh/posts/dl/mxnet-begin/",
+    "description": "\u003cp\u003e使用MXNet的好处你永远想象不到。🉑\u003c/p\u003e",
+    "keywords": ["python","MXNet","深度学习","liner"],
+    "image" : "https://i.loli.net/2020/02/23/NASIuoQYPCpW18x.png",
     "author": {
       "@type": "Person",
       "name": "Victor"
@@ -1474,7 +1475,7 @@
   
   <li  class="is-active" >
     
-      <span>Agency</span>
+      <span>MXNet回顾</span>
     
   </li>
   
@@ -1483,11 +1484,11 @@
 </nav>
   
   <div class="single">
-    <h2 class="single__title">Agency</h2>
+    <h2 class="single__title">MXNet回顾</h2>
     <div class="single__meta">
       
 <div class="single__infos">
-  <time class="single__info" title="创建日期">📅&nbsp;2020年02月14日 </time>  &middot; <span class="single__info" title="阅读时长"> ☕ 1 分钟 </span>&middot; <span class="single__info" title="作者">👻&nbsp;Victor</span>
+  <time class="single__info" title="创建日期">📅&nbsp;2020年02月23日 </time>  &middot; <span class="single__info" title="阅读时长"> ☕ 3 分钟 </span>&middot; <span class="single__info" title="作者">👻&nbsp;Victor</span>
   <span class="single__info">
     
   </span>
@@ -1499,21 +1500,370 @@
     🏷️
   
   
-
-  
-  
     <li><a href="https://vhope.cf/zh/tags/python/" class="single__tag" title="python">#python</a></li>
   
 
   
+  
+    <li><a href="https://vhope.cf/zh/tags/mxnet/" class="single__tag" title="MXNet">#MXNet</a></li>
+  
+
+  
+  
+
+  
+  
+    <li><a href="https://vhope.cf/zh/tags/liner/" class="single__tag" title="liner">#liner</a></li>
   
 
 </div>
     </div>
     <article class="single__contents" data-dir="ltr">
       
-      <p>What is <code>agency</code>?❔</p>
-<h2 id="代理介绍">代理介绍</h2>
+      <p>使用MXNet的好处你永远想象不到。🉑</p>
+<h3 id="本地环境搭建教程"><strong>本地环境搭建教程</strong></h3>
+<blockquote>
+<p>参考:</p>
+<p><a href="https://discuss.gluon.ai/t/topic/13576?u=bigbigwolf-ai">https://discuss.gluon.ai/t/topic/13576?u=bigbigwolf-ai</a></p>
+</blockquote>
+<h3 id="范数"><strong>范数</strong></h3>
+<p>L0范数：指向量中非0元素的个数。（难优化求解）</p>
+<p>L1范数：指向量中各个元素的绝对值之和</p>
+<p>L2范数：指向量各元素的平方和然后求平方根</p>
+<p>设$n$维向量$x$中的元素为$x_1, \ldots, x_n$。向量$x$的$L_{p}$范数为:<br />
+$$<br />
+|\boldsymbol{x}|_p = \left(\sum_{i=1}^n \left|x_i \right|^p \right)^{1/p}.<br />
+$$</p>
+<p>$L_{1}$范数：<br />
+$$<br />
+|\boldsymbol{x}|_1 = \sum_{i=1}^n \left|x_i \right|.<br />
+$$<br />
+$L_{2}$范数：<br />
+$$<br />
+|\boldsymbol{x}|_2 = \sqrt{\sum_{i=1}^n x_i^2}.<br />
+$$</p>
+<p>设$X$是一个$m$行$n$列矩阵。矩阵$X$的Frobenius范数为该矩阵元素平方和的平方根：<br />
+$$<br />
+|\boldsymbol{X}|_F = \sqrt{\sum_{i=1}^m \sum_{j=1}^n x_{ij}^2},<br />
+$$</p>
+<h3 id="查阅文档"><strong>查阅文档</strong></h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">mxnet</span> <span class="kn">import</span> <span class="n">nd</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">dir</span><span class="p">(</span><span class="n">nd</span><span class="o">.</span><span class="n">random</span><span class="p">)</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><pre><code>['NDArray', '_Null', '__all__', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', '_internal', '_random_helper', 'current_context', 'exponential', 'exponential_like', 'gamma', 'gamma_like', 'generalized_negative_binomial', 'generalized_negative_binomial_like', 'multinomial', 'negative_binomial', 'negative_binomial_like', 'normal', 'normal_like', 'numeric_types', 'poisson', 'poisson_like', 'randint', 'randn', 'shuffle', 'uniform', 'uniform_like']
+</code></pre>
+<p>help函数可以查询具体的函数作用及用法</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">help</span><span class="p">(</span><span class="n">nd</span><span class="o">.</span><span class="n">ones_like</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><pre><code>Help on function ones_like:
+
+ones_like(data=None, out=None, name=None, **kwargs)
+    Return an array of ones with the same shape and type
+    as the input array.
+    
+    Examples::
+    
+      x = [[ 0.,  0.,  0.],
+           [ 0.,  0.,  0.]]
+    
+      ones_like(x) = [[ 1.,  1.,  1.],
+                      [ 1,  1.,  1.]]
+                      Parameters
+    ----------
+    data : NDArray
+        The input
+    
+    out : NDArray, optional
+        The output NDArray to hold the result.
+    
+    Returns
+    -------
+    out : NDArray or list of NDArrays
+        The output of this function.
+</code></pre>
+<h3 id="线性回归"><strong>线性回归</strong></h3>
+<p>导入必要的库</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
+<span class="kn">from</span> <span class="nn">IPython</span> <span class="kn">import</span> <span class="n">display</span>
+<span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+<span class="kn">from</span> <span class="nn">mxnet</span> <span class="kn">import</span> <span class="n">autograd</span><span class="p">,</span> <span class="n">nd</span>
+<span class="kn">import</span> <span class="nn">random</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>生成数据集，其中每个例子输入数据个数为2，有1000个数据</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">num_inputs</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">num_examples</span> <span class="o">=</span> <span class="mi">1000</span>
+<span class="n">true_w</span> <span class="o">=</span> <span class="n">nd</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mf">3.4</span><span class="p">]</span><span class="p">)</span>
+<span class="n">true_b</span> <span class="o">=</span> <span class="n">nd</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="p">[</span><span class="mf">4.2</span><span class="p">]</span><span class="p">)</span>
+<span class="n">features</span> <span class="o">=</span> <span class="n">nd</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="n">scale</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">shape</span><span class="o">=</span><span class="p">(</span><span class="n">num_examples</span><span class="p">,</span> <span class="n">num_inputs</span><span class="p">)</span><span class="p">)</span>
+<span class="n">labels</span> <span class="o">=</span> <span class="n">nd</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">true_w</span><span class="p">,</span><span class="n">features</span><span class="o">.</span><span class="n">T</span><span class="p">)</span> <span class="o">+</span> <span class="n">true_b</span>
+<span class="n">labels</span> <span class="o">+</span><span class="o">=</span> <span class="n">nd</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="n">scale</span><span class="o">=</span><span class="mf">0.01</span><span class="p">,</span> <span class="n">shape</span><span class="o">=</span><span class="n">labels</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>查看数据</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">features</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="p">,</span> <span class="n">labels</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+</code></pre></td></tr></table>
+</div>
+</div><pre><code>(
+ [ 0.28752208 -0.04466231]
+ &lt;NDArray 2 @cpu(0)&gt;,
+ 
+ [4.927063]
+ &lt;NDArray 1 @cpu(0)&gt;)
+</code></pre>
+<p>定义相关函数</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">use_svg_display</span><span class="p">(</span><span class="p">)</span><span class="p">:</span>
+    <span class="c1"># 用矢量图显示</span>
+    <span class="n">display</span><span class="o">.</span><span class="n">set_matplotlib_formats</span><span class="p">(</span><span class="sa"></span><span class="s1">&#39;</span><span class="s1">svg</span><span class="s1">&#39;</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">set_figsize</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mf">3.5</span><span class="p">,</span> <span class="mf">2.5</span><span class="p">)</span><span class="p">)</span><span class="p">:</span>
+    <span class="n">use_svg_display</span><span class="p">(</span><span class="p">)</span>
+    <span class="c1"># 设置图的尺寸</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="sa"></span><span class="s1">&#39;</span><span class="s1">figure.figsize</span><span class="s1">&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">figsize</span>
+
+<span class="n">set_figsize</span><span class="p">(</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">features</span><span class="p">[</span><span class="p">:</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">asnumpy</span><span class="p">(</span><span class="p">)</span><span class="p">,</span> <span class="n">labels</span><span class="o">.</span><span class="n">asnumpy</span><span class="p">(</span><span class="p">)</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span><span class="p">;</span>  <span class="c1"># 加分号只显示图</span>
+</code></pre></td></tr></table>
+</div>
+</div><p><img src="https://i.loli.net/2020/02/23/pmgrCV7WMUP6Gij.png" alt="" /></p>
+<p>data_iter函数作用:</p>
+<ol>
+<li>扰乱读取顺序，使得读取随机</li>
+<li>按Batch_size分段取数据，需要判断是否到结尾，使用yield构建生成器节省内存</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># 本函数已保存在d2lzh包中方便以后使用</span>
+<span class="k">def</span> <span class="nf">data_iter</span><span class="p">(</span><span class="n">batch_size</span><span class="p">,</span> <span class="n">features</span><span class="p">,</span> <span class="n">labels</span><span class="p">)</span><span class="p">:</span>
+    <span class="n">num_examples</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">features</span><span class="p">)</span>
+    <span class="n">indices</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">num_examples</span><span class="p">)</span><span class="p">)</span>
+    <span class="n">random</span><span class="o">.</span><span class="n">shuffle</span><span class="p">(</span><span class="n">indices</span><span class="p">)</span>  <span class="c1"># 样本的读取顺序是随机的</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">num_examples</span><span class="p">,</span> <span class="n">batch_size</span><span class="p">)</span><span class="p">:</span>
+        <span class="n">j</span> <span class="o">=</span> <span class="n">nd</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">indices</span><span class="p">[</span><span class="n">i</span><span class="p">:</span> <span class="nb">min</span><span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="n">batch_size</span><span class="p">,</span> <span class="n">num_examples</span><span class="p">)</span><span class="p">]</span><span class="p">)</span>
+        <span class="k">yield</span> <span class="n">features</span><span class="o">.</span><span class="n">take</span><span class="p">(</span><span class="n">j</span><span class="p">)</span><span class="p">,</span> <span class="n">labels</span><span class="o">.</span><span class="n">take</span><span class="p">(</span><span class="n">j</span><span class="p">)</span>  <span class="c1"># take函数根据索引返回对应元素</span>
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">batch_size</span> <span class="o">=</span> <span class="mi">10</span>
+
+<span class="k">for</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">data_iter</span><span class="p">(</span><span class="n">batch_size</span><span class="p">,</span> <span class="n">features</span><span class="p">,</span> <span class="n">labels</span><span class="p">)</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+    <span class="k">break</span>
+</code></pre></td></tr></table>
+</div>
+</div><pre><code>[[-0.65439206  0.74410725]
+ [ 0.69013244 -0.6483847 ]
+ [-0.59409887  0.3589477 ]
+ [-0.47491348  0.6438462 ]
+ [ 0.5074032   0.42834154]
+ [-0.18589513 -0.21707669]
+ [ 0.70281196 -1.3320632 ]
+ [ 1.2072632   1.6909351 ]
+ [-0.17264698 -1.5742793 ]
+ [-1.6516455  -0.29966688]]
+&lt;NDArray 10x2 @cpu(0)&gt; 
+[ 0.37379816  7.7938933   1.7758217   1.0414512   3.743439    4.5605783
+ 10.148926    0.84148276  9.19984     1.9295483 ]
+&lt;NDArray 10 @cpu(0)&gt;
+</code></pre>
+<p>初始化</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">w</span> <span class="o">=</span> <span class="n">nd</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="n">scale</span><span class="o">=</span><span class="mf">0.01</span><span class="p">,</span> <span class="n">shape</span><span class="o">=</span><span class="p">(</span><span class="n">num_inputs</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span><span class="p">)</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">nd</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">shape</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="p">)</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>添加保存梯度的空间</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">w</span><span class="o">.</span><span class="n">attach_grad</span><span class="p">(</span><span class="p">)</span>
+<span class="n">b</span><span class="o">.</span><span class="n">attach_grad</span><span class="p">(</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">linreg</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">w</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span><span class="p">:</span>  <span class="c1"># 本函数已保存在d2lzh包中方便以后使用</span>
+    <span class="k">return</span> <span class="n">nd</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">w</span><span class="p">)</span> <span class="o">+</span> <span class="n">b</span>
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">squared_loss</span><span class="p">(</span><span class="n">y_hat</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span><span class="p">:</span>  <span class="c1"># 本函数已保存在d2lzh包中方便以后使用</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">y_hat</span> <span class="o">-</span> <span class="n">y</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">y_hat</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span><span class="p">)</span> <span class="o">*</span><span class="o">*</span> <span class="mi">2</span> <span class="o">/</span> <span class="mi">2</span>
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">sgd</span><span class="p">(</span><span class="n">params</span><span class="p">,</span> <span class="n">lr</span><span class="p">,</span> <span class="n">batch_size</span><span class="p">)</span><span class="p">:</span>  <span class="c1"># 本函数已保存在d2lzh包中方便以后使用</span>
+    <span class="k">for</span> <span class="n">param</span> <span class="ow">in</span> <span class="n">params</span><span class="p">:</span>
+        <span class="n">param</span><span class="p">[</span><span class="p">:</span><span class="p">]</span> <span class="o">=</span> <span class="n">param</span> <span class="o">-</span> <span class="n">lr</span> <span class="o">*</span> <span class="n">param</span><span class="o">.</span><span class="n">grad</span> <span class="o">/</span> <span class="n">batch_size</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>开始训练</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">lr</span> <span class="o">=</span> <span class="mf">0.03</span>
+<span class="n">num_epochs</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">net</span> <span class="o">=</span> <span class="n">linreg</span>
+<span class="n">loss</span> <span class="o">=</span> <span class="n">squared_loss</span>
+
+<span class="k">for</span> <span class="n">epoch</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num_epochs</span><span class="p">)</span><span class="p">:</span>  <span class="c1"># 训练模型一共需要num_epochs个迭代周期</span>
+    <span class="c1"># 在每一个迭代周期中，会使用训练数据集中所有样本一次（假设样本数能够被批量大小整除）。X</span>
+    <span class="c1"># 和y分别是小批量样本的特征和标签</span>
+    <span class="k">for</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">data_iter</span><span class="p">(</span><span class="n">batch_size</span><span class="p">,</span> <span class="n">features</span><span class="p">,</span> <span class="n">labels</span><span class="p">)</span><span class="p">:</span>
+        <span class="k">with</span> <span class="n">autograd</span><span class="o">.</span><span class="n">record</span><span class="p">(</span><span class="p">)</span><span class="p">:</span>
+            <span class="n">l</span> <span class="o">=</span> <span class="n">loss</span><span class="p">(</span><span class="n">net</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">w</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>  <span class="c1"># l是有关小批量X和y的损失</span>
+        <span class="n">l</span><span class="o">.</span><span class="n">backward</span><span class="p">(</span><span class="p">)</span>  <span class="c1"># 小批量的损失对模型参数求梯度</span>
+        <span class="n">sgd</span><span class="p">(</span><span class="p">[</span><span class="n">w</span><span class="p">,</span> <span class="n">b</span><span class="p">]</span><span class="p">,</span> <span class="n">lr</span><span class="p">,</span> <span class="n">batch_size</span><span class="p">)</span>  <span class="c1"># 使用小批量随机梯度下降迭代模型参数</span>
+    <span class="n">train_l</span> <span class="o">=</span> <span class="n">loss</span><span class="p">(</span><span class="n">net</span><span class="p">(</span><span class="n">features</span><span class="p">,</span> <span class="n">w</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span><span class="p">,</span> <span class="n">labels</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="sa"></span><span class="s1">&#39;</span><span class="s1">epoch </span><span class="si">%d</span><span class="s1">, loss </span><span class="si">%f</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">epoch</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">train_l</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="p">)</span><span class="o">.</span><span class="n">asnumpy</span><span class="p">(</span><span class="p">)</span><span class="p">)</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><pre><code>epoch 1, loss 0.040809
+epoch 2, loss 0.000157
+epoch 3, loss 0.000051
+</code></pre>
+<p>对比</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">true_w</span><span class="p">,</span> <span class="n">w</span>
+</code></pre></td></tr></table>
+</div>
+</div><pre><code>(
+ [ 2.  -3.4]
+ &lt;NDArray 2 @cpu(0)&gt;,
+ 
+ [[ 1.9991481]
+  [-3.3992586]]
+ &lt;NDArray 2x1 @cpu(0)&gt;)
+</code></pre>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">true_b</span><span class="p">,</span> <span class="n">b</span>
+</code></pre></td></tr></table>
+</div>
+</div><pre><code>(
+ [4.2]
+ &lt;NDArray 1 @cpu(0)&gt;,
+ 
+ [4.19921]
+ &lt;NDArray 1 @cpu(0)&gt;)
+</code></pre>
     </article>
     <script>
   'use strict';
@@ -1573,13 +1923,13 @@
     
     
       
-        <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fvhope.cf%2fzh%2fposts%2fagency%2f" title="Facebook" aria-label="Facebook Share Button" class="donation__item" target="_blank" rel="noreferrer" data-type="share">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fvhope.cf%2fzh%2fposts%2fdl%2fmxnet-begin%2f" title="Facebook" aria-label="Facebook Share Button" class="donation__item" target="_blank" rel="noreferrer" data-type="share">
           <svg data-name="facebook" enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="35" height="35" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z"/></svg>
         </a>
       
     
       
-        <a href="https://twitter.com/intent/tweet?text=Agency&url=https%3a%2f%2fvhope.cf%2fzh%2fposts%2fagency%2f&hashtags=%e4%bb%a3%e7%90%86%2cpython%2c%e7%88%ac%e8%99%ab&via=Victor" title="Twitter" aria-label="Twitter Share Button" class="donation__item" target="_blank" rel="noreferrer" data-type="share">
+        <a href="https://twitter.com/intent/tweet?text=MXNet%e5%9b%9e%e9%a1%be&url=https%3a%2f%2fvhope.cf%2fzh%2fposts%2fdl%2fmxnet-begin%2f&hashtags=python%2cMXNet%2c%e6%b7%b1%e5%ba%a6%e5%ad%a6%e4%b9%a0%2cliner&via=Victor" title="Twitter" aria-label="Twitter Share Button" class="donation__item" target="_blank" rel="noreferrer" data-type="share">
           <svg data-name="twitter" enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="35" height="35" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="m21.534 7.113c.976-.693 1.797-1.558 2.466-2.554v-.001c-.893.391-1.843.651-2.835.777 1.02-.609 1.799-1.566 2.165-2.719-.951.567-2.001.967-3.12 1.191-.903-.962-2.19-1.557-3.594-1.557-2.724 0-4.917 2.211-4.917 4.921 0 .39.033.765.114 1.122-4.09-.2-7.71-2.16-10.142-5.147-.424.737-.674 1.58-.674 2.487 0 1.704.877 3.214 2.186 4.089-.791-.015-1.566-.245-2.223-.606v.054c0 2.391 1.705 4.377 3.942 4.835-.401.11-.837.162-1.29.162-.315 0-.633-.018-.931-.084.637 1.948 2.447 3.381 4.597 3.428-1.674 1.309-3.8 2.098-6.101 2.098-.403 0-.79-.018-1.177-.067 2.18 1.405 4.762 2.208 7.548 2.208 8.683 0 14.342-7.244 13.986-14.637z"/></svg>
         </a>
       
@@ -1718,22 +2068,37 @@
     <section class="related">
     
     
+    <h1 class="related__title">
+      <hr class="hr-dots"/>
+      <div>
+        相关内容
+      </div>
+      <hr class="hr-dots"/>
+    </h1>
+    <ul class="related-ul">
+        
+        <li>
+          <a href="/zh/posts/dl/pytorch-begin/" class="related__link">Pytorch Begin</a>
+        </li>
+        
+    </ul>
+    
   </section>
     <div class="grow"></div>
 <nav class="pagination-single">
   
     
-      <a href="https://vhope.cf/zh/posts/markdown-deep/" class="pagination-single__left">
+      <a href="https://vhope.cf/zh/posts/dl/pytorch-begin/" class="pagination-single__left">
         <div class="pagination-single__icon">
           <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M19 11H7.83l4.88-4.88c.39-.39.39-1.03 0-1.42-.39-.39-1.02-.39-1.41 0l-6.59 6.59c-.39.39-.39 1.02 0 1.41l6.59 6.59c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L7.83 13H19c.55 0 1-.45 1-1s-.45-1-1-1z"/></svg>
         </div>
-        <div class="pagination-single__left-title">Markdown深入使用</div>      
+        <div class="pagination-single__left-title">Pytorch Begin</div>      
       </a>
     
     <div class="grow"></div>
     
-      <a href="https://vhope.cf/zh/posts/2020-fanqiang/" class="pagination-single__right">      
-        <div class="pagination-single__right-title">2020翻墙指南👈</div>
+      <a href="https://vhope.cf/zh/posts/data-analysis-begin/" class="pagination-single__right">      
+        <div class="pagination-single__right-title">Data Analysis Begin</div>
         <div class="pagination-single__icon">
           <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 1.42.39.39 1.02.39 1.41 0l6.59-6.59c.39-.39.39-1.02 0-1.41l-6.58-6.6c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41L16.17 11H5c-.55 0-1 .45-1 1s.45 1 1 1z"/></svg>
         </div>
@@ -2094,7 +2459,14 @@ document.addEventListener('DOMContentLoaded', function () {
   <div class="toc " data-dir="ltr" data-folding="true">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#代理介绍">代理介绍</a></li>
+    <li>
+      <ul>
+        <li><a href="#本地环境搭建教程">本地环境搭建教程</a></li>
+        <li><a href="#范数">范数</a></li>
+        <li><a href="#查阅文档">查阅文档</a></li>
+        <li><a href="#线性回归">线性回归</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
   </div>
@@ -2179,9 +2551,43 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha256-V8SV2MO1FUb63Bwht5Wx9x6PVHNa02gv8BgH/uH3ung=" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha256-F/Xda58SPdcUCr&#43;xhSGz9MA2zQBPb0ASEYKohl8UCHc=" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha256-90d2pnfw0r4K8CZAWPko4rpFXQsZvJhTBGYNkipDprI=" crossorigin="anonymous"></script>
 
 
 
+
+
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$']],
+        processEscapes: true,
+        processEnvironments: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        TeX: {
+          equationNumbers: { autoNumber: "AMS" },
+          extensions: ["AMSmath.js", "AMSsymbols.js"]
+        }
+      }
+    });
+    MathJax.Hub.Queue(function () {
+      
+      
+      
+      var all = MathJax.Hub.getAllJax(), i;
+      for (i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+    });
+
+    MathJax.Hub.Config({
+      
+      TeX: { equationNumbers: { autoNumber: "AMS" } }
+    });
+  </script>
 
 
 
@@ -2542,7 +2948,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     
     
-    var lib = JSON.parse("null");
+    var lib = JSON.parse("[\"katex\",\"mathjax\"]");
 
     if (lib && lib.includes('mermaid')) {
       
@@ -2752,7 +3158,7 @@ document.addEventListener('DOMContentLoaded', function () {
         
           
             
-              <a href="https://vhope.cf/zh/posts/agency/" data-lang="zh" class="dropdown-item is-active">中文</a>
+              <a href="https://vhope.cf/zh/posts/dl/mxnet-begin/" data-lang="zh" class="dropdown-item is-active">中文</a>
             
           
         
@@ -2861,7 +3267,7 @@ document.addEventListener('DOMContentLoaded', function () {
             
     
     
-  <a href="https://vhope.cf/zh/posts/agency//index.xml" type="application/rss+xml" title="rss" aria-label="RSS Feed Link">
+  <a href="https://vhope.cf/zh/posts/dl/mxnet-begin//index.xml" type="application/rss+xml" title="rss" aria-label="RSS Feed Link">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><circle fill="currentColor" cx="6.18" cy="17.82" r="2.18"/><path fill="currentColor" d="M5.59 10.23c-.84-.14-1.59.55-1.59 1.4 0 .71.53 1.28 1.23 1.4 2.92.51 5.22 2.82 5.74 5.74.12.7.69 1.23 1.4 1.23.85 0 1.54-.75 1.41-1.59-.68-4.2-3.99-7.51-8.19-8.18zm-.03-5.71C4.73 4.43 4 5.1 4 5.93c0 .73.55 1.33 1.27 1.4 6.01.6 10.79 5.38 11.39 11.39.07.73.67 1.28 1.4 1.28.84 0 1.5-.73 1.42-1.56-.73-7.34-6.57-13.19-13.92-13.92z"/></svg>
   </a>
 

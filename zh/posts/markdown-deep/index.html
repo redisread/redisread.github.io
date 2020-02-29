@@ -1534,6 +1534,9 @@
         <li><a href="#参考链接">参考链接📖</a></li>
         <li><a href="#删除线">删除线❌</a></li>
         <li><a href="#高亮">高亮🔆</a></li>
+        <li><a href="#插入视频">插入视频📹</a></li>
+        <li><a href="#插入音乐">插入音乐🎼</a></li>
+        <li><a href="#随机图片">随机图片🌳</a></li>
       </ul>
     </li>
   </ul>
@@ -1714,7 +1717,31 @@ And then define the link:
 <pre class="chroma"><code class="language-markdown" data-lang="markdown">==highlight==
 </code></pre></td></tr></table>
 </div>
+</div><h3 id="插入视频">插入视频📹</h3>
+<p><video poster="https://i.loli.net/2020/02/29/S4oN2djFDZYiqAx.png" src="https://files.catbox.moe/bqrntc.flv" style="max-height :100%; max-width: 100%; display: block; margin-left: auto; margin-right: auto;" controls="controls" loop="loop" preload="meta">Your browser does not support the video tag.</video></p>
+<p>上面的代码即：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">video</span> <span class="na">poster</span><span class="o">=</span><span class="s">&#34;https://i.loli.net/2020/02/29/S4oN2djFDZYiqAx.png&#34;</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://files.catbox.moe/bqrntc.flv&#34;</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;max-height :100%; max-width: 100%; display: block; margin-left: auto; margin-right: auto;&#34;</span> <span class="na">controls</span><span class="o">=</span><span class="s">&#34;controls&#34;</span> <span class="na">loop</span><span class="o">=</span><span class="s">&#34;loop&#34;</span> <span class="na">preload</span><span class="o">=</span><span class="s">&#34;meta&#34;</span><span class="p"></span><span class="p">&gt;</span>Your browser does not support the video tag.<span class="p">&lt;</span><span class="p">/</span><span class="nt">video</span><span class="p">&gt;</span>
+</code></pre></td></tr></table>
 </div>
+</div><h3 id="插入音乐">插入音乐🎼</h3>
+<p><audio src="https://files.catbox.moe/wjiywu.mp3" style="max-height :100%; max-width: 100%; display: block; margin-left: auto; margin-right: auto;" controls="controls" loop="loop" preload="meta">Your browser does not support the audio tag.</audio></p>
+<p>上面的代码即：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">audio</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://files.catbox.moe/wjiywu.mp3&#34;</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;max-height :100%; max-width: 100%; display: block; margin-left: auto; margin-right: auto;&#34;</span> <span class="na">controls</span><span class="o">=</span><span class="s">&#34;controls&#34;</span> <span class="na">loop</span><span class="o">=</span><span class="s">&#34;loop&#34;</span> <span class="na">preload</span><span class="o">=</span><span class="s">&#34;meta&#34;</span><span class="p"></span><span class="p">&gt;</span>Your browser does not support the audio tag.<span class="p">&lt;</span><span class="p">/</span><span class="nt">audio</span><span class="p">&gt;</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="随机图片">随机图片🌳</h3>
+<p>网址:https://picsum.photos/1920/1080</p>
+<p><img src="https://picsum.photos/1920/1080" alt="random" /></p>
     </article>
     <script>
   'use strict';
@@ -1933,8 +1960,8 @@ And then define the link:
     
     <div class="grow"></div>
     
-      <a href="https://vhope.cf/zh/posts/agency/" class="pagination-single__right">      
-        <div class="pagination-single__right-title">Agency</div>
+      <a href="https://vhope.cf/zh/posts/2020-fanqiang/" class="pagination-single__right">      
+        <div class="pagination-single__right-title">2020翻墙指南👈</div>
         <div class="pagination-single__icon">
           <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 1.42.39.39 1.02.39 1.41 0l6.59-6.59c.39-.39.39-1.02 0-1.41l-6.58-6.6c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41L16.17 11H5c-.55 0-1 .45-1 1s.45 1 1 1z"/></svg>
         </div>
@@ -2307,6 +2334,9 @@ document.addEventListener('DOMContentLoaded', function () {
         <li><a href="#参考链接">参考链接📖</a></li>
         <li><a href="#删除线">删除线❌</a></li>
         <li><a href="#高亮">高亮🔆</a></li>
+        <li><a href="#插入视频">插入视频📹</a></li>
+        <li><a href="#插入音乐">插入音乐🎼</a></li>
+        <li><a href="#随机图片">随机图片🌳</a></li>
       </ul>
     </li>
   </ul>

@@ -27,19 +27,19 @@
       
       <item>
         <title>MXNet回顾</title>
-        <link>https://vhope.cf/zh/posts/mxnet-begin/</link>
+        <link>https://vhope.cf/zh/posts/dl/mxnet-begin/</link>
         <pubDate>Sun, 23 Feb 2020 15:49:10 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>https://vhope.cf/zh/posts/mxnet-begin/</guid>
+        <guid>https://vhope.cf/zh/posts/dl/mxnet-begin/</guid>
         <description>&lt;p&gt;使用MXNet的好处你永远想象不到。🉑&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>Pytorch Begin</title>
-        <link>https://vhope.cf/zh/posts/pytorch-begin/</link>
+        <link>https://vhope.cf/zh/posts/dl/pytorch-begin/</link>
         <pubDate>Sat, 22 Feb 2020 22:49:28 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>https://vhope.cf/zh/posts/pytorch-begin/</guid>
+        <guid>https://vhope.cf/zh/posts/dl/pytorch-begin/</guid>
         <description>&lt;p&gt;重新学习一下DL，这次使用PyTorch框架🔦&lt;/p&gt;</description>
       </item>
       
@@ -50,15 +50,6 @@
         <author>1427298682@qq.com (redisread)</author>
         <guid>https://vhope.cf/zh/posts/2020-fanqiang/</guid>
         <description>&lt;p&gt;一份还算可以的翻墙清单📇&lt;/p&gt;</description>
-      </item>
-      
-      <item>
-        <title>Agency</title>
-        <link>https://vhope.cf/zh/posts/agency/</link>
-        <pubDate>Fri, 14 Feb 2020 16:55:17 +0800</pubDate>
-        <author>1427298682@qq.com (redisread)</author>
-        <guid>https://vhope.cf/zh/posts/agency/</guid>
-        <description>&lt;p&gt;What is &lt;code&gt;agency&lt;/code&gt;?❔&lt;/p&gt;</description>
       </item>
       
       <item>
@@ -139,7 +130,7 @@
         <pubDate>Thu, 30 Jan 2020 12:50:46 +0900</pubDate>
         <author>1427298682@qq.com (redisread)</author>
         <guid>https://vhope.cf/zh/about/</guid>
-        <description>我是一个不够严谨的程序员🙉. 我喜欢📖,还有🏓.</description>
+        <description>我是一个不够严谨的程序员🙉. 我喜欢📖,还有🏓. 或许有时候我想的不够远，但是有时候我想的很深入。</description>
       </item>
       
       <item>
@@ -153,10 +144,10 @@
       
       <item>
         <title>Shortcodes</title>
-        <link>https://vhope.cf/zh/posts/shortcodes/</link>
+        <link>https://vhope.cf/zh/posts/hugo/shortcodes/</link>
         <pubDate>Sat, 25 Jan 2020 06:40:51 +0900</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>https://vhope.cf/zh/posts/shortcodes/</guid>
+        <guid>https://vhope.cf/zh/posts/hugo/shortcodes/</guid>
         <description>Markdownify box This is boxmd shortcode Simple box This is **box** shortcode  Code tabs Make it easy to switch between different code
 java javascript  1  System.out.println(&amp;#39;Hello World!&amp;#39;);     1  console.log(&amp;#39;Hello World!&amp;#39;);       &#39;use strict&#39;; var containerId = JSON.parse(&#34;\&#34;642b4352e05d9e04\&#34;&#34;); var containerElem = document.getElementById(containerId); var codetabLinks = null; var codetabContents = null; var ids = []; if (containerElem) { codetabLinks = containerElem.</description>
       </item>
