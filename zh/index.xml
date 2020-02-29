@@ -17,6 +17,24 @@
     
       
       <item>
+        <title>My Hugo Lib</title>
+        <link>https://vhope.cf/zh/showcase/hugo/myblog/</link>
+        <pubDate>Sun, 19 Jan 2020 21:13:42 +0900</pubDate>
+        <author>1427298682@qq.com (redisread)</author>
+        <guid>https://vhope.cf/zh/showcase/hugo/myblog/</guid>
+        <description></description>
+      </item>
+      
+      <item>
+        <title>My Hugo Item</title>
+        <link>https://vhope.cf/zh/showcase/hugo/myitem/</link>
+        <pubDate>Sun, 19 Jan 2020 21:13:42 +0900</pubDate>
+        <author>1427298682@qq.com (redisread)</author>
+        <guid>https://vhope.cf/zh/showcase/hugo/myitem/</guid>
+        <description></description>
+      </item>
+      
+      <item>
         <title>Data Analysis Begin</title>
         <link>https://vhope.cf/zh/posts/data-analysis-begin/</link>
         <pubDate>Mon, 24 Feb 2020 13:46:59 +0800</pubDate>
