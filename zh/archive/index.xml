@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Archives on ✏Victor&#39;s Blog</title>
+    <title>Archive on ✏Victor&#39;s Blog</title>
     <link>https://vhope.cf/zh/archive/</link>
-    <description>Recent content in Archives on ✏Victor&#39;s Blog</description>
+    <description>Recent content in Archive on ✏Victor&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
     <managingEditor>1427298682@qq.com (redisread)</managingEditor>
@@ -15,15 +15,6 @@
     
     
     
-      
-      <item>
-        <title>Archive</title>
-        <link>https://vhope.cf/zh/archive/</link>
-        <pubDate>Thu, 30 Jan 2020 12:50:46 +0900</pubDate>
-        <author>1427298682@qq.com (redisread)</author>
-        <guid>https://vhope.cf/zh/archive/</guid>
-        <description>This is Archive</description>
-      </item>
       
     
   </channel>
