@@ -17,24 +17,6 @@
     
       
       <item>
-        <title>My Hugo Lib</title>
-        <link>https://vhope.cf/zh/showcase/hugo/myblog/</link>
-        <pubDate>Sun, 19 Jan 2020 21:13:42 +0900</pubDate>
-        <author>1427298682@qq.com (redisread)</author>
-        <guid>https://vhope.cf/zh/showcase/hugo/myblog/</guid>
-        <description></description>
-      </item>
-      
-      <item>
-        <title>My Hugo Item</title>
-        <link>https://vhope.cf/zh/showcase/hugo/myitem/</link>
-        <pubDate>Sun, 19 Jan 2020 21:13:42 +0900</pubDate>
-        <author>1427298682@qq.com (redisread)</author>
-        <guid>https://vhope.cf/zh/showcase/hugo/myitem/</guid>
-        <description></description>
-      </item>
-      
-      <item>
         <title>Slides和网页PPT</title>
         <link>https://vhope.cf/zh/posts/ppt-use/</link>
         <pubDate>Sun, 01 Mar 2020 15:18:15 +0800</pubDate>
@@ -49,6 +31,15 @@
         <pubDate>Sun, 01 Mar 2020 00:24:52 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
         <guid>https://vhope.cf/zh/presentation/mypt/</guid>
+        <description></description>
+      </item>
+      
+      <item>
+        <title>Resume</title>
+        <link>https://vhope.cf/zh/resume/</link>
+        <pubDate>Sat, 29 Feb 2020 20:13:59 +0900</pubDate>
+        <author>1427298682@qq.com (redisread)</author>
+        <guid>https://vhope.cf/zh/resume/</guid>
         <description></description>
       </item>
       
@@ -134,15 +125,6 @@
       </item>
       
       <item>
-        <title>Resume</title>
-        <link>https://vhope.cf/zh/resume/</link>
-        <pubDate>Sun, 09 Feb 2020 20:13:59 +0900</pubDate>
-        <author>1427298682@qq.com (redisread)</author>
-        <guid>https://vhope.cf/zh/resume/</guid>
-        <description></description>
-      </item>
-      
-      <item>
         <title>配置基于Github的PicGo图床</title>
         <link>https://vhope.cf/zh/posts/image-bed/</link>
         <pubDate>Tue, 04 Feb 2020 23:51:21 +0900</pubDate>
@@ -166,7 +148,7 @@
         <pubDate>Thu, 30 Jan 2020 12:50:46 +0900</pubDate>
         <author>1427298682@qq.com (redisread)</author>
         <guid>https://vhope.cf/zh/about/</guid>
-        <description>我是一个不够严谨的程序员🙉. 我喜欢📖,还有🏓. 或许有时候我想的不够远，但是有时候我想的很深入。</description>
+        <description>我是一个不够严谨的程序员🙉. 我喜欢📖,还有🏓. 或许有时候我想的不够远，但是有时候我想的很深入。 我最喜欢的 Aaron Swartz 语录: 在长大的过程中，我才慢慢发</description>
       </item>
       
       <item>
@@ -185,9 +167,7 @@ java javascript  1  System.out.println(&amp;#39;Hello World!&amp;#39;);     1  c
         <pubDate>Tue, 31 Dec 2019 00:04:50 +0900</pubDate>
         <author>1427298682@qq.com (redisread)</author>
         <guid>https://vhope.cf/zh/talks/mylinks/</guid>
-        <description>A Short Video：
-Your browser does not support the video tag.
-Your browser does not support the video tag.</description>
+        <description>A Short Video： Your browser does not support the video tag. ——以下 Aaron Swartz的宣言，我想这才是信息革命的真谛—— 信息就是力量。但就像所有力量一样，有些人只想占为己</description>
       </item>
       
       <item>
