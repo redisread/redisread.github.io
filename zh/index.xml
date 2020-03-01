@@ -9,12 +9,21 @@
     <managingEditor>1427298682@qq.com (redisread)</managingEditor>
     <webMaster>1427298682@qq.com (redisread)</webMaster>
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Sun, 01 Mar 2020 15:18:15 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 02 Mar 2020 01:19:51 +0800</lastBuildDate>
     
         <atom:link href="https://vhope.cf/zh/index.xml" rel="self" type="application/rss+xml" />
     
     
     
+      
+      <item>
+        <title>视频的收集</title>
+        <link>https://vhope.cf/zh/posts/collect-videos/</link>
+        <pubDate>Mon, 02 Mar 2020 01:19:51 +0800</pubDate>
+        <author>1427298682@qq.com (redisread)</author>
+        <guid>https://vhope.cf/zh/posts/collect-videos/</guid>
+        <description>&lt;p&gt;🚴一些手机视频的方法⚒&lt;/p&gt;</description>
+      </item>
       
       <item>
         <title>Slides和网页PPT</title>
@@ -231,6 +240,15 @@ java javascript  1  System.out.println(&amp;#39;Hello World!&amp;#39;);     1  c
         <author>1427298682@qq.com (redisread)</author>
         <guid>https://vhope.cf/zh/presentation/first/</guid>
         <description></description>
+      </item>
+      
+      <item>
+        <title>B站视频</title>
+        <link>https://vhope.cf/zh/talks/blibli/</link>
+        <pubDate>Fri, 01 Mar 2019 00:04:50 +0900</pubDate>
+        <author>1427298682@qq.com (redisread)</author>
+        <guid>https://vhope.cf/zh/talks/blibli/</guid>
+        <description>一个测试视频:</description>
       </item>
       
     
