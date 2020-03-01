@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://vhope.cf/zh/showcase/hugo/myblog/</loc>
+    <lastmod>2020-01-19T21:13:42+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://vhope.cf/zh/showcase/hugo/myitem/</loc>
+    <lastmod>2020-01-19T21:13:42+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://vhope.cf/zh/</loc>
     <lastmod>2020-03-02T01:19:51+08:00</lastmod>
     <xhtml:link
@@ -410,6 +420,21 @@
   <url>
     <loc>https://vhope.cf/zh/posts/hugo/shortcodes/</loc>
     <lastmod>2020-01-25T06:40:51+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://vhope.cf/zh/showcase/hugo/</loc>
+    <lastmod>2020-01-19T21:04:11+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://vhope.cf/en/showcase/hugo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://vhope.cf/zh/showcase/hugo/"
+                />
   </url>
   
   <url>
