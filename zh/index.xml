@@ -9,7 +9,7 @@
     <managingEditor>1427298682@qq.com (redisread)</managingEditor>
     <webMaster>1427298682@qq.com (redisread)</webMaster>
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Wed, 04 Mar 2020 16:35:09 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 04 Mar 2020 22:30:46 +0800</lastBuildDate>
     
         <atom:link href="https://vhope.cf/zh/index.xml" rel="self" type="application/rss+xml" />
     
@@ -17,7 +17,34 @@
     
       
       <item>
-        <title>Scrapy 1</title>
+        <title>My Hugo Lib</title>
+        <link>https://vhope.cf/zh/showcase/hugo/myblog/</link>
+        <pubDate>Sun, 19 Jan 2020 21:13:42 +0900</pubDate>
+        <author>1427298682@qq.com (redisread)</author>
+        <guid>https://vhope.cf/zh/showcase/hugo/myblog/</guid>
+        <description></description>
+      </item>
+      
+      <item>
+        <title>My Hugo Item</title>
+        <link>https://vhope.cf/zh/showcase/hugo/myitem/</link>
+        <pubDate>Sun, 19 Jan 2020 21:13:42 +0900</pubDate>
+        <author>1427298682@qq.com (redisread)</author>
+        <guid>https://vhope.cf/zh/showcase/hugo/myitem/</guid>
+        <description></description>
+      </item>
+      
+      <item>
+        <title>Hero</title>
+        <link>https://vhope.cf/zh/gallery/hero/</link>
+        <pubDate>Wed, 04 Mar 2020 22:30:46 +0800</pubDate>
+        <author>1427298682@qq.com (redisread)</author>
+        <guid>https://vhope.cf/zh/gallery/hero/</guid>
+        <description>一些英雄的图案🌿</description>
+      </item>
+      
+      <item>
+        <title>Scrapy框架</title>
         <link>https://vhope.cf/zh/posts/scrapy-1/</link>
         <pubDate>Wed, 04 Mar 2020 16:35:09 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
@@ -230,7 +257,7 @@ java javascript  1  System.out.println(&amp;#39;Hello World!&amp;#39;);     1  c
         <pubDate>Thu, 31 Oct 2019 10:20:16 +0900</pubDate>
         <author>1427298682@qq.com (redisread)</author>
         <guid>https://vhope.cf/zh/gallery/movie/</guid>
-        <description></description>
+        <description>between 40 and 240 in movies good movies！🎥</description>
       </item>
       
       <item>
