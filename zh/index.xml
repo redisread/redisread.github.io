@@ -9,12 +9,21 @@
     <managingEditor>1427298682@qq.com (redisread)</managingEditor>
     <webMaster>1427298682@qq.com (redisread)</webMaster>
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Wed, 04 Mar 2020 22:30:46 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 08 Mar 2020 23:33:24 +0800</lastBuildDate>
     
         <atom:link href="https://vhope.cf/zh/index.xml" rel="self" type="application/rss+xml" />
     
     
     
+      
+      <item>
+        <title>机器学习基本算法</title>
+        <link>https://vhope.cf/zh/posts/machine-learning-base/</link>
+        <pubDate>Sun, 08 Mar 2020 23:33:24 +0800</pubDate>
+        <author>1427298682@qq.com (redisread)</author>
+        <guid>https://vhope.cf/zh/posts/machine-learning-base/</guid>
+        <description>&lt;p&gt;机器学习有这些基本的算法组成，要门机器学习，就需要打个地基✒&lt;/p&gt;</description>
+      </item>
       
       <item>
         <title>Hero</title>
