@@ -9,12 +9,21 @@
     <managingEditor>1427298682@qq.com (redisread)</managingEditor>
     <webMaster>1427298682@qq.com (redisread)</webMaster>
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Sun, 08 Mar 2020 23:33:24 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 11 Mar 2020 22:07:13 +0800</lastBuildDate>
     
         <atom:link href="https://vhope.cf/zh/series/index.xml" rel="self" type="application/rss+xml" />
     
     
     
+      
+      <item>
+        <title>算法与数据结构</title>
+        <link>https://vhope.cf/zh/series/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</link>
+        <pubDate>Wed, 11 Mar 2020 22:07:13 +0800</pubDate>
+        <author>1427298682@qq.com (redisread)</author>
+        <guid>https://vhope.cf/zh/series/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</guid>
+        <description></description>
+      </item>
       
       <item>
         <title>DL</title>
