@@ -2058,7 +2058,92 @@ void quickSort(T *arr,int size)
 </div><p>缺点:</p>
 <ol>
 <li>在近乎有序的数组排序中，快速排序的性能很差。时间复杂度也近乎$O(n^2 )$</li>
+<li>对于有很多重复元素的数组，快速排序的性能也很差</li>
 </ol>
+<h5 id="快速排序版本二两路快排">快速排序版本二：两路快排</h5>
+<p>使用两个下标分别处理大于v与小于v的部分。(v为基准元素)</p>
+<p>代码实现：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-C++" data-lang="C++"><span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="o">&gt;</span>
+<span class="kt">int</span> <span class="n">__partition2</span><span class="p">(</span><span class="n">T</span> <span class="o">*</span><span class="n">arr</span><span class="p">,</span><span class="kt">int</span> <span class="n">l</span><span class="p">,</span><span class="kt">int</span> <span class="n">r</span><span class="p">)</span><span class="p">{</span>
+    <span class="n">swap</span><span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="n">l</span><span class="p">]</span><span class="p">,</span><span class="n">arr</span><span class="p">[</span><span class="n">rand</span><span class="p">(</span><span class="p">)</span> <span class="o">%</span> <span class="p">(</span><span class="n">r</span><span class="o">-</span><span class="n">l</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">l</span><span class="p">]</span><span class="p">)</span><span class="p">;</span>
+    <span class="n">T</span> <span class="n">v</span> <span class="o">=</span> <span class="n">arr</span><span class="p">[</span><span class="n">l</span><span class="p">]</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">l</span>  <span class="o">+</span> <span class="mi">1</span><span class="p">,</span><span class="n">j</span> <span class="o">=</span> <span class="n">r</span><span class="p">;</span>
+    <span class="k">while</span><span class="p">(</span><span class="nb">true</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="k">while</span><span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">v</span> <span class="o">&amp;</span><span class="o">&amp;</span> <span class="n">i</span> <span class="o">&lt;</span><span class="o">=</span> <span class="n">r</span><span class="p">)</span> <span class="o">+</span><span class="o">+</span><span class="n">i</span><span class="p">;</span>
+        <span class="k">while</span><span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">v</span> <span class="o">&amp;</span><span class="o">&amp;</span> <span class="n">j</span> <span class="o">&gt;</span><span class="o">=</span> <span class="n">l</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="o">-</span><span class="o">-</span><span class="n">j</span><span class="p">;</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">i</span> <span class="o">&gt;</span> <span class="n">j</span><span class="p">)</span> <span class="k">break</span><span class="p">;</span>
+        <span class="n">swap</span><span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="o">+</span><span class="p">]</span><span class="p">,</span><span class="n">arr</span><span class="p">[</span><span class="n">j</span><span class="o">-</span><span class="o">-</span><span class="p">]</span><span class="p">)</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="n">swap</span><span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="n">l</span><span class="p">]</span><span class="p">,</span><span class="n">arr</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="p">)</span><span class="p">;</span>
+    <span class="k">return</span> <span class="n">j</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="o">&gt;</span>
+<span class="kt">void</span> <span class="n">__quickSort2</span><span class="p">(</span><span class="n">T</span> <span class="o">*</span><span class="n">arr</span><span class="p">,</span><span class="kt">int</span> <span class="n">l</span><span class="p">,</span><span class="kt">int</span> <span class="n">r</span><span class="p">)</span>
+<span class="p">{</span>
+     <span class="k">if</span><span class="p">(</span><span class="n">r</span> <span class="o">-</span> <span class="n">l</span><span class="o">&lt;</span><span class="o">=</span> <span class="mi">15</span><span class="p">)</span><span class="p">{</span>
+         <span class="n">insertSort</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span><span class="n">l</span><span class="p">,</span><span class="n">r</span><span class="p">)</span><span class="p">;</span>
+         <span class="k">return</span><span class="p">;</span>
+     <span class="p">}</span>
+        
+     <span class="kt">int</span> <span class="n">p</span> <span class="o">=</span> <span class="n">__partition2</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span><span class="n">l</span><span class="p">,</span><span class="n">r</span><span class="p">)</span><span class="p">;</span>
+     <span class="n">__quickSort2</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span><span class="n">l</span><span class="p">,</span><span class="n">p</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="p">;</span>
+     <span class="n">__quickSort2</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span><span class="n">p</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="n">r</span><span class="p">)</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">//快速排序版本二，双路快排
+</span><span class="c1"></span><span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="o">&gt;</span>
+<span class="kt">void</span> <span class="n">quickSort2</span><span class="p">(</span><span class="n">T</span> <span class="o">*</span><span class="n">arr</span><span class="p">,</span><span class="kt">int</span> <span class="n">size</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">srand</span><span class="p">(</span><span class="n">time</span><span class="p">(</span><span class="nb">NULL</span><span class="p">)</span><span class="p">)</span><span class="p">;</span>
+    <span class="n">__quickSort2</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="n">size</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h5 id="快速排序版本三三路快排">快速排序版本三：三路快排</h5>
+<p>使用三个下标分别处理大于v、等于v与小于v的部分。(v为基准元素)</p>
+<p>代码实现：</p>
 <h4 id="堆排序">堆排序</h4>
 <p><img src="https://gitee.com/wujiahong1998/MyBed/raw/master/img/heap.gif" alt="" /></p>
 <h3 id="排序算法总结">排序算法总结</h3>
@@ -3347,14 +3432,14 @@ document.addEventListener('DOMContentLoaded', function () {
       
       
         
-      
-        
         
           
             
               <a href="https://vhope.cf/zh/posts/sort/" data-lang="zh" class="dropdown-item is-active">中文</a>
             
           
+        
+      
         
       
         
