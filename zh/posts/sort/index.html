@@ -1489,7 +1489,7 @@
     <div class="single__meta">
       
 <div class="single__infos">
-  <time class="single__info" title="创建日期">📅&nbsp;2020年03月11日 </time>  &middot; <span class="single__info" title="阅读时长"> ☕ 4 分钟 </span>&middot; <span class="single__info" title="作者">👻&nbsp;Victor</span>
+  <time class="single__info" title="创建日期">📅&nbsp;2020年03月11日 </time>  &middot; <span class="single__info" title="阅读时长"> ☕ 5 分钟 </span>&middot; <span class="single__info" title="作者">👻&nbsp;Victor</span>
   <span class="single__info">
     
   </span>
@@ -2144,12 +2144,95 @@ void quickSort(T *arr,int size)
 </div><h5 id="快速排序版本三三路快排">快速排序版本三：三路快排</h5>
 <p>使用三个下标分别处理大于v、等于v与小于v的部分。(v为基准元素)</p>
 <p>代码实现：</p>
-<h4 id="堆排序">堆排序</h4>
-<p><img src="https://gitee.com/wujiahong1998/MyBed/raw/master/img/heap.gif" alt="" /></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-C++" data-lang="C++"><span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="o">&gt;</span>
+<span class="kt">void</span> <span class="n">__quickSort3</span><span class="p">(</span><span class="n">T</span> <span class="o">*</span><span class="n">arr</span><span class="p">,</span><span class="kt">int</span> <span class="n">l</span><span class="p">,</span><span class="kt">int</span> <span class="n">r</span><span class="p">)</span>
+<span class="p">{</span>
+     <span class="k">if</span><span class="p">(</span><span class="n">r</span> <span class="o">-</span> <span class="n">l</span><span class="o">&lt;</span><span class="o">=</span> <span class="mi">15</span><span class="p">)</span><span class="p">{</span>
+         <span class="n">insertSort</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span><span class="n">l</span><span class="p">,</span><span class="n">r</span><span class="p">)</span><span class="p">;</span>
+         <span class="k">return</span><span class="p">;</span>
+     <span class="p">}</span>
+    
+    <span class="n">swap</span><span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="n">l</span><span class="p">]</span><span class="p">,</span><span class="n">arr</span><span class="p">[</span><span class="n">rand</span><span class="p">(</span><span class="p">)</span> <span class="o">%</span> <span class="p">(</span><span class="n">r</span><span class="o">-</span><span class="n">l</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">l</span><span class="p">]</span><span class="p">)</span><span class="p">;</span>
+    <span class="n">T</span> <span class="n">v</span> <span class="o">=</span> <span class="n">arr</span><span class="p">[</span><span class="n">l</span><span class="p">]</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">lt</span> <span class="o">=</span> <span class="n">l</span><span class="p">;</span> <span class="c1">//arr[l+1...lt] &lt; v
+</span><span class="c1"></span>    <span class="kt">int</span> <span class="n">gt</span> <span class="o">=</span> <span class="n">r</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>  <span class="c1">//arr[gt...r] &gt; v
+</span><span class="c1"></span>    <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">l</span><span class="o">+</span><span class="mi">1</span><span class="p">;</span>    <span class="c1">//arr[lt+1...i] == v
+</span><span class="c1"></span>
+    <span class="k">while</span><span class="p">(</span><span class="n">i</span> <span class="o">&lt;</span> <span class="n">gt</span><span class="p">)</span><span class="p">{</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">v</span><span class="p">)</span><span class="p">{</span>
+            <span class="n">swap</span><span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="o">+</span><span class="p">]</span><span class="p">,</span><span class="n">arr</span><span class="p">[</span><span class="o">+</span><span class="o">+</span><span class="n">lt</span><span class="p">]</span><span class="p">)</span><span class="p">;</span>
+        <span class="p">}</span><span class="k">else</span> <span class="nf">if</span><span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">v</span><span class="p">)</span><span class="p">{</span>
+            <span class="n">swap</span><span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="p">,</span><span class="n">arr</span><span class="p">[</span><span class="o">-</span><span class="o">-</span><span class="n">gt</span><span class="p">]</span><span class="p">)</span><span class="p">;</span>
+        <span class="p">}</span><span class="k">else</span><span class="p">{</span>
+            <span class="n">i</span><span class="o">+</span><span class="o">+</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="n">swap</span><span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="n">l</span><span class="p">]</span><span class="p">,</span><span class="n">arr</span><span class="p">[</span><span class="n">lt</span><span class="p">]</span><span class="p">)</span><span class="p">;</span>
+    <span class="n">__quickSort3</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span><span class="n">l</span><span class="p">,</span><span class="n">lt</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="p">;</span>
+    <span class="n">__quickSort3</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span><span class="n">gt</span><span class="p">,</span><span class="n">r</span><span class="p">)</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">//快速排序版本三，三路快排
+</span><span class="c1"></span><span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="o">&gt;</span>
+<span class="kt">void</span> <span class="n">quickSort3</span><span class="p">(</span><span class="n">T</span> <span class="o">*</span><span class="n">arr</span><span class="p">,</span><span class="kt">int</span> <span class="n">size</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">srand</span><span class="p">(</span><span class="n">time</span><span class="p">(</span><span class="nb">NULL</span><span class="p">)</span><span class="p">)</span><span class="p">;</span>
+    <span class="n">__quickSort3</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="n">size</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="堆排序">堆排序</h4>
+<h4 id="基数排序">基数排序</h4>
+<h4 id="桶排序">桶排序</h4>
 <h3 id="排序算法总结">排序算法总结</h3>
 <p>图片：</p>
 <p><img src="https://gitee.com/wujiahong1998/MyBed/raw/master/img/20200316204231.png" alt="" /></p>
 <p>未完待续&hellip;&hellip;🛴</p>
+<hr />
+<p>参考：</p>
+<ol>
+<li><a href="https://www.cnblogs.com/onepixel/p/7674659.html">https://www.cnblogs.com/onepixel/p/7674659.html</a></li>
+<li><a href="https://github.com/MisterBooo/Article">https://github.com/MisterBooo/Article</a></li>
+</ol>
     </article>
     <script>
   'use strict';
@@ -2741,6 +2824,8 @@ document.addEventListener('DOMContentLoaded', function () {
             <li><a href="#希尔排序">希尔排序</a></li>
             <li><a href="#快速排序">快速排序</a></li>
             <li><a href="#堆排序">堆排序</a></li>
+            <li><a href="#基数排序">基数排序</a></li>
+            <li><a href="#桶排序">桶排序</a></li>
           </ul>
         </li>
         <li><a href="#排序算法总结">排序算法总结</a></li>
