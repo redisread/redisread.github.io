@@ -9,7 +9,7 @@
     <managingEditor>1427298682@qq.com (redisread)</managingEditor>
     <webMaster>1427298682@qq.com (redisread)</webMaster>
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Wed, 11 Mar 2020 22:07:13 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 17 Mar 2020 15:12:38 +0800</lastBuildDate>
     
         <atom:link href="https://vhope.cf/zh/posts/index.xml" rel="self" type="application/rss+xml" />
     
@@ -17,11 +17,20 @@
     
       
       <item>
+        <title>什么是Hash？</title>
+        <link>https://vhope.cf/zh/posts/hash/</link>
+        <pubDate>Tue, 17 Mar 2020 15:12:38 +0800</pubDate>
+        <author>1427298682@qq.com (redisread)</author>
+        <guid>https://vhope.cf/zh/posts/hash/</guid>
+        <description>&lt;p&gt;走得慢的时候，为什么不跑呢？#️⃣&lt;/p&gt;</description>
+      </item>
+      
+      <item>
         <title>排序算法总结</title>
-        <link>https://vhope.cf/zh/posts/sort/</link>
+        <link>https://vhope.cf/zh/posts/algorithmstructure/sort/</link>
         <pubDate>Wed, 11 Mar 2020 22:07:13 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>https://vhope.cf/zh/posts/sort/</guid>
+        <guid>https://vhope.cf/zh/posts/algorithmstructure/sort/</guid>
         <description>&lt;p&gt;排序是最基本的算法，里面包含了最基础的思想。一个简单的优化可以让排序快很多。&lt;/p&gt;</description>
       </item>
       
@@ -45,28 +54,28 @@
       
       <item>
         <title>视频的收集</title>
-        <link>https://vhope.cf/zh/posts/collect-videos/</link>
+        <link>https://vhope.cf/zh/posts/settings/collect-videos/</link>
         <pubDate>Mon, 02 Mar 2020 01:19:51 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>https://vhope.cf/zh/posts/collect-videos/</guid>
+        <guid>https://vhope.cf/zh/posts/settings/collect-videos/</guid>
         <description>&lt;p&gt;🚴一些收集视频的方法⚒&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>Slides和网页PPT</title>
-        <link>https://vhope.cf/zh/posts/ppt-use/</link>
+        <link>https://vhope.cf/zh/posts/settings/ppt-use/</link>
         <pubDate>Sun, 01 Mar 2020 15:18:15 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>https://vhope.cf/zh/posts/ppt-use/</guid>
+        <guid>https://vhope.cf/zh/posts/settings/ppt-use/</guid>
         <description>&lt;p&gt;在Pt页面增加了一些用JS实现的PPT，主要展示一些效果。🔌&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>Data Analysis Begin</title>
-        <link>https://vhope.cf/zh/posts/data-analysis-begin/</link>
+        <link>https://vhope.cf/zh/posts/bigdata/data-analysis-begin/</link>
         <pubDate>Mon, 24 Feb 2020 13:46:59 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>https://vhope.cf/zh/posts/data-analysis-begin/</guid>
+        <guid>https://vhope.cf/zh/posts/bigdata/data-analysis-begin/</guid>
         <description>&lt;p&gt;数据分析，begin！📅&lt;/p&gt;</description>
       </item>
       
@@ -90,46 +99,46 @@
       
       <item>
         <title>2020翻墙指南👈</title>
-        <link>https://vhope.cf/zh/posts/2020-fanqiang/</link>
+        <link>https://vhope.cf/zh/posts/settings/2020-fanqiang/</link>
         <pubDate>Sat, 15 Feb 2020 16:10:21 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>https://vhope.cf/zh/posts/2020-fanqiang/</guid>
+        <guid>https://vhope.cf/zh/posts/settings/2020-fanqiang/</guid>
         <description>&lt;p&gt;一份还算可以的翻墙清单📇&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>Markdown深入使用</title>
-        <link>https://vhope.cf/zh/posts/markdown-deep/</link>
+        <link>https://vhope.cf/zh/posts/settings/markdown-deep/</link>
         <pubDate>Fri, 14 Feb 2020 16:12:40 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>https://vhope.cf/zh/posts/markdown-deep/</guid>
+        <guid>https://vhope.cf/zh/posts/settings/markdown-deep/</guid>
         <description>&lt;p&gt;👱‍♀介绍一些markdown中比较实用的一些写作方法。&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>几款好用的图床</title>
-        <link>https://vhope.cf/zh/posts/free-image-bed/</link>
+        <link>https://vhope.cf/zh/posts/settings/free-image-bed/</link>
         <pubDate>Thu, 13 Feb 2020 22:31:22 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>https://vhope.cf/zh/posts/free-image-bed/</guid>
+        <guid>https://vhope.cf/zh/posts/settings/free-image-bed/</guid>
         <description>SM.MS sm.ms 支持的图片格式包括 JPG、JPEG、GIF、PNG 及 BMP，单档不超过 5 MB，单次可上传图片最大 10 张。图片永久保存，请勿上传政治相关图片</description>
       </item>
       
       <item>
         <title>Freenom 免费域名申请</title>
-        <link>https://vhope.cf/zh/posts/freenom-domain/</link>
+        <link>https://vhope.cf/zh/posts/settings/freenom-domain/</link>
         <pubDate>Thu, 13 Feb 2020 15:12:33 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>https://vhope.cf/zh/posts/freenom-domain/</guid>
+        <guid>https://vhope.cf/zh/posts/settings/freenom-domain/</guid>
         <description>&lt;p&gt;&lt;a href=&#34;https://my.freenom.com/&#34;&gt;Freenom&lt;/a&gt; 是目前为数不多的免费域名提供商，提供 &lt;code&gt;.ga&lt;/code&gt;, &lt;code&gt;.ml&lt;/code&gt;, &lt;code&gt;.gq&lt;/code&gt;, &lt;code&gt;.tk&lt;/code&gt;, &lt;code&gt;.cf&lt;/code&gt; 五个免费顶级域。当然也有一些付费的域名，对于普通人来说，免费域名就够了。&lt;span&gt;&lt;code&gt;😏&lt;/code&gt;&lt;/span&gt;&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>MinGW在Windows的使用</title>
-        <link>https://vhope.cf/zh/posts/mingw-use/</link>
+        <link>https://vhope.cf/zh/posts/settings/mingw-use/</link>
         <pubDate>Tue, 11 Feb 2020 18:01:16 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>https://vhope.cf/zh/posts/mingw-use/</guid>
+        <guid>https://vhope.cf/zh/posts/settings/mingw-use/</guid>
         <description>&lt;p&gt;安装&lt;code&gt;MinGW&lt;/code&gt;之后，我们可以那它来作为C或C++的编译器.&lt;span&gt;&lt;code&gt;🕸&lt;/code&gt;&lt;/span&gt;&lt;/p&gt;</description>
       </item>
       
@@ -144,19 +153,19 @@
       
       <item>
         <title>配置基于Github的PicGo图床</title>
-        <link>https://vhope.cf/zh/posts/image-bed/</link>
+        <link>https://vhope.cf/zh/posts/settings/image-bed/</link>
         <pubDate>Tue, 04 Feb 2020 23:51:21 +0900</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>https://vhope.cf/zh/posts/image-bed/</guid>
+        <guid>https://vhope.cf/zh/posts/settings/image-bed/</guid>
         <description>&lt;p&gt;使用Github+PicGo建立一个免费的个人图床。&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>windows下gcc的安装和使用</title>
-        <link>https://vhope.cf/zh/posts/gcc-windows/</link>
+        <link>https://vhope.cf/zh/posts/settings/gcc-windows/</link>
         <pubDate>Tue, 04 Feb 2020 16:41:18 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>https://vhope.cf/zh/posts/gcc-windows/</guid>
+        <guid>https://vhope.cf/zh/posts/settings/gcc-windows/</guid>
         <description>&lt;p&gt;写在源文件中的源代码是人类可读的源。它需要&amp;quot;编译&amp;rdquo;，转为机器语言，这样 CPU 可以按给定指令执行程序。C 语言编译器用于把源代码编译成最终的可执行程序。&lt;span&gt;&lt;code&gt;🐤&lt;/code&gt;&lt;/span&gt;&lt;/p&gt;</description>
       </item>
       
