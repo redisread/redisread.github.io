@@ -9,12 +9,21 @@
     <managingEditor>1427298682@qq.com (redisread)</managingEditor>
     <webMaster>1427298682@qq.com (redisread)</webMaster>
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Tue, 17 Mar 2020 15:12:38 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 18 Mar 2020 01:00:46 +0800</lastBuildDate>
     
         <atom:link href="https://vhope.cf/zh/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     
+      
+      <item>
+        <title>分布式-Redis</title>
+        <link>https://vhope.cf/zh/posts/redis/</link>
+        <pubDate>Wed, 18 Mar 2020 01:00:46 +0800</pubDate>
+        <author>1427298682@qq.com (redisread)</author>
+        <guid>https://vhope.cf/zh/posts/redis/</guid>
+        <description>&lt;p&gt;集万滴雨水，成一条江河🌊🌊&lt;/p&gt;</description>
+      </item>
       
       <item>
         <title>什么是Hash？</title>

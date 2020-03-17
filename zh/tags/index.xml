@@ -9,12 +9,48 @@
     <managingEditor>1427298682@qq.com (redisread)</managingEditor>
     <webMaster>1427298682@qq.com (redisread)</webMaster>
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Tue, 17 Mar 2020 15:12:38 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 18 Mar 2020 01:00:46 +0800</lastBuildDate>
     
         <atom:link href="https://vhope.cf/zh/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     
+      
+      <item>
+        <title>redis</title>
+        <link>https://vhope.cf/zh/tags/redis/</link>
+        <pubDate>Wed, 18 Mar 2020 01:00:46 +0800</pubDate>
+        <author>1427298682@qq.com (redisread)</author>
+        <guid>https://vhope.cf/zh/tags/redis/</guid>
+        <description></description>
+      </item>
+      
+      <item>
+        <title>云计算</title>
+        <link>https://vhope.cf/zh/tags/%E4%BA%91%E8%AE%A1%E7%AE%97/</link>
+        <pubDate>Wed, 18 Mar 2020 01:00:46 +0800</pubDate>
+        <author>1427298682@qq.com (redisread)</author>
+        <guid>https://vhope.cf/zh/tags/%E4%BA%91%E8%AE%A1%E7%AE%97/</guid>
+        <description></description>
+      </item>
+      
+      <item>
+        <title>分布式计算</title>
+        <link>https://vhope.cf/zh/tags/%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/</link>
+        <pubDate>Wed, 18 Mar 2020 01:00:46 +0800</pubDate>
+        <author>1427298682@qq.com (redisread)</author>
+        <guid>https://vhope.cf/zh/tags/%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/</guid>
+        <description></description>
+      </item>
+      
+      <item>
+        <title>数据库</title>
+        <link>https://vhope.cf/zh/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</link>
+        <pubDate>Wed, 18 Mar 2020 01:00:46 +0800</pubDate>
+        <author>1427298682@qq.com (redisread)</author>
+        <guid>https://vhope.cf/zh/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</guid>
+        <description></description>
+      </item>
       
       <item>
         <title>Algorithm</title>
