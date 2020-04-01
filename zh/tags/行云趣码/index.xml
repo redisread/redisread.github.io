@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>行云趣码 on ✏Victor&#39;s Blog</title>
+    <link>https://vhope.cf/zh/tags/%E8%A1%8C%E4%BA%91%E8%B6%A3%E7%A0%81/</link>
+    <description>Recent content in 行云趣码 on ✏Victor&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <managingEditor>1427298682@qq.com (redisread)</managingEditor>
+    <webMaster>1427298682@qq.com (redisread)</webMaster>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Wed, 01 Apr 2020 17:12:29 +0800</lastBuildDate>
+    
+        <atom:link href="https://vhope.cf/zh/tags/%E8%A1%8C%E4%BA%91%E8%B6%A3%E7%A0%81/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+      
+      <item>
+        <title>行云开发</title>
+        <link>https://vhope.cf/zh/posts/xingyun-begin/</link>
+        <pubDate>Wed, 01 Apr 2020 17:12:29 +0800</pubDate>
+        <author>1427298682@qq.com (redisread)</author>
+        <guid>https://vhope.cf/zh/posts/xingyun-begin/</guid>
+        <description>&lt;p&gt;简单地说，云计算就是计算服务的提供（包括服务器、存储、数据库、网络、软件、分析和智能）- 通过 Internet（云）提供快速创新、弹性资源和规模经济。对于云服务，通常你只需使用多少支付多少，从而帮助降低运营成本，使基础设施更有效地运行，并能根据业务需求的变化调整对服务的使用。&lt;/p&gt;</description>
+      </item>
+      
+    
+  </channel>
+</rss>
