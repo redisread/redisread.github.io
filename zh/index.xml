@@ -17,30 +17,12 @@
     
       
       <item>
-        <title>My Hugo Lib</title>
-        <link>https://vhope.cf/zh/showcase/hugo/myblog/</link>
-        <pubDate>Sun, 19 Jan 2020 21:13:42 +0900</pubDate>
-        <author>1427298682@qq.com (redisread)</author>
-        <guid>https://vhope.cf/zh/showcase/hugo/myblog/</guid>
-        <description></description>
-      </item>
-      
-      <item>
-        <title>My Hugo Item</title>
-        <link>https://vhope.cf/zh/showcase/hugo/myitem/</link>
-        <pubDate>Sun, 19 Jan 2020 21:13:42 +0900</pubDate>
-        <author>1427298682@qq.com (redisread)</author>
-        <guid>https://vhope.cf/zh/showcase/hugo/myitem/</guid>
-        <description></description>
-      </item>
-      
-      <item>
-        <title>Markdown Html</title>
+        <title>在markdown使用html</title>
         <link>https://vhope.cf/zh/posts/markdown-html/</link>
         <pubDate>Sat, 04 Apr 2020 00:58:33 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
         <guid>https://vhope.cf/zh/posts/markdown-html/</guid>
-        <description></description>
+        <description>&lt;p&gt;在markdown文件中嵌入&lt;code&gt;html&lt;/code&gt;代码.🛶&lt;/p&gt;</description>
       </item>
       
       <item>
