@@ -1528,9 +1528,27 @@
 </div>
 </div><p>执行此命令后，用户主目录下的<code>.gitconfig</code>文件会多了一项：<code>[credential]</code></p>
 <pre><code>helper = store
-</code></pre><p>这样以后push就不需要用户名和密码了</p>
+</code></pre><blockquote>
+<p>注意: Linux用户主目录一般在<code>~/</code>下,而Windows下一般为<code>C:\users\Administrator</code></p>
+</blockquote>
+<p>这样以后push就不需要用户名和密码了</p>
 <h3 id="2-使用ssh协议">2. 使用ssh协议</h3>
-<p>首先生成密钥对</p>
+<p>首先生成密钥对,执行</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">ssh-keygen -t rsa -C <span class="s2">&#34;youremail&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>接下来按照提示操作，默认可以一路往下。</p>
+<p>然后将生成的位于<code>~/.ssh/</code>的<code>id_rsa.pub</code>的内容复制到你github setting里的ssh key中。</p>
+<p>复制之后，如果你还没有克隆你的仓库，那你直接使用ssh协议用法：<code>git@github.com:yourusername/yourrepositoryname</code>克隆就行了。</p>
+<p>如果已经使用https协议克隆了，那么按照如下方法更改协议：<br />
+<code>git remote set-url origin git@github.com:yourusername/yourrepositoryname.git</code></p>
+<p>Done!</p>
+<h3 id="3-管理多git账号">3. 管理多git账号</h3>
     </article>
     <script>
   'use strict';
@@ -2110,6 +2128,7 @@ document.addEventListener('DOMContentLoaded', function () {
       <ul>
         <li><a href="#1-使用git-credentials文件">1. 使用.git-credentials文件</a></li>
         <li><a href="#2-使用ssh协议">2. 使用ssh协议</a></li>
+        <li><a href="#3-管理多git账号">3. 管理多git账号</a></li>
       </ul>
     </li>
   </ul>
