@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AES on ✏Victor&#39;s Blog</title>
+    <link>https://vhope.cf/zh/tags/aes/</link>
+    <description>Recent content in AES on ✏Victor&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <managingEditor>1427298682@qq.com (redisread)</managingEditor>
+    <webMaster>1427298682@qq.com (redisread)</webMaster>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Fri, 03 Apr 2020 14:20:19 +0800</lastBuildDate>
+    
+        <atom:link href="https://vhope.cf/zh/tags/aes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+      
+      <item>
+        <title>Aes-高级加密标准</title>
+        <link>https://vhope.cf/zh/posts/aes/</link>
+        <pubDate>Fri, 03 Apr 2020 14:20:19 +0800</pubDate>
+        <author>1427298682@qq.com (redisread)</author>
+        <guid>https://vhope.cf/zh/posts/aes/</guid>
+        <description>&lt;p&gt;AES算法是继DES之后比较快且比较简单的加密算法.⚖&lt;/p&gt;</description>
+      </item>
+      
+    
+  </channel>
+</rss>
