@@ -4,7 +4,7 @@
   
   <url>
     <loc>https://vhope.cf/zh/</loc>
-    <lastmod>2020-04-03T19:07:07+08:00</lastmod>
+    <lastmod>2020-04-03T21:42:11+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -24,7 +24,7 @@
   
   <url>
     <loc>https://vhope.cf/zh/categories/</loc>
-    <lastmod>2020-04-03T19:07:07+08:00</lastmod>
+    <lastmod>2020-04-03T21:42:11+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -40,6 +40,86 @@
                 hreflang="zh"
                 href="https://vhope.cf/zh/categories/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://vhope.cf/zh/posts/</loc>
+    <lastmod>2020-04-03T21:42:11+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://vhope.cf/en/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://vhope.cf/zh/posts/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://vhope.cf/zh/series/</loc>
+    <lastmod>2020-04-03T21:42:11+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://vhope.cf/en/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://vhope.cf/ko/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://vhope.cf/zh/series/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://vhope.cf/zh/tags/</loc>
+    <lastmod>2020-04-03T21:42:11+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://vhope.cf/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://vhope.cf/ko/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://vhope.cf/zh/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://vhope.cf/zh/tags/tcp/</loc>
+    <lastmod>2020-04-03T21:42:11+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://vhope.cf/zh/series/tcp/ip/</loc>
+    <lastmod>2020-04-03T21:42:11+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://vhope.cf/zh/tags/udp/</loc>
+    <lastmod>2020-04-03T21:42:11+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://vhope.cf/zh/posts/udp-tcp/</loc>
+    <lastmod>2020-04-03T21:42:11+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://vhope.cf/zh/tags/%E7%BD%91%E7%BB%9C/</loc>
+    <lastmod>2020-04-03T21:42:11+08:00</lastmod>
   </url>
   
   <url>
@@ -60,61 +140,6 @@
   <url>
     <loc>https://vhope.cf/zh/posts/git-push-no-pw/</loc>
     <lastmod>2020-04-03T19:07:07+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://vhope.cf/zh/posts/</loc>
-    <lastmod>2020-04-03T19:07:07+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://vhope.cf/en/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://vhope.cf/zh/posts/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://vhope.cf/zh/series/</loc>
-    <lastmod>2020-04-03T19:07:07+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://vhope.cf/en/series/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://vhope.cf/ko/series/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://vhope.cf/zh/series/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://vhope.cf/zh/tags/</loc>
-    <lastmod>2020-04-03T19:07:07+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://vhope.cf/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://vhope.cf/ko/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://vhope.cf/zh/tags/"
-                />
   </url>
   
   <url>
@@ -178,12 +203,12 @@
   </url>
   
   <url>
-    <loc>https://vhope.cf/zh/tags/algorithm/</loc>
+    <loc>https://vhope.cf/zh/series/algorithm/</loc>
     <lastmod>2020-03-17T15:12:38+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://vhope.cf/zh/series/algorithm/</loc>
+    <loc>https://vhope.cf/zh/tags/algorithm/</loc>
     <lastmod>2020-03-17T15:12:38+08:00</lastmod>
   </url>
   
