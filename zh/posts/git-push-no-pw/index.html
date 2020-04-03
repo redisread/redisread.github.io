@@ -1526,9 +1526,11 @@
 <pre class="chroma"><code class="language-bash" data-lang="bash">git config --global credential.helper store
 </code></pre></td></tr></table>
 </div>
-</div><p>执行此命令后，用户主目录下的.gitconfig文件会多了一项：<code>[credential]</code></p>
+</div><p>执行此命令后，用户主目录下的<code>.gitconfig</code>文件会多了一项：<code>[credential]</code></p>
 <pre><code>helper = store
-</code></pre>
+</code></pre><p>这样以后push就不需要用户名和密码了</p>
+<h3 id="2-使用ssh协议">2. 使用ssh协议</h3>
+<p>首先生成密钥对</p>
     </article>
     <script>
   'use strict';
@@ -2107,6 +2109,7 @@ document.addEventListener('DOMContentLoaded', function () {
     <li>
       <ul>
         <li><a href="#1-使用git-credentials文件">1. 使用.git-credentials文件</a></li>
+        <li><a href="#2-使用ssh协议">2. 使用ssh协议</a></li>
       </ul>
     </li>
   </ul>
