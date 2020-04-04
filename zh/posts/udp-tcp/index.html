@@ -1594,8 +1594,13 @@ TCP、UDP等主要协议的特点，主要格式，以及重要字段在协议�
 </blockquote>
 <h4 id="端口对应进程">端口对应进程</h4>
 <p>单单之后ip地址还不足以辨识通信的两个进程,因为操作系统是并发的,使用<strong>端口</strong>来辨认某个进程.所以套接字必须的两个信息为: ip地址 + 端口,例如: <code>192.168.1.4 1500</code></p>
-<p><span style="font-size:2rem; background:yellow;"><strong>Bigger</strong></span></p>
-<p><kbd>Ctrl</kbd>+<kbd>F9</kbd></p>
+<hr />
+<p>参考:</p>
+<ol>
+<li><a href="https://www.jianshu.com/p/c1015f5ffa74">https://www.jianshu.com/p/c1015f5ffa74</a> 进程间通信</li>
+<li><a href="https://segmentfault.com/a/1190000003063859">https://segmentfault.com/a/1190000003063859</a>  Linux IO模式及 select、poll、epoll详解</li>
+<li><a href="https://cloud.tencent.com/developer/article/1373483">https://cloud.tencent.com/developer/article/1373483</a> 各种IO复用模式之select，poll，epoll，kqueue，iocp分析</li>
+</ol>
     </article>
     <script>
   'use strict';
@@ -2883,14 +2888,14 @@ document.addEventListener('DOMContentLoaded', function () {
       
       
         
+      
+        
         
           
             
               <a href="https://vhope.cf/zh/posts/udp-tcp/" data-lang="zh" class="dropdown-item is-active">中文</a>
             
           
-        
-      
         
       
         
