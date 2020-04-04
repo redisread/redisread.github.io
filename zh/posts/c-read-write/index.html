@@ -1489,7 +1489,7 @@
     <div class="single__meta">
       
 <div class="single__infos">
-  <time class="single__info" title="创建日期">📅&nbsp;2020年04月04日 </time>  &middot; <span class="single__info" title="阅读时长"> ☕ 3 分钟 </span>&middot; <span class="single__info" title="作者">👻&nbsp;Victor</span>
+  <time class="single__info" title="创建日期">📅&nbsp;2020年04月04日 </time>  &middot; <span class="single__info" title="阅读时长"> ☕ 4 分钟 </span>&middot; <span class="single__info" title="作者">👻&nbsp;Victor</span>
   <span class="single__info">
     
   </span>
@@ -1512,7 +1512,30 @@
     <article class="single__contents" data-dir="ltr">
       
       <p>c文件读写🗃</p>
-<h3 id="打开文件">打开文件</h3>
+<h3 id="file对象结构体">FILE对象结构体</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-c" data-lang="c"><span class="k">typedef</span> <span class="k">struct</span>
+<span class="p">{</span>
+    <span class="kt">int</span> <span class="n">_fd</span><span class="p">;</span>  <span class="c1">// 文件号
+</span><span class="c1"></span>    <span class="kt">int</span> <span class="n">_cleft</span><span class="p">;</span>  <span class="c1">// 缓冲区中剩下的字节数
+</span><span class="c1"></span>    <span class="kt">int</span> <span class="n">_mode</span><span class="p">;</span>  <span class="c1">// 文件操作模式
+</span><span class="c1"></span>    <span class="kt">char</span> <span class="o">*</span> <span class="n">_nextc</span><span class="p">;</span>  <span class="c1">// 下一个字节的位置
+</span><span class="c1"></span>    <span class="kt">char</span> <span class="o">*</span> <span class="n">_buff</span><span class="p">;</span>  <span class="c1">// 文件缓冲区位置
+</span><span class="c1"></span><span class="p">}</span><span class="n">FILE</span><span class="p">;</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="打开文件">打开文件</h3>
 <p>可以使用 <strong>fopen( )</strong> 函数来创建一个新的文件或者打开一个已有的文件，这个调用会初始化类型 <strong>FILE</strong> 的一个对象，类型 <strong>FILE</strong> 包含了所有用来控制流的必要的信息。下面是这个函数调用的原型：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -2390,6 +2413,7 @@ document.addEventListener('DOMContentLoaded', function () {
   <ul>
     <li>
       <ul>
+        <li><a href="#file对象结构体">FILE对象结构体</a></li>
         <li><a href="#打开文件">打开文件</a></li>
         <li><a href="#关闭文件">关闭文件</a></li>
         <li><a href="#demo">demo</a></li>
