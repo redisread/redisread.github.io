@@ -9,12 +9,21 @@
     <managingEditor>1427298682@qq.com (redisread)</managingEditor>
     <webMaster>1427298682@qq.com (redisread)</webMaster>
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Thu, 09 Apr 2020 17:00:28 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 11 Apr 2020 23:24:18 +0800</lastBuildDate>
     
         <atom:link href="https://vhope.cf/zh/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     
+      
+      <item>
+        <title>Linux命令与Shell</title>
+        <link>https://vhope.cf/zh/posts/linux-shell/</link>
+        <pubDate>Sat, 11 Apr 2020 23:24:18 +0800</pubDate>
+        <author>1427298682@qq.com (redisread)</author>
+        <guid>https://vhope.cf/zh/posts/linux-shell/</guid>
+        <description>Linux 目录结构及解释 查看命令行执行完位置： 1 echo $BASH 命令记录 mkdir mkdir命令 用来创建目录。 语法：mkdir (选项)(参数) 主要选项： -m&amp;lt;目标</description>
+      </item>
       
       <item>
         <title>入门Docker</title>
