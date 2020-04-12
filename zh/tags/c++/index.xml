@@ -9,12 +9,22 @@
     <managingEditor>1427298682@qq.com (redisread)</managingEditor>
     <webMaster>1427298682@qq.com (redisread)</webMaster>
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Sun, 05 Apr 2020 15:05:37 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 12 Apr 2020 19:26:20 +0800</lastBuildDate>
     
         <atom:link href="https://vhope.cf/zh/tags/c++/index.xml" rel="self" type="application/rss+xml" />
     
     
     
+      
+      <item>
+        <title>Leetcode-最长回文子串</title>
+        <link>https://vhope.cf/zh/posts/leetcode-0/</link>
+        <pubDate>Sun, 12 Apr 2020 19:26:20 +0800</pubDate>
+        <author>1427298682@qq.com (redisread)</author>
+        <guid>https://vhope.cf/zh/posts/leetcode-0/</guid>
+        <description>&lt;h3 id=&#34;问题描述&#34;&gt;问题描述&lt;/h3&gt;
+&lt;p&gt;给定一个字符串 &lt;code&gt;s&lt;/code&gt;，找到 &lt;code&gt;s&lt;/code&gt; 中最长的回文子串。你可以假设 &lt;code&gt;s&lt;/code&gt; 的最大长度为 1000。&lt;/p&gt;</description>
+      </item>
       
       <item>
         <title>C&#43;&#43;动态与静态</title>
