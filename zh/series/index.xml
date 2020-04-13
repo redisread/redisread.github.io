@@ -9,12 +9,21 @@
     <managingEditor>1427298682@qq.com (redisread)</managingEditor>
     <webMaster>1427298682@qq.com (redisread)</webMaster>
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Sun, 12 Apr 2020 19:26:20 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 13 Apr 2020 23:01:25 +0800</lastBuildDate>
     
         <atom:link href="https://vhope.cf/zh/series/index.xml" rel="self" type="application/rss+xml" />
     
     
     
+      
+      <item>
+        <title>Linux</title>
+        <link>https://vhope.cf/zh/series/linux/</link>
+        <pubDate>Mon, 13 Apr 2020 23:01:25 +0800</pubDate>
+        <author>1427298682@qq.com (redisread)</author>
+        <guid>https://vhope.cf/zh/series/linux/</guid>
+        <description></description>
+      </item>
       
       <item>
         <title>C&#43;&#43;</title>

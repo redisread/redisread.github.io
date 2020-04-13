@@ -9,12 +9,22 @@
     <managingEditor>1427298682@qq.com (redisread)</managingEditor>
     <webMaster>1427298682@qq.com (redisread)</webMaster>
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Sun, 12 Apr 2020 19:26:20 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 13 Apr 2020 23:01:25 +0800</lastBuildDate>
     
         <atom:link href="https://vhope.cf/zh/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     
+      
+      <item>
+        <title>Linux编辑利器-Vim</title>
+        <link>https://vhope.cf/zh/posts/linux/vim-use/</link>
+        <pubDate>Mon, 13 Apr 2020 23:01:25 +0800</pubDate>
+        <author>1427298682@qq.com (redisread)</author>
+        <guid>https://vhope.cf/zh/posts/linux/vim-use/</guid>
+        <description>&lt;p&gt;在大学时代，Vim 的大名就已如雷贯耳，但由于它陡峭的学习曲线，一直望而却步。等真正开始学习之后，发现并没有想象中的复杂，也没有所谓的瓶颈，只要在实际写代码中强迫自己使用就可以了，无形中就会形成习惯。&lt;/p&gt;
+&lt;p&gt;​																														——&lt;a href=&#34;https://geekplux.com/&#34;&gt;GeekPlux&lt;/a&gt;&lt;/p&gt;</description>
+      </item>
       
       <item>
         <title>Leetcode-最长回文子串</title>
@@ -28,10 +38,10 @@
       
       <item>
         <title>Linux命令与Shell</title>
-        <link>https://vhope.cf/zh/posts/linux-shell/</link>
+        <link>https://vhope.cf/zh/posts/linux/linux-shell/</link>
         <pubDate>Sat, 11 Apr 2020 23:24:18 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>https://vhope.cf/zh/posts/linux-shell/</guid>
+        <guid>https://vhope.cf/zh/posts/linux/linux-shell/</guid>
         <description>&lt;p&gt;Linux基本操作。🤠&lt;/p&gt;</description>
       </item>
       
