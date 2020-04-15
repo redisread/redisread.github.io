@@ -9,7 +9,7 @@
     <managingEditor>1427298682@qq.com (redisread)</managingEditor>
     <webMaster>1427298682@qq.com (redisread)</webMaster>
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Mon, 13 Apr 2020 23:01:25 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 15 Apr 2020 16:34:03 +0800</lastBuildDate>
     
         <atom:link href="https://vhope.cf/zh/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -19,9 +19,18 @@
       <item>
         <title>Linux</title>
         <link>https://vhope.cf/zh/tags/linux/</link>
-        <pubDate>Mon, 13 Apr 2020 23:01:25 +0800</pubDate>
+        <pubDate>Wed, 15 Apr 2020 16:34:03 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
         <guid>https://vhope.cf/zh/tags/linux/</guid>
+        <description></description>
+      </item>
+      
+      <item>
+        <title>用户管理</title>
+        <link>https://vhope.cf/zh/tags/%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86/</link>
+        <pubDate>Wed, 15 Apr 2020 16:34:03 +0800</pubDate>
+        <author>1427298682@qq.com (redisread)</author>
+        <guid>https://vhope.cf/zh/tags/%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86/</guid>
         <description></description>
       </item>
       
