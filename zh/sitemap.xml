@@ -4,7 +4,7 @@
   
   <url>
     <loc>https://vhope.cf/zh/</loc>
-    <lastmod>2020-04-17T00:26:00+08:00</lastmod>
+    <lastmod>2020-04-18T17:13:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -23,18 +23,13 @@
   </url>
   
   <url>
-    <loc>https://vhope.cf/zh/tags/c&#43;&#43;/</loc>
-    <lastmod>2020-04-17T00:26:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://vhope.cf/zh/talks/cpp_router/</loc>
-    <lastmod>2020-04-17T00:26:00+08:00</lastmod>
+    <loc>https://vhope.cf/zh/talks/kubpeng_exercise/</loc>
+    <lastmod>2020-04-18T17:13:00+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://vhope.cf/zh/categories/</loc>
-    <lastmod>2020-04-17T00:26:00+08:00</lastmod>
+    <lastmod>2020-04-18T17:13:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -54,7 +49,7 @@
   
   <url>
     <loc>https://vhope.cf/zh/series/</loc>
-    <lastmod>2020-04-17T00:26:00+08:00</lastmod>
+    <lastmod>2020-04-18T17:13:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -74,7 +69,7 @@
   
   <url>
     <loc>https://vhope.cf/zh/tags/</loc>
-    <lastmod>2020-04-17T00:26:00+08:00</lastmod>
+    <lastmod>2020-04-18T17:13:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -93,6 +88,21 @@
   </url>
   
   <url>
+    <loc>https://vhope.cf/zh/tags/%E4%BA%91%E8%AE%A1%E7%AE%97/</loc>
+    <lastmod>2020-04-18T17:13:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://vhope.cf/zh/tags/c&#43;&#43;/</loc>
+    <lastmod>2020-04-17T00:26:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://vhope.cf/zh/talks/cpp_router/</loc>
+    <lastmod>2020-04-17T00:26:00+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://vhope.cf/zh/tags/grep/</loc>
     <lastmod>2020-04-16T10:56:00+08:00</lastmod>
   </url>
@@ -103,12 +113,12 @@
   </url>
   
   <url>
-    <loc>https://vhope.cf/zh/tags/linux/</loc>
+    <loc>https://vhope.cf/zh/series/linux/</loc>
     <lastmod>2020-04-16T10:56:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://vhope.cf/zh/series/linux/</loc>
+    <loc>https://vhope.cf/zh/tags/linux/</loc>
     <lastmod>2020-04-16T10:56:00+08:00</lastmod>
   </url>
   
@@ -318,11 +328,6 @@
   </url>
   
   <url>
-    <loc>https://vhope.cf/zh/tags/%E4%BA%91%E8%AE%A1%E7%AE%97/</loc>
-    <lastmod>2020-04-01T17:12:29+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://vhope.cf/zh/posts/xingyun-begin/</loc>
     <lastmod>2020-04-01T17:12:29+08:00</lastmod>
   </url>
@@ -353,12 +358,12 @@
   </url>
   
   <url>
-    <loc>https://vhope.cf/zh/tags/algorithm/</loc>
+    <loc>https://vhope.cf/zh/series/algorithm/</loc>
     <lastmod>2020-03-17T15:12:38+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://vhope.cf/zh/series/algorithm/</loc>
+    <loc>https://vhope.cf/zh/tags/algorithm/</loc>
     <lastmod>2020-03-17T15:12:38+08:00</lastmod>
   </url>
   
@@ -458,12 +463,12 @@
   </url>
   
   <url>
-    <loc>https://vhope.cf/zh/series/%E7%88%AC%E8%99%AB/</loc>
+    <loc>https://vhope.cf/zh/tags/%E7%88%AC%E8%99%AB/</loc>
     <lastmod>2020-03-04T16:35:09+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://vhope.cf/zh/tags/%E7%88%AC%E8%99%AB/</loc>
+    <loc>https://vhope.cf/zh/series/%E7%88%AC%E8%99%AB/</loc>
     <lastmod>2020-03-04T16:35:09+08:00</lastmod>
   </url>
   
