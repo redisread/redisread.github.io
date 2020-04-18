@@ -1195,7 +1195,7 @@
     "datePublished": "2020-04-18T17:13:00+08:00",
     "dateModified": "2020-04-18T17:13:00+08:00",
     "url" : "https://vhope.cf/zh/talks/kubpeng_exercise/",
-    "description": "C++学习路线🌱 [toc] 1. 鲲鹏云服务 云服务 云计算 云计算的特点: 快捷的网络访问 自服务和随需分配 资源池 灵活有弹性 服务可度量 云计算的本质就是自动化和规模",
+    "description": "[toc] 1. 鲲鹏云服务 云服务 云计算 美国国家标准与技术研究院（NIST）定义： 云计算是一种模型，它可以实现随时随地，便捷地，随需应变地从可配置计算资源",
     "keywords": ["云计算"],
     "mainEntityOfPage": {
       "@type": "WebPage",
@@ -1444,7 +1444,7 @@
             
             
 
-<main class="single__main main-main">
+<main class="single__main main">
   
     <nav class="breadcrumb" aria-label="breadcrumbs">
   <ol>
@@ -1483,7 +1483,7 @@
     <div class="single__meta">
       
 <div class="single__infos">
-  <time class="single__info" title="创建日期">📅&nbsp;2020年04月18日 </time>  &middot; <span class="single__info" title="阅读时长"> ☕ 7 分钟 </span>
+  <time class="single__info" title="创建日期">📅&nbsp;2020年04月18日 </time>  &middot; <span class="single__info" title="阅读时长"> ☕ 8 分钟 </span>
   <span class="single__info">
     
   </span>
@@ -1500,11 +1500,82 @@
     </div>
     <article class="single__contents" data-dir="ltr">
       
-      <h1 id="c学习路线">C++学习路线🌱</h1>
-<p>[toc]</p>
+<div class="expand">
+  <button type="button" class="expand__button" aria-label="Expand Button">
+    <span class="expand-icon expand-icon__right">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M9.29 15.88L13.17 12 9.29 8.12c-.39-.39-.39-1.02 0-1.41.39-.39 1.02-.39 1.41 0l4.59 4.59c.39.39.39 1.02 0 1.41L10.7 17.3c-.39.39-1.02.39-1.41 0-.38-.39-.39-1.03 0-1.42z"/></svg>
+    </span>
+    目录
+  </button>
+  <div class="expand__content expand__content--toc">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-鲲鹏云服务">1. 鲲鹏云服务</a>
+      <ul>
+        <li><a href="#云服务">云服务</a>
+          <ul>
+            <li><a href="#云计算">云计算</a></li>
+            <li><a href="#云服务实例">云服务实例</a></li>
+            <li><a href="#计算类云服务">计算类云服务</a></li>
+            <li><a href="#存储类云服务">存储类云服务</a></li>
+            <li><a href="#网络类云服务">网络类云服务</a></li>
+            <li><a href="#ppt">PPT</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#2-鲲鹏应用移植">2. 鲲鹏应用移植</a>
+      <ul>
+        <li><a href="#两种语言">两种语言</a>
+          <ul>
+            <li></li>
+            <li><a href="#策略">策略</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#3-容灾备份安全">3. 容灾备份安全</a>
+      <ul>
+        <li><a href="#云架构">云架构</a>
+          <ul>
+            <li></li>
+          </ul>
+        </li>
+        <li><a href="#容灾备份">容灾备份</a>
+          <ul>
+            <li></li>
+          </ul>
+        </li>
+        <li><a href="#容灾指标">容灾指标</a>
+          <ul>
+            <li></li>
+          </ul>
+        </li>
+        <li><a href="#容灾方案">容灾方案</a>
+          <ul>
+            <li></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#4-gaussdb">4. GaussDB</a></li>
+    <li><a href="#5-大数据">5. 大数据</a>
+      <ul>
+        <li><a href="#算存分离">算存分离</a></li>
+        <li><a href="#解决方案">解决方案</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+
+      <p>[toc]</p>
 <h2 id="1-鲲鹏云服务">1. 鲲鹏云服务</h2>
 <h3 id="云服务">云服务</h3>
 <h4 id="云计算">云计算</h4>
+<p>美国国家标准与技术研究院（NIST）定义：</p>
+<p>云计算是一种模型，它可以实现随时随地，便捷地，随需应变地从可配置计算资源共享池中获取所需的资源（例如，网络、服务器、存储、应用、及服务），资源能够快速供应并释放，使管理资源的工作量和与服务提供商的交互减小到最低限度。</p>
 <p>云计算的特点:</p>
 <ol>
 <li>快捷的网络访问</li>
@@ -2286,93 +2357,12 @@ document.addEventListener('DOMContentLoaded', function () {
 </main>
 
 
-<aside class="single__side main-side">
-  
-
-
-<section class="sidebar">
-  <div class="toc__flexbox" data-position="fixed">
-    <h6 class="toc__title">目录</h6>
-    
-      <label class="switch">
-        <input id="toggle-toc" aria-label="Toggle TOC" type="checkbox" checked>
-        <span class="slider round"></span>
-      </label>
-    
-  </div>
-  <div class="toc " data-dir="ltr" data-folding="true">
-    <nav id="TableOfContents">
-  <ul>
-    <li><a href="#1-鲲鹏云服务">1. 鲲鹏云服务</a>
-      <ul>
-        <li><a href="#云服务">云服务</a>
-          <ul>
-            <li><a href="#云计算">云计算</a></li>
-            <li><a href="#云服务实例">云服务实例</a></li>
-            <li><a href="#计算类云服务">计算类云服务</a></li>
-            <li><a href="#存储类云服务">存储类云服务</a></li>
-            <li><a href="#网络类云服务">网络类云服务</a></li>
-            <li><a href="#ppt">PPT</a></li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-    <li><a href="#2-鲲鹏应用移植">2. 鲲鹏应用移植</a>
-      <ul>
-        <li><a href="#两种语言">两种语言</a>
-          <ul>
-            <li></li>
-            <li><a href="#策略">策略</a></li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-    <li><a href="#3-容灾备份安全">3. 容灾备份安全</a>
-      <ul>
-        <li><a href="#云架构">云架构</a>
-          <ul>
-            <li></li>
-          </ul>
-        </li>
-        <li><a href="#容灾备份">容灾备份</a>
-          <ul>
-            <li></li>
-          </ul>
-        </li>
-        <li><a href="#容灾指标">容灾指标</a>
-          <ul>
-            <li></li>
-          </ul>
-        </li>
-        <li><a href="#容灾方案">容灾方案</a>
-          <ul>
-            <li></li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-    <li><a href="#4-gaussdb">4. GaussDB</a></li>
-    <li><a href="#5-大数据">5. 大数据</a>
-      <ul>
-        <li><a href="#算存分离">算存分离</a></li>
-        <li><a href="#解决方案">解决方案</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-  </div>
-</section>
-
-
-
-</aside>
-
 <script>
   
   
   
 
-  var enableToc = JSON.parse("true");
+  var enableToc = JSON.parse("false");
   var toc = JSON.parse("null");
   var tocPosition = JSON.parse("\"inner\"");
   
@@ -2481,7 +2471,7 @@ document.addEventListener('DOMContentLoaded', function () {
     
     
     
-    var enableToc = JSON.parse("true");
+    var enableToc = JSON.parse("false");
     var toc = JSON.parse("null");
     var hideToc = JSON.parse("false");
     var tocFlexbox = document.querySelector('.toc__flexbox');
@@ -3010,14 +3000,14 @@ document.addEventListener('DOMContentLoaded', function () {
       
       
         
+      
+        
         
           
             
               <a href="https://vhope.cf/zh/talks/kubpeng_exercise/" data-lang="zh" class="dropdown-item is-active">中文</a>
             
           
-        
-      
         
       
         
