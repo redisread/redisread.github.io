@@ -9,12 +9,21 @@
     <managingEditor>1427298682@qq.com (redisread)</managingEditor>
     <webMaster>1427298682@qq.com (redisread)</webMaster>
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Sat, 18 Apr 2020 17:13:00 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 27 Apr 2020 17:11:37 +0800</lastBuildDate>
     
         <atom:link href="https://vhope.cf/zh/tags/%E4%BA%91%E8%AE%A1%E7%AE%97/index.xml" rel="self" type="application/rss+xml" />
     
     
     
+      
+      <item>
+        <title>使用云监控管理k8s-京东云实践</title>
+        <link>https://vhope.cf/zh/posts/cloud/cloud-kubernetes/</link>
+        <pubDate>Mon, 27 Apr 2020 17:11:37 +0800</pubDate>
+        <author>1427298682@qq.com (redisread)</author>
+        <guid>https://vhope.cf/zh/posts/cloud/cloud-kubernetes/</guid>
+        <description>操作流程 用到的云产品及服务 序号 云产品 功能及用途 备注 1 容器镜像仓库 用于存放示例demo镜像 2 云编译 编译和打包实例demo代码，同时将镜像推送至</description>
+      </item>
       
       <item>
         <title>鲲鹏Learning🏸</title>
