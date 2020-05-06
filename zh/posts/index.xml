@@ -9,12 +9,21 @@
     <managingEditor>1427298682@qq.com (redisread)</managingEditor>
     <webMaster>1427298682@qq.com (redisread)</webMaster>
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Mon, 27 Apr 2020 17:11:37 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 06 May 2020 11:12:38 +0800</lastBuildDate>
     
         <atom:link href="https://vhope.cf/zh/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     
+      
+      <item>
+        <title>费马🦓定理</title>
+        <link>https://vhope.cf/zh/posts/math/feima/</link>
+        <pubDate>Wed, 06 May 2020 11:12:38 +0800</pubDate>
+        <author>1427298682@qq.com (redisread)</author>
+        <guid>https://vhope.cf/zh/posts/math/feima/</guid>
+        <description>&lt;p&gt;费马大定理在数学里有一个特殊的现象，即在于它是错误证明数量最多的数学题。&lt;/p&gt;</description>
+      </item>
       
       <item>
         <title>使用云监控管理k8s-京东云实践</title>
