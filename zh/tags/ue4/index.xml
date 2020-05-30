@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>UE4 on ✏Victor&#39;s Blog</title>
+    <link>https://vhope.cf/zh/tags/ue4/</link>
+    <description>Recent content in UE4 on ✏Victor&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <managingEditor>1427298682@qq.com (redisread)</managingEditor>
+    <webMaster>1427298682@qq.com (redisread)</webMaster>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Fri, 29 May 2020 09:42:11 +0800</lastBuildDate>
+    
+        <atom:link href="https://vhope.cf/zh/tags/ue4/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+      
+      <item>
+        <title>UE4渲染过程</title>
+        <link>https://vhope.cf/zh/posts/ue4-render/</link>
+        <pubDate>Fri, 29 May 2020 09:42:11 +0800</pubDate>
+        <author>1427298682@qq.com (redisread)</author>
+        <guid>https://vhope.cf/zh/posts/ue4-render/</guid>
+        <description>UE4渲染过程 https://answers.unrealengine.com/questions/17862/access-color-and-depth-buffer-of-each-frame.html https://segmentfault.com/a/1190000012737548 相关术语 RHI 渲染硬件接口，是为不同平台抽象出不同图形API的一层。所有渲染命令均通过RHI层传递，以转换为适用的渲染器。 延迟</description>
+      </item>
+      
+    
+  </channel>
+</rss>

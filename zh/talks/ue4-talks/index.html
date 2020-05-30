@@ -2109,7 +2109,7 @@
 	<span class="n">uint32</span> <span class="n">SizeY</span> <span class="o">=</span> <span class="n">FMath</span><span class="o">:</span><span class="o">:</span><span class="n">TruncToInt</span><span class="p">(</span><span class="n">Size</span><span class="p">.</span><span class="n">Y</span> <span class="o">*</span> <span class="n">Viewport</span><span class="o">-</span><span class="o">&gt;</span><span class="n">GetSizeXY</span><span class="p">(</span><span class="p">)</span><span class="p">.</span><span class="n">Y</span><span class="p">)</span><span class="p">;</span>
 	
     <span class="c1">//X=0,Y = 0
-</span><span class="c1"></span><span class="cp">#</span><span class="cp">if !(UE_BUILD_SHIPPING || UE_BUILD_TEST)</span><span class="cp">
+</span><span class="c1"></span><span class="cp">#</span><span class="cp">if !(UE_BUILD_SHIPPING || UE_BUILD_TEST)</span><span class="cp">
 </span><span class="cp"></span>
 	<span class="c1">// We expect some size to avoid problems with the view rect manipulation
 </span><span class="c1"></span>	<span class="c1">// 我们希望有一定的大小来避免view rect操作的问题
@@ -2136,7 +2136,7 @@
 			<span class="p">}</span>
 		<span class="p">}</span>
 	<span class="p">}</span>
-<span class="cp">#</span><span class="cp">endif</span><span class="cp">
+<span class="cp">#</span><span class="cp">endif</span><span class="cp">
 </span><span class="cp"></span>	<span class="c1">// FIntRect为二维空间中整数矩形的结构。新的视端矩阵
 </span><span class="c1"></span>	<span class="n">FIntRect</span> <span class="n">UnconstrainedRectangle</span> <span class="o">=</span> <span class="n">FIntRect</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">,</span> <span class="n">X</span><span class="o">+</span><span class="n">SizeX</span><span class="p">,</span> <span class="n">Y</span><span class="o">+</span><span class="n">SizeY</span><span class="p">)</span><span class="p">;</span><span class="c1">//InMin(X,Y),InMax(X+SizeX,Y+SizeY)
 </span><span class="c1"></span>	<span class="c1">// 设置投影数据的窗口
