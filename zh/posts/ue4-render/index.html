@@ -1196,7 +1196,7 @@
     "datePublished": "2020-05-29T09:42:11+08:00",
     "dateModified": "2020-05-29T09:42:11+08:00",
     "url" : "https://vhope.cf/zh/posts/ue4-render/",
-    "description": "UE4渲染过程 https://answers.unrealengine.com/questions/17862/access-color-and-depth-buffer-of-each-frame.html https://segmentfault.com/a/1190000012737548 相关术语 RHI 渲染硬件接口，是为不同 …",
+    "description": "UE4渲染过程 延迟渲染 所谓延迟渲染，是指将一个场景的几何体（3D模型、多边形）的光照、阴影、质感搁置到一旁，先着手于绘画，然后在后半段再对光",
     "keywords": ["C++","UE4","Game"],
     "image" : "https://i.loli.net/2020/05/29/yO1bzGwBSflsVYj.png",
     "author": {
@@ -1489,7 +1489,7 @@
     <div class="single__meta">
       
 <div class="single__infos">
-  <time class="single__info" title="创建日期">📅&nbsp;2020年05月29日 </time>  &middot; <span class="single__info" title="阅读时长"> ☕ 3 分钟 </span>&middot; <span class="single__info" title="作者">👻&nbsp;Victor</span>
+  <time class="single__info" title="创建日期">📅&nbsp;2020年05月29日 </time>  &middot; <span class="single__info" title="阅读时长"> ☕ 6 分钟 </span>&middot; <span class="single__info" title="作者">👻&nbsp;Victor</span>
   <span class="single__info">
     
   </span>
@@ -1519,7 +1519,50 @@
     <article class="single__contents" data-dir="ltr">
       
       <h1 id="ue4渲染过程">UE4渲染过程</h1>
-<p><a href="https://answers.unrealengine.com/questions/17862/access-color-and-depth-buffer-of-each-frame.html">https://answers.unrealengine.com/questions/17862/access-color-and-depth-buffer-of-each-frame.html</a></p>
+<h3 id="延迟渲染">延迟渲染</h3>
+<p>所谓延迟渲染，是指将一个场景的几何体（3D模型、多边形）的光照、阴影、质感搁置到一旁，先着手于绘画，然后在后半段再对光照、阴影、质感进行处理的处理方式。即给人一种把原本的多边形先绘制出来的印象，实际上不仅要绘制多边形，前者的参数还需要配合后面光照和阴影的处理。其输出目标，在成为复数缓冲时具有普遍性，但是这里的缓冲我们称之为&quot;物理缓冲&rdquo;。物体缓冲是指使用后照明和后处理特效的中间过渡环节</p>
+<h2 id="z-pre-pass">Z Pre Pass</h2>
+<p>UE4的渲染管道，是在Bass Pass的物体缓冲写出来之前，在仅预处理深度值（Z值）之后，运行Z预阶段。</p>
+<p>事先预处理深度值的目的，是将最终影像和同一深度缓冲的内容结果，在透视前获得。Z预阶段之后的Base Pass则是，参考预先得出的深度值缓冲进行Z预测试，因此通过在最终的画面里不留下像素痕迹（即编写后又被消去的像素），以回避像素着色器的运行。</p>
+<h2 id="base-pass">Base Pass</h2>
+<p>使用Base Pass输出物体缓冲需要注意的两点：</p>
+<ol>
+<li>
+<p>不绘制没进入视线的对象</p>
+<p>这种&quot;投影剔除&rdquo;（Frustum Culling），一般是通过CPU端来处理；为了整体覆盖被称为&quot;包围球&rdquo;（Bounding sphere）的各个3D对象，对象是否在视野内的判定标准，是通过预先设定的包围球来实行的。</p>
+<blockquote>
+<p>什么程度的剔除会成功，可以通过Stat初始视图（Stat InitViews）指令的&quot;视锥体裁剪基元（Frustum Culled Primitives）&ldquo;进行确认。</p>
+</blockquote>
+</li>
+<li>
+<p>不计算多余的像素</p>
+<p>在图像处理的流程中，使用像素着色器实际处理前，会有运行深度测试（Z 测试）的&quot;Pre Z 测试&quot;这一步骤。从这里着手处理的像素，会因为被某个东西所遮挡而无法绘制出来，这时可以进行撤销处理。</p>
+<blockquote>
+<p>但是，像半透明对象这种会伴随α测试的绘制、视差遮蔽映射这种像素着色器处理后会重新编写深度值的情况，就不进行Pre Z测试，而通过处理实行分路迂回。</p>
+</blockquote>
+</li>
+</ol>
+<h2 id="ue4-绘制策略drawingpolicy">UE4 绘制策略DrawingPolicy</h2>
+<p>绘制策略在UE4渲染中使用很多， 中文也不好翻译。 其实就是根据策略 使用了哪些 着色器 。</p>
+<h2 id="render模块">Render模块</h2>
+<p>调用Render()函数在Render模块<code>RendererModule.h</code>中，以下函数：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-c++" data-lang="c++"><span class="k">class</span> <span class="nc">FRendererModule</span> <span class="o">:</span> <span class="k">public</span> <span class="n">IRendererModule</span>
+<span class="p">{</span>
+    <span class="c1">// 开始渲染视图族
+</span><span class="c1"></span>    <span class="k">virtual</span> <span class="kt">void</span> <span class="nf">BeginRenderingViewFamily</span><span class="p">(</span><span class="n">FCanvas</span><span class="o">*</span> <span class="n">Canvas</span><span class="p">,</span><span class="n">FSceneViewFamily</span><span class="o">*</span> <span class="n">ViewFamily</span><span class="p">)</span> <span class="k">override</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p><a href="https://answers.unrealengine.com/questions/17862/access-color-and-depth-buffer-of-each-frame.html">https://answers.unrealengine.com/questions/17862/access-color-and-depth-buffer-of-each-frame.html</a></p>
 <p><a href="https://segmentfault.com/a/1190000012737548">https://segmentfault.com/a/1190000012737548</a></p>
 <p><img src="https://i.loli.net/2020/05/30/P6KEDtS1HkOg9fF.jpg" alt="preview" style="zoom: 200%;" /></p>
 <h2 id="相关术语">相关术语</h2>
@@ -1585,7 +1628,252 @@
 </blockquote>
 <h3 id="beginocclusiontests">BeginOcclusionTests</h3>
 <p><strong>测试咬合</strong>,处理框架中的所有遮挡测试.虚幻引擎默认使用硬件遮挡查询进行遮挡测试</p>
-<p>UDrawFrustumComponent</p>
+<p><strong>RenderPrePass</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">  1
+</span><span class="lnt">  2
+</span><span class="lnt">  3
+</span><span class="lnt">  4
+</span><span class="lnt">  5
+</span><span class="lnt">  6
+</span><span class="lnt">  7
+</span><span class="lnt">  8
+</span><span class="lnt">  9
+</span><span class="lnt"> 10
+</span><span class="lnt"> 11
+</span><span class="lnt"> 12
+</span><span class="lnt"> 13
+</span><span class="lnt"> 14
+</span><span class="lnt"> 15
+</span><span class="lnt"> 16
+</span><span class="lnt"> 17
+</span><span class="lnt"> 18
+</span><span class="lnt"> 19
+</span><span class="lnt"> 20
+</span><span class="lnt"> 21
+</span><span class="lnt"> 22
+</span><span class="lnt"> 23
+</span><span class="lnt"> 24
+</span><span class="lnt"> 25
+</span><span class="lnt"> 26
+</span><span class="lnt"> 27
+</span><span class="lnt"> 28
+</span><span class="lnt"> 29
+</span><span class="lnt"> 30
+</span><span class="lnt"> 31
+</span><span class="lnt"> 32
+</span><span class="lnt"> 33
+</span><span class="lnt"> 34
+</span><span class="lnt"> 35
+</span><span class="lnt"> 36
+</span><span class="lnt"> 37
+</span><span class="lnt"> 38
+</span><span class="lnt"> 39
+</span><span class="lnt"> 40
+</span><span class="lnt"> 41
+</span><span class="lnt"> 42
+</span><span class="lnt"> 43
+</span><span class="lnt"> 44
+</span><span class="lnt"> 45
+</span><span class="lnt"> 46
+</span><span class="lnt"> 47
+</span><span class="lnt"> 48
+</span><span class="lnt"> 49
+</span><span class="lnt"> 50
+</span><span class="lnt"> 51
+</span><span class="lnt"> 52
+</span><span class="lnt"> 53
+</span><span class="lnt"> 54
+</span><span class="lnt"> 55
+</span><span class="lnt"> 56
+</span><span class="lnt"> 57
+</span><span class="lnt"> 58
+</span><span class="lnt"> 59
+</span><span class="lnt"> 60
+</span><span class="lnt"> 61
+</span><span class="lnt"> 62
+</span><span class="lnt"> 63
+</span><span class="lnt"> 64
+</span><span class="lnt"> 65
+</span><span class="lnt"> 66
+</span><span class="lnt"> 67
+</span><span class="lnt"> 68
+</span><span class="lnt"> 69
+</span><span class="lnt"> 70
+</span><span class="lnt"> 71
+</span><span class="lnt"> 72
+</span><span class="lnt"> 73
+</span><span class="lnt"> 74
+</span><span class="lnt"> 75
+</span><span class="lnt"> 76
+</span><span class="lnt"> 77
+</span><span class="lnt"> 78
+</span><span class="lnt"> 79
+</span><span class="lnt"> 80
+</span><span class="lnt"> 81
+</span><span class="lnt"> 82
+</span><span class="lnt"> 83
+</span><span class="lnt"> 84
+</span><span class="lnt"> 85
+</span><span class="lnt"> 86
+</span><span class="lnt"> 87
+</span><span class="lnt"> 88
+</span><span class="lnt"> 89
+</span><span class="lnt"> 90
+</span><span class="lnt"> 91
+</span><span class="lnt"> 92
+</span><span class="lnt"> 93
+</span><span class="lnt"> 94
+</span><span class="lnt"> 95
+</span><span class="lnt"> 96
+</span><span class="lnt"> 97
+</span><span class="lnt"> 98
+</span><span class="lnt"> 99
+</span><span class="lnt">100
+</span><span class="lnt">101
+</span><span class="lnt">102
+</span><span class="lnt">103
+</span><span class="lnt">104
+</span><span class="lnt">105
+</span><span class="lnt">106
+</span><span class="lnt">107
+</span><span class="lnt">108
+</span><span class="lnt">109
+</span><span class="lnt">110
+</span><span class="lnt">111
+</span><span class="lnt">112
+</span><span class="lnt">113
+</span><span class="lnt">114
+</span><span class="lnt">115
+</span><span class="lnt">116
+</span><span class="lnt">117
+</span><span class="lnt">118
+</span><span class="lnt">119
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-c++" data-lang="c++"><span class="kt">bool</span> <span class="n">FDeferredShadingSceneRenderer</span><span class="o">:</span><span class="o">:</span><span class="n">RenderPrePass</span><span class="p">(</span><span class="n">FRHICommandListImmediate</span><span class="o">&amp;</span> <span class="n">RHICmdList</span><span class="p">,</span> <span class="n">TFunctionRef</span><span class="o">&lt;</span><span class="kt">void</span><span class="p">(</span><span class="p">)</span><span class="o">&gt;</span> <span class="n">AfterTasksAreStarted</span><span class="p">)</span>
+<span class="p">{</span>
+	<span class="n">check</span><span class="p">(</span><span class="n">RHICmdList</span><span class="p">.</span><span class="n">IsOutsideRenderPass</span><span class="p">(</span><span class="p">)</span><span class="p">)</span><span class="p">;</span>	<span class="c1">// 检查
+</span><span class="c1"></span>
+	<span class="n">SCOPED_NAMED_EVENT</span><span class="p">(</span><span class="n">FDeferredShadingSceneRenderer_RenderPrePass</span><span class="p">,</span> <span class="n">FColor</span><span class="o">:</span><span class="o">:</span><span class="n">Emerald</span><span class="p">)</span><span class="p">;</span>
+	<span class="kt">bool</span> <span class="n">bDepthWasCleared</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+
+	<span class="k">extern</span> <span class="k">const</span> <span class="n">TCHAR</span><span class="o">*</span> <span class="nf">GetDepthPassReason</span><span class="p">(</span><span class="kt">bool</span> <span class="n">bDitheredLODTransitionsUseStencil</span><span class="p">,</span> <span class="n">EShaderPlatform</span> <span class="n">ShaderPlatform</span><span class="p">)</span><span class="p">;</span>
+	<span class="n">SCOPED_DRAW_EVENTF</span><span class="p">(</span><span class="n">RHICmdList</span><span class="p">,</span> <span class="n">PrePass</span><span class="p">,</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">PrePass %s %s</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span> <span class="n">GetDepthDrawingModeString</span><span class="p">(</span><span class="n">EarlyZPassMode</span><span class="p">)</span><span class="p">,</span> <span class="n">GetDepthPassReason</span><span class="p">(</span><span class="n">bDitheredLODTransitionsUseStencil</span><span class="p">,</span> <span class="n">ShaderPlatform</span><span class="p">)</span><span class="p">)</span><span class="p">;</span>
+
+	<span class="n">SCOPE_CYCLE_COUNTER</span><span class="p">(</span><span class="n">STAT_DepthDrawTime</span><span class="p">)</span><span class="p">;</span>
+	<span class="n">CSV_SCOPED_TIMING_STAT_EXCLUSIVE</span><span class="p">(</span><span class="n">RenderPrePass</span><span class="p">)</span><span class="p">;</span>
+	<span class="n">SCOPED_GPU_STAT</span><span class="p">(</span><span class="n">RHICmdList</span><span class="p">,</span> <span class="n">Prepass</span><span class="p">)</span><span class="p">;</span>
+
+	<span class="kt">bool</span> <span class="n">bDidPrePre</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+	<span class="n">FSceneRenderTargets</span><span class="o">&amp;</span> <span class="n">SceneContext</span> <span class="o">=</span> <span class="n">FSceneRenderTargets</span><span class="o">:</span><span class="o">:</span><span class="n">Get</span><span class="p">(</span><span class="n">RHICmdList</span><span class="p">)</span><span class="p">;</span>
+
+	<span class="kt">bool</span> <span class="n">bParallel</span> <span class="o">=</span> <span class="n">GRHICommandList</span><span class="p">.</span><span class="n">UseParallelAlgorithms</span><span class="p">(</span><span class="p">)</span> <span class="o">&amp;</span><span class="o">&amp;</span> <span class="n">CVarParallelPrePass</span><span class="p">.</span><span class="n">GetValueOnRenderThread</span><span class="p">(</span><span class="p">)</span><span class="p">;</span>
+
+	<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">bParallel</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="c1">// nothing to be gained by delaying this.
+</span><span class="c1"></span>		<span class="n">AfterTasksAreStarted</span><span class="p">(</span><span class="p">)</span><span class="p">;</span>
+		<span class="c1">// Note: the depth buffer will be cleared under PreRenderPrePass.
+</span><span class="c1"></span>		<span class="n">bDepthWasCleared</span> <span class="o">=</span> <span class="n">PreRenderPrePass</span><span class="p">(</span><span class="n">RHICmdList</span><span class="p">)</span><span class="p">;</span>
+		<span class="n">bDidPrePre</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+
+		<span class="c1">// PreRenderPrePass will end up clearing the depth buffer so do not clear it again.
+</span><span class="c1"></span>		<span class="n">SceneContext</span><span class="p">.</span><span class="n">BeginRenderingPrePass</span><span class="p">(</span><span class="n">RHICmdList</span><span class="p">,</span> <span class="nb">false</span><span class="p">)</span><span class="p">;</span>
+	<span class="p">}</span>
+	<span class="k">else</span>
+	<span class="p">{</span>
+		<span class="n">SceneContext</span><span class="p">.</span><span class="n">GetSceneDepthSurface</span><span class="p">(</span><span class="p">)</span><span class="p">;</span> <span class="c1">// this probably isn&#39;t needed, but if there was some lazy allocation of the depth surface going on, we want it allocated now before we go wide. We may not have called BeginRenderingPrePass yet if bDoFXPrerender is true
+</span><span class="c1"></span>	<span class="p">}</span>
+
+	<span class="c1">// Draw a depth pass to avoid overdraw in the other passes.
+</span><span class="c1"></span>	<span class="k">if</span><span class="p">(</span><span class="n">EarlyZPassMode</span> <span class="o">!</span><span class="o">=</span> <span class="n">DDM_None</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="k">const</span> <span class="kt">bool</span> <span class="n">bWaitForTasks</span> <span class="o">=</span> <span class="n">bParallel</span> <span class="o">&amp;</span><span class="o">&amp;</span> <span class="p">(</span><span class="n">CVarRHICmdFlushRenderThreadTasksPrePass</span><span class="p">.</span><span class="n">GetValueOnRenderThread</span><span class="p">(</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="o">|</span><span class="o">|</span> <span class="n">CVarRHICmdFlushRenderThreadTasks</span><span class="p">.</span><span class="n">GetValueOnRenderThread</span><span class="p">(</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span><span class="p">;</span>
+		<span class="n">FScopedCommandListWaitForTasks</span> <span class="nf">Flusher</span><span class="p">(</span><span class="n">bWaitForTasks</span><span class="p">,</span> <span class="n">RHICmdList</span><span class="p">)</span><span class="p">;</span>
+
+		<span class="k">for</span><span class="p">(</span><span class="n">int32</span> <span class="n">ViewIndex</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span><span class="n">ViewIndex</span> <span class="o">&lt;</span> <span class="n">Views</span><span class="p">.</span><span class="n">Num</span><span class="p">(</span><span class="p">)</span><span class="p">;</span><span class="n">ViewIndex</span><span class="o">+</span><span class="o">+</span><span class="p">)</span>
+		<span class="p">{</span>
+			<span class="k">const</span> <span class="n">FViewInfo</span><span class="o">&amp;</span> <span class="n">View</span> <span class="o">=</span> <span class="n">Views</span><span class="p">[</span><span class="n">ViewIndex</span><span class="p">]</span><span class="p">;</span>
+
+			<span class="n">SCOPED_GPU_MASK</span><span class="p">(</span><span class="n">RHICmdList</span><span class="p">,</span> <span class="o">!</span><span class="n">View</span><span class="p">.</span><span class="n">IsInstancedStereoPass</span><span class="p">(</span><span class="p">)</span> <span class="o">?</span> <span class="n">View</span><span class="p">.</span><span class="nl">GPUMask</span> <span class="p">:</span> <span class="p">(</span><span class="n">Views</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="p">.</span><span class="n">GPUMask</span> <span class="o">|</span> <span class="n">Views</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="p">.</span><span class="n">GPUMask</span><span class="p">)</span><span class="p">)</span><span class="p">;</span>
+			<span class="n">SCOPED_CONDITIONAL_DRAW_EVENTF</span><span class="p">(</span><span class="n">RHICmdList</span><span class="p">,</span> <span class="n">EventView</span><span class="p">,</span> <span class="n">Views</span><span class="p">.</span><span class="n">Num</span><span class="p">(</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">,</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">View%d</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span> <span class="n">ViewIndex</span><span class="p">)</span><span class="p">;</span>
+
+			<span class="n">TUniformBufferRef</span><span class="o">&lt;</span><span class="n">FSceneTexturesUniformParameters</span><span class="o">&gt;</span> <span class="n">PassUniformBuffer</span><span class="p">;</span>
+			
+			<span class="n">CreateDepthPassUniformBuffer</span><span class="p">(</span><span class="n">RHICmdList</span><span class="p">,</span> <span class="n">View</span><span class="p">,</span> <span class="n">PassUniformBuffer</span><span class="p">)</span><span class="p">;</span>
+			
+			<span class="n">FMeshPassProcessorRenderState</span> <span class="nf">DrawRenderState</span><span class="p">(</span><span class="n">View</span><span class="p">,</span> <span class="n">PassUniformBuffer</span><span class="p">)</span><span class="p">;</span>
+
+			<span class="n">SetupDepthPassState</span><span class="p">(</span><span class="n">DrawRenderState</span><span class="p">)</span><span class="p">;</span>
+
+			<span class="k">if</span> <span class="p">(</span><span class="n">View</span><span class="p">.</span><span class="n">ShouldRenderView</span><span class="p">(</span><span class="p">)</span><span class="p">)</span>
+			<span class="p">{</span>
+				<span class="n">Scene</span><span class="o">-</span><span class="o">&gt;</span><span class="n">UniformBuffers</span><span class="p">.</span><span class="n">UpdateViewUniformBuffer</span><span class="p">(</span><span class="n">View</span><span class="p">)</span><span class="p">;</span>
+
+				<span class="k">if</span> <span class="p">(</span><span class="n">bParallel</span><span class="p">)</span>
+				<span class="p">{</span>
+					<span class="n">check</span><span class="p">(</span><span class="n">RHICmdList</span><span class="p">.</span><span class="n">IsOutsideRenderPass</span><span class="p">(</span><span class="p">)</span><span class="p">)</span><span class="p">;</span>
+					<span class="n">bDepthWasCleared</span> <span class="o">=</span> <span class="n">RenderPrePassViewParallel</span><span class="p">(</span><span class="n">View</span><span class="p">,</span> <span class="n">RHICmdList</span><span class="p">,</span> <span class="n">DrawRenderState</span><span class="p">,</span> <span class="n">AfterTasksAreStarted</span><span class="p">,</span> <span class="o">!</span><span class="n">bDidPrePre</span><span class="p">)</span> <span class="o">|</span><span class="o">|</span> <span class="n">bDepthWasCleared</span><span class="p">;</span>
+					<span class="n">bDidPrePre</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+				<span class="p">}</span>
+				<span class="k">else</span>
+				<span class="p">{</span>
+					<span class="n">RenderPrePassView</span><span class="p">(</span><span class="n">RHICmdList</span><span class="p">,</span> <span class="n">View</span><span class="p">,</span> <span class="n">DrawRenderState</span><span class="p">)</span><span class="p">;</span>
+				<span class="p">}</span>
+			<span class="p">}</span>
+
+			<span class="c1">// Parallel rendering has self contained renderpasses so we need a new one for editor primitives.
+</span><span class="c1"></span>			<span class="k">if</span> <span class="p">(</span><span class="n">bParallel</span><span class="p">)</span>
+			<span class="p">{</span>
+				<span class="n">SceneContext</span><span class="p">.</span><span class="n">BeginRenderingPrePass</span><span class="p">(</span><span class="n">RHICmdList</span><span class="p">,</span> <span class="nb">false</span><span class="p">)</span><span class="p">;</span>
+			<span class="p">}</span>
+			<span class="n">RenderPrePassEditorPrimitives</span><span class="p">(</span><span class="n">RHICmdList</span><span class="p">,</span> <span class="n">View</span><span class="p">,</span> <span class="n">DrawRenderState</span><span class="p">,</span> <span class="n">EarlyZPassMode</span><span class="p">,</span> <span class="nb">true</span><span class="p">)</span><span class="p">;</span>
+			<span class="k">if</span> <span class="p">(</span><span class="n">bParallel</span><span class="p">)</span>
+			<span class="p">{</span>
+				<span class="n">RHICmdList</span><span class="p">.</span><span class="n">EndRenderPass</span><span class="p">(</span><span class="p">)</span><span class="p">;</span>
+			<span class="p">}</span>
+		<span class="p">}</span>
+	<span class="p">}</span>
+	<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">bDidPrePre</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="c1">// Only parallel rendering with all views marked as not-to-be-rendered will get here.
+</span><span class="c1"></span>		<span class="c1">// For some reason we haven&#39;t done this yet. Best do it now for consistency with the old code.
+</span><span class="c1"></span>		<span class="n">AfterTasksAreStarted</span><span class="p">(</span><span class="p">)</span><span class="p">;</span>
+		<span class="n">bDepthWasCleared</span> <span class="o">=</span> <span class="n">PreRenderPrePass</span><span class="p">(</span><span class="n">RHICmdList</span><span class="p">)</span><span class="p">;</span>
+		<span class="n">bDidPrePre</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+	<span class="p">}</span>
+
+	<span class="k">if</span> <span class="p">(</span><span class="n">bParallel</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="c1">// In parallel mode there will be no renderpass here. Need to restart.
+</span><span class="c1"></span>		<span class="n">SceneContext</span><span class="p">.</span><span class="n">BeginRenderingPrePass</span><span class="p">(</span><span class="n">RHICmdList</span><span class="p">,</span> <span class="nb">false</span><span class="p">)</span><span class="p">;</span>
+	<span class="p">}</span>
+
+	<span class="c1">// Dithered transition stencil mask clear, accounting for all active viewports
+</span><span class="c1"></span>	<span class="k">if</span> <span class="p">(</span><span class="n">bDitheredLODTransitionsUseStencil</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="k">if</span> <span class="p">(</span><span class="n">Views</span><span class="p">.</span><span class="n">Num</span><span class="p">(</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">)</span>
+		<span class="p">{</span>
+			<span class="n">FIntRect</span> <span class="n">FullViewRect</span> <span class="o">=</span> <span class="n">Views</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="p">.</span><span class="n">ViewRect</span><span class="p">;</span>
+			<span class="k">for</span> <span class="p">(</span><span class="n">int32</span> <span class="n">ViewIndex</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">ViewIndex</span> <span class="o">&lt;</span> <span class="n">Views</span><span class="p">.</span><span class="n">Num</span><span class="p">(</span><span class="p">)</span><span class="p">;</span> <span class="o">+</span><span class="o">+</span><span class="n">ViewIndex</span><span class="p">)</span>
+			<span class="p">{</span>
+				<span class="n">FullViewRect</span><span class="p">.</span><span class="n">Union</span><span class="p">(</span><span class="n">Views</span><span class="p">[</span><span class="n">ViewIndex</span><span class="p">]</span><span class="p">.</span><span class="n">ViewRect</span><span class="p">)</span><span class="p">;</span>
+			<span class="p">}</span>
+			<span class="n">RHICmdList</span><span class="p">.</span><span class="n">SetViewport</span><span class="p">(</span><span class="n">FullViewRect</span><span class="p">.</span><span class="n">Min</span><span class="p">.</span><span class="n">X</span><span class="p">,</span> <span class="n">FullViewRect</span><span class="p">.</span><span class="n">Min</span><span class="p">.</span><span class="n">Y</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">FullViewRect</span><span class="p">.</span><span class="n">Max</span><span class="p">.</span><span class="n">X</span><span class="p">,</span> <span class="n">FullViewRect</span><span class="p">.</span><span class="n">Max</span><span class="p">.</span><span class="n">Y</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span><span class="p">;</span>
+		<span class="p">}</span>
+		<span class="n">DrawClearQuad</span><span class="p">(</span><span class="n">RHICmdList</span><span class="p">,</span> <span class="nb">false</span><span class="p">,</span> <span class="n">FLinearColor</span><span class="o">:</span><span class="o">:</span><span class="n">Transparent</span><span class="p">,</span> <span class="nb">false</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="nb">true</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span><span class="p">;</span>
+	<span class="p">}</span>
+
+	<span class="c1">// Now we are finally finished.
+</span><span class="c1"></span>	<span class="n">SceneContext</span><span class="p">.</span><span class="n">FinishRenderingPrePass</span><span class="p">(</span><span class="n">RHICmdList</span><span class="p">)</span><span class="p">;</span>
+
+	<span class="k">return</span> <span class="n">bDepthWasCleared</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>UDrawFrustumComponent</p>
 
     </article>
     <script>
@@ -2189,6 +2477,15 @@ document.addEventListener('DOMContentLoaded', function () {
   <div class="toc " data-dir="ltr" data-folding="true">
     <nav id="TableOfContents">
   <ul>
+    <li>
+      <ul>
+        <li><a href="#延迟渲染">延迟渲染</a></li>
+      </ul>
+    </li>
+    <li><a href="#z-pre-pass">Z Pre Pass</a></li>
+    <li><a href="#base-pass">Base Pass</a></li>
+    <li><a href="#ue4-绘制策略drawingpolicy">UE4 绘制策略DrawingPolicy</a></li>
+    <li><a href="#render模块">Render模块</a></li>
     <li><a href="#相关术语">相关术语</a></li>
     <li><a href="#实时渲染流程">实时渲染流程：</a></li>
     <li><a href="#渲染流程">渲染流程：</a></li>
