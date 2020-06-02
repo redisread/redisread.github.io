@@ -17,24 +17,6 @@
     
       
       <item>
-        <title>My Hugo Lib</title>
-        <link>https://vhope.cf/zh/showcase/hugo/myblog/</link>
-        <pubDate>Sun, 19 Jan 2020 21:13:42 +0900</pubDate>
-        <author>1427298682@qq.com (redisread)</author>
-        <guid>https://vhope.cf/zh/showcase/hugo/myblog/</guid>
-        <description></description>
-      </item>
-      
-      <item>
-        <title>My Hugo Item</title>
-        <link>https://vhope.cf/zh/showcase/hugo/myitem/</link>
-        <pubDate>Sun, 19 Jan 2020 21:13:42 +0900</pubDate>
-        <author>1427298682@qq.com (redisread)</author>
-        <guid>https://vhope.cf/zh/showcase/hugo/myitem/</guid>
-        <description></description>
-      </item>
-      
-      <item>
         <title>UE4 Problems</title>
         <link>https://vhope.cf/zh/talks/ue4-talks/</link>
         <pubDate>Sat, 30 May 2020 20:00:19 +0800</pubDate>
@@ -49,7 +31,7 @@
         <pubDate>Fri, 29 May 2020 09:42:11 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
         <guid>https://vhope.cf/zh/posts/ue4-render/</guid>
-        <description>UE4渲染过程 延迟渲染 所谓延迟渲染，是指将一个场景的几何体（3D模型、多边形）的光照、阴影、质感搁置到一旁，先着手于绘画，然后在后半段再对光</description>
+        <description>渲染相关类 如何在C ++中从UTexture2D读取数据 https://forums.unrealengine.com/development-discussion/c-gameplay-programming/1422920-casting-converting-frhitexture-to-utexture Unreal渲染相关的缓冲区 Texture2D UTexture2D 复合纹理,可以根据法线贴图变化(主要是来自 mip 贴图)来</description>
       </item>
       
       <item>

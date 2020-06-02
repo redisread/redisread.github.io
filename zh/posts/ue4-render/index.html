@@ -1196,7 +1196,7 @@
     "datePublished": "2020-05-29T09:42:11+08:00",
     "dateModified": "2020-05-29T09:42:11+08:00",
     "url" : "https://vhope.cf/zh/posts/ue4-render/",
-    "description": "UE4渲染过程 延迟渲染 所谓延迟渲染，是指将一个场景的几何体（3D模型、多边形）的光照、阴影、质感搁置到一旁，先着手于绘画，然后在后半段再对光",
+    "description": "渲染相关类 如何在C ++中从UTexture2D读取数据 https://forums.unrealengine.com/development-discussion/c-gameplay-programming/1422920-casting-converting-frhitexture-to-utexture Unreal渲染相关的 …",
     "keywords": ["C++","UE4","Game"],
     "image" : "https://i.loli.net/2020/05/29/yO1bzGwBSflsVYj.png",
     "author": {
@@ -1518,7 +1518,17 @@
     </div>
     <article class="single__contents" data-dir="ltr">
       
-      <h1 id="ue4渲染过程">UE4渲染过程</h1>
+      <h1 id="渲染相关类">渲染相关类</h1>
+<p><a href="https://stackoverflow.com/questions/37578939/how-to-read-data-from-a-utexture2d-in-c">如何在C ++中从UTexture2D读取数据</a></p>
+<p><a href="https://forums.unrealengine.com/development-discussion/c-gameplay-programming/1422920-casting-converting-frhitexture-to-utexture">https://forums.unrealengine.com/development-discussion/c-gameplay-programming/1422920-casting-converting-frhitexture-to-utexture</a></p>
+<p><a href="https://my.oschina.net/u/4362845/blog/3636853">Unreal渲染相关的缓冲区</a></p>
+<h2 id="texture2d">Texture2D</h2>
+<h2 id="utexture2d">UTexture2D</h2>
+<p>复合纹理,可以根据法线贴图变化(主要是来自 mip 贴图)来定义修改粗糙度。</p>
+<h2 id="ftexture2d">FTexture2D</h2>
+<p>Windows. MacOS. Linux. 继承层次结构</p>
+<h2 id="frhitexture2d">FRHITexture2D</h2>
+<h1 id="ue4渲染过程">UE4渲染过程</h1>
 <h3 id="延迟渲染">延迟渲染</h3>
 <p>所谓延迟渲染，是指将一个场景的几何体（3D模型、多边形）的光照、阴影、质感搁置到一旁，先着手于绘画，然后在后半段再对光照、阴影、质感进行处理的处理方式。即给人一种把原本的多边形先绘制出来的印象，实际上不仅要绘制多边形，前者的参数还需要配合后面光照和阴影的处理。其输出目标，在成为复数缓冲时具有普遍性，但是这里的缓冲我们称之为&quot;物理缓冲&rdquo;。物体缓冲是指使用后照明和后处理特效的中间过渡环节</p>
 <h2 id="z-pre-pass">Z Pre Pass</h2>
@@ -1873,7 +1883,13 @@
 <span class="p">}</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>UDrawFrustumComponent</p>
+</div><h1 id="读取纹理gbuffer">读取纹理GBuffer</h1>
+<p>UDrawFrustumComponent</p>
+<h1 id="q">Q:</h1>
+<p><code>C:\Program Files (x86)\UE4+VS2017\UnrealEngine\Engine\Source\Runtime\Renderer\Private\PostProcess\SceneRenderTargets.h</code></p>
+<p><img src="https://i.loli.net/2020/06/01/Sc6NuwBxzQ84prZ.png" alt="image-20200601155736466" /></p>
+<p><code>C:\Program Files (x86)\UE4+VS2017\UnrealEngine\Engine\Source\Runtime\Renderer\Private\SceneRendering.cpp</code></p>
+<p><img src="https://i.loli.net/2020/06/01/V2QCnEDZplhgmko.png" alt="image-20200601161909214" /></p>
 
     </article>
     <script>
@@ -2476,6 +2492,13 @@ document.addEventListener('DOMContentLoaded', function () {
   </div>
   <div class="toc " data-dir="ltr" data-folding="true">
     <nav id="TableOfContents">
+  <ul>
+    <li><a href="#texture2d">Texture2D</a></li>
+    <li><a href="#utexture2d">UTexture2D</a></li>
+    <li><a href="#ftexture2d">FTexture2D</a></li>
+    <li><a href="#frhitexture2d">FRHITexture2D</a></li>
+  </ul>
+
   <ul>
     <li>
       <ul>
