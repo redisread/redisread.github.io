@@ -1489,7 +1489,7 @@
     <div class="single__meta">
       
 <div class="single__infos">
-  <time class="single__info" title="创建日期">📅&nbsp;2020年05月29日 </time>  &middot; <span class="single__info" title="阅读时长"> ☕ 7 分钟 </span>&middot; <span class="single__info" title="作者">👻&nbsp;Victor</span>
+  <time class="single__info" title="创建日期">📅&nbsp;2020年05月29日 </time>  &middot; <span class="single__info" title="阅读时长"> ☕ 18 分钟 </span>&middot; <span class="single__info" title="作者">👻&nbsp;Victor</span>
   <span class="single__info">
     
   </span>
@@ -1949,7 +1949,383 @@
 </div><p>键入命令vis scenedepthz uv0以查看实际使用的深度缓冲区。UE4对场景使用“反向”深度缓冲区。</p>
 <p><img src="https://i.loli.net/2020/06/02/P91kUEFIcplvNru.png" alt="image-20200602195954138" /></p>
 <h2 id="渲染函数render">渲染函数Render</h2>
+<p>路径：<code>Engine \ Source \ Runtime \ Renderer \ Private \ DeferredShadingRenderer.cpp（660）</code></p>
+<p>函数：<code>FDeferredShadingSceneRenderer :: Render（）</code>渲染路径</p>
+<table>
+<thead>
+<tr>
+<th>全局系统纹理初始化</th>
+<th>DeferredShadingRenderer.cpp（677） GSystemTextures.InitializeTextures（）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>保护 必要的渲染目标您是否已确保可以保护的最大目标数目？</td>
+<td>DeferredShadingRenderer.cpp（680） GSceneRenderTargets.Allocate（）</td>
+</tr>
+<tr>
+<td>初始化每个视口 设置视口显示的对象，选择使用动态阴影时显示的对象，对半透明对象进行排序</td>
+<td>DeferredShadingRenderer.cpp（683） InitViews()（）</td>
+</tr>
+<tr>
+<td>FXSystem预处理 GPU粒子正在被仿真</td>
+<td>DeferredShadingRenderer.cpp（758） FXSystem-&gt; PreRender（）</td>
+</tr>
+<tr>
+<td>启用Z Pre-Pass时执行的早期Z绘制 不绘制Tile渲染的硬件（移动设备，Android或iOS）对于 PC或PS4，将生成深度缓冲区和HiZ，因此后续绘制速度很快成为？</td>
+<td>DeferredShadingRenderer.cpp（768） RenderPrePass（）</td>
+</tr>
+<tr>
+<td>安全GBuffer</td>
+<td>DeferredShadingRenderer.cpp（774） GSceneRenderTargets.AllocGBufferTargets（）</td>
+</tr>
+<tr>
+<td>透明光传播量</td>
+<td>DeferredShadingRenderer.cpp（779） ClearLPVs（）</td>
+</tr>
+<tr>
+<td>使用DBuffer时绘制延期贴图<a href="http://monsho.blog63.fc2.com/blog-entry-139.html">单击此处</a>获取 DBuffer和延期贴图</td>
+<td>DeferredShadingRenderer.cpp（796） GCompositionLighting.ProcessBeforeBasePass（）</td>
+</tr>
+<tr>
+<td>如有必要，请 在绘制线框图时清除GBuffer透明颜色缓冲区， 有些游戏在发行游戏时无法清除GBuffer或屏幕。</td>
+<td>DeferredShadingRenderer.cpp（805） SetAndClearViewGBuffer（）  DeferredShadingRenderer.cpp（816） RHICmdList.Clear（）</td>
+</tr>
+<tr>
+<td>渲染不透明的对象渲染 项目，这些项目根据它们是Masked还是Default，是否有LightMap等按每种排序顺序进行了精细分类</td>
+<td>DeferredShadingRenderer.cpp（828） RenderBasePass（）</td>
+</tr>
+<tr>
+<td>清除 GBuffer 的未绘制部分如果事先清除GBuffer，则不必要。</td>
+<td>DeferredShadingRenderer.cpp（851） ClearGBufferAtMaxZ（）</td>
+</tr>
+<tr>
+<td>绘制 自定义深度请参见<a href="http://monsho.blog63.fc2.com/blog-entry-138.html">此处</a>以获取自定义深度</td>
+<td>DeferredShadingRenderer.cpp（860） RenderCustomDepthPass（）</td>
+</tr>
+<tr>
+<td>在这里再次模拟GPU粒子除了在这里 处理使用深度缓冲区执行碰撞检测的 粒子外，还对GPU粒子进行排序</td>
+<td>DeferredShadingRenderer.cpp（865） 场景-&gt; FXSystem-&gt; PostRenderOpaque（）</td>
+</tr>
+<tr>
+<td>为SceneDepthTexture创建一个半分辨率（每个方面为1/4分辨率）的缓冲区</td>
+<td>DeferredShadingRenderer.cpp（875） UpdateDownsampledDepthSurface（）</td>
+</tr>
+<tr>
+<td>执行阻塞测试 HZB的构建，执行提交 的HZB <a href="https://twitter.com/tempkinder">Attotempkinder</a>的<a href="http://darakemonodarake.hatenablog.jp/entry/2014/12/17/000422">这篇文章</a>指</td>
+<td>DeferredShadingRenderer.cpp（881） BeginOcclusionTests（）</td>
+</tr>
+<tr>
+<td>开始写 因为有点复杂，所以要写一些细节</td>
+<td>DeferredShadingRenderer.cpp（890）</td>
+</tr>
+<tr>
+<td>不使用DBuffer绘制延迟的贴图</td>
+<td>CompositionLighting.cpp（293） AddDeferredDecalsBeforeLighting（）</td>
+</tr>
+<tr>
+<td>在屏幕空间中绘制环境光遮挡</td>
+<td>CompositionLighting.cpp（300） AddPostProcessingAmbientOcclusion（）</td>
+</tr>
+<tr>
+<td>后期处理环境立方体贴图</td>
+<td>CompositionLighting.cpp（305） AddPostProcessingAmbientCubemap（）</td>
+</tr>
+<tr>
+<td>到这里为止的一系列处理</td>
+<td>DeferredShadingRenderer.cpp（904） GCompositionLighting.ProcessAfterBasePass（）</td>
+</tr>
+<tr>
+<td>透明的体积光缓冲液可提高透明度</td>
+<td>DeferredShadingRenderer.cpp（908） ClearTranslucentVolumeLighting（）</td>
+</tr>
+<tr>
+<td>从此处开始的主要照明设备 收集要绘制的灯光并将其排序 不要投影，不使用灯光功能的灯光将使用“ 基于图块” 绘制（如果可能）如果不能使用“ 基于图块”关于延迟渲染，<a href="https://sites.google.com/site/monshonosuana/directxno-hanashi-1/directx-125">这</a>是味o，但请参见<a href="https://sites.google.com/site/monshonosuana/directxno-hanashi-1/directx-125">此处</a></td>
+<td>LightRendering.cpp（312-348）  LightRendering.cpp（423） RenderTiledDeferredLighting（）  LightRendering.cpp（429） RenderSimpleLightsStandardDeferred（）</td>
+</tr>
+<tr>
+<td>它不会阴影，也不会使用灯光功能，但是似乎无法使用TBDR绘制的灯光 被称为标准延迟灯光。</td>
+<td>LightRendering.cpp（445） RenderLight（）</td>
+</tr>
+<tr>
+<td>如果用于半透明的体积光是有效的，则将每个光注入到体积光中 ，从而在3D纹理上绘制光效果。</td>
+<td>LightRendering.cpp（455） InjectTranslucentVolumeLightingArray（）  LightRendering.cpp（461） InjectSimpleTranslucentVolumeLightingArray（）</td>
+</tr>
+<tr>
+<td>使用灯光功能投射阴影的灯光将单独处理</td>
+<td>LightRendering.cpp（468-552）</td>
+</tr>
+<tr>
+<td>首先，我在<a href="https://sites.google.com/site/monshonosuana/directxno-hanashi-1/directx-137">投射</a>阴影时 绘制了一个阴影贴图；在这里我还绘制了一个 半透明的阴影贴图；我记得半透明的当然是<a href="https://sites.google.com/site/monshonosuana/directxno-hanashi-1/directx-137">傅立叶不透明度贴图</a>。</td>
+<td>LightRendering.cpp（495） RenderTranslucentProjectedShadows（）  LightRendering.cpp（497） RenderProjectedShadows（）</td>
+</tr>
+<tr>
+<td>使用LPV时绘制<a href="http://d.hatena.ne.jp/hanecci/20100731/1280596856">反射阴影贴图</a></td>
+<td>LightRendering.cpp（508） RenderReflectiveShadowMaps（）</td>
+</tr>
+<tr>
+<td>灯光功能图 阴影指示器图</td>
+<td>LightRendering.cpp（515） RenderLightFunction（）  LightRendering.cpp（522） RenderPreviewShadowsIndicator（）</td>
+</tr>
+<tr>
+<td>衰减缓冲器中的分辨 光的衰减信息是否曾经被吸入另一个缓冲器中？</td>
+<td>LightRendering.cpp（534） GSceneRenderTargets.FinishRenderingLightAttenuation（）</td>
+</tr>
+<tr>
+<td>注入体积光以获得半透明</td>
+<td>LightRendering.cpp（541） InjectTranslucentVolumeLighting（）</td>
+</tr>
+<tr>
+<td>这 是使用光功能投射阴影的光处理的结束。</td>
+<td>LightRendering.cpp（550） RenderLight（）</td>
+</tr>
+<tr>
+<td>这 是每个光的LPV 的主要注入照明过程的结尾</td>
+<td>LightRendering.cpp（561-593） Lpv-&gt; InjectLightDirect（）</td>
+</tr>
+<tr>
+<td>注入体积光以实现环境立方体贴图的半透明</td>
+<td>DeferredShadingRenderer.cpp（916） InjectAmbientCubemapTranslucentVolumeLighting（）</td>
+</tr>
+<tr>
+<td>过滤体积光以获得半透明</td>
+<td>DeferredShadingRenderer.cpp（919） FilterTranslucentVolumeLighting（）</td>
+</tr>
+<tr>
+<td>LPV传输过程 此外，第921行的注释上写有“ copypimis”，例如“ Clear LPV buffer”。</td>
+<td>DeferredShadingRenderer.cpp（924） PropagateLPVs（）</td>
+</tr>
+<tr>
+<td>动态天光绘图</td>
+<td>DeferredShadingRenderer.cpp（928） RenderDynamicSkyLighting（）</td>
+</tr>
+<tr>
+<td>延迟的反射图形 捕获的反射图形而不是屏幕空间</td>
+<td>DeferredShadingRenderer.cpp（931） RenderDeferredReflections（）</td>
+</tr>
+<tr>
+<td>LPV的GI绘图</td>
+<td>CompositionLighting.cpp（344） AddPostProcessingLpvIndirect（）</td>
+</tr>
+<tr>
+<td>屏幕空间次表面散射（SSSSS）的后处理</td>
+<td>CompositionLighting.cpp（347-376）</td>
+</tr>
+<tr>
+<td>如果启用了“光轴”，则绘制“光轴遮挡”</td>
+<td>DeferredShadingRenderer.cpp（953） RenderLightShaftOcclusion（）</td>
+</tr>
+<tr>
+<td><a href="https://docs.unrealengine.com/latest/INT/Engine/Actors/FogEffects/AtmosphericFog/index.html">大气雾</a>图</td>
+<td>DeferredShadingRenderer.cpp（977） RenderAtmosphere（）</td>
+</tr>
+<tr>
+<td>绘图雾 这是<a href="https://docs.unrealengine.com/latest/INT/Engine/Actors/FogEffects/HeightFog/index.html">高度</a>雾吗？</td>
+<td>DeferredShadingRenderer.cpp（986） RenderFog（）</td>
+</tr>
+<tr>
+<td>画一个半透明的物体 在这里也画一个单独的半透明的东西</td>
+<td>DeferredShadingRenderer.cpp（1000） RenderTranslucency（）</td>
+</tr>
+<tr>
+<td>折射变形处理</td>
+<td>DeferredShadingRenderer.cpp（1008） RenderDistortion（）</td>
+</tr>
+<tr>
+<td>光轴的起霜处理</td>
+<td>DeferredShadingRenderer.cpp（1013） RenderLightShaftBloom（）</td>
+</tr>
+<tr>
+<td>距离场AO处理不能在 当前不支持多个视口 的分屏游戏中使用吗？</td>
+<td>DeferredShadingRenderer.cpp（1019） RenderDistanceFieldAOSurfaceCache（）</td>
+</tr>
+<tr>
+<td>它只是在查看网格的“距离场”的可视化处理结果吗？</td>
+<td>DeferredShadingRenderer.cpp（1024） RenderMeshDistanceFieldVisualization（）</td>
+</tr>
+<tr>
+<td>由于速度模糊而绘制运动对象的速度</td>
+<td>DeferredShadingRenderer.cpp（1034） RenderVelocities（）</td>
+</tr>
+<tr>
+<td>从这里到最后的发布过程， 这也很复杂而且很长</td>
+<td>DeferredShadingRenderer.cpp（1047） GPostProcessing.Process（）</td>
+</tr>
+<tr>
+<td>使用BeforeTranslucency设置绘制后处理材料</td>
+<td>PostProcessing.cpp（878） AddPostProcessMaterial（）</td>
+</tr>
+<tr>
+<td>景深处理 通过高斯模糊进行DOF 处理之后，正在执行散焦处理（使用指定的光圈形状的纹理进行绘制）， 在此阶段似乎合并了单独的半透明缓冲区</td>
+<td>PostProcessing.cpp（888） AddPostProcessDepthOfFieldGaussian（）  PostProcessing.cpp（898） AddPostProcessDepthOfFieldBokeh（）  PostProcessing.cpp（905） FRCPassPostProcessBokehDOFRecombine （如果未启用模糊）</td>
+</tr>
+<tr>
+<td>使用BeforeTonemapping设置绘制后处理材料</td>
+<td>PostProcessing.cpp（913） AddPostProcessMaterial（）</td>
+</tr>
+<tr>
+<td>如果要使用TemporalAA ，请在此处绘制，如果使用FXAA，请稍后再绘制</td>
+<td>PostProcessing.cpp（921） AddTemporalAA（）  PostProcessing.cpp（928） AddTemporalAA（） （如果不使用速度缓冲区，请单击此处）</td>
+</tr>
+<tr>
+<td>运动模糊处理 设置，分辨率下采样，高斯模糊，运动模糊绘制，组合处理</td>
+<td>PostProcessing.cpp（932-994） FRCPassPostProcessMotionBlurSetup FRCPassPostProcessDownsample RenderGaussianBlur（） FRCPassPostProcessMotionBlur FRCPassPostProcessMotionBlurRecombine</td>
+</tr>
+<tr>
+<td>SceneColor下采样</td>
+<td>PostProcessing.cpp（1000） FRCPassPostProcessDownsample</td>
+</tr>
+<tr>
+<td>直方图</td>
+<td>PostProcessing.cpp（1006-1040） FRCPassPostProcessHistogram FRCPassPostProcessHistogramReduce</td>
+</tr>
+<tr>
+<td>此处需要<a href="https://docs.unrealengine.com/latest/INT/Engine/Rendering/PostProcessEffects/AutomaticExposure/index.html">眼睛适应</a>图直方图</td>
+<td>PostProcessing.cpp（1046） AddPostProcessEyeAdaptation（）</td>
+</tr>
+<tr>
+<td>布卢姆绘图</td>
+<td>PostProcessing.cpp（1057） AddBloom（）  PostProcessing.cpp（1060-1148） （对于移动设备，请单击此处）</td>
+</tr>
+<tr>
+<td>色调映射 仅替换ReplacecingTonemapper设置工程图的一种后处理材料，但是 如果存在该材料，则执行默认色调映射</td>
+<td>PostProcessing.cpp（1155） AddSinglePostProcessMaterial（）  PostProcessing.cpp（1171） AddTonemapper（） （默认色调映射）</td>
+</tr>
+<tr>
+<td>如果启用了FXAA，请在此处处理</td>
+<td>PostProcessing.cpp（1177） AddPostProcessAA（）</td>
+</tr>
+<tr>
+<td>绘制一些编辑器（如选定的轮廓）， 然后使用AfterTonemapping设置绘制后期处理材料</td>
+<td>PostProcessing.cpp（1244） AddPostProcessMaterial（）</td>
+</tr>
+<tr>
+<td>用于地下和GBuffer的可视化 调试</td>
+<td>PostProcessing.cpp（1246-1254）</td>
+</tr>
+<tr>
+<td>用于HMD的后处理 Oculus或Morpheus</td>
+<td>PostProcessing.cpp（1256-1277） FRCPassPostProcessHMD FRCPassPostProcessMorpheus</td>
+</tr>
+<tr>
+<td>之后，调试和高分辨率屏幕截图功能等。 之后，进行后处理并结束！ 谢谢！</td>
+<td>PostProcessing.cpp（1279-）</td>
+</tr>
+</tbody>
+</table>
+<p>哦，很长。<br />
+可能很难阅读，但是如果您有兴趣，请过来。</p>
+<p>如何使用ENQUEUE_RENDER_COMMAND代替ENQUEUE_UNIQUE_RENDER_COMMAND_ONEPARAMETER-虚幻引擎论坛</p>
+<p><a href="https://qiita.com/mechamogera/items/a0c369a3b853a3042cae">https://qiita.com/mechamogera/items/a0c369a3b853a3042cae</a></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-c++" data-lang="c++"><span class="cp">#</span><span class="cp">include</span> <span class="cpf">&#34;ImageUtils.h&#34;</span><span class="cp">
+</span><span class="cp"></span><span class="cp">#</span><span class="cp">include</span> <span class="cpf">&#34;GenericPlatform/GenericPlatformProcess.h&#34;</span><span class="cp">
+</span><span class="cp"></span>
+<span class="kt">void</span> <span class="n">HogeHoge</span><span class="o">:</span><span class="o">:</span><span class="n">Convert</span><span class="p">(</span><span class="n">UTexture</span><span class="o">*</span> <span class="n">Img</span><span class="p">,</span> <span class="n">TArray</span><span class="o">&lt;</span><span class="n">uint8</span><span class="o">&gt;</span><span class="o">&amp;</span> <span class="n">ImgData</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">Img</span> <span class="o">|</span><span class="o">|</span> <span class="o">!</span><span class="n">Img</span><span class="o">-</span><span class="o">&gt;</span><span class="n">Resource</span> <span class="o">|</span><span class="o">|</span> <span class="o">!</span><span class="n">Img</span><span class="o">-</span><span class="o">&gt;</span><span class="n">Resource</span><span class="o">-</span><span class="o">&gt;</span><span class="n">TextureRHI</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">UE_LOG</span><span class="p">(</span><span class="n">LogTemp</span><span class="p">,</span> <span class="n">Warning</span><span class="p">,</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">Upload Texture is invalid</span><span class="s">&#34;</span><span class="p">)</span><span class="p">)</span><span class="p">;</span>
+        <span class="k">return</span><span class="p">;</span>
+    <span class="p">}</span>
 
+    <span class="n">FTexture2DRHIRef</span> <span class="n">Texture2D</span> <span class="o">=</span> <span class="n">Img</span><span class="o">-</span><span class="o">&gt;</span><span class="n">Resource</span><span class="o">-</span><span class="o">&gt;</span><span class="n">TextureRHI</span><span class="o">-</span><span class="o">&gt;</span><span class="n">GetTexture2D</span><span class="p">(</span><span class="p">)</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">Texture2D</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">UE_LOG</span><span class="p">(</span><span class="n">LogTemp</span><span class="p">,</span> <span class="n">Warning</span><span class="p">,</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">Upload Texture2D is invalid</span><span class="s">&#34;</span><span class="p">)</span><span class="p">)</span><span class="p">;</span>
+        <span class="k">return</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="n">TArray</span><span class="o">&lt;</span><span class="n">FColor</span><span class="o">&gt;</span> <span class="n">OutPixels</span><span class="p">;</span>
+    <span class="k">struct</span> <span class="nc">FReadSurfaceContext</span>
+    <span class="p">{</span>
+        <span class="n">FTexture2DRHIRef</span> <span class="n">Texture</span><span class="p">;</span>
+        <span class="n">TArray</span><span class="o">&lt;</span><span class="n">FColor</span><span class="o">&gt;</span><span class="o">*</span> <span class="n">OutData</span><span class="p">;</span>
+        <span class="n">FIntRect</span> <span class="n">Rect</span><span class="p">;</span>
+        <span class="n">FReadSurfaceDataFlags</span> <span class="n">Flags</span><span class="p">;</span>
+    <span class="p">}</span><span class="p">;</span>
+
+    <span class="n">FReadSurfaceContext</span> <span class="n">ReadSurfaceContext</span> <span class="o">=</span>
+    <span class="p">{</span>
+        <span class="n">Texture2D</span><span class="p">,</span>
+        <span class="o">&amp;</span><span class="n">OutPixels</span><span class="p">,</span>
+        <span class="n">FIntRect</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">Texture2D</span><span class="o">-</span><span class="o">&gt;</span><span class="n">GetSizeXY</span><span class="p">(</span><span class="p">)</span><span class="p">.</span><span class="n">X</span><span class="p">,</span> <span class="n">Texture2D</span><span class="o">-</span><span class="o">&gt;</span><span class="n">GetSizeXY</span><span class="p">(</span><span class="p">)</span><span class="p">.</span><span class="n">Y</span><span class="p">)</span><span class="p">,</span>
+        <span class="n">FReadSurfaceDataFlags</span><span class="p">(</span><span class="n">RCM_UNorm</span><span class="p">,</span> <span class="n">CubeFace_MAX</span><span class="p">)</span>
+    <span class="p">}</span><span class="p">;</span>
+
+    <span class="n">FReadSurfaceContext</span> <span class="n">Context</span> <span class="o">=</span> <span class="n">ReadSurfaceContext</span><span class="p">;</span>
+    <span class="n">ENQUEUE_RENDER_COMMAND</span><span class="p">(</span><span class="n">ReadSurfaceCommand</span><span class="p">)</span><span class="p">(</span>
+        <span class="p">[</span><span class="n">Context</span><span class="p">]</span><span class="p">(</span><span class="n">FRHICommandListImmediate</span><span class="o">&amp;</span> <span class="n">RHICmdList</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">RHICmdList</span><span class="p">.</span><span class="n">ReadSurfaceData</span><span class="p">(</span>
+            <span class="n">Context</span><span class="p">.</span><span class="n">Texture</span><span class="p">,</span>
+            <span class="n">Context</span><span class="p">.</span><span class="n">Rect</span><span class="p">,</span>
+            <span class="o">*</span><span class="n">Context</span><span class="p">.</span><span class="n">OutData</span><span class="p">,</span>
+            <span class="n">Context</span><span class="p">.</span><span class="n">Flags</span>
+        <span class="p">)</span><span class="p">;</span>
+    <span class="p">}</span><span class="p">)</span><span class="p">;</span>
+
+    <span class="n">FlushRenderingCommands</span><span class="p">(</span><span class="p">)</span><span class="p">;</span>
+
+    <span class="n">FImageUtils</span><span class="o">:</span><span class="o">:</span><span class="n">CompressImageArray</span><span class="p">(</span><span class="n">Context</span><span class="p">.</span><span class="n">Rect</span><span class="p">.</span><span class="n">Width</span><span class="p">(</span><span class="p">)</span><span class="p">,</span> <span class="n">Context</span><span class="p">.</span><span class="n">Rect</span><span class="p">.</span><span class="n">Height</span><span class="p">(</span><span class="p">)</span><span class="p">,</span> <span class="n">OutPixels</span><span class="p">,</span> <span class="n">ImgData</span><span class="p">)</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div>
     </article>
     <script>
   'use strict';
