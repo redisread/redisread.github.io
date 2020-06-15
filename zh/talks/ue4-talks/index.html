@@ -2670,7 +2670,66 @@
 <span class="p">)</span><span class="p">;</span>
 </code></pre></td></tr></table>
 </div>
+</div><p><a href="https://stackoverflow.com/questions/45239108/how-to-export-ftexture2drhiref-to-png">How to export FTexture2DRHIRef to png?</a></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-c++" data-lang="c++"><span class="k">class</span> <span class="nc">SceneDepthCapture</span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+<span class="n">TArray</span><span class="o">&lt;</span><span class="n">FLinearColor</span><span class="o">&gt;</span> <span class="n">sceneDepthData</span><span class="p">;</span>
+<span class="n">FIntPoint</span> <span class="n">bufferSize</span><span class="p">;</span>
+ 
+<span class="kt">void</span> <span class="nf">SceneDepthCaptureSync</span><span class="p">(</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="n">ENQUEUE_RENDER_COMMAND</span><span class="p">(</span><span class="n">ReadSurfaceFloatCommand</span><span class="p">)</span><span class="p">(</span>
+<span class="p">[</span><span class="k">this</span><span class="p">]</span><span class="p">(</span><span class="n">FRHICommandListImmediate</span><span class="o">&amp;</span> <span class="n">RHICmdList</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="n">FSceneRenderTargets</span><span class="o">&amp;</span> <span class="n">context</span> <span class="o">=</span> <span class="n">FSceneRenderTargets</span><span class="o">:</span><span class="o">:</span><span class="n">Get</span><span class="p">(</span><span class="n">RHICmdList</span><span class="p">)</span><span class="p">;</span>
+<span class="n">bufferSize</span> <span class="o">=</span> <span class="n">context</span><span class="p">.</span><span class="n">GetBufferSizeXY</span><span class="p">(</span><span class="p">)</span><span class="p">;</span>
+<span class="n">FIntRect</span> <span class="n">Rect</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">bufferSize</span><span class="p">.</span><span class="n">X</span><span class="p">,</span> <span class="n">bufferSize</span><span class="p">.</span><span class="n">Y</span><span class="p">)</span><span class="p">;</span>
+<span class="n">RHICmdList</span><span class="p">.</span><span class="n">ReadSurfaceData</span><span class="p">(</span>
+<span class="n">context</span><span class="p">.</span><span class="n">GetSceneDepthTexture</span><span class="p">(</span><span class="p">)</span><span class="p">,</span>
+<span class="n">Rect</span><span class="p">,</span>
+<span class="n">sceneDepthData</span><span class="p">,</span>
+<span class="n">FReadSurfaceDataFlags</span><span class="p">(</span><span class="p">)</span><span class="p">)</span><span class="p">;</span>
+ 
+<span class="p">}</span><span class="p">)</span><span class="p">;</span>
+<span class="n">FlushRenderingCommands</span><span class="p">(</span><span class="p">)</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="p">}</span><span class="p">;</span>
+</code></pre></td></tr></table>
 </div>
+</div><h3 id="使用模块的方式">使用模块的方式</h3>
+<p>使用模块</p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200609203344611.png" alt="image-20200609203344611" /></p>
+<p><img src="https://i.loli.net/2020/06/11/1ChrRqPeWZyKpoz.png" alt="image-20200611160956920" /></p>
+
     </article>
     <script>
   'use strict';
@@ -3309,6 +3368,7 @@ document.addEventListener('DOMContentLoaded', function () {
         <li><a href="#api-ugameplaystaticsprojectworldtoscreen">API UGameplayStatics::ProjectWorldToScreen</a></li>
         <li><a href="#z-buffer">Z-Buffer</a></li>
         <li><a href="#获取gbuffer的一种方式">获取GBuffer的一种方式</a></li>
+        <li><a href="#使用模块的方式">使用模块的方式</a></li>
       </ul>
     </li>
   </ul>
