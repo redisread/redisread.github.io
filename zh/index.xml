@@ -69,7 +69,7 @@
         <pubDate>Fri, 29 May 2020 09:42:11 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
         <guid>https://vhope.cf/zh/posts/ue/ue4-render/</guid>
-        <description>渲染相关类 如何在C ++中从UTexture2D读取数据 https://forums.unrealengine.com/development-discussion/c-gameplay-programming/1422920-casting-converting-frhitexture-to-utexture Unreal渲染相关的缓冲区 Texture2D UTexture2D 复合纹理,可以根据法线贴图变化(主要是来自 mip 贴图)来</description>
+        <description>&lt;p&gt;大概介绍以下UE4的主要渲染过程。&lt;/p&gt;</description>
       </item>
       
       <item>

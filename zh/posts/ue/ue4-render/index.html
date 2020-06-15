@@ -1196,7 +1196,7 @@
     "datePublished": "2020-05-29T09:42:11+08:00",
     "dateModified": "2020-05-29T09:42:11+08:00",
     "url" : "https://vhope.cf/zh/posts/ue/ue4-render/",
-    "description": "渲染相关类 如何在C ++中从UTexture2D读取数据 https://forums.unrealengine.com/development-discussion/c-gameplay-programming/1422920-casting-converting-frhitexture-to-utexture Unreal渲染相关的 …",
+    "description": "\u003cp\u003e大概介绍以下UE4的主要渲染过程。\u003c/p\u003e",
     "keywords": ["C++","UE4","Game"],
     "image" : "https://i.loli.net/2020/06/15/ivEDkwYhIQ5xVn7.png",
     "author": {
@@ -1489,7 +1489,7 @@
     <div class="single__meta">
       
 <div class="single__infos">
-  <time class="single__info" title="创建日期">📅&nbsp;2020年05月29日 </time>  &middot; <span class="single__info" title="阅读时长"> ☕ 20 分钟 </span>&middot; <span class="single__info" title="作者">👻&nbsp;Victor</span>
+  <time class="single__info" title="创建日期">📅&nbsp;2020年05月29日 </time>  &middot; <span class="single__info" title="阅读时长"> ☕ 15 分钟 </span>&middot; <span class="single__info" title="作者">👻&nbsp;Victor</span>
   <span class="single__info">
     
   </span>
@@ -1518,23 +1518,27 @@
     </div>
     <article class="single__contents" data-dir="ltr">
       
-      <h1 id="渲染相关类">渲染相关类</h1>
-<p><a href="https://stackoverflow.com/questions/37578939/how-to-read-data-from-a-utexture2d-in-c">如何在C ++中从UTexture2D读取数据</a></p>
-<p><a href="https://forums.unrealengine.com/development-discussion/c-gameplay-programming/1422920-casting-converting-frhitexture-to-utexture">https://forums.unrealengine.com/development-discussion/c-gameplay-programming/1422920-casting-converting-frhitexture-to-utexture</a></p>
-<p><a href="https://my.oschina.net/u/4362845/blog/3636853">Unreal渲染相关的缓冲区</a></p>
-<h2 id="texture2d">Texture2D</h2>
-<h2 id="utexture2d">UTexture2D</h2>
-<p>复合纹理,可以根据法线贴图变化(主要是来自 mip 贴图)来定义修改粗糙度。</p>
-<h2 id="ftexture2d">FTexture2D</h2>
-<p>Windows. MacOS. Linux. 继承层次结构</p>
-<h2 id="frhitexture2d">FRHITexture2D</h2>
+      <p>大概介绍以下UE4的主要渲染过程。</p>
 <h1 id="ue4渲染过程">UE4渲染过程</h1>
 <h3 id="延迟渲染">延迟渲染</h3>
 <p>所谓延迟渲染，是指将一个场景的几何体（3D模型、多边形）的光照、阴影、质感搁置到一旁，先着手于绘画，然后在后半段再对光照、阴影、质感进行处理的处理方式。即给人一种把原本的多边形先绘制出来的印象，实际上不仅要绘制多边形，前者的参数还需要配合后面光照和阴影的处理。其输出目标，在成为复数缓冲时具有普遍性，但是这里的缓冲我们称之为&quot;物理缓冲&rdquo;。物体缓冲是指使用后照明和后处理特效的中间过渡环节</p>
-<h2 id="z-pre-pass">Z Pre Pass</h2>
+<h2 id="相关术语">相关术语</h2>
+<p><strong>RHI</strong></p>
+<p>渲染硬件接口，是为不同平台抽象出不同图形API的一层。所有渲染命令均通过RHI层传递，以转换为适用的渲染器。</p>
+<p><strong>延迟渲染</strong></p>
+<p>虚幻引擎4中的默认渲染器。它因将照明/阴影计算推迟到全屏过程而不是绘制每个网格时而得名。</p>
+<p><strong>顶点工厂</strong></p>
+<p>顶点工厂是封装顶点数据源并链接到顶点着色器上的输入的类。静态网格物体，骨架网格物体和过程网格组件均使用不同的顶点工厂。</p>
+<p><strong>着色器</strong></p>
+<p>在虚幻引擎中，着色器是HLSL代码（以.ush / .usf文件的形式）和材质图的内容的组合。在Unreal中创建材质时，它会根据设置（如着色模式）和用法来编译多个着色器排列。</p>
+<h2 id="渲染数据">渲染数据</h2>
+<p>相关的渲染的数据包括深度值及一些Gbuffer，如下图：</p>
+<p><img src="https://i.loli.net/2020/06/15/g9iFMPohRBTr4L2.jpg" alt="Gbuffer" /></p>
+<h2 id="几个pass">几个Pass</h2>
+<h3 id="z-pre-pass">Z Pre Pass</h3>
 <p>UE4的渲染管道，是在Bass Pass的物体缓冲写出来之前，在仅预处理深度值（Z值）之后，运行Z预阶段。</p>
 <p>事先预处理深度值的目的，是将最终影像和同一深度缓冲的内容结果，在透视前获得。Z预阶段之后的Base Pass则是，参考预先得出的深度值缓冲进行Z预测试，因此通过在最终的画面里不留下像素痕迹（即编写后又被消去的像素），以回避像素着色器的运行。</p>
-<h2 id="base-pass">Base Pass</h2>
+<p>Base Pass</p>
 <p>使用Base Pass输出物体缓冲需要注意的两点：</p>
 <ol>
 <li>
@@ -1552,8 +1556,18 @@
 </blockquote>
 </li>
 </ol>
-<h2 id="ue4-绘制策略drawingpolicy">UE4 绘制策略DrawingPolicy</h2>
+<blockquote>
+<p>UE4 绘制策略DrawingPolicy</p>
 <p>绘制策略在UE4渲染中使用很多， 中文也不好翻译。 其实就是根据策略 使用了哪些 着色器 。</p>
+</blockquote>
+<p>&hellip;&hellip;&hellip;.</p>
+<h2 id="ue4渲染一帧">UE4渲染一帧</h2>
+<p><img src="https://interplayoflight.files.wordpress.com/2017/10/image2.png?w=515&amp;h=708" alt="img" /></p>
+<h2 id="渲染管道">渲染管道</h2>
+<p><img src="https://i.loli.net/2020/05/30/P6KEDtS1HkOg9fF.jpg" alt="preview" style="zoom: 200%;" /></p>
+<p>首先，虚幻的渲染由三个线程共同完成。分别是CPU线程，DRAW线程，和GPU线程。</p>
+<p>知乎：https://zhuanlan.zhihu.com/p/57158725</p>
+<p><img src="https://i.loli.net/2020/05/30/YZuyDGO7c3mRXfd.jpg" alt="渲染流水线" /></p>
 <h2 id="render模块">Render模块</h2>
 <p>调用Render()函数在Render模块<code>RendererModule.h</code>中，以下函数：</p>
 <div class="highlight"><div class="chroma">
@@ -1574,565 +1588,11 @@
 </div>
 </div><p>==谁最终调用了Render？==</p>
 <p><img src="https://i.loli.net/2020/06/02/FyKugnqzODMvslW.png" alt="调用Render" /></p>
-<p><a href="https://answers.unrealengine.com/questions/17862/access-color-and-depth-buffer-of-each-frame.html">https://answers.unrealengine.com/questions/17862/access-color-and-depth-buffer-of-each-frame.html</a></p>
-<p><a href="https://segmentfault.com/a/1190000012737548">https://segmentfault.com/a/1190000012737548</a></p>
-<p><img src="https://i.loli.net/2020/05/30/P6KEDtS1HkOg9fF.jpg" alt="preview" style="zoom: 200%;" /></p>
-<h2 id="相关术语">相关术语</h2>
-<p><strong>RHI</strong></p>
-<p>渲染硬件接口，是为不同平台抽象出不同图形API的一层。所有渲染命令均通过RHI层传递，以转换为适用的渲染器。</p>
-<p><strong>延迟渲染</strong></p>
-<p>虚幻引擎4中的默认渲染器。它因将照明/阴影计算推迟到全屏过程而不是绘制每个网格时而得名。</p>
-<p><strong>顶点工厂</strong></p>
-<p>顶点工厂是封装顶点数据源并链接到顶点着色器上的输入的类。静态网格物体，骨架网格物体和过程网格组件均使用不同的顶点工厂。</p>
-<p><strong>着色器</strong></p>
-<p>在虚幻引擎中，着色器是HLSL代码（以.ush / .usf文件的形式）和材质图的内容的组合。在Unreal中创建材质时，它会根据设置（如着色模式）和用法来编译多个着色器排列。</p>
-<p>UE与D3D对应格式</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span><span class="lnt">22
-</span><span class="lnt">23
-</span><span class="lnt">24
-</span><span class="lnt">25
-</span><span class="lnt">26
-</span><span class="lnt">27
-</span><span class="lnt">28
-</span><span class="lnt">29
-</span><span class="lnt">30
-</span><span class="lnt">31
-</span><span class="lnt">32
-</span><span class="lnt">33
-</span><span class="lnt">34
-</span><span class="lnt">35
-</span><span class="lnt">36
-</span><span class="lnt">37
-</span><span class="lnt">38
-</span><span class="lnt">39
-</span><span class="lnt">40
-</span><span class="lnt">41
-</span><span class="lnt">42
-</span><span class="lnt">43
-</span><span class="lnt">44
-</span><span class="lnt">45
-</span><span class="lnt">46
-</span><span class="lnt">47
-</span><span class="lnt">48
-</span><span class="lnt">49
-</span><span class="lnt">50
-</span><span class="lnt">51
-</span><span class="lnt">52
-</span><span class="lnt">53
-</span><span class="lnt">54
-</span><span class="lnt">55
-</span><span class="lnt">56
-</span><span class="lnt">57
-</span><span class="lnt">58
-</span><span class="lnt">59
-</span><span class="lnt">60
-</span><span class="lnt">61
-</span><span class="lnt">62
-</span><span class="lnt">63
-</span><span class="lnt">64
-</span><span class="lnt">65
-</span><span class="lnt">66
-</span><span class="lnt">67
-</span><span class="lnt">68
-</span><span class="lnt">69
-</span><span class="lnt">70
-</span><span class="lnt">71
-</span><span class="lnt">72
-</span><span class="lnt">73
-</span><span class="lnt">74
-</span><span class="lnt">75
-</span><span class="lnt">76
-</span><span class="lnt">77
-</span><span class="lnt">78
-</span><span class="lnt">79
-</span><span class="lnt">80
-</span><span class="lnt">81
-</span><span class="lnt">82
-</span><span class="lnt">83
-</span><span class="lnt">84
-</span><span class="lnt">85
-</span><span class="lnt">86
-</span><span class="lnt">87
-</span><span class="lnt">88
-</span><span class="lnt">89
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-c++" data-lang="c++"><span class="n">FPixelFormatInfo</span>	<span class="n">GPixelFormats</span><span class="p">[</span><span class="n">PF_MAX</span><span class="p">]</span> <span class="o">=</span>
-<span class="p">{</span>
-	<span class="c1">// Name						BlockSizeX	BlockSizeY	BlockSizeZ	BlockBytes	NumComponents	PlatformFormat	Supported		UnrealFormat
-</span><span class="c1"></span>
-	<span class="p">{</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">unknown</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span>			<span class="mi">0</span><span class="p">,</span>			<span class="mi">0</span><span class="p">,</span>			<span class="mi">0</span><span class="p">,</span>			<span class="mi">0</span><span class="p">,</span>			<span class="mi">0</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="n">PF_Unknown</span>			<span class="p">}</span><span class="p">,</span>
-	<span class="p">{</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">A32B32G32R32F</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span>	<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">16</span><span class="p">,</span>			<span class="mi">4</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="mi">1</span><span class="p">,</span>				<span class="n">PF_A32B32G32R32F</span>	<span class="p">}</span><span class="p">,</span>
-	<span class="p">{</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">B8G8R8A8</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">4</span><span class="p">,</span>			<span class="mi">4</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="mi">1</span><span class="p">,</span>				<span class="n">PF_B8G8R8A8</span>			<span class="p">}</span><span class="p">,</span>
-	<span class="p">{</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">G8</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span>				<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="mi">1</span><span class="p">,</span>				<span class="n">PF_G8</span>				<span class="p">}</span><span class="p">,</span>
-	<span class="p">{</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">G16</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span>				<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">2</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="mi">1</span><span class="p">,</span>				<span class="n">PF_G16</span>				<span class="p">}</span><span class="p">,</span>
-	<span class="p">{</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">DXT1</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span>				<span class="mi">4</span><span class="p">,</span>			<span class="mi">4</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">8</span><span class="p">,</span>			<span class="mi">3</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="mi">1</span><span class="p">,</span>				<span class="n">PF_DXT1</span>				<span class="p">}</span><span class="p">,</span>
-	<span class="p">{</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">DXT3</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span>				<span class="mi">4</span><span class="p">,</span>			<span class="mi">4</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">16</span><span class="p">,</span>			<span class="mi">4</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="mi">1</span><span class="p">,</span>				<span class="n">PF_DXT3</span>				<span class="p">}</span><span class="p">,</span>
-	<span class="p">{</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">DXT5</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span>				<span class="mi">4</span><span class="p">,</span>			<span class="mi">4</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">16</span><span class="p">,</span>			<span class="mi">4</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="mi">1</span><span class="p">,</span>				<span class="n">PF_DXT5</span>				<span class="p">}</span><span class="p">,</span>
-	<span class="p">{</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">UYVY</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span>				<span class="mi">2</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">4</span><span class="p">,</span>			<span class="mi">4</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="n">PF_UYVY</span>				<span class="p">}</span><span class="p">,</span>
-	<span class="p">{</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">FloatRGB</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">4</span><span class="p">,</span>			<span class="mi">3</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="mi">1</span><span class="p">,</span>				<span class="n">PF_FloatRGB</span>			<span class="p">}</span><span class="p">,</span>
-	<span class="p">{</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">FloatRGBA</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span>		<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">8</span><span class="p">,</span>			<span class="mi">4</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="mi">1</span><span class="p">,</span>				<span class="n">PF_FloatRGBA</span>		<span class="p">}</span><span class="p">,</span>
-	<span class="p">{</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">DepthStencil</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span>		<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">4</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="n">PF_DepthStencil</span>		<span class="p">}</span><span class="p">,</span>
-	<span class="p">{</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">ShadowDepth</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span>		<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">4</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="n">PF_ShadowDepth</span>		<span class="p">}</span><span class="p">,</span>
-	<span class="p">{</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">R32_FLOAT</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span>		<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">4</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="mi">1</span><span class="p">,</span>				<span class="n">PF_R32_FLOAT</span>		<span class="p">}</span><span class="p">,</span>
-	<span class="p">{</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">G16R16</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">4</span><span class="p">,</span>			<span class="mi">2</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="mi">1</span><span class="p">,</span>				<span class="n">PF_G16R16</span>			<span class="p">}</span><span class="p">,</span>
-	<span class="p">{</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">G16R16F</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">4</span><span class="p">,</span>			<span class="mi">2</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="mi">1</span><span class="p">,</span>				<span class="n">PF_G16R16F</span>			<span class="p">}</span><span class="p">,</span>
-	<span class="p">{</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">G16R16F_FILTER</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span>	<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">4</span><span class="p">,</span>			<span class="mi">2</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="mi">1</span><span class="p">,</span>				<span class="n">PF_G16R16F_FILTER</span>	<span class="p">}</span><span class="p">,</span>
-	<span class="p">{</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">G32R32F</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">8</span><span class="p">,</span>			<span class="mi">2</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="mi">1</span><span class="p">,</span>				<span class="n">PF_G32R32F</span>			<span class="p">}</span><span class="p">,</span>
-	<span class="p">{</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">A2B10G10R10</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span>      <span class="mi">1</span><span class="p">,</span>          <span class="mi">1</span><span class="p">,</span>          <span class="mi">1</span><span class="p">,</span>          <span class="mi">4</span><span class="p">,</span>          <span class="mi">4</span><span class="p">,</span>              <span class="mi">0</span><span class="p">,</span>              <span class="mi">1</span><span class="p">,</span>				<span class="n">PF_A2B10G10R10</span>		<span class="p">}</span><span class="p">,</span>
-	<span class="p">{</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">A16B16G16R16</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span>		<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">8</span><span class="p">,</span>			<span class="mi">4</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="mi">1</span><span class="p">,</span>				<span class="n">PF_A16B16G16R16</span>		<span class="p">}</span><span class="p">,</span>
-	<span class="p">{</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">D24</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span>				<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">4</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="mi">1</span><span class="p">,</span>				<span class="n">PF_D24</span>				<span class="p">}</span><span class="p">,</span>
-	<span class="p">{</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">PF_R16F</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">2</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="mi">1</span><span class="p">,</span>				<span class="n">PF_R16F</span>				<span class="p">}</span><span class="p">,</span>
-	<span class="p">{</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">PF_R16F_FILTER</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span>	<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">2</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="mi">1</span><span class="p">,</span>				<span class="n">PF_R16F_FILTER</span>		<span class="p">}</span><span class="p">,</span>
-	<span class="p">{</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">BC5</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span>				<span class="mi">4</span><span class="p">,</span>			<span class="mi">4</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">16</span><span class="p">,</span>			<span class="mi">2</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="mi">1</span><span class="p">,</span>				<span class="n">PF_BC5</span>				<span class="p">}</span><span class="p">,</span>
-	<span class="p">{</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">V8U8</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span>				<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">2</span><span class="p">,</span>			<span class="mi">2</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="mi">1</span><span class="p">,</span>				<span class="n">PF_V8U8</span>				<span class="p">}</span><span class="p">,</span>
-	<span class="p">{</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">A1</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span>				<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="n">PF_A1</span>				<span class="p">}</span><span class="p">,</span>
-	<span class="p">{</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">FloatR11G11B10</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span>	<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">4</span><span class="p">,</span>			<span class="mi">3</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="n">PF_FloatR11G11B10</span>	<span class="p">}</span><span class="p">,</span>
-	<span class="p">{</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">A8</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span>				<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="mi">1</span><span class="p">,</span>				<span class="n">PF_A8</span>				<span class="p">}</span><span class="p">,</span>	
-	<span class="p">{</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">R32_UINT</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">4</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="mi">1</span><span class="p">,</span>				<span class="n">PF_R32_UINT</span>			<span class="p">}</span><span class="p">,</span>
-	<span class="p">{</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">R32_SINT</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">4</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="mi">1</span><span class="p">,</span>				<span class="n">PF_R32_SINT</span>			<span class="p">}</span><span class="p">,</span>
-
-	<span class="c1">// IOS Support
-</span><span class="c1"></span>	<span class="p">{</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">PVRTC2</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span>			<span class="mi">8</span><span class="p">,</span>			<span class="mi">4</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">8</span><span class="p">,</span>			<span class="mi">4</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="n">PF_PVRTC2</span>			<span class="p">}</span><span class="p">,</span>
-	<span class="p">{</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">PVRTC4</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span>			<span class="mi">4</span><span class="p">,</span>			<span class="mi">4</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">8</span><span class="p">,</span>			<span class="mi">4</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="n">PF_PVRTC4</span>			<span class="p">}</span><span class="p">,</span>
-
-	<span class="p">{</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">R16_UINT</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">2</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="mi">1</span><span class="p">,</span>				<span class="n">PF_R16_UINT</span>			<span class="p">}</span><span class="p">,</span>
-	<span class="p">{</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">R16_SINT</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">2</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="mi">1</span><span class="p">,</span>				<span class="n">PF_R16_SINT</span>			<span class="p">}</span><span class="p">,</span>
-	<span class="p">{</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">R16G16B16A16_UINT</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">8</span><span class="p">,</span>			<span class="mi">4</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="mi">1</span><span class="p">,</span>				<span class="n">PF_R16G16B16A16_UINT</span><span class="p">}</span><span class="p">,</span>
-	<span class="p">{</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">R16G16B16A16_SINT</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">8</span><span class="p">,</span>			<span class="mi">4</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="mi">1</span><span class="p">,</span>				<span class="n">PF_R16G16B16A16_SINT</span><span class="p">}</span><span class="p">,</span>
-	<span class="p">{</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">R5G6B5_UNORM</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span>     <span class="mi">1</span><span class="p">,</span>          <span class="mi">1</span><span class="p">,</span>          <span class="mi">1</span><span class="p">,</span>          <span class="mi">2</span><span class="p">,</span>          <span class="mi">3</span><span class="p">,</span>              <span class="mi">0</span><span class="p">,</span>              <span class="mi">1</span><span class="p">,</span>              <span class="n">PF_R5G6B5_UNORM</span>		<span class="p">}</span><span class="p">,</span>
-	<span class="p">{</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">R8G8B8A8</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">4</span><span class="p">,</span>			<span class="mi">4</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="mi">1</span><span class="p">,</span>				<span class="n">PF_R8G8B8A8</span>			<span class="p">}</span><span class="p">,</span>
-	<span class="p">{</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">A8R8G8B8</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">4</span><span class="p">,</span>			<span class="mi">4</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="mi">1</span><span class="p">,</span>				<span class="n">PF_A8R8G8B8</span>			<span class="p">}</span><span class="p">,</span>
-	<span class="p">{</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">BC4</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span>				<span class="mi">4</span><span class="p">,</span>			<span class="mi">4</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">8</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="mi">1</span><span class="p">,</span>				<span class="n">PF_BC4</span>				<span class="p">}</span><span class="p">,</span>
-	<span class="p">{</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">R8G8</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span>				<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">2</span><span class="p">,</span>			<span class="mi">2</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="mi">1</span><span class="p">,</span>				<span class="n">PF_R8G8</span>				<span class="p">}</span><span class="p">,</span>
-
-	<span class="p">{</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">ATC_RGB</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span>			<span class="mi">4</span><span class="p">,</span>			<span class="mi">4</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">8</span><span class="p">,</span>			<span class="mi">3</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="n">PF_ATC_RGB</span>			<span class="p">}</span><span class="p">,</span>
-	<span class="p">{</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">ATC_RGBA_E</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span>		<span class="mi">4</span><span class="p">,</span>			<span class="mi">4</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">16</span><span class="p">,</span>			<span class="mi">4</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="n">PF_ATC_RGBA_E</span>		<span class="p">}</span><span class="p">,</span>
-	<span class="p">{</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">ATC_RGBA_I</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span>		<span class="mi">4</span><span class="p">,</span>			<span class="mi">4</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">16</span><span class="p">,</span>			<span class="mi">4</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="n">PF_ATC_RGBA_I</span>		<span class="p">}</span><span class="p">,</span>
-	<span class="p">{</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">X24_G8</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="n">PF_X24_G8</span>			<span class="p">}</span><span class="p">,</span>
-	<span class="p">{</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">ETC1</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span>				<span class="mi">4</span><span class="p">,</span>			<span class="mi">4</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">8</span><span class="p">,</span>			<span class="mi">3</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="n">PF_ETC1</span>				<span class="p">}</span><span class="p">,</span>
-	<span class="p">{</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">ETC2_RGB</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span>			<span class="mi">4</span><span class="p">,</span>			<span class="mi">4</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">8</span><span class="p">,</span>			<span class="mi">3</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="n">PF_ETC2_RGB</span>			<span class="p">}</span><span class="p">,</span>
-	<span class="p">{</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">ETC2_RGBA</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span>		<span class="mi">4</span><span class="p">,</span>			<span class="mi">4</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">16</span><span class="p">,</span>			<span class="mi">4</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="n">PF_ETC2_RGBA</span>		<span class="p">}</span><span class="p">,</span>
-	<span class="p">{</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">PF_R32G32B32A32_UINT</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span>		<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">16</span><span class="p">,</span>			<span class="mi">4</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="mi">1</span><span class="p">,</span>				<span class="n">PF_R32G32B32A32_UINT</span><span class="p">}</span><span class="p">,</span>
-	<span class="p">{</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">PF_R16G16_UINT</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span>	<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">4</span><span class="p">,</span>			<span class="mi">4</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="mi">1</span><span class="p">,</span>				<span class="n">PF_R16G16_UINT</span><span class="p">}</span><span class="p">,</span>
-
-	<span class="c1">// ASTC support
-</span><span class="c1"></span>	<span class="p">{</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">ASTC_4x4</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span>			<span class="mi">4</span><span class="p">,</span>			<span class="mi">4</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">16</span><span class="p">,</span>			<span class="mi">4</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="n">PF_ASTC_4x4</span>			<span class="p">}</span><span class="p">,</span>
-	<span class="p">{</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">ASTC_6x6</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span>			<span class="mi">6</span><span class="p">,</span>			<span class="mi">6</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">16</span><span class="p">,</span>			<span class="mi">4</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="n">PF_ASTC_6x6</span>			<span class="p">}</span><span class="p">,</span>
-	<span class="p">{</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">ASTC_8x8</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span>			<span class="mi">8</span><span class="p">,</span>			<span class="mi">8</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">16</span><span class="p">,</span>			<span class="mi">4</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="n">PF_ASTC_8x8</span>			<span class="p">}</span><span class="p">,</span>
-	<span class="p">{</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">ASTC_10x10</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span>		<span class="mi">10</span><span class="p">,</span>			<span class="mi">10</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">16</span><span class="p">,</span>			<span class="mi">4</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="n">PF_ASTC_10x10</span>		<span class="p">}</span><span class="p">,</span>
-	<span class="p">{</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">ASTC_12x12</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span>		<span class="mi">12</span><span class="p">,</span>			<span class="mi">12</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">16</span><span class="p">,</span>			<span class="mi">4</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="n">PF_ASTC_12x12</span>		<span class="p">}</span><span class="p">,</span>
-
-	<span class="p">{</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">BC6H</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span>				<span class="mi">4</span><span class="p">,</span>			<span class="mi">4</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">16</span><span class="p">,</span>			<span class="mi">3</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="mi">1</span><span class="p">,</span>				<span class="n">PF_BC6H</span>				<span class="p">}</span><span class="p">,</span>
-	<span class="p">{</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">BC7</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span>				<span class="mi">4</span><span class="p">,</span>			<span class="mi">4</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">16</span><span class="p">,</span>			<span class="mi">4</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="mi">1</span><span class="p">,</span>				<span class="n">PF_BC7</span>				<span class="p">}</span><span class="p">,</span>
-	<span class="p">{</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">R8_UINT</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="mi">1</span><span class="p">,</span>				<span class="n">PF_R8_UINT</span>			<span class="p">}</span><span class="p">,</span>
-	<span class="p">{</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">L8</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span>				<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="n">PF_L8</span>				<span class="p">}</span><span class="p">,</span>
-	<span class="p">{</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">XGXR8</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">4</span><span class="p">,</span>			<span class="mi">4</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="mi">1</span><span class="p">,</span>				<span class="n">PF_XGXR8</span> 			<span class="p">}</span><span class="p">,</span>
-	<span class="p">{</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">R8G8B8A8_UINT</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span>	<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">4</span><span class="p">,</span>			<span class="mi">4</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="mi">1</span><span class="p">,</span>				<span class="n">PF_R8G8B8A8_UINT</span>	<span class="p">}</span><span class="p">,</span>
-	<span class="p">{</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">R8G8B8A8_SNORM</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span>	<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">4</span><span class="p">,</span>			<span class="mi">4</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="mi">1</span><span class="p">,</span>				<span class="n">PF_R8G8B8A8_SNORM</span>	<span class="p">}</span><span class="p">,</span>
-
-	<span class="p">{</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">R16G16B16A16_UINT</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">8</span><span class="p">,</span>			<span class="mi">4</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="mi">1</span><span class="p">,</span>				<span class="n">PF_R16G16B16A16_UNORM</span> <span class="p">}</span><span class="p">,</span>
-	<span class="p">{</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">R16G16B16A16_SINT</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">8</span><span class="p">,</span>			<span class="mi">4</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="mi">1</span><span class="p">,</span>				<span class="n">PF_R16G16B16A16_SNORM</span> <span class="p">}</span><span class="p">,</span>
-	<span class="p">{</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">PLATFORM_HDR_0</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span>	<span class="mi">0</span><span class="p">,</span>			<span class="mi">0</span><span class="p">,</span>			<span class="mi">0</span><span class="p">,</span>			<span class="mi">0</span><span class="p">,</span>			<span class="mi">0</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="n">PF_PLATFORM_HDR_0</span>   <span class="p">}</span><span class="p">,</span>
-	<span class="p">{</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">PLATFORM_HDR_1</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span>	<span class="mi">0</span><span class="p">,</span>			<span class="mi">0</span><span class="p">,</span>			<span class="mi">0</span><span class="p">,</span>			<span class="mi">0</span><span class="p">,</span>			<span class="mi">0</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="n">PF_PLATFORM_HDR_1</span>   <span class="p">}</span><span class="p">,</span>
-	<span class="p">{</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">PLATFORM_HDR_2</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span>	<span class="mi">0</span><span class="p">,</span>			<span class="mi">0</span><span class="p">,</span>			<span class="mi">0</span><span class="p">,</span>			<span class="mi">0</span><span class="p">,</span>			<span class="mi">0</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="n">PF_PLATFORM_HDR_2</span>   <span class="p">}</span><span class="p">,</span>
-
-	<span class="c1">// NV12 contains 2 textures: R8 luminance plane followed by R8G8 1/4 size chrominance plane.
-</span><span class="c1"></span>	<span class="c1">// BlockSize/BlockBytes/NumComponents values don&#39;t make much sense for this format, so set them all to one.
-</span><span class="c1"></span>	<span class="p">{</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">NV12</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span>				<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="n">PF_NV12</span>             <span class="p">}</span><span class="p">,</span>
-
-	<span class="p">{</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">PF_R32G32_UINT</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span>   <span class="mi">1</span><span class="p">,</span>   		<span class="mi">1</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">8</span><span class="p">,</span>			<span class="mi">2</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="mi">1</span><span class="p">,</span>				<span class="n">PF_R32G32_UINT</span>      <span class="p">}</span><span class="p">,</span>
-
-	<span class="p">{</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">PF_ETC2_R11_EAC</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span>  <span class="mi">4</span><span class="p">,</span>   		<span class="mi">4</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">8</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="n">PF_ETC2_R11_EAC</span>     <span class="p">}</span><span class="p">,</span>
-	<span class="p">{</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">PF_ETC2_RG11_EAC</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span>   		<span class="mi">4</span><span class="p">,</span>			<span class="mi">1</span><span class="p">,</span>			<span class="mi">16</span><span class="p">,</span>			<span class="mi">2</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="mi">0</span><span class="p">,</span>				<span class="n">PF_ETC2_RG11_EAC</span>    <span class="p">}</span><span class="p">,</span>
-<span class="p">}</span><span class="p">;</span>
-</code></pre></td></tr></table>
-</div>
-</div><h2 id="实时渲染流程">实时渲染流程：</h2>
-<p><img src="https://i.loli.net/2020/05/30/qU8vN2WZVbt9hkF.jpg" alt="1" /></p>
+<h3 id="实时渲染流程图">实时渲染流程图：</h3>
+<p><img src="https://i.loli.net/2020/05/30/qU8vN2WZVbt9hkF.jpg" id=test style='visibility:hidden'><input type=button value=test onclick="test.style.visibility=test.style.visibility==''?'hidden':''"></p>
+<p><a href="https://i.loli.net/2020/05/30/qU8vN2WZVbt9hkF.jpg">https://i.loli.net/2020/05/30/qU8vN2WZVbt9hkF.jpg</a></p>
 <p>2</p>
-<p><img src="https://i.loli.net/2020/05/30/3trKVpOMU5sTQfB.jpg" alt="2" /></p>
-<p><a href="https://zhuanlan.zhihu.com/p/36840778">Gbuff数据</a>：</p>
-<p><img src="https://i.loli.net/2020/05/30/LFU1RtqDN5gvdSm.jpg" alt="img" /></p>
-<h2 id="渲染流程">渲染流程：</h2>
-<p>首先，虚幻的渲染由三个线程共同完成。分别是CPU线程，DRAW线程，和GPU线程。</p>
-<p>知乎：https://zhuanlan.zhihu.com/p/57158725</p>
-<p><img src="https://i.loli.net/2020/05/30/YZuyDGO7c3mRXfd.jpg" alt="渲染流水线" /></p>
-<p><strong>遮挡处理</strong></p>
-<p>遮挡处理部分主要运行在Draw线程，前面说过，它决定了哪些对象最终会参与渲染。</p>
-<p>虚幻主要有4种遮挡处理方案。分别是距离剔除，视锥剔除，预计算可见性和遮挡剔除。这四种剔除方案要按照性能消耗从小到大的顺序执行，这四种剔除方案要按照性能消耗从小到大的顺序执行。</p>
-<p>原图：</p>
-<p><img src="https://i.loli.net/2020/05/30/1WhCoPUJBHsqMOG.jpg" alt="SceneView.png" /></p>
-<p>剔除：</p>
-<p><img src="https://i.loli.net/2020/05/30/soT4dgIb5eqhkCr.jpg" alt="场景视图" /></p>
-<p>视锥体剔除：</p>
-<p><img src="https://i.loli.net/2020/05/30/q6s3kzjgxPlS1DV.jpg" alt="ViewFrustumDiagram.png" /></p>
-<ol>
-<li><strong>近端裁切平面（Near Clipping Plane）</strong> 是能够看到对象的最接近摄像机的点。</li>
-<li><strong>摄像机视锥（Camera Frustum）</strong> 是近端和远端裁切平面之间的可视查看区域的金字塔形状表示。</li>
-<li><strong>远端裁切平面（Far Clipping Plane）</strong> 是能够看到对象的离摄像机最远的点。</li>
-</ol>
-<blockquote>
-<p>在关卡视口中编辑时，选择 显示（Show）&gt;高级（Advanced） 并启用 摄像机视锥（Camera Frustum），可以显示视图视锥。</p>
-</blockquote>
-<p><strong>几何体渲染</strong></p>
-<p>进入实际渲染，我觉得是在DrawCall线程执行的<code>Prepass/Early Z Pass</code></p>
-<blockquote>
-<p>在渲染几何体之前，我们会面临一个问题，我们已经知道了哪些对象要参与渲染，但是我们不知道该以什么样的顺序来渲染这些对象，也不知道哪个对象在哪个对象的前面。</p>
-</blockquote>
-<p>Prepass/Early Z Pass</p>
-<p>虚幻引擎针对这一问题，会在实际渲染前执行一个Prepass或EarlyZPass进行优化。你可以把这个玩意简单理解为一种预渲染，这个预渲染干的事情很简单，就是进行一个比较轻量的渲染计算，得出哪个对象在哪个的前面，并把那种明知会被后来渲染的对象所挡住的像素区域给遮住（maskout）。</p>
-<p>Drawcall</p>
-<p>DrawCall是会被渲染的单一元素，每渲染一个DrawCall就是一次绘制调用。</p>
-<blockquote>
-<p>共享相同属性的一组多边形就是一个DrawCall，每一个材质也是一个DrawCall（一个模型拥有10个材质，那就是10个DrawCall）。DrawCall越多，绘制调用越多，性能越低。</p>
-</blockquote>
-<p>图示预渲染(<code>PrePass</code>)</p>
-<p><img src="https://i.loli.net/2020/05/30/u6bz1W8oG2DdP4r.jpg" alt="渲染图片" /></p>
-<p>（按照从左到右的顺序）</p>
-<p><img src="https://i.loli.net/2020/05/30/69WCi3JRAj8gXZm.jpg" alt="presspass" /></p>
-<h2 id="ue4渲染一帧">UE4渲染一帧</h2>
-<p><img src="https://interplayoflight.files.wordpress.com/2017/10/image2.png?w=515&amp;h=708" alt="img" /></p>
-<h3 id="particlesimulation">ParticleSimulation</h3>
-<p><strong>粒子模拟</strong></p>
-<h3 id="z-prepass">Z-Prepass</h3>
-<p>会有一系列的culling过程剔除掉不需要的像素或者几何体,将所有不透明的网格渲染到R24G8深度缓冲区：</p>
-<blockquote>
-<p>值得注意的是，当渲染到深度缓冲区时，虚幻使用<a href="https://developer.nvidia.com/content/depth-precision-visualized">反向Z</a>，这意味着将近平面映射为1，将远平面映射为0。这可以在深度范围内提供更好的精度，并减少对远距离网格物体的Z角对抗。 。</p>
-</blockquote>
-<h3 id="beginocclusiontests">BeginOcclusionTests</h3>
-<p><strong>测试咬合</strong>,处理框架中的所有遮挡测试.虚幻引擎默认使用硬件遮挡查询进行遮挡测试</p>
-<p><strong>RenderPrePass</strong></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">  1
-</span><span class="lnt">  2
-</span><span class="lnt">  3
-</span><span class="lnt">  4
-</span><span class="lnt">  5
-</span><span class="lnt">  6
-</span><span class="lnt">  7
-</span><span class="lnt">  8
-</span><span class="lnt">  9
-</span><span class="lnt"> 10
-</span><span class="lnt"> 11
-</span><span class="lnt"> 12
-</span><span class="lnt"> 13
-</span><span class="lnt"> 14
-</span><span class="lnt"> 15
-</span><span class="lnt"> 16
-</span><span class="lnt"> 17
-</span><span class="lnt"> 18
-</span><span class="lnt"> 19
-</span><span class="lnt"> 20
-</span><span class="lnt"> 21
-</span><span class="lnt"> 22
-</span><span class="lnt"> 23
-</span><span class="lnt"> 24
-</span><span class="lnt"> 25
-</span><span class="lnt"> 26
-</span><span class="lnt"> 27
-</span><span class="lnt"> 28
-</span><span class="lnt"> 29
-</span><span class="lnt"> 30
-</span><span class="lnt"> 31
-</span><span class="lnt"> 32
-</span><span class="lnt"> 33
-</span><span class="lnt"> 34
-</span><span class="lnt"> 35
-</span><span class="lnt"> 36
-</span><span class="lnt"> 37
-</span><span class="lnt"> 38
-</span><span class="lnt"> 39
-</span><span class="lnt"> 40
-</span><span class="lnt"> 41
-</span><span class="lnt"> 42
-</span><span class="lnt"> 43
-</span><span class="lnt"> 44
-</span><span class="lnt"> 45
-</span><span class="lnt"> 46
-</span><span class="lnt"> 47
-</span><span class="lnt"> 48
-</span><span class="lnt"> 49
-</span><span class="lnt"> 50
-</span><span class="lnt"> 51
-</span><span class="lnt"> 52
-</span><span class="lnt"> 53
-</span><span class="lnt"> 54
-</span><span class="lnt"> 55
-</span><span class="lnt"> 56
-</span><span class="lnt"> 57
-</span><span class="lnt"> 58
-</span><span class="lnt"> 59
-</span><span class="lnt"> 60
-</span><span class="lnt"> 61
-</span><span class="lnt"> 62
-</span><span class="lnt"> 63
-</span><span class="lnt"> 64
-</span><span class="lnt"> 65
-</span><span class="lnt"> 66
-</span><span class="lnt"> 67
-</span><span class="lnt"> 68
-</span><span class="lnt"> 69
-</span><span class="lnt"> 70
-</span><span class="lnt"> 71
-</span><span class="lnt"> 72
-</span><span class="lnt"> 73
-</span><span class="lnt"> 74
-</span><span class="lnt"> 75
-</span><span class="lnt"> 76
-</span><span class="lnt"> 77
-</span><span class="lnt"> 78
-</span><span class="lnt"> 79
-</span><span class="lnt"> 80
-</span><span class="lnt"> 81
-</span><span class="lnt"> 82
-</span><span class="lnt"> 83
-</span><span class="lnt"> 84
-</span><span class="lnt"> 85
-</span><span class="lnt"> 86
-</span><span class="lnt"> 87
-</span><span class="lnt"> 88
-</span><span class="lnt"> 89
-</span><span class="lnt"> 90
-</span><span class="lnt"> 91
-</span><span class="lnt"> 92
-</span><span class="lnt"> 93
-</span><span class="lnt"> 94
-</span><span class="lnt"> 95
-</span><span class="lnt"> 96
-</span><span class="lnt"> 97
-</span><span class="lnt"> 98
-</span><span class="lnt"> 99
-</span><span class="lnt">100
-</span><span class="lnt">101
-</span><span class="lnt">102
-</span><span class="lnt">103
-</span><span class="lnt">104
-</span><span class="lnt">105
-</span><span class="lnt">106
-</span><span class="lnt">107
-</span><span class="lnt">108
-</span><span class="lnt">109
-</span><span class="lnt">110
-</span><span class="lnt">111
-</span><span class="lnt">112
-</span><span class="lnt">113
-</span><span class="lnt">114
-</span><span class="lnt">115
-</span><span class="lnt">116
-</span><span class="lnt">117
-</span><span class="lnt">118
-</span><span class="lnt">119
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-c++" data-lang="c++"><span class="kt">bool</span> <span class="n">FDeferredShadingSceneRenderer</span><span class="o">:</span><span class="o">:</span><span class="n">RenderPrePass</span><span class="p">(</span><span class="n">FRHICommandListImmediate</span><span class="o">&amp;</span> <span class="n">RHICmdList</span><span class="p">,</span> <span class="n">TFunctionRef</span><span class="o">&lt;</span><span class="kt">void</span><span class="p">(</span><span class="p">)</span><span class="o">&gt;</span> <span class="n">AfterTasksAreStarted</span><span class="p">)</span>
-<span class="p">{</span>
-	<span class="n">check</span><span class="p">(</span><span class="n">RHICmdList</span><span class="p">.</span><span class="n">IsOutsideRenderPass</span><span class="p">(</span><span class="p">)</span><span class="p">)</span><span class="p">;</span>	<span class="c1">// 检查
-</span><span class="c1"></span>
-	<span class="n">SCOPED_NAMED_EVENT</span><span class="p">(</span><span class="n">FDeferredShadingSceneRenderer_RenderPrePass</span><span class="p">,</span> <span class="n">FColor</span><span class="o">:</span><span class="o">:</span><span class="n">Emerald</span><span class="p">)</span><span class="p">;</span>
-	<span class="kt">bool</span> <span class="n">bDepthWasCleared</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
-
-	<span class="k">extern</span> <span class="k">const</span> <span class="n">TCHAR</span><span class="o">*</span> <span class="nf">GetDepthPassReason</span><span class="p">(</span><span class="kt">bool</span> <span class="n">bDitheredLODTransitionsUseStencil</span><span class="p">,</span> <span class="n">EShaderPlatform</span> <span class="n">ShaderPlatform</span><span class="p">)</span><span class="p">;</span>
-	<span class="n">SCOPED_DRAW_EVENTF</span><span class="p">(</span><span class="n">RHICmdList</span><span class="p">,</span> <span class="n">PrePass</span><span class="p">,</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">PrePass %s %s</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span> <span class="n">GetDepthDrawingModeString</span><span class="p">(</span><span class="n">EarlyZPassMode</span><span class="p">)</span><span class="p">,</span> <span class="n">GetDepthPassReason</span><span class="p">(</span><span class="n">bDitheredLODTransitionsUseStencil</span><span class="p">,</span> <span class="n">ShaderPlatform</span><span class="p">)</span><span class="p">)</span><span class="p">;</span>
-
-	<span class="n">SCOPE_CYCLE_COUNTER</span><span class="p">(</span><span class="n">STAT_DepthDrawTime</span><span class="p">)</span><span class="p">;</span>
-	<span class="n">CSV_SCOPED_TIMING_STAT_EXCLUSIVE</span><span class="p">(</span><span class="n">RenderPrePass</span><span class="p">)</span><span class="p">;</span>
-	<span class="n">SCOPED_GPU_STAT</span><span class="p">(</span><span class="n">RHICmdList</span><span class="p">,</span> <span class="n">Prepass</span><span class="p">)</span><span class="p">;</span>
-
-	<span class="kt">bool</span> <span class="n">bDidPrePre</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
-	<span class="n">FSceneRenderTargets</span><span class="o">&amp;</span> <span class="n">SceneContext</span> <span class="o">=</span> <span class="n">FSceneRenderTargets</span><span class="o">:</span><span class="o">:</span><span class="n">Get</span><span class="p">(</span><span class="n">RHICmdList</span><span class="p">)</span><span class="p">;</span>
-
-	<span class="kt">bool</span> <span class="n">bParallel</span> <span class="o">=</span> <span class="n">GRHICommandList</span><span class="p">.</span><span class="n">UseParallelAlgorithms</span><span class="p">(</span><span class="p">)</span> <span class="o">&amp;</span><span class="o">&amp;</span> <span class="n">CVarParallelPrePass</span><span class="p">.</span><span class="n">GetValueOnRenderThread</span><span class="p">(</span><span class="p">)</span><span class="p">;</span>
-
-	<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">bParallel</span><span class="p">)</span>
-	<span class="p">{</span>
-		<span class="c1">// nothing to be gained by delaying this.
-</span><span class="c1"></span>		<span class="n">AfterTasksAreStarted</span><span class="p">(</span><span class="p">)</span><span class="p">;</span>
-		<span class="c1">// Note: the depth buffer will be cleared under PreRenderPrePass.
-</span><span class="c1"></span>		<span class="n">bDepthWasCleared</span> <span class="o">=</span> <span class="n">PreRenderPrePass</span><span class="p">(</span><span class="n">RHICmdList</span><span class="p">)</span><span class="p">;</span>
-		<span class="n">bDidPrePre</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
-
-		<span class="c1">// PreRenderPrePass will end up clearing the depth buffer so do not clear it again.
-</span><span class="c1"></span>		<span class="n">SceneContext</span><span class="p">.</span><span class="n">BeginRenderingPrePass</span><span class="p">(</span><span class="n">RHICmdList</span><span class="p">,</span> <span class="nb">false</span><span class="p">)</span><span class="p">;</span>
-	<span class="p">}</span>
-	<span class="k">else</span>
-	<span class="p">{</span>
-		<span class="n">SceneContext</span><span class="p">.</span><span class="n">GetSceneDepthSurface</span><span class="p">(</span><span class="p">)</span><span class="p">;</span> <span class="c1">// this probably isn&#39;t needed, but if there was some lazy allocation of the depth surface going on, we want it allocated now before we go wide. We may not have called BeginRenderingPrePass yet if bDoFXPrerender is true
-</span><span class="c1"></span>	<span class="p">}</span>
-
-	<span class="c1">// Draw a depth pass to avoid overdraw in the other passes.
-</span><span class="c1"></span>	<span class="k">if</span><span class="p">(</span><span class="n">EarlyZPassMode</span> <span class="o">!</span><span class="o">=</span> <span class="n">DDM_None</span><span class="p">)</span>
-	<span class="p">{</span>
-		<span class="k">const</span> <span class="kt">bool</span> <span class="n">bWaitForTasks</span> <span class="o">=</span> <span class="n">bParallel</span> <span class="o">&amp;</span><span class="o">&amp;</span> <span class="p">(</span><span class="n">CVarRHICmdFlushRenderThreadTasksPrePass</span><span class="p">.</span><span class="n">GetValueOnRenderThread</span><span class="p">(</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="o">|</span><span class="o">|</span> <span class="n">CVarRHICmdFlushRenderThreadTasks</span><span class="p">.</span><span class="n">GetValueOnRenderThread</span><span class="p">(</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span><span class="p">;</span>
-		<span class="n">FScopedCommandListWaitForTasks</span> <span class="nf">Flusher</span><span class="p">(</span><span class="n">bWaitForTasks</span><span class="p">,</span> <span class="n">RHICmdList</span><span class="p">)</span><span class="p">;</span>
-
-		<span class="k">for</span><span class="p">(</span><span class="n">int32</span> <span class="n">ViewIndex</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span><span class="n">ViewIndex</span> <span class="o">&lt;</span> <span class="n">Views</span><span class="p">.</span><span class="n">Num</span><span class="p">(</span><span class="p">)</span><span class="p">;</span><span class="n">ViewIndex</span><span class="o">+</span><span class="o">+</span><span class="p">)</span>
-		<span class="p">{</span>
-			<span class="k">const</span> <span class="n">FViewInfo</span><span class="o">&amp;</span> <span class="n">View</span> <span class="o">=</span> <span class="n">Views</span><span class="p">[</span><span class="n">ViewIndex</span><span class="p">]</span><span class="p">;</span>
-
-			<span class="n">SCOPED_GPU_MASK</span><span class="p">(</span><span class="n">RHICmdList</span><span class="p">,</span> <span class="o">!</span><span class="n">View</span><span class="p">.</span><span class="n">IsInstancedStereoPass</span><span class="p">(</span><span class="p">)</span> <span class="o">?</span> <span class="n">View</span><span class="p">.</span><span class="nl">GPUMask</span> <span class="p">:</span> <span class="p">(</span><span class="n">Views</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="p">.</span><span class="n">GPUMask</span> <span class="o">|</span> <span class="n">Views</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="p">.</span><span class="n">GPUMask</span><span class="p">)</span><span class="p">)</span><span class="p">;</span>
-			<span class="n">SCOPED_CONDITIONAL_DRAW_EVENTF</span><span class="p">(</span><span class="n">RHICmdList</span><span class="p">,</span> <span class="n">EventView</span><span class="p">,</span> <span class="n">Views</span><span class="p">.</span><span class="n">Num</span><span class="p">(</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">,</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">View%d</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span> <span class="n">ViewIndex</span><span class="p">)</span><span class="p">;</span>
-
-			<span class="n">TUniformBufferRef</span><span class="o">&lt;</span><span class="n">FSceneTexturesUniformParameters</span><span class="o">&gt;</span> <span class="n">PassUniformBuffer</span><span class="p">;</span>
-			
-			<span class="n">CreateDepthPassUniformBuffer</span><span class="p">(</span><span class="n">RHICmdList</span><span class="p">,</span> <span class="n">View</span><span class="p">,</span> <span class="n">PassUniformBuffer</span><span class="p">)</span><span class="p">;</span>
-			
-			<span class="n">FMeshPassProcessorRenderState</span> <span class="nf">DrawRenderState</span><span class="p">(</span><span class="n">View</span><span class="p">,</span> <span class="n">PassUniformBuffer</span><span class="p">)</span><span class="p">;</span>
-
-			<span class="n">SetupDepthPassState</span><span class="p">(</span><span class="n">DrawRenderState</span><span class="p">)</span><span class="p">;</span>
-
-			<span class="k">if</span> <span class="p">(</span><span class="n">View</span><span class="p">.</span><span class="n">ShouldRenderView</span><span class="p">(</span><span class="p">)</span><span class="p">)</span>
-			<span class="p">{</span>
-				<span class="n">Scene</span><span class="o">-</span><span class="o">&gt;</span><span class="n">UniformBuffers</span><span class="p">.</span><span class="n">UpdateViewUniformBuffer</span><span class="p">(</span><span class="n">View</span><span class="p">)</span><span class="p">;</span>
-
-				<span class="k">if</span> <span class="p">(</span><span class="n">bParallel</span><span class="p">)</span>
-				<span class="p">{</span>
-					<span class="n">check</span><span class="p">(</span><span class="n">RHICmdList</span><span class="p">.</span><span class="n">IsOutsideRenderPass</span><span class="p">(</span><span class="p">)</span><span class="p">)</span><span class="p">;</span>
-					<span class="n">bDepthWasCleared</span> <span class="o">=</span> <span class="n">RenderPrePassViewParallel</span><span class="p">(</span><span class="n">View</span><span class="p">,</span> <span class="n">RHICmdList</span><span class="p">,</span> <span class="n">DrawRenderState</span><span class="p">,</span> <span class="n">AfterTasksAreStarted</span><span class="p">,</span> <span class="o">!</span><span class="n">bDidPrePre</span><span class="p">)</span> <span class="o">|</span><span class="o">|</span> <span class="n">bDepthWasCleared</span><span class="p">;</span>
-					<span class="n">bDidPrePre</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
-				<span class="p">}</span>
-				<span class="k">else</span>
-				<span class="p">{</span>
-					<span class="n">RenderPrePassView</span><span class="p">(</span><span class="n">RHICmdList</span><span class="p">,</span> <span class="n">View</span><span class="p">,</span> <span class="n">DrawRenderState</span><span class="p">)</span><span class="p">;</span>
-				<span class="p">}</span>
-			<span class="p">}</span>
-
-			<span class="c1">// Parallel rendering has self contained renderpasses so we need a new one for editor primitives.
-</span><span class="c1"></span>			<span class="k">if</span> <span class="p">(</span><span class="n">bParallel</span><span class="p">)</span>
-			<span class="p">{</span>
-				<span class="n">SceneContext</span><span class="p">.</span><span class="n">BeginRenderingPrePass</span><span class="p">(</span><span class="n">RHICmdList</span><span class="p">,</span> <span class="nb">false</span><span class="p">)</span><span class="p">;</span>
-			<span class="p">}</span>
-			<span class="n">RenderPrePassEditorPrimitives</span><span class="p">(</span><span class="n">RHICmdList</span><span class="p">,</span> <span class="n">View</span><span class="p">,</span> <span class="n">DrawRenderState</span><span class="p">,</span> <span class="n">EarlyZPassMode</span><span class="p">,</span> <span class="nb">true</span><span class="p">)</span><span class="p">;</span>
-			<span class="k">if</span> <span class="p">(</span><span class="n">bParallel</span><span class="p">)</span>
-			<span class="p">{</span>
-				<span class="n">RHICmdList</span><span class="p">.</span><span class="n">EndRenderPass</span><span class="p">(</span><span class="p">)</span><span class="p">;</span>
-			<span class="p">}</span>
-		<span class="p">}</span>
-	<span class="p">}</span>
-	<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">bDidPrePre</span><span class="p">)</span>
-	<span class="p">{</span>
-		<span class="c1">// Only parallel rendering with all views marked as not-to-be-rendered will get here.
-</span><span class="c1"></span>		<span class="c1">// For some reason we haven&#39;t done this yet. Best do it now for consistency with the old code.
-</span><span class="c1"></span>		<span class="n">AfterTasksAreStarted</span><span class="p">(</span><span class="p">)</span><span class="p">;</span>
-		<span class="n">bDepthWasCleared</span> <span class="o">=</span> <span class="n">PreRenderPrePass</span><span class="p">(</span><span class="n">RHICmdList</span><span class="p">)</span><span class="p">;</span>
-		<span class="n">bDidPrePre</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
-	<span class="p">}</span>
-
-	<span class="k">if</span> <span class="p">(</span><span class="n">bParallel</span><span class="p">)</span>
-	<span class="p">{</span>
-		<span class="c1">// In parallel mode there will be no renderpass here. Need to restart.
-</span><span class="c1"></span>		<span class="n">SceneContext</span><span class="p">.</span><span class="n">BeginRenderingPrePass</span><span class="p">(</span><span class="n">RHICmdList</span><span class="p">,</span> <span class="nb">false</span><span class="p">)</span><span class="p">;</span>
-	<span class="p">}</span>
-
-	<span class="c1">// Dithered transition stencil mask clear, accounting for all active viewports
-</span><span class="c1"></span>	<span class="k">if</span> <span class="p">(</span><span class="n">bDitheredLODTransitionsUseStencil</span><span class="p">)</span>
-	<span class="p">{</span>
-		<span class="k">if</span> <span class="p">(</span><span class="n">Views</span><span class="p">.</span><span class="n">Num</span><span class="p">(</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">)</span>
-		<span class="p">{</span>
-			<span class="n">FIntRect</span> <span class="n">FullViewRect</span> <span class="o">=</span> <span class="n">Views</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="p">.</span><span class="n">ViewRect</span><span class="p">;</span>
-			<span class="k">for</span> <span class="p">(</span><span class="n">int32</span> <span class="n">ViewIndex</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">ViewIndex</span> <span class="o">&lt;</span> <span class="n">Views</span><span class="p">.</span><span class="n">Num</span><span class="p">(</span><span class="p">)</span><span class="p">;</span> <span class="o">+</span><span class="o">+</span><span class="n">ViewIndex</span><span class="p">)</span>
-			<span class="p">{</span>
-				<span class="n">FullViewRect</span><span class="p">.</span><span class="n">Union</span><span class="p">(</span><span class="n">Views</span><span class="p">[</span><span class="n">ViewIndex</span><span class="p">]</span><span class="p">.</span><span class="n">ViewRect</span><span class="p">)</span><span class="p">;</span>
-			<span class="p">}</span>
-			<span class="n">RHICmdList</span><span class="p">.</span><span class="n">SetViewport</span><span class="p">(</span><span class="n">FullViewRect</span><span class="p">.</span><span class="n">Min</span><span class="p">.</span><span class="n">X</span><span class="p">,</span> <span class="n">FullViewRect</span><span class="p">.</span><span class="n">Min</span><span class="p">.</span><span class="n">Y</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">FullViewRect</span><span class="p">.</span><span class="n">Max</span><span class="p">.</span><span class="n">X</span><span class="p">,</span> <span class="n">FullViewRect</span><span class="p">.</span><span class="n">Max</span><span class="p">.</span><span class="n">Y</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span><span class="p">;</span>
-		<span class="p">}</span>
-		<span class="n">DrawClearQuad</span><span class="p">(</span><span class="n">RHICmdList</span><span class="p">,</span> <span class="nb">false</span><span class="p">,</span> <span class="n">FLinearColor</span><span class="o">:</span><span class="o">:</span><span class="n">Transparent</span><span class="p">,</span> <span class="nb">false</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="nb">true</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span><span class="p">;</span>
-	<span class="p">}</span>
-
-	<span class="c1">// Now we are finally finished.
-</span><span class="c1"></span>	<span class="n">SceneContext</span><span class="p">.</span><span class="n">FinishRenderingPrePass</span><span class="p">(</span><span class="n">RHICmdList</span><span class="p">)</span><span class="p">;</span>
-
-	<span class="k">return</span> <span class="n">bDepthWasCleared</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
-</div>
-</div><h1 id="渲染系统概述">渲染系统概述</h1>
-<p><img src="https://img-blog.csdnimg.cn/2018120510265318.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xlb253ZWk=,size_16,color_FFFFFF,t_70" alt="img" /></p>
-<h1 id="读取纹理gbuffer">读取纹理GBuffer</h1>
-<p>UDrawFrustumComponent</p>
-<h1 id="q">Q:</h1>
-<p><code>C:\Program Files (x86)\UE4+VS2017\UnrealEngine\Engine\Source\Runtime\Renderer\Private\PostProcess\SceneRenderTargets.h</code></p>
-<p><img src="https://i.loli.net/2020/06/01/Sc6NuwBxzQ84prZ.png" alt="image-20200601155736466" /></p>
-<p><code>C:\Program Files (x86)\UE4+VS2017\UnrealEngine\Engine\Source\Runtime\Renderer\Private\SceneRendering.cpp</code></p>
-<p><img src="https://i.loli.net/2020/06/01/V2QCnEDZplhgmko.png" alt="image-20200601161909214" /></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span><span class="lnt">22
-</span><span class="lnt">23
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-c++" data-lang="c++"><span class="n">ENQUEUE_UNIQUE_RENDER_COMMAND_ONEPARAMETER</span><span class="p">(</span>
-<span class="n">DZRenderSutioBP_InterceptSceneBaseColor</span><span class="p">,</span>
-<span class="n">UTexture2D</span><span class="o">*</span><span class="p">,</span> <span class="n">vTextureAsset</span><span class="p">,</span> <span class="n">TextureAsset</span><span class="p">,</span>
-<span class="p">{</span>
-<span class="cm">/*if (!IsInRenderingThread())
-</span><span class="cm">return;*/</span>
-<span class="n">FRHICommandListImmediate</span><span class="o">&amp;</span> <span class="n">RHICmdList</span> <span class="o">=</span> <span class="n">GRHICommandList</span><span class="p">.</span><span class="n">GetImmediateCommandList</span><span class="p">(</span><span class="p">)</span><span class="p">;</span>
-<span class="c1">//计数加一避免Render完成后直接清空了GBuffer,但会慢一帧，你猜
-</span><span class="c1"></span><span class="n">FSceneRenderTargets</span><span class="o">:</span><span class="o">:</span><span class="n">Get</span><span class="p">(</span><span class="n">RHICmdList</span><span class="p">)</span><span class="p">.</span><span class="n">AdjustGBufferRefCount</span><span class="p">(</span><span class="n">RHICmdList</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span><span class="p">;</span>
-<span class="k">static</span> <span class="k">const</span> <span class="n">FString</span> <span class="nf">ScrollingMessage</span><span class="p">(</span><span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">Hello World: </span><span class="s">&#34;</span><span class="p">)</span><span class="p">)</span><span class="p">;</span>
-<span class="n">GEngine</span><span class="o">-</span><span class="o">&gt;</span><span class="n">AddOnScreenDebugMessage</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mf">0.2f</span><span class="p">,</span> <span class="n">FColor</span><span class="o">:</span><span class="o">:</span><span class="n">Red</span><span class="p">,</span> <span class="n">ScrollingMessage</span><span class="p">)</span><span class="p">;</span>
-<span class="n">FSceneRenderTargets</span><span class="o">&amp;</span> <span class="n">SceneContext</span> <span class="o">=</span> <span class="n">FSceneRenderTargets</span><span class="o">:</span><span class="o">:</span><span class="n">Get</span><span class="p">(</span><span class="n">RHICmdList</span><span class="p">)</span><span class="p">;</span>
-<span class="k">if</span> <span class="p">(</span><span class="n">SceneContext</span><span class="p">.</span><span class="n">GBufferA</span><span class="p">)</span>
-<span class="p">{</span>
-<span class="n">FTexture2DRHIRef</span> <span class="n">vTextTarget</span> <span class="o">=</span> <span class="n">SceneContext</span><span class="p">.</span><span class="n">GetGBufferATexture</span><span class="p">(</span><span class="p">)</span><span class="p">;</span>
-<span class="n">FString</span> <span class="n">vSiceStr</span> <span class="o">=</span> <span class="n">FString</span><span class="o">:</span><span class="o">:</span><span class="n">Printf</span><span class="p">(</span><span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">FSceneRenderTargets GBufferA Size = %d*%d</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span> <span class="n">vTextTarget</span><span class="o">-</span><span class="o">&gt;</span><span class="n">GetSizeX</span><span class="p">(</span><span class="p">)</span><span class="p">,</span> <span class="n">vTextTarget</span><span class="o">-</span><span class="o">&gt;</span><span class="n">GetSizeY</span><span class="p">(</span><span class="p">)</span><span class="p">)</span><span class="p">;</span>
-
-<span class="n">GEngine</span><span class="o">-</span><span class="o">&gt;</span><span class="n">AddOnScreenDebugMessage</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mf">0.2f</span><span class="p">,</span> <span class="n">FColor</span><span class="o">:</span><span class="o">:</span><span class="n">Red</span><span class="p">,</span> <span class="n">vSiceStr</span><span class="p">)</span><span class="p">;</span>
-<span class="p">}</span>
-<span class="c1">//移除
-</span><span class="c1"></span><span class="n">FSceneRenderTargets</span><span class="o">:</span><span class="o">:</span><span class="n">Get</span><span class="p">(</span><span class="n">RHICmdList</span><span class="p">)</span><span class="p">.</span><span class="n">AdjustGBufferRefCount</span><span class="p">(</span><span class="n">RHICmdList</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="p">;</span>
-<span class="p">}</span>
-<span class="p">)</span><span class="p">;</span>
-</code></pre></td></tr></table>
-</div>
-</div><p>键入命令vis scenedepthz uv0以查看实际使用的深度缓冲区。UE4对场景使用“反向”深度缓冲区。</p>
-<p><img src="https://i.loli.net/2020/06/02/P91kUEFIcplvNru.png" alt="image-20200602195954138" /></p>
+<p><a href="https://i.loli.net/2020/05/30/3trKVpOMU5sTQfB.jpg">https://i.loli.net/2020/05/30/3trKVpOMU5sTQfB.jpg</a></p>
 <h2 id="渲染函数render">渲染函数Render</h2>
 <p>路径：<code>Engine \ Source \ Runtime \ Renderer \ Private \ DeferredShadingRenderer.cpp（660）</code></p>
 <p>函数：<code>FDeferredShadingSceneRenderer :: Render（）</code>渲染路径</p>
@@ -2398,119 +1858,36 @@
 </tr>
 </tbody>
 </table>
-<p>哦，很长。<br />
-可能很难阅读，但是如果您有兴趣，请过来。</p>
-<p>如何使用ENQUEUE_RENDER_COMMAND代替ENQUEUE_UNIQUE_RENDER_COMMAND_ONEPARAMETER-虚幻引擎论坛</p>
+<p>哦，很长。</p>
+<hr />
+<p>参考链接：</p>
+<ol>
+<li>
+<p><a href="https://stackoverflow.com/questions/37578939/how-to-read-data-from-a-utexture2d-in-c">如何在C ++中从UTexture2D读取数据</a></p>
+</li>
+<li>
+<p><a href="https://forums.unrealengine.com/development-discussion/c-gameplay-programming/1422920-casting-converting-frhitexture-to-utexture">https://forums.unrealengine.com/development-discussion/c-gameplay-programming/1422920-casting-converting-frhitexture-to-utexture</a></p>
+</li>
+<li>
+<p><a href="https://my.oschina.net/u/4362845/blog/3636853">Unreal渲染相关的缓冲区</a></p>
+</li>
+<li>
 <p><a href="https://qiita.com/mechamogera/items/a0c369a3b853a3042cae">https://qiita.com/mechamogera/items/a0c369a3b853a3042cae</a></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span><span class="lnt">22
-</span><span class="lnt">23
-</span><span class="lnt">24
-</span><span class="lnt">25
-</span><span class="lnt">26
-</span><span class="lnt">27
-</span><span class="lnt">28
-</span><span class="lnt">29
-</span><span class="lnt">30
-</span><span class="lnt">31
-</span><span class="lnt">32
-</span><span class="lnt">33
-</span><span class="lnt">34
-</span><span class="lnt">35
-</span><span class="lnt">36
-</span><span class="lnt">37
-</span><span class="lnt">38
-</span><span class="lnt">39
-</span><span class="lnt">40
-</span><span class="lnt">41
-</span><span class="lnt">42
-</span><span class="lnt">43
-</span><span class="lnt">44
-</span><span class="lnt">45
-</span><span class="lnt">46
-</span><span class="lnt">47
-</span><span class="lnt">48
-</span><span class="lnt">49
-</span><span class="lnt">50
-</span><span class="lnt">51
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-c++" data-lang="c++"><span class="cp">#</span><span class="cp">include</span> <span class="cpf">&#34;ImageUtils.h&#34;</span><span class="cp">
-</span><span class="cp"></span><span class="cp">#</span><span class="cp">include</span> <span class="cpf">&#34;GenericPlatform/GenericPlatformProcess.h&#34;</span><span class="cp">
-</span><span class="cp"></span>
-<span class="kt">void</span> <span class="n">HogeHoge</span><span class="o">:</span><span class="o">:</span><span class="n">Convert</span><span class="p">(</span><span class="n">UTexture</span><span class="o">*</span> <span class="n">Img</span><span class="p">,</span> <span class="n">TArray</span><span class="o">&lt;</span><span class="n">uint8</span><span class="o">&gt;</span><span class="o">&amp;</span> <span class="n">ImgData</span><span class="p">)</span>
-<span class="p">{</span>
-    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">Img</span> <span class="o">|</span><span class="o">|</span> <span class="o">!</span><span class="n">Img</span><span class="o">-</span><span class="o">&gt;</span><span class="n">Resource</span> <span class="o">|</span><span class="o">|</span> <span class="o">!</span><span class="n">Img</span><span class="o">-</span><span class="o">&gt;</span><span class="n">Resource</span><span class="o">-</span><span class="o">&gt;</span><span class="n">TextureRHI</span><span class="p">)</span>
-    <span class="p">{</span>
-        <span class="n">UE_LOG</span><span class="p">(</span><span class="n">LogTemp</span><span class="p">,</span> <span class="n">Warning</span><span class="p">,</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">Upload Texture is invalid</span><span class="s">&#34;</span><span class="p">)</span><span class="p">)</span><span class="p">;</span>
-        <span class="k">return</span><span class="p">;</span>
-    <span class="p">}</span>
-
-    <span class="n">FTexture2DRHIRef</span> <span class="n">Texture2D</span> <span class="o">=</span> <span class="n">Img</span><span class="o">-</span><span class="o">&gt;</span><span class="n">Resource</span><span class="o">-</span><span class="o">&gt;</span><span class="n">TextureRHI</span><span class="o">-</span><span class="o">&gt;</span><span class="n">GetTexture2D</span><span class="p">(</span><span class="p">)</span><span class="p">;</span>
-    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">Texture2D</span><span class="p">)</span>
-    <span class="p">{</span>
-        <span class="n">UE_LOG</span><span class="p">(</span><span class="n">LogTemp</span><span class="p">,</span> <span class="n">Warning</span><span class="p">,</span> <span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">Upload Texture2D is invalid</span><span class="s">&#34;</span><span class="p">)</span><span class="p">)</span><span class="p">;</span>
-        <span class="k">return</span><span class="p">;</span>
-    <span class="p">}</span>
-
-    <span class="n">TArray</span><span class="o">&lt;</span><span class="n">FColor</span><span class="o">&gt;</span> <span class="n">OutPixels</span><span class="p">;</span>
-    <span class="k">struct</span> <span class="nc">FReadSurfaceContext</span>
-    <span class="p">{</span>
-        <span class="n">FTexture2DRHIRef</span> <span class="n">Texture</span><span class="p">;</span>
-        <span class="n">TArray</span><span class="o">&lt;</span><span class="n">FColor</span><span class="o">&gt;</span><span class="o">*</span> <span class="n">OutData</span><span class="p">;</span>
-        <span class="n">FIntRect</span> <span class="n">Rect</span><span class="p">;</span>
-        <span class="n">FReadSurfaceDataFlags</span> <span class="n">Flags</span><span class="p">;</span>
-    <span class="p">}</span><span class="p">;</span>
-
-    <span class="n">FReadSurfaceContext</span> <span class="n">ReadSurfaceContext</span> <span class="o">=</span>
-    <span class="p">{</span>
-        <span class="n">Texture2D</span><span class="p">,</span>
-        <span class="o">&amp;</span><span class="n">OutPixels</span><span class="p">,</span>
-        <span class="n">FIntRect</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">Texture2D</span><span class="o">-</span><span class="o">&gt;</span><span class="n">GetSizeXY</span><span class="p">(</span><span class="p">)</span><span class="p">.</span><span class="n">X</span><span class="p">,</span> <span class="n">Texture2D</span><span class="o">-</span><span class="o">&gt;</span><span class="n">GetSizeXY</span><span class="p">(</span><span class="p">)</span><span class="p">.</span><span class="n">Y</span><span class="p">)</span><span class="p">,</span>
-        <span class="n">FReadSurfaceDataFlags</span><span class="p">(</span><span class="n">RCM_UNorm</span><span class="p">,</span> <span class="n">CubeFace_MAX</span><span class="p">)</span>
-    <span class="p">}</span><span class="p">;</span>
-
-    <span class="n">FReadSurfaceContext</span> <span class="n">Context</span> <span class="o">=</span> <span class="n">ReadSurfaceContext</span><span class="p">;</span>
-    <span class="n">ENQUEUE_RENDER_COMMAND</span><span class="p">(</span><span class="n">ReadSurfaceCommand</span><span class="p">)</span><span class="p">(</span>
-        <span class="p">[</span><span class="n">Context</span><span class="p">]</span><span class="p">(</span><span class="n">FRHICommandListImmediate</span><span class="o">&amp;</span> <span class="n">RHICmdList</span><span class="p">)</span>
-    <span class="p">{</span>
-        <span class="n">RHICmdList</span><span class="p">.</span><span class="n">ReadSurfaceData</span><span class="p">(</span>
-            <span class="n">Context</span><span class="p">.</span><span class="n">Texture</span><span class="p">,</span>
-            <span class="n">Context</span><span class="p">.</span><span class="n">Rect</span><span class="p">,</span>
-            <span class="o">*</span><span class="n">Context</span><span class="p">.</span><span class="n">OutData</span><span class="p">,</span>
-            <span class="n">Context</span><span class="p">.</span><span class="n">Flags</span>
-        <span class="p">)</span><span class="p">;</span>
-    <span class="p">}</span><span class="p">)</span><span class="p">;</span>
-
-    <span class="n">FlushRenderingCommands</span><span class="p">(</span><span class="p">)</span><span class="p">;</span>
-
-    <span class="n">FImageUtils</span><span class="o">:</span><span class="o">:</span><span class="n">CompressImageArray</span><span class="p">(</span><span class="n">Context</span><span class="p">.</span><span class="n">Rect</span><span class="p">.</span><span class="n">Width</span><span class="p">(</span><span class="p">)</span><span class="p">,</span> <span class="n">Context</span><span class="p">.</span><span class="n">Rect</span><span class="p">.</span><span class="n">Height</span><span class="p">(</span><span class="p">)</span><span class="p">,</span> <span class="n">OutPixels</span><span class="p">,</span> <span class="n">ImgData</span><span class="p">)</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
-</div>
-</div>
+</li>
+<li>
+<p><a href="https://answers.unrealengine.com/questions/17862/access-color-and-depth-buffer-of-each-frame.html">https://answers.unrealengine.com/questions/17862/access-color-and-depth-buffer-of-each-frame.html</a></p>
+</li>
+<li>
+<p><a href="https://segmentfault.com/a/1190000012737548">https://segmentfault.com/a/1190000012737548</a></p>
+</li>
+<li>
+<p><a href="https://zhuanlan.zhihu.com/p/36840778">Gbuff数据</a></p>
+</li>
+<li>
+<p><a href="https://img-blog.csdnimg.cn/2018120510265318.png">渲染系统概述</a> 图片</p>
+</li>
+</ol>
+<h2 id="heading"></h2>
     </article>
     <script>
   'use strict';
@@ -3120,36 +2497,27 @@ document.addEventListener('DOMContentLoaded', function () {
   <div class="toc " data-dir="ltr" data-folding="true">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#texture2d">Texture2D</a></li>
-    <li><a href="#utexture2d">UTexture2D</a></li>
-    <li><a href="#ftexture2d">FTexture2D</a></li>
-    <li><a href="#frhitexture2d">FRHITexture2D</a></li>
-  </ul>
-
-  <ul>
     <li>
       <ul>
         <li><a href="#延迟渲染">延迟渲染</a></li>
       </ul>
     </li>
-    <li><a href="#z-pre-pass">Z Pre Pass</a></li>
-    <li><a href="#base-pass">Base Pass</a></li>
-    <li><a href="#ue4-绘制策略drawingpolicy">UE4 绘制策略DrawingPolicy</a></li>
-    <li><a href="#render模块">Render模块</a></li>
     <li><a href="#相关术语">相关术语</a></li>
-    <li><a href="#实时渲染流程">实时渲染流程：</a></li>
-    <li><a href="#渲染流程">渲染流程：</a></li>
-    <li><a href="#ue4渲染一帧">UE4渲染一帧</a>
+    <li><a href="#渲染数据">渲染数据</a></li>
+    <li><a href="#几个pass">几个Pass</a>
       <ul>
-        <li><a href="#particlesimulation">ParticleSimulation</a></li>
-        <li><a href="#z-prepass">Z-Prepass</a></li>
-        <li><a href="#beginocclusiontests">BeginOcclusionTests</a></li>
+        <li><a href="#z-pre-pass">Z Pre Pass</a></li>
       </ul>
     </li>
-  </ul>
-
-  <ul>
+    <li><a href="#ue4渲染一帧">UE4渲染一帧</a></li>
+    <li><a href="#渲染管道">渲染管道</a></li>
+    <li><a href="#render模块">Render模块</a>
+      <ul>
+        <li><a href="#实时渲染流程图">实时渲染流程图：</a></li>
+      </ul>
+    </li>
     <li><a href="#渲染函数render">渲染函数Render</a></li>
+    <li><a href="#heading"></a></li>
   </ul>
 </nav>
   </div>

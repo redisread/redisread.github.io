@@ -1489,7 +1489,7 @@
     <div class="single__meta">
       
 <div class="single__infos">
-  <time class="single__info" title="创建日期">📅&nbsp;2020年05月30日 </time>  &middot; <span class="single__info" title="阅读时长"> ☕ 11 分钟 </span>&middot; <span class="single__info" title="作者">👻&nbsp;Victor</span>
+  <time class="single__info" title="创建日期">📅&nbsp;2020年05月30日 </time>  &middot; <span class="single__info" title="阅读时长"> ☕ 12 分钟 </span>&middot; <span class="single__info" title="作者">👻&nbsp;Victor</span>
   <span class="single__info">
     
   </span>
@@ -2617,7 +2617,60 @@
 <h3 id="z-buffer">Z-Buffer</h3>
 <p>用Renderdoc对UE4(PC，DX11）截帧，UE4的版本为4.18. 可以看到UE4一帧画面的渲染过程如下</p>
 <p><img src="https://i.loli.net/2020/05/30/XsihEuColdnvbVm.png" alt="图片描述" /></p>
+<h3 id="获取gbuffer的一种方式">获取GBuffer的一种方式</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-c++" data-lang="c++"><span class="n">ENQUEUE_UNIQUE_RENDER_COMMAND_ONEPARAMETER</span><span class="p">(</span>
+<span class="n">DZRenderSutioBP_InterceptSceneBaseColor</span><span class="p">,</span>
+<span class="n">UTexture2D</span><span class="o">*</span><span class="p">,</span> <span class="n">vTextureAsset</span><span class="p">,</span> <span class="n">TextureAsset</span><span class="p">,</span>
+<span class="p">{</span>
+<span class="cm">/*if (!IsInRenderingThread())
+</span><span class="cm">return;*/</span>
+<span class="n">FRHICommandListImmediate</span><span class="o">&amp;</span> <span class="n">RHICmdList</span> <span class="o">=</span> <span class="n">GRHICommandList</span><span class="p">.</span><span class="n">GetImmediateCommandList</span><span class="p">(</span><span class="p">)</span><span class="p">;</span>
+<span class="c1">//计数加一避免Render完成后直接清空了GBuffer,但会慢一帧，你猜
+</span><span class="c1"></span><span class="n">FSceneRenderTargets</span><span class="o">:</span><span class="o">:</span><span class="n">Get</span><span class="p">(</span><span class="n">RHICmdList</span><span class="p">)</span><span class="p">.</span><span class="n">AdjustGBufferRefCount</span><span class="p">(</span><span class="n">RHICmdList</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span><span class="p">;</span>
+<span class="k">static</span> <span class="k">const</span> <span class="n">FString</span> <span class="nf">ScrollingMessage</span><span class="p">(</span><span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">Hello World: </span><span class="s">&#34;</span><span class="p">)</span><span class="p">)</span><span class="p">;</span>
+<span class="n">GEngine</span><span class="o">-</span><span class="o">&gt;</span><span class="n">AddOnScreenDebugMessage</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mf">0.2f</span><span class="p">,</span> <span class="n">FColor</span><span class="o">:</span><span class="o">:</span><span class="n">Red</span><span class="p">,</span> <span class="n">ScrollingMessage</span><span class="p">)</span><span class="p">;</span>
+<span class="n">FSceneRenderTargets</span><span class="o">&amp;</span> <span class="n">SceneContext</span> <span class="o">=</span> <span class="n">FSceneRenderTargets</span><span class="o">:</span><span class="o">:</span><span class="n">Get</span><span class="p">(</span><span class="n">RHICmdList</span><span class="p">)</span><span class="p">;</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">SceneContext</span><span class="p">.</span><span class="n">GBufferA</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="n">FTexture2DRHIRef</span> <span class="n">vTextTarget</span> <span class="o">=</span> <span class="n">SceneContext</span><span class="p">.</span><span class="n">GetGBufferATexture</span><span class="p">(</span><span class="p">)</span><span class="p">;</span>
+<span class="n">FString</span> <span class="n">vSiceStr</span> <span class="o">=</span> <span class="n">FString</span><span class="o">:</span><span class="o">:</span><span class="n">Printf</span><span class="p">(</span><span class="n">TEXT</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">FSceneRenderTargets GBufferA Size = %d*%d</span><span class="s">&#34;</span><span class="p">)</span><span class="p">,</span> <span class="n">vTextTarget</span><span class="o">-</span><span class="o">&gt;</span><span class="n">GetSizeX</span><span class="p">(</span><span class="p">)</span><span class="p">,</span> <span class="n">vTextTarget</span><span class="o">-</span><span class="o">&gt;</span><span class="n">GetSizeY</span><span class="p">(</span><span class="p">)</span><span class="p">)</span><span class="p">;</span>
 
+<span class="n">GEngine</span><span class="o">-</span><span class="o">&gt;</span><span class="n">AddOnScreenDebugMessage</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mf">0.2f</span><span class="p">,</span> <span class="n">FColor</span><span class="o">:</span><span class="o">:</span><span class="n">Red</span><span class="p">,</span> <span class="n">vSiceStr</span><span class="p">)</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="c1">//移除
+</span><span class="c1"></span><span class="n">FSceneRenderTargets</span><span class="o">:</span><span class="o">:</span><span class="n">Get</span><span class="p">(</span><span class="n">RHICmdList</span><span class="p">)</span><span class="p">.</span><span class="n">AdjustGBufferRefCount</span><span class="p">(</span><span class="n">RHICmdList</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="p">)</span><span class="p">;</span>
+</code></pre></td></tr></table>
+</div>
+</div>
     </article>
     <script>
   'use strict';
@@ -3255,6 +3308,7 @@ document.addEventListener('DOMContentLoaded', function () {
         </li>
         <li><a href="#api-ugameplaystaticsprojectworldtoscreen">API UGameplayStatics::ProjectWorldToScreen</a></li>
         <li><a href="#z-buffer">Z-Buffer</a></li>
+        <li><a href="#获取gbuffer的一种方式">获取GBuffer的一种方式</a></li>
       </ul>
     </li>
   </ul>
