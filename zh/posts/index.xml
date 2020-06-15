@@ -42,7 +42,7 @@
         <pubDate>Wed, 03 Jun 2020 09:42:11 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
         <guid>https://vhope.cf/zh/posts/ue/ue-game-render/</guid>
-        <description>游戏线程 &amp;amp; 渲染线程 UE4游戏线程启动 游戏线程每一帧更新所有内容。 这个tick是哪里打开的？ 头文件：Engine\Source\Runtime</description>
+        <description>&lt;p&gt;探索UE4游戏线程的进入&lt;/p&gt;</description>
       </item>
       
       <item>
