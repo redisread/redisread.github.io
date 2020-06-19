@@ -1489,7 +1489,7 @@
     <div class="single__meta">
       
 <div class="single__infos">
-  <time class="single__info" title="创建日期">📅&nbsp;2020年06月15日 </time>  &middot; <span class="single__info" title="阅读时长"> ☕ 6 分钟 </span>&middot; <span class="single__info" title="作者">👻&nbsp;Victor</span>
+  <time class="single__info" title="创建日期">📅&nbsp;2020年06月15日 </time>  &middot; <span class="single__info" title="阅读时长"> ☕ 7 分钟 </span>&middot; <span class="single__info" title="作者">👻&nbsp;Victor</span>
   <span class="single__info">
     
   </span>
@@ -1668,9 +1668,27 @@
 </code></pre></td></tr></table>
 </div>
 </div><p>上面的代码只要打开编辑器模式就会自动生成<code>HitProxy</code></p>
+<h3 id="3-hitproxy的采集更新">3. HitProxy的采集更新</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-c++" data-lang="c++"><span class="n">EMouseCursor</span><span class="o">:</span><span class="o">:</span><span class="n">Type</span> <span class="n">FEditorViewportClient</span><span class="o">:</span><span class="o">:</span><span class="n">GetCursor</span><span class="p">(</span><span class="n">FViewport</span><span class="o">*</span> <span class="n">InViewport</span><span class="p">,</span><span class="n">int32</span> <span class="n">X</span><span class="p">,</span><span class="n">int32</span> <span class="n">Y</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>GetCursor -&gt; GetHitProxy -&gt; GetHitProxyMap -&gt; GetRawHitProxyData -&gt; <strong>Draw</strong></p>
 <h3 id="如何实现hitproxy">如何实现hitproxy？</h3>
 <p>您需要从 UGameViewportClient 类继承</p>
-<h1 id="hhitproxy">HHitProxy</h1>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-c++" data-lang="c++"><span class="k">virtual</span> <span class="kt">bool</span> <span class="nf">RequiresHitProxyStorage</span><span class="p">(</span><span class="p">)</span> <span class="k">override</span> <span class="p">{</span> <span class="k">return</span> <span class="nb">true</span><span class="p">;</span> <span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h1 id="hhitproxy">HHitProxy</h1>
 <p>用于检测用户界面命中的基类</p>
 <h1 id="fhitproxymap">FHitProxyMap</h1>
 <p>从2D坐标到缓存命中代理的地图。</p>
@@ -1680,6 +1698,10 @@
 <li><a href="https://forums.unrealengine.com/development-discussion/c-gameplay-programming/37946-how-to-select-an-actor-in-game-using-gethitproxy">How to select an actor in-game using GetHitProxy?</a></li>
 <li><a href="http://www.acros.me/c/unreal-engine-4-%e7%bc%96%e8%be%91%e5%99%a8%e7%9a%84%e5%85%89%e6%a0%87%e6%8b%be%e5%8f%96%ef%bc%88cursor-query%ef%bc%89%e5%8a%9f%e8%83%bd%e5%b0%8f%e8%ae%b0/">UE4 编辑器的光标拾取</a></li>
 <li><a href="https://arenas0.com/2019/04/20/UE4_Learn_HitProxy/">编辑器Viewport窗口中的鼠标拾取原理</a></li>
+<li><a href="https://blog.csdn.net/jiangdengc/article/details/59486288">场景基本对象</a></li>
+<li><a href="https://blue2rgb.sydneyzh.com/ue4-deferred-shading-pipeline.html">渲染总流程</a></li>
+<li><a href="https://docs.unrealengine.com/zh-CN/Programming/Rendering/MeshDrawingPipeline/index.html">https://docs.unrealengine.com/zh-CN/Programming/Rendering/MeshDrawingPipeline/index.html</a></li>
+<li><a href="https://papalqi.cn/index.php/2019/11/10/unreal-mesh-drawing%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/">Unreal Mesh Drawing源码分析</a></li>
 </ol>
 <hr />
 <h2 id="动态渲染和静态渲染拓展">动态渲染和静态渲染(拓展)</h2>
@@ -1690,6 +1712,46 @@
 <p><img src="https://i.loli.net/2020/06/15/cptNXDBHuCRwKUk.jpg" alt="MeshPipelineOverview_2.png" /></p>
 <p>缓存的路径构建并重用“FMeshBatch”，对于不改变每一帧（比如静态网格体）的绘制，它是快速渲染的首选路径。这是由“DrawStaticElements”实现的，当一个代理被添加到场景中时会调用此函数。创建的“FMeshBatches”存储在“FPrimitiveSceneInfo::StaticMeshes”中，并且每一帧都被重用，直到从场景中删除代理为止。</p>
 <p>动态路径每一帧重新创建“FMeshBatch”。这是最灵活的路径，用于在帧与帧之间经常会发生变化的绘制，例如粒子。它由“GetDynamicMeshElements”实现。该函数从InitViews中调用每一帧，并为每个视图创建一个临时的“FMeshBatch”。</p>
+<h2 id="通道类型">通道类型</h2>
+<p>有三种方法来使用“FMeshPassProcessor”绘制：</p>
+<table>
+<thead>
+<tr>
+<th align="left">通道类型</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>“EMeshPass::Type”枚举</strong></td>
+<td align="left">在此处添加一个条目会在“FScene”中分配一个“FParallelMeshDrawCommandPass”。这使得“FScene”能够在“AddToScene”时间缓存通道的网格体绘制命令。“FMeshPassProcessor”必须使用“FRegisterPassProcessorCreateFunction”注册到它们的枚举中。通道设置和调度发生在任务中。</td>
+</tr>
+<tr>
+<td align="left"><strong>手动通道</strong></td>
+<td align="left">使用手动通道，其中“FParallelMeshDrawCommandPass”作为变量存储在任意类中。当每个帧的通道数可变时（例如，阴影深度通道），就会使用这种方法。这种类型的通道不能在“FScene::AddToScene”时间缓存命令，但仍然可以获得在任务中设置和调度通道的好处。</td>
+</tr>
+<tr>
+<td align="left"><strong>“DrawDynamicMeshPass”</strong></td>
+<td align="left">这用于即时模式绘制，是最慢但最方便的方法。通道设置和调度立即在调用者线程中发生。</td>
+</tr>
+</tbody>
+</table>
+<p><code>FPrimitiveSceneProxy</code> 生成 <code>FMeshBatch</code> 有两个途径：</p>
+<ul>
+<li>
+<p>Cache</p>
+<p>其会调用 FPrimitiveSceneInfo::AddStaticMeshes，这里仅是 Static Mesh 的添加。而动态物体创建并不在这里</p>
+<p>CacheMeshDrawCommands(RHICmdList);</p>
+<p>对于 StaticMesh 来说就是 Cache 的方式, 在 Proxy 添加到场景时调用 DrawStaticElements</p>
+<p>生成的 FMeshBatch 被保存在 FPrimitiveSceneInfo 的 StaticMeshes 中</p>
+<p>每帧进行重用直到 Proxy 从场景中移除。</p>
+<p><img src="https://i.loli.net/2020/06/19/Equ2ZkXQLib4hcx.png" alt="generated-191" /></p>
+</li>
+<li>
+<p>Dynamic</p>
+</li>
+</ul>
+<p><img src="C:%5CUsers%5CAdministrator%5CDesktop%5Cgenerated-192.png" alt="generated-192" /></p>
     </article>
     <script>
   'use strict';
@@ -2303,6 +2365,7 @@ document.addEventListener('DOMContentLoaded', function () {
     <li><a href="#ue实现hitproxy">UE实现HitProxy</a>
       <ul>
         <li><a href="#1-hitproxy的生成">1. HitProxy的生成</a></li>
+        <li><a href="#3-hitproxy的采集更新">3. HitProxy的采集更新</a></li>
         <li><a href="#如何实现hitproxy">如何实现hitproxy？</a></li>
       </ul>
     </li>
@@ -2310,6 +2373,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   <ul>
     <li><a href="#动态渲染和静态渲染拓展">动态渲染和静态渲染(拓展)</a></li>
+    <li><a href="#通道类型">通道类型</a></li>
   </ul>
 </nav>
   </div>
