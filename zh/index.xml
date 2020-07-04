@@ -26,15 +26,6 @@
       </item>
       
       <item>
-        <title>UE4游戏模式使用HitProxy</title>
-        <link>https://vhope.cf/zh/posts/ue/ue-hitproxy/</link>
-        <pubDate>Mon, 15 Jun 2020 21:20:11 +0800</pubDate>
-        <author>1427298682@qq.com (redisread)</author>
-        <guid>https://vhope.cf/zh/posts/ue/ue-hitproxy/</guid>
-        <description>&lt;p&gt;在UE4游戏模式使用HitProxy。&lt;/p&gt;</description>
-      </item>
-      
-      <item>
         <title>UE4获取深度值</title>
         <link>https://vhope.cf/zh/posts/ue/ue-depth/</link>
         <pubDate>Mon, 15 Jun 2020 09:42:11 +0800</pubDate>
@@ -552,6 +543,23 @@ java javascript  1  System.out.println(&amp;#39;Hello World!&amp;#39;);     1  c
         <author>1427298682@qq.com (redisread)</author>
         <guid>https://vhope.cf/zh/talks/blibli/</guid>
         <description>一个测试视频:</description>
+      </item>
+      
+      <item>
+        <title></title>
+        <link>https://vhope.cf/zh/posts/ue/ue-hitproxy/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>1427298682@qq.com (redisread)</author>
+        <guid>https://vhope.cf/zh/posts/ue/ue-hitproxy/</guid>
+        <description>UE编辑器下模拟使用HitProxy 需要从 UGameViewportClient 类继承 修改返回值为true,路径：\Source\Runtime\Engine\Private\GameViewportClient.h
+1  virtual bool RequiresHitProxyStorage() override { return true; }   在FViewportClient类中新建DrawHitProxy函数 文件UnrealClient.h
+在GameViewportClient类中声明并且实现 声明：\Source\Runtime\Engine\Private\GameViewportClient.h
+将GameViewportClient类中的函数Draw()内容复制到该函数DrawHitProxy，修改下面的的地方：
+修改FViewport类中的GetRawHitProxyData函数 在GetRawHitProxyData函数中进行以下的修改：Engine\Source\Runtime\Engine\Private\UnrealClient.cpp
+调用&amp;ndash;获取屏幕坐标Hitproxy 相关类型 HHitProxy：用于检测用户界面命中的基类
+FHitProxyMap：从2D坐标到缓存命中代理的地图。
+参考：
+ How to select an actor in-game using GetHitProxy? UE4 编辑器的光标拾取 编辑器Viewport窗口中的鼠标拾取原理 场景基本对象 渲染总流程 https://docs.unrealengine.com/zh-CN/Programming/Rendering/MeshDrawingPipeline/index.html Unreal Mesh Drawing源码分析 白袍笑道  </description>
       </item>
       
       <item>
