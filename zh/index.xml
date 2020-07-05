@@ -17,12 +17,30 @@
     
       
       <item>
+        <title>My Hugo Lib</title>
+        <link>https://vhope.cf/zh/showcase/hugo/myblog/</link>
+        <pubDate>Sun, 19 Jan 2020 21:13:42 +0900</pubDate>
+        <author>1427298682@qq.com (redisread)</author>
+        <guid>https://vhope.cf/zh/showcase/hugo/myblog/</guid>
+        <description></description>
+      </item>
+      
+      <item>
+        <title>My Hugo Item</title>
+        <link>https://vhope.cf/zh/showcase/hugo/myitem/</link>
+        <pubDate>Sun, 19 Jan 2020 21:13:42 +0900</pubDate>
+        <author>1427298682@qq.com (redisread)</author>
+        <guid>https://vhope.cf/zh/showcase/hugo/myitem/</guid>
+        <description></description>
+      </item>
+      
+      <item>
         <title>使用小书匠在线编写博文</title>
         <link>https://vhope.cf/zh/posts/hugo/xiaoshujiang/</link>
         <pubDate>Tue, 30 Jun 2020 10:00:11 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
         <guid>https://vhope.cf/zh/posts/hugo/xiaoshujiang/</guid>
-        <description>地址：http://markdown.xiaoshujiang.com/</description>
+        <description>地址：http://markdown.xiaoshujiang.com/ This is a Test!</description>
       </item>
       
       <item>
