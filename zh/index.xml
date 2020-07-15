@@ -17,6 +17,24 @@
     
       
       <item>
+        <title>My Hugo Lib</title>
+        <link>https://vhope.cf/zh/showcase/hugo/myblog/</link>
+        <pubDate>Sun, 19 Jan 2020 21:13:42 +0900</pubDate>
+        <author>1427298682@qq.com (redisread)</author>
+        <guid>https://vhope.cf/zh/showcase/hugo/myblog/</guid>
+        <description></description>
+      </item>
+      
+      <item>
+        <title>My Hugo Item</title>
+        <link>https://vhope.cf/zh/showcase/hugo/myitem/</link>
+        <pubDate>Sun, 19 Jan 2020 21:13:42 +0900</pubDate>
+        <author>1427298682@qq.com (redisread)</author>
+        <guid>https://vhope.cf/zh/showcase/hugo/myitem/</guid>
+        <description></description>
+      </item>
+      
+      <item>
         <title>使用小书匠在线编写博文</title>
         <link>https://vhope.cf/zh/posts/hugo/xiaoshujiang/</link>
         <pubDate>Tue, 30 Jun 2020 10:00:11 +0800</pubDate>
@@ -506,7 +524,7 @@ java javascript  1  System.out.println(&amp;#39;Hello World!&amp;#39;);     1  c
         <pubDate>Thu, 31 Oct 2019 10:20:16 +0900</pubDate>
         <author>1427298682@qq.com (redisread)</author>
         <guid>https://vhope.cf/zh/gallery/movie/</guid>
-        <description>between 40 and 240 in movies good movies！🎥</description>
+        <description>between 70 and 240 in movies good movies！🎥</description>
       </item>
       
       <item>
