@@ -17,24 +17,6 @@
     
       
       <item>
-        <title>My Hugo Lib</title>
-        <link>https://vhope.cf/zh/showcase/hugo/myblog/</link>
-        <pubDate>Sun, 19 Jan 2020 21:13:42 +0900</pubDate>
-        <author>1427298682@qq.com (redisread)</author>
-        <guid>https://vhope.cf/zh/showcase/hugo/myblog/</guid>
-        <description></description>
-      </item>
-      
-      <item>
-        <title>My Hugo Item</title>
-        <link>https://vhope.cf/zh/showcase/hugo/myitem/</link>
-        <pubDate>Sun, 19 Jan 2020 21:13:42 +0900</pubDate>
-        <author>1427298682@qq.com (redisread)</author>
-        <guid>https://vhope.cf/zh/showcase/hugo/myitem/</guid>
-        <description></description>
-      </item>
-      
-      <item>
         <title>epoll的水平触发与边缘触发</title>
         <link>https://vhope.cf/zh/posts/linux/epoll-lt-et/</link>
         <pubDate>Tue, 28 Jul 2020 12:00:13 +0800</pubDate>
@@ -50,6 +32,15 @@
         <author>1427298682@qq.com (redisread)</author>
         <guid>https://vhope.cf/zh/posts/network/http/</guid>
         <description>HTTP/1.x 在早期，HTTP 使用一个简单的模型来处理这样的连接。这些连接的生命周期是短暂的：每发起一个请求时都会创建一个新的连接，并在收到应答时立即关</description>
+      </item>
+      
+      <item>
+        <title>interview</title>
+        <link>https://vhope.cf/zh/talks/interview/</link>
+        <pubDate>Tue, 28 Jul 2020 00:04:50 +0900</pubDate>
+        <author>1427298682@qq.com (redisread)</author>
+        <guid>https://vhope.cf/zh/talks/interview/</guid>
+        <description>Interview C++空类产生哪些成员函数？ 构造、拷贝构造、取地址、、取地址const，赋值、析构 C++ 空类默认产生的类成员函数 TCP三次握手和四次挥手，何时</description>
       </item>
       
       <item>
