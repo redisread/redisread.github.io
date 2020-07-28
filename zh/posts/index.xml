@@ -26,6 +26,15 @@
       </item>
       
       <item>
+        <title>Http协议浅析</title>
+        <link>https://vhope.cf/zh/posts/network/http/</link>
+        <pubDate>Tue, 28 Jul 2020 11:12:16 +0800</pubDate>
+        <author>1427298682@qq.com (redisread)</author>
+        <guid>https://vhope.cf/zh/posts/network/http/</guid>
+        <description>HTTP/1.x 在早期，HTTP 使用一个简单的模型来处理这样的连接。这些连接的生命周期是短暂的：每发起一个请求时都会创建一个新的连接，并在收到应答时立即关</description>
+      </item>
+      
+      <item>
         <title>高级的二叉树</title>
         <link>https://vhope.cf/zh/posts/algorithmstructure/bst/</link>
         <pubDate>Mon, 27 Jul 2020 22:07:13 +0800</pubDate>
@@ -94,6 +103,15 @@
         <pubDate>Wed, 06 May 2020 11:12:38 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
         <guid>https://vhope.cf/zh/posts/math/feima/</guid>
+        <description>&lt;p&gt;费马大定理在数学里有一个特殊的现象，即在于它是错误证明数量最多的数学题。&lt;/p&gt;</description>
+      </item>
+      
+      <item>
+        <title>费马🦓定理</title>
+        <link>https://vhope.cf/zh/posts/network/feima/</link>
+        <pubDate>Wed, 06 May 2020 11:12:38 +0800</pubDate>
+        <author>1427298682@qq.com (redisread)</author>
+        <guid>https://vhope.cf/zh/posts/network/feima/</guid>
         <description>&lt;p&gt;费马大定理在数学里有一个特殊的现象，即在于它是错误证明数量最多的数学题。&lt;/p&gt;</description>
       </item>
       
