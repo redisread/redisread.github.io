@@ -4,7 +4,7 @@
   
   <url>
     <loc>https://vhope.cf/zh/</loc>
-    <lastmod>2020-07-28T12:00:13+08:00</lastmod>
+    <lastmod>2020-07-28T16:04:50+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -24,7 +24,7 @@
   
   <url>
     <loc>https://vhope.cf/zh/categories/</loc>
-    <lastmod>2020-07-28T12:00:13+08:00</lastmod>
+    <lastmod>2020-07-28T16:04:50+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -39,6 +39,51 @@
                 rel="alternate"
                 hreflang="zh"
                 href="https://vhope.cf/zh/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://vhope.cf/zh/talks/leetcode-hot/</loc>
+    <lastmod>2020-07-28T16:04:50+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://vhope.cf/zh/series/</loc>
+    <lastmod>2020-07-28T16:04:50+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://vhope.cf/en/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://vhope.cf/ko/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://vhope.cf/zh/series/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://vhope.cf/zh/tags/</loc>
+    <lastmod>2020-07-28T16:04:50+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://vhope.cf/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://vhope.cf/ko/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://vhope.cf/zh/tags/"
                 />
   </url>
   
@@ -78,46 +123,6 @@
   </url>
   
   <url>
-    <loc>https://vhope.cf/zh/series/</loc>
-    <lastmod>2020-07-28T12:00:13+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://vhope.cf/en/series/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://vhope.cf/ko/series/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://vhope.cf/zh/series/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://vhope.cf/zh/tags/</loc>
-    <lastmod>2020-07-28T12:00:13+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://vhope.cf/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://vhope.cf/ko/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://vhope.cf/zh/tags/"
-                />
-  </url>
-  
-  <url>
     <loc>https://vhope.cf/zh/tags/http/</loc>
     <lastmod>2020-07-28T11:12:16+08:00</lastmod>
   </url>
@@ -133,12 +138,12 @@
   </url>
   
   <url>
-    <loc>https://vhope.cf/zh/series/network/</loc>
+    <loc>https://vhope.cf/zh/tags/network/</loc>
     <lastmod>2020-07-28T11:12:16+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://vhope.cf/zh/tags/network/</loc>
+    <loc>https://vhope.cf/zh/series/network/</loc>
     <lastmod>2020-07-28T11:12:16+08:00</lastmod>
   </url>
   
@@ -473,12 +478,12 @@
   </url>
   
   <url>
-    <loc>https://vhope.cf/zh/series/%E5%AF%86%E7%A0%81%E5%AD%A6/</loc>
+    <loc>https://vhope.cf/zh/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/</loc>
     <lastmod>2020-04-03T14:20:19+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://vhope.cf/zh/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/</loc>
+    <loc>https://vhope.cf/zh/series/%E5%AF%86%E7%A0%81%E5%AD%A6/</loc>
     <lastmod>2020-04-03T14:20:19+08:00</lastmod>
   </url>
   
@@ -990,11 +995,6 @@
   <url>
     <loc>https://vhope.cf/zh/presentation/second/</loc>
     <lastmod>2019-10-30T20:45:24+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://vhope.cf/zh/talks/leetcode-hot/</loc>
-    <lastmod>2019-07-28T16:04:50+09:00</lastmod>
   </url>
   
   <url>
