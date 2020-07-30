@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>网络层 – ✏Victor&#39;s Blog</title>
+    <title>Linux内存管理 – ✏Victor&#39;s Blog</title>
     
 
   
@@ -497,7 +497,7 @@
 
   
     
-    var permalink = JSON.parse("\"https://vhope.cf/zh/posts/network/net-level/\"");
+    var permalink = JSON.parse("\"https://vhope.cf/zh/posts/linux/memory-control/\"");
     var searchResults = null;
     var searchMenu = null;
     var searchText = null;
@@ -1149,26 +1149,26 @@
 
 
     
-<meta name="description" content="网络层浅析" />
+<meta name="description" content="" />
 <meta name="keywords" content="">
-<meta name="created" content="2020-07-28T18:02:38&#43;0800">
-<meta name="modified" content="2020-07-28T18:02:38&#43;0800">
-<meta property="article:published_time" content="2020-07-28T18:02:38&#43;0800">
+<meta name="created" content="2020-07-30T09:01:25&#43;0800">
+<meta name="modified" content="2020-07-30T09:01:25&#43;0800">
+<meta property="article:published_time" content="2020-07-30T09:01:25&#43;0800">
 
 <meta name="author" content="Victor">
-<meta property="article:author" content="https://vhope.cf/zh/posts/network/net-level/@Victor">
+<meta property="article:author" content="https://vhope.cf/zh/posts/linux/memory-control/@Victor">
 
 
 <meta property="og:site_name" content="✏Victor&#39;s Blog">
-<meta property="og:title" content="网络层">
-<meta property="og:url" content="https://vhope.cf/zh/posts/network/net-level/">
+<meta property="og:title" content="Linux内存管理">
+<meta property="og:url" content="https://vhope.cf/zh/posts/linux/memory-control/">
 <meta property="og:type" content="article">
-<meta property="og:description" content="网络层浅析">
+<meta property="og:description" content="">
 
 <meta name="generator" content="Hugo 0.64.1" />
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="theme-color" content="#ffffff">
-<link rel="canonical" href="https://vhope.cf/zh/posts/network/net-level/">
+<link rel="canonical" href="https://vhope.cf/zh/posts/linux/memory-control/">
 <link rel="manifest" href="/manifest.json">
 
   <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
@@ -1192,13 +1192,13 @@
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "headline": "网络层",
-    "datePublished": "2020-07-28T18:02:38+08:00",
-    "dateModified": "2020-07-28T18:02:38+08:00",
-    "url" : "https://vhope.cf/zh/posts/network/net-level/",
-    "description": "网络层浅析",
-    "keywords": ["计算机网络","网络层"],
-    "image" : "https://i.loli.net/2020/07/28/UxoQGMWrDklw2iK.png",
+    "headline": "Linux内存管理",
+    "datePublished": "2020-07-30T09:01:25+08:00",
+    "dateModified": "2020-07-30T09:01:25+08:00",
+    "url" : "https://vhope.cf/zh/posts/linux/memory-control/",
+    "description": "关于程序的装入 绝对装入：绝对映射，程序中逻辑地址与内存物理地址完全相同 （单片机) 可重定位装入：静态映射，在装入时对逻辑地址进行修改 动态运行时",
+    "keywords": ["Linux"],
+    "image" : "https://imgkr.cn-bj.ufileos.com/d58479d6-9ae9-4a8e-b68d-e3b6400b90cb.png",
     "author": {
       "@type": "Person",
       "name": "Victor"
@@ -1476,7 +1476,7 @@
   
   <li  class="is-active" >
     
-      <span>网络层</span>
+      <span>Linux内存管理</span>
     
   </li>
   
@@ -1485,11 +1485,11 @@
 </nav>
   
   <div class="single">
-    <h2 class="single__title">网络层</h2>
+    <h2 class="single__title">Linux内存管理</h2>
     <div class="single__meta">
       
 <div class="single__infos">
-  <time class="single__info" title="创建日期">📅&nbsp;2020年07月28日 </time>  &middot; <span class="single__info" title="阅读时长"> ☕ 8 分钟 </span>&middot; <span class="single__info" title="作者">👻&nbsp;Victor</span>
+  <time class="single__info" title="创建日期">📅&nbsp;2020年07月30日 </time>  &middot; <span class="single__info" title="阅读时长"> ☕ 4 分钟 </span>&middot; <span class="single__info" title="作者">👻&nbsp;Victor</span>
   <span class="single__info">
     
   </span>
@@ -1501,125 +1501,126 @@
     🏷️
   
   
-
-  
+    <li><a href="https://vhope.cf/zh/tags/linux/" class="single__tag" title="Linux">#Linux</a></li>
   
 
 </div>
     </div>
     <article class="single__contents" data-dir="ltr">
       
-      <h1 id="网络层">网络层</h1>
-<p>网际协议IP是TCP/IP体系中两个最主要的协议之一[STEV94][COME06][FORO10]，也是最重要的因特网标准协议之一。</p>
-<p>与IP协议配套使用的还有三个协议：</p>
+      <h2 id="关于程序的装入">关于程序的装入</h2>
 <ul>
-<li>地址解析协议ARP (Address Resolution Protocol)</li>
-<li>网际控制报文协议ICMP (Internet Control Message Protocol)</li>
-<li>网际组管理协议IGMP (Internet Group Management Protocol)</li>
+<li>
+<p>绝对装入：绝对映射，<strong>程序中逻辑地址与内存物理地址完全相同</strong>  （单片机)</p>
+</li>
+<li>
+<p>可重定位装入：静态映射，<strong>在装入时对逻辑地址进行修改</strong></p>
+</li>
+<li>
+<p>动态运行时装入：逻辑地址到物理地址的<strong>映射在程序运行时才执行</strong>  (现代PC机)</p>
+</li>
 </ul>
-<p>在这一层中，ARP画在最下面，因为IP经常要使用这个协议。ICMP和IGMP画在这一层的上部，因为它们要使用IP协议。由于网际协议IP是用来使互连起来的许多计算机网络能够进行通信，因此TCP/IP体系中的网络层常常称为网际层(internet layer)，或IP层。</p>
-<p><img src="https://i.loli.net/2020/07/21/uSwFLp1qVv7GQMZ.png" alt="网络层协议依赖" /></p>
-<h2 id="虚拟互连网络">虚拟互连网络</h2>
+<p><img src="https://i.loli.net/2020/07/29/jyb5Ee1IGSfvuCH.png" alt="绝对装入与可重定向装入" /></p>
+<p>而动态重定位如下：</p>
+<p><img src="https://i.loli.net/2020/07/29/34N5dDC2ykI7Sbw.png" alt="动态重定位" /></p>
 <blockquote>
-<p>从一般的概念来讲，将网络互相连接起来要使用一些中间设备。根据中间设备所在的层次，可以有以下四种不同的中间设备：</p>
-<p>(1) 物理层使用的中间设备叫做转发器(repeater)。</p>
-<p>(2) 数据链路层使用的中间设备叫做网桥或桥接器(bridge)。</p>
-<p>(3) 网络层使用的中间设备叫做路由器(router)[插图]。</p>
-<p>(4) 在网络层以上使用的中间设备叫做网关(gateway)。</p>
-<p>用网关连接两个不兼容的系统需要在高层进行协议的转换。</p>
+<p>静态重定位的特点是在一个作业装入内存时，必须分配其要求的全部内存空间，如果没有足够的内存，就不能装入该作业。此外，作业一旦进入内存后，在整个运行期间不能在内存中移动，也不能再申请内存空间。</p>
 </blockquote>
-<p>IP网：</p>
-<p><img src="https://i.loli.net/2020/07/21/lewuN3HU9Xg8QO6.png" alt="IP网" /></p>
-<p>异构的互联网链路</p>
-<p>H1→R1→R2→R3→R4→R5→H2</p>
-<p><img src="https://i.loli.net/2020/07/21/7iKMLGhgXjAHVUT.png" alt="异构互联网链路" /></p>
-<h2 id="arp协议">ARP协议</h2>
+<h2 id="关于程序的链接">关于程序的链接</h2>
+<ul>
+<li>
+<p>静态链接方式(Static Linking)</p>
+<p>在程序运行之前，先将各目标模块及它们所需的库函数链接成<strong>一个完整的可执行程序</strong>，以后不再拆开。</p>
+</li>
+<li>
+<p>装入时动态链接(Load time Dynamic Linking)</p>
+<p>将用户源程序编译后所得到的<strong>一组目标模块</strong>，在装入内存时，釆用边装入边链接的链接方式。</p>
+</li>
+<li>
+<p>运行时动态链接(Run-time Dynamic Linking）</p>
+<p>对某些目标模块的链接，是在程序执行中需要该目标模块时，才对它进行的链接。其优点是便于修改和更新，便于实现对目标模块的共享。</p>
+</li>
+</ul>
+<h2 id="连续分配方式">连续分配方式</h2>
+<ul>
+<li>
+<p>单一连续分配</p>
+<p>只能用于单用户、单任务的操作系统中。采用这种存储管理方式时，可把内存分为系统区和用户区两部分，系统区仅提供给 OS 使用，通常是放在内存的低址部分；用户区是指除系统区以外的全部内存空间，提供给用户使用。</p>
+<p><img src="https://i.loli.net/2020/07/29/k5bjYu76HTJLsZq.png" alt="单一连续分配" /></p>
+</li>
+<li>
+<p>固定分区连续分配</p>
+<p>将内存用户空间划分为若干个固定大小的区域，在每个分区中只装入一道作业，这样，把用户空间划分为几个分区，便允许有几道作业并发运行。当有一空闲分区时，便可以再从外存的后备作业队列中选择一个适当大小的作业装入该分区，当该作业结束时，又可再从后备作业队列中找出另一作业调入该分区。</p>
+<p><img src="https://i.loli.net/2020/07/29/kEd7tIHwfrx63G8.png" alt="固定分区" /></p>
+<p>另外可以设置分区大小不等的一些分区，如下：</p>
+<p><img src="https://i.loli.net/2020/07/29/pueabXT5gGNhxBw.png" alt="大小不等的分区" /></p>
+</li>
+<li>
+<p>动态分区分配</p>
+<p>动态分区分配数据结构：</p>
+<ul>
+<li>
+<p>空闲分区表</p>
+<p>在系统中设置一张空闲分区表，用于记录每个空闲分区的情况。每个空闲分区占一个表目，表目中包括分区序号、分区始址及分区的大小等数据项。</p>
+<p><img src="https://i.loli.net/2020/07/29/nZWN6wguUEBc9PL.png" alt="空闲分区表" /></p>
+</li>
+<li>
+<p>空闲分区链</p>
+<p>为了实现对空闲分区的分配和链接，在每个分区的起始部分，设置一些用于控制分区分配的信息，以及用于链接各分区所用的前向指针；在分区尾部则设置一后向指针，通过前、后向链接指针，可将所有的空闲分区链接成一个双向链，如下图所示：</p>
+<p><img src="https://i.loli.net/2020/07/29/AlP4bxTi1IZXfKU.png" alt="空闲分区链" /></p>
+</li>
+</ul>
+<p>分配算法：</p>
+<ul>
+<li>首次适应算法</li>
+<li>循环首次适应算法</li>
+<li>最佳适应算法</li>
+<li>最差适应算法</li>
+<li>快速适应算法</li>
+</ul>
+<p>例子：</p>
+<p>假设有新程序F装入，大小为32K，当前已有程序B和D，最近一次空间分配是D：</p>
+<p><img src="https://i.loli.net/2020/07/29/RlPDx95WyXdtiAz.png" alt="三种分配算法" /></p>
+</li>
+<li>
+<p>动态重定位分区分配</p>
+<p>对内存中正在使用的分区进行搬迁，使多个小的空闲分区（碎片）合并为一个大的空闲分区</p>
+<p><img src="https://i.loli.net/2020/07/29/KoyMTUfF9u8JOjn.png" alt="image-20200729103840445" /></p>
+</li>
+</ul>
+<p>算法：</p>
+<p><img src="https://i.loli.net/2020/07/29/s8KPGeYHhLgdWJb.png" alt="image-20200729104102926" /></p>
+<p>什么是内存碎片？</p>
+<p>内部碎片是指已经分配给作业但不能被利用的内存空间，外部碎片是指系统中还没有分配给作业，但由于碎片太小而无法分配给申请内存空间的新进程的存储块。通俗点的理解就是，某个作业所占用的内存区域如果没有装满，就是内部碎片，而作业与作业之间，如果有内存区域没有分配给某个作业，但又不能分配给任何作业，就是外部碎片。</p>
+<p><img src="https://i.loli.net/2020/07/29/Ry2vBY8NTs9W54f.png" alt="内存碎片" /></p>
 <blockquote>
-<p>已经知道了一个机器（主机或路由器）的IP地址，需要找出其相应的硬件地址</p>
+<p>连续分配: 为用户进程分配的必须是一个连续的内存空间。<br />
+非连续分配: 为用户进程分配的可以是一些分散的内存空间。</p>
 </blockquote>
-<p><img src="https://i.loli.net/2020/07/21/rYLGyXsUJNl4Izw.png" alt="IP—ARP" /></p>
-<p><strong>ARP协议工作原理</strong>：</p>
-<p>当主机A要向本局域网上的某个主机B发送IP数据报时，<strong>就先在其ARP高速缓存中查看有无主机B的IP地址</strong>。如有，就在ARP高速缓存中查出其对应的硬件地址，再把这个硬件地址写入MAC帧，然后通过局域网把该MAC帧发往此硬件地址。</p>
-<p>当找不到时，执行下面的操作：</p>
+<h2 id="非连续分配方式">非连续分配方式</h2>
+<p><strong>思想</strong></p>
+<p>假设进程A大小为23MB,但是每个分区大小只有10MB,如果进程只能占用一个分区,那显然放不下。<br />
+解决思路:</p>
+<p>如果允许进程占用多个分区,那么可以把进程拆分成10MB+10MB+3MB三个部外,再把这三个部分分别放到三个分区中(这些分区不要求连续)&hellip;<br />
+进程A的最后一个部分是3MB,放入分区后会产生7MB的内部碎片，如果每个分区大小为2MB,那么进程A可以拆分成11*2MB +1MB共12个部分,只有最后一部分1MB占不满分区,共产生1MB的内部碎片.<br />
+<em>显然,如果把外区大小设置的更小一些,内部碎片会更小,内学利用率会更高</em>.</p>
+<p><img src="https://i.loli.net/2020/07/29/K9JWX4b8LzHYVhs.png" alt="非连续分配" /></p>
+<p>具有快表的地址变换机构：（时间局部性与空间局部性原理）</p>
+<p><strong>快表</strong>,又称联想寄存器(TLB) ,是一种访问速度比内存快很多的高速缓冲存储器,用来存放当&quot;前访间的若干页表项,以加速地址变换的过程。与此对应,内存中的页表常称为慢表。</p>
+<p><img src="https://i.loli.net/2020/07/29/NbM72vaBXtK8UET.png" alt="TLB" /></p>
+<p><strong>多级页表</strong></p>
+<p>问题</p>
+<p>加载一个大的页表需要占用很大的内存</p>
+<p>解决</p>
+<p>将大表分为几个小表。类似CIDR。</p>
+<p>可将长长的页表进行分组,使每个内存块刚好可以放入一个分组(比如上个侧子中,页面大小4KB,每个页表项48,每个页面可存放1K个页表项,因此每1K个连续的页表项为一组,每组刚好占一个内存块,再讲各组离散地放到各个内存块中)另外,要为离散分配的页表再建立一张页表,称为页目录表,或称外层页表,或称顶层页表</p>
+<hr />
+<p>参考链接：</p>
 <ol>
-<li>ARP进程在本局域网上广播发送一个ARP请求分组</li>
-<li>在本局域网上的所有主机上运行的ARP进程都收到此ARP请求分组</li>
-<li>主机B的IP地址与ARP请求分组中要查询的IP地址一致，就收下这个ARP请求分组，并向主机A发送ARP响应分组，并在这个ARP响应分组中写入自己的硬件地址。</li>
+<li><a href="https://blog.csdn.net/Houchaoqun_XMU/article/details/55541299">【操作系统 - 4】动态分区分配算法</a></li>
+<li><a href="https://blog.csdn.net/qq_36946274/article/details/81463522?biz_id=102&amp;utm_term=%E7%A8%8B%E5%BA%8F%E7%9A%84%E9%93%BE%E6%8E%A5&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-0-81463522&amp;spm=1018.2118.3001.4187">程序的链接的三种方式</a></li>
+<li><a href="https://blog.csdn.net/xiaotai1234/article/details/107375547/?biz_id=102&amp;utm_term=%E8%BF%9E%E7%BB%AD%E5%88%86%E9%85%8D%E6%96%B9%E5%BC%8F&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-0-107375547&amp;spm=1018.2118.3001.4187">连续分配管理方式</a></li>
 </ol>
-<p>在网络链路上传送的帧最终是按照硬件地址找到目的主机的，那么为什么我们不直接使用硬件地址进行通信，而是要使用抽象的IP地址并调用ARP来寻找出相应的硬件地址呢？</p>
-<p>由于全世界存在着各式各样的网络，它们使用不同的硬件地址。要使这些异构网络能够互相通信就必须进行非常复杂的硬件地址转换工作，因此由用户或用户主机来完成这项工作几乎是不可能的事。但统一的IP地址把这个复杂问题解决了。连接到因特网的主机只需拥有统一的IP地址，它们之间的通信就像连接在同一个网络上那样简单方便，因为上述的调用ARP的复杂过程都是由计算机软件自动进行的，对用户来说是看不见这种调用过程的。</p>
-<h2 id="ip数据报">IP数据报</h2>
-<p>IP报文格式：</p>
-<p><img src="https://i.loli.net/2020/07/21/eLiyQFrH23YKWlX.png" alt="IP报文" /></p>
-<p>片偏移的列子：</p>
-<p>一数据报的总长度为3 820字节，其数据部分为3 800字节长（使用固定首部），需要分片为长度不超过1 420字节的数据报片。因固定首部长度为20字节，因此每个数据报片的数据部分长度不能超过1 400字节。于是分为3个数据报片，其数据部分的长度分别为1 400，1 400和1000字节。原始数据报首部被复制为各数据报片的首部，但必须修改有关字段的值。下如给出分片后得出的结果（请注意片偏移的数值）</p>
-<p><img src="https://i.loli.net/2020/07/21/4qnuO9It3FVrcNB.png" alt="片偏移例子" /></p>
-<p>下面是数据报首部与分片有关的字段中的数值，其中标识字段的值是任意给定的（12345）。具有相同标识的数据报片在目的站就可无误地重装成原来的数据报。</p>
-<p><img src="https://i.loli.net/2020/07/21/MYE9FmuUaGX32VL.png" alt="数字报字段" /></p>
-<p>首部检验和 占16位。这个字段只检验数据报的首部，但不包括数据部分</p>
-<p>这是因为数据报每经过一个路由器，路由器都要重新计算一下首部检验和（一些字段，如生存时间、标志、片偏移等都可能发生变化）。不检验数据部分可减少计算的工作量。为了进一步减小计算检验和的工作量，IP首部的检验和不采用复杂的CRC检验码而采用下面的简单计算方法：在发送方，先把IP数据报首部划分为许多16位字的序列，并把检验和字段置零。用反码算术运算[插图]把所有16位字相加后，将得到的和的反码写入检验和字段。接收方收到数据报后，将首部的所有16位字再使用反码算术运算相加一次。将得到的和取反码，即得出接收方检验和的计算结果。若首部未发生任何变化，则此结果必为0，于是就保留这个数据报。否则即认为出差错，并将此数据报丢弃。</p>
-<p><img src="https://i.loli.net/2020/07/28/2TMRqLf1FxQBuWy.png" alt="数据报校验码" /></p>
-<h3 id="ip层转发分组">IP层转发分组</h3>
-<p>网络拓扑图：</p>
-<p><img src="https://i.loli.net/2020/07/21/MxSibW2D4joNJO8.png" alt="网络拓扑" /></p>
-<p>在简化图中，网络变成了一条链路，但每一个路由器旁边都注明其IP地址。使用这样的简化图，可以使我们不用关心某个网络内部的具体拓扑以及连接在该网络上有多少台计算机，因为这些对于研究分组转发问题并没有什么关系。这样的简化图强调了在互联网上转发分组时，是从一个路由器转发到下一个路由器。</p>
-<p>总之，在路由表中，对每一条路由最主要的是以下两个信息：</p>
-<p>（目的网络地址，下一跳地址）</p>
-<p>于是，我们就根据目的网络地址来确定下一跳路由器，这样做得出以下的结果。</p>
-<p>(1) IP数据报最终一定可以找到目的主机所在目的网络上的路由器（可能要通过多次的间接交付）。</p>
-<p>(2) 只有到达最后一个路由器时，才试图向目的主机进行直接交付。</p>
-<h2 id="网际控制报文协议icmp">网际控制报文协议ICMP</h2>
-<p>为了更有效地转发IP数据报和提高交付成功的机会，在网际层使用了网际控制报文协议ICMP。</p>
-<blockquote>
-<p>ICMP允许主机或路由器报告差错情况和提供有关异常情况的报告.一个新搭建好的网络，往往需要先进行一个简单的测试，来验证网络是否畅通；但是IP协议并不提供可靠传输。如果丢包了，IP协议并不能通知传输层是否丢包以及丢包的原因。所以我们就需要一种协议来完成这样的功能–ICMP协议。</p>
-</blockquote>
-<p>ICMP报文格式</p>
-<p><img src="https://i.loli.net/2020/07/28/z9gGTC23lN6JajQ.png" alt="ICMP报文格式" /></p>
-<p>ICMP报文的种类有两种，即<strong>ICMP差错报告报文</strong>和<strong>ICMP询问报文</strong>。</p>
-<p>几种常用的ICMP报文类型</p>
-<p><img src="https://i.loli.net/2020/07/28/yIcFtplR8SDXquJ.png" alt="ICMP类型" /></p>
-<p>ICMP报文的代码字段是为了进一步区分某种类型中的几种不同的情况。检验和字段用来检验整个ICMP报文。我们应当还记得，IP数据报首部的检验和并不检验IP数据报的内容，因此不能保证经过传输的ICMP报文不产生差错。</p>
-<h4 id="icmp差错报告">ICMP差错报告</h4>
-<p>ICMP差错报文共有五种，即：</p>
-<ol>
-<li>
-<p>终点不可达 当路由器或主机不能交付数据报时就向源点发送终点不可达报文。</p>
-</li>
-<li>
-<p>源点抑制 当路由器或主机由于拥塞而丢弃数据报时，就向源点发送源点抑制报文，使源点知道应当把数据报的发送速率放慢。</p>
-</li>
-<li>
-<p>时间超过 当路由器收到生存时间为零的数据报时，除丢弃该数据报外，还要向源点发送时间超过报文。当终点在预先规定的时间内不能收到一个数据报的全部数据报片时，就把已收到的数据报片都丢弃，并向源点发送时间超过报文。</p>
-</li>
-<li>
-<p>参数问题 当路由器或目的主机收到的数据报的首部中有的字段的值不正确时，就丢弃该数据报，并向源点发送参数问题报文。</p>
-</li>
-<li>
-<p>改变路由（重定向） 路由器把改变路由报文发送给主机，让主机知道下次应将数据报发送给另外的路由器（可通过更好的路由）。</p>
-<p>如果默认路由器发现主机发往某个目的地址的数据报的最佳路由不应当经过默认路由器而是应当经过网络上的另一个路由器R时，就用改变路由报文把这情况告诉主机。于是，该主机就在其路由表中增加一个项目：到某某目的地址应经过路由器R （而不是默认路由器）。</p>
-</li>
-</ol>
-<p>所有的ICMP差错报告报文中的数据字段都具有同样的格式：</p>
-<p><img src="https://i.loli.net/2020/07/28/VDnqmNU4GEFw8yO.png" alt="ICMP数据报格式" /></p>
-<p>下面是不应发送ICMP差错报告报文的几种情况。</p>
-<p>● 对ICMP差错报告报文不再发送ICMP差错报告报文。</p>
-<p>● 对第一个分片的数据报片的所有后续数据报片都不发送ICMP差错报告报文。</p>
-<p>● 对具有多播地址的数据报都不发送ICMP差错报告报文。</p>
-<p>● 对具有特殊地址（如127.0.0.0或0.0.0.0）的数据报不发送ICMP差错报告报文。</p>
-<h4 id="icmp询问报文">ICMP询问报文</h4>
-<p>常用的ICMP询问报文有两种，即:</p>
-<ol>
-<li>回送请求和回答 ICMP回送请求报文是由主机或路由器向一个特定的目的主机发出的询问。收到此报文的主机必须给源主机或路由器发送ICMP回送回答报文。这种询问报文用来测试目的站是否可达以及了解其有关状态。</li>
-<li>时间戳请求和回答 ICMP时间戳请求报文是请某个主机或路由器回答当前的日期和时间。在ICMP时间戳回答报文中有一个32位的字段，其中写入的整数代表从1900年1月1日起到当前时刻一共有多少秒。时间戳请求与回答可用来进行时钟同步和测量时间。</li>
-</ol>
-<h3 id="应用">应用</h3>
-<h4 id="ping">ping</h4>
-<p>ICMP报文的一个最大用途就是ping命令，用来测试两个主机之间的连通性：</p>
-<p><img src="https://i.loli.net/2020/07/28/zGc1CswMuSje3ri.png" alt="ping" /></p>
-<h4 id="tracert">tracert</h4>
-<p>Traceroute从源主机向目的主机发送一连串的IP数据报，数据报中封装的是无法交付的UDP用户数据报[插图]。第一个数据报P1的生存时间TTL设置为1。当P1到达路径上的第一个路由器R1时，路由器R1先收下它，接着把TTL的值减1。由于TTL等于零了，R1就把P1丢弃了，并向源主机发送一个ICMP时间超过差错报告报文。源主机接着发送第二个数据报P2，并把TTL设置为2。P2先到达路由器R1，R1收下后把TTL减1再转发给路由器R2。R2收到P2时TTL为1，但减1后TTL变为零了。R2就丢弃P2，并向源主机发送一个ICMP时间超过差错报告报文。这样一直继续下去。当最后一个数据报刚刚到达目的主机时，数据报的TTL是1。主机不转发数据报，也不把TTL值减1。但因IP数据报中封装的是无法交付的运输层的UDP用户数据报，因此目的主机要向源主机发送ICMP终点不可达差错报告报文。</p>
-<p><img src="https://i.loli.net/2020/07/28/mjPd4KYgpF1Gqna.png" alt="tracert" /></p>
-<p>这样，源主机达到了自己的目的，因为这些路由器和最后目的主机发来的ICMP报文正好给出了源主机想知道的路由信息——到达目的主机所经过的路由器的IP地址，以及到达其中的每一个路由器的往返时间</p>
 
     </article>
     <script>
@@ -1680,19 +1681,19 @@
     
     
       
-        <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fvhope.cf%2fzh%2fposts%2fnetwork%2fnet-level%2f" title="Facebook" aria-label="Facebook Share Button" class="donation__item" target="_blank" rel="noreferrer" data-type="share">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fvhope.cf%2fzh%2fposts%2flinux%2fmemory-control%2f" title="Facebook" aria-label="Facebook Share Button" class="donation__item" target="_blank" rel="noreferrer" data-type="share">
           <svg data-name="facebook" enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="35" height="35" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z"/></svg>
         </a>
       
     
       
-        <a href="https://twitter.com/intent/tweet?text=%e7%bd%91%e7%bb%9c%e5%b1%82&url=https%3a%2f%2fvhope.cf%2fzh%2fposts%2fnetwork%2fnet-level%2f&hashtags=%e8%ae%a1%e7%ae%97%e6%9c%ba%e7%bd%91%e7%bb%9c%2c%e7%bd%91%e7%bb%9c%e5%b1%82&via=Victor" title="Twitter" aria-label="Twitter Share Button" class="donation__item" target="_blank" rel="noreferrer" data-type="share">
+        <a href="https://twitter.com/intent/tweet?text=Linux%e5%86%85%e5%ad%98%e7%ae%a1%e7%90%86&url=https%3a%2f%2fvhope.cf%2fzh%2fposts%2flinux%2fmemory-control%2f&hashtags=Linux&via=Victor" title="Twitter" aria-label="Twitter Share Button" class="donation__item" target="_blank" rel="noreferrer" data-type="share">
           <svg data-name="twitter" enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="35" height="35" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="m21.534 7.113c.976-.693 1.797-1.558 2.466-2.554v-.001c-.893.391-1.843.651-2.835.777 1.02-.609 1.799-1.566 2.165-2.719-.951.567-2.001.967-3.12 1.191-.903-.962-2.19-1.557-3.594-1.557-2.724 0-4.917 2.211-4.917 4.921 0 .39.033.765.114 1.122-4.09-.2-7.71-2.16-10.142-5.147-.424.737-.674 1.58-.674 2.487 0 1.704.877 3.214 2.186 4.089-.791-.015-1.566-.245-2.223-.606v.054c0 2.391 1.705 4.377 3.942 4.835-.401.11-.837.162-1.29.162-.315 0-.633-.018-.931-.084.637 1.948 2.447 3.381 4.597 3.428-1.674 1.309-3.8 2.098-6.101 2.098-.403 0-.79-.018-1.177-.067 2.18 1.405 4.762 2.208 7.548 2.208 8.683 0 14.342-7.244 13.986-14.637z"/></svg>
         </a>
       
     
       
-        <a href="https://www.reddit.com/submit?url=https%3a%2f%2fvhope.cf%2fzh%2fposts%2fnetwork%2fnet-level%2f&amp;title=%e7%bd%91%e7%bb%9c%e5%b1%82" target="_blank" rel="noreferer" title="Reddit" aria-label="Reddit Share Button" onclick="window.open('http://www.reddit.com/submit?url=' + encodeURIComponent(document.URL) + '&amp;title=' +  encodeURIComponent(document.title)); return false;" class="donation__item" data-type="share">
+        <a href="https://www.reddit.com/submit?url=https%3a%2f%2fvhope.cf%2fzh%2fposts%2flinux%2fmemory-control%2f&amp;title=Linux%e5%86%85%e5%ad%98%e7%ae%a1%e7%90%86" target="_blank" rel="noreferer" title="Reddit" aria-label="Reddit Share Button" onclick="window.open('http://www.reddit.com/submit?url=' + encodeURIComponent(document.URL) + '&amp;title=' +  encodeURIComponent(document.title)); return false;" class="donation__item" data-type="share">
           <svg data-name="reddit" enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="35" height="35" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="m21.325 9.308c-.758 0-1.425.319-1.916.816-1.805-1.268-4.239-2.084-6.936-2.171l1.401-6.406 4.461 1.016c0 1.108.89 2.013 1.982 2.013 1.113 0 2.008-.929 2.008-2.038s-.889-2.038-2.007-2.038c-.779 0-1.451.477-1.786 1.129l-4.927-1.108c-.248-.067-.491.113-.557.365l-1.538 7.062c-2.676.113-5.084.928-6.895 2.197-.491-.518-1.184-.837-1.942-.837-2.812 0-3.733 3.829-1.158 5.138-.091.405-.132.837-.132 1.268 0 4.301 4.775 7.786 10.638 7.786 5.888 0 10.663-3.485 10.663-7.786 0-.431-.045-.883-.156-1.289 2.523-1.314 1.594-5.115-1.203-5.117zm-15.724 5.41c0-1.129.89-2.038 2.008-2.038 1.092 0 1.983.903 1.983 2.038 0 1.109-.89 2.013-1.983 2.013-1.113.005-2.008-.904-2.008-2.013zm10.839 4.798c-1.841 1.868-7.036 1.868-8.878 0-.203-.18-.203-.498 0-.703.177-.18.491-.18.668 0 1.406 1.463 6.07 1.488 7.537 0 .177-.18.491-.18.668 0 .207.206.207.524.005.703zm-.041-2.781c-1.092 0-1.982-.903-1.982-2.011 0-1.129.89-2.038 1.982-2.038 1.113 0 2.008.903 2.008 2.038-.005 1.103-.895 2.011-2.008 2.011z"/></svg>
         </a>
       
@@ -1827,26 +1828,50 @@
     <section class="related">
     
     
+    <h1 class="related__title">
+      <hr class="hr-dots"/>
+      <div>
+        相关内容
+      </div>
+      <hr class="hr-dots"/>
+    </h1>
+    <ul class="related-ul">
+        
+        <li>
+          <a href="/zh/posts/linux/epoll-lt-et/" class="related__link">epoll的水平触发与边缘触发</a>
+        </li>
+        
+        <li>
+          <a href="/zh/posts/linux-grep/" class="related__link">Linux实用指令</a>
+        </li>
+        
+        <li>
+          <a href="/zh/posts/linux-users/" class="related__link">Linux用户管理</a>
+        </li>
+        
+        <li>
+          <a href="/zh/posts/linux/vim-use/" class="related__link">Linux编辑利器-Vim</a>
+        </li>
+        
+        <li>
+          <a href="/zh/posts/linux/linux-shell/" class="related__link">Linux命令与Shell</a>
+        </li>
+        
+    </ul>
+    
   </section>
     <div class="grow"></div>
 <nav class="pagination-single">
   
     
-      <a href="https://vhope.cf/zh/posts/linux/epoll-lt-et/" class="pagination-single__left">
+      <a href="https://vhope.cf/zh/posts/network/net-level/" class="pagination-single__left">
         <div class="pagination-single__icon">
           <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M19 11H7.83l4.88-4.88c.39-.39.39-1.03 0-1.42-.39-.39-1.02-.39-1.41 0l-6.59 6.59c-.39.39-.39 1.02 0 1.41l6.59 6.59c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L7.83 13H19c.55 0 1-.45 1-1s-.45-1-1-1z"/></svg>
         </div>
-        <div class="pagination-single__left-title">epoll的水平触发与边缘触发</div>      
+        <div class="pagination-single__left-title">网络层</div>      
       </a>
     
     <div class="grow"></div>
-    
-      <a href="https://vhope.cf/zh/posts/linux/memory-control/" class="pagination-single__right">      
-        <div class="pagination-single__right-title">Linux内存管理</div>
-        <div class="pagination-single__icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 1.42.39.39 1.02.39 1.41 0l6.59-6.59c.39-.39.39-1.02 0-1.41l-6.58-6.6c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41L16.17 11H5c-.55 0-1 .45-1 1s.45 1 1 1z"/></svg>
-        </div>
-      </a>
     
   
 </nav>
@@ -2203,29 +2228,10 @@ document.addEventListener('DOMContentLoaded', function () {
   <div class="toc " data-dir="ltr" data-folding="true">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#虚拟互连网络">虚拟互连网络</a></li>
-    <li><a href="#arp协议">ARP协议</a></li>
-    <li><a href="#ip数据报">IP数据报</a>
-      <ul>
-        <li><a href="#ip层转发分组">IP层转发分组</a></li>
-      </ul>
-    </li>
-    <li><a href="#网际控制报文协议icmp">网际控制报文协议ICMP</a>
-      <ul>
-        <li>
-          <ul>
-            <li><a href="#icmp差错报告">ICMP差错报告</a></li>
-            <li><a href="#icmp询问报文">ICMP询问报文</a></li>
-          </ul>
-        </li>
-        <li><a href="#应用">应用</a>
-          <ul>
-            <li><a href="#ping">ping</a></li>
-            <li><a href="#tracert">tracert</a></li>
-          </ul>
-        </li>
-      </ul>
-    </li>
+    <li><a href="#关于程序的装入">关于程序的装入</a></li>
+    <li><a href="#关于程序的链接">关于程序的链接</a></li>
+    <li><a href="#连续分配方式">连续分配方式</a></li>
+    <li><a href="#非连续分配方式">非连续分配方式</a></li>
   </ul>
 </nav>
   </div>
@@ -2917,7 +2923,7 @@ document.addEventListener('DOMContentLoaded', function () {
         
           
             
-              <a href="https://vhope.cf/zh/posts/network/net-level/" data-lang="zh" class="dropdown-item is-active">中文</a>
+              <a href="https://vhope.cf/zh/posts/linux/memory-control/" data-lang="zh" class="dropdown-item is-active">中文</a>
             
           
         
@@ -3016,7 +3022,7 @@ document.addEventListener('DOMContentLoaded', function () {
             
     
     
-  <a href="https://vhope.cf/zh/posts/network/net-level//index.xml" type="application/rss+xml" title="rss" aria-label="RSS Feed Link">
+  <a href="https://vhope.cf/zh/posts/linux/memory-control//index.xml" type="application/rss+xml" title="rss" aria-label="RSS Feed Link">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><circle fill="currentColor" cx="6.18" cy="17.82" r="2.18"/><path fill="currentColor" d="M5.59 10.23c-.84-.14-1.59.55-1.59 1.4 0 .71.53 1.28 1.23 1.4 2.92.51 5.22 2.82 5.74 5.74.12.7.69 1.23 1.4 1.23.85 0 1.54-.75 1.41-1.59-.68-4.2-3.99-7.51-8.19-8.18zm-.03-5.71C4.73 4.43 4 5.1 4 5.93c0 .73.55 1.33 1.27 1.4 6.01.6 10.79 5.38 11.39 11.39.07.73.67 1.28 1.4 1.28.84 0 1.5-.73 1.42-1.56-.73-7.34-6.57-13.19-13.92-13.92z"/></svg>
   </a>
 
