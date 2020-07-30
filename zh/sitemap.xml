@@ -3,18 +3,8 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://vhope.cf/zh/showcase/hugo/myblog/</loc>
-    <lastmod>2020-01-19T21:13:42+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://vhope.cf/zh/showcase/hugo/myitem/</loc>
-    <lastmod>2020-01-19T21:13:42+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://vhope.cf/zh/</loc>
-    <lastmod>2020-07-30T09:01:25+08:00</lastmod>
+    <lastmod>2020-07-30T10:45:10+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -34,7 +24,7 @@
   
   <url>
     <loc>https://vhope.cf/zh/categories/</loc>
-    <lastmod>2020-07-30T09:01:25+08:00</lastmod>
+    <lastmod>2020-07-30T10:45:10+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -50,6 +40,56 @@
                 hreflang="zh"
                 href="https://vhope.cf/zh/categories/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://vhope.cf/zh/presentation/</loc>
+    <lastmod>2020-07-30T10:45:10+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://vhope.cf/zh/series/</loc>
+    <lastmod>2020-07-30T10:45:10+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://vhope.cf/en/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://vhope.cf/ko/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://vhope.cf/zh/series/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://vhope.cf/zh/tags/</loc>
+    <lastmod>2020-07-30T10:45:10+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://vhope.cf/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://vhope.cf/ko/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://vhope.cf/zh/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://vhope.cf/zh/presentation/ue/ue-city/</loc>
+    <lastmod>2020-07-30T10:45:10+09:00</lastmod>
   </url>
   
   <url>
@@ -83,46 +123,6 @@
   </url>
   
   <url>
-    <loc>https://vhope.cf/zh/series/</loc>
-    <lastmod>2020-07-30T09:01:25+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://vhope.cf/en/series/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://vhope.cf/ko/series/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://vhope.cf/zh/series/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://vhope.cf/zh/tags/</loc>
-    <lastmod>2020-07-30T09:01:25+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://vhope.cf/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://vhope.cf/ko/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://vhope.cf/zh/tags/"
-                />
-  </url>
-  
-  <url>
     <loc>https://vhope.cf/zh/tags/%E7%BD%91%E7%BB%9C%E5%B1%82/</loc>
     <lastmod>2020-07-28T18:02:38+08:00</lastmod>
   </url>
@@ -133,12 +133,12 @@
   </url>
   
   <url>
-    <loc>https://vhope.cf/zh/series/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</loc>
+    <loc>https://vhope.cf/zh/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</loc>
     <lastmod>2020-07-28T18:02:38+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://vhope.cf/zh/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</loc>
+    <loc>https://vhope.cf/zh/series/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</loc>
     <lastmod>2020-07-28T18:02:38+08:00</lastmod>
   </url>
   
@@ -173,12 +173,12 @@
   </url>
   
   <url>
-    <loc>https://vhope.cf/zh/series/network/</loc>
+    <loc>https://vhope.cf/zh/tags/network/</loc>
     <lastmod>2020-07-28T11:12:16+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://vhope.cf/zh/tags/network/</loc>
+    <loc>https://vhope.cf/zh/series/network/</loc>
     <lastmod>2020-07-28T11:12:16+08:00</lastmod>
   </url>
   
@@ -413,12 +413,12 @@
   </url>
   
   <url>
-    <loc>https://vhope.cf/zh/series/c/</loc>
+    <loc>https://vhope.cf/zh/tags/c/</loc>
     <lastmod>2020-04-04T23:32:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://vhope.cf/zh/tags/c/</loc>
+    <loc>https://vhope.cf/zh/series/c/</loc>
     <lastmod>2020-04-04T23:32:40+08:00</lastmod>
   </url>
   
@@ -438,12 +438,12 @@
   </url>
   
   <url>
-    <loc>https://vhope.cf/zh/series/markdown/</loc>
+    <loc>https://vhope.cf/zh/tags/markdown/</loc>
     <lastmod>2020-04-04T00:58:33+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://vhope.cf/zh/tags/markdown/</loc>
+    <loc>https://vhope.cf/zh/series/markdown/</loc>
     <lastmod>2020-04-04T00:58:33+08:00</lastmod>
   </url>
   
@@ -513,12 +513,12 @@
   </url>
   
   <url>
-    <loc>https://vhope.cf/zh/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/</loc>
+    <loc>https://vhope.cf/zh/series/%E5%AF%86%E7%A0%81%E5%AD%A6/</loc>
     <lastmod>2020-04-03T14:20:19+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://vhope.cf/zh/series/%E5%AF%86%E7%A0%81%E5%AD%A6/</loc>
+    <loc>https://vhope.cf/zh/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/</loc>
     <lastmod>2020-04-03T14:20:19+08:00</lastmod>
   </url>
   
@@ -553,12 +553,12 @@
   </url>
   
   <url>
-    <loc>https://vhope.cf/zh/tags/algorithm/</loc>
+    <loc>https://vhope.cf/zh/series/algorithm/</loc>
     <lastmod>2020-03-17T15:12:38+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://vhope.cf/zh/series/algorithm/</loc>
+    <loc>https://vhope.cf/zh/tags/algorithm/</loc>
     <lastmod>2020-03-17T15:12:38+08:00</lastmod>
   </url>
   
@@ -658,12 +658,12 @@
   </url>
   
   <url>
-    <loc>https://vhope.cf/zh/tags/%E7%88%AC%E8%99%AB/</loc>
+    <loc>https://vhope.cf/zh/series/%E7%88%AC%E8%99%AB/</loc>
     <lastmod>2020-03-04T16:35:09+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://vhope.cf/zh/series/%E7%88%AC%E8%99%AB/</loc>
+    <loc>https://vhope.cf/zh/tags/%E7%88%AC%E8%99%AB/</loc>
     <lastmod>2020-03-04T16:35:09+08:00</lastmod>
   </url>
   
@@ -719,11 +719,6 @@
   
   <url>
     <loc>https://vhope.cf/zh/presentation/mypt/</loc>
-    <lastmod>2020-03-01T00:24:52+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://vhope.cf/zh/presentation/</loc>
     <lastmod>2020-03-01T00:24:52+08:00</lastmod>
   </url>
   
@@ -975,21 +970,6 @@
   <url>
     <loc>https://vhope.cf/zh/posts/hugo/shortcodes/</loc>
     <lastmod>2020-01-25T06:40:51+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://vhope.cf/zh/showcase/hugo/</loc>
-    <lastmod>2020-01-19T21:04:11+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://vhope.cf/en/showcase/hugo/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://vhope.cf/zh/showcase/hugo/"
-                />
   </url>
   
   <url>
