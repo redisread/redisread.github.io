@@ -9,7 +9,7 @@
     <managingEditor>1427298682@qq.com (redisread)</managingEditor>
     <webMaster>1427298682@qq.com (redisread)</webMaster>
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Sat, 15 Aug 2020 09:01:25 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 15 Aug 2020 21:45:25 +0800</lastBuildDate>
     
         <atom:link href="https://vhope.cf/zh/index.xml" rel="self" type="application/rss+xml" />
     
@@ -17,21 +17,12 @@
     
       
       <item>
-        <title>My Hugo Lib</title>
-        <link>https://vhope.cf/zh/showcase/hugo/myblog/</link>
-        <pubDate>Sun, 19 Jan 2020 21:13:42 +0900</pubDate>
+        <title>数据库知识(2)</title>
+        <link>https://vhope.cf/zh/posts/database/db2/</link>
+        <pubDate>Sat, 15 Aug 2020 21:45:25 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>https://vhope.cf/zh/showcase/hugo/myblog/</guid>
-        <description></description>
-      </item>
-      
-      <item>
-        <title>My Hugo Item</title>
-        <link>https://vhope.cf/zh/showcase/hugo/myitem/</link>
-        <pubDate>Sun, 19 Jan 2020 21:13:42 +0900</pubDate>
-        <author>1427298682@qq.com (redisread)</author>
-        <guid>https://vhope.cf/zh/showcase/hugo/myitem/</guid>
-        <description></description>
+        <guid>https://vhope.cf/zh/posts/database/db2/</guid>
+        <description>mysql的MVCC机制 MVCC的维基百科解释：多版本并发控制(Multiversion concurrency control， MCC 或 MVCC)，是数据库管理系统常</description>
       </item>
       
       <item>
