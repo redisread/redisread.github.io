@@ -9,12 +9,21 @@
     <managingEditor>1427298682@qq.com (redisread)</managingEditor>
     <webMaster>1427298682@qq.com (redisread)</webMaster>
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Sun, 16 Aug 2020 09:01:25 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 17 Aug 2020 23:18:31 +0800</lastBuildDate>
     
         <atom:link href="https://vhope.cf/zh/tags/leetcode/index.xml" rel="self" type="application/rss+xml" />
     
     
     
+      
+      <item>
+        <title>Leetcode每日一题(3)</title>
+        <link>https://vhope.cf/zh/posts/leetcode/leetcode-day3/</link>
+        <pubDate>Mon, 17 Aug 2020 23:18:31 +0800</pubDate>
+        <author>1427298682@qq.com (redisread)</author>
+        <guid>https://vhope.cf/zh/posts/leetcode/leetcode-day3/</guid>
+        <description>743. 网络延迟时间 有 N 个网络节点，标记为 1 到 N。 给定一个列表 times，表示信号经过有向边的传递时间。 times[i] = (u, v, w)，其中 u 是源节点，v 是目标节点</description>
+      </item>
       
       <item>
         <title>Leetcode每日一题(2)</title>
