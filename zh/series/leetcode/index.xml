@@ -9,12 +9,21 @@
     <managingEditor>1427298682@qq.com (redisread)</managingEditor>
     <webMaster>1427298682@qq.com (redisread)</webMaster>
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Wed, 19 Aug 2020 14:40:19 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 20 Aug 2020 21:29:58 +0800</lastBuildDate>
     
         <atom:link href="https://vhope.cf/zh/series/leetcode/index.xml" rel="self" type="application/rss+xml" />
     
     
     
+      
+      <item>
+        <title>Leetcode每日一题(6)</title>
+        <link>https://vhope.cf/zh/posts/leetcode/leetcode-day6/</link>
+        <pubDate>Thu, 20 Aug 2020 21:29:58 +0800</pubDate>
+        <author>1427298682@qq.com (redisread)</author>
+        <guid>https://vhope.cf/zh/posts/leetcode/leetcode-day6/</guid>
+        <description>28. 实现 strStr() 实现 strStr() 函数。 给定一个 haystack 字符串和一个 needle 字符串，在 haystack 字符串中找出 needle 字符串出现的第一个位置 (从0开始)。如果不存在，则返回 -1。 示例 1: 输入</description>
+      </item>
       
       <item>
         <title>Leetcode每日一题(5)</title>

@@ -9,7 +9,7 @@
     <managingEditor>1427298682@qq.com (redisread)</managingEditor>
     <webMaster>1427298682@qq.com (redisread)</webMaster>
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Wed, 19 Aug 2020 14:40:19 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 20 Aug 2020 21:29:58 +0800</lastBuildDate>
     
         <atom:link href="https://vhope.cf/zh/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -17,9 +17,18 @@
     
       
       <item>
+        <title>KMP</title>
+        <link>https://vhope.cf/zh/tags/kmp/</link>
+        <pubDate>Thu, 20 Aug 2020 21:29:58 +0800</pubDate>
+        <author>1427298682@qq.com (redisread)</author>
+        <guid>https://vhope.cf/zh/tags/kmp/</guid>
+        <description></description>
+      </item>
+      
+      <item>
         <title>leetcode</title>
         <link>https://vhope.cf/zh/tags/leetcode/</link>
-        <pubDate>Wed, 19 Aug 2020 14:40:19 +0800</pubDate>
+        <pubDate>Thu, 20 Aug 2020 21:29:58 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
         <guid>https://vhope.cf/zh/tags/leetcode/</guid>
         <description></description>
