@@ -17,6 +17,24 @@
     
       
       <item>
+        <title>My Hugo Lib</title>
+        <link>https://vhope.cf/zh/showcase/hugo/myblog/</link>
+        <pubDate>Sun, 19 Jan 2020 21:13:42 +0900</pubDate>
+        <author>1427298682@qq.com (redisread)</author>
+        <guid>https://vhope.cf/zh/showcase/hugo/myblog/</guid>
+        <description></description>
+      </item>
+      
+      <item>
+        <title>My Hugo Item</title>
+        <link>https://vhope.cf/zh/showcase/hugo/myitem/</link>
+        <pubDate>Sun, 19 Jan 2020 21:13:42 +0900</pubDate>
+        <author>1427298682@qq.com (redisread)</author>
+        <guid>https://vhope.cf/zh/showcase/hugo/myitem/</guid>
+        <description></description>
+      </item>
+      
+      <item>
         <title>Leetcode每日一题(7)</title>
         <link>https://vhope.cf/zh/posts/leetcode/leetcode-day7/</link>
         <pubDate>Fri, 21 Aug 2020 20:56:17 +0800</pubDate>
