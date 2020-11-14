@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>http on ✏Victor&#39;s Blog</title>
-    <link>https://vhope.cf/zh/tags/http/</link>
+    <link>hugo.jiahongw.com/zh/tags/http/</link>
     <description>Recent content in http on ✏Victor&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
@@ -11,17 +11,17 @@
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Tue, 28 Jul 2020 11:12:16 +0800</lastBuildDate>
     
-        <atom:link href="https://vhope.cf/zh/tags/http/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="hugo.jiahongw.com/zh/tags/http/index.xml" rel="self" type="application/rss+xml" />
     
     
     
       
       <item>
         <title>Http协议浅析</title>
-        <link>https://vhope.cf/zh/posts/network/http/</link>
+        <link>hugo.jiahongw.com/zh/posts/network/http/</link>
         <pubDate>Tue, 28 Jul 2020 11:12:16 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>https://vhope.cf/zh/posts/network/http/</guid>
+        <guid>hugo.jiahongw.com/zh/posts/network/http/</guid>
         <description>HTTP/1.x 在早期，HTTP 使用一个简单的模型来处理这样的连接。这些连接的生命周期是短暂的：每发起一个请求时都会创建一个新的连接，并在收到应答时立即关</description>
       </item>
       

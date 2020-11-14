@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>写作 on ✏Victor&#39;s Blog</title>
-    <link>https://vhope.cf/zh/categories/%E5%86%99%E4%BD%9C/</link>
+    <link>hugo.jiahongw.com/zh/categories/%E5%86%99%E4%BD%9C/</link>
     <description>Recent content in 写作 on ✏Victor&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
@@ -11,17 +11,17 @@
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Fri, 14 Feb 2020 16:12:40 +0800</lastBuildDate>
     
-        <atom:link href="https://vhope.cf/zh/categories/%E5%86%99%E4%BD%9C/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="hugo.jiahongw.com/zh/categories/%E5%86%99%E4%BD%9C/index.xml" rel="self" type="application/rss+xml" />
     
     
     
       
       <item>
         <title>Markdown深入使用</title>
-        <link>https://vhope.cf/zh/posts/settings/markdown-deep/</link>
+        <link>hugo.jiahongw.com/zh/posts/settings/markdown-deep/</link>
         <pubDate>Fri, 14 Feb 2020 16:12:40 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>https://vhope.cf/zh/posts/settings/markdown-deep/</guid>
+        <guid>hugo.jiahongw.com/zh/posts/settings/markdown-deep/</guid>
         <description>&lt;p&gt;👱‍♀介绍一些markdown中比较实用的一些写作方法。&lt;/p&gt;</description>
       </item>
       

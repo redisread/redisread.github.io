@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>epoll on ✏Victor&#39;s Blog</title>
-    <link>https://vhope.cf/zh/tags/epoll/</link>
+    <link>hugo.jiahongw.com/zh/tags/epoll/</link>
     <description>Recent content in epoll on ✏Victor&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
@@ -11,17 +11,17 @@
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Tue, 28 Jul 2020 12:00:13 +0800</lastBuildDate>
     
-        <atom:link href="https://vhope.cf/zh/tags/epoll/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="hugo.jiahongw.com/zh/tags/epoll/index.xml" rel="self" type="application/rss+xml" />
     
     
     
       
       <item>
         <title>epoll的水平触发与边缘触发</title>
-        <link>https://vhope.cf/zh/posts/linux/epoll-lt-et/</link>
+        <link>hugo.jiahongw.com/zh/posts/linux/epoll-lt-et/</link>
         <pubDate>Tue, 28 Jul 2020 12:00:13 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>https://vhope.cf/zh/posts/linux/epoll-lt-et/</guid>
+        <guid>hugo.jiahongw.com/zh/posts/linux/epoll-lt-et/</guid>
         <description>描述符的就绪状态有两种判断方法: 边沿触发和水平触发。 水平触发 我认为这是“拉”模式或“民意调查”模式。为了确定描述符是否就绪，进程尝试执行非阻</description>
       </item>
       

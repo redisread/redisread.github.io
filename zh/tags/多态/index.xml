@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>多态 on ✏Victor&#39;s Blog</title>
-    <link>https://vhope.cf/zh/tags/%E5%A4%9A%E6%80%81/</link>
+    <link>hugo.jiahongw.com/zh/tags/%E5%A4%9A%E6%80%81/</link>
     <description>Recent content in 多态 on ✏Victor&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
@@ -11,17 +11,17 @@
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Sun, 05 Apr 2020 15:05:37 +0800</lastBuildDate>
     
-        <atom:link href="https://vhope.cf/zh/tags/%E5%A4%9A%E6%80%81/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="hugo.jiahongw.com/zh/tags/%E5%A4%9A%E6%80%81/index.xml" rel="self" type="application/rss+xml" />
     
     
     
       
       <item>
         <title>C&#43;&#43;动态与静态</title>
-        <link>https://vhope.cf/zh/posts/cpp-duotai/</link>
+        <link>hugo.jiahongw.com/zh/posts/cpp-duotai/</link>
         <pubDate>Sun, 05 Apr 2020 15:05:37 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>https://vhope.cf/zh/posts/cpp-duotai/</guid>
+        <guid>hugo.jiahongw.com/zh/posts/cpp-duotai/</guid>
         <description>&lt;p&gt;C++特性之多态🍄&lt;/p&gt;</description>
       </item>
       

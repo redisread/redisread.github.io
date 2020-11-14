@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>namoji on </title>
-    <link>https://vhope.cf/ko/tags/namoji/</link>
+    <link>hugo.jiahongw.com/ko/tags/namoji/</link>
     <description>Recent content in namoji on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko</language>
@@ -11,17 +11,17 @@
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Mon, 16 Dec 2019 12:00:06 +0900</lastBuildDate>
     
-        <atom:link href="https://vhope.cf/ko/tags/namoji/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="hugo.jiahongw.com/ko/tags/namoji/index.xml" rel="self" type="application/rss+xml" />
     
     
     
       
       <item>
         <title>Emoji Support</title>
-        <link>https://vhope.cf/ko/en/posts/emoji-support/</link>
+        <link>hugo.jiahongw.com/ko/en/posts/emoji-support/</link>
         <pubDate>Mon, 16 Dec 2019 12:00:06 +0900</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>https://vhope.cf/ko/en/posts/emoji-support/</guid>
+        <guid>hugo.jiahongw.com/ko/en/posts/emoji-support/</guid>
         <description>&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;</description>
       </item>
       

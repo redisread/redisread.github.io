@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>数据库 on ✏Victor&#39;s Blog</title>
-    <link>https://vhope.cf/zh/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</link>
+    <link>hugo.jiahongw.com/zh/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</link>
     <description>Recent content in 数据库 on ✏Victor&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
@@ -11,17 +11,17 @@
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Wed, 18 Mar 2020 01:00:46 +0800</lastBuildDate>
     
-        <atom:link href="https://vhope.cf/zh/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="hugo.jiahongw.com/zh/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/index.xml" rel="self" type="application/rss+xml" />
     
     
     
       
       <item>
         <title>分布式-Redis</title>
-        <link>https://vhope.cf/zh/posts/redis/</link>
+        <link>hugo.jiahongw.com/zh/posts/redis/</link>
         <pubDate>Wed, 18 Mar 2020 01:00:46 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>https://vhope.cf/zh/posts/redis/</guid>
+        <guid>hugo.jiahongw.com/zh/posts/redis/</guid>
         <description>&lt;p&gt;。。集万滴雨水，成一条江河🌊🌊&lt;/p&gt;</description>
       </item>
       

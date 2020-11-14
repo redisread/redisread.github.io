@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>二叉树 on ✏Victor&#39;s Blog</title>
-    <link>https://vhope.cf/zh/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/</link>
+    <link>hugo.jiahongw.com/zh/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/</link>
     <description>Recent content in 二叉树 on ✏Victor&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
@@ -11,26 +11,26 @@
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Fri, 21 Aug 2020 20:56:17 +0800</lastBuildDate>
     
-        <atom:link href="https://vhope.cf/zh/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="hugo.jiahongw.com/zh/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/index.xml" rel="self" type="application/rss+xml" />
     
     
     
       
       <item>
         <title>Leetcode每日一题(7)</title>
-        <link>https://vhope.cf/zh/posts/leetcode/leetcode-day7/</link>
+        <link>hugo.jiahongw.com/zh/posts/leetcode/leetcode-day7/</link>
         <pubDate>Fri, 21 Aug 2020 20:56:17 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>https://vhope.cf/zh/posts/leetcode/leetcode-day7/</guid>
+        <guid>hugo.jiahongw.com/zh/posts/leetcode/leetcode-day7/</guid>
         <description>111. 二叉树的最小深度 给定一个二叉树，找出其最小深度。 最小深度是从根节点到最近叶子节点的最短路径上的节点数量。 说明: 叶子节点是指没有子节点的节点</description>
       </item>
       
       <item>
         <title>高级的二叉树</title>
-        <link>https://vhope.cf/zh/posts/algorithmstructure/bst/</link>
+        <link>hugo.jiahongw.com/zh/posts/algorithmstructure/bst/</link>
         <pubDate>Mon, 27 Jul 2020 22:07:13 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>https://vhope.cf/zh/posts/algorithmstructure/bst/</guid>
+        <guid>hugo.jiahongw.com/zh/posts/algorithmstructure/bst/</guid>
         <description>&lt;p&gt;树是一种非常实用的结构！🌴&lt;/p&gt;</description>
       </item>
       

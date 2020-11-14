@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>tcp on ✏Victor&#39;s Blog</title>
-    <link>https://vhope.cf/zh/tags/tcp/</link>
+    <link>hugo.jiahongw.com/zh/tags/tcp/</link>
     <description>Recent content in tcp on ✏Victor&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
@@ -11,17 +11,17 @@
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Fri, 03 Apr 2020 21:42:11 +0800</lastBuildDate>
     
-        <atom:link href="https://vhope.cf/zh/tags/tcp/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="hugo.jiahongw.com/zh/tags/tcp/index.xml" rel="self" type="application/rss+xml" />
     
     
     
       
       <item>
         <title>Udp-Tcp编程</title>
-        <link>https://vhope.cf/zh/posts/udp-tcp/</link>
+        <link>hugo.jiahongw.com/zh/posts/udp-tcp/</link>
         <pubDate>Fri, 03 Apr 2020 21:42:11 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>https://vhope.cf/zh/posts/udp-tcp/</guid>
+        <guid>hugo.jiahongw.com/zh/posts/udp-tcp/</guid>
         <description>&lt;p&gt;TCP/IP编程&lt;/p&gt;</description>
       </item>
       
