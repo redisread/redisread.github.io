@@ -3,357 +3,357 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://hugo.jiahongw.com/ko/en/showcase/hugo/hugo-theme-zzo/</loc>
+    <loc>/ko/en/showcase/hugo/hugo-theme-zzo/</loc>
     <lastmod>2020-01-19T21:13:42+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://hugo.jiahongw.com/ko/en/showcase/hugo/hugo-theme-zdoc/</loc>
+    <loc>/ko/en/showcase/hugo/hugo-theme-zdoc/</loc>
     <lastmod>2020-01-19T21:13:42+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://hugo.jiahongw.com/ko/</loc>
+    <loc>/ko/</loc>
     <lastmod>2020-01-25T06:40:51+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="http://hugo.jiahongw.com/zh/"
+                href="/zh/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://hugo.jiahongw.com/en/"
+                href="/en/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="http://hugo.jiahongw.com/ko/"
+                href="/ko/"
                 />
   </url>
   
   <url>
-    <loc>http://hugo.jiahongw.com/ko/categories/</loc>
+    <loc>/ko/categories/</loc>
     <lastmod>2020-01-25T06:40:51+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="http://hugo.jiahongw.com/zh/categories/"
+                href="/zh/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://hugo.jiahongw.com/en/categories/"
+                href="/en/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="http://hugo.jiahongw.com/ko/categories/"
+                href="/ko/categories/"
                 />
   </url>
   
   <url>
-    <loc>http://hugo.jiahongw.com/ko/en/posts/</loc>
+    <loc>/ko/en/posts/</loc>
     <lastmod>2020-01-25T06:40:51+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://hugo.jiahongw.com/ko/series/</loc>
+    <loc>/ko/series/</loc>
     <lastmod>2020-01-25T06:40:51+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="http://hugo.jiahongw.com/zh/series/"
+                href="/zh/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://hugo.jiahongw.com/en/series/"
+                href="/en/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="http://hugo.jiahongw.com/ko/series/"
+                href="/ko/series/"
                 />
   </url>
   
   <url>
-    <loc>http://hugo.jiahongw.com/ko/tags/shortcode/</loc>
+    <loc>/ko/tags/shortcode/</loc>
     <lastmod>2020-01-25T06:40:51+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="http://hugo.jiahongw.com/zh/tags/shortcode/"
+                href="/zh/tags/shortcode/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://hugo.jiahongw.com/en/tags/shortcode/"
+                href="/en/tags/shortcode/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="http://hugo.jiahongw.com/ko/tags/shortcode/"
+                href="/ko/tags/shortcode/"
                 />
   </url>
   
   <url>
-    <loc>http://hugo.jiahongw.com/ko/en/posts/shortcodes/</loc>
+    <loc>/ko/en/posts/shortcodes/</loc>
     <lastmod>2020-01-25T06:40:51+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://hugo.jiahongw.com/ko/tags/</loc>
+    <loc>/ko/tags/</loc>
     <lastmod>2020-01-25T06:40:51+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="http://hugo.jiahongw.com/zh/tags/"
+                href="/zh/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://hugo.jiahongw.com/en/tags/"
+                href="/en/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="http://hugo.jiahongw.com/ko/tags/"
+                href="/ko/tags/"
                 />
   </url>
   
   <url>
-    <loc>http://hugo.jiahongw.com/ko/en/showcase/hugo/</loc>
+    <loc>/ko/en/showcase/hugo/</loc>
     <lastmod>2020-01-19T21:04:11+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://hugo.jiahongw.com/ko/en/showcase/</loc>
+    <loc>/ko/en/showcase/</loc>
     <lastmod>2020-01-19T15:43:38+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://hugo.jiahongw.com/ko/categories/hugo/</loc>
-    <lastmod>2019-12-18T10:33:41+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://hugo.jiahongw.com/en/categories/hugo/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="http://hugo.jiahongw.com/ko/categories/hugo/"
-                />
-  </url>
-  
-  <url>
-    <loc>http://hugo.jiahongw.com/ko/tags/hugo/</loc>
+    <loc>/ko/tags/hugo/</loc>
     <lastmod>2019-12-18T10:33:41+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="http://hugo.jiahongw.com/zh/tags/hugo/"
+                href="/zh/tags/hugo/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://hugo.jiahongw.com/en/tags/hugo/"
+                href="/en/tags/hugo/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="http://hugo.jiahongw.com/ko/tags/hugo/"
+                href="/ko/tags/hugo/"
                 />
   </url>
   
   <url>
-    <loc>http://hugo.jiahongw.com/ko/en/posts/syntax-highlight/</loc>
+    <loc>/ko/categories/hugo/</loc>
+    <lastmod>2019-12-18T10:33:41+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/categories/hugo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="/ko/categories/hugo/"
+                />
+  </url>
+  
+  <url>
+    <loc>/ko/en/posts/syntax-highlight/</loc>
     <lastmod>2019-12-18T10:33:41+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://hugo.jiahongw.com/ko/en/posts/math-typesetting/</loc>
+    <loc>/ko/en/posts/math-typesetting/</loc>
     <lastmod>2019-12-17T12:00:06+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://hugo.jiahongw.com/ko/tags/amoji/</loc>
+    <loc>/ko/tags/amoji/</loc>
     <lastmod>2019-12-16T12:00:06+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://hugo.jiahongw.com/en/tags/amoji/"
+                href="/en/tags/amoji/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="http://hugo.jiahongw.com/ko/tags/amoji/"
+                href="/ko/tags/amoji/"
                 />
   </url>
   
   <url>
-    <loc>http://hugo.jiahongw.com/ko/tags/bamoji/</loc>
+    <loc>/ko/tags/bamoji/</loc>
     <lastmod>2019-12-16T12:00:06+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://hugo.jiahongw.com/en/tags/bamoji/"
+                href="/en/tags/bamoji/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="http://hugo.jiahongw.com/ko/tags/bamoji/"
+                href="/ko/tags/bamoji/"
                 />
   </url>
   
   <url>
-    <loc>http://hugo.jiahongw.com/ko/tags/emoji/</loc>
+    <loc>/ko/tags/emoji/</loc>
     <lastmod>2019-12-16T12:00:06+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://hugo.jiahongw.com/en/tags/emoji/"
+                href="/en/tags/emoji/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="http://hugo.jiahongw.com/ko/tags/emoji/"
+                href="/ko/tags/emoji/"
                 />
   </url>
   
   <url>
-    <loc>http://hugo.jiahongw.com/ko/en/posts/emoji-support/</loc>
+    <loc>/ko/en/posts/emoji-support/</loc>
     <lastmod>2019-12-16T12:00:06+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://hugo.jiahongw.com/ko/tags/gamoji/</loc>
-    <lastmod>2019-12-16T12:00:06+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://hugo.jiahongw.com/en/tags/gamoji/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="http://hugo.jiahongw.com/ko/tags/gamoji/"
-                />
-  </url>
-  
-  <url>
-    <loc>http://hugo.jiahongw.com/ko/tags/namoji/</loc>
+    <loc>/ko/tags/gamoji/</loc>
     <lastmod>2019-12-16T12:00:06+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://hugo.jiahongw.com/en/tags/namoji/"
+                href="/en/tags/gamoji/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="http://hugo.jiahongw.com/ko/tags/namoji/"
+                href="/ko/tags/gamoji/"
                 />
   </url>
   
   <url>
-    <loc>http://hugo.jiahongw.com/ko/categories/diagram/</loc>
+    <loc>/ko/tags/namoji/</loc>
+    <lastmod>2019-12-16T12:00:06+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/tags/namoji/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="/ko/tags/namoji/"
+                />
+  </url>
+  
+  <url>
+    <loc>/ko/categories/diagram/</loc>
     <lastmod>2019-11-18T21:00:06+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://hugo.jiahongw.com/en/categories/diagram/"
+                href="/en/categories/diagram/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="http://hugo.jiahongw.com/ko/categories/diagram/"
+                href="/ko/categories/diagram/"
                 />
   </url>
   
   <url>
-    <loc>http://hugo.jiahongw.com/ko/en/posts/test-viz/</loc>
+    <loc>/ko/en/posts/test-viz/</loc>
     <lastmod>2019-11-18T21:00:06+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://hugo.jiahongw.com/ko/en/posts/test-wavedrom/</loc>
+    <loc>/ko/en/posts/test-wavedrom/</loc>
     <lastmod>2019-11-18T18:00:06+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://hugo.jiahongw.com/ko/en/posts/test-chartjs/</loc>
+    <loc>/ko/en/posts/test-chartjs/</loc>
     <lastmod>2019-11-18T12:00:06+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://hugo.jiahongw.com/ko/en/posts/test-js-sequence-diagrams/</loc>
+    <loc>/ko/en/posts/test-js-sequence-diagrams/</loc>
     <lastmod>2019-11-18T12:00:06+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://hugo.jiahongw.com/ko/tags/diagram/</loc>
+    <loc>/ko/tags/diagram/</loc>
     <lastmod>2019-11-17T12:00:06+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://hugo.jiahongw.com/en/tags/diagram/"
+                href="/en/tags/diagram/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="http://hugo.jiahongw.com/ko/tags/diagram/"
+                href="/ko/tags/diagram/"
                 />
   </url>
   
   <url>
-    <loc>http://hugo.jiahongw.com/ko/en/posts/test-mermaid/</loc>
+    <loc>/ko/en/posts/test-mermaid/</loc>
     <lastmod>2019-11-17T12:00:06+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://hugo.jiahongw.com/ko/categories/math/</loc>
+    <loc>/ko/categories/math/</loc>
     <lastmod>2019-11-16T12:00:06+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://hugo.jiahongw.com/en/categories/math/"
+                href="/en/categories/math/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="http://hugo.jiahongw.com/ko/categories/math/"
+                href="/ko/categories/math/"
                 />
   </url>
   
   <url>
-    <loc>http://hugo.jiahongw.com/ko/en/posts/test-mathjax/</loc>
+    <loc>/ko/en/posts/test-mathjax/</loc>
     <lastmod>2019-11-16T12:00:06+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://hugo.jiahongw.com/ko/en/posts/test-katex/</loc>
+    <loc>/ko/en/posts/test-katex/</loc>
     <lastmod>2019-11-15T12:00:06+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://hugo.jiahongw.com/ko/en/posts/test-flowchart/</loc>
+    <loc>/ko/en/posts/test-flowchart/</loc>
     <lastmod>2019-11-14T12:00:06+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://hugo.jiahongw.com/ko/en/archive/</loc>
+    <loc>/ko/en/archive/</loc>
     <lastmod>2019-10-19T11:44:14+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://hugo.jiahongw.com/ko/en/about/</loc>
+    <loc>/ko/en/about/</loc>
     <lastmod>2019-02-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://hugo.jiahongw.com/ko/en/</loc>
+    <loc>/ko/en/</loc>
     <lastmod>2019-02-28T00:00:00+00:00</lastmod>
   </url>
   

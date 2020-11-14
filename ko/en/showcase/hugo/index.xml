@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugo on </title>
-    <link>http://hugo.jiahongw.com/ko/en/showcase/hugo/</link>
+    <link>/ko/en/showcase/hugo/</link>
     <description>Recent content in Hugo on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko</language>
@@ -11,26 +11,26 @@
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Sun, 19 Jan 2020 21:04:11 +0900</lastBuildDate>
     
-        <atom:link href="http://hugo.jiahongw.com/ko/en/showcase/hugo/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="/ko/en/showcase/hugo/index.xml" rel="self" type="application/rss+xml" />
     
     
     
       
       <item>
         <title>Hugo Zzo Theme</title>
-        <link>http://hugo.jiahongw.com/ko/en/showcase/hugo/hugo-theme-zzo/</link>
+        <link>/ko/en/showcase/hugo/hugo-theme-zzo/</link>
         <pubDate>Sun, 19 Jan 2020 21:13:42 +0900</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>http://hugo.jiahongw.com/ko/en/showcase/hugo/hugo-theme-zzo/</guid>
+        <guid>/ko/en/showcase/hugo/hugo-theme-zzo/</guid>
         <description></description>
       </item>
       
       <item>
         <title>Hugo zDoc Theme</title>
-        <link>http://hugo.jiahongw.com/ko/en/showcase/hugo/hugo-theme-zdoc/</link>
+        <link>/ko/en/showcase/hugo/hugo-theme-zdoc/</link>
         <pubDate>Sun, 19 Jan 2020 21:13:42 +0900</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>http://hugo.jiahongw.com/ko/en/showcase/hugo/hugo-theme-zdoc/</guid>
+        <guid>/ko/en/showcase/hugo/hugo-theme-zdoc/</guid>
         <description></description>
       </item>
       

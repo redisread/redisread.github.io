@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>文件读写 on ✏Victor&#39;s Blog</title>
-    <link>http://hugo.jiahongw.com/zh/tags/%E6%96%87%E4%BB%B6%E8%AF%BB%E5%86%99/</link>
+    <link>/zh/tags/%E6%96%87%E4%BB%B6%E8%AF%BB%E5%86%99/</link>
     <description>Recent content in 文件读写 on ✏Victor&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
@@ -11,17 +11,17 @@
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Sat, 04 Apr 2020 23:32:40 +0800</lastBuildDate>
     
-        <atom:link href="http://hugo.jiahongw.com/zh/tags/%E6%96%87%E4%BB%B6%E8%AF%BB%E5%86%99/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="/zh/tags/%E6%96%87%E4%BB%B6%E8%AF%BB%E5%86%99/index.xml" rel="self" type="application/rss+xml" />
     
     
     
       
       <item>
         <title>C文件读写</title>
-        <link>http://hugo.jiahongw.com/zh/posts/c-read-write/</link>
+        <link>/zh/posts/c-read-write/</link>
         <pubDate>Sat, 04 Apr 2020 23:32:40 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>http://hugo.jiahongw.com/zh/posts/c-read-write/</guid>
+        <guid>/zh/posts/c-read-write/</guid>
         <description>&lt;p&gt;c文件读写🗃&lt;/p&gt;</description>
       </item>
       

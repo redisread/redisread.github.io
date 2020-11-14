@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>IT on ✏Victor&#39;s Blog</title>
-    <link>http://hugo.jiahongw.com/zh/series/it/</link>
+    <link>/zh/series/it/</link>
     <description>Recent content in IT on ✏Victor&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
@@ -11,17 +11,17 @@
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Sat, 15 Feb 2020 16:10:21 +0800</lastBuildDate>
     
-        <atom:link href="http://hugo.jiahongw.com/zh/series/it/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="/zh/series/it/index.xml" rel="self" type="application/rss+xml" />
     
     
     
       
       <item>
         <title>2020翻墙指南👈</title>
-        <link>http://hugo.jiahongw.com/zh/posts/settings/2020-fanqiang/</link>
+        <link>/zh/posts/settings/2020-fanqiang/</link>
         <pubDate>Sat, 15 Feb 2020 16:10:21 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>http://hugo.jiahongw.com/zh/posts/settings/2020-fanqiang/</guid>
+        <guid>/zh/posts/settings/2020-fanqiang/</guid>
         <description>&lt;p&gt;一份还算可以的翻墙清单📇&lt;/p&gt;</description>
       </item>
       

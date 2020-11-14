@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Series on ✏Victor&#39;s Blog</title>
-    <link>http://hugo.jiahongw.com/en/series/</link>
+    <link>/en/series/</link>
     <description>Recent content in Series on ✏Victor&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
@@ -11,7 +11,7 @@
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Sat, 25 Jan 2020 06:40:51 +0900</lastBuildDate>
     
-        <atom:link href="http://hugo.jiahongw.com/en/series/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="/en/series/index.xml" rel="self" type="application/rss+xml" />
     
     
     

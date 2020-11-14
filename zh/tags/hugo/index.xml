@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugo on ✏Victor&#39;s Blog</title>
-    <link>http://hugo.jiahongw.com/zh/tags/hugo/</link>
+    <link>/zh/tags/hugo/</link>
     <description>Recent content in Hugo on ✏Victor&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
@@ -11,17 +11,17 @@
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Mon, 10 Feb 2020 20:50:09 +0800</lastBuildDate>
     
-        <atom:link href="http://hugo.jiahongw.com/zh/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="/zh/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
     
     
       
       <item>
         <title>Hugo配置</title>
-        <link>http://hugo.jiahongw.com/zh/posts/hugo/first/</link>
+        <link>/zh/posts/hugo/first/</link>
         <pubDate>Mon, 10 Feb 2020 20:50:09 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>http://hugo.jiahongw.com/zh/posts/hugo/first/</guid>
+        <guid>/zh/posts/hugo/first/</guid>
         <description>HUGO + Github + Github Action持续集成部署个人博客 HUGO本地环境 首先在HUGO的官网下载Hugo的Windows安装包，然后将路径添加到环境变量即</description>
       </item>
       

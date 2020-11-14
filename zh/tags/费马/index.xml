@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>费马 on ✏Victor&#39;s Blog</title>
-    <link>http://hugo.jiahongw.com/zh/tags/%E8%B4%B9%E9%A9%AC/</link>
+    <link>/zh/tags/%E8%B4%B9%E9%A9%AC/</link>
     <description>Recent content in 费马 on ✏Victor&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
@@ -11,26 +11,26 @@
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Wed, 06 May 2020 11:12:38 +0800</lastBuildDate>
     
-        <atom:link href="http://hugo.jiahongw.com/zh/tags/%E8%B4%B9%E9%A9%AC/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="/zh/tags/%E8%B4%B9%E9%A9%AC/index.xml" rel="self" type="application/rss+xml" />
     
     
     
       
       <item>
         <title>费马🦓定理</title>
-        <link>http://hugo.jiahongw.com/zh/posts/math/feima/</link>
+        <link>/zh/posts/math/feima/</link>
         <pubDate>Wed, 06 May 2020 11:12:38 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>http://hugo.jiahongw.com/zh/posts/math/feima/</guid>
+        <guid>/zh/posts/math/feima/</guid>
         <description>&lt;p&gt;费马大定理在数学里有一个特殊的现象，即在于它是错误证明数量最多的数学题。&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>费马🦓定理</title>
-        <link>http://hugo.jiahongw.com/zh/posts/network/feima/</link>
+        <link>/zh/posts/network/feima/</link>
         <pubDate>Wed, 06 May 2020 11:12:38 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>http://hugo.jiahongw.com/zh/posts/network/feima/</guid>
+        <guid>/zh/posts/network/feima/</guid>
         <description>&lt;p&gt;费马大定理在数学里有一个特殊的现象，即在于它是错误证明数量最多的数学题。&lt;/p&gt;</description>
       </item>
       

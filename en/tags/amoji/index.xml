@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>amoji on ✏Victor&#39;s Blog</title>
-    <link>http://hugo.jiahongw.com/en/tags/amoji/</link>
+    <link>/en/tags/amoji/</link>
     <description>Recent content in amoji on ✏Victor&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
@@ -11,17 +11,17 @@
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Mon, 16 Dec 2019 12:00:06 +0900</lastBuildDate>
     
-        <atom:link href="http://hugo.jiahongw.com/en/tags/amoji/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="/en/tags/amoji/index.xml" rel="self" type="application/rss+xml" />
     
     
     
       
       <item>
         <title>Emoji Support</title>
-        <link>http://hugo.jiahongw.com/en/posts/emoji-support/</link>
+        <link>/en/posts/emoji-support/</link>
         <pubDate>Mon, 16 Dec 2019 12:00:06 +0900</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>http://hugo.jiahongw.com/en/posts/emoji-support/</guid>
+        <guid>/en/posts/emoji-support/</guid>
         <description>&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;</description>
       </item>
       

@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Presentations on ✏Victor&#39;s Blog</title>
-    <link>http://hugo.jiahongw.com/zh/presentation/</link>
+    <link>/zh/presentation/</link>
     <description>Recent content in Presentations on ✏Victor&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
@@ -11,62 +11,62 @@
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Thu, 30 Jul 2020 10:45:10 +0900</lastBuildDate>
     
-        <atom:link href="http://hugo.jiahongw.com/zh/presentation/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="/zh/presentation/index.xml" rel="self" type="application/rss+xml" />
     
     
     
       
       <item>
         <title>UE实习</title>
-        <link>http://hugo.jiahongw.com/zh/presentation/ue/ue-city/</link>
+        <link>/zh/presentation/ue/ue-city/</link>
         <pubDate>Thu, 30 Jul 2020 10:45:10 +0900</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>http://hugo.jiahongw.com/zh/presentation/ue/ue-city/</guid>
+        <guid>/zh/presentation/ue/ue-city/</guid>
         <description></description>
       </item>
       
       <item>
         <title>Mypt</title>
-        <link>http://hugo.jiahongw.com/zh/presentation/mypt/</link>
+        <link>/zh/presentation/mypt/</link>
         <pubDate>Sun, 01 Mar 2020 00:24:52 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>http://hugo.jiahongw.com/zh/presentation/mypt/</guid>
+        <guid>/zh/presentation/mypt/</guid>
         <description></description>
       </item>
       
       <item>
         <title>Fourth</title>
-        <link>http://hugo.jiahongw.com/zh/presentation/dir/fourth/</link>
+        <link>/zh/presentation/dir/fourth/</link>
         <pubDate>Wed, 30 Oct 2019 20:48:10 +0900</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>http://hugo.jiahongw.com/zh/presentation/dir/fourth/</guid>
+        <guid>/zh/presentation/dir/fourth/</guid>
         <description></description>
       </item>
       
       <item>
         <title>Third</title>
-        <link>http://hugo.jiahongw.com/zh/presentation/third/</link>
+        <link>/zh/presentation/third/</link>
         <pubDate>Wed, 30 Oct 2019 20:46:30 +0900</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>http://hugo.jiahongw.com/zh/presentation/third/</guid>
+        <guid>/zh/presentation/third/</guid>
         <description></description>
       </item>
       
       <item>
         <title>Second</title>
-        <link>http://hugo.jiahongw.com/zh/presentation/second/</link>
+        <link>/zh/presentation/second/</link>
         <pubDate>Wed, 30 Oct 2019 20:45:24 +0900</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>http://hugo.jiahongw.com/zh/presentation/second/</guid>
+        <guid>/zh/presentation/second/</guid>
         <description></description>
       </item>
       
       <item>
         <title>好的搜索引擎</title>
-        <link>http://hugo.jiahongw.com/zh/presentation/search/</link>
+        <link>/zh/presentation/search/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>http://hugo.jiahongw.com/zh/presentation/search/</guid>
+        <guid>/zh/presentation/search/</guid>
         <description></description>
       </item>
       

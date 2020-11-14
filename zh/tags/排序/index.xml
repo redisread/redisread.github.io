@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>排序 on ✏Victor&#39;s Blog</title>
-    <link>http://hugo.jiahongw.com/zh/tags/%E6%8E%92%E5%BA%8F/</link>
+    <link>/zh/tags/%E6%8E%92%E5%BA%8F/</link>
     <description>Recent content in 排序 on ✏Victor&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
@@ -11,17 +11,17 @@
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Wed, 11 Mar 2020 22:07:13 +0800</lastBuildDate>
     
-        <atom:link href="http://hugo.jiahongw.com/zh/tags/%E6%8E%92%E5%BA%8F/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="/zh/tags/%E6%8E%92%E5%BA%8F/index.xml" rel="self" type="application/rss+xml" />
     
     
     
       
       <item>
         <title>排序算法总结</title>
-        <link>http://hugo.jiahongw.com/zh/posts/algorithmstructure/sort/</link>
+        <link>/zh/posts/algorithmstructure/sort/</link>
         <pubDate>Wed, 11 Mar 2020 22:07:13 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>http://hugo.jiahongw.com/zh/posts/algorithmstructure/sort/</guid>
+        <guid>/zh/posts/algorithmstructure/sort/</guid>
         <description>&lt;p&gt;排序是最基本的算法，里面包含了最基础的思想。一个简单的优化可以让排序快很多。&lt;/p&gt;</description>
       </item>
       

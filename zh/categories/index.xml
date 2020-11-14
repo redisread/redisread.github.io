@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on ✏Victor&#39;s Blog</title>
-    <link>http://hugo.jiahongw.com/zh/categories/</link>
+    <link>/zh/categories/</link>
     <description>Recent content in Categories on ✏Victor&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
@@ -11,26 +11,26 @@
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Mon, 24 Aug 2020 22:24:19 +0800</lastBuildDate>
     
-        <atom:link href="http://hugo.jiahongw.com/zh/categories/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="/zh/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     
       
       <item>
         <title>写作</title>
-        <link>http://hugo.jiahongw.com/zh/categories/%E5%86%99%E4%BD%9C/</link>
+        <link>/zh/categories/%E5%86%99%E4%BD%9C/</link>
         <pubDate>Fri, 14 Feb 2020 16:12:40 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>http://hugo.jiahongw.com/zh/categories/%E5%86%99%E4%BD%9C/</guid>
+        <guid>/zh/categories/%E5%86%99%E4%BD%9C/</guid>
         <description></description>
       </item>
       
       <item>
         <title>Blog</title>
-        <link>http://hugo.jiahongw.com/zh/categories/blog/</link>
+        <link>/zh/categories/blog/</link>
         <pubDate>Thu, 13 Feb 2020 22:31:22 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>http://hugo.jiahongw.com/zh/categories/blog/</guid>
+        <guid>/zh/categories/blog/</guid>
         <description></description>
       </item>
       
