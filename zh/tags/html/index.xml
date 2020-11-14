@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>html on ✏Victor&#39;s Blog</title>
-    <link>hugo.jiahongw.com/zh/tags/html/</link>
+    <link>http://hugo.jiahongw.com/zh/tags/html/</link>
     <description>Recent content in html on ✏Victor&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
@@ -11,17 +11,17 @@
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Sat, 04 Apr 2020 00:58:33 +0800</lastBuildDate>
     
-        <atom:link href="hugo.jiahongw.com/zh/tags/html/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://hugo.jiahongw.com/zh/tags/html/index.xml" rel="self" type="application/rss+xml" />
     
     
     
       
       <item>
         <title>在markdown使用html</title>
-        <link>hugo.jiahongw.com/zh/posts/markdown-html/</link>
+        <link>http://hugo.jiahongw.com/zh/posts/markdown-html/</link>
         <pubDate>Sat, 04 Apr 2020 00:58:33 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/markdown-html/</guid>
+        <guid>http://hugo.jiahongw.com/zh/posts/markdown-html/</guid>
         <description>&lt;p&gt;在markdown文件中嵌入&lt;code&gt;html&lt;/code&gt;代码.🛶&lt;/p&gt;</description>
       </item>
       

@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>liner on ✏Victor&#39;s Blog</title>
-    <link>hugo.jiahongw.com/zh/tags/liner/</link>
+    <link>http://hugo.jiahongw.com/zh/tags/liner/</link>
     <description>Recent content in liner on ✏Victor&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
@@ -11,17 +11,17 @@
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Sun, 23 Feb 2020 15:49:10 +0800</lastBuildDate>
     
-        <atom:link href="hugo.jiahongw.com/zh/tags/liner/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://hugo.jiahongw.com/zh/tags/liner/index.xml" rel="self" type="application/rss+xml" />
     
     
     
       
       <item>
         <title>MXNet回顾</title>
-        <link>hugo.jiahongw.com/zh/posts/dl/mxnet-begin/</link>
+        <link>http://hugo.jiahongw.com/zh/posts/dl/mxnet-begin/</link>
         <pubDate>Sun, 23 Feb 2020 15:49:10 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/dl/mxnet-begin/</guid>
+        <guid>http://hugo.jiahongw.com/zh/posts/dl/mxnet-begin/</guid>
         <description>&lt;p&gt;使用MXNet的好处你永远想象不到。🉑&lt;/p&gt;</description>
       </item>
       

@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>分治 on ✏Victor&#39;s Blog</title>
-    <link>hugo.jiahongw.com/zh/tags/%E5%88%86%E6%B2%BB/</link>
+    <link>http://hugo.jiahongw.com/zh/tags/%E5%88%86%E6%B2%BB/</link>
     <description>Recent content in 分治 on ✏Victor&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
@@ -11,17 +11,17 @@
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Tue, 18 Aug 2020 10:54:23 +0800</lastBuildDate>
     
-        <atom:link href="hugo.jiahongw.com/zh/tags/%E5%88%86%E6%B2%BB/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://hugo.jiahongw.com/zh/tags/%E5%88%86%E6%B2%BB/index.xml" rel="self" type="application/rss+xml" />
     
     
     
       
       <item>
         <title>Leetcode每日一题(4)</title>
-        <link>hugo.jiahongw.com/zh/posts/leetcode/leetcode-day4/</link>
+        <link>http://hugo.jiahongw.com/zh/posts/leetcode/leetcode-day4/</link>
         <pubDate>Tue, 18 Aug 2020 10:54:23 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/leetcode/leetcode-day4/</guid>
+        <guid>http://hugo.jiahongw.com/zh/posts/leetcode/leetcode-day4/</guid>
         <description>109. 有序链表转换二叉搜索树 给定一个单链表，其中的元素按升序排序，将其转换为高度平衡的二叉搜索树。 本题中，一个高度平衡二叉树是指一个二叉树每个节</description>
       </item>
       

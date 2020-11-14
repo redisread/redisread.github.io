@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>KMP on ✏Victor&#39;s Blog</title>
-    <link>hugo.jiahongw.com/zh/tags/kmp/</link>
+    <link>http://hugo.jiahongw.com/zh/tags/kmp/</link>
     <description>Recent content in KMP on ✏Victor&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
@@ -11,26 +11,26 @@
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Mon, 24 Aug 2020 22:24:19 +0800</lastBuildDate>
     
-        <atom:link href="hugo.jiahongw.com/zh/tags/kmp/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://hugo.jiahongw.com/zh/tags/kmp/index.xml" rel="self" type="application/rss+xml" />
     
     
     
       
       <item>
         <title>Leetcode每日一题(8)</title>
-        <link>hugo.jiahongw.com/zh/posts/leetcode/leetcode-day8/</link>
+        <link>http://hugo.jiahongw.com/zh/posts/leetcode/leetcode-day8/</link>
         <pubDate>Mon, 24 Aug 2020 22:24:19 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/leetcode/leetcode-day8/</guid>
+        <guid>http://hugo.jiahongw.com/zh/posts/leetcode/leetcode-day8/</guid>
         <description>459. 重复的子字符串 给定一个非空的字符串，判断它是否可以由它的一个子串重复多次构成。给定的字符串只含有小写英文字母，并且长度不超过10000。 示</description>
       </item>
       
       <item>
         <title>Leetcode每日一题(6)</title>
-        <link>hugo.jiahongw.com/zh/posts/leetcode/leetcode-day6/</link>
+        <link>http://hugo.jiahongw.com/zh/posts/leetcode/leetcode-day6/</link>
         <pubDate>Thu, 20 Aug 2020 21:29:58 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/leetcode/leetcode-day6/</guid>
+        <guid>http://hugo.jiahongw.com/zh/posts/leetcode/leetcode-day6/</guid>
         <description>28. 实现 strStr() 实现 strStr() 函数。 给定一个 haystack 字符串和一个 needle 字符串，在 haystack 字符串中找出 needle 字符串出现的第一个位置 (从0开始)。如果不存在，则返回 -1。 示例 1: 输入</description>
       </item>
       

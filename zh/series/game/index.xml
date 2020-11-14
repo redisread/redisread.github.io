@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Game on ✏Victor&#39;s Blog</title>
-    <link>hugo.jiahongw.com/zh/series/game/</link>
+    <link>http://hugo.jiahongw.com/zh/series/game/</link>
     <description>Recent content in Game on ✏Victor&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
@@ -11,35 +11,35 @@
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Mon, 15 Jun 2020 09:42:11 +0800</lastBuildDate>
     
-        <atom:link href="hugo.jiahongw.com/zh/series/game/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://hugo.jiahongw.com/zh/series/game/index.xml" rel="self" type="application/rss+xml" />
     
     
     
       
       <item>
         <title>UE4获取深度值</title>
-        <link>hugo.jiahongw.com/zh/posts/ue/ue-depth/</link>
+        <link>http://hugo.jiahongw.com/zh/posts/ue/ue-depth/</link>
         <pubDate>Mon, 15 Jun 2020 09:42:11 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/ue/ue-depth/</guid>
+        <guid>http://hugo.jiahongw.com/zh/posts/ue/ue-depth/</guid>
         <description>&lt;p&gt;在UE4中获取深度缓存，调用渲染命令读取。&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>UE游戏、渲染线程</title>
-        <link>hugo.jiahongw.com/zh/posts/ue/ue-game-render/</link>
+        <link>http://hugo.jiahongw.com/zh/posts/ue/ue-game-render/</link>
         <pubDate>Wed, 03 Jun 2020 09:42:11 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/ue/ue-game-render/</guid>
+        <guid>http://hugo.jiahongw.com/zh/posts/ue/ue-game-render/</guid>
         <description>&lt;p&gt;探索UE4游戏线程的进入&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>UE4渲染过程</title>
-        <link>hugo.jiahongw.com/zh/posts/ue/ue4-render/</link>
+        <link>http://hugo.jiahongw.com/zh/posts/ue/ue4-render/</link>
         <pubDate>Fri, 29 May 2020 09:42:11 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/ue/ue4-render/</guid>
+        <guid>http://hugo.jiahongw.com/zh/posts/ue/ue4-render/</guid>
         <description>&lt;p&gt;大概介绍以下UE4的主要渲染过程。&lt;/p&gt;</description>
       </item>
       

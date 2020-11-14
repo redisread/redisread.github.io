@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Galleries on ✏Victor&#39;s Blog</title>
-    <link>hugo.jiahongw.com/zh/gallery/</link>
+    <link>http://hugo.jiahongw.com/zh/gallery/</link>
     <description>Recent content in Galleries on ✏Victor&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
@@ -11,35 +11,35 @@
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Wed, 04 Mar 2020 22:30:46 +0800</lastBuildDate>
     
-        <atom:link href="hugo.jiahongw.com/zh/gallery/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://hugo.jiahongw.com/zh/gallery/index.xml" rel="self" type="application/rss+xml" />
     
     
     
       
       <item>
         <title>Hero</title>
-        <link>hugo.jiahongw.com/zh/gallery/hero/</link>
+        <link>http://hugo.jiahongw.com/zh/gallery/hero/</link>
         <pubDate>Wed, 04 Mar 2020 22:30:46 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/gallery/hero/</guid>
+        <guid>http://hugo.jiahongw.com/zh/gallery/hero/</guid>
         <description>一些英雄的图案🌿</description>
       </item>
       
       <item>
         <title>life</title>
-        <link>hugo.jiahongw.com/zh/gallery/life/</link>
+        <link>http://hugo.jiahongw.com/zh/gallery/life/</link>
         <pubDate>Thu, 31 Oct 2019 10:20:16 +0900</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/gallery/life/</guid>
+        <guid>http://hugo.jiahongw.com/zh/gallery/life/</guid>
         <description>Sample images about life.</description>
       </item>
       
       <item>
         <title>movie</title>
-        <link>hugo.jiahongw.com/zh/gallery/movie/</link>
+        <link>http://hugo.jiahongw.com/zh/gallery/movie/</link>
         <pubDate>Thu, 31 Oct 2019 10:20:16 +0900</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/gallery/movie/</guid>
+        <guid>http://hugo.jiahongw.com/zh/gallery/movie/</guid>
         <description>between 70 and 240 in movies good movies！🎥</description>
       </item>
       

@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>用户管理 on ✏Victor&#39;s Blog</title>
-    <link>hugo.jiahongw.com/zh/tags/%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86/</link>
+    <link>http://hugo.jiahongw.com/zh/tags/%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86/</link>
     <description>Recent content in 用户管理 on ✏Victor&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
@@ -11,17 +11,17 @@
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Wed, 15 Apr 2020 16:34:03 +0800</lastBuildDate>
     
-        <atom:link href="hugo.jiahongw.com/zh/tags/%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://hugo.jiahongw.com/zh/tags/%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86/index.xml" rel="self" type="application/rss+xml" />
     
     
     
       
       <item>
         <title>Linux用户管理</title>
-        <link>hugo.jiahongw.com/zh/posts/linux-users/</link>
+        <link>http://hugo.jiahongw.com/zh/posts/linux-users/</link>
         <pubDate>Wed, 15 Apr 2020 16:34:03 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/linux-users/</guid>
+        <guid>http://hugo.jiahongw.com/zh/posts/linux-users/</guid>
         <description>&lt;p&gt;每一个用户都是一个个体，每一个个体都属于一个群组，而每一个群组又有区别!&lt;/p&gt;
 &lt;p&gt;——Users&lt;/p&gt;</description>
       </item>

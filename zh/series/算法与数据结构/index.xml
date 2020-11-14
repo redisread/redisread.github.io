@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>算法与数据结构 on ✏Victor&#39;s Blog</title>
-    <link>hugo.jiahongw.com/zh/series/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</link>
+    <link>http://hugo.jiahongw.com/zh/series/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</link>
     <description>Recent content in 算法与数据结构 on ✏Victor&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
@@ -11,17 +11,17 @@
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Wed, 11 Mar 2020 22:07:13 +0800</lastBuildDate>
     
-        <atom:link href="hugo.jiahongw.com/zh/series/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://hugo.jiahongw.com/zh/series/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/index.xml" rel="self" type="application/rss+xml" />
     
     
     
       
       <item>
         <title>排序算法总结</title>
-        <link>hugo.jiahongw.com/zh/posts/algorithmstructure/sort/</link>
+        <link>http://hugo.jiahongw.com/zh/posts/algorithmstructure/sort/</link>
         <pubDate>Wed, 11 Mar 2020 22:07:13 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/algorithmstructure/sort/</guid>
+        <guid>http://hugo.jiahongw.com/zh/posts/algorithmstructure/sort/</guid>
         <description>&lt;p&gt;排序是最基本的算法，里面包含了最基础的思想。一个简单的优化可以让排序快很多。&lt;/p&gt;</description>
       </item>
       

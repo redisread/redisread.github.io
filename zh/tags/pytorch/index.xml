@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>PyTorch on ✏Victor&#39;s Blog</title>
-    <link>hugo.jiahongw.com/zh/tags/pytorch/</link>
+    <link>http://hugo.jiahongw.com/zh/tags/pytorch/</link>
     <description>Recent content in PyTorch on ✏Victor&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
@@ -11,17 +11,17 @@
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Sat, 22 Feb 2020 22:49:28 +0800</lastBuildDate>
     
-        <atom:link href="hugo.jiahongw.com/zh/tags/pytorch/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://hugo.jiahongw.com/zh/tags/pytorch/index.xml" rel="self" type="application/rss+xml" />
     
     
     
       
       <item>
         <title>Pytorch Begin</title>
-        <link>hugo.jiahongw.com/zh/posts/dl/pytorch-begin/</link>
+        <link>http://hugo.jiahongw.com/zh/posts/dl/pytorch-begin/</link>
         <pubDate>Sat, 22 Feb 2020 22:49:28 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/dl/pytorch-begin/</guid>
+        <guid>http://hugo.jiahongw.com/zh/posts/dl/pytorch-begin/</guid>
         <description>&lt;p&gt;重新学习一下DL，这次使用PyTorch框架🔦&lt;/p&gt;</description>
       </item>
       

@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on </title>
-    <link>hugo.jiahongw.com/ko/categories/</link>
+    <link>http://hugo.jiahongw.com/ko/categories/</link>
     <description>Recent content in Categories on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko</language>
@@ -11,35 +11,35 @@
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Sat, 25 Jan 2020 06:40:51 +0900</lastBuildDate>
     
-        <atom:link href="hugo.jiahongw.com/ko/categories/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://hugo.jiahongw.com/ko/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     
       
       <item>
         <title>hugo</title>
-        <link>hugo.jiahongw.com/ko/categories/hugo/</link>
+        <link>http://hugo.jiahongw.com/ko/categories/hugo/</link>
         <pubDate>Wed, 18 Dec 2019 10:33:41 +0900</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/ko/categories/hugo/</guid>
+        <guid>http://hugo.jiahongw.com/ko/categories/hugo/</guid>
         <description></description>
       </item>
       
       <item>
         <title>diagram</title>
-        <link>hugo.jiahongw.com/ko/categories/diagram/</link>
+        <link>http://hugo.jiahongw.com/ko/categories/diagram/</link>
         <pubDate>Mon, 18 Nov 2019 21:00:06 +0900</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/ko/categories/diagram/</guid>
+        <guid>http://hugo.jiahongw.com/ko/categories/diagram/</guid>
         <description></description>
       </item>
       
       <item>
         <title>math</title>
-        <link>hugo.jiahongw.com/ko/categories/math/</link>
+        <link>http://hugo.jiahongw.com/ko/categories/math/</link>
         <pubDate>Sat, 16 Nov 2019 12:00:06 +0900</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/ko/categories/math/</guid>
+        <guid>http://hugo.jiahongw.com/ko/categories/math/</guid>
         <description></description>
       </item>
       

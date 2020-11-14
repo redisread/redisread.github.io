@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>数据结构 on ✏Victor&#39;s Blog</title>
-    <link>hugo.jiahongw.com/zh/series/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</link>
+    <link>http://hugo.jiahongw.com/zh/series/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</link>
     <description>Recent content in 数据结构 on ✏Victor&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
@@ -11,26 +11,26 @@
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Sun, 16 Aug 2020 13:17:07 +0800</lastBuildDate>
     
-        <atom:link href="hugo.jiahongw.com/zh/series/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://hugo.jiahongw.com/zh/series/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/index.xml" rel="self" type="application/rss+xml" />
     
     
     
       
       <item>
         <title>数据结构(1)</title>
-        <link>hugo.jiahongw.com/zh/posts/algorithmstructure/hash/</link>
+        <link>http://hugo.jiahongw.com/zh/posts/algorithmstructure/hash/</link>
         <pubDate>Sun, 16 Aug 2020 13:17:07 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/algorithmstructure/hash/</guid>
+        <guid>http://hugo.jiahongw.com/zh/posts/algorithmstructure/hash/</guid>
         <description>哈希表 什么是哈希表？ 哈希表（Hash table，也叫散列表），是根据关键码值(Key value)而直接进行访问的数据结构。也就是说，它通过把</description>
       </item>
       
       <item>
         <title>高级的二叉树</title>
-        <link>hugo.jiahongw.com/zh/posts/algorithmstructure/bst/</link>
+        <link>http://hugo.jiahongw.com/zh/posts/algorithmstructure/bst/</link>
         <pubDate>Mon, 27 Jul 2020 22:07:13 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/algorithmstructure/bst/</guid>
+        <guid>http://hugo.jiahongw.com/zh/posts/algorithmstructure/bst/</guid>
         <description>&lt;p&gt;树是一种非常实用的结构！🌴&lt;/p&gt;</description>
       </item>
       

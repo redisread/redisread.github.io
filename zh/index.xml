@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>✏Victor&#39;s Blog</title>
-    <link>hugo.jiahongw.com/zh/</link>
+    <link>http://hugo.jiahongw.com/zh/</link>
     <description>Recent content on ✏Victor&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
@@ -11,716 +11,716 @@
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Mon, 24 Aug 2020 22:24:19 +0800</lastBuildDate>
     
-        <atom:link href="hugo.jiahongw.com/zh/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://hugo.jiahongw.com/zh/index.xml" rel="self" type="application/rss+xml" />
     
     
     
       
       <item>
         <title>Leetcode每日一题(8)</title>
-        <link>hugo.jiahongw.com/zh/posts/leetcode/leetcode-day8/</link>
+        <link>http://hugo.jiahongw.com/zh/posts/leetcode/leetcode-day8/</link>
         <pubDate>Mon, 24 Aug 2020 22:24:19 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/leetcode/leetcode-day8/</guid>
+        <guid>http://hugo.jiahongw.com/zh/posts/leetcode/leetcode-day8/</guid>
         <description>459. 重复的子字符串 给定一个非空的字符串，判断它是否可以由它的一个子串重复多次构成。给定的字符串只含有小写英文字母，并且长度不超过10000。 示</description>
       </item>
       
       <item>
         <title>Leetcode每日一题(7)</title>
-        <link>hugo.jiahongw.com/zh/posts/leetcode/leetcode-day7/</link>
+        <link>http://hugo.jiahongw.com/zh/posts/leetcode/leetcode-day7/</link>
         <pubDate>Fri, 21 Aug 2020 20:56:17 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/leetcode/leetcode-day7/</guid>
+        <guid>http://hugo.jiahongw.com/zh/posts/leetcode/leetcode-day7/</guid>
         <description>111. 二叉树的最小深度 给定一个二叉树，找出其最小深度。 最小深度是从根节点到最近叶子节点的最短路径上的节点数量。 说明: 叶子节点是指没有子节点的节点</description>
       </item>
       
       <item>
         <title>Leetcode每日一题(6)</title>
-        <link>hugo.jiahongw.com/zh/posts/leetcode/leetcode-day6/</link>
+        <link>http://hugo.jiahongw.com/zh/posts/leetcode/leetcode-day6/</link>
         <pubDate>Thu, 20 Aug 2020 21:29:58 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/leetcode/leetcode-day6/</guid>
+        <guid>http://hugo.jiahongw.com/zh/posts/leetcode/leetcode-day6/</guid>
         <description>28. 实现 strStr() 实现 strStr() 函数。 给定一个 haystack 字符串和一个 needle 字符串，在 haystack 字符串中找出 needle 字符串出现的第一个位置 (从0开始)。如果不存在，则返回 -1。 示例 1: 输入</description>
       </item>
       
       <item>
         <title>Leetcode每日一题(5)</title>
-        <link>hugo.jiahongw.com/zh/posts/leetcode/leetcode-day5/</link>
+        <link>http://hugo.jiahongw.com/zh/posts/leetcode/leetcode-day5/</link>
         <pubDate>Wed, 19 Aug 2020 14:40:19 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/leetcode/leetcode-day5/</guid>
+        <guid>http://hugo.jiahongw.com/zh/posts/leetcode/leetcode-day5/</guid>
         <description>647. 回文子串 给定一个字符串，你的任务是计算这个字符串中有多少个回文子串。 具有不同开始位置或结束位置的子串，即使是由相同的字符组成，也会被视作不</description>
       </item>
       
       <item>
         <title>Leetcode每日一题(4)</title>
-        <link>hugo.jiahongw.com/zh/posts/leetcode/leetcode-day4/</link>
+        <link>http://hugo.jiahongw.com/zh/posts/leetcode/leetcode-day4/</link>
         <pubDate>Tue, 18 Aug 2020 10:54:23 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/leetcode/leetcode-day4/</guid>
+        <guid>http://hugo.jiahongw.com/zh/posts/leetcode/leetcode-day4/</guid>
         <description>109. 有序链表转换二叉搜索树 给定一个单链表，其中的元素按升序排序，将其转换为高度平衡的二叉搜索树。 本题中，一个高度平衡二叉树是指一个二叉树每个节</description>
       </item>
       
       <item>
         <title>Leetcode每日一题(3)</title>
-        <link>hugo.jiahongw.com/zh/posts/leetcode/leetcode-day3/</link>
+        <link>http://hugo.jiahongw.com/zh/posts/leetcode/leetcode-day3/</link>
         <pubDate>Mon, 17 Aug 2020 23:18:31 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/leetcode/leetcode-day3/</guid>
+        <guid>http://hugo.jiahongw.com/zh/posts/leetcode/leetcode-day3/</guid>
         <description>743. 网络延迟时间 有 N 个网络节点，标记为 1 到 N。 给定一个列表 times，表示信号经过有向边的传递时间。 times[i] = (u, v, w)，其中 u 是源节点，v 是目标节点</description>
       </item>
       
       <item>
         <title>数据结构(1)</title>
-        <link>hugo.jiahongw.com/zh/posts/algorithmstructure/hash/</link>
+        <link>http://hugo.jiahongw.com/zh/posts/algorithmstructure/hash/</link>
         <pubDate>Sun, 16 Aug 2020 13:17:07 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/algorithmstructure/hash/</guid>
+        <guid>http://hugo.jiahongw.com/zh/posts/algorithmstructure/hash/</guid>
         <description>哈希表 什么是哈希表？ 哈希表（Hash table，也叫散列表），是根据关键码值(Key value)而直接进行访问的数据结构。也就是说，它通过把</description>
       </item>
       
       <item>
         <title>Leetcode每日一题(2)</title>
-        <link>hugo.jiahongw.com/zh/posts/leetcode/leetcode-day2/</link>
+        <link>http://hugo.jiahongw.com/zh/posts/leetcode/leetcode-day2/</link>
         <pubDate>Sun, 16 Aug 2020 09:01:25 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/leetcode/leetcode-day2/</guid>
+        <guid>http://hugo.jiahongw.com/zh/posts/leetcode/leetcode-day2/</guid>
         <description>5490. 吃掉 N 个橘子的最少天数 厨房里总共有 n 个橘子，你决定每一天选择如下方式之一吃这些橘子： 吃掉一个橘子。 如果剩余橘子数 n 能被 2 整除，那么你可以吃</description>
       </item>
       
       <item>
         <title>数据库知识(2)</title>
-        <link>hugo.jiahongw.com/zh/posts/database/db2/</link>
+        <link>http://hugo.jiahongw.com/zh/posts/database/db2/</link>
         <pubDate>Sat, 15 Aug 2020 21:45:25 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/database/db2/</guid>
+        <guid>http://hugo.jiahongw.com/zh/posts/database/db2/</guid>
         <description>mysql的MVCC机制 MVCC的维基百科解释：多版本并发控制(Multiversion concurrency control， MCC 或 MVCC)，是数据库管理系统常</description>
       </item>
       
       <item>
         <title>Leetcode每日一题(1)</title>
-        <link>hugo.jiahongw.com/zh/posts/leetcode/leetcode-day1/</link>
+        <link>http://hugo.jiahongw.com/zh/posts/leetcode/leetcode-day1/</link>
         <pubDate>Sat, 15 Aug 2020 09:01:25 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/leetcode/leetcode-day1/</guid>
+        <guid>http://hugo.jiahongw.com/zh/posts/leetcode/leetcode-day1/</guid>
         <description>546. 移除盒子 给出一些不同颜色的盒子，盒子的颜色由数字表示，即不同的数字表示不同的颜色。 你将经过若干轮操作去去掉盒子，直到所有的盒子都去掉为止。</description>
       </item>
       
       <item>
         <title>数据库知识(1)</title>
-        <link>hugo.jiahongw.com/zh/posts/database/db1/</link>
+        <link>http://hugo.jiahongw.com/zh/posts/database/db1/</link>
         <pubDate>Fri, 14 Aug 2020 09:01:25 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/database/db1/</guid>
+        <guid>http://hugo.jiahongw.com/zh/posts/database/db1/</guid>
         <description>&lt;h3 id=&#34;数据库事务&#34;&gt;数据库事务&lt;/h3&gt;
 &lt;p&gt;事务（Transaction）是由一系列对系统中数据进行访问与更新的操作所组成的一个程序执行逻辑单元。事务是DBMS中最基础的单位，事务不可分割。&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>UE实习</title>
-        <link>hugo.jiahongw.com/zh/presentation/ue/ue-city/</link>
+        <link>http://hugo.jiahongw.com/zh/presentation/ue/ue-city/</link>
         <pubDate>Thu, 30 Jul 2020 10:45:10 +0900</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/presentation/ue/ue-city/</guid>
+        <guid>http://hugo.jiahongw.com/zh/presentation/ue/ue-city/</guid>
         <description></description>
       </item>
       
       <item>
         <title>Linux内存管理</title>
-        <link>hugo.jiahongw.com/zh/posts/linux/memory-control/</link>
+        <link>http://hugo.jiahongw.com/zh/posts/linux/memory-control/</link>
         <pubDate>Thu, 30 Jul 2020 09:01:25 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/linux/memory-control/</guid>
+        <guid>http://hugo.jiahongw.com/zh/posts/linux/memory-control/</guid>
         <description>关于程序的装入 绝对装入：绝对映射，程序中逻辑地址与内存物理地址完全相同 （单片机) 可重定位装入：静态映射，在装入时对逻辑地址进行修改 动态运行时</description>
       </item>
       
       <item>
         <title>网络层</title>
-        <link>hugo.jiahongw.com/zh/posts/network/net-level/</link>
+        <link>http://hugo.jiahongw.com/zh/posts/network/net-level/</link>
         <pubDate>Tue, 28 Jul 2020 18:02:38 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/network/net-level/</guid>
+        <guid>http://hugo.jiahongw.com/zh/posts/network/net-level/</guid>
         <description>网络层 网际协议IP是TCP/IP体系中两个最主要的协议之一[STEV94][COME06][FORO10]，也是最重要的因特网标准协议之一。</description>
       </item>
       
       <item>
         <title>Leetcode高频</title>
-        <link>hugo.jiahongw.com/zh/talks/leetcode-hot/</link>
+        <link>http://hugo.jiahongw.com/zh/talks/leetcode-hot/</link>
         <pubDate>Tue, 28 Jul 2020 16:04:50 +0900</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/talks/leetcode-hot/</guid>
+        <guid>http://hugo.jiahongw.com/zh/talks/leetcode-hot/</guid>
         <description>公司 岗位 题目 帖子时间 ==字节跳动 java 剑指 Offer 53 - II. 0～n-1中缺失的数字 2020.07.18== （双指针） ==字节跳动 java 如何判断一个单链表是不是有环 2020.07.18== （快慢指针） ==</description>
       </item>
       
       <item>
         <title>epoll的水平触发与边缘触发</title>
-        <link>hugo.jiahongw.com/zh/posts/linux/epoll-lt-et/</link>
+        <link>http://hugo.jiahongw.com/zh/posts/linux/epoll-lt-et/</link>
         <pubDate>Tue, 28 Jul 2020 12:00:13 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/linux/epoll-lt-et/</guid>
+        <guid>http://hugo.jiahongw.com/zh/posts/linux/epoll-lt-et/</guid>
         <description>描述符的就绪状态有两种判断方法: 边沿触发和水平触发。 水平触发 我认为这是“拉”模式或“民意调查”模式。为了确定描述符是否就绪，进程尝试执行非阻</description>
       </item>
       
       <item>
         <title>Http协议浅析</title>
-        <link>hugo.jiahongw.com/zh/posts/network/http/</link>
+        <link>http://hugo.jiahongw.com/zh/posts/network/http/</link>
         <pubDate>Tue, 28 Jul 2020 11:12:16 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/network/http/</guid>
+        <guid>http://hugo.jiahongw.com/zh/posts/network/http/</guid>
         <description>HTTP/1.x 在早期，HTTP 使用一个简单的模型来处理这样的连接。这些连接的生命周期是短暂的：每发起一个请求时都会创建一个新的连接，并在收到应答时立即关</description>
       </item>
       
       <item>
         <title>interview</title>
-        <link>hugo.jiahongw.com/zh/talks/interview/</link>
+        <link>http://hugo.jiahongw.com/zh/talks/interview/</link>
         <pubDate>Tue, 28 Jul 2020 00:04:50 +0900</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/talks/interview/</guid>
+        <guid>http://hugo.jiahongw.com/zh/talks/interview/</guid>
         <description>Interview C++空类产生哪些成员函数？ 构造、拷贝构造、取地址、、取地址const，赋值、析构 C++ 空类默认产生的类成员函数 TCP三次握手和四次挥手，何时</description>
       </item>
       
       <item>
         <title>高级的二叉树</title>
-        <link>hugo.jiahongw.com/zh/posts/algorithmstructure/bst/</link>
+        <link>http://hugo.jiahongw.com/zh/posts/algorithmstructure/bst/</link>
         <pubDate>Mon, 27 Jul 2020 22:07:13 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/algorithmstructure/bst/</guid>
+        <guid>http://hugo.jiahongw.com/zh/posts/algorithmstructure/bst/</guid>
         <description>&lt;p&gt;树是一种非常实用的结构！🌴&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>使用小书匠在线编写博文</title>
-        <link>hugo.jiahongw.com/zh/posts/hugo/xiaoshujiang/</link>
+        <link>http://hugo.jiahongw.com/zh/posts/hugo/xiaoshujiang/</link>
         <pubDate>Tue, 30 Jun 2020 10:00:11 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/hugo/xiaoshujiang/</guid>
+        <guid>http://hugo.jiahongw.com/zh/posts/hugo/xiaoshujiang/</guid>
         <description>地址：http://markdown.xiaoshujiang.com/ This is a Test!</description>
       </item>
       
       <item>
         <title>UE4获取深度值</title>
-        <link>hugo.jiahongw.com/zh/posts/ue/ue-depth/</link>
+        <link>http://hugo.jiahongw.com/zh/posts/ue/ue-depth/</link>
         <pubDate>Mon, 15 Jun 2020 09:42:11 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/ue/ue-depth/</guid>
+        <guid>http://hugo.jiahongw.com/zh/posts/ue/ue-depth/</guid>
         <description>&lt;p&gt;在UE4中获取深度缓存，调用渲染命令读取。&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>UE游戏、渲染线程</title>
-        <link>hugo.jiahongw.com/zh/posts/ue/ue-game-render/</link>
+        <link>http://hugo.jiahongw.com/zh/posts/ue/ue-game-render/</link>
         <pubDate>Wed, 03 Jun 2020 09:42:11 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/ue/ue-game-render/</guid>
+        <guid>http://hugo.jiahongw.com/zh/posts/ue/ue-game-render/</guid>
         <description>&lt;p&gt;探索UE4游戏线程的进入&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>UE4多线程</title>
-        <link>hugo.jiahongw.com/zh/posts/ue/ue-thread-commuicate/</link>
+        <link>http://hugo.jiahongw.com/zh/posts/ue/ue-thread-commuicate/</link>
         <pubDate>Tue, 02 Jun 2020 20:00:46 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/ue/ue-thread-commuicate/</guid>
+        <guid>http://hugo.jiahongw.com/zh/posts/ue/ue-thread-commuicate/</guid>
         <description>&lt;p&gt;==通常的游戏引擎中游戏线程和渲染线程都是独立的，相互之间会存在一个同步的机制==&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>UE4 Problems</title>
-        <link>hugo.jiahongw.com/zh/talks/ue4-talks/</link>
+        <link>http://hugo.jiahongw.com/zh/talks/ue4-talks/</link>
         <pubDate>Sat, 30 May 2020 20:00:19 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/talks/ue4-talks/</guid>
+        <guid>http://hugo.jiahongw.com/zh/talks/ue4-talks/</guid>
         <description>UE4问题汇总 UE4光照构建失败⚠ https://blog.csdn.net/earlyAutumnOfRain/article/details/80863561 UE4导入灰度图 https://www.cnblogs.com/gucheng/p/10116857.html 详解UE4静态库与动态库的导入与使用 https://gameinstitute.qq.com/community/detail/121551 Ue4_序列化浅析_ https://blog.csdn.net/mohuak/article/details/83027211 UE快捷键 https://www.unrealengine.com/zh-CN/tech-blog/designer-s-guide-to-unreal-engine-keyboard-shortcuts UE4资源加载</description>
       </item>
       
       <item>
         <title>UE4渲染过程</title>
-        <link>hugo.jiahongw.com/zh/posts/ue/ue4-render/</link>
+        <link>http://hugo.jiahongw.com/zh/posts/ue/ue4-render/</link>
         <pubDate>Fri, 29 May 2020 09:42:11 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/ue/ue4-render/</guid>
+        <guid>http://hugo.jiahongw.com/zh/posts/ue/ue4-render/</guid>
         <description>&lt;p&gt;大概介绍以下UE4的主要渲染过程。&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>RSA加密算法</title>
-        <link>hugo.jiahongw.com/zh/posts/mima/rsa/</link>
+        <link>http://hugo.jiahongw.com/zh/posts/mima/rsa/</link>
         <pubDate>Wed, 06 May 2020 16:00:46 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/mima/rsa/</guid>
+        <guid>http://hugo.jiahongw.com/zh/posts/mima/rsa/</guid>
         <description>RSA算法 RSA加密算法是一种非对称加密算法，在公开密钥加密和电子商业中被广泛使用。 对极大整数做因数分解的难度决定了 RSA 算法的可靠性。换言之，</description>
       </item>
       
       <item>
         <title>费马🦓定理</title>
-        <link>hugo.jiahongw.com/zh/posts/math/feima/</link>
+        <link>http://hugo.jiahongw.com/zh/posts/math/feima/</link>
         <pubDate>Wed, 06 May 2020 11:12:38 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/math/feima/</guid>
+        <guid>http://hugo.jiahongw.com/zh/posts/math/feima/</guid>
         <description>&lt;p&gt;费马大定理在数学里有一个特殊的现象，即在于它是错误证明数量最多的数学题。&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>费马🦓定理</title>
-        <link>hugo.jiahongw.com/zh/posts/network/feima/</link>
+        <link>http://hugo.jiahongw.com/zh/posts/network/feima/</link>
         <pubDate>Wed, 06 May 2020 11:12:38 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/network/feima/</guid>
+        <guid>http://hugo.jiahongw.com/zh/posts/network/feima/</guid>
         <description>&lt;p&gt;费马大定理在数学里有一个特殊的现象，即在于它是错误证明数量最多的数学题。&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>使用云监控管理k8s-京东云实践</title>
-        <link>hugo.jiahongw.com/zh/posts/cloud/cloud-kubernetes/</link>
+        <link>http://hugo.jiahongw.com/zh/posts/cloud/cloud-kubernetes/</link>
         <pubDate>Mon, 27 Apr 2020 17:11:37 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/cloud/cloud-kubernetes/</guid>
+        <guid>http://hugo.jiahongw.com/zh/posts/cloud/cloud-kubernetes/</guid>
         <description>操作流程 用到的云产品及服务 序号 云产品 功能及用途 备注 1 容器镜像仓库 用于存放示例demo镜像 2 云编译 编译和打包实例demo代码，同时将镜像推送至</description>
       </item>
       
       <item>
         <title>鲲鹏Learning🏸</title>
-        <link>hugo.jiahongw.com/zh/talks/kubpeng_exercise/</link>
+        <link>http://hugo.jiahongw.com/zh/talks/kubpeng_exercise/</link>
         <pubDate>Sat, 18 Apr 2020 17:13:00 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/talks/kubpeng_exercise/</guid>
+        <guid>http://hugo.jiahongw.com/zh/talks/kubpeng_exercise/</guid>
         <description>[toc] 1. 鲲鹏云服务 鲲鹏处理器与服务器 鲲鹏处理器 华为鲲鹏处理器是华为自主研发的基于ARM架构的企业级系列处理器产品，包含“算、存、传、管、智”五个</description>
       </item>
       
       <item>
         <title>C&#43;&#43;学习路线</title>
-        <link>hugo.jiahongw.com/zh/talks/cpp_router/</link>
+        <link>http://hugo.jiahongw.com/zh/talks/cpp_router/</link>
         <pubDate>Fri, 17 Apr 2020 00:26:00 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/talks/cpp_router/</guid>
+        <guid>http://hugo.jiahongw.com/zh/talks/cpp_router/</guid>
         <description>C++学习路线🌱 hode on!💠</description>
       </item>
       
       <item>
         <title>Linux实用指令</title>
-        <link>hugo.jiahongw.com/zh/posts/linux-grep/</link>
+        <link>http://hugo.jiahongw.com/zh/posts/linux-grep/</link>
         <pubDate>Thu, 16 Apr 2020 10:56:00 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/linux-grep/</guid>
+        <guid>http://hugo.jiahongw.com/zh/posts/linux-grep/</guid>
         <description>&lt;h2 id=&#34;heading&#34;&gt;|&lt;/h2&gt;
 &lt;p&gt;管道符，“|”，表示将前一个命令的处理结果输出传递给后面的命令处理。&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>Linux用户管理</title>
-        <link>hugo.jiahongw.com/zh/posts/linux-users/</link>
+        <link>http://hugo.jiahongw.com/zh/posts/linux-users/</link>
         <pubDate>Wed, 15 Apr 2020 16:34:03 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/linux-users/</guid>
+        <guid>http://hugo.jiahongw.com/zh/posts/linux-users/</guid>
         <description>&lt;p&gt;每一个用户都是一个个体，每一个个体都属于一个群组，而每一个群组又有区别!&lt;/p&gt;
 &lt;p&gt;——Users&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>Linux编辑利器-Vim</title>
-        <link>hugo.jiahongw.com/zh/posts/linux/vim-use/</link>
+        <link>http://hugo.jiahongw.com/zh/posts/linux/vim-use/</link>
         <pubDate>Mon, 13 Apr 2020 23:01:25 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/linux/vim-use/</guid>
+        <guid>http://hugo.jiahongw.com/zh/posts/linux/vim-use/</guid>
         <description>&lt;p&gt;在大学时代，Vim 的大名就已如雷贯耳，但由于它陡峭的学习曲线，一直望而却步。等真正开始学习之后，发现并没有想象中的复杂，也没有所谓的瓶颈，只要在实际写代码中强迫自己使用就可以了，无形中就会形成习惯。&lt;/p&gt;
 &lt;p&gt;​																														——&lt;a href=&#34;https://geekplux.com/&#34;&gt;GeekPlux&lt;/a&gt;&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>Leetcode-最长回文子串</title>
-        <link>hugo.jiahongw.com/zh/posts/leetcode-0/</link>
+        <link>http://hugo.jiahongw.com/zh/posts/leetcode-0/</link>
         <pubDate>Sun, 12 Apr 2020 19:26:20 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/leetcode-0/</guid>
+        <guid>http://hugo.jiahongw.com/zh/posts/leetcode-0/</guid>
         <description>&lt;h3 id=&#34;问题描述&#34;&gt;问题描述&lt;/h3&gt;
 &lt;p&gt;给定一个字符串 &lt;code&gt;s&lt;/code&gt;，找到 &lt;code&gt;s&lt;/code&gt; 中最长的回文子串。你可以假设 &lt;code&gt;s&lt;/code&gt; 的最大长度为 1000。&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>Linux命令与Shell</title>
-        <link>hugo.jiahongw.com/zh/posts/linux/linux-shell/</link>
+        <link>http://hugo.jiahongw.com/zh/posts/linux/linux-shell/</link>
         <pubDate>Sat, 11 Apr 2020 23:24:18 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/linux/linux-shell/</guid>
+        <guid>http://hugo.jiahongw.com/zh/posts/linux/linux-shell/</guid>
         <description>&lt;p&gt;Linux基本操作。🤠&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>入门Docker</title>
-        <link>hugo.jiahongw.com/zh/posts/docker-begin/</link>
+        <link>http://hugo.jiahongw.com/zh/posts/docker-begin/</link>
         <pubDate>Thu, 09 Apr 2020 17:00:28 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/docker-begin/</guid>
+        <guid>http://hugo.jiahongw.com/zh/posts/docker-begin/</guid>
         <description>&lt;p&gt;Docker是基于内核的容器,可以运行在宿主机上,看作是一个容器.&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>C&#43;&#43;动态与静态</title>
-        <link>hugo.jiahongw.com/zh/posts/cpp-duotai/</link>
+        <link>http://hugo.jiahongw.com/zh/posts/cpp-duotai/</link>
         <pubDate>Sun, 05 Apr 2020 15:05:37 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/cpp-duotai/</guid>
+        <guid>http://hugo.jiahongw.com/zh/posts/cpp-duotai/</guid>
         <description>&lt;p&gt;C++特性之多态🍄&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>C文件读写</title>
-        <link>hugo.jiahongw.com/zh/posts/c-read-write/</link>
+        <link>http://hugo.jiahongw.com/zh/posts/c-read-write/</link>
         <pubDate>Sat, 04 Apr 2020 23:32:40 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/c-read-write/</guid>
+        <guid>http://hugo.jiahongw.com/zh/posts/c-read-write/</guid>
         <description>&lt;p&gt;c文件读写🗃&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>在markdown使用html</title>
-        <link>hugo.jiahongw.com/zh/posts/markdown-html/</link>
+        <link>http://hugo.jiahongw.com/zh/posts/markdown-html/</link>
         <pubDate>Sat, 04 Apr 2020 00:58:33 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/markdown-html/</guid>
+        <guid>http://hugo.jiahongw.com/zh/posts/markdown-html/</guid>
         <description>&lt;p&gt;在markdown文件中嵌入&lt;code&gt;html&lt;/code&gt;代码.🛶&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>Udp-Tcp编程</title>
-        <link>hugo.jiahongw.com/zh/posts/udp-tcp/</link>
+        <link>http://hugo.jiahongw.com/zh/posts/udp-tcp/</link>
         <pubDate>Fri, 03 Apr 2020 21:42:11 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/udp-tcp/</guid>
+        <guid>http://hugo.jiahongw.com/zh/posts/udp-tcp/</guid>
         <description>&lt;p&gt;TCP/IP编程&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>Git免密push</title>
-        <link>hugo.jiahongw.com/zh/posts/git-push-no-pw/</link>
+        <link>http://hugo.jiahongw.com/zh/posts/git-push-no-pw/</link>
         <pubDate>Fri, 03 Apr 2020 19:07:07 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/git-push-no-pw/</guid>
+        <guid>http://hugo.jiahongw.com/zh/posts/git-push-no-pw/</guid>
         <description>&lt;p&gt;每次push都需要输入用户名和密码,其实可以免去这些操作.🚛&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>Aes-高级加密标准</title>
-        <link>hugo.jiahongw.com/zh/posts/mima/aes/</link>
+        <link>http://hugo.jiahongw.com/zh/posts/mima/aes/</link>
         <pubDate>Fri, 03 Apr 2020 14:20:19 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/mima/aes/</guid>
+        <guid>http://hugo.jiahongw.com/zh/posts/mima/aes/</guid>
         <description>&lt;p&gt;AES算法是继DES之后比较快且比较简单的加密算法.⚖&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>行云开发</title>
-        <link>hugo.jiahongw.com/zh/posts/xingyun-begin/</link>
+        <link>http://hugo.jiahongw.com/zh/posts/xingyun-begin/</link>
         <pubDate>Wed, 01 Apr 2020 17:12:29 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/xingyun-begin/</guid>
+        <guid>http://hugo.jiahongw.com/zh/posts/xingyun-begin/</guid>
         <description>&lt;p&gt;简单地说，云计算就是计算服务的提供（包括服务器、存储、数据库、网络、软件、分析和智能）- 通过 Internet（云）提供快速创新、弹性资源和规模经济。对于云服务，通常你只需使用多少支付多少，从而帮助降低运营成本，使基础设施更有效地运行，并能根据业务需求的变化调整对服务的使用。&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>分布式-Redis</title>
-        <link>hugo.jiahongw.com/zh/posts/redis/</link>
+        <link>http://hugo.jiahongw.com/zh/posts/redis/</link>
         <pubDate>Wed, 18 Mar 2020 01:00:46 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/redis/</guid>
+        <guid>http://hugo.jiahongw.com/zh/posts/redis/</guid>
         <description>&lt;p&gt;。。集万滴雨水，成一条江河🌊🌊&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>什么是Hash？</title>
-        <link>hugo.jiahongw.com/zh/posts/hash/</link>
+        <link>http://hugo.jiahongw.com/zh/posts/hash/</link>
         <pubDate>Tue, 17 Mar 2020 15:12:38 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/hash/</guid>
+        <guid>http://hugo.jiahongw.com/zh/posts/hash/</guid>
         <description>&lt;p&gt;走得慢的时候，为什么不跑呢？#️⃣&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>排序算法总结</title>
-        <link>hugo.jiahongw.com/zh/posts/algorithmstructure/sort/</link>
+        <link>http://hugo.jiahongw.com/zh/posts/algorithmstructure/sort/</link>
         <pubDate>Wed, 11 Mar 2020 22:07:13 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/algorithmstructure/sort/</guid>
+        <guid>http://hugo.jiahongw.com/zh/posts/algorithmstructure/sort/</guid>
         <description>&lt;p&gt;排序是最基本的算法，里面包含了最基础的思想。一个简单的优化可以让排序快很多。&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>机器学习基本算法</title>
-        <link>hugo.jiahongw.com/zh/posts/machine-learning-base/</link>
+        <link>http://hugo.jiahongw.com/zh/posts/machine-learning-base/</link>
         <pubDate>Sun, 08 Mar 2020 23:33:24 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/machine-learning-base/</guid>
+        <guid>http://hugo.jiahongw.com/zh/posts/machine-learning-base/</guid>
         <description>&lt;p&gt;机器学习有这些基本的算法组成，要门机器学习，就需要打个地基✒&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>Hero</title>
-        <link>hugo.jiahongw.com/zh/gallery/hero/</link>
+        <link>http://hugo.jiahongw.com/zh/gallery/hero/</link>
         <pubDate>Wed, 04 Mar 2020 22:30:46 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/gallery/hero/</guid>
+        <guid>http://hugo.jiahongw.com/zh/gallery/hero/</guid>
         <description>一些英雄的图案🌿</description>
       </item>
       
       <item>
         <title>Scrapy框架</title>
-        <link>hugo.jiahongw.com/zh/posts/spider/scrapy-1/</link>
+        <link>http://hugo.jiahongw.com/zh/posts/spider/scrapy-1/</link>
         <pubDate>Wed, 04 Mar 2020 16:35:09 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/spider/scrapy-1/</guid>
+        <guid>http://hugo.jiahongw.com/zh/posts/spider/scrapy-1/</guid>
         <description>&lt;p&gt;使用Scrapy爬取文章的一个小项目..&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>Tools</title>
-        <link>hugo.jiahongw.com/zh/talks/tools/</link>
+        <link>http://hugo.jiahongw.com/zh/talks/tools/</link>
         <pubDate>Wed, 04 Mar 2020 16:20:19 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/talks/tools/</guid>
+        <guid>http://hugo.jiahongw.com/zh/talks/tools/</guid>
         <description>&lt;p&gt;好的工具🗝  就成功了一半。&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>Good库</title>
-        <link>hugo.jiahongw.com/zh/talks/github-lib/</link>
+        <link>http://hugo.jiahongw.com/zh/talks/github-lib/</link>
         <pubDate>Wed, 04 Mar 2020 16:16:05 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/talks/github-lib/</guid>
+        <guid>http://hugo.jiahongw.com/zh/talks/github-lib/</guid>
         <description>&lt;p&gt;All about Intresting in Github.&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>视频的收集</title>
-        <link>hugo.jiahongw.com/zh/posts/settings/collect-videos/</link>
+        <link>http://hugo.jiahongw.com/zh/posts/settings/collect-videos/</link>
         <pubDate>Mon, 02 Mar 2020 01:19:51 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/settings/collect-videos/</guid>
+        <guid>http://hugo.jiahongw.com/zh/posts/settings/collect-videos/</guid>
         <description>&lt;p&gt;🚴一些收集视频的方法⚒&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>Slides和网页PPT</title>
-        <link>hugo.jiahongw.com/zh/posts/settings/ppt-use/</link>
+        <link>http://hugo.jiahongw.com/zh/posts/settings/ppt-use/</link>
         <pubDate>Sun, 01 Mar 2020 15:18:15 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/settings/ppt-use/</guid>
+        <guid>http://hugo.jiahongw.com/zh/posts/settings/ppt-use/</guid>
         <description>&lt;p&gt;在Pt页面增加了一些用JS实现的PPT，主要展示一些效果。🔌&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>Mypt</title>
-        <link>hugo.jiahongw.com/zh/presentation/mypt/</link>
+        <link>http://hugo.jiahongw.com/zh/presentation/mypt/</link>
         <pubDate>Sun, 01 Mar 2020 00:24:52 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/presentation/mypt/</guid>
+        <guid>http://hugo.jiahongw.com/zh/presentation/mypt/</guid>
         <description></description>
       </item>
       
       <item>
         <title>Resume</title>
-        <link>hugo.jiahongw.com/zh/resume/</link>
+        <link>http://hugo.jiahongw.com/zh/resume/</link>
         <pubDate>Sat, 29 Feb 2020 20:13:59 +0900</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/resume/</guid>
+        <guid>http://hugo.jiahongw.com/zh/resume/</guid>
         <description></description>
       </item>
       
       <item>
         <title>Data Analysis Begin</title>
-        <link>hugo.jiahongw.com/zh/posts/bigdata/data-analysis-begin/</link>
+        <link>http://hugo.jiahongw.com/zh/posts/bigdata/data-analysis-begin/</link>
         <pubDate>Mon, 24 Feb 2020 13:46:59 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/bigdata/data-analysis-begin/</guid>
+        <guid>http://hugo.jiahongw.com/zh/posts/bigdata/data-analysis-begin/</guid>
         <description>&lt;p&gt;数据分析，begin！📅&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>MXNet回顾</title>
-        <link>hugo.jiahongw.com/zh/posts/dl/mxnet-begin/</link>
+        <link>http://hugo.jiahongw.com/zh/posts/dl/mxnet-begin/</link>
         <pubDate>Sun, 23 Feb 2020 15:49:10 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/dl/mxnet-begin/</guid>
+        <guid>http://hugo.jiahongw.com/zh/posts/dl/mxnet-begin/</guid>
         <description>&lt;p&gt;使用MXNet的好处你永远想象不到。🉑&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>Pytorch Begin</title>
-        <link>hugo.jiahongw.com/zh/posts/dl/pytorch-begin/</link>
+        <link>http://hugo.jiahongw.com/zh/posts/dl/pytorch-begin/</link>
         <pubDate>Sat, 22 Feb 2020 22:49:28 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/dl/pytorch-begin/</guid>
+        <guid>http://hugo.jiahongw.com/zh/posts/dl/pytorch-begin/</guid>
         <description>&lt;p&gt;重新学习一下DL，这次使用PyTorch框架🔦&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>2020翻墙指南👈</title>
-        <link>hugo.jiahongw.com/zh/posts/settings/2020-fanqiang/</link>
+        <link>http://hugo.jiahongw.com/zh/posts/settings/2020-fanqiang/</link>
         <pubDate>Sat, 15 Feb 2020 16:10:21 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/settings/2020-fanqiang/</guid>
+        <guid>http://hugo.jiahongw.com/zh/posts/settings/2020-fanqiang/</guid>
         <description>&lt;p&gt;一份还算可以的翻墙清单📇&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>Markdown深入使用</title>
-        <link>hugo.jiahongw.com/zh/posts/settings/markdown-deep/</link>
+        <link>http://hugo.jiahongw.com/zh/posts/settings/markdown-deep/</link>
         <pubDate>Fri, 14 Feb 2020 16:12:40 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/settings/markdown-deep/</guid>
+        <guid>http://hugo.jiahongw.com/zh/posts/settings/markdown-deep/</guid>
         <description>&lt;p&gt;👱‍♀介绍一些markdown中比较实用的一些写作方法。&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>几款好用的图床</title>
-        <link>hugo.jiahongw.com/zh/posts/settings/free-image-bed/</link>
+        <link>http://hugo.jiahongw.com/zh/posts/settings/free-image-bed/</link>
         <pubDate>Thu, 13 Feb 2020 22:31:22 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/settings/free-image-bed/</guid>
+        <guid>http://hugo.jiahongw.com/zh/posts/settings/free-image-bed/</guid>
         <description>SM.MS sm.ms 支持的图片格式包括 JPG、JPEG、GIF、PNG 及 BMP，单档不超过 5 MB，单次可上传图片最大 10 张。图片永久保存，请勿上传政治相关图片</description>
       </item>
       
       <item>
         <title>Freenom 免费域名申请</title>
-        <link>hugo.jiahongw.com/zh/posts/settings/freenom-domain/</link>
+        <link>http://hugo.jiahongw.com/zh/posts/settings/freenom-domain/</link>
         <pubDate>Thu, 13 Feb 2020 15:12:33 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/settings/freenom-domain/</guid>
+        <guid>http://hugo.jiahongw.com/zh/posts/settings/freenom-domain/</guid>
         <description>&lt;p&gt;&lt;a href=&#34;https://my.freenom.com/&#34;&gt;Freenom&lt;/a&gt; 是目前为数不多的免费域名提供商，提供 &lt;code&gt;.ga&lt;/code&gt;, &lt;code&gt;.ml&lt;/code&gt;, &lt;code&gt;.gq&lt;/code&gt;, &lt;code&gt;.tk&lt;/code&gt;, &lt;code&gt;.cf&lt;/code&gt; 五个免费顶级域。当然也有一些付费的域名，对于普通人来说，免费域名就够了。&lt;span&gt;&lt;code&gt;😏&lt;/code&gt;&lt;/span&gt;&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>MinGW在Windows的使用</title>
-        <link>hugo.jiahongw.com/zh/posts/settings/mingw-use/</link>
+        <link>http://hugo.jiahongw.com/zh/posts/settings/mingw-use/</link>
         <pubDate>Tue, 11 Feb 2020 18:01:16 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/settings/mingw-use/</guid>
+        <guid>http://hugo.jiahongw.com/zh/posts/settings/mingw-use/</guid>
         <description>&lt;p&gt;安装&lt;code&gt;MinGW&lt;/code&gt;之后，我们可以那它来作为C或C++的编译器.&lt;span&gt;&lt;code&gt;🕸&lt;/code&gt;&lt;/span&gt;&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>Hugo配置</title>
-        <link>hugo.jiahongw.com/zh/posts/hugo/first/</link>
+        <link>http://hugo.jiahongw.com/zh/posts/hugo/first/</link>
         <pubDate>Mon, 10 Feb 2020 20:50:09 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/hugo/first/</guid>
+        <guid>http://hugo.jiahongw.com/zh/posts/hugo/first/</guid>
         <description>HUGO + Github + Github Action持续集成部署个人博客 HUGO本地环境 首先在HUGO的官网下载Hugo的Windows安装包，然后将路径添加到环境变量即</description>
       </item>
       
       <item>
         <title>配置基于Github的PicGo图床</title>
-        <link>hugo.jiahongw.com/zh/posts/settings/image-bed/</link>
+        <link>http://hugo.jiahongw.com/zh/posts/settings/image-bed/</link>
         <pubDate>Tue, 04 Feb 2020 23:51:21 +0900</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/settings/image-bed/</guid>
+        <guid>http://hugo.jiahongw.com/zh/posts/settings/image-bed/</guid>
         <description>&lt;p&gt;使用Github+PicGo建立一个免费的个人图床。&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>windows下gcc的安装和使用</title>
-        <link>hugo.jiahongw.com/zh/posts/settings/gcc-windows/</link>
+        <link>http://hugo.jiahongw.com/zh/posts/settings/gcc-windows/</link>
         <pubDate>Tue, 04 Feb 2020 16:41:18 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/settings/gcc-windows/</guid>
+        <guid>http://hugo.jiahongw.com/zh/posts/settings/gcc-windows/</guid>
         <description>&lt;p&gt;写在源文件中的源代码是人类可读的源。它需要&amp;quot;编译&amp;rdquo;，转为机器语言，这样 CPU 可以按给定指令执行程序。C 语言编译器用于把源代码编译成最终的可执行程序。&lt;span&gt;&lt;code&gt;🐤&lt;/code&gt;&lt;/span&gt;&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>About</title>
-        <link>hugo.jiahongw.com/zh/about/</link>
+        <link>http://hugo.jiahongw.com/zh/about/</link>
         <pubDate>Thu, 30 Jan 2020 12:50:46 +0900</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/about/</guid>
+        <guid>http://hugo.jiahongw.com/zh/about/</guid>
         <description>我是一个不够严谨的程序员🙉. 我喜欢📖,还有🏓. 或许有时候我想的不够远，但是有时候我想的很深入。 我最喜欢的 Aaron Swartz 语录: 在长大的过程中，我才慢慢发</description>
       </item>
       
       <item>
         <title>Shortcodes</title>
-        <link>hugo.jiahongw.com/zh/posts/hugo/shortcodes/</link>
+        <link>http://hugo.jiahongw.com/zh/posts/hugo/shortcodes/</link>
         <pubDate>Sat, 25 Jan 2020 06:40:51 +0900</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/hugo/shortcodes/</guid>
+        <guid>http://hugo.jiahongw.com/zh/posts/hugo/shortcodes/</guid>
         <description>Markdownify box This is boxmd shortcode Simple box This is **box** shortcode  Code tabs Make it easy to switch between different code
 java javascript  1  System.out.println(&amp;#39;Hello World!&amp;#39;);     1  console.log(&amp;#39;Hello World!&amp;#39;);       &#39;use strict&#39;; var containerId = JSON.parse(&#34;\&#34;642b4352e05d9e04\&#34;&#34;); var containerElem = document.getElementById(containerId); var codetabLinks = null; var codetabContents = null; var ids = []; if (containerElem) { codetabLinks = containerElem.</description>
       </item>
       
       <item>
         <title>My Awesome links</title>
-        <link>hugo.jiahongw.com/zh/talks/mylinks/</link>
+        <link>http://hugo.jiahongw.com/zh/talks/mylinks/</link>
         <pubDate>Tue, 31 Dec 2019 00:04:50 +0900</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/talks/mylinks/</guid>
+        <guid>http://hugo.jiahongw.com/zh/talks/mylinks/</guid>
         <description>A Short Video： ——以下 Aaron Swartz的宣言，我想这才是信息革命的真谛—— 信息就是力量。但就像所有力量一样，有些人只想占为己有。世界上所有的</description>
       </item>
       
       <item>
         <title>Contact📧</title>
-        <link>hugo.jiahongw.com/zh/contact/</link>
+        <link>http://hugo.jiahongw.com/zh/contact/</link>
         <pubDate>Tue, 17 Dec 2019 23:58:33 +0900</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/contact/</guid>
+        <guid>http://hugo.jiahongw.com/zh/contact/</guid>
         <description></description>
       </item>
       
       <item>
         <title>life</title>
-        <link>hugo.jiahongw.com/zh/gallery/life/</link>
+        <link>http://hugo.jiahongw.com/zh/gallery/life/</link>
         <pubDate>Thu, 31 Oct 2019 10:20:16 +0900</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/gallery/life/</guid>
+        <guid>http://hugo.jiahongw.com/zh/gallery/life/</guid>
         <description>Sample images about life.</description>
       </item>
       
       <item>
         <title>movie</title>
-        <link>hugo.jiahongw.com/zh/gallery/movie/</link>
+        <link>http://hugo.jiahongw.com/zh/gallery/movie/</link>
         <pubDate>Thu, 31 Oct 2019 10:20:16 +0900</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/gallery/movie/</guid>
+        <guid>http://hugo.jiahongw.com/zh/gallery/movie/</guid>
         <description>between 70 and 240 in movies good movies！🎥</description>
       </item>
       
       <item>
         <title>Fourth</title>
-        <link>hugo.jiahongw.com/zh/presentation/dir/fourth/</link>
+        <link>http://hugo.jiahongw.com/zh/presentation/dir/fourth/</link>
         <pubDate>Wed, 30 Oct 2019 20:48:10 +0900</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/presentation/dir/fourth/</guid>
+        <guid>http://hugo.jiahongw.com/zh/presentation/dir/fourth/</guid>
         <description></description>
       </item>
       
       <item>
         <title>Third</title>
-        <link>hugo.jiahongw.com/zh/presentation/third/</link>
+        <link>http://hugo.jiahongw.com/zh/presentation/third/</link>
         <pubDate>Wed, 30 Oct 2019 20:46:30 +0900</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/presentation/third/</guid>
+        <guid>http://hugo.jiahongw.com/zh/presentation/third/</guid>
         <description></description>
       </item>
       
       <item>
         <title>Second</title>
-        <link>hugo.jiahongw.com/zh/presentation/second/</link>
+        <link>http://hugo.jiahongw.com/zh/presentation/second/</link>
         <pubDate>Wed, 30 Oct 2019 20:45:24 +0900</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/presentation/second/</guid>
+        <guid>http://hugo.jiahongw.com/zh/presentation/second/</guid>
         <description></description>
       </item>
       
       <item>
         <title>B站视频</title>
-        <link>hugo.jiahongw.com/zh/talks/blibli/</link>
+        <link>http://hugo.jiahongw.com/zh/talks/blibli/</link>
         <pubDate>Fri, 01 Mar 2019 00:04:50 +0900</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/talks/blibli/</guid>
+        <guid>http://hugo.jiahongw.com/zh/talks/blibli/</guid>
         <description>一个测试视频:</description>
       </item>
       
       <item>
         <title></title>
-        <link>hugo.jiahongw.com/zh/posts/ue/ue-hitproxy/</link>
+        <link>http://hugo.jiahongw.com/zh/posts/ue/ue-hitproxy/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/ue/ue-hitproxy/</guid>
+        <guid>http://hugo.jiahongw.com/zh/posts/ue/ue-hitproxy/</guid>
         <description>UE编辑器下模拟使用HitProxy 需要从 UGameViewportClient 类继承 修改返回值为true,路径：\Source\Runtime\Engine\Private\GameViewportClient.h
 1  virtual bool RequiresHitProxyStorage() override { return true; }   在FViewportClient类中新建DrawHitProxy函数 文件UnrealClient.h
 在GameViewportClient类中声明并且实现 声明：\Source\Runtime\Engine\Private\GameViewportClient.h
@@ -734,10 +734,10 @@ FHitProxyMap：从2D坐标到缓存命中代理的地图。
       
       <item>
         <title>好的搜索引擎</title>
-        <link>hugo.jiahongw.com/zh/presentation/search/</link>
+        <link>http://hugo.jiahongw.com/zh/presentation/search/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/presentation/search/</guid>
+        <guid>http://hugo.jiahongw.com/zh/presentation/search/</guid>
         <description></description>
       </item>
       
