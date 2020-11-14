@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>tar on ✏Victor&#39;s Blog</title>
-    <link>hugo.jiahongw.com/zh/tags/tar/</link>
+    <link>https://hugo.jiahongw.com/zh/tags/tar/</link>
     <description>Recent content in tar on ✏Victor&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
@@ -11,17 +11,17 @@
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Thu, 16 Apr 2020 10:56:00 +0800</lastBuildDate>
     
-        <atom:link href="hugo.jiahongw.com/zh/tags/tar/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://hugo.jiahongw.com/zh/tags/tar/index.xml" rel="self" type="application/rss+xml" />
     
     
     
       
       <item>
         <title>Linux实用指令</title>
-        <link>hugo.jiahongw.com/zh/posts/linux-grep/</link>
+        <link>https://hugo.jiahongw.com/zh/posts/linux-grep/</link>
         <pubDate>Thu, 16 Apr 2020 10:56:00 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/linux-grep/</guid>
+        <guid>https://hugo.jiahongw.com/zh/posts/linux-grep/</guid>
         <description>&lt;h2 id=&#34;heading&#34;&gt;|&lt;/h2&gt;
 &lt;p&gt;管道符，“|”，表示将前一个命令的处理结果输出传递给后面的命令处理。&lt;/p&gt;</description>
       </item>

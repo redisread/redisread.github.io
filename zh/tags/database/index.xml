@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Database on ✏Victor&#39;s Blog</title>
-    <link>hugo.jiahongw.com/zh/tags/database/</link>
+    <link>https://hugo.jiahongw.com/zh/tags/database/</link>
     <description>Recent content in Database on ✏Victor&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
@@ -11,26 +11,26 @@
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Sat, 15 Aug 2020 21:45:25 +0800</lastBuildDate>
     
-        <atom:link href="hugo.jiahongw.com/zh/tags/database/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://hugo.jiahongw.com/zh/tags/database/index.xml" rel="self" type="application/rss+xml" />
     
     
     
       
       <item>
         <title>数据库知识(2)</title>
-        <link>hugo.jiahongw.com/zh/posts/database/db2/</link>
+        <link>https://hugo.jiahongw.com/zh/posts/database/db2/</link>
         <pubDate>Sat, 15 Aug 2020 21:45:25 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/database/db2/</guid>
+        <guid>https://hugo.jiahongw.com/zh/posts/database/db2/</guid>
         <description>mysql的MVCC机制 MVCC的维基百科解释：多版本并发控制(Multiversion concurrency control， MCC 或 MVCC)，是数据库管理系统常</description>
       </item>
       
       <item>
         <title>数据库知识(1)</title>
-        <link>hugo.jiahongw.com/zh/posts/database/db1/</link>
+        <link>https://hugo.jiahongw.com/zh/posts/database/db1/</link>
         <pubDate>Fri, 14 Aug 2020 09:01:25 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/database/db1/</guid>
+        <guid>https://hugo.jiahongw.com/zh/posts/database/db1/</guid>
         <description>&lt;h3 id=&#34;数据库事务&#34;&gt;数据库事务&lt;/h3&gt;
 &lt;p&gt;事务（Transaction）是由一系列对系统中数据进行访问与更新的操作所组成的一个程序执行逻辑单元。事务是DBMS中最基础的单位，事务不可分割。&lt;/p&gt;</description>
       </item>

@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Linux on ✏Victor&#39;s Blog</title>
-    <link>hugo.jiahongw.com/zh/series/linux/</link>
+    <link>https://hugo.jiahongw.com/zh/series/linux/</link>
     <description>Recent content in Linux on ✏Victor&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
@@ -11,55 +11,55 @@
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Thu, 30 Jul 2020 09:01:25 +0800</lastBuildDate>
     
-        <atom:link href="hugo.jiahongw.com/zh/series/linux/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://hugo.jiahongw.com/zh/series/linux/index.xml" rel="self" type="application/rss+xml" />
     
     
     
       
       <item>
         <title>Linux内存管理</title>
-        <link>hugo.jiahongw.com/zh/posts/linux/memory-control/</link>
+        <link>https://hugo.jiahongw.com/zh/posts/linux/memory-control/</link>
         <pubDate>Thu, 30 Jul 2020 09:01:25 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/linux/memory-control/</guid>
+        <guid>https://hugo.jiahongw.com/zh/posts/linux/memory-control/</guid>
         <description>关于程序的装入 绝对装入：绝对映射，程序中逻辑地址与内存物理地址完全相同 （单片机) 可重定位装入：静态映射，在装入时对逻辑地址进行修改 动态运行时</description>
       </item>
       
       <item>
         <title>epoll的水平触发与边缘触发</title>
-        <link>hugo.jiahongw.com/zh/posts/linux/epoll-lt-et/</link>
+        <link>https://hugo.jiahongw.com/zh/posts/linux/epoll-lt-et/</link>
         <pubDate>Tue, 28 Jul 2020 12:00:13 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/linux/epoll-lt-et/</guid>
+        <guid>https://hugo.jiahongw.com/zh/posts/linux/epoll-lt-et/</guid>
         <description>描述符的就绪状态有两种判断方法: 边沿触发和水平触发。 水平触发 我认为这是“拉”模式或“民意调查”模式。为了确定描述符是否就绪，进程尝试执行非阻</description>
       </item>
       
       <item>
         <title>Linux实用指令</title>
-        <link>hugo.jiahongw.com/zh/posts/linux-grep/</link>
+        <link>https://hugo.jiahongw.com/zh/posts/linux-grep/</link>
         <pubDate>Thu, 16 Apr 2020 10:56:00 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/linux-grep/</guid>
+        <guid>https://hugo.jiahongw.com/zh/posts/linux-grep/</guid>
         <description>&lt;h2 id=&#34;heading&#34;&gt;|&lt;/h2&gt;
 &lt;p&gt;管道符，“|”，表示将前一个命令的处理结果输出传递给后面的命令处理。&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>Linux用户管理</title>
-        <link>hugo.jiahongw.com/zh/posts/linux-users/</link>
+        <link>https://hugo.jiahongw.com/zh/posts/linux-users/</link>
         <pubDate>Wed, 15 Apr 2020 16:34:03 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/linux-users/</guid>
+        <guid>https://hugo.jiahongw.com/zh/posts/linux-users/</guid>
         <description>&lt;p&gt;每一个用户都是一个个体，每一个个体都属于一个群组，而每一个群组又有区别!&lt;/p&gt;
 &lt;p&gt;——Users&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>Linux编辑利器-Vim</title>
-        <link>hugo.jiahongw.com/zh/posts/linux/vim-use/</link>
+        <link>https://hugo.jiahongw.com/zh/posts/linux/vim-use/</link>
         <pubDate>Mon, 13 Apr 2020 23:01:25 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>hugo.jiahongw.com/zh/posts/linux/vim-use/</guid>
+        <guid>https://hugo.jiahongw.com/zh/posts/linux/vim-use/</guid>
         <description>&lt;p&gt;在大学时代，Vim 的大名就已如雷贯耳，但由于它陡峭的学习曲线，一直望而却步。等真正开始学习之后，发现并没有想象中的复杂，也没有所谓的瓶颈，只要在实际写代码中强迫自己使用就可以了，无形中就会形成习惯。&lt;/p&gt;
 &lt;p&gt;​																														——&lt;a href=&#34;https://geekplux.com/&#34;&gt;GeekPlux&lt;/a&gt;&lt;/p&gt;</description>
       </item>
