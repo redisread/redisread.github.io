@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>shortcode on ✏Victor&#39;s Blog</title>
-    <link>/zh/tags/shortcode/</link>
+    <link>hugo.jiahongw.com/zh/tags/shortcode/</link>
     <description>Recent content in shortcode on ✏Victor&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
@@ -11,17 +11,17 @@
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Sat, 25 Jan 2020 06:40:51 +0900</lastBuildDate>
     
-        <atom:link href="/zh/tags/shortcode/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="hugo.jiahongw.com/zh/tags/shortcode/index.xml" rel="self" type="application/rss+xml" />
     
     
     
       
       <item>
         <title>Shortcodes</title>
-        <link>/zh/posts/hugo/shortcodes/</link>
+        <link>hugo.jiahongw.com/zh/posts/hugo/shortcodes/</link>
         <pubDate>Sat, 25 Jan 2020 06:40:51 +0900</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>/zh/posts/hugo/shortcodes/</guid>
+        <guid>hugo.jiahongw.com/zh/posts/hugo/shortcodes/</guid>
         <description>Markdownify box This is boxmd shortcode Simple box This is **box** shortcode  Code tabs Make it easy to switch between different code
 java javascript  1  System.out.println(&amp;#39;Hello World!&amp;#39;);     1  console.log(&amp;#39;Hello World!&amp;#39;);       &#39;use strict&#39;; var containerId = JSON.parse(&#34;\&#34;642b4352e05d9e04\&#34;&#34;); var containerElem = document.getElementById(containerId); var codetabLinks = null; var codetabContents = null; var ids = []; if (containerElem) { codetabLinks = containerElem.</description>
       </item>

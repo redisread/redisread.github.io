@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Math on ✏Victor&#39;s Blog</title>
-    <link>/zh/series/math/</link>
+    <link>hugo.jiahongw.com/zh/series/math/</link>
     <description>Recent content in Math on ✏Victor&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
@@ -11,35 +11,35 @@
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Wed, 06 May 2020 11:12:38 +0800</lastBuildDate>
     
-        <atom:link href="/zh/series/math/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="hugo.jiahongw.com/zh/series/math/index.xml" rel="self" type="application/rss+xml" />
     
     
     
       
       <item>
         <title>费马🦓定理</title>
-        <link>/zh/posts/math/feima/</link>
+        <link>hugo.jiahongw.com/zh/posts/math/feima/</link>
         <pubDate>Wed, 06 May 2020 11:12:38 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>/zh/posts/math/feima/</guid>
+        <guid>hugo.jiahongw.com/zh/posts/math/feima/</guid>
         <description>&lt;p&gt;费马大定理在数学里有一个特殊的现象，即在于它是错误证明数量最多的数学题。&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>费马🦓定理</title>
-        <link>/zh/posts/network/feima/</link>
+        <link>hugo.jiahongw.com/zh/posts/network/feima/</link>
         <pubDate>Wed, 06 May 2020 11:12:38 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>/zh/posts/network/feima/</guid>
+        <guid>hugo.jiahongw.com/zh/posts/network/feima/</guid>
         <description>&lt;p&gt;费马大定理在数学里有一个特殊的现象，即在于它是错误证明数量最多的数学题。&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>Data Analysis Begin</title>
-        <link>/zh/posts/bigdata/data-analysis-begin/</link>
+        <link>hugo.jiahongw.com/zh/posts/bigdata/data-analysis-begin/</link>
         <pubDate>Mon, 24 Feb 2020 13:46:59 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>/zh/posts/bigdata/data-analysis-begin/</guid>
+        <guid>hugo.jiahongw.com/zh/posts/bigdata/data-analysis-begin/</guid>
         <description>&lt;p&gt;数据分析，begin！📅&lt;/p&gt;</description>
       </item>
       

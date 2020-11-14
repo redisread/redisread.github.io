@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Talks on ✏Victor&#39;s Blog</title>
-    <link>/zh/talks/</link>
+    <link>hugo.jiahongw.com/zh/talks/</link>
     <description>Recent content in Talks on ✏Victor&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
@@ -11,89 +11,89 @@
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Mon, 30 Dec 2019 11:14:14 +0900</lastBuildDate>
     
-        <atom:link href="/zh/talks/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="hugo.jiahongw.com/zh/talks/index.xml" rel="self" type="application/rss+xml" />
     
     
     
       
       <item>
         <title>Leetcode高频</title>
-        <link>/zh/talks/leetcode-hot/</link>
+        <link>hugo.jiahongw.com/zh/talks/leetcode-hot/</link>
         <pubDate>Tue, 28 Jul 2020 16:04:50 +0900</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>/zh/talks/leetcode-hot/</guid>
+        <guid>hugo.jiahongw.com/zh/talks/leetcode-hot/</guid>
         <description>公司 岗位 题目 帖子时间 ==字节跳动 java 剑指 Offer 53 - II. 0～n-1中缺失的数字 2020.07.18== （双指针） ==字节跳动 java 如何判断一个单链表是不是有环 2020.07.18== （快慢指针） ==</description>
       </item>
       
       <item>
         <title>interview</title>
-        <link>/zh/talks/interview/</link>
+        <link>hugo.jiahongw.com/zh/talks/interview/</link>
         <pubDate>Tue, 28 Jul 2020 00:04:50 +0900</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>/zh/talks/interview/</guid>
+        <guid>hugo.jiahongw.com/zh/talks/interview/</guid>
         <description>Interview C++空类产生哪些成员函数？ 构造、拷贝构造、取地址、、取地址const，赋值、析构 C++ 空类默认产生的类成员函数 TCP三次握手和四次挥手，何时</description>
       </item>
       
       <item>
         <title>UE4 Problems</title>
-        <link>/zh/talks/ue4-talks/</link>
+        <link>hugo.jiahongw.com/zh/talks/ue4-talks/</link>
         <pubDate>Sat, 30 May 2020 20:00:19 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>/zh/talks/ue4-talks/</guid>
+        <guid>hugo.jiahongw.com/zh/talks/ue4-talks/</guid>
         <description>UE4问题汇总 UE4光照构建失败⚠ https://blog.csdn.net/earlyAutumnOfRain/article/details/80863561 UE4导入灰度图 https://www.cnblogs.com/gucheng/p/10116857.html 详解UE4静态库与动态库的导入与使用 https://gameinstitute.qq.com/community/detail/121551 Ue4_序列化浅析_ https://blog.csdn.net/mohuak/article/details/83027211 UE快捷键 https://www.unrealengine.com/zh-CN/tech-blog/designer-s-guide-to-unreal-engine-keyboard-shortcuts UE4资源加载</description>
       </item>
       
       <item>
         <title>鲲鹏Learning🏸</title>
-        <link>/zh/talks/kubpeng_exercise/</link>
+        <link>hugo.jiahongw.com/zh/talks/kubpeng_exercise/</link>
         <pubDate>Sat, 18 Apr 2020 17:13:00 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>/zh/talks/kubpeng_exercise/</guid>
+        <guid>hugo.jiahongw.com/zh/talks/kubpeng_exercise/</guid>
         <description>[toc] 1. 鲲鹏云服务 鲲鹏处理器与服务器 鲲鹏处理器 华为鲲鹏处理器是华为自主研发的基于ARM架构的企业级系列处理器产品，包含“算、存、传、管、智”五个</description>
       </item>
       
       <item>
         <title>C&#43;&#43;学习路线</title>
-        <link>/zh/talks/cpp_router/</link>
+        <link>hugo.jiahongw.com/zh/talks/cpp_router/</link>
         <pubDate>Fri, 17 Apr 2020 00:26:00 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>/zh/talks/cpp_router/</guid>
+        <guid>hugo.jiahongw.com/zh/talks/cpp_router/</guid>
         <description>C++学习路线🌱 hode on!💠</description>
       </item>
       
       <item>
         <title>Tools</title>
-        <link>/zh/talks/tools/</link>
+        <link>hugo.jiahongw.com/zh/talks/tools/</link>
         <pubDate>Wed, 04 Mar 2020 16:20:19 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>/zh/talks/tools/</guid>
+        <guid>hugo.jiahongw.com/zh/talks/tools/</guid>
         <description>&lt;p&gt;好的工具🗝  就成功了一半。&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>Good库</title>
-        <link>/zh/talks/github-lib/</link>
+        <link>hugo.jiahongw.com/zh/talks/github-lib/</link>
         <pubDate>Wed, 04 Mar 2020 16:16:05 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>/zh/talks/github-lib/</guid>
+        <guid>hugo.jiahongw.com/zh/talks/github-lib/</guid>
         <description>&lt;p&gt;All about Intresting in Github.&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>My Awesome links</title>
-        <link>/zh/talks/mylinks/</link>
+        <link>hugo.jiahongw.com/zh/talks/mylinks/</link>
         <pubDate>Tue, 31 Dec 2019 00:04:50 +0900</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>/zh/talks/mylinks/</guid>
+        <guid>hugo.jiahongw.com/zh/talks/mylinks/</guid>
         <description>A Short Video： ——以下 Aaron Swartz的宣言，我想这才是信息革命的真谛—— 信息就是力量。但就像所有力量一样，有些人只想占为己有。世界上所有的</description>
       </item>
       
       <item>
         <title>B站视频</title>
-        <link>/zh/talks/blibli/</link>
+        <link>hugo.jiahongw.com/zh/talks/blibli/</link>
         <pubDate>Fri, 01 Mar 2019 00:04:50 +0900</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>/zh/talks/blibli/</guid>
+        <guid>hugo.jiahongw.com/zh/talks/blibli/</guid>
         <description>一个测试视频:</description>
       </item>
       

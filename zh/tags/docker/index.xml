@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>docker on ✏Victor&#39;s Blog</title>
-    <link>/zh/tags/docker/</link>
+    <link>hugo.jiahongw.com/zh/tags/docker/</link>
     <description>Recent content in docker on ✏Victor&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
@@ -11,17 +11,17 @@
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Thu, 09 Apr 2020 17:00:28 +0800</lastBuildDate>
     
-        <atom:link href="/zh/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="hugo.jiahongw.com/zh/tags/docker/index.xml" rel="self" type="application/rss+xml" />
     
     
     
       
       <item>
         <title>入门Docker</title>
-        <link>/zh/posts/docker-begin/</link>
+        <link>hugo.jiahongw.com/zh/posts/docker-begin/</link>
         <pubDate>Thu, 09 Apr 2020 17:00:28 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>/zh/posts/docker-begin/</guid>
+        <guid>hugo.jiahongw.com/zh/posts/docker-begin/</guid>
         <description>&lt;p&gt;Docker是基于内核的容器,可以运行在宿主机上,看作是一个容器.&lt;/p&gt;</description>
       </item>
       

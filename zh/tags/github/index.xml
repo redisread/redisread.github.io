@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>github on ✏Victor&#39;s Blog</title>
-    <link>/zh/tags/github/</link>
+    <link>hugo.jiahongw.com/zh/tags/github/</link>
     <description>Recent content in github on ✏Victor&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
@@ -11,35 +11,35 @@
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Fri, 03 Apr 2020 19:07:07 +0800</lastBuildDate>
     
-        <atom:link href="/zh/tags/github/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="hugo.jiahongw.com/zh/tags/github/index.xml" rel="self" type="application/rss+xml" />
     
     
     
       
       <item>
         <title>Git免密push</title>
-        <link>/zh/posts/git-push-no-pw/</link>
+        <link>hugo.jiahongw.com/zh/posts/git-push-no-pw/</link>
         <pubDate>Fri, 03 Apr 2020 19:07:07 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>/zh/posts/git-push-no-pw/</guid>
+        <guid>hugo.jiahongw.com/zh/posts/git-push-no-pw/</guid>
         <description>&lt;p&gt;每次push都需要输入用户名和密码,其实可以免去这些操作.🚛&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>Hugo配置</title>
-        <link>/zh/posts/hugo/first/</link>
+        <link>hugo.jiahongw.com/zh/posts/hugo/first/</link>
         <pubDate>Mon, 10 Feb 2020 20:50:09 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>/zh/posts/hugo/first/</guid>
+        <guid>hugo.jiahongw.com/zh/posts/hugo/first/</guid>
         <description>HUGO + Github + Github Action持续集成部署个人博客 HUGO本地环境 首先在HUGO的官网下载Hugo的Windows安装包，然后将路径添加到环境变量即</description>
       </item>
       
       <item>
         <title>配置基于Github的PicGo图床</title>
-        <link>/zh/posts/settings/image-bed/</link>
+        <link>hugo.jiahongw.com/zh/posts/settings/image-bed/</link>
         <pubDate>Tue, 04 Feb 2020 23:51:21 +0900</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>/zh/posts/settings/image-bed/</guid>
+        <guid>hugo.jiahongw.com/zh/posts/settings/image-bed/</guid>
         <description>&lt;p&gt;使用Github+PicGo建立一个免费的个人图床。&lt;/p&gt;</description>
       </item>
       

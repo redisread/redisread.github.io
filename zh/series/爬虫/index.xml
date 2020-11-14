@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>爬虫 on ✏Victor&#39;s Blog</title>
-    <link>/zh/series/%E7%88%AC%E8%99%AB/</link>
+    <link>hugo.jiahongw.com/zh/series/%E7%88%AC%E8%99%AB/</link>
     <description>Recent content in 爬虫 on ✏Victor&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
@@ -11,17 +11,17 @@
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Wed, 04 Mar 2020 16:35:09 +0800</lastBuildDate>
     
-        <atom:link href="/zh/series/%E7%88%AC%E8%99%AB/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="hugo.jiahongw.com/zh/series/%E7%88%AC%E8%99%AB/index.xml" rel="self" type="application/rss+xml" />
     
     
     
       
       <item>
         <title>Scrapy框架</title>
-        <link>/zh/posts/spider/scrapy-1/</link>
+        <link>hugo.jiahongw.com/zh/posts/spider/scrapy-1/</link>
         <pubDate>Wed, 04 Mar 2020 16:35:09 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>/zh/posts/spider/scrapy-1/</guid>
+        <guid>hugo.jiahongw.com/zh/posts/spider/scrapy-1/</guid>
         <description>&lt;p&gt;使用Scrapy爬取文章的一个小项目..&lt;/p&gt;</description>
       </item>
       

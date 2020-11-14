@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>git on ✏Victor&#39;s Blog</title>
-    <link>/zh/tags/git/</link>
+    <link>hugo.jiahongw.com/zh/tags/git/</link>
     <description>Recent content in git on ✏Victor&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
@@ -11,17 +11,17 @@
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Fri, 03 Apr 2020 19:07:07 +0800</lastBuildDate>
     
-        <atom:link href="/zh/tags/git/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="hugo.jiahongw.com/zh/tags/git/index.xml" rel="self" type="application/rss+xml" />
     
     
     
       
       <item>
         <title>Git免密push</title>
-        <link>/zh/posts/git-push-no-pw/</link>
+        <link>hugo.jiahongw.com/zh/posts/git-push-no-pw/</link>
         <pubDate>Fri, 03 Apr 2020 19:07:07 +0800</pubDate>
         <author>1427298682@qq.com (redisread)</author>
-        <guid>/zh/posts/git-push-no-pw/</guid>
+        <guid>hugo.jiahongw.com/zh/posts/git-push-no-pw/</guid>
         <description>&lt;p&gt;每次push都需要输入用户名和密码,其实可以免去这些操作.🚛&lt;/p&gt;</description>
       </item>
       
