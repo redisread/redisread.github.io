@@ -4,7 +4,7 @@
   
   <url>
     <loc>https://hugo.jiahongw.com/zh/</loc>
-    <lastmod>2020-11-15T00:06:50+09:00</lastmod>
+    <lastmod>2020-11-16T01:24:37+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -24,7 +24,7 @@
   
   <url>
     <loc>https://hugo.jiahongw.com/zh/categories/</loc>
-    <lastmod>2020-11-15T00:06:50+09:00</lastmod>
+    <lastmod>2020-11-16T01:24:37+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -43,13 +43,33 @@
   </url>
   
   <url>
-    <loc>https://hugo.jiahongw.com/zh/talks/database-talk/</loc>
-    <lastmod>2020-11-15T00:06:50+09:00</lastmod>
+    <loc>https://hugo.jiahongw.com/zh/series/idea/</loc>
+    <lastmod>2020-11-16T01:24:37+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hugo.jiahongw.com/zh/tags/life/</loc>
+    <lastmod>2020-11-16T01:24:37+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hugo.jiahongw.com/zh/posts/</loc>
+    <lastmod>2020-11-16T01:24:37+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hugo.jiahongw.com/en/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://hugo.jiahongw.com/zh/posts/"
+                />
   </url>
   
   <url>
     <loc>https://hugo.jiahongw.com/zh/series/</loc>
-    <lastmod>2020-11-15T00:06:50+09:00</lastmod>
+    <lastmod>2020-11-16T01:24:37+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -69,7 +89,7 @@
   
   <url>
     <loc>https://hugo.jiahongw.com/zh/tags/</loc>
-    <lastmod>2020-11-15T00:06:50+09:00</lastmod>
+    <lastmod>2020-11-16T01:24:37+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -88,23 +108,18 @@
   </url>
   
   <url>
-    <loc>https://hugo.jiahongw.com/zh/talks/leetcode/</loc>
-    <lastmod>2020-11-15T00:04:50+09:00</lastmod>
+    <loc>https://hugo.jiahongw.com/zh/posts/life/begin/</loc>
+    <lastmod>2020-11-16T01:24:37+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hugo.jiahongw.com/zh/posts/</loc>
-    <lastmod>2020-08-16T13:17:07+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://hugo.jiahongw.com/en/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://hugo.jiahongw.com/zh/posts/"
-                />
+    <loc>https://hugo.jiahongw.com/zh/talks/database-talk/</loc>
+    <lastmod>2020-11-15T00:06:50+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hugo.jiahongw.com/zh/talks/leetcode/</loc>
+    <lastmod>2020-11-15T00:04:50+09:00</lastmod>
   </url>
   
   <url>
@@ -118,12 +133,12 @@
   </url>
   
   <url>
-    <loc>https://hugo.jiahongw.com/zh/series/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
+    <loc>https://hugo.jiahongw.com/zh/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
     <lastmod>2020-08-16T13:17:07+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hugo.jiahongw.com/zh/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
+    <loc>https://hugo.jiahongw.com/zh/series/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
     <lastmod>2020-08-16T13:17:07+08:00</lastmod>
   </url>
   
@@ -138,12 +153,12 @@
   </url>
   
   <url>
-    <loc>https://hugo.jiahongw.com/zh/series/linux/</loc>
+    <loc>https://hugo.jiahongw.com/zh/tags/linux/</loc>
     <lastmod>2020-07-30T09:01:25+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hugo.jiahongw.com/zh/tags/linux/</loc>
+    <loc>https://hugo.jiahongw.com/zh/series/linux/</loc>
     <lastmod>2020-07-30T09:01:25+08:00</lastmod>
   </url>
   
@@ -268,12 +283,12 @@
   </url>
   
   <url>
-    <loc>https://hugo.jiahongw.com/zh/series/ue/</loc>
+    <loc>https://hugo.jiahongw.com/zh/tags/ue/</loc>
     <lastmod>2020-06-02T20:00:46+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hugo.jiahongw.com/zh/tags/ue/</loc>
+    <loc>https://hugo.jiahongw.com/zh/series/ue/</loc>
     <lastmod>2020-06-02T20:00:46+08:00</lastmod>
   </url>
   
@@ -508,12 +523,12 @@
   </url>
   
   <url>
-    <loc>https://hugo.jiahongw.com/zh/tags/github/</loc>
+    <loc>https://hugo.jiahongw.com/zh/series/github/</loc>
     <lastmod>2020-04-03T19:07:07+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hugo.jiahongw.com/zh/series/github/</loc>
+    <loc>https://hugo.jiahongw.com/zh/tags/github/</loc>
     <lastmod>2020-04-03T19:07:07+08:00</lastmod>
   </url>
   
