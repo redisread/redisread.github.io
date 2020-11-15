@@ -6,8 +6,8 @@
     <description>Recent content in Talks on ✏Victor&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <managingEditor>1427298682@qq.com (redisread)</managingEditor>
-    <webMaster>1427298682@qq.com (redisread)</webMaster>
+    <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
+    <webMaster>1427298682@qq.com (VictorHong)</webMaster>
     <copyright>&amp;copy;{year}, Redisread</copyright>
     <lastBuildDate>Mon, 30 Dec 2019 11:14:14 +0900</lastBuildDate>
     
@@ -17,10 +17,28 @@
     
       
       <item>
+        <title>Database Talk</title>
+        <link>https://hugo.jiahongw.com/zh/talks/database-talk/</link>
+        <pubDate>Sun, 15 Nov 2020 00:06:50 +0900</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <guid>https://hugo.jiahongw.com/zh/talks/database-talk/</guid>
+        <description>数据库事务 事务（Transaction）是由一系列对系统中数据进行访问与更新的操作所组成的一个程序执行逻辑单元。事务是DBMS中最基础的单位</description>
+      </item>
+      
+      <item>
+        <title>Leetcode Problem Solve</title>
+        <link>https://hugo.jiahongw.com/zh/talks/leetcode/</link>
+        <pubDate>Sun, 15 Nov 2020 00:04:50 +0900</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <guid>https://hugo.jiahongw.com/zh/talks/leetcode/</guid>
+        <description>546. 移除盒子 给出一些不同颜色的盒子，盒子的颜色由数字表示，即不同的数字表示不同的颜色。 你将经过若干轮操作去去掉盒子，直到所有的盒子都去掉为止。</description>
+      </item>
+      
+      <item>
         <title>Leetcode高频</title>
         <link>https://hugo.jiahongw.com/zh/talks/leetcode-hot/</link>
         <pubDate>Tue, 28 Jul 2020 16:04:50 +0900</pubDate>
-        <author>1427298682@qq.com (redisread)</author>
+        <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/talks/leetcode-hot/</guid>
         <description>公司 岗位 题目 帖子时间 ==字节跳动 java 剑指 Offer 53 - II. 0～n-1中缺失的数字 2020.07.18== （双指针） ==字节跳动 java 如何判断一个单链表是不是有环 2020.07.18== （快慢指针） ==</description>
       </item>
@@ -29,16 +47,16 @@
         <title>interview</title>
         <link>https://hugo.jiahongw.com/zh/talks/interview/</link>
         <pubDate>Tue, 28 Jul 2020 00:04:50 +0900</pubDate>
-        <author>1427298682@qq.com (redisread)</author>
+        <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/talks/interview/</guid>
-        <description>Interview C++空类产生哪些成员函数？ 构造、拷贝构造、取地址、、取地址const，赋值、析构 C++ 空类默认产生的类成员函数 TCP三次握手和四次挥手，何时</description>
+        <description>C/C++ ⭕面向对象与面向过程 Leetcode对面向对象的理解：面向对象的编程方式使得每一个类都只做一件事。面向过程会让一个类越来越全能，就像一个管</description>
       </item>
       
       <item>
         <title>UE4 Problems</title>
         <link>https://hugo.jiahongw.com/zh/talks/ue4-talks/</link>
         <pubDate>Sat, 30 May 2020 20:00:19 +0800</pubDate>
-        <author>1427298682@qq.com (redisread)</author>
+        <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/talks/ue4-talks/</guid>
         <description>UE4问题汇总 UE4光照构建失败⚠ https://blog.csdn.net/earlyAutumnOfRain/article/details/80863561 UE4导入灰度图 https://www.cnblogs.com/gucheng/p/10116857.html 详解UE4静态库与动态库的导入与使用 https://gameinstitute.qq.com/community/detail/121551 Ue4_序列化浅析_ https://blog.csdn.net/mohuak/article/details/83027211 UE快捷键 https://www.unrealengine.com/zh-CN/tech-blog/designer-s-guide-to-unreal-engine-keyboard-shortcuts UE4资源加载</description>
       </item>
@@ -47,7 +65,7 @@
         <title>鲲鹏Learning🏸</title>
         <link>https://hugo.jiahongw.com/zh/talks/kubpeng_exercise/</link>
         <pubDate>Sat, 18 Apr 2020 17:13:00 +0800</pubDate>
-        <author>1427298682@qq.com (redisread)</author>
+        <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/talks/kubpeng_exercise/</guid>
         <description>[toc] 1. 鲲鹏云服务 鲲鹏处理器与服务器 鲲鹏处理器 华为鲲鹏处理器是华为自主研发的基于ARM架构的企业级系列处理器产品，包含“算、存、传、管、智”五个</description>
       </item>
@@ -56,7 +74,7 @@
         <title>C&#43;&#43;学习路线</title>
         <link>https://hugo.jiahongw.com/zh/talks/cpp_router/</link>
         <pubDate>Fri, 17 Apr 2020 00:26:00 +0800</pubDate>
-        <author>1427298682@qq.com (redisread)</author>
+        <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/talks/cpp_router/</guid>
         <description>C++学习路线🌱 hode on!💠</description>
       </item>
@@ -65,7 +83,7 @@
         <title>Tools</title>
         <link>https://hugo.jiahongw.com/zh/talks/tools/</link>
         <pubDate>Wed, 04 Mar 2020 16:20:19 +0800</pubDate>
-        <author>1427298682@qq.com (redisread)</author>
+        <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/talks/tools/</guid>
         <description>&lt;p&gt;好的工具🗝  就成功了一半。&lt;/p&gt;</description>
       </item>
@@ -74,7 +92,7 @@
         <title>Good库</title>
         <link>https://hugo.jiahongw.com/zh/talks/github-lib/</link>
         <pubDate>Wed, 04 Mar 2020 16:16:05 +0800</pubDate>
-        <author>1427298682@qq.com (redisread)</author>
+        <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/talks/github-lib/</guid>
         <description>&lt;p&gt;All about Intresting in Github.&lt;/p&gt;</description>
       </item>
@@ -83,7 +101,7 @@
         <title>My Awesome links</title>
         <link>https://hugo.jiahongw.com/zh/talks/mylinks/</link>
         <pubDate>Tue, 31 Dec 2019 00:04:50 +0900</pubDate>
-        <author>1427298682@qq.com (redisread)</author>
+        <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/talks/mylinks/</guid>
         <description>A Short Video： ——以下 Aaron Swartz的宣言，我想这才是信息革命的真谛—— 信息就是力量。但就像所有力量一样，有些人只想占为己有。世界上所有的</description>
       </item>
@@ -92,7 +110,7 @@
         <title>B站视频</title>
         <link>https://hugo.jiahongw.com/zh/talks/blibli/</link>
         <pubDate>Fri, 01 Mar 2019 00:04:50 +0900</pubDate>
-        <author>1427298682@qq.com (redisread)</author>
+        <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/talks/blibli/</guid>
         <description>一个测试视频:</description>
       </item>

@@ -6,8 +6,8 @@
     <description>Recent content in python on ✏Victor&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <managingEditor>1427298682@qq.com (redisread)</managingEditor>
-    <webMaster>1427298682@qq.com (redisread)</webMaster>
+    <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
+    <webMaster>1427298682@qq.com (VictorHong)</webMaster>
     <copyright>&amp;copy;{year}, Redisread</copyright>
     <lastBuildDate>Sun, 23 Feb 2020 15:49:10 +0800</lastBuildDate>
     
@@ -20,7 +20,7 @@
         <title>MXNet回顾</title>
         <link>https://hugo.jiahongw.com/zh/posts/dl/mxnet-begin/</link>
         <pubDate>Sun, 23 Feb 2020 15:49:10 +0800</pubDate>
-        <author>1427298682@qq.com (redisread)</author>
+        <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/posts/dl/mxnet-begin/</guid>
         <description>&lt;p&gt;使用MXNet的好处你永远想象不到。🉑&lt;/p&gt;</description>
       </item>
@@ -29,7 +29,7 @@
         <title>Pytorch Begin</title>
         <link>https://hugo.jiahongw.com/zh/posts/dl/pytorch-begin/</link>
         <pubDate>Sat, 22 Feb 2020 22:49:28 +0800</pubDate>
-        <author>1427298682@qq.com (redisread)</author>
+        <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/posts/dl/pytorch-begin/</guid>
         <description>&lt;p&gt;重新学习一下DL，这次使用PyTorch框架🔦&lt;/p&gt;</description>
       </item>

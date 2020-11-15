@@ -6,8 +6,8 @@
     <description>Recent content in epoll on ✏Victor&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <managingEditor>1427298682@qq.com (redisread)</managingEditor>
-    <webMaster>1427298682@qq.com (redisread)</webMaster>
+    <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
+    <webMaster>1427298682@qq.com (VictorHong)</webMaster>
     <copyright>&amp;copy;{year}, Redisread</copyright>
     <lastBuildDate>Tue, 28 Jul 2020 12:00:13 +0800</lastBuildDate>
     
@@ -20,7 +20,7 @@
         <title>epoll的水平触发与边缘触发</title>
         <link>https://hugo.jiahongw.com/zh/posts/linux/epoll-lt-et/</link>
         <pubDate>Tue, 28 Jul 2020 12:00:13 +0800</pubDate>
-        <author>1427298682@qq.com (redisread)</author>
+        <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/posts/linux/epoll-lt-et/</guid>
         <description>描述符的就绪状态有两种判断方法: 边沿触发和水平触发。 水平触发 我认为这是“拉”模式或“民意调查”模式。为了确定描述符是否就绪，进程尝试执行非阻</description>
       </item>

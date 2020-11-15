@@ -6,8 +6,8 @@
     <description>Recent content in 数据结构 on ✏Victor&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <managingEditor>1427298682@qq.com (redisread)</managingEditor>
-    <webMaster>1427298682@qq.com (redisread)</webMaster>
+    <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
+    <webMaster>1427298682@qq.com (VictorHong)</webMaster>
     <copyright>&amp;copy;{year}, Redisread</copyright>
     <lastBuildDate>Sun, 16 Aug 2020 13:17:07 +0800</lastBuildDate>
     
@@ -17,10 +17,10 @@
     
       
       <item>
-        <title>数据结构(1)</title>
+        <title>哈希表</title>
         <link>https://hugo.jiahongw.com/zh/posts/algorithmstructure/hash/</link>
         <pubDate>Sun, 16 Aug 2020 13:17:07 +0800</pubDate>
-        <author>1427298682@qq.com (redisread)</author>
+        <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/posts/algorithmstructure/hash/</guid>
         <description>哈希表 什么是哈希表？ 哈希表（Hash table，也叫散列表），是根据关键码值(Key value)而直接进行访问的数据结构。也就是说，它通过把</description>
       </item>
@@ -29,7 +29,7 @@
         <title>高级的二叉树</title>
         <link>https://hugo.jiahongw.com/zh/posts/algorithmstructure/bst/</link>
         <pubDate>Mon, 27 Jul 2020 22:07:13 +0800</pubDate>
-        <author>1427298682@qq.com (redisread)</author>
+        <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/posts/algorithmstructure/bst/</guid>
         <description>&lt;p&gt;树是一种非常实用的结构！🌴&lt;/p&gt;</description>
       </item>

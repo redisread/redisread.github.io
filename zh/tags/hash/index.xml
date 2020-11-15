@@ -6,10 +6,10 @@
     <description>Recent content in Hash on ✏Victor&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <managingEditor>1427298682@qq.com (redisread)</managingEditor>
-    <webMaster>1427298682@qq.com (redisread)</webMaster>
+    <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
+    <webMaster>1427298682@qq.com (VictorHong)</webMaster>
     <copyright>&amp;copy;{year}, Redisread</copyright>
-    <lastBuildDate>Sun, 16 Aug 2020 09:01:25 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 17 Mar 2020 15:12:38 +0800</lastBuildDate>
     
         <atom:link href="https://hugo.jiahongw.com/zh/tags/hash/index.xml" rel="self" type="application/rss+xml" />
     
@@ -17,19 +17,10 @@
     
       
       <item>
-        <title>Leetcode每日一题(2)</title>
-        <link>https://hugo.jiahongw.com/zh/posts/leetcode/leetcode-day2/</link>
-        <pubDate>Sun, 16 Aug 2020 09:01:25 +0800</pubDate>
-        <author>1427298682@qq.com (redisread)</author>
-        <guid>https://hugo.jiahongw.com/zh/posts/leetcode/leetcode-day2/</guid>
-        <description>5490. 吃掉 N 个橘子的最少天数 厨房里总共有 n 个橘子，你决定每一天选择如下方式之一吃这些橘子： 吃掉一个橘子。 如果剩余橘子数 n 能被 2 整除，那么你可以吃</description>
-      </item>
-      
-      <item>
         <title>什么是Hash？</title>
         <link>https://hugo.jiahongw.com/zh/posts/hash/</link>
         <pubDate>Tue, 17 Mar 2020 15:12:38 +0800</pubDate>
-        <author>1427298682@qq.com (redisread)</author>
+        <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/posts/hash/</guid>
         <description>&lt;p&gt;走得慢的时候，为什么不跑呢？#️⃣&lt;/p&gt;</description>
       </item>

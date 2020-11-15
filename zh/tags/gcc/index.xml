@@ -6,8 +6,8 @@
     <description>Recent content in gcc on ✏Victor&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <managingEditor>1427298682@qq.com (redisread)</managingEditor>
-    <webMaster>1427298682@qq.com (redisread)</webMaster>
+    <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
+    <webMaster>1427298682@qq.com (VictorHong)</webMaster>
     <copyright>&amp;copy;{year}, Redisread</copyright>
     <lastBuildDate>Tue, 04 Feb 2020 16:41:18 +0800</lastBuildDate>
     
@@ -20,7 +20,7 @@
         <title>windows下gcc的安装和使用</title>
         <link>https://hugo.jiahongw.com/zh/posts/settings/gcc-windows/</link>
         <pubDate>Tue, 04 Feb 2020 16:41:18 +0800</pubDate>
-        <author>1427298682@qq.com (redisread)</author>
+        <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/posts/settings/gcc-windows/</guid>
         <description>&lt;p&gt;写在源文件中的源代码是人类可读的源。它需要&amp;quot;编译&amp;rdquo;，转为机器语言，这样 CPU 可以按给定指令执行程序。C 语言编译器用于把源代码编译成最终的可执行程序。&lt;span&gt;&lt;code&gt;🐤&lt;/code&gt;&lt;/span&gt;&lt;/p&gt;</description>
       </item>

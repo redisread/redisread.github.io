@@ -6,8 +6,8 @@
     <description>Recent content in https on ✏Victor&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <managingEditor>1427298682@qq.com (redisread)</managingEditor>
-    <webMaster>1427298682@qq.com (redisread)</webMaster>
+    <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
+    <webMaster>1427298682@qq.com (VictorHong)</webMaster>
     <copyright>&amp;copy;{year}, Redisread</copyright>
     <lastBuildDate>Tue, 28 Jul 2020 11:12:16 +0800</lastBuildDate>
     
@@ -20,7 +20,7 @@
         <title>Http协议浅析</title>
         <link>https://hugo.jiahongw.com/zh/posts/network/http/</link>
         <pubDate>Tue, 28 Jul 2020 11:12:16 +0800</pubDate>
-        <author>1427298682@qq.com (redisread)</author>
+        <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/posts/network/http/</guid>
         <description>HTTP/1.x 在早期，HTTP 使用一个简单的模型来处理这样的连接。这些连接的生命周期是短暂的：每发起一个请求时都会创建一个新的连接，并在收到应答时立即关</description>
       </item>

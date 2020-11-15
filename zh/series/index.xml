@@ -6,10 +6,10 @@
     <description>Recent content in Series on ✏Victor&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <managingEditor>1427298682@qq.com (redisread)</managingEditor>
-    <webMaster>1427298682@qq.com (redisread)</webMaster>
+    <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
+    <webMaster>1427298682@qq.com (VictorHong)</webMaster>
     <copyright>&amp;copy;{year}, Redisread</copyright>
-    <lastBuildDate>Mon, 24 Aug 2020 22:24:19 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2020 00:06:50 +0900</lastBuildDate>
     
         <atom:link href="https://hugo.jiahongw.com/zh/series/index.xml" rel="self" type="application/rss+xml" />
     
@@ -17,38 +17,11 @@
     
       
       <item>
-        <title>leetcode</title>
-        <link>https://hugo.jiahongw.com/zh/series/leetcode/</link>
-        <pubDate>Mon, 24 Aug 2020 22:24:19 +0800</pubDate>
-        <author>1427298682@qq.com (redisread)</author>
-        <guid>https://hugo.jiahongw.com/zh/series/leetcode/</guid>
-        <description></description>
-      </item>
-      
-      <item>
-        <title>算法</title>
-        <link>https://hugo.jiahongw.com/zh/series/%E7%AE%97%E6%B3%95/</link>
-        <pubDate>Tue, 18 Aug 2020 10:54:23 +0800</pubDate>
-        <author>1427298682@qq.com (redisread)</author>
-        <guid>https://hugo.jiahongw.com/zh/series/%E7%AE%97%E6%B3%95/</guid>
-        <description></description>
-      </item>
-      
-      <item>
         <title>数据结构</title>
         <link>https://hugo.jiahongw.com/zh/series/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</link>
         <pubDate>Sun, 16 Aug 2020 13:17:07 +0800</pubDate>
-        <author>1427298682@qq.com (redisread)</author>
+        <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/series/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</guid>
-        <description></description>
-      </item>
-      
-      <item>
-        <title>Database</title>
-        <link>https://hugo.jiahongw.com/zh/series/database/</link>
-        <pubDate>Sat, 15 Aug 2020 21:45:25 +0800</pubDate>
-        <author>1427298682@qq.com (redisread)</author>
-        <guid>https://hugo.jiahongw.com/zh/series/database/</guid>
         <description></description>
       </item>
       
@@ -56,7 +29,7 @@
         <title>Linux</title>
         <link>https://hugo.jiahongw.com/zh/series/linux/</link>
         <pubDate>Thu, 30 Jul 2020 09:01:25 +0800</pubDate>
-        <author>1427298682@qq.com (redisread)</author>
+        <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/series/linux/</guid>
         <description></description>
       </item>
@@ -65,7 +38,7 @@
         <title>计算机网络</title>
         <link>https://hugo.jiahongw.com/zh/series/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</link>
         <pubDate>Tue, 28 Jul 2020 18:02:38 +0800</pubDate>
-        <author>1427298682@qq.com (redisread)</author>
+        <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/series/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</guid>
         <description></description>
       </item>
@@ -74,7 +47,7 @@
         <title>network</title>
         <link>https://hugo.jiahongw.com/zh/series/network/</link>
         <pubDate>Tue, 28 Jul 2020 11:12:16 +0800</pubDate>
-        <author>1427298682@qq.com (redisread)</author>
+        <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/series/network/</guid>
         <description></description>
       </item>
@@ -83,7 +56,7 @@
         <title>Game</title>
         <link>https://hugo.jiahongw.com/zh/series/game/</link>
         <pubDate>Mon, 15 Jun 2020 09:42:11 +0800</pubDate>
-        <author>1427298682@qq.com (redisread)</author>
+        <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/series/game/</guid>
         <description></description>
       </item>
@@ -92,7 +65,7 @@
         <title>UE</title>
         <link>https://hugo.jiahongw.com/zh/series/ue/</link>
         <pubDate>Tue, 02 Jun 2020 20:00:46 +0800</pubDate>
-        <author>1427298682@qq.com (redisread)</author>
+        <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/series/ue/</guid>
         <description></description>
       </item>
@@ -101,7 +74,7 @@
         <title>Math</title>
         <link>https://hugo.jiahongw.com/zh/series/math/</link>
         <pubDate>Wed, 06 May 2020 11:12:38 +0800</pubDate>
-        <author>1427298682@qq.com (redisread)</author>
+        <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/series/math/</guid>
         <description></description>
       </item>
@@ -110,7 +83,7 @@
         <title>C&#43;&#43;</title>
         <link>https://hugo.jiahongw.com/zh/series/c&#43;&#43;/</link>
         <pubDate>Sun, 12 Apr 2020 19:26:20 +0800</pubDate>
-        <author>1427298682@qq.com (redisread)</author>
+        <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/series/c&#43;&#43;/</guid>
         <description></description>
       </item>
@@ -119,7 +92,7 @@
         <title>C</title>
         <link>https://hugo.jiahongw.com/zh/series/c/</link>
         <pubDate>Sat, 04 Apr 2020 23:32:40 +0800</pubDate>
-        <author>1427298682@qq.com (redisread)</author>
+        <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/series/c/</guid>
         <description></description>
       </item>
@@ -128,7 +101,7 @@
         <title>markdown</title>
         <link>https://hugo.jiahongw.com/zh/series/markdown/</link>
         <pubDate>Sat, 04 Apr 2020 00:58:33 +0800</pubDate>
-        <author>1427298682@qq.com (redisread)</author>
+        <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/series/markdown/</guid>
         <description></description>
       </item>
@@ -137,7 +110,7 @@
         <title>TCP/IP</title>
         <link>https://hugo.jiahongw.com/zh/series/tcp/ip/</link>
         <pubDate>Fri, 03 Apr 2020 21:42:11 +0800</pubDate>
-        <author>1427298682@qq.com (redisread)</author>
+        <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/series/tcp/ip/</guid>
         <description></description>
       </item>
@@ -146,7 +119,7 @@
         <title>github</title>
         <link>https://hugo.jiahongw.com/zh/series/github/</link>
         <pubDate>Fri, 03 Apr 2020 19:07:07 +0800</pubDate>
-        <author>1427298682@qq.com (redisread)</author>
+        <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/series/github/</guid>
         <description></description>
       </item>
@@ -155,7 +128,7 @@
         <title>密码学</title>
         <link>https://hugo.jiahongw.com/zh/series/%E5%AF%86%E7%A0%81%E5%AD%A6/</link>
         <pubDate>Fri, 03 Apr 2020 14:20:19 +0800</pubDate>
-        <author>1427298682@qq.com (redisread)</author>
+        <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/series/%E5%AF%86%E7%A0%81%E5%AD%A6/</guid>
         <description></description>
       </item>
@@ -164,7 +137,7 @@
         <title>Algorithm</title>
         <link>https://hugo.jiahongw.com/zh/series/algorithm/</link>
         <pubDate>Tue, 17 Mar 2020 15:12:38 +0800</pubDate>
-        <author>1427298682@qq.com (redisread)</author>
+        <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/series/algorithm/</guid>
         <description></description>
       </item>
@@ -173,7 +146,7 @@
         <title>算法与数据结构</title>
         <link>https://hugo.jiahongw.com/zh/series/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</link>
         <pubDate>Wed, 11 Mar 2020 22:07:13 +0800</pubDate>
-        <author>1427298682@qq.com (redisread)</author>
+        <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/series/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</guid>
         <description></description>
       </item>
@@ -182,7 +155,7 @@
         <title>DL</title>
         <link>https://hugo.jiahongw.com/zh/series/dl/</link>
         <pubDate>Sun, 08 Mar 2020 23:33:24 +0800</pubDate>
-        <author>1427298682@qq.com (redisread)</author>
+        <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/series/dl/</guid>
         <description></description>
       </item>
@@ -191,7 +164,7 @@
         <title>爬虫</title>
         <link>https://hugo.jiahongw.com/zh/series/%E7%88%AC%E8%99%AB/</link>
         <pubDate>Wed, 04 Mar 2020 16:35:09 +0800</pubDate>
-        <author>1427298682@qq.com (redisread)</author>
+        <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/series/%E7%88%AC%E8%99%AB/</guid>
         <description></description>
       </item>
@@ -200,7 +173,7 @@
         <title>Blog</title>
         <link>https://hugo.jiahongw.com/zh/series/blog/</link>
         <pubDate>Mon, 02 Mar 2020 01:19:51 +0800</pubDate>
-        <author>1427298682@qq.com (redisread)</author>
+        <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/series/blog/</guid>
         <description></description>
       </item>
@@ -209,7 +182,7 @@
         <title>深度学习</title>
         <link>https://hugo.jiahongw.com/zh/series/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/</link>
         <pubDate>Sun, 23 Feb 2020 15:49:10 +0800</pubDate>
-        <author>1427298682@qq.com (redisread)</author>
+        <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/series/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/</guid>
         <description></description>
       </item>
@@ -218,7 +191,7 @@
         <title>IT</title>
         <link>https://hugo.jiahongw.com/zh/series/it/</link>
         <pubDate>Sat, 15 Feb 2020 16:10:21 +0800</pubDate>
-        <author>1427298682@qq.com (redisread)</author>
+        <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/series/it/</guid>
         <description></description>
       </item>
@@ -227,7 +200,7 @@
         <title>配置</title>
         <link>https://hugo.jiahongw.com/zh/series/%E9%85%8D%E7%BD%AE/</link>
         <pubDate>Tue, 04 Feb 2020 16:41:18 +0800</pubDate>
-        <author>1427298682@qq.com (redisread)</author>
+        <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/series/%E9%85%8D%E7%BD%AE/</guid>
         <description></description>
       </item>

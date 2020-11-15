@@ -6,8 +6,8 @@
     <description>Recent content in C&#43;&#43; on ✏Victor&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <managingEditor>1427298682@qq.com (redisread)</managingEditor>
-    <webMaster>1427298682@qq.com (redisread)</webMaster>
+    <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
+    <webMaster>1427298682@qq.com (VictorHong)</webMaster>
     <copyright>&amp;copy;{year}, Redisread</copyright>
     <lastBuildDate>Sun, 12 Apr 2020 19:26:20 +0800</lastBuildDate>
     
@@ -20,7 +20,7 @@
         <title>Leetcode-最长回文子串</title>
         <link>https://hugo.jiahongw.com/zh/posts/leetcode-0/</link>
         <pubDate>Sun, 12 Apr 2020 19:26:20 +0800</pubDate>
-        <author>1427298682@qq.com (redisread)</author>
+        <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/posts/leetcode-0/</guid>
         <description>&lt;h3 id=&#34;问题描述&#34;&gt;问题描述&lt;/h3&gt;
 &lt;p&gt;给定一个字符串 &lt;code&gt;s&lt;/code&gt;，找到 &lt;code&gt;s&lt;/code&gt; 中最长的回文子串。你可以假设 &lt;code&gt;s&lt;/code&gt; 的最大长度为 1000。&lt;/p&gt;</description>

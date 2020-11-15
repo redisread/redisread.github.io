@@ -6,8 +6,8 @@
     <description>Recent content in C&#43;&#43; on ✏Victor&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <managingEditor>1427298682@qq.com (redisread)</managingEditor>
-    <webMaster>1427298682@qq.com (redisread)</webMaster>
+    <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
+    <webMaster>1427298682@qq.com (VictorHong)</webMaster>
     <copyright>&amp;copy;{year}, Redisread</copyright>
     <lastBuildDate>Mon, 15 Jun 2020 09:42:11 +0800</lastBuildDate>
     
@@ -20,7 +20,7 @@
         <title>UE4获取深度值</title>
         <link>https://hugo.jiahongw.com/zh/posts/ue/ue-depth/</link>
         <pubDate>Mon, 15 Jun 2020 09:42:11 +0800</pubDate>
-        <author>1427298682@qq.com (redisread)</author>
+        <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/posts/ue/ue-depth/</guid>
         <description>&lt;p&gt;在UE4中获取深度缓存，调用渲染命令读取。&lt;/p&gt;</description>
       </item>
@@ -29,7 +29,7 @@
         <title>UE游戏、渲染线程</title>
         <link>https://hugo.jiahongw.com/zh/posts/ue/ue-game-render/</link>
         <pubDate>Wed, 03 Jun 2020 09:42:11 +0800</pubDate>
-        <author>1427298682@qq.com (redisread)</author>
+        <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/posts/ue/ue-game-render/</guid>
         <description>&lt;p&gt;探索UE4游戏线程的进入&lt;/p&gt;</description>
       </item>
@@ -38,7 +38,7 @@
         <title>UE4多线程</title>
         <link>https://hugo.jiahongw.com/zh/posts/ue/ue-thread-commuicate/</link>
         <pubDate>Tue, 02 Jun 2020 20:00:46 +0800</pubDate>
-        <author>1427298682@qq.com (redisread)</author>
+        <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/posts/ue/ue-thread-commuicate/</guid>
         <description>&lt;p&gt;==通常的游戏引擎中游戏线程和渲染线程都是独立的，相互之间会存在一个同步的机制==&lt;/p&gt;</description>
       </item>
@@ -47,7 +47,7 @@
         <title>UE4渲染过程</title>
         <link>https://hugo.jiahongw.com/zh/posts/ue/ue4-render/</link>
         <pubDate>Fri, 29 May 2020 09:42:11 +0800</pubDate>
-        <author>1427298682@qq.com (redisread)</author>
+        <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/posts/ue/ue4-render/</guid>
         <description>&lt;p&gt;大概介绍以下UE4的主要渲染过程。&lt;/p&gt;</description>
       </item>
@@ -56,7 +56,7 @@
         <title>C&#43;&#43;学习路线</title>
         <link>https://hugo.jiahongw.com/zh/talks/cpp_router/</link>
         <pubDate>Fri, 17 Apr 2020 00:26:00 +0800</pubDate>
-        <author>1427298682@qq.com (redisread)</author>
+        <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/talks/cpp_router/</guid>
         <description>C++学习路线🌱 hode on!💠</description>
       </item>
@@ -65,7 +65,7 @@
         <title>Leetcode-最长回文子串</title>
         <link>https://hugo.jiahongw.com/zh/posts/leetcode-0/</link>
         <pubDate>Sun, 12 Apr 2020 19:26:20 +0800</pubDate>
-        <author>1427298682@qq.com (redisread)</author>
+        <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/posts/leetcode-0/</guid>
         <description>&lt;h3 id=&#34;问题描述&#34;&gt;问题描述&lt;/h3&gt;
 &lt;p&gt;给定一个字符串 &lt;code&gt;s&lt;/code&gt;，找到 &lt;code&gt;s&lt;/code&gt; 中最长的回文子串。你可以假设 &lt;code&gt;s&lt;/code&gt; 的最大长度为 1000。&lt;/p&gt;</description>
@@ -75,7 +75,7 @@
         <title>C&#43;&#43;动态与静态</title>
         <link>https://hugo.jiahongw.com/zh/posts/cpp-duotai/</link>
         <pubDate>Sun, 05 Apr 2020 15:05:37 +0800</pubDate>
-        <author>1427298682@qq.com (redisread)</author>
+        <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/posts/cpp-duotai/</guid>
         <description>&lt;p&gt;C++特性之多态🍄&lt;/p&gt;</description>
       </item>
@@ -84,7 +84,7 @@
         <title>排序算法总结</title>
         <link>https://hugo.jiahongw.com/zh/posts/algorithmstructure/sort/</link>
         <pubDate>Wed, 11 Mar 2020 22:07:13 +0800</pubDate>
-        <author>1427298682@qq.com (redisread)</author>
+        <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/posts/algorithmstructure/sort/</guid>
         <description>&lt;p&gt;排序是最基本的算法，里面包含了最基础的思想。一个简单的优化可以让排序快很多。&lt;/p&gt;</description>
       </item>

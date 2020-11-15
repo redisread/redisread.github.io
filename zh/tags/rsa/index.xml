@@ -6,8 +6,8 @@
     <description>Recent content in rsa on ✏Victor&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <managingEditor>1427298682@qq.com (redisread)</managingEditor>
-    <webMaster>1427298682@qq.com (redisread)</webMaster>
+    <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
+    <webMaster>1427298682@qq.com (VictorHong)</webMaster>
     <copyright>&amp;copy;{year}, Redisread</copyright>
     <lastBuildDate>Wed, 06 May 2020 16:00:46 +0800</lastBuildDate>
     
@@ -20,7 +20,7 @@
         <title>RSA加密算法</title>
         <link>https://hugo.jiahongw.com/zh/posts/mima/rsa/</link>
         <pubDate>Wed, 06 May 2020 16:00:46 +0800</pubDate>
-        <author>1427298682@qq.com (redisread)</author>
+        <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/posts/mima/rsa/</guid>
         <description>RSA算法 RSA加密算法是一种非对称加密算法，在公开密钥加密和电子商业中被广泛使用。 对极大整数做因数分解的难度决定了 RSA 算法的可靠性。换言之，</description>
       </item>
