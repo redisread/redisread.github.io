@@ -9,12 +9,30 @@
     <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
     <webMaster>1427298682@qq.com (VictorHong)</webMaster>
     <copyright>&amp;copy;{year}, Redisread</copyright>
-    <lastBuildDate>Thu, 30 Jul 2020 09:01:25 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2020 11:43:19 +0800</lastBuildDate>
     
         <atom:link href="https://hugo.jiahongw.com/zh/series/linux/index.xml" rel="self" type="application/rss+xml" />
     
     
     
+      
+      <item>
+        <title>Select Poll Epoll 详解</title>
+        <link>https://hugo.jiahongw.com/zh/posts/linux/select-poll-epoll/</link>
+        <pubDate>Wed, 18 Nov 2020 11:43:19 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <guid>https://hugo.jiahongw.com/zh/posts/linux/select-poll-epoll/</guid>
+        <description>同步异步与阻塞非阻塞 用户空间和内核空间 操作系统为了支持多个应用同时运行，需要保证不同进程之间相对独立（一个进程的崩溃不会影响其他的进程 ， 恶意</description>
+      </item>
+      
+      <item>
+        <title>Linux虚拟内存与分页存储管理</title>
+        <link>https://hugo.jiahongw.com/zh/posts/linux/virtual-memory/</link>
+        <pubDate>Wed, 18 Nov 2020 11:34:29 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <guid>https://hugo.jiahongw.com/zh/posts/linux/virtual-memory/</guid>
+        <description>虚拟存储器作为现代操作系统中存储器管理的一项重要技术，实现了内存扩充功能。**但该功能并非是从物理上实际地扩大内存的容量，而是从逻辑上实现对</description>
+      </item>
       
       <item>
         <title>Linux内存管理</title>

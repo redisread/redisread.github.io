@@ -9,7 +9,7 @@
     <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
     <webMaster>1427298682@qq.com (VictorHong)</webMaster>
     <copyright>&amp;copy;{year}, Redisread</copyright>
-    <lastBuildDate>Tue, 28 Jul 2020 11:12:16 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2020 11:52:50 +0800</lastBuildDate>
     
         <atom:link href="https://hugo.jiahongw.com/zh/series/network/index.xml" rel="self" type="application/rss+xml" />
     
@@ -17,12 +17,21 @@
     
       
       <item>
+        <title>Http报文格式及Http方法</title>
+        <link>https://hugo.jiahongw.com/zh/posts/network/http-message/</link>
+        <pubDate>Wed, 18 Nov 2020 11:52:50 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <guid>https://hugo.jiahongw.com/zh/posts/network/http-message/</guid>
+        <description>🍂 HTTP报文 请求报文 HTTP 请求报文由3部分组成(请求行+请求头+请求体) 请求行包括：请求方法、请求URL、HTTP协议及版本： GET和POST</description>
+      </item>
+      
+      <item>
         <title>Http协议浅析</title>
         <link>https://hugo.jiahongw.com/zh/posts/network/http/</link>
         <pubDate>Tue, 28 Jul 2020 11:12:16 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/posts/network/http/</guid>
-        <description>HTTP/1.x 在早期，HTTP 使用一个简单的模型来处理这样的连接。这些连接的生命周期是短暂的：每发起一个请求时都会创建一个新的连接，并在收到应答时立即关</description>
+        <description>HTTP是一个属于应用层的面向对象的协议，由于其简捷、快速的方式，适用于分布式超媒体信息系统。 HTTP/0.9 HTTP 是基于 TCP/IP 协议的应用层协议。它不涉及数据包（</description>
       </item>
       
     

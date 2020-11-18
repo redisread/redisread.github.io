@@ -1149,7 +1149,7 @@
 
 
     
-<meta name="description" content="http协议" />
+<meta name="description" content="http协议迭代了好几个版本，从一开始的短链接模型到长连接模型，最后还衍生出二进制帧层......" />
 <meta name="keywords" content="">
 <meta name="created" content="2020-07-28T11:12:16&#43;0800">
 <meta name="modified" content="2020-07-28T11:12:16&#43;0800">
@@ -1163,7 +1163,7 @@
 <meta property="og:title" content="Http协议浅析">
 <meta property="og:url" content="https://hugo.jiahongw.com/zh/posts/network/http/">
 <meta property="og:type" content="article">
-<meta property="og:description" content="http协议">
+<meta property="og:description" content="http协议迭代了好几个版本，从一开始的短链接模型到长连接模型，最后还衍生出二进制帧层......">
 
 <meta name="generator" content="Hugo 0.64.1" />
 <meta name="msapplication-TileColor" content="#ffffff">
@@ -1196,7 +1196,7 @@
     "datePublished": "2020-07-28T11:12:16+08:00",
     "dateModified": "2020-07-28T11:12:16+08:00",
     "url" : "https://hugo.jiahongw.com/zh/posts/network/http/",
-    "description": "http协议",
+    "description": "http协议迭代了好几个版本，从一开始的短链接模型到长连接模型，最后还衍生出二进制帧层......",
     "keywords": ["network","http","https"],
     "image" : "https://i.loli.net/2020/07/28/rcCOMEJ7YIALT3G.png",
     "author": {
@@ -1489,7 +1489,7 @@
     <div class="single__meta">
       
 <div class="single__infos">
-  <time class="single__info" title="创建日期">📅&nbsp;2020年07月28日 </time>  &middot; <span class="single__info" title="阅读时长"> ☕ 6 分钟 </span>&middot; <span class="single__info" title="作者">👻&nbsp;Victor</span>
+  <time class="single__info" title="创建日期">📅&nbsp;2020年07月28日 </time>  &middot; <span class="single__info" title="阅读时长"> ☕ 9 分钟 </span>&middot; <span class="single__info" title="作者">👻&nbsp;Victor</span>
   <span class="single__info">
     
   </span>
@@ -1518,9 +1518,16 @@
     </div>
     <article class="single__contents" data-dir="ltr">
       
-      <h2 id="http1x">HTTP/1.x</h2>
+      <p>HTTP是一个属于应用层的面向对象的协议，由于其简捷、快速的方式，适用于分布式超媒体信息系统。</p>
+<p><img src="https://i.loli.net/2020/09/11/xQoLU1WAXklzyVi.png" alt="HTTP发展史" /></p>
+<h2 id="http09">HTTP/0.9</h2>
+<p>HTTP 是基于 TCP/IP 协议的<a href="http://www.ruanyifeng.com/blog/2012/05/internet_protocol_suite_part_i.html"><strong>应用层协议</strong></a>。它不涉及数据包（packet）传输，主要规定了客户端和服务器之间的通信格式，默认使用80端口。</p>
 <blockquote>
-<p>在早期，HTTP 使用一个简单的模型来处理这样的连接。这些连接的生命周期是短暂的：每发起一个请求时都会创建一个新的连接，并在收到应答时立即关闭。</p>
+<p>协议规定，服务器只能回应HTML格式的字符串，不能回应别的格式。</p>
+</blockquote>
+<h2 id="http1x">HTTP/1.x</h2>
+<blockquote>
+<p>在早期，HTTP 使用一个简单的模型来处理这样的连接。这些连接的生命周期是短暂的：每发起一个请求时都会创建一个新的连接，并在收到应答时立即关闭。连接的成本较高。</p>
 </blockquote>
 <p>当请求发起时，网络延迟和带宽都会对性能造成影响。现代浏览器往往要发起很多次请求(十几个或者更多)才能拿到所需的完整信息，证明了这个早期模型的效率低下。</p>
 <p>在 HTTP/1.x 里有多种模型：<em>短连接</em>, <em>长连接</em>, 和 <em>HTTP 流水线。</em></p>
@@ -1536,15 +1543,48 @@
 <p>短连接有两个比较大的问题：创建新连接耗费的时间尤为明显，另外 TCP 连接的性能只有在该连接被使用一段时间后(热连接)才能得到改善。另外我们知道，TCP协议有个滑动窗口，有慢启动这回事，就是说每次建立新连接后，数据先是慢慢地传，然后滑动窗口慢慢变大，才能较高速度地传。</p>
 </blockquote>
 <p>具体流程：</p>
-<p>一个长连接会保持一段时间，重复用于发送一系列请求，节省了新建 TCP 连接握手的时间，还可以利用 TCP 的性能增强能力。当然这个连接也不会一直保留着：连接在空闲一段时间后会被关闭(服务器可以使用 <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Headers/Keep-Alive"><code>Keep-Alive</code></a> 协议头来指定一个最小的连接保持时间)。</p>
+<p>一个长连接会保持一段时间，重复用于发送一系列请求，<strong>节省了新建 TCP 连接握手的时间，还可以利用 TCP 的性能增强能力</strong>。当然这个连接也不会一直保留着：连接在空闲一段时间后会被关闭(服务器可以使用 <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Headers/Keep-Alive"><code>Keep-Alive</code></a> 协议头来指定一个最小的连接保持时间)。</p>
 <p>缺点：</p>
 <p>就算是在空闲状态，它还是会消耗服务器资源，而且在重负载时，还有可能遭受 <a href="https://developer.mozilla.org/en-US/docs/Glossary/DoS_attack">DoS attacks</a> 攻击。这种场景下，可以使用非长连接，即尽快关闭那些空闲的连接，也能对性能有所提升。</p>
-<h3 id="流水线模型">流水线模型</h3>
-<p>多个连续的请求甚至都不用等待立即返回就可以被发送。HTTP 流水线在现代浏览器中并不是默认被启用的。</p>
+<blockquote>
+<p>长连接一个优化的方法就是设置一个超时时间，但是具体这个时间是多少，应该通过测试之后得出一个较为均衡的时间。</p>
+</blockquote>
+<h3 id="流水线模型管线化">流水线模型(管线化)</h3>
+<p><strong>多个连续的请求甚至都不用等待立即返回就可以被发送</strong>。HTTP 流水线在现代浏览器中并不是默认被启用的。</p>
 <p>默认情况下，<a href="https://developer.mozilla.org/en/HTTP">HTTP</a> 请求是按顺序发出的。下一个请求只有在当前请求收到应答过后才会被发出。由于会受到网络延迟和带宽的限制，在下一个请求被发送到服务器之前，可能需要等待很长时间。</p>
-<p>流水线是在同一条长连接上发出连续的请求，而不用等待应答返回。这样可以避免连接延迟。理论上讲，性能还会因为两个 HTTP 请求有可能被打包到一个 TCP 消息包中而得到提升。就算 HTTP 请求不断的继续，尺寸会增加，但设置 TCP 的 <a href="https://en.wikipedia.org/wiki/Maximum_segment_size">MSS</a>(Maximum Segment Size) 选项，仍然足够包含一系列简单的请求。</p>
+<p>**流水线是在同一条长连接上发出连续的请求，而不用等待应答返回。这样可以避免连接延迟。理论上讲，性能还会因为两个 HTTP 请求有可能被打包到一个 TCP 消息包中而得到提升。**就算 HTTP 请求不断的继续，尺寸会增加，但设置 TCP 的 <a href="https://en.wikipedia.org/wiki/Maximum_segment_size">MSS</a>(Maximum Segment Size) 选项，仍然足够包含一系列简单的请求。</p>
+<blockquote>
+<p>比如，当请求一个包含10张图片的HTML Web页面，与挨个连接相比，用持久连接可以让请求更快结束。而管线化技术则比持久连接还要快。请求数越多，时间差就越明显。</p>
+</blockquote>
+<h4 id="队头阻塞">队头阻塞</h4>
+<p>在一般情况下，HTTP遵守“请求-响应”的模式，也就是客户端每次发送一个请求到服务端，服务端返回响应，这种模式很简单，但是有一个致命缺陷那就是页面中有多个请求，每个请求必须等到前一个请求响应之后才能发送，并且当前请求的响应返回之后，当前请求的下一个请求才能发送，流程如下图</p>
+<p><img src="https://i.loli.net/2020/11/12/Iim4qdxThogSEMk.png" alt="不带管线的队头" /></p>
+<p>在TCP链接中，http请求必须等待前一个请求响应之后，才能发送，后面的依次类推，由此可以看出，如果在一个tcp通道中如果某个http请求的响应因为某个原因没有及时返回，后面的响应会被阻塞，这就是<strong>队头阻塞。</strong></p>
+<blockquote>
+<p>注意这里说的是响应之后，并不是请之后!</p>
+</blockquote>
+<p>为了提高速度和效率，在持久连接的基础上，HTTP1.1进一步地支持在持久连接上使用管道化（pipelining）特性。<strong>管道化允许客户端在已发送的请求收到服务端的响应之前发送下一个请求</strong>，借此来减少等待时间提高吞吐，如果多个请求能在同一个TCP分节发送的话，还能提高网络利用率，流程如图：</p>
+<p><img src="https://i.loli.net/2020/11/12/YTriXMRKdEQLf6U.png" alt="带管线的队头阻塞" /></p>
+<p>同一个tcp连接中可以同时发送多个http请求，也就是并发，<strong>但是在响应的时候，必须排队响应，谁先到达的谁先响应，相比不支持管道化的http请求确实提高了效率，但是还是有局限性</strong>，假如其中某个响应因为某种原因延迟了几秒，后面的响应都会被阻塞。上面箭头所指的响应如果阻塞了，那么这个也是<strong>队头阻塞</strong>。</p>
+<p><strong>并且使用HTTP管道化还有一些限制</strong>:</p>
+<p>1、管道化要求服务端按照请求发送的顺序返回响应（FIFO），原因很简单，HTTP请求和响应并没有序号标识，无法将乱序的响应与请求关联起来。</p>
+<p>2、当客户端在支持管道化时需要保持未收到响应的请求，当连接意外中断时，需要重新发送这部分请求。如果这个请求只是从服务器获取数据，那么并不会对资源造成任何影响，而如果是一个提交信息的请求如post请求，那么可能会造成资源多次提交从而改变资源，这是不允许的。而不会对服务器资源产生影响的请求有个专业名词叫做幂等请求。客户端在使用管道化的时候请求方式必须是幂等请求。</p>
+<p><strong>比较</strong>：</p>
+<p><img src="https://i.loli.net/2020/11/12/cRSVqah4gTDjWY8.png" alt="管线化和非管线化的对比" /></p>
+<p><strong>上面的管线化的模型就是加速了请求的过程，但是响应的过程还是存在队头阻塞。</strong></p>
+<blockquote>
+<p>因为HTTP管道化本身可能会导致队头阻塞的问题，以及上面提到的一些限制，<strong>现代浏览器默认都关闭了管道化，并且大部分服务器也是默认不支持管道化的</strong>。</p>
+</blockquote>
+<p><strong>如何解决队头阻塞？</strong></p>
+<p>客户端使用并发长连接，注意这个并发指的是tcp并发连接。</p>
+<blockquote>
+<p>并发长连接虽然在一定程度上解决了http的队头阻塞，但是会对服务器的性能有较高的要求</p>
+</blockquote>
 <h2 id="http2">HTTP/2</h2>
-<p>HTTP/2 没有改动 HTTP 的应用语义。 HTTP 方法、状态代码、URI 和标头字段等核心概念一如往常。 不过，HTTP/2 修改了数据格式化（分帧）以及在客户端与服务器间传输的方式。这两点统帅全局，通过新的分帧层向我们的应用隐藏了所有复杂性。 因此，所有现有的应用都可以不必修改而在新协议下运行。</p>
+<blockquote>
+<p>HTTP/1.1 版的头信息肯定是文本（ASCII编码），数据体可以是文本，也可以是二进制。HTTP/2 则是一个彻底的二进制协议，头信息和数据体都是二进制，并且统称为&quot;帧&rdquo;（frame）：头信息帧和数据帧。</p>
+</blockquote>
+<p>😆 HTTP/2 没有改动 HTTP 的应用语义。 HTTP 方法、状态代码、URI 和标头字段等核心概念一如往常。 不过，HTTP/2 修改了数据格式化（分帧）以及在客户端与服务器间传输的方式。这两点统帅全局，通过新的分帧层向我们的应用隐藏了所有复杂性。 因此，所有现有的应用都可以不必修改而在新协议下运行。</p>
 <blockquote>
 <p><em>为什么不是 HTTP/1.2？</em></p>
 <p>为了实现 HTTP 工作组设定的性能目标，HTTP/2 引入了一个新的二进制分帧层，该层无法与之前的 HTTP/1.x 服务器和客户端向后兼容，因此协议的主版本提升到 HTTP/2。</p>
@@ -1552,7 +1592,7 @@
 <h3 id="二进制分帧层">二进制分帧层</h3>
 <p>HTTP/2 所有性能增强的核心在于新的二进制分帧层，它定义了如何封装 HTTP 消息并在客户端与服务器之间传输。</p>
 <p><img src="https://i.loli.net/2020/07/18/QFrEgPCV7GAq6wm.png" alt="HTTP/2二进制分帧层" /></p>
-<p>这里所谓的“层”，指的是位于套接字接口与应用可见的高级 HTTP API 之间一个经过优化的新编码机制：HTTP 的语义（包括各种动词、方法、标头）都不受影响，不同的是传输期间对它们的编码方式变了。 HTTP/1.x 协议以换行符作为纯文本的分隔符，而 HTTP/2 将所有传输的信息分割为更小的消息和帧，并采用二进制格式对它们编码。</p>
+<p>这里所谓的“层”，指的是位于套接字接口与应用可见的高级 HTTP API 之间一个经过优化的新编码机制：HTTP 的语义（包括各种动词、方法、标头）都不受影响，<strong>不同的是传输期间对它们的编码方式变了</strong>。 <strong>HTTP/1.x 协议以换行符作为纯文本的分隔符，而 HTTP/2 将所有传输的信息分割为更小的消息和帧，并采用二进制格式对它们编码。</strong></p>
 <h4 id="数据流消息和帧">数据流、消息和帧</h4>
 <ul>
 <li><em>数据流</em>：已建立的连接内的双向字节流，可以承载一条或多条消息。</li>
@@ -1561,12 +1601,13 @@
 </ul>
 <p>关系：</p>
 <ul>
-<li>所有通信都在一个 TCP 连接上完成，此连接可以承载任意数量的双向数据流。</li>
+<li>所有通信都在一个 TCP 连接上完成，此连接可以承载任意数量的双向数据流。(<strong>多工</strong>)</li>
 <li>每个数据流都有一个唯一的标识符和可选的优先级信息，用于承载双向消息。</li>
 <li>每条消息都是一条逻辑 HTTP 消息（例如请求或响应），包含一个或多个帧。</li>
-<li>帧是最小的通信单位，承载着特定类型的数据，例如 HTTP 标头、消息负载等等。 来自不同数据流的帧可以交错发送，然后再根据每个帧头的数据流标识符重新组装。</li>
+<li><strong>帧是最小的通信单位，承载着特定类型的数据，例如 HTTP 标头、消息负载等等。 来自不同数据流的帧可以交错发送，然后再根据每个帧头的数据流标识符重新组装。</strong></li>
 </ul>
-<p><img src="https://i.loli.net/2020/07/18/mvZHTDVKUw5paXR.png" alt="image-20200718153727456" /></p>
+<p><img src="https://i.loli.net/2020/07/18/mvZHTDVKUw5paXR.png" alt="二进制帧" /></p>
+<p>简言之，HTTP/2 将 HTTP 协议通信分解为二进制编码帧的交换，这些帧对应着特定数据流中的消息。所有这些都在一个 TCP 连接内复用。 这是 HTTP/2 协议所有其他功能和性能优化的基础。</p>
 <p>HTTP/2 帧结构如下：</p>
 <p><img src="https://i.loli.net/2020/07/18/myhEWKrbG6sPQZu.png" alt="帧结构" /></p>
 <p>实际的传输过程可能是下面这样(吞吐量增大)：</p>
@@ -1586,7 +1627,7 @@
 <h4 id="流控制">流控制</h4>
 <p>流控制是一种阻止发送方向接收方发送大量数据的机制，以免超出后者的需求或处理能力：发送方可能非常繁忙、处于较高的负载之下，也可能仅仅希望为特定数据流分配固定量的资源。 例如，客户端可能请求了一个具有较高优先级的大型视频流，但是用户已经暂停视频，客户端现在希望暂停或限制从服务器的传输，以免提取和缓冲不必要的数据。 再比如，一个代理服务器可能具有较快的下游连接和较慢的上游连接，并且也希望调节下游连接传输数据的速度以匹配上游连接的速度来控制其资源利用率；等等。类似TCP流量控制。</p>
 <h4 id="服务器推送">服务器推送</h4>
-<p>TTP/2 新增的另一个强大的新功能是，服务器可以对一个客户端请求发送多个响应。 换句话说，除了对最初请求的响应外，服务器还可以向客户端推送额外资源（图 12-5），而无需客户端明确地请求。</p>
+<p>HTTP/2 新增的另一个强大的新功能是，服务器可以对一个客户端请求发送多个响应。 换句话说，除了对最初请求的响应外，服务器还可以向客户端推送额外资源（图 12-5），而无需客户端明确地请求。</p>
 <p><img src="https://i.loli.net/2020/07/18/Bht8slFucdr7veP.png" alt="服务器推送" /></p>
 <h4 id="标头压缩">标头压缩</h4>
 <p>每个 HTTP 传输都承载一组标头，这些标头说明了传输的资源及其属性。 在 HTTP/1.x 中，此元数据始终以纯文本形式，通常会给每个传输增加 500–800 字节的开销。如果使用 HTTP Cookie，增加的开销有时会达到上千字节。为了减少此开销和提升性能，HTTP/2 使用 HPACK 压缩格式压缩请求和响应标头元数据，这种格式采用两种简单但是强大的技术：</p>
@@ -1596,11 +1637,17 @@
 </ol>
 <p>利用霍夫曼编码，可以在传输时对各个值进行压缩，而利用之前传输值的索引列表，我们可以通过传输索引值的方式对重复值进行编码，索引值可用于有效查询和重构完整的标头键值对。</p>
 <p><img src="https://i.loli.net/2020/07/18/Ghy8azel4qFEiBm.png" alt="标头压缩" /></p>
+<h4 id="哈夫曼树如何压缩">哈夫曼树如何压缩</h4>
+<p>文件压缩的主要思想是利用哈夫曼编码来实现的，但是得到编码之前我们需要构建这棵树。那么利用什么来构建树呢？！这里，我们需要统计每个字符出现的次数，用次数来构建<code>HuffmanTree</code>。假设我们现在有一个<code>.txt</code>的小文件，内容是<code>&quot;aaaabbbccd&quot;</code>。字符存在计算机中时以字节为单位的，因此我们需要将这些字符压缩成0、1表示的编码，0和1表示字节中的“位”，这样能大大降低文件的大小。</p>
+<p><img src="https://i.loli.net/2020/09/11/VLBIRDHC8kPO6xw.png" alt="哈夫曼树压缩" /></p>
+<h4 id="体验http2">体验HTTP2</h4>
+<p><a href="https://http2.akamai.com/demo">https://http2.akamai.com/demo</a></p>
 <hr />
 <p>参考链接：</p>
 <ol>
 <li><a href="https://segmentfault.com/a/1190000013594849">HTTP 连接管理进化论</a></li>
 <li><a href="https://developers.google.com/web/fundamentals/performance/http2?hl=zh-cn">https://developers.google.com/web/fundamentals/performance/http2?hl=zh-cn</a></li>
+<li><a href="https://cloud.tencent.com/developer/article/1509279">白话http队头阻塞</a></li>
 </ol>
 
     </article>
@@ -2996,11 +3043,16 @@ document.addEventListener('DOMContentLoaded', function () {
         <div class="toc toc__outer " data-dir="ltr" data-folding="true">
           <nav id="TableOfContents">
   <ul>
+    <li><a href="#http09">HTTP/0.9</a></li>
     <li><a href="#http1x">HTTP/1.x</a>
       <ul>
         <li><a href="#短链接模型">短链接模型</a></li>
         <li><a href="#长连接模型">长连接模型</a></li>
-        <li><a href="#流水线模型">流水线模型</a></li>
+        <li><a href="#流水线模型管线化">流水线模型(管线化)</a>
+          <ul>
+            <li><a href="#队头阻塞">队头阻塞</a></li>
+          </ul>
+        </li>
       </ul>
     </li>
     <li><a href="#http2">HTTP/2</a>
@@ -3013,6 +3065,8 @@ document.addEventListener('DOMContentLoaded', function () {
             <li><a href="#流控制">流控制</a></li>
             <li><a href="#服务器推送">服务器推送</a></li>
             <li><a href="#标头压缩">标头压缩</a></li>
+            <li><a href="#哈夫曼树如何压缩">哈夫曼树如何压缩</a></li>
+            <li><a href="#体验http2">体验HTTP2</a></li>
           </ul>
         </li>
       </ul>
