@@ -1221,7 +1221,7 @@
 
   <script>
     
-    var baiduAnalyticsId = JSON.parse("\"fd051507caad40b5e1cc04fdc7a47342\"");
+    var baiduAnalyticsId = JSON.parse("\"8ac34c9d30985a71517efff22def1592\"");
 
     var _hmt = _hmt || [];
     (function () {
@@ -3523,6 +3523,7 @@
 <p>LT(level triggered)是缺省的工作方式，并且同时支持block和no-block socket。在这种做法中，内核告诉你一个文件描述符是否就绪了，然后你可以对这个就绪的fd进行IO操作。<strong>如果你不作任何操作，内核还是会继续通知你的</strong>，所以，这种模式编程出错误可能性要小一点。传统的select/poll都是这种模型的代表。</p>
 <h4 id="et模式">ET模式</h4>
 <p>ET (edge-triggered) 是高速工作方式，只支持no-block socket(非阻塞)。 在这种模式下，<strong>当描述符从未就绪变为就绪时，内核就通过epoll告诉你，然后它会假设你知道文件描述符已经就绪，并且不会再为那个文件描述符发送更多的 就绪通知</strong>，直到你做了某些操作而导致那个文件描述符不再是就绪状态(比如 你在发送，接收或是接受请求，或者发送接收的数据少于一定量时导致了一个EWOULDBLOCK 错误)。但是请注意，如果一直不对这个fd作IO操作(从而导致它再次变成未就绪)，内核就不会发送更多的通知(only once)。不过在TCP协议中，ET模式的加速效用仍需要更多的benchmark确认。</p>
+<p><img src="https://i.loli.net/2020/11/18/5AizpuafSm6lVtD.png" alt="wallhaven-e7zwmr_1920x1080" /></p>
 <hr />
 <p>参考：</p>
 <ol>
@@ -3773,6 +3774,27 @@
   
 </nav>
     
+  
+    <span id="/zh/posts/linux/select-poll-epoll/" class="leancloud_visitors" data-flag-title="Select Poll Epoll 详解">
+  <span class="post-meta-item-text">文章阅读量 </span>
+  <span class="leancloud-visitors-count">0</span>
+  <p></p>
+  </span>
+<div id="vcomments"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+<script>
+  new Valine({
+      el: '#vcomments' ,
+      appId: 'H6qFmM5oh7cl8CiHHUdexKnz-gzGzoHsz',
+      appKey: 'LNg1dVRYx2AuR4bd0ay4S8x5',
+      notify:  true ,
+      verify:  false ,
+      avatar:'robohash',
+      placeholder: '说点什么吧...',
+      visitor:  true 
+  });
+</script>
   
 
     <div class="modal micromodal-slide" id="modal" aria-hidden="true">
@@ -4785,14 +4807,14 @@ document.addEventListener('DOMContentLoaded', function () {
       
       
         
+      
+        
         
           
             
               <a href="https://hugo.jiahongw.com/zh/posts/linux/select-poll-epoll/" data-lang="zh" class="dropdown-item is-active">中文</a>
             
           
-        
-      
         
       
         
