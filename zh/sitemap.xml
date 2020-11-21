@@ -4,7 +4,7 @@
   
   <url>
     <loc>https://hugo.jiahongw.com/zh/</loc>
-    <lastmod>2020-11-19T22:50:47+08:00</lastmod>
+    <lastmod>2020-11-21T15:09:42+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -24,7 +24,7 @@
   
   <url>
     <loc>https://hugo.jiahongw.com/zh/categories/</loc>
-    <lastmod>2020-11-19T22:50:47+08:00</lastmod>
+    <lastmod>2020-11-21T15:09:42+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -43,13 +43,8 @@
   </url>
   
   <url>
-    <loc>https://hugo.jiahongw.com/zh/series/life/</loc>
-    <lastmod>2020-11-19T22:50:47+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://hugo.jiahongw.com/zh/posts/</loc>
-    <lastmod>2020-11-19T22:50:47+08:00</lastmod>
+    <lastmod>2020-11-21T15:09:42+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -64,7 +59,7 @@
   
   <url>
     <loc>https://hugo.jiahongw.com/zh/series/</loc>
-    <lastmod>2020-11-19T22:50:47+08:00</lastmod>
+    <lastmod>2020-11-21T15:09:42+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -84,7 +79,7 @@
   
   <url>
     <loc>https://hugo.jiahongw.com/zh/tags/</loc>
-    <lastmod>2020-11-19T22:50:47+08:00</lastmod>
+    <lastmod>2020-11-21T15:09:42+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -100,6 +95,31 @@
                 hreflang="zh"
                 href="https://hugo.jiahongw.com/zh/tags/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://hugo.jiahongw.com/zh/series/%E4%BA%91%E8%AE%A1%E7%AE%97/</loc>
+    <lastmod>2020-11-21T15:09:42+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hugo.jiahongw.com/zh/tags/%E5%86%B7%E6%95%B0%E6%8D%AE/</loc>
+    <lastmod>2020-11-21T15:09:42+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hugo.jiahongw.com/zh/posts/cloud/data-hot-ice/</loc>
+    <lastmod>2020-11-21T15:09:42+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hugo.jiahongw.com/zh/tags/%E7%83%AD%E6%95%B0%E6%8D%AE/</loc>
+    <lastmod>2020-11-21T15:09:42+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hugo.jiahongw.com/zh/series/life/</loc>
+    <lastmod>2020-11-19T22:50:47+08:00</lastmod>
   </url>
   
   <url>
@@ -288,12 +308,12 @@
   </url>
   
   <url>
-    <loc>https://hugo.jiahongw.com/zh/series/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</loc>
+    <loc>https://hugo.jiahongw.com/zh/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</loc>
     <lastmod>2020-07-28T18:02:38+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hugo.jiahongw.com/zh/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</loc>
+    <loc>https://hugo.jiahongw.com/zh/series/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</loc>
     <lastmod>2020-07-28T18:02:38+08:00</lastmod>
   </url>
   
@@ -373,12 +393,12 @@
   </url>
   
   <url>
-    <loc>https://hugo.jiahongw.com/zh/tags/ue/</loc>
+    <loc>https://hugo.jiahongw.com/zh/series/ue/</loc>
     <lastmod>2020-06-02T20:00:46+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hugo.jiahongw.com/zh/series/ue/</loc>
+    <loc>https://hugo.jiahongw.com/zh/tags/ue/</loc>
     <lastmod>2020-06-02T20:00:46+08:00</lastmod>
   </url>
   
@@ -908,12 +928,12 @@
   </url>
   
   <url>
-    <loc>https://hugo.jiahongw.com/zh/series/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/</loc>
+    <loc>https://hugo.jiahongw.com/zh/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/</loc>
     <lastmod>2020-02-23T15:49:10+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hugo.jiahongw.com/zh/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/</loc>
+    <loc>https://hugo.jiahongw.com/zh/series/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/</loc>
     <lastmod>2020-02-23T15:49:10+08:00</lastmod>
   </url>
   

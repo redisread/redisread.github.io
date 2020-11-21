@@ -1153,9 +1153,9 @@
 
 <meta name="description" content="The VictorHong`s Blog for Hugo example site." />
 <meta name="keywords" content="">
-<meta name="created" content="2020-11-19T22:50:47&#43;0800">
-<meta name="modified" content="2020-11-19T22:50:47&#43;0800">
-<meta property="article:published_time" content="2020-11-19T22:50:47&#43;0800">
+<meta name="created" content="2020-11-21T15:09:42&#43;0800">
+<meta name="modified" content="2020-11-21T15:09:42&#43;0800">
+<meta property="article:published_time" content="2020-11-21T15:09:42&#43;0800">
 
 <meta name="author" content="VictorHong">
 
@@ -1506,6 +1506,39 @@
 
     
     <div class="summary-classic__image-wrapper">
+      <a href="https://hugo.jiahongw.com/zh/posts/settings/markdown-deep/">
+        <img data-src="https://i.loli.net/2020/02/15/GCFzA4r1EyhekDY.png" alt="https://i.loli.net/2020/02/15/GCFzA4r1EyhekDY.png" src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%23aaa' d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4.44-6.19l-2.35 3.02-1.56-1.88c-.2-.25-.58-.24-.78.01l-1.74 2.23c-.26.33-.02.81.39.81h8.98c.41 0 .65-.47.4-.8l-2.55-3.39c-.19-.26-.59-.26-.79 0z'/%3E%3C/svg%3E" class="lazyload summary-classic__image" />
+      </a>
+    </div>
+    
+
+    <div class="summary-classic__content">
+      <header>
+        <h5 class="title h5"><a href='https://hugo.jiahongw.com/zh/posts/settings/markdown-deep/'> Markdown深入使用</a> </h5>
+        <h6 class="subtitle caption"><time title="创建日期" dir="ltr">📅 2020年02月14日 </time>  <span title="阅读时长" dir="ltr"> &middot; ☕ 2 分钟 </span>&middot; <span title="作者" dir="ltr">👻&nbsp;Victor</span></h6>
+      </header>
+      <div>
+        <div class="summary-classic__text p2">
+          
+            <p>👱‍♀介绍一些markdown中比较实用的一些写作方法。</p>
+          
+        </div>
+      </div>
+    </div>
+
+    
+    
+  </div>
+  <hr />
+</article>
+
+            
+                
+  <article class="summary-classic">
+  <div class="summary-classic__flex-box" >
+
+    
+    <div class="summary-classic__image-wrapper">
       <a href="https://hugo.jiahongw.com/zh/posts/settings/free-image-bed/">
         <img data-src="https://i.loli.net/2020/02/13/PL1X34JyxjDWMU2.png" alt="https://i.loli.net/2020/02/13/PL1X34JyxjDWMU2.png" src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%23aaa' d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4.44-6.19l-2.35 3.02-1.56-1.88c-.2-.25-.58-.24-.78.01l-1.74 2.23c-.26.33-.02.81.39.81h8.98c.41 0 .65-.47.4-.8l-2.55-3.39c-.19-.26-.59-.26-.79 0z'/%3E%3C/svg%3E" class="lazyload summary-classic__image" />
       </a>
@@ -1785,41 +1818,6 @@
 </article>
 
             
-                
-  <article class="summary-classic">
-  <div class="summary-classic__flex-box" >
-
-    
-
-    <div class="summary-classic__content">
-      <header>
-        <h5 class="title h5"><a href='https://hugo.jiahongw.com/zh/posts/ue/ue-hitproxy/'> </a> </h5>
-        <h6 class="subtitle caption"><time title="创建日期" dir="ltr">📅 0001年01月01日 </time>  <span title="阅读时长" dir="ltr"> &middot; ☕ 1 分钟 </span></h6>
-      </header>
-      <div>
-        <div class="summary-classic__text p2">
-          
-            UE编辑器下模拟使用HitProxy 需要从 UGameViewportClient 类继承 修改返回值为true,路径：\Source\Runtime\Engine\Private\GameViewportClient.h
-1  virtual bool RequiresHitProxyStorage() override { return true; }   在FViewportClient类中新建DrawHitProxy函数 文件UnrealClient.h
-在GameViewportClient类中声明并且实现 声明：\Source\Runtime\Engine\Private\GameViewportClient.h
-将GameViewportClient类中的函数Draw()内容复制到该函数DrawHitProxy，修改下面的的地方：
-修改FViewport类中的GetRawHitProxyData函数 在GetRawHitProxyData函数中进行以下的修改：Engine\Source\Runtime\Engine\Private\UnrealClient.cpp
-调用&ndash;获取屏幕坐标Hitproxy 相关类型 HHitProxy：用于检测用户界面命中的基类
-FHitProxyMap：从2D坐标到缓存命中代理的地图。
-参考：
- How to select an actor in-game using GetHitProxy? UE4 编辑器的光标拾取 编辑器Viewport窗口中的鼠标拾取原理 场景基本对象 渲染总流程 https://docs.unrealengine.com/zh-CN/Programming/Rendering/MeshDrawingPipeline/index.html Unreal Mesh Drawing源码分析 白袍笑道  
-          
-        </div>
-      </div>
-    </div>
-
-    
-    
-  </div>
-  <hr />
-</article>
-
-            
             
 
 
@@ -1877,6 +1875,14 @@ FHitProxyMap：从2D坐标到缓存命中代理的地图。
       
         <li
         class="active"><a href="/zh/page/6/">6</a></li>
+      
+    
+      
+      <script>
+      </script>
+      
+        <li
+        ><a href="/zh/page/7/">7</a></li>
       
     
   </ul>
@@ -2084,6 +2090,10 @@ FHitProxyMap：从2D坐标到缓存命中代理的地图。
             <ul class="sidebar-recent__ul">
                 
                     <li>
+                        <a href="/zh/posts/cloud/data-hot-ice/" class="sidebar-recent__a p2">冷数据与热数据</a>
+                    </li>
+                
+                    <li>
                         <a href="/zh/posts/life/seven-habits/" class="sidebar-recent__a p2">高效人士的几个习惯</a>
                     </li>
                 
@@ -2097,10 +2107,6 @@ FHitProxyMap：从2D坐标到缓存命中代理的地图。
                 
                     <li>
                         <a href="/zh/posts/algorithmstructure/huffman-coding/" class="sidebar-recent__a p2">Huffman Tree是如何编码的？</a>
-                    </li>
-                
-                    <li>
-                        <a href="/zh/posts/settings/https-set/" class="sidebar-recent__a p2">CloudFlare&#43;Nginx配置HTTPS连接</a>
                     </li>
                 
             </ul>
@@ -2442,6 +2448,19 @@ FHitProxyMap：从2D坐标到缓存命中代理的地图。
         
         
             <span class="tag">
+                <a href="/zh/series/%E4%BA%91%E8%AE%A1%E7%AE%97/" class="is-series taxo__link" data-dir="ltr">
+                    <span class="taxo__text">
+                        云计算
+                    </span>
+                    <span class="taxo__num" dir="auto">
+                        1
+                    </span>
+                </a>
+            </span>
+        
+        
+        
+            <span class="tag">
                 <a href="/zh/series/%E5%AF%86%E7%A0%81%E5%AD%A6/" class="is-series taxo__link" data-dir="ltr">
                     <span class="taxo__text">
                         密码学
@@ -2638,14 +2657,14 @@ FHitProxyMap：从2D坐标到缓存命中代理的地图。
       
       
         
+      
+        
         
           
             
               <a href="https://hugo.jiahongw.com/zh/" data-lang="zh" class="dropdown-item is-active">中文</a>
             
           
-        
-      
         
       
         
@@ -2670,12 +2689,12 @@ FHitProxyMap：从2D坐标到缓存命中代理的地图。
       
       
         
-      
-        
         
           
             
           
+        
+      
         
       
         
