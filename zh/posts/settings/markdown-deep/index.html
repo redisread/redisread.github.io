@@ -1450,7 +1450,7 @@
             
             
 
-<main class="single__main main">
+<main class="single__main main-main">
   
     <nav class="breadcrumb" aria-label="breadcrumbs">
   <ol>
@@ -1991,7 +1991,7 @@ And then define the link:
       notify:  true ,
       verify:  false ,
       avatar:'robohash',
-      placeholder: '说点什么吧...',
+      placeholder: 'Say something...',
       visitor:  true 
   });
 </script>
@@ -2330,6 +2330,49 @@ document.addEventListener('DOMContentLoaded', function () {
 </main>
 
 
+<aside class="single__side main-side">
+  
+
+
+<section class="sidebar">
+  <div class="toc__flexbox" data-position="fixed">
+    <h6 class="toc__title">目录</h6>
+    
+      <label class="switch">
+        <input id="toggle-toc" aria-label="Toggle TOC" type="checkbox" checked>
+        <span class="slider round"></span>
+      </label>
+    
+  </div>
+  <div class="toc " data-dir="ltr" data-folding="true">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#任务列表">任务列表✍</a></li>
+        <li><a href="#数学公式">数学公式📐</a></li>
+        <li><a href="#脚注">脚注👣</a></li>
+        <li><a href="#水平线">水平线〰</a></li>
+        <li><a href="#ymal首要事项">YMAL首要事项🤔</a></li>
+        <li><a href="#目录">目录📑</a></li>
+        <li><a href="#内部链接">内部链接🔗</a></li>
+        <li><a href="#参考链接">参考链接📖</a></li>
+        <li><a href="#删除线">删除线❌</a></li>
+        <li><a href="#高亮">高亮🔆</a></li>
+        <li><a href="#插入视频">插入视频📹</a></li>
+        <li><a href="#插入音乐">插入音乐🎼</a></li>
+        <li><a href="#随机图片">随机图片🌳</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</section>
+
+
+
+</aside>
+
 <script>
   
   
@@ -2337,7 +2380,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   var enableToc = JSON.parse("true");
   var toc = JSON.parse("null");
-  var tocPosition = JSON.parse("\"outer\"");
+  var tocPosition = JSON.parse("\"inner\"");
   
   var singleMainElem = document.querySelector('.single__main');
   var singleSideElem = document.querySelector('.single__side');
@@ -3143,43 +3186,6 @@ document.addEventListener('DOMContentLoaded', function () {
         </div>
         
 <div class="wrapper__right" dir="ltr">
-  
-    
-      
-        <div class="toc__flexbox--outer" data-position="fixed" data-dir="ltr">
-          <h6 class="toc__title toc__title--outer">目录</h6>
-          
-          <label class="switch">
-            <input id="visible-toc" aria-label="Visible TOC" type="checkbox" checked>
-            <span class="slider round"></span>
-          </label>
-          
-        </div>
-        <div class="toc toc__outer " data-dir="ltr" data-folding="true">
-          <nav id="TableOfContents">
-  <ul>
-    <li>
-      <ul>
-        <li><a href="#任务列表">任务列表✍</a></li>
-        <li><a href="#数学公式">数学公式📐</a></li>
-        <li><a href="#脚注">脚注👣</a></li>
-        <li><a href="#水平线">水平线〰</a></li>
-        <li><a href="#ymal首要事项">YMAL首要事项🤔</a></li>
-        <li><a href="#目录">目录📑</a></li>
-        <li><a href="#内部链接">内部链接🔗</a></li>
-        <li><a href="#参考链接">参考链接📖</a></li>
-        <li><a href="#删除线">删除线❌</a></li>
-        <li><a href="#高亮">高亮🔆</a></li>
-        <li><a href="#插入视频">插入视频📹</a></li>
-        <li><a href="#插入音乐">插入音乐🎼</a></li>
-        <li><a href="#随机图片">随机图片🌳</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-        </div>
-      
-    
   
 </div>
 

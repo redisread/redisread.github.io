@@ -9,12 +9,21 @@
     <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
     <webMaster>1427298682@qq.com (VictorHong)</webMaster>
     <copyright>&amp;copy;{year}, Redisread</copyright>
-    <lastBuildDate>Sat, 21 Nov 2020 15:09:42 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2020 21:56:16 +0800</lastBuildDate>
     
         <atom:link href="https://hugo.jiahongw.com/zh/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     
+      
+      <item>
+        <title>程序员职业路线</title>
+        <link>https://hugo.jiahongw.com/zh/posts/life/programer-go-go/</link>
+        <pubDate>Tue, 24 Nov 2020 21:56:16 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <guid>https://hugo.jiahongw.com/zh/posts/life/programer-go-go/</guid>
+        <description>求职原理三要素 1. 价值 绝⼤部分公司购买⼈才都是为了使⽤，所以他们看中的是其使⽤价值！这个使⽤价值说得更直⽩⼀点，就是⼈才如何直接或者间接的为公</description>
+      </item>
       
       <item>
         <title>冷数据与热数据</title>
@@ -167,6 +176,15 @@
         <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/posts/hugo/xiaoshujiang/</guid>
         <description>地址：http://markdown.xiaoshujiang.com/ This is a Test!</description>
+      </item>
+      
+      <item>
+        <title>UE编辑器下模拟使用HitProxy</title>
+        <link>https://hugo.jiahongw.com/zh/posts/ue/ue-hitproxy/</link>
+        <pubDate>Mon, 15 Jun 2020 09:43:11 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <guid>https://hugo.jiahongw.com/zh/posts/ue/ue-hitproxy/</guid>
+        <description>需要从 UGameViewportClient 类继承 修改返回值为true,路径：\Source\Runtime\Engine\Private\GameViewportClient</description>
       </item>
       
       <item>
@@ -359,8 +377,7 @@
         <pubDate>Wed, 01 Apr 2020 17:12:29 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/posts/xingyun-begin/</guid>
-        <description>&lt;p&gt;outer&lt;/p&gt;
-&lt;p&gt;简单地说，云计算就是计算服务的提供（包括服务器、存储、数据库、网络、软件、分析和智能）- 通过 Internet（云）提供快速创新、弹性资源和规模经济。对于云服务，通常你只需使用多少支付多少，从而帮助降低运营成本，使基础设施更有效地运行，并能根据业务需求的变化调整对服务的使用。&lt;/p&gt;</description>
+        <description>&lt;p&gt;简单地说，云计算就是计算服务的提供（包括服务器、存储、数据库、网络、软件、分析和智能）- 通过 Internet（云）提供快速创新、弹性资源和规模经济。对于云服务，通常你只需使用多少支付多少，从而帮助降低运营成本，使基础设施更有效地运行，并能根据业务需求的变化调整对服务的使用。&lt;/p&gt;</description>
       </item>
       
       <item>
@@ -533,23 +550,6 @@
         <guid>https://hugo.jiahongw.com/zh/posts/hugo/shortcodes/</guid>
         <description>Markdownify box This is boxmd shortcode Simple box This is **box** shortcode  Code tabs Make it easy to switch between different code
 java javascript  1  System.out.println(&amp;#39;Hello World!&amp;#39;);     1  console.log(&amp;#39;Hello World!&amp;#39;);       &#39;use strict&#39;; var containerId = JSON.parse(&#34;\&#34;642b4352e05d9e04\&#34;&#34;); var containerElem = document.getElementById(containerId); var codetabLinks = null; var codetabContents = null; var ids = []; if (containerElem) { codetabLinks = containerElem.</description>
-      </item>
-      
-      <item>
-        <title></title>
-        <link>https://hugo.jiahongw.com/zh/posts/ue/ue-hitproxy/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        <guid>https://hugo.jiahongw.com/zh/posts/ue/ue-hitproxy/</guid>
-        <description>UE编辑器下模拟使用HitProxy 需要从 UGameViewportClient 类继承 修改返回值为true,路径：\Source\Runtime\Engine\Private\GameViewportClient.h
-1  virtual bool RequiresHitProxyStorage() override { return true; }   在FViewportClient类中新建DrawHitProxy函数 文件UnrealClient.h
-在GameViewportClient类中声明并且实现 声明：\Source\Runtime\Engine\Private\GameViewportClient.h
-将GameViewportClient类中的函数Draw()内容复制到该函数DrawHitProxy，修改下面的的地方：
-修改FViewport类中的GetRawHitProxyData函数 在GetRawHitProxyData函数中进行以下的修改：Engine\Source\Runtime\Engine\Private\UnrealClient.cpp
-调用&amp;ndash;获取屏幕坐标Hitproxy 相关类型 HHitProxy：用于检测用户界面命中的基类
-FHitProxyMap：从2D坐标到缓存命中代理的地图。
-参考：
- How to select an actor in-game using GetHitProxy? UE4 编辑器的光标拾取 编辑器Viewport窗口中的鼠标拾取原理 场景基本对象 渲染总流程 https://docs.unrealengine.com/zh-CN/Programming/Rendering/MeshDrawingPipeline/index.html Unreal Mesh Drawing源码分析 白袍笑道  </description>
       </item>
       
     
