@@ -9,12 +9,21 @@
     <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
     <webMaster>1427298682@qq.com (VictorHong)</webMaster>
     <copyright>&amp;copy;{year}, Redisread</copyright>
-    <lastBuildDate>Tue, 24 Nov 2020 21:56:16 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2020 13:14:50 +0800</lastBuildDate>
     
         <atom:link href="https://hugo.jiahongw.com/zh/index.xml" rel="self" type="application/rss+xml" />
     
     
     
+      
+      <item>
+        <title>汉明码</title>
+        <link>https://hugo.jiahongw.com/zh/posts/network/hamming-code/</link>
+        <pubDate>Wed, 25 Nov 2020 13:14:50 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <guid>https://hugo.jiahongw.com/zh/posts/network/hamming-code/</guid>
+        <description>什么是汉明码？ 看下面这张图，蓝色的表示需要发送的数据，我们就假设发送的数据为0101吧，外面橙色的码就是汉明码，汉明码是一种纠错码，但是只能</description>
+      </item>
       
       <item>
         <title>程序员职业路线</title>
