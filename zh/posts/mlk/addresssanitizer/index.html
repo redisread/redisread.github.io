@@ -1198,6 +1198,7 @@
     "url" : "https://hugo.jiahongw.com/zh/posts/mlk/addresssanitizer/",
     "description": "A Fast Address Sanity Checker",
     "keywords": ["MLK"],
+    "image" : "https://i.loli.net/2021/01/07/p8frJDq2YzFPIbu.png",
     "author": {
       "@type": "Person",
       "name": "Victor"
@@ -1449,7 +1450,7 @@
             
             
 
-<main class="single__main main">
+<main class="single__main main-main">
   
     <nav class="breadcrumb" aria-label="breadcrumbs">
   <ol>
@@ -1900,11 +1901,11 @@
 <nav class="pagination-single">
   
     
-      <a href="https://hugo.jiahongw.com/zh/posts/dl/bbb/" class="pagination-single__left">
+      <a href="https://hugo.jiahongw.com/zh/posts/life/find-and-note/" class="pagination-single__left">
         <div class="pagination-single__icon">
           <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M19 11H7.83l4.88-4.88c.39-.39.39-1.03 0-1.42-.39-.39-1.02-.39-1.41 0l-6.59 6.59c-.39.39-.39 1.02 0 1.41l6.59 6.59c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L7.83 13H19c.55 0 1-.45 1-1s-.45-1-1-1z"/></svg>
         </div>
-        <div class="pagination-single__left-title">bbb</div>      
+        <div class="pagination-single__left-title">这段时间的一些记录</div>      
       </a>
     
     <div class="grow"></div>
@@ -2268,6 +2269,59 @@ document.addEventListener('DOMContentLoaded', function () {
 </main>
 
 
+<aside class="single__side main-side">
+  
+
+
+<section class="sidebar">
+  <div class="toc__flexbox" data-position="fixed">
+    <h6 class="toc__title">目录</h6>
+    
+      <label class="switch">
+        <input id="toggle-toc" aria-label="Toggle TOC" type="checkbox" checked>
+        <span class="slider round"></span>
+      </label>
+    
+  </div>
+  <div class="toc " data-dir="ltr" data-folding="true">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#基本介绍">基本介绍</a></li>
+    <li><a href="#支持">支持</a></li>
+    <li><a href="#安装">安装</a></li>
+    <li><a href="#使用">使用</a>
+      <ul>
+        <li><a href="#基本要求">基本要求</a></li>
+        <li><a href="#基本使用方法">基本使用方法</a>
+          <ul>
+            <li><a href="#选项">选项</a></li>
+            <li><a href="#使用-1">使用</a></li>
+          </ul>
+        </li>
+        <li><a href="#检查的错误类型">检查的错误类型</a></li>
+      </ul>
+    </li>
+    <li><a href="#原理">原理</a>
+      <ul>
+        <li><a href="#组成">组成</a>
+          <ul>
+            <li><a href="#指令模块">指令模块</a></li>
+            <li><a href="#运行时库">运行时库</a></li>
+          </ul>
+        </li>
+        <li><a href="#阴影内存">阴影内存</a></li>
+      </ul>
+    </li>
+    <li><a href="#优点和缺点">优点和缺点</a></li>
+  </ul>
+</nav>
+  </div>
+</section>
+
+
+
+</aside>
+
 <script>
   
   
@@ -2275,7 +2329,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   var enableToc = JSON.parse("true");
   var toc = JSON.parse("null");
-  var tocPosition = JSON.parse("\"outer\"");
+  var tocPosition = JSON.parse("\"inner\"");
   
   var singleMainElem = document.querySelector('.single__main');
   var singleSideElem = document.querySelector('.single__side');
@@ -3081,53 +3135,6 @@ document.addEventListener('DOMContentLoaded', function () {
         </div>
         
 <div class="wrapper__right" dir="ltr">
-  
-    
-      
-        <div class="toc__flexbox--outer" data-position="fixed" data-dir="ltr">
-          <h6 class="toc__title toc__title--outer">目录</h6>
-          
-          <label class="switch">
-            <input id="visible-toc" aria-label="Visible TOC" type="checkbox" checked>
-            <span class="slider round"></span>
-          </label>
-          
-        </div>
-        <div class="toc toc__outer " data-dir="ltr" data-folding="true">
-          <nav id="TableOfContents">
-  <ul>
-    <li><a href="#基本介绍">基本介绍</a></li>
-    <li><a href="#支持">支持</a></li>
-    <li><a href="#安装">安装</a></li>
-    <li><a href="#使用">使用</a>
-      <ul>
-        <li><a href="#基本要求">基本要求</a></li>
-        <li><a href="#基本使用方法">基本使用方法</a>
-          <ul>
-            <li><a href="#选项">选项</a></li>
-            <li><a href="#使用-1">使用</a></li>
-          </ul>
-        </li>
-        <li><a href="#检查的错误类型">检查的错误类型</a></li>
-      </ul>
-    </li>
-    <li><a href="#原理">原理</a>
-      <ul>
-        <li><a href="#组成">组成</a>
-          <ul>
-            <li><a href="#指令模块">指令模块</a></li>
-            <li><a href="#运行时库">运行时库</a></li>
-          </ul>
-        </li>
-        <li><a href="#阴影内存">阴影内存</a></li>
-      </ul>
-    </li>
-    <li><a href="#优点和缺点">优点和缺点</a></li>
-  </ul>
-</nav>
-        </div>
-      
-    
   
 </div>
 
