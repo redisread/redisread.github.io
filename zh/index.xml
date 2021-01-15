@@ -9,12 +9,21 @@
     <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
     <webMaster>1427298682@qq.com (VictorHong)</webMaster>
     <copyright>&amp;copy;{year}, Redisread</copyright>
-    <lastBuildDate>Thu, 07 Jan 2021 10:09:40 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 14 Jan 2021 11:26:46 +0800</lastBuildDate>
     
         <atom:link href="https://hugo.jiahongw.com/zh/index.xml" rel="self" type="application/rss+xml" />
     
     
     
+      
+      <item>
+        <title>打桩机制</title>
+        <link>https://hugo.jiahongw.com/zh/posts/mlk/interposition/</link>
+        <pubDate>Thu, 14 Jan 2021 11:26:46 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <guid>https://hugo.jiahongw.com/zh/posts/mlk/interposition/</guid>
+        <description>库打桩机制 LInux链接器有强大的库打桩机制，它允许你对共享库的代码进行截取，从而执行自己的代码。而为了调试，你通常可以在自己的代码中加入一</description>
+      </item>
       
       <item>
         <title>AddressSanitizer Tool</title>
