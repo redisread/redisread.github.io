@@ -26,6 +26,15 @@
       </item>
       
       <item>
+        <title>Eletric-Fence</title>
+        <link>https://hugo.jiahongw.com/zh/posts/mlk/eletric-fence/</link>
+        <pubDate>Tue, 12 Jan 2021 16:52:17 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <guid>https://hugo.jiahongw.com/zh/posts/mlk/eletric-fence/</guid>
+        <description>Eletric-Fence Electric Fence是另一种malloc（）调试器。它使用系统的虚拟内存硬件来检测软件何时超出了malloc（）缓冲区的边界。它还将检测free（</description>
+      </item>
+      
+      <item>
         <title>AddressSanitizer Tool</title>
         <link>https://hugo.jiahongw.com/zh/posts/mlk/addresssanitizer/</link>
         <pubDate>Thu, 07 Jan 2021 10:09:40 +0800</pubDate>
