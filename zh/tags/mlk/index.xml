@@ -26,6 +26,15 @@
       </item>
       
       <item>
+        <title>DieHard</title>
+        <link>https://hugo.jiahongw.com/zh/posts/mlk/diehard/</link>
+        <pubDate>Tue, 12 Jan 2021 16:54:58 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <guid>https://hugo.jiahongw.com/zh/posts/mlk/diehard/</guid>
+        <description>DieHard 一个基于概率内存安全的运行时系统。 基本介绍 源码：https://github.com/emeryberger/DieHard 支持 Windows Linux Mac OS X</description>
+      </item>
+      
+      <item>
         <title>duma</title>
         <link>https://hugo.jiahongw.com/zh/posts/mlk/duma/</link>
         <pubDate>Tue, 12 Jan 2021 16:52:41 +0800</pubDate>

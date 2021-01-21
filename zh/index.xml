@@ -9,12 +9,21 @@
     <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
     <webMaster>1427298682@qq.com (VictorHong)</webMaster>
     <copyright>&amp;copy;{year}, Redisread</copyright>
-    <lastBuildDate>Thu, 14 Jan 2021 14:55:45 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 20 Jan 2021 16:39:48 +0800</lastBuildDate>
     
         <atom:link href="https://hugo.jiahongw.com/zh/index.xml" rel="self" type="application/rss+xml" />
     
     
     
+      
+      <item>
+        <title>缓冲区溢出</title>
+        <link>https://hugo.jiahongw.com/zh/posts/linux/buffer-overflow/</link>
+        <pubDate>Wed, 20 Jan 2021 16:39:48 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <guid>https://hugo.jiahongw.com/zh/posts/linux/buffer-overflow/</guid>
+        <description>《转载》 https://www.cnblogs.com/fanzhidongyzby/p/3250405.html 按照冯·诺依曼存储程序原理，程序代码是作为二进制数据存储在内存的，同样程序的数据也在内存中，因此直接从内存的二进制形式上是无法区分</description>
+      </item>
       
       <item>
         <title>linking</title>
@@ -32,6 +41,15 @@
         <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/posts/mlk/interposition/</guid>
         <description>库打桩机制 LInux链接器有强大的库打桩机制，它允许你对共享库的代码进行截取，从而执行自己的代码。而为了调试，你通常可以在自己的代码中加入一</description>
+      </item>
+      
+      <item>
+        <title>DieHard</title>
+        <link>https://hugo.jiahongw.com/zh/posts/mlk/diehard/</link>
+        <pubDate>Tue, 12 Jan 2021 16:54:58 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <guid>https://hugo.jiahongw.com/zh/posts/mlk/diehard/</guid>
+        <description>DieHard 一个基于概率内存安全的运行时系统。 基本介绍 源码：https://github.com/emeryberger/DieHard 支持 Windows Linux Mac OS X</description>
       </item>
       
       <item>
