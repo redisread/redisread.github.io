@@ -53,6 +53,15 @@
       </item>
       
       <item>
+        <title>Valgrind</title>
+        <link>https://hugo.jiahongw.com/zh/posts/mlk/valgrind/</link>
+        <pubDate>Tue, 12 Jan 2021 16:53:04 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <guid>https://hugo.jiahongw.com/zh/posts/mlk/valgrind/</guid>
+        <description>Valgrind Valgrind发行版目前包括七个生产质量工具：一个内存错误检测器，两个线程错误检测器，一个缓存和分支预测探查器，一个生成调用图的缓存和分</description>
+      </item>
+      
+      <item>
         <title>duma</title>
         <link>https://hugo.jiahongw.com/zh/posts/mlk/duma/</link>
         <pubDate>Tue, 12 Jan 2021 16:52:41 +0800</pubDate>

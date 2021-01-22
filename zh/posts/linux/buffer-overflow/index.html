@@ -1198,6 +1198,7 @@
     "url" : "https://hugo.jiahongw.com/zh/posts/linux/buffer-overflow/",
     "description": "程序代码是作为二进制数据存储在内存的，同样程序的数据也在内存中，因此直接从内存的二进制形式上是无法区分哪些是数据哪些是代码的，这也为缓冲区溢出攻击提供了可能。",
     "keywords": ["Linux"],
+    "image" : "https://i.loli.net/2021/01/22/s1NDYkTmtRpvFjr.jpg",
     "author": {
       "@type": "Person",
       "name": "Victor"
@@ -1547,10 +1548,14 @@
 <p>如果在data本身的数据内就保存了一系列的指令的二进制代码，一旦栈溢出修改了函数的返回地址，并将该地址指向这段二进制代码的其实位置，那么就完成了基本的溢出攻击行为。</p>
 <p><img src="https://i.loli.net/2021/01/19/BNLITWd5OFHPUc7.jpg" alt="img" /></p>
 <p>通过计算返回地址内存区域相对于buffer的偏移，并在对应位置构造新的地址指向buffer内部二进制代码的其实位置，便能执行用户的自定义代码！这段既是代码又是数据的二进制数据被称为shellcode，因为攻击者希望通过这段代码打开系统的shell，以执行任意的操作系统命令——比如下载病毒，安装木马，开放端口，格式化磁盘等恶意操作。</p>
+<p>more：</p>
+<p><img src="https://i.loli.net/2021/01/22/keu8qC5BwIbXNML.png" alt="linux-memory.png" /></p>
 <hr />
 <p>参考链接：</p>
 <ol>
 <li><a href="https://www.cnblogs.com/fanzhidongyzby/p/3250405.html">https://www.cnblogs.com/fanzhidongyzby/p/3250405.html</a></li>
+<li><a href="https://segmentfault.com/a/1190000017151354">函数栈的实现原理</a></li>
+<li><a href="https://xz.aliyun.com/t/5964">https://xz.aliyun.com/t/5964</a></li>
 </ol>
 
     </article>
@@ -1769,6 +1774,10 @@
     <ul class="related-ul">
         
         <li>
+          <a href="/zh/posts/linux/linking/" class="related__link">linking</a>
+        </li>
+        
+        <li>
           <a href="/zh/posts/linux/memory-control/" class="related__link">Linux内存管理</a>
         </li>
         
@@ -1782,10 +1791,6 @@
         
         <li>
           <a href="/zh/posts/linux-users/" class="related__link">Linux用户管理</a>
-        </li>
-        
-        <li>
-          <a href="/zh/posts/linux/vim-use/" class="related__link">Linux编辑利器-Vim</a>
         </li>
         
     </ul>
