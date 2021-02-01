@@ -9,7 +9,7 @@
     <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
     <webMaster>1427298682@qq.com (VictorHong)</webMaster>
     <copyright>&amp;copy;{year}, Redisread</copyright>
-    <lastBuildDate>Wed, 20 Jan 2021 16:39:48 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 01 Feb 2021 10:02:08 +0800</lastBuildDate>
     
         <atom:link href="https://hugo.jiahongw.com/zh/index.xml" rel="self" type="application/rss+xml" />
     
@@ -17,21 +17,12 @@
     
       
       <item>
-        <title>My Hugo Lib</title>
-        <link>https://hugo.jiahongw.com/zh/showcase/hugo/myblog/</link>
-        <pubDate>Sun, 19 Jan 2020 21:13:42 +0900</pubDate>
+        <title>Nginx配置SSL证书</title>
+        <link>https://hugo.jiahongw.com/zh/posts/nginx/nginx-ssl/</link>
+        <pubDate>Mon, 01 Feb 2021 10:02:08 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <guid>https://hugo.jiahongw.com/zh/showcase/hugo/myblog/</guid>
-        <description></description>
-      </item>
-      
-      <item>
-        <title>My Hugo Item</title>
-        <link>https://hugo.jiahongw.com/zh/showcase/hugo/myitem/</link>
-        <pubDate>Sun, 19 Jan 2020 21:13:42 +0900</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        <guid>https://hugo.jiahongw.com/zh/showcase/hugo/myitem/</guid>
-        <description></description>
+        <guid>https://hugo.jiahongw.com/zh/posts/nginx/nginx-ssl/</guid>
+        <description>申请证书 letsencrypt的证书 申请网站：https://letsencrypt.osfipin.com/ 腾讯云的证书 申请网站：http</description>
       </item>
       
       <item>
