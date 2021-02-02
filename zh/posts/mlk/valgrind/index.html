@@ -1636,7 +1636,7 @@ AMD64/MacOSX  +--------------+        |         -----------------|              
 <p>Valgrind 把重点放在 shadow values 这概念上， shadow values 是很强大但相关的研究较少、较难实作的 DBA 技术， 在这概念下需要对所有的 register 和 memory 做 shadow (自己维护一份)， 也因为这 feature 让 Valgrind 做出来的 lightweight 工具跑的相对慢，但是 Valgrind 可以做出更多更有趣、更重量级的工具， 这是其他 frameworks 很难做到的 (例如 Pin 或 DynamoRIO)。</p>
 <p>shadow value tools 会维护一份程式的状态， 把原本的程式状态称为 S， 那就会存一份 S’ 里面包含 S 的所有值 (例如 register 和 user-mode address)， 而 shadow values 有九种需求要满足， 九种需求可以依照特性分成四类 (Shadow State、读写操作、Allocation/Deallocation、增加辅助资讯)：</p>
 <blockquote>
-<p>阴影值简单来说说就是：在软件中或者寄存器中用另外一个映射值来说明一些内容</p>
+<p>阴影值简单来说就是：在软件中或者寄存器中用另外一个映射值来说明一些内容</p>
 </blockquote>
 <p>阴影值的各个工具的应用</p>
 <ol>
@@ -1747,43 +1747,39 @@ AMD64/MacOSX  +--------------+        |         -----------------|              
 </li>
 </ul>
 <p>核心思想就是要把寄存器和内存中的东西自己维护一份，并且在任何情况下都可以安全正确地使用，同时记录程序的所有操作，在不影响程序执行结果前提下，输出有用的信息。使用shadow values技术的DBI框架都使用不同方式实现了上述全部功能或部分功能。</p>
-<p>阴影值要求_9个要求</p>
-<p>程序执行有三个特性与影子值工具相关：</p>
-<ol>
-<li>程序维持时期</li>
-<li>程序执行读或写操作</li>
-<li>程序执行分配或释放内存操作</li>
-</ol>
 <blockquote>
 <p>阴影状态：一个阴影状态S’包括每一个值对应的阴影值S。</p>
 </blockquote>
-<ul>
-<li></li>
-</ul>
-<ul>
-<li></li>
-<li></li>
-<li></li>
-</ul>
-<p>阴影值的支持</p>
+<p><strong>阴影值的支持</strong></p>
+<ol>
+<li>
 <p>阴影寄存器是一流的实体：</p>
 <ul>
 <li>在线程状态下为它们提供空间</li>
 <li>它们可以像来宿主寄存器一样容易地访问</li>
 <li>他们可以用同样的方式操纵和操作</li>
 </ul>
+</li>
+<li>
 <p>其次，IR提供了不受限制的临时资源，可以在其中操纵来宾寄存器，影子寄存器和中间值。这对于易用性非常重要，因为<br />
 影子操作会引入许多额外的中间值。</p>
+</li>
+<li>
 <p>第三，IR的RISC-ness公开了所有隐式中间值，例如由复杂寻址模式计算的中间值，这可以使测试变得更容易，特别是在像x86这样的CISC体系结构上</p>
-<p>四，所有代码一视同仁。 阴影操作充分适合Valgrind的后仪器IR优化器和指令选择器。</p>
-<p>提供阴影内存</p>
+</li>
+<li>
+<p>第四，所有代码一视同仁。 阴影操作充分适合Valgrind的后仪器IR优化器和指令选择器。</p>
+</li>
+</ol>
+<blockquote>
 <p>Valgrind不提供阴影内存的公开支持，例如内置的数据结构，阴影内存从工具到工具的变化足够大。</p>
+</blockquote>
 <p>事件系统</p>
 <p><img src="Valgrind.assets/image-20210201143321958.png" alt="image-20210201143321958" /></p>
 <p>Valgrind为每个系统调用提供一个包装器，它根据需要调用这些回调。 每个系统调用都有不同的参数，因此有不同的包装器。</p>
 <h3 id="对于数据的处理">对于数据的处理</h3>
 <p><strong>如何知道那些地址是合法的（内存已分配）？</strong></p>
-<p><code>维护一张合法地址表（</code>Valid-address (A) bits），当前所有可以合法读写（已分配）的地址在其中有对应的表项。该表通过以下措施维护</p>
+<p>维护一张合法地址表（Valid-address (A) bits），当前所有可以合法读写（已分配）的地址在其中有对应的表项。该表通过以下措施维护</p>
 <pre><code>全局数据(data, bss section)--在程序启动的时候标记为合法地址
 局部变量--监控sp(stack pointer)的变化，动态维护
 动态分配的内存--截获 分配/释放 内存的调用 ：malloc, calloc, realloc, valloc, memalign, free, new, new[], delete and delete[]
@@ -1810,14 +1806,23 @@ AMD64/MacOSX  +--------------+        |         -----------------|              
 </code></pre><p>valgrind启动后，core、tool和client都在一个进程中，共用一个地址空间。core首先会初始化必要的组件，然后载入client，建立client的stack，完成后会要求tool初始化自己，tool完成剩余部分的初始化，这样tool就具有了控制权，开始转换client程式。从某种意义上说，valgrind执行的都是加工后的client程序的代码。</p>
 <p>DBI framework 有两种基本的方式可以表示code和进行 instrumentation：</p>
 <ul>
-<li>disassemble-and-resynthesise (D&amp;R)。<br />
-Valgrind 使用这种把machine code先转成IR，IR会通过加入更IR来instrument。IR最后转回machine code执行，原本的code对guest state的所有影响都必须明确地转成IR，因为最后执行的是纯粹由IR转成的machine code。</li>
-<li>copy-and-annotate (C&amp;A)。instructions会被逐字地复制(除了一些 control flow 改变)<br />
-每个instruction都加上注解描述其影响(annotate)，利用这些描述来帮助做instrumentation<br />
-通过给每条指令添加一个额外的data structure (DynamoRIO)<br />
-通过提供相应的获取指令相关信息的API (Intel Pin)<br />
-这些添加的注解可以指导进行相应的instrument，并且不影响原来的native code的执行效果。</li>
+<li>disassemble-and-resynthesise (D&amp;R)。
+<ul>
+<li>Valgrind 使用这种把machine code先转成IR，IR会通过加入更IR来instrument。IR最后转回machine code执行，原本的code对</li>
+<li>guest state的所有影响都必须明确地转成IR，因为最后执行的是纯粹由IR转成的machine code。</li>
 </ul>
+</li>
+<li>copy-and-annotate (C&amp;A)。instructions会被逐字地复制(除了一些 control flow 改变)
+<ul>
+<li>每个instruction都加上注解描述其影响(annotate)，利用这些描述来帮助做instrumentation</li>
+<li>通过给每条指令添加一个额外的data structure (DynamoRIO)</li>
+<li>通过提供相应的获取指令相关信息的API (Intel Pin)</li>
+<li>这些添加的注解可以指导进行相应的instrument，并且不影响原来的native code的执行效果。</li>
+</ul>
+</li>
+</ul>
+<p>基本上 DBI framework 可以分成这两种， 但是混用是可以做到的， 早期的 Valgrind 对 interger instructions 使用 D&amp;R， 而对 floating point insturctions 和 SIMD 使用 C&amp;A (paper 上写说并非设计想往这边走，而是意外)。另外，做一些变化也是可以的，例如 DynamoRIO 允许 instructions 在复制前 in-place 地修改。</p>
+<p>各个设计都有优缺点，而 D&amp;R 的方式需要更多的实作和设计， 而且最后从 IR 生出有效率地 machine code 也需要一些努力， Valgrind JIT 就用了很多编译器的技术。相对地，C&amp;A 的作法就可以比 D&amp;R 少费些心力。</p>
 <h2 id="优点和缺点">优点和缺点</h2>
 <h3 id="优点">优点</h3>
 <p>1.用valgrind监测内存泄漏，不用重新编译应用程序，不用重新链接应用程序，不用对应用进程做任何修改。如果想查看详细的出错信息，只需要在编译时加上-g选项。</p>
