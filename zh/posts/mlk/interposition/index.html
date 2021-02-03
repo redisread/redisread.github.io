@@ -1489,7 +1489,7 @@
     <div class="single__meta">
       
 <div class="single__infos">
-  <time class="single__info" title="创建日期">📅&nbsp;2021年01月14日 </time>  &middot; <span class="single__info" title="阅读时长"> ☕ 2 分钟 </span>&middot; <span class="single__info" title="作者">👻&nbsp;Victor</span>
+  <time class="single__info" title="创建日期">📅&nbsp;2021年01月14日 </time>  &middot; <span class="single__info" title="阅读时长"> ☕ 3 分钟 </span>&middot; <span class="single__info" title="作者">👻&nbsp;Victor</span>
   <span class="single__info">
     
   </span>
@@ -1517,19 +1517,104 @@
 <p>打桩可以发生在编译时、链接时或者程序被加载执行的运行时。不同的阶段都有对应的打桩机制，也有其局限性。</p>
 </blockquote>
 <h2 id="打桩时期">打桩时期</h2>
-<h3 id="编译时打桩">编译时打桩</h3>
+<p>创建一个main.c文件，内容：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-c" data-lang="c"><span class="cp">#</span><span class="cp">include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span><span class="cp"></span><span class="cp">#</span><span class="cp">include</span> <span class="cpf">&lt;malloc.h&gt;</span><span class="cp">
+</span><span class="cp"></span><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="kt">char</span> <span class="o">*</span><span class="n">p</span> <span class="o">=</span> <span class="n">malloc</span><span class="p">(</span><span class="mi">64</span><span class="p">)</span><span class="p">;</span>
+    <span class="n">printf</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">Hello</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">)</span><span class="p">;</span>
+    <span class="n">free</span><span class="p">(</span><span class="n">p</span><span class="p">)</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="编译时打桩">编译时打桩</h3>
 <blockquote>
 <p>使用 C 预处理器在编译时打桩。</p>
 </blockquote>
-<p>这样编译和链接程序</p>
+<p>定义插桩函数头文件 <code>malloc.h</code></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-c" data-lang="c"><span class="cp">#</span><span class="cp">define malloc(size) mymalloc(size)</span><span class="cp">
+</span><span class="cp"></span><span class="cp">#</span><span class="cp">define freeCptr) myfree(ptr) 23</span><span class="cp">
+</span><span class="cp"></span>
+<span class="kt">void</span> <span class="o">*</span><span class="nf">mymalloc</span><span class="p">(</span><span class="n">size_t</span> <span class="n">size</span><span class="p">)</span><span class="p">;</span>
+<span class="kt">void</span> <span class="nf">myfree</span><span class="p">(</span><span class="kt">void</span> <span class="o">*</span><span class="n">ptr</span><span class="p">)</span><span class="p">;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>定义插桩函数的文件 <code>mymalloc.c</code></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-c" data-lang="c"><span class="c1">// mymalloc.c
+</span><span class="c1"></span><span class="cp">#</span><span class="cp">ifdef COMPILETIME</span><span class="cp">
+</span><span class="cp"></span><span class="cp">#</span><span class="cp">include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span><span class="cp"></span><span class="cp">#</span><span class="cp">include</span> <span class="cpf">&lt;malloc.h&gt;</span><span class="cp">
+</span><span class="cp"></span>
+<span class="c1">// malloc wrapper function
+</span><span class="c1"></span><span class="kt">void</span> <span class="o">*</span> <span class="nf">mymalloc</span><span class="p">(</span><span class="n">size_t</span> <span class="n">size</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kt">void</span> <span class="o">*</span> <span class="n">ptr</span> <span class="o">=</span> <span class="n">malloc</span><span class="p">(</span><span class="n">size</span><span class="p">)</span><span class="p">;</span>
+    <span class="n">printf</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">malloc %p size %u</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">ptr</span><span class="p">,</span> <span class="n">size</span><span class="p">)</span><span class="p">;</span>
+    <span class="k">return</span> <span class="n">ptr</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// free wrapper function
+</span><span class="c1"></span><span class="kt">void</span> <span class="nf">myfree</span><span class="p">(</span><span class="kt">void</span> <span class="o">*</span><span class="n">ptr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">free</span><span class="p">(</span><span class="n">ptr</span><span class="p">)</span><span class="p">;</span>
+    <span class="n">printf</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">free %p</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">ptr</span><span class="p">)</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="cp">#</span><span class="cp">endif</span><span class="cp">
+</span></code></pre></td></tr></table>
+</div>
+</div><p>这样编译和链接程序</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">gcc -DCOMPILE_TIME -c mymalloc.c
-gcc -I. -o intpos main.c mymalloc.o
+<pre class="chroma"><code class="language-bash" data-lang="bash">gcc -DCOMPILETIME -c mymalloc.c
+gcc -I. -o main main.c mymalloc.o
 </code></pre></td></tr></table>
 </div>
 </div><p>执行：</p>
@@ -1538,14 +1623,194 @@ gcc -I. -o intpos main.c mymalloc.o
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">./intpos
+<pre class="chroma"><code class="language-bash" data-lang="bash">./main
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="链接时打桩">链接时打桩</h3>
+</div><p><img src="https://i.loli.net/2021/02/03/tqPXczoxCrm6v2n.png" alt="编译插桩" /></p>
+<h3 id="链接时打桩">链接时打桩</h3>
 <blockquote>
 <p>链接(linking)是将各种代码和数据片段收集并组合成为一个单一文件的过程，这个文件可被加载（复制）到内存并执行。</p>
 </blockquote>
+<p>这个不需要头文件，直接创建一个插桩函数文件 <code>mymalloc.c</code>:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-c" data-lang="c"><span class="cp">#</span><span class="cp">ifdef LINKTIME</span><span class="cp">
+</span><span class="cp"></span><span class="cp">#</span><span class="cp">include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span><span class="cp"></span><span class="kt">void</span> <span class="o">*</span><span class="nf">__real_malloc</span><span class="p">(</span><span class="n">size_t</span> <span class="n">size</span><span class="p">)</span><span class="p">;</span>
+<span class="kt">void</span> <span class="nf">__real_free</span><span class="p">(</span><span class="kt">void</span> <span class="o">*</span><span class="n">ptr</span><span class="p">)</span><span class="p">;</span>
+
+<span class="cm">/* malloc wrapper function */</span>
+<span class="kt">void</span> <span class="o">*</span><span class="nf">__wrap_malloc</span><span class="p">(</span><span class="n">size_t</span> <span class="n">size</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="kt">void</span> <span class="o">*</span><span class="n">p</span> <span class="o">=</span> <span class="n">__real_malloc</span><span class="p">(</span><span class="n">size</span><span class="p">)</span><span class="p">;</span>  <span class="c1">// 调用libc的malloc
+</span><span class="c1"></span>    <span class="n">printf</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">malloc(%d) = %p </span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span><span class="n">size</span><span class="p">,</span><span class="n">p</span><span class="p">)</span><span class="p">;</span>
+    <span class="k">return</span> <span class="n">p</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="cm">/* free wrapper function */</span>
+<span class="kt">void</span> <span class="o">*</span><span class="nf">__wrap_free</span><span class="p">(</span><span class="kt">void</span> <span class="o">*</span><span class="n">ptr</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">__real_free</span><span class="p">(</span><span class="n">ptr</span><span class="p">)</span><span class="p">;</span>
+    <span class="n">printf</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">free(%p)</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span><span class="n">ptr</span><span class="p">)</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="cp">#</span><span class="cp">endif</span><span class="cp">
+</span></code></pre></td></tr></table>
+</div>
+</div><p>这样编译和链接程序</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">gcc -DLINKTIME -c mymalloc.c
+gcc -c main.c
+gcc -Wl,--wrap,malloc -Wl,--wrap,free -o main main.o mymalloc.o
+</code></pre></td></tr></table>
+</div>
+</div><p>执行</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">./main
+</code></pre></td></tr></table>
+</div>
+</div><p><img src="https://i.loli.net/2021/02/03/tpgkNJbFv3s8Pl6.png" alt="链接插桩" /></p>
 <h3 id="运行时打桩">运行时打桩</h3>
+<p>创建一个插桩函数文件 <code>mymalloc.c</code>:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-c" data-lang="c"><span class="cp">#</span><span class="cp">ifdef RUNTIME</span><span class="cp">
+</span><span class="cp"></span>
+<span class="cp">#</span><span class="cp">define _GNU_SOURCE</span><span class="cp">
+</span><span class="cp"></span><span class="cp">#</span><span class="cp">include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span><span class="cp"></span><span class="cp">#</span><span class="cp">include</span> <span class="cpf">&lt;stdlib.h&gt;</span><span class="cp">
+</span><span class="cp"></span><span class="cp">#</span><span class="cp">include</span> <span class="cpf">&lt;dlfcn.h&gt;</span><span class="cp">
+</span><span class="cp"></span>
+
+<span class="cm">/* malloc wrapper function */</span>
+<span class="kt">void</span> <span class="o">*</span><span class="nf">malloc</span><span class="p">(</span><span class="n">size_t</span> <span class="n">size</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="kt">void</span>  <span class="o">*</span><span class="p">(</span><span class="o">*</span><span class="n">mallocp</span><span class="p">)</span><span class="p">(</span><span class="n">size_t</span> <span class="n">size</span><span class="p">)</span><span class="p">;</span>
+    <span class="kt">char</span> <span class="o">*</span><span class="n">error</span><span class="p">;</span>
+    <span class="n">mallocp</span> <span class="o">=</span> <span class="n">dlsym</span><span class="p">(</span><span class="n">RTLD_NEXT</span><span class="p">,</span><span class="sa"></span><span class="s">&#34;</span><span class="s">malloc</span><span class="s">&#34;</span><span class="p">)</span><span class="p">;</span>    <span class="c1">// get the address of libc malloc
+</span><span class="c1"></span>    <span class="k">if</span><span class="p">(</span><span class="p">(</span><span class="n">error</span> <span class="o">=</span> <span class="n">dlerror</span><span class="p">(</span><span class="p">)</span><span class="p">)</span> <span class="o">!</span><span class="o">=</span> <span class="nb">NULL</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">fputs</span><span class="p">(</span><span class="n">error</span><span class="p">,</span><span class="n">stderr</span><span class="p">)</span><span class="p">;</span>
+        <span class="n">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="kt">char</span> <span class="o">*</span><span class="n">ptr</span> <span class="o">=</span> <span class="n">mallocp</span><span class="p">(</span><span class="n">size</span><span class="p">)</span><span class="p">;</span>
+    <span class="n">printf</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">malloc(%d) = %p </span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span><span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="n">size</span><span class="p">,</span><span class="n">ptr</span><span class="p">)</span><span class="p">;</span>
+    <span class="k">return</span> <span class="n">ptr</span><span class="p">;</span>
+<span class="p">}</span>
+
+
+<span class="cm">/* free wrapper function */</span>
+<span class="kt">void</span> <span class="nf">free</span><span class="p">(</span><span class="kt">void</span><span class="o">*</span> <span class="n">ptr</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="kt">void</span> <span class="p">(</span><span class="o">*</span><span class="n">freep</span><span class="p">)</span><span class="p">(</span><span class="kt">void</span><span class="o">*</span><span class="p">)</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">;</span>
+    <span class="kt">char</span> <span class="o">*</span><span class="n">error</span><span class="p">;</span>
+    <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">ptr</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
+    <span class="n">freep</span> <span class="o">=</span> <span class="n">dlsym</span><span class="p">(</span><span class="n">RTLD_NEXT</span><span class="p">,</span><span class="sa"></span><span class="s">&#34;</span><span class="s">free</span><span class="s">&#34;</span><span class="p">)</span><span class="p">;</span>
+    <span class="k">if</span><span class="p">(</span><span class="p">(</span><span class="n">error</span> <span class="o">=</span> <span class="n">dlerror</span><span class="p">(</span><span class="p">)</span><span class="p">)</span> <span class="o">!</span><span class="o">=</span> <span class="nb">NULL</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">fputs</span><span class="p">(</span><span class="n">error</span><span class="p">,</span><span class="n">stderr</span><span class="p">)</span><span class="p">;</span>
+        <span class="n">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="n">freep</span><span class="p">(</span><span class="n">ptr</span><span class="p">)</span><span class="p">;</span>
+    <span class="n">printf</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">free(%p)</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span><span class="n">ptr</span><span class="p">)</span><span class="p">;</span>
+
+<span class="p">}</span>
+
+<span class="cp">#</span><span class="cp">endif</span><span class="cp">
+</span></code></pre></td></tr></table>
+</div>
+</div><p>这样编译链接执行程序</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">gcc -DRUNTIME -shared -fpic -o mymalloc.so mymalloc.c -ldl
+gcc -o main main.c
+<span class="nv">LD_PRELOAD</span><span class="o">=</span><span class="s2">&#34;./mymalloc.so&#34;</span> ./main
+</code></pre></td></tr></table>
+</div>
+</div><p><img src="https://i.loli.net/2021/02/03/5TuJ76IrwNiyCpH.png" alt="运行时插桩" /></p>
 <h2 id="gcc相关参数">GCC相关参数</h2>
 <table>
 <thead>
@@ -1586,7 +1851,7 @@ gcc -I. -o intpos main.c mymalloc.o
 </tbody>
 </table>
 <p>我们通过ldd命令查看程序链接的系统库：</p>
-<p><img src="interposition.assets/image-20210114141828848.png" alt="image-20210114141828848" /></p>
+<p><img src="https://i.loli.net/2021/02/03/YOmVR8Qi3zIhkDL.png" alt="ldd指令" /></p>
 <hr />
 <p>参考链接：</p>
 <ol>
