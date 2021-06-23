@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PolarCode on ✏Victor&#39;s Blog</title>
+    <link>https://hugo.jiahongw.com/zh/series/polarcode/</link>
+    <description>Recent content in PolarCode on ✏Victor&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
+    <webMaster>1427298682@qq.com (VictorHong)</webMaster>
+    <copyright>&amp;copy;{year}, Redisread</copyright>
+    <lastBuildDate>Tue, 18 May 2021 14:01:12 +0800</lastBuildDate>
+    
+        <atom:link href="https://hugo.jiahongw.com/zh/series/polarcode/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+      
+      <item>
+        <title>5G下的极化码</title>
+        <link>https://hugo.jiahongw.com/zh/posts/polarcode/intro-polar-code/</link>
+        <pubDate>Tue, 18 May 2021 14:01:12 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <guid>https://hugo.jiahongw.com/zh/posts/polarcode/intro-polar-code/</guid>
+        <description>5G下的极化码 这个专栏介绍极化码的相关原理，一方面是因为我目前的毕业设计是关于5G极化码方向的，另一方面我想将自己所学的一些知识记录或者分享</description>
+      </item>
+      
+    
+  </channel>
+</rss>

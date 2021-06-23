@@ -9,12 +9,30 @@
     <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
     <webMaster>1427298682@qq.com (VictorHong)</webMaster>
     <copyright>&amp;copy;{year}, Redisread</copyright>
-    <lastBuildDate>Mon, 01 Feb 2021 10:02:08 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 23 Jun 2021 21:39:06 +0800</lastBuildDate>
     
         <atom:link href="https://hugo.jiahongw.com/zh/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     
+      
+      <item>
+        <title>毕业旅行-川西</title>
+        <link>https://hugo.jiahongw.com/zh/posts/life/biyeluxing/</link>
+        <pubDate>Wed, 23 Jun 2021 21:39:06 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <guid>https://hugo.jiahongw.com/zh/posts/life/biyeluxing/</guid>
+        <description>出发前的准备 冲锋衣（防风，防晒，防雨，防寒） 登山鞋或者越野鞋 登山杖 帽子 防晒霜 一次性内裤和一次性雨衣 相机 厚的衣服 口罩 学生证 身份证 驾驶证 基本路线</description>
+      </item>
+      
+      <item>
+        <title>5G下的极化码</title>
+        <link>https://hugo.jiahongw.com/zh/posts/polarcode/intro-polar-code/</link>
+        <pubDate>Tue, 18 May 2021 14:01:12 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <guid>https://hugo.jiahongw.com/zh/posts/polarcode/intro-polar-code/</guid>
+        <description>5G下的极化码 这个专栏介绍极化码的相关原理，一方面是因为我目前的毕业设计是关于5G极化码方向的，另一方面我想将自己所学的一些知识记录或者分享</description>
+      </item>
       
       <item>
         <title>Nginx配置SSL证书</title>
