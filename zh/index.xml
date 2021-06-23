@@ -17,12 +17,39 @@
     
       
       <item>
+        <title>My Hugo Lib</title>
+        <link>https://hugo.jiahongw.com/zh/showcase/hugo/myblog/</link>
+        <pubDate>Sun, 19 Jan 2020 21:13:42 +0900</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <guid>https://hugo.jiahongw.com/zh/showcase/hugo/myblog/</guid>
+        <description></description>
+      </item>
+      
+      <item>
+        <title>My Hugo Item</title>
+        <link>https://hugo.jiahongw.com/zh/showcase/hugo/myitem/</link>
+        <pubDate>Sun, 19 Jan 2020 21:13:42 +0900</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <guid>https://hugo.jiahongw.com/zh/showcase/hugo/myitem/</guid>
+        <description></description>
+      </item>
+      
+      <item>
         <title>毕业旅行-川西</title>
         <link>https://hugo.jiahongw.com/zh/posts/life/biyeluxing/</link>
         <pubDate>Wed, 23 Jun 2021 21:39:06 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/posts/life/biyeluxing/</guid>
         <description>出发前的准备 冲锋衣（防风，防晒，防雨，防寒） 登山鞋或者越野鞋 登山杖 帽子 防晒霜 一次性内裤和一次性雨衣 相机 厚的衣服 口罩 学生证 身份证 驾驶证 基本路线</description>
+      </item>
+      
+      <item>
+        <title>川西</title>
+        <link>https://hugo.jiahongw.com/zh/gallery/chuanxi/</link>
+        <pubDate>Wed, 23 Jun 2021 22:20:16 +0900</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <guid>https://hugo.jiahongw.com/zh/gallery/chuanxi/</guid>
+        <description>川西毕业旅行的图片。</description>
       </item>
       
       <item>
