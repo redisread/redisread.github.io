@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>基本原理 on ✏Victor&#39;s Blog</title>
+    <link>https://hugo.jiahongw.com/zh/tags/%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86/</link>
+    <description>Recent content in 基本原理 on ✏Victor&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
+    <webMaster>1427298682@qq.com (VictorHong)</webMaster>
+    <copyright>&amp;copy;{year}, Redisread</copyright>
+    <lastBuildDate>Tue, 29 Jun 2021 12:48:45 +0800</lastBuildDate>
+    
+        <atom:link href="https://hugo.jiahongw.com/zh/tags/%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+      
+      <item>
+        <title>极化码-基本原理</title>
+        <link>https://hugo.jiahongw.com/zh/posts/polarcode/polar-code-fundamentals/</link>
+        <pubDate>Tue, 29 Jun 2021 12:48:45 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <guid>https://hugo.jiahongw.com/zh/posts/polarcode/polar-code-fundamentals/</guid>
+        <description>基本概念 信噪比 信噪比，英文名称叫做SNR（SIGNAL-NOISE RATIO )，是指一个电子设备或者电子系统中信号与噪声的比例。信噪比的计算可以为有</description>
+      </item>
+      
+    
+  </channel>
+</rss>

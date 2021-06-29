@@ -9,7 +9,7 @@
     <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
     <webMaster>1427298682@qq.com (VictorHong)</webMaster>
     <copyright>&amp;copy;{year}, Redisread</copyright>
-    <lastBuildDate>Thu, 24 Jun 2021 21:19:45 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 29 Jun 2021 13:01:45 +0800</lastBuildDate>
     
         <atom:link href="https://hugo.jiahongw.com/zh/series/polarcode/index.xml" rel="self" type="application/rss+xml" />
     
@@ -17,20 +17,47 @@
     
       
       <item>
+        <title>极化码-编码</title>
+        <link>https://hugo.jiahongw.com/zh/posts/polarcode/polar-code-encode/</link>
+        <pubDate>Tue, 29 Jun 2021 13:01:45 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <guid>https://hugo.jiahongw.com/zh/posts/polarcode/polar-code-encode/</guid>
+        <description>极化编码的基本思想是：只在$Z\left( W_{N}^{\left( i \right)} \right)$近于0的坐标信道$W_{N}^{\left( i \right)}$上发送数据比</description>
+      </item>
+      
+      <item>
+        <title>极化码-基本原理</title>
+        <link>https://hugo.jiahongw.com/zh/posts/polarcode/polar-code-fundamentals/</link>
+        <pubDate>Tue, 29 Jun 2021 12:48:45 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <guid>https://hugo.jiahongw.com/zh/posts/polarcode/polar-code-fundamentals/</guid>
+        <description>基本概念 信噪比 信噪比，英文名称叫做SNR（SIGNAL-NOISE RATIO )，是指一个电子设备或者电子系统中信号与噪声的比例。信噪比的计算可以为有</description>
+      </item>
+      
+      <item>
         <title>极化码-信道模型</title>
-        <link>https://hugo.jiahongw.com/zh/posts/polarcode/channel-model/</link>
+        <link>https://hugo.jiahongw.com/zh/posts/polarcode/polar-code-channel-model/</link>
         <pubDate>Thu, 24 Jun 2021 21:19:45 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <guid>https://hugo.jiahongw.com/zh/posts/polarcode/channel-model/</guid>
+        <guid>https://hugo.jiahongw.com/zh/posts/polarcode/polar-code-channel-model/</guid>
         <description>在通信过程中，物理层传输的就是电信号，假如我们只用0和1传输信号，并且这些信道互相都没有关系，我们称为二进制离散无记忆信道。信道模型是研究信</description>
       </item>
       
       <item>
+        <title>极化码-译码</title>
+        <link>https://hugo.jiahongw.com/zh/posts/polarcode/polar-code-decode/</link>
+        <pubDate>Thu, 24 Jun 2021 21:19:45 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <guid>https://hugo.jiahongw.com/zh/posts/polarcode/polar-code-decode/</guid>
+        <description>Arıkan教授在文献[1]提出了串行抵消SC译码算法。SC译码算法类似一个深度优先搜索的算法，其根据两个判决函数进行迭代计算最大似然对数比</description>
+      </item>
+      
+      <item>
         <title>5G下的极化码</title>
-        <link>https://hugo.jiahongw.com/zh/posts/polarcode/intro-polar-code/</link>
+        <link>https://hugo.jiahongw.com/zh/posts/polarcode/polar-code-intro/</link>
         <pubDate>Tue, 18 May 2021 14:01:12 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <guid>https://hugo.jiahongw.com/zh/posts/polarcode/intro-polar-code/</guid>
+        <guid>https://hugo.jiahongw.com/zh/posts/polarcode/polar-code-intro/</guid>
         <description>5G下的极化码 这个专栏介绍极化码的相关原理，一方面是因为我目前的毕业设计是关于5G极化码方向的，另一方面我想将自己所学的一些知识记录或者分享</description>
       </item>
       
