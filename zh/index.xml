@@ -46,7 +46,7 @@
       <item>
         <title>极化码-译码</title>
         <link>https://hugo.jiahongw.com/zh/posts/polarcode/polar-code-decode/</link>
-        <pubDate>Thu, 24 Jun 2021 21:19:45 +0800</pubDate>
+        <pubDate>Thu, 24 Jun 2021 14:04:45 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/posts/polarcode/polar-code-decode/</guid>
         <description>Arıkan教授在文献[1]提出了串行抵消SC译码算法。SC译码算法类似一个深度优先搜索的算法，其根据两个判决函数进行迭代计算最大似然对数比</description>
