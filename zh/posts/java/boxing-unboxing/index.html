@@ -1572,9 +1572,13 @@
 </code></pre></td></tr></table>
 </div>
 </div><p>即装箱转换为Integer.valueOf()，把拆箱替换为Integer.intValue()，在Java源码可见这个值默认缓存是-128到127之间。</p>
-<p><img src="https://raw.githubusercontent.com/redisread/Image/master/Java/image.png" alt="" /></p>
-<p><img src="https://raw.githubusercontent.com/redisread/Image/master/Java/image_1.png" alt="" /></p>
-<p><img src="https://raw.githubusercontent.com/redisread/Image/master/Java/image_2.png" alt="" /></p>
+<p><strong>源码</strong></p>
+<p>缓存范围：</p>
+<p><img src="https://raw.githubusercontent.com/redisread/Image/master/Java/image.png" style="zoom:50%;" /></p>
+<p><strong>装箱操作</strong></p>
+<p><img src="https://raw.githubusercontent.com/redisread/Image/master/Java/image_1.png" style="zoom:50%;" /></p>
+<p><strong>拆箱操作</strong></p>
+<p><img src="https://raw.githubusercontent.com/redisread/Image/master/Java/image_2.png" style="zoom: 50%;" /></p>
 
     </article>
     <script>
