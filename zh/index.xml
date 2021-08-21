@@ -17,30 +17,12 @@
     
       
       <item>
-        <title>My Hugo Lib</title>
-        <link>https://hugo.jiahongw.com/zh/showcase/hugo/myblog/</link>
-        <pubDate>Sun, 19 Jan 2020 21:13:42 +0900</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        <guid>https://hugo.jiahongw.com/zh/showcase/hugo/myblog/</guid>
-        <description></description>
-      </item>
-      
-      <item>
-        <title>My Hugo Item</title>
-        <link>https://hugo.jiahongw.com/zh/showcase/hugo/myitem/</link>
-        <pubDate>Sun, 19 Jan 2020 21:13:42 +0900</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        <guid>https://hugo.jiahongw.com/zh/showcase/hugo/myitem/</guid>
-        <description></description>
-      </item>
-      
-      <item>
         <title>街头代码编程</title>
         <link>https://hugo.jiahongw.com/zh/posts/funnysharing/code-problem-solving-onstreet/</link>
         <pubDate>Sat, 21 Aug 2021 16:15:37 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/posts/funnysharing/code-problem-solving-onstreet/</guid>
-        <description>Youtube中的一个非常有意思的视频活动。在芝加哥的大街上，看看路人能否姐姐一些初级的编程问题，解决问题的能够得到100美元，非常有意思。</description>
+        <description>Youtube中的一个非常有意思的视频活动。在芝加哥的大街上，看看路人能否解决一些初级的编程问题，解决问题的能够得到100美元，非常有意思。</description>
       </item>
       
       <item>
