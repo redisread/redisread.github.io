@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>FunnySharing on ✏Victor&#39;s Blog</title>
+    <link>https://hugo.jiahongw.com/zh/tags/funnysharing/</link>
+    <description>Recent content in FunnySharing on ✏Victor&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
+    <webMaster>1427298682@qq.com (VictorHong)</webMaster>
+    <copyright>&amp;copy;{year}, Redisread</copyright>
+    <lastBuildDate>Sat, 21 Aug 2021 16:15:37 +0800</lastBuildDate>
+    
+        <atom:link href="https://hugo.jiahongw.com/zh/tags/funnysharing/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+      
+      <item>
+        <title>街头代码编程</title>
+        <link>https://hugo.jiahongw.com/zh/posts/funnysharing/code-problem-solving-onstreet/</link>
+        <pubDate>Sat, 21 Aug 2021 16:15:37 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <guid>https://hugo.jiahongw.com/zh/posts/funnysharing/code-problem-solving-onstreet/</guid>
+        <description>Youtube中的一个非常有意思的视频活动。在芝加哥的大街上，看看路人能否姐姐一些初级的编程问题，解决问题的能够得到100美元，非常有意思。</description>
+      </item>
+      
+    
+  </channel>
+</rss>

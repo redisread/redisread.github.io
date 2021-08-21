@@ -18,10 +18,10 @@
       
       <item>
         <title>使用云监控管理k8s-京东云实践</title>
-        <link>https://hugo.jiahongw.com/zh/posts/cloud/cloud-kubernetes/</link>
+        <link>https://hugo.jiahongw.com/zh/posts/cloudcomputing/cloud-kubernetes/</link>
         <pubDate>Mon, 27 Apr 2020 17:11:37 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <guid>https://hugo.jiahongw.com/zh/posts/cloud/cloud-kubernetes/</guid>
+        <guid>https://hugo.jiahongw.com/zh/posts/cloudcomputing/cloud-kubernetes/</guid>
         <description>操作流程 用到的云产品及服务 序号 云产品 功能及用途 备注 1 容器镜像仓库 用于存放示例demo镜像 2 云编译 编译和打包实例demo代码，同时将镜像推送至</description>
       </item>
       

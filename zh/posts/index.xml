@@ -9,12 +9,21 @@
     <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
     <webMaster>1427298682@qq.com (VictorHong)</webMaster>
     <copyright>&amp;copy;{year}, Redisread</copyright>
-    <lastBuildDate>Thu, 12 Aug 2021 21:21:00 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 21 Aug 2021 16:15:37 +0800</lastBuildDate>
     
         <atom:link href="https://hugo.jiahongw.com/zh/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     
+      
+      <item>
+        <title>街头代码编程</title>
+        <link>https://hugo.jiahongw.com/zh/posts/funnysharing/code-problem-solving-onstreet/</link>
+        <pubDate>Sat, 21 Aug 2021 16:15:37 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <guid>https://hugo.jiahongw.com/zh/posts/funnysharing/code-problem-solving-onstreet/</guid>
+        <description>Youtube中的一个非常有意思的视频活动。在芝加哥的大街上，看看路人能否姐姐一些初级的编程问题，解决问题的能够得到100美元，非常有意思。</description>
+      </item>
       
       <item>
         <title>Java装箱拆箱</title>
@@ -180,10 +189,10 @@
       
       <item>
         <title>这段时间的一些记录</title>
-        <link>https://hugo.jiahongw.com/zh/posts/life/find-and-note/</link>
+        <link>https://hugo.jiahongw.com/zh/posts/undefined/find-and-note/</link>
         <pubDate>Sun, 20 Dec 2020 18:05:01 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <guid>https://hugo.jiahongw.com/zh/posts/life/find-and-note/</guid>
+        <guid>https://hugo.jiahongw.com/zh/posts/undefined/find-and-note/</guid>
         <description>Find and Note 代码规范 pylint https://www.jianshu.com/p/c0bd637f706d https://pylint.readthedocs.io/en/latest/tutorial.html flake8 https://www.jianshu.com/p/adf743fc8e78 日志的等级 日志级别 | 描述 &amp;mdash;|&amp;mdash; OFF | 关闭：最高级别，不打印日志。 FATAL | 致命：指明非常严重的可能会导致应用终止执行错误事件。 ERROR</description>
       </item>
       
@@ -198,28 +207,28 @@
       
       <item>
         <title>程序员职业路线</title>
-        <link>https://hugo.jiahongw.com/zh/posts/life/programer-go-go/</link>
+        <link>https://hugo.jiahongw.com/zh/posts/ideas/programer-go-go/</link>
         <pubDate>Tue, 24 Nov 2020 21:56:16 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <guid>https://hugo.jiahongw.com/zh/posts/life/programer-go-go/</guid>
+        <guid>https://hugo.jiahongw.com/zh/posts/ideas/programer-go-go/</guid>
         <description>求职原理三要素 1. 价值 绝⼤部分公司购买⼈才都是为了使⽤，所以他们看中的是其使⽤价值！这个使⽤价值说得更直⽩⼀点，就是⼈才如何直接或者间接的为公</description>
       </item>
       
       <item>
         <title>冷数据与热数据</title>
-        <link>https://hugo.jiahongw.com/zh/posts/cloud/data-hot-ice/</link>
+        <link>https://hugo.jiahongw.com/zh/posts/cloudcomputing/data-hot-ice/</link>
         <pubDate>Sat, 21 Nov 2020 15:09:42 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <guid>https://hugo.jiahongw.com/zh/posts/cloud/data-hot-ice/</guid>
+        <guid>https://hugo.jiahongw.com/zh/posts/cloudcomputing/data-hot-ice/</guid>
         <description>从两个层面上来说：一个是数据的访问频次层面，一个是数据分析层面。 访问频次层面 热数据：是需要被计算节点频繁访问的在线类数据。 冷数据：是对于离线</description>
       </item>
       
       <item>
         <title>高效人士的几个习惯</title>
-        <link>https://hugo.jiahongw.com/zh/posts/life/seven-habits/</link>
+        <link>https://hugo.jiahongw.com/zh/posts/ideas/seven-habits/</link>
         <pubDate>Thu, 19 Nov 2020 22:50:47 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <guid>https://hugo.jiahongw.com/zh/posts/life/seven-habits/</guid>
+        <guid>https://hugo.jiahongw.com/zh/posts/ideas/seven-habits/</guid>
         <description>最近在知乎专栏《高效学习法》中看到一篇比较有用的文章，主要就是讲高效人士的六个好习惯。我觉得这些习惯倒是可以好好学习，因为其实有很多时候我们</description>
       </item>
       
@@ -288,10 +297,10 @@
       
       <item>
         <title>博客小记</title>
-        <link>https://hugo.jiahongw.com/zh/posts/life/begin/</link>
+        <link>https://hugo.jiahongw.com/zh/posts/ideas/first-thoughts/</link>
         <pubDate>Mon, 16 Nov 2020 01:24:37 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <guid>https://hugo.jiahongw.com/zh/posts/life/begin/</guid>
+        <guid>https://hugo.jiahongw.com/zh/posts/ideas/first-thoughts/</guid>
         <description>从今天开始，准备记录以下自己平时的想法。因为有趣的想法可能一瞬间就消失了。如果没有将这些想法及过程记录下来，后面可能被什么事情给耽搁了，很快</description>
       </item>
       
@@ -405,10 +414,10 @@
       
       <item>
         <title>RSA加密算法</title>
-        <link>https://hugo.jiahongw.com/zh/posts/mima/rsa/</link>
+        <link>https://hugo.jiahongw.com/zh/posts/cryptography/rsa/</link>
         <pubDate>Wed, 06 May 2020 16:00:46 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <guid>https://hugo.jiahongw.com/zh/posts/mima/rsa/</guid>
+        <guid>https://hugo.jiahongw.com/zh/posts/cryptography/rsa/</guid>
         <description>RSA算法 RSA加密算法是一种非对称加密算法，在公开密钥加密和电子商业中被广泛使用。 对极大整数做因数分解的难度决定了 RSA 算法的可靠性。换言之，</description>
       </item>
       
@@ -422,39 +431,30 @@
       </item>
       
       <item>
-        <title>费马🦓定理</title>
-        <link>https://hugo.jiahongw.com/zh/posts/network/feima/</link>
-        <pubDate>Wed, 06 May 2020 11:12:38 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        <guid>https://hugo.jiahongw.com/zh/posts/network/feima/</guid>
-        <description>&lt;p&gt;费马大定理在数学里有一个特殊的现象，即在于它是错误证明数量最多的数学题。&lt;/p&gt;</description>
-      </item>
-      
-      <item>
         <title>使用云监控管理k8s-京东云实践</title>
-        <link>https://hugo.jiahongw.com/zh/posts/cloud/cloud-kubernetes/</link>
+        <link>https://hugo.jiahongw.com/zh/posts/cloudcomputing/cloud-kubernetes/</link>
         <pubDate>Mon, 27 Apr 2020 17:11:37 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <guid>https://hugo.jiahongw.com/zh/posts/cloud/cloud-kubernetes/</guid>
+        <guid>https://hugo.jiahongw.com/zh/posts/cloudcomputing/cloud-kubernetes/</guid>
         <description>操作流程 用到的云产品及服务 序号 云产品 功能及用途 备注 1 容器镜像仓库 用于存放示例demo镜像 2 云编译 编译和打包实例demo代码，同时将镜像推送至</description>
       </item>
       
       <item>
         <title>Linux实用指令</title>
-        <link>https://hugo.jiahongw.com/zh/posts/linux-grep/</link>
+        <link>https://hugo.jiahongw.com/zh/posts/linux/linux-grep/</link>
         <pubDate>Thu, 16 Apr 2020 10:56:00 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <guid>https://hugo.jiahongw.com/zh/posts/linux-grep/</guid>
+        <guid>https://hugo.jiahongw.com/zh/posts/linux/linux-grep/</guid>
         <description>&lt;h2 id=&#34;heading&#34;&gt;|&lt;/h2&gt;
 &lt;p&gt;管道符，“|”，表示将前一个命令的处理结果输出传递给后面的命令处理。&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>Linux用户管理</title>
-        <link>https://hugo.jiahongw.com/zh/posts/linux-users/</link>
+        <link>https://hugo.jiahongw.com/zh/posts/linux/linux-users/</link>
         <pubDate>Wed, 15 Apr 2020 16:34:03 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <guid>https://hugo.jiahongw.com/zh/posts/linux-users/</guid>
+        <guid>https://hugo.jiahongw.com/zh/posts/linux/linux-users/</guid>
         <description>&lt;p&gt;每一个用户都是一个个体，每一个个体都属于一个群组，而每一个群组又有区别!&lt;/p&gt;
 &lt;p&gt;——Users&lt;/p&gt;</description>
       </item>
@@ -471,10 +471,10 @@
       
       <item>
         <title>Leetcode-最长回文子串</title>
-        <link>https://hugo.jiahongw.com/zh/posts/leetcode-0/</link>
+        <link>https://hugo.jiahongw.com/zh/posts/leetcode/leetcode-0/</link>
         <pubDate>Sun, 12 Apr 2020 19:26:20 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <guid>https://hugo.jiahongw.com/zh/posts/leetcode-0/</guid>
+        <guid>https://hugo.jiahongw.com/zh/posts/leetcode/leetcode-0/</guid>
         <description>&lt;h3 id=&#34;问题描述&#34;&gt;问题描述&lt;/h3&gt;
 &lt;p&gt;给定一个字符串 &lt;code&gt;s&lt;/code&gt;，找到 &lt;code&gt;s&lt;/code&gt; 中最长的回文子串。你可以假设 &lt;code&gt;s&lt;/code&gt; 的最大长度为 1000。&lt;/p&gt;</description>
       </item>
@@ -490,91 +490,91 @@
       
       <item>
         <title>入门Docker</title>
-        <link>https://hugo.jiahongw.com/zh/posts/docker-begin/</link>
+        <link>https://hugo.jiahongw.com/zh/posts/middleware/docker-begin/</link>
         <pubDate>Thu, 09 Apr 2020 17:00:28 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <guid>https://hugo.jiahongw.com/zh/posts/docker-begin/</guid>
+        <guid>https://hugo.jiahongw.com/zh/posts/middleware/docker-begin/</guid>
         <description>&lt;p&gt;Docker是基于内核的容器,可以运行在宿主机上,看作是一个容器.&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>C&#43;&#43;动态与静态</title>
-        <link>https://hugo.jiahongw.com/zh/posts/cpp-duotai/</link>
+        <link>https://hugo.jiahongw.com/zh/posts/candcplusplus/cpp-duotai/</link>
         <pubDate>Sun, 05 Apr 2020 15:05:37 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <guid>https://hugo.jiahongw.com/zh/posts/cpp-duotai/</guid>
+        <guid>https://hugo.jiahongw.com/zh/posts/candcplusplus/cpp-duotai/</guid>
         <description>&lt;p&gt;C++特性之多态🍄&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>C文件读写</title>
-        <link>https://hugo.jiahongw.com/zh/posts/c-read-write/</link>
+        <link>https://hugo.jiahongw.com/zh/posts/candcplusplus/c-read-write/</link>
         <pubDate>Sat, 04 Apr 2020 23:32:40 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <guid>https://hugo.jiahongw.com/zh/posts/c-read-write/</guid>
+        <guid>https://hugo.jiahongw.com/zh/posts/candcplusplus/c-read-write/</guid>
         <description>&lt;p&gt;c文件读写🗃&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>在markdown使用html</title>
-        <link>https://hugo.jiahongw.com/zh/posts/markdown-html/</link>
+        <link>https://hugo.jiahongw.com/zh/posts/writingtips/markdown-html/</link>
         <pubDate>Sat, 04 Apr 2020 00:58:33 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <guid>https://hugo.jiahongw.com/zh/posts/markdown-html/</guid>
+        <guid>https://hugo.jiahongw.com/zh/posts/writingtips/markdown-html/</guid>
         <description>&lt;p&gt;在markdown文件中嵌入&lt;code&gt;html&lt;/code&gt;代码.🛶&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>Udp-Tcp编程</title>
-        <link>https://hugo.jiahongw.com/zh/posts/udp-tcp/</link>
+        <link>https://hugo.jiahongw.com/zh/posts/network/udp-tcp/</link>
         <pubDate>Fri, 03 Apr 2020 21:42:11 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <guid>https://hugo.jiahongw.com/zh/posts/udp-tcp/</guid>
+        <guid>https://hugo.jiahongw.com/zh/posts/network/udp-tcp/</guid>
         <description>&lt;p&gt;TCP/IP编程&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>Git免密push</title>
-        <link>https://hugo.jiahongw.com/zh/posts/git-push-no-pw/</link>
+        <link>https://hugo.jiahongw.com/zh/posts/git/git-push-no-pw/</link>
         <pubDate>Fri, 03 Apr 2020 19:07:07 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <guid>https://hugo.jiahongw.com/zh/posts/git-push-no-pw/</guid>
+        <guid>https://hugo.jiahongw.com/zh/posts/git/git-push-no-pw/</guid>
         <description>&lt;p&gt;每次push都需要输入用户名和密码,其实可以免去这些操作.🚛&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>Aes-高级加密标准</title>
-        <link>https://hugo.jiahongw.com/zh/posts/mima/aes/</link>
+        <link>https://hugo.jiahongw.com/zh/posts/cryptography/aes/</link>
         <pubDate>Fri, 03 Apr 2020 14:20:19 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <guid>https://hugo.jiahongw.com/zh/posts/mima/aes/</guid>
+        <guid>https://hugo.jiahongw.com/zh/posts/cryptography/aes/</guid>
         <description>&lt;p&gt;AES算法是继DES之后比较快且比较简单的加密算法.⚖&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>行云开发</title>
-        <link>https://hugo.jiahongw.com/zh/posts/xingyun-begin/</link>
+        <link>https://hugo.jiahongw.com/zh/posts/cloudcomputing/xingyun-begin/</link>
         <pubDate>Wed, 01 Apr 2020 17:12:29 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <guid>https://hugo.jiahongw.com/zh/posts/xingyun-begin/</guid>
+        <guid>https://hugo.jiahongw.com/zh/posts/cloudcomputing/xingyun-begin/</guid>
         <description>&lt;p&gt;简单地说，云计算就是计算服务的提供（包括服务器、存储、数据库、网络、软件、分析和智能）- 通过 Internet（云）提供快速创新、弹性资源和规模经济。对于云服务，通常你只需使用多少支付多少，从而帮助降低运营成本，使基础设施更有效地运行，并能根据业务需求的变化调整对服务的使用。&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>分布式-Redis</title>
-        <link>https://hugo.jiahongw.com/zh/posts/redis/</link>
+        <link>https://hugo.jiahongw.com/zh/posts/database/redis/</link>
         <pubDate>Wed, 18 Mar 2020 01:00:46 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <guid>https://hugo.jiahongw.com/zh/posts/redis/</guid>
+        <guid>https://hugo.jiahongw.com/zh/posts/database/redis/</guid>
         <description>&lt;p&gt;。。集万滴雨水，成一条江河🌊🌊&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>什么是Hash？</title>
-        <link>https://hugo.jiahongw.com/zh/posts/hash/</link>
+        <link>https://hugo.jiahongw.com/zh/posts/algorithmstructure/hash-circle/</link>
         <pubDate>Tue, 17 Mar 2020 15:12:38 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <guid>https://hugo.jiahongw.com/zh/posts/hash/</guid>
+        <guid>https://hugo.jiahongw.com/zh/posts/algorithmstructure/hash-circle/</guid>
         <description>&lt;p&gt;走得慢的时候，为什么不跑呢？#️⃣&lt;/p&gt;</description>
       </item>
       
@@ -589,10 +589,10 @@
       
       <item>
         <title>机器学习基本算法</title>
-        <link>https://hugo.jiahongw.com/zh/posts/machine-learning-base/</link>
+        <link>https://hugo.jiahongw.com/zh/posts/deeplearning/machine-learning-base/</link>
         <pubDate>Sun, 08 Mar 2020 23:33:24 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <guid>https://hugo.jiahongw.com/zh/posts/machine-learning-base/</guid>
+        <guid>https://hugo.jiahongw.com/zh/posts/deeplearning/machine-learning-base/</guid>
         <description>&lt;p&gt;机器学习有这些基本的算法组成，要门机器学习，就需要打个地基✒&lt;/p&gt;</description>
       </item>
       
@@ -625,19 +625,19 @@
       
       <item>
         <title>MXNet回顾</title>
-        <link>https://hugo.jiahongw.com/zh/posts/dl/mxnet-begin/</link>
+        <link>https://hugo.jiahongw.com/zh/posts/deeplearning/mxnet-begin/</link>
         <pubDate>Sun, 23 Feb 2020 15:49:10 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <guid>https://hugo.jiahongw.com/zh/posts/dl/mxnet-begin/</guid>
+        <guid>https://hugo.jiahongw.com/zh/posts/deeplearning/mxnet-begin/</guid>
         <description>&lt;p&gt;使用MXNet的好处你永远想象不到。🉑&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>Pytorch Begin</title>
-        <link>https://hugo.jiahongw.com/zh/posts/dl/pytorch-begin/</link>
+        <link>https://hugo.jiahongw.com/zh/posts/deeplearning/pytorch-begin/</link>
         <pubDate>Sat, 22 Feb 2020 22:49:28 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <guid>https://hugo.jiahongw.com/zh/posts/dl/pytorch-begin/</guid>
+        <guid>https://hugo.jiahongw.com/zh/posts/deeplearning/pytorch-begin/</guid>
         <description>&lt;p&gt;重新学习一下DL，这次使用PyTorch框架🔦&lt;/p&gt;</description>
       </item>
       
@@ -688,10 +688,10 @@
       
       <item>
         <title>Hugo配置</title>
-        <link>https://hugo.jiahongw.com/zh/posts/hugo/first/</link>
+        <link>https://hugo.jiahongw.com/zh/posts/hugo/hugo_setup/</link>
         <pubDate>Mon, 10 Feb 2020 20:50:09 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <guid>https://hugo.jiahongw.com/zh/posts/hugo/first/</guid>
+        <guid>https://hugo.jiahongw.com/zh/posts/hugo/hugo_setup/</guid>
         <description>HUGO + Github + Github Action持续集成部署个人博客 HUGO本地环境 首先在HUGO的官网下载Hugo的Windows安装包，然后将路径添加到环境变量即</description>
       </item>
       

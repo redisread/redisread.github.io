@@ -18,10 +18,10 @@
       
       <item>
         <title>入门Docker</title>
-        <link>https://hugo.jiahongw.com/zh/posts/docker-begin/</link>
+        <link>https://hugo.jiahongw.com/zh/posts/middleware/docker-begin/</link>
         <pubDate>Thu, 09 Apr 2020 17:00:28 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <guid>https://hugo.jiahongw.com/zh/posts/docker-begin/</guid>
+        <guid>https://hugo.jiahongw.com/zh/posts/middleware/docker-begin/</guid>
         <description>&lt;p&gt;Docker是基于内核的容器,可以运行在宿主机上,看作是一个容器.&lt;/p&gt;</description>
       </item>
       

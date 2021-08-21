@@ -54,20 +54,20 @@
       
       <item>
         <title>Linux实用指令</title>
-        <link>https://hugo.jiahongw.com/zh/posts/linux-grep/</link>
+        <link>https://hugo.jiahongw.com/zh/posts/linux/linux-grep/</link>
         <pubDate>Thu, 16 Apr 2020 10:56:00 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <guid>https://hugo.jiahongw.com/zh/posts/linux-grep/</guid>
+        <guid>https://hugo.jiahongw.com/zh/posts/linux/linux-grep/</guid>
         <description>&lt;h2 id=&#34;heading&#34;&gt;|&lt;/h2&gt;
 &lt;p&gt;管道符，“|”，表示将前一个命令的处理结果输出传递给后面的命令处理。&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>Linux用户管理</title>
-        <link>https://hugo.jiahongw.com/zh/posts/linux-users/</link>
+        <link>https://hugo.jiahongw.com/zh/posts/linux/linux-users/</link>
         <pubDate>Wed, 15 Apr 2020 16:34:03 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <guid>https://hugo.jiahongw.com/zh/posts/linux-users/</guid>
+        <guid>https://hugo.jiahongw.com/zh/posts/linux/linux-users/</guid>
         <description>&lt;p&gt;每一个用户都是一个个体，每一个个体都属于一个群组，而每一个群组又有区别!&lt;/p&gt;
 &lt;p&gt;——Users&lt;/p&gt;</description>
       </item>
