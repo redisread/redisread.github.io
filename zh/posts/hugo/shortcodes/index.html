@@ -1536,19 +1536,29 @@
       <h2 id="盒子">盒子</h2>
 <h3 id="支持markdown语法的盒子">支持Markdown语法的盒子</h3>
 <p>语法：</p>
-<p><img src="https://raw.githubusercontent.com/redisread/Image/master/Blog/image-20210822151028711.png" alt="boxmd" /></p>
+<p><img src="https://raw.githubusercontent.com/redisread/Image/master/Blog/image-20210822151028711.png" alt="boxmd" style="zoom: 67%;" /></p>
+<p>或者：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;box&#34;</span><span class="p"></span><span class="p">&gt;</span>This is <span class="p">&lt;</span><span class="nt">strong</span><span class="p"></span><span class="p">&gt;</span>boxmd<span class="p">&lt;</span><span class="p">/</span><span class="nt">strong</span><span class="p">&gt;</span> shortcode<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></td></tr></table>
+</div>
+</div><div class="box">This is <strong>boxmd</strong> shortcode</div>
 <p>渲染显示：</p>
 <div class="box">This is <strong>boxmd</strong> shortcode</div>
 <h3 id="简单盒子">简单盒子</h3>
 <p>语法：</p>
-<p><img src="https://raw.githubusercontent.com/redisread/Image/master/Blog/image-20210822151055228.png" alt="box" /></p>
+<p><img src="https://raw.githubusercontent.com/redisread/Image/master/Blog/image-20210822151055228.png" alt="box" style="zoom: 67%;" /></p>
 <p>渲染显示：</p>
 <div class="box">
 This is **box** shortcode
 </div>
 <h2 id="代码选项卡">代码选项卡</h2>
 <p>可以在不同的代码块之间切换，语法：</p>
-<p><img src="https://raw.githubusercontent.com/redisread/Image/master/Blog/image-20210822151330018.png" alt="code-tab" /></p>
+<p><img src="https://raw.githubusercontent.com/redisread/Image/master/Blog/image-20210822151330018.png" alt="code-tab" style="zoom:50%;" /></p>
 <p>渲染显示：</p>
 
 <div id="bbfc6d359a06a39f" class="codetab">
@@ -1627,7 +1637,7 @@ This is **box** shortcode
 </script>
 <h2 id="常规选项卡">常规选项卡</h2>
 <p>这个和代码选项卡类似，不同的是，这种选项卡更加“常规”。语法：</p>
-<p><img src="https://raw.githubusercontent.com/redisread/Image/master/Blog/image-20210822151412190.png" alt="tab" /></p>
+<p><img src="https://raw.githubusercontent.com/redisread/Image/master/Blog/image-20210822151412190.png" alt="tab" style="zoom:50%;" /></p>
 <p>渲染显示：</p>
 
 <div id="f09fb25fccaa3686" class="tab">
@@ -1707,7 +1717,7 @@ This is **box** shortcode
 </script>
 <h2 id="展开栏">展开栏</h2>
 <p>语法：</p>
-<p><img src="https://raw.githubusercontent.com/redisread/Image/master/Blog/image-20210822151433085.png" alt="expand" /></p>
+<p><img src="https://raw.githubusercontent.com/redisread/Image/master/Blog/image-20210822151433085.png" alt="expand" style="zoom:50%;" /></p>
 <p>渲染显示：</p>
 <div class="expand">
   <button type="button" class="expand__button" aria-label="Expand Button">
@@ -1735,7 +1745,7 @@ This is **box** shortcode
 </div>
 <h2 id="彩色文本框">彩色文本框</h2>
 <p>语法：</p>
-<p><img src="https://raw.githubusercontent.com/redisread/Image/master/Blog/image-20210822151517314.png" alt="color-box" /></p>
+<p><img src="https://raw.githubusercontent.com/redisread/Image/master/Blog/image-20210822151517314.png" alt="color-box" style="zoom:50%;" /></p>
 <p>渲染显示：</p>
 <div class="alert alert-warning" role="alert"><strong>this</strong> is a text</div>
 
@@ -1747,7 +1757,7 @@ This is **box** shortcode
 
 <h2 id="彩色注意框">彩色注意框</h2>
 <p>语法：</p>
-<p><img src="https://raw.githubusercontent.com/redisread/Image/master/Blog/image-20210822151605088.png" alt="notice-box" /></p>
+<p><img src="https://raw.githubusercontent.com/redisread/Image/master/Blog/image-20210822151605088.png" alt="notice-box" style="zoom:50%;" /></p>
 <p>渲染显示：</p>
 <div class="notices success" >
   success text
@@ -1763,24 +1773,8 @@ This is **box** shortcode
 </div>
 <h2 id="图片描述">图片描述</h2>
 <p>使用语法：</p>
-<pre><code><figure >
-  
-    
-    <img data-src="https://i.loli.net/2021/06/23/bfAkG5v4X8qQpRD.jpg" alt="image alt" data-caption="Image with title, caption, alt, ..." src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%23aaa' d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4.44-6.19l-2.35 3.02-1.56-1.88c-.2-.25-.58-.24-.78.01l-1.74 2.23c-.26.33-.02.81.39.81h8.98c.41 0 .65-.47.4-.8l-2.55-3.39c-.19-.26-.59-.26-.79 0z'/%3E%3C/svg%3E" class="lazyload" width="700px" height=""/>
-    
-  
-  <figcaption>
-    <strong>Sample Image</strong>:
-    
-    Image with title, caption, alt, ...
-    
-      
-      
-    
-  </figcaption>
-  
-</figure>
-</code></pre><p>渲染显示：</p>
+<p><img src="../../../../../../../Library/Application Support/typora-user-images/image-20210822152923916.png" alt="image" style="zoom: 50%;" /></p>
+<p>渲染显示：</p>
 <figure >
   
     
@@ -1800,7 +1794,7 @@ This is **box** shortcode
 </figure>
 <h2 id="按钮">按钮</h2>
 <p>语法：</p>
-<p><img src="https://raw.githubusercontent.com/redisread/Image/master/Blog/image-20210822151228564.png" alt="button" /></p>
+<p><img src="https://raw.githubusercontent.com/redisread/Image/master/Blog/image-20210822151228564.png" alt="button" style="zoom:50%;" /></p>
 <p>简单按钮：</p>
 <a href="https://hugo.jiahongw.com/zh/posts/hugo/shortcodes/" class="button" style="width: 72px; height: 30px;" data-color="default" target="_blank" rel="noreferrer">
   <span class="button__text">
