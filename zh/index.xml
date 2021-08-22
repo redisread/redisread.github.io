@@ -858,13 +858,12 @@
       </item>
       
       <item>
-        <title>Shortcodes</title>
+        <title>Shortcodes使用</title>
         <link>https://hugo.jiahongw.com/zh/posts/hugo/shortcodes/</link>
         <pubDate>Sat, 25 Jan 2020 06:40:51 +0900</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/posts/hugo/shortcodes/</guid>
-        <description>Markdownify box This is boxmd shortcode Simple box This is **box** shortcode  Code tabs Make it easy to switch between different code
-java javascript  1  System.out.println(&amp;#39;Hello World!&amp;#39;);     1  console.log(&amp;#39;Hello World!&amp;#39;);       &#39;use strict&#39;; var containerId = JSON.parse(&#34;\&#34;642b4352e05d9e04\&#34;&#34;); var containerElem = document.getElementById(containerId); var codetabLinks = null; var codetabContents = null; var ids = []; if (containerElem) { codetabLinks = containerElem.</description>
+        <description>盒子 支持Markdown语法的盒子 语法： Some markdown contents 渲染显示： This is boxmd shortcode 简单盒子 语法： This is **box** shortcode 渲染显示： This is **box** shortcode 代码选项卡 Make it easy to switch between different code 可以在不同</description>
       </item>
       
       <item>

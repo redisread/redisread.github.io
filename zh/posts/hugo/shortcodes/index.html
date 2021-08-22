@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Shortcodes – ✏Victor&#39;s Blog</title>
+    <title>Shortcodes使用 – ✏Victor&#39;s Blog</title>
     
 
   
@@ -1159,7 +1159,7 @@
 
 
 <meta property="og:site_name" content="✏Victor&#39;s Blog">
-<meta property="og:title" content="Shortcodes">
+<meta property="og:title" content="Shortcodes使用">
 <meta property="og:url" content="https://hugo.jiahongw.com/zh/posts/hugo/shortcodes/">
 <meta property="og:type" content="article">
 <meta property="og:description" content="tabs, code-tabs, expand, alert, warning, notice, img, box">
@@ -1191,7 +1191,7 @@
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "headline": "Shortcodes",
+    "headline": "Shortcodes使用",
     "datePublished": "2020-01-25T06:40:51+09:00",
     "dateModified": "2020-01-25T06:40:51+09:00",
     "url" : "https://hugo.jiahongw.com/zh/posts/hugo/shortcodes/",
@@ -1473,7 +1473,7 @@
   
   <li  class="is-active" >
     
-      <span>Shortcodes</span>
+      <span>Shortcodes使用</span>
     
   </li>
   
@@ -1482,7 +1482,7 @@
 </nav>
   
   <div class="single">
-    <h2 class="single__title">Shortcodes</h2>
+    <h2 class="single__title">Shortcodes使用</h2>
     <div class="single__meta">
       
 <div class="single__infos">
@@ -1515,28 +1515,44 @@
   <div class="expand__content expand__content--toc">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#markdownify-box">Markdownify box</a></li>
-    <li><a href="#simple-box">Simple box</a></li>
-    <li><a href="#code-tabs">Code tabs</a></li>
-    <li><a href="#tabs-for-general-purpose">Tabs for general purpose</a></li>
-    <li><a href="#expand">Expand</a></li>
-    <li><a href="#alert">Alert</a></li>
-    <li><a href="#notice">Notice</a></li>
+    <li><a href="#盒子">盒子</a>
+      <ul>
+        <li><a href="#支持markdown语法的盒子">支持Markdown语法的盒子</a></li>
+        <li><a href="#简单盒子">简单盒子</a></li>
+      </ul>
+    </li>
+    <li><a href="#代码选项卡">代码选项卡</a></li>
+    <li><a href="#常规选项卡">常规选项卡</a></li>
+    <li><a href="#展开栏">展开栏</a></li>
+    <li><a href="#彩色文本框">彩色文本框</a></li>
+    <li><a href="#彩色注意框">彩色注意框</a></li>
+    <li><a href="#图片描述">图片描述</a></li>
+    <li><a href="#按钮">按钮</a></li>
   </ul>
 </nav>
   </div>
 </div>
 
-      <h2 id="markdownify-box">Markdownify box</h2>
+      <h2 id="盒子">盒子</h2>
+<h3 id="支持markdown语法的盒子">支持Markdown语法的盒子</h3>
+<p>语法：</p>
+<pre><code class="language-docsy" data-lang="docsy"><div class="box">Some markdown contents</div>
+</code></pre><p>渲染显示：</p>
 <div class="box">This is <strong>boxmd</strong> shortcode</div>
-<h2 id="simple-box">Simple box</h2>
+<h3 id="简单盒子">简单盒子</h3>
+<p>语法：</p>
+<pre><code><div class="box">
+This is **box** shortcode
+</div>
+</code></pre><p>渲染显示：</p>
 <div class="box">
 This is **box** shortcode
 </div>
-<h2 id="code-tabs">Code tabs</h2>
+<h2 id="代码选项卡">代码选项卡</h2>
 <p>Make it easy to switch between different code</p>
-
-<div id="642b4352e05d9e04" class="codetab">
+<p>可以在不同的代码块之间切换，语法：</p>
+<pre><code>
+<div id="123feb06dfc5fa0d" class="codetab">
   <div class="codetab__links">
     
       <button class="codetab__link" aria-label="Tab link">java</button>
@@ -1546,7 +1562,7 @@ This is **box** shortcode
   </div>
   
   
-<div id="f5245009c64b2310" class="codetab__content">
+<div id="3142a23cb4739e3f" class="codetab__content">
   <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -1559,7 +1575,7 @@ This is **box** shortcode
 </div>
 
   
-<div id="0cda49cb3895f102" class="codetab__content">
+<div id="e35d4fb6abd68312" class="codetab__content">
   <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -1576,7 +1592,7 @@ This is **box** shortcode
 <script>
   'use strict';
 
-  var containerId = JSON.parse("\"642b4352e05d9e04\"");
+  var containerId = JSON.parse("\"123feb06dfc5fa0d\"");
   var containerElem = document.getElementById(containerId);
   var codetabLinks = null;
   var codetabContents = null;
@@ -1610,7 +1626,161 @@ This is **box** shortcode
     codetabContents[0].style.display = 'block';
   }
 </script>
-<h2 id="tabs-for-general-purpose">Tabs for general purpose</h2>
+</code></pre><p>渲染显示：</p>
+
+<div id="bbfc6d359a06a39f" class="codetab">
+  <div class="codetab__links">
+    
+      <button class="codetab__link" aria-label="Tab link">java</button>
+    
+      <button class="codetab__link" aria-label="Tab link">javascript</button>
+    
+  </div>
+  
+  
+<div id="f5245009c64b2310" class="codetab__content">
+  <div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="err">&#39;</span><span class="n">Hello</span> <span class="n">World</span><span class="o">!</span><span class="err">&#39;</span><span class="o">)</span><span class="o">;</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+
+  
+<div id="419052156b73e54e" class="codetab__content">
+  <div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Hello World!&#39;</span><span class="p">)</span><span class="p">;</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+
+</div>
+
+<script>
+  'use strict';
+
+  var containerId = JSON.parse("\"bbfc6d359a06a39f\"");
+  var containerElem = document.getElementById(containerId);
+  var codetabLinks = null;
+  var codetabContents = null;
+  var ids = [];
+
+  if (containerElem) {
+    codetabLinks = containerElem.querySelectorAll('.codetab__link');
+    codetabContents = containerElem.querySelectorAll('.codetab__content');
+  }
+
+  for (var i = 0; i < codetabContents.length; i++) {
+    ids = ids.concat(codetabContents[i].getAttribute('id'));
+    codetabContents[i].style.display = 'none';
+
+    if (0 === parseInt(i, 10) && !codetabContents[i].classList.contains('active')) {
+      codetabContents[i].classList.add('active');
+    }
+  }
+
+  for (var i = 0; i < codetabLinks.length; i++) {
+    codetabLinks[i].setAttribute('id', ids[i]);
+
+    if (0 === parseInt(i, 10) && !codetabLinks[i].classList.contains('active')) {
+      codetabLinks[i].classList.add('active');
+    } else {
+      codetabLinks[i].classList.remove('active');
+    }
+  }
+
+  if (codetabContents.length > 0) {
+    codetabContents[0].style.display = 'block';
+  }
+</script>
+<h2 id="常规选项卡">常规选项卡</h2>
+<p>这个和代码选项卡类似，不同的是，这种选项卡更加“常规”。语法：</p>
+<pre><code>
+<div id="3420e0dc4384a5ab" class="tab">
+  <div class="tab__links">
+    
+    <button class="tab__link" aria-label="Tab link">Windows</button>
+    
+    <button class="tab__link" aria-label="Tab link">MacOS</button>
+    
+    <button class="tab__link" aria-label="Tab link">Ubuntu</button>
+    
+  </div>
+  
+  
+<div id="fc045b07ddfd8a84" class="tab__content">
+  <h3 id="windows-section">Windows section</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Hello World!&#39;</span><span class="p">)</span><span class="p">;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>⚠️Becareful that the content in the tab should be different from each other. The tab makes unique id hashes depending on the tab contents. So, If you just copy-paste the tabs with multiple times, since it has the same contents, the tab will not work.</p>
+
+</div>
+  
+<div id="681fec6f465f1c34" class="tab__content">
+  <h3 id="macos-section">MacOS section</h3>
+<p>Hello world!
+</div>
+  
+<div id="723d4595fc2e2181" class="tab__content">
+  <h3 id="ubuntu-section">Ubuntu section</h3>
+<p>Great!
+</div>
+
+</div>
+
+<script>
+  'use strict';
+
+  var containerId = JSON.parse("\"3420e0dc4384a5ab\"");
+  var containerElem = document.getElementById(containerId);
+  var tabLinks = null;
+  var tabContents = null;
+  var ids = [];
+
+  if (containerElem) {
+    tabLinks = containerElem.querySelectorAll('.tab__link');
+    tabContents = containerElem.querySelectorAll('.tab__content');
+  }
+
+  for (var i = 0; i < tabContents.length; i++) {
+    ids = ids.concat(tabContents[i].getAttribute('id'));
+    tabContents[i].style.display = 'none';
+
+    if (0 === parseInt(i, 10) && !tabContents[i].classList.contains('active')) {
+      tabContents[i].classList.add('active');
+    }
+  }
+
+  for (var i = 0; i < tabLinks.length; i++) {
+    tabLinks[i].setAttribute('id', ids[i]);
+
+    if (0 === parseInt(i, 10) && !tabLinks[i].classList.contains('active')) {
+      tabLinks[i].classList.add('active');
+    } else {
+      tabLinks[i].classList.remove('active');
+    }
+  }
+
+  if (tabContents.length > 0) {
+    tabContents[0].style.display = 'block';
+  }
+</script>
+</code></pre><p>渲染显示：</p>
 
 <div id="f09fb25fccaa3686" class="tab">
   <div class="tab__links">
@@ -1687,7 +1857,34 @@ This is **box** shortcode
     tabContents[0].style.display = 'block';
   }
 </script>
-<h2 id="expand">Expand</h2>
+<h2 id="展开栏">展开栏</h2>
+<p>语法：</p>
+<pre><code><div class="expand">
+  <button type="button" class="expand__button" aria-label="Expand Button">
+    <span class="expand-icon expand-icon__right">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M9.29 15.88L13.17 12 9.29 8.12c-.39-.39-.39-1.02 0-1.41.39-.39 1.02-.39 1.41 0l4.59 4.59c.39.39.39 1.02 0 1.41L10.7 17.3c-.39.39-1.02.39-1.41 0-.38-.39-.39-1.03 0-1.42z"/></svg>
+    </span>
+    Expand me
+  </button>
+  <div class="expand__content">
+    <h3 id="title">Title</h3>
+<p>contents
+  </div>
+</div>
+
+<div class="expand">
+  <button type="button" class="expand__button" aria-label="Expand Button">
+    <span class="expand-icon expand-icon__right">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M9.29 15.88L13.17 12 9.29 8.12c-.39-.39-.39-1.02 0-1.41.39-.39 1.02-.39 1.41 0l4.59 4.59c.39.39.39 1.02 0 1.41L10.7 17.3c-.39.39-1.02.39-1.41 0-.38-.39-.39-1.03 0-1.42z"/></svg>
+    </span>
+    Expand me2
+  </button>
+  <div class="expand__content">
+    <h3 id="title2">Title2</h3>
+<p>contents2
+  </div>
+</div>
+</code></pre><p>渲染显示：</p>
 <div class="expand">
   <button type="button" class="expand__button" aria-label="Expand Button">
     <span class="expand-icon expand-icon__right">
@@ -1712,7 +1909,22 @@ This is **box** shortcode
 <p>contents2
   </div>
 </div>
-<h2 id="alert">Alert</h2>
+<h2 id="彩色文本框">彩色文本框</h2>
+<p>语法：</p>
+<pre><code>Colored box
+
+<div class="alert alert-warning" role="alert"><strong>this</strong> is a text</div>
+
+
+<div class="alert alert-info" role="alert"><strong>this</strong> is a text</div>
+
+
+<div class="alert alert-success" role="alert"><strong>this</strong> is a text</div>
+
+
+<div class="alert alert-danger" role="alert"><strong>this</strong> is a text</div>
+
+</code></pre><p>渲染显示：</p>
 <p>Colored box</p>
 <div class="alert alert-warning" role="alert"><strong>this</strong> is a text</div>
 
@@ -1722,7 +1934,24 @@ This is **box** shortcode
 
 <div class="alert alert-danger" role="alert"><strong>this</strong> is a text</div>
 
-<h2 id="notice">Notice</h2>
+<h2 id="彩色注意框">彩色注意框</h2>
+<p>语法：</p>
+<pre><code><div class="notices success" >
+  success text
+</div>
+
+<div class="notices info" >
+  info text
+</div>
+
+<div class="notices warning" >
+  warning text
+</div>
+
+<div class="notices error" >
+  error text
+</div>
+</code></pre><p>渲染显示：</p>
 <div class="notices success" >
   success text
 </div>
@@ -1735,6 +1964,77 @@ This is **box** shortcode
 <div class="notices error" >
   error text
 </div>
+<h2 id="图片描述">图片描述</h2>
+<p>使用语法：</p>
+<pre><code><figure >
+  
+    
+    <img data-src="https://i.loli.net/2021/06/23/bfAkG5v4X8qQpRD.jpg" alt="image alt" data-caption="Image with title, caption, alt, ..." src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%23aaa' d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4.44-6.19l-2.35 3.02-1.56-1.88c-.2-.25-.58-.24-.78.01l-1.74 2.23c-.26.33-.02.81.39.81h8.98c.41 0 .65-.47.4-.8l-2.55-3.39c-.19-.26-.59-.26-.79 0z'/%3E%3C/svg%3E" class="lazyload" width="700px" height=""/>
+    
+  
+  <figcaption>
+    <strong>Sample Image</strong>:
+    
+    Image with title, caption, alt, ...
+    
+      
+      
+    
+  </figcaption>
+  
+</figure>
+</code></pre><p>渲染显示：</p>
+<figure >
+  
+    
+    <img data-src="https://i.loli.net/2021/06/23/bfAkG5v4X8qQpRD.jpg" alt="image alt" data-caption="Image with title, caption, alt, ..." src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%23aaa' d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4.44-6.19l-2.35 3.02-1.56-1.88c-.2-.25-.58-.24-.78.01l-1.74 2.23c-.26.33-.02.81.39.81h8.98c.41 0 .65-.47.4-.8l-2.55-3.39c-.19-.26-.59-.26-.79 0z'/%3E%3C/svg%3E" class="lazyload" width="700px" height=""/>
+    
+  
+  <figcaption>
+    <strong>Sample Image</strong>:
+    
+    Image with title, caption, alt, ...
+    
+      
+      
+    
+  </figcaption>
+  
+</figure>
+<h2 id="按钮">按钮</h2>
+<p>简单按钮：</p>
+<pre><code><a href="https://hugo.jiahongw.com/zh/posts/hugo/shortcodes/" class="button" style="width: 72px; height: 30px;" data-color="default" target="_blank" rel="noreferrer">
+  <span class="button__text">
+    button
+  </span>
+</a>
+</code></pre><a href="https://hugo.jiahongw.com/zh/posts/hugo/shortcodes/" class="button" style="width: 72px; height: 30px;" data-color="default" target="_blank" rel="noreferrer">
+  <span class="button__text">
+    button
+  </span>
+</a>
+<p>设置宽度高度：</p>
+<pre><code><a href="https://hugo.jiahongw.com/zh/posts/hugo/shortcodes/" class="button" style="width: 100px; height: 36px;" data-color="default" target="_blank" rel="noreferrer">
+  <span class="button__text">
+    button
+  </span>
+</a>
+</code></pre><a href="https://hugo.jiahongw.com/zh/posts/hugo/shortcodes/" class="button" style="width: 100px; height: 36px;" data-color="default" target="_blank" rel="noreferrer">
+  <span class="button__text">
+    button
+  </span>
+</a>
+<p>设置颜色：</p>
+<pre><code><a href="https://hugo.jiahongw.com/zh/posts/hugo/shortcodes/" class="button" style="width: 100px; height: 36px;" data-color="primary" target="_blank" rel="noreferrer">
+  <span class="button__text">
+    button
+  </span>
+</a>
+</code></pre><a href="https://hugo.jiahongw.com/zh/posts/hugo/shortcodes/" class="button" style="width: 100px; height: 36px;" data-color="primary" target="_blank" rel="noreferrer">
+  <span class="button__text">
+    button
+  </span>
+</a>
 
     </article>
     <script>
@@ -1801,13 +2101,13 @@ This is **box** shortcode
       
     
       
-        <a href="https://twitter.com/intent/tweet?text=Shortcodes&url=https%3a%2f%2fhugo.jiahongw.com%2fzh%2fposts%2fhugo%2fshortcodes%2f&hashtags=shortcode&via=" title="Twitter" aria-label="Twitter Share Button" class="donation__item" target="_blank" rel="noreferrer" data-type="share">
+        <a href="https://twitter.com/intent/tweet?text=Shortcodes%e4%bd%bf%e7%94%a8&url=https%3a%2f%2fhugo.jiahongw.com%2fzh%2fposts%2fhugo%2fshortcodes%2f&hashtags=shortcode&via=" title="Twitter" aria-label="Twitter Share Button" class="donation__item" target="_blank" rel="noreferrer" data-type="share">
           <svg data-name="twitter" enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="35" height="35" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="m21.534 7.113c.976-.693 1.797-1.558 2.466-2.554v-.001c-.893.391-1.843.651-2.835.777 1.02-.609 1.799-1.566 2.165-2.719-.951.567-2.001.967-3.12 1.191-.903-.962-2.19-1.557-3.594-1.557-2.724 0-4.917 2.211-4.917 4.921 0 .39.033.765.114 1.122-4.09-.2-7.71-2.16-10.142-5.147-.424.737-.674 1.58-.674 2.487 0 1.704.877 3.214 2.186 4.089-.791-.015-1.566-.245-2.223-.606v.054c0 2.391 1.705 4.377 3.942 4.835-.401.11-.837.162-1.29.162-.315 0-.633-.018-.931-.084.637 1.948 2.447 3.381 4.597 3.428-1.674 1.309-3.8 2.098-6.101 2.098-.403 0-.79-.018-1.177-.067 2.18 1.405 4.762 2.208 7.548 2.208 8.683 0 14.342-7.244 13.986-14.637z"/></svg>
         </a>
       
     
       
-        <a href="https://www.reddit.com/submit?url=https%3a%2f%2fhugo.jiahongw.com%2fzh%2fposts%2fhugo%2fshortcodes%2f&amp;title=Shortcodes" target="_blank" rel="noreferer" title="Reddit" aria-label="Reddit Share Button" onclick="window.open('http://www.reddit.com/submit?url=' + encodeURIComponent(document.URL) + '&amp;title=' +  encodeURIComponent(document.title)); return false;" class="donation__item" data-type="share">
+        <a href="https://www.reddit.com/submit?url=https%3a%2f%2fhugo.jiahongw.com%2fzh%2fposts%2fhugo%2fshortcodes%2f&amp;title=Shortcodes%e4%bd%bf%e7%94%a8" target="_blank" rel="noreferer" title="Reddit" aria-label="Reddit Share Button" onclick="window.open('http://www.reddit.com/submit?url=' + encodeURIComponent(document.URL) + '&amp;title=' +  encodeURIComponent(document.title)); return false;" class="donation__item" data-type="share">
           <svg data-name="reddit" enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="35" height="35" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="m21.325 9.308c-.758 0-1.425.319-1.916.816-1.805-1.268-4.239-2.084-6.936-2.171l1.401-6.406 4.461 1.016c0 1.108.89 2.013 1.982 2.013 1.113 0 2.008-.929 2.008-2.038s-.889-2.038-2.007-2.038c-.779 0-1.451.477-1.786 1.129l-4.927-1.108c-.248-.067-.491.113-.557.365l-1.538 7.062c-2.676.113-5.084.928-6.895 2.197-.491-.518-1.184-.837-1.942-.837-2.812 0-3.733 3.829-1.158 5.138-.091.405-.132.837-.132 1.268 0 4.301 4.775 7.786 10.638 7.786 5.888 0 10.663-3.485 10.663-7.786 0-.431-.045-.883-.156-1.289 2.523-1.314 1.594-5.115-1.203-5.117zm-15.724 5.41c0-1.129.89-2.038 2.008-2.038 1.092 0 1.983.903 1.983 2.038 0 1.109-.89 2.013-1.983 2.013-1.113.005-2.008-.904-2.008-2.013zm10.839 4.798c-1.841 1.868-7.036 1.868-8.878 0-.203-.18-.203-.498 0-.703.177-.18.491-.18.668 0 1.406 1.463 6.07 1.488 7.537 0 .177-.18.491-.18.668 0 .207.206.207.524.005.703zm-.041-2.781c-1.092 0-1.982-.903-1.982-2.011 0-1.129.89-2.038 1.982-2.038 1.113 0 2.008.903 2.008 2.038-.005 1.103-.895 2.011-2.008 2.011z"/></svg>
         </a>
       
@@ -1966,7 +2266,7 @@ This is **box** shortcode
 <script>
   var gitalk = new Gitalk({
     id: '2020-01-25 06:40:51 \x2b0900 \x2b0900',
-    title: 'Shortcodes',
+    title: 'Shortcodes使用',
     clientID: '5880093503923d139adb',
     clientSecret: 'aa0741ecdc011069553c3c898e8e0f54915af0bb',
     repo: 'redisread.github.io',
@@ -2329,13 +2629,19 @@ document.addEventListener('DOMContentLoaded', function () {
   <div class="toc " data-dir="ltr" data-folding="true">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#markdownify-box">Markdownify box</a></li>
-    <li><a href="#simple-box">Simple box</a></li>
-    <li><a href="#code-tabs">Code tabs</a></li>
-    <li><a href="#tabs-for-general-purpose">Tabs for general purpose</a></li>
-    <li><a href="#expand">Expand</a></li>
-    <li><a href="#alert">Alert</a></li>
-    <li><a href="#notice">Notice</a></li>
+    <li><a href="#盒子">盒子</a>
+      <ul>
+        <li><a href="#支持markdown语法的盒子">支持Markdown语法的盒子</a></li>
+        <li><a href="#简单盒子">简单盒子</a></li>
+      </ul>
+    </li>
+    <li><a href="#代码选项卡">代码选项卡</a></li>
+    <li><a href="#常规选项卡">常规选项卡</a></li>
+    <li><a href="#展开栏">展开栏</a></li>
+    <li><a href="#彩色文本框">彩色文本框</a></li>
+    <li><a href="#彩色注意框">彩色注意框</a></li>
+    <li><a href="#图片描述">图片描述</a></li>
+    <li><a href="#按钮">按钮</a></li>
   </ul>
 </nav>
   </div>
