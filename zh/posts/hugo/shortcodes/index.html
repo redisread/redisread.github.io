@@ -1486,7 +1486,7 @@
     <div class="single__meta">
       
 <div class="single__infos">
-  <time class="single__info" title="创建日期">📅&nbsp;2020年01月25日 </time>  &middot; <span class="single__info" title="阅读时长"> ☕ 2 分钟 </span>
+  <time class="single__info" title="创建日期">📅&nbsp;2020年01月25日 </time>  &middot; <span class="single__info" title="阅读时长"> ☕ 1 分钟 </span>
   <span class="single__info">
     
   </span>
@@ -1536,103 +1536,20 @@
       <h2 id="盒子">盒子</h2>
 <h3 id="支持markdown语法的盒子">支持Markdown语法的盒子</h3>
 <p>语法：</p>
-<div class="box">
-
-<div class="box">This is <strong>boxmd</strong> shortcode</div>
-
-</div>
+<p><img src="https://raw.githubusercontent.com/redisread/Image/master/Blog/image-20210822151028711.png" alt="boxmd" /></p>
 <p>渲染显示：</p>
 <div class="box">This is <strong>boxmd</strong> shortcode</div>
 <h3 id="简单盒子">简单盒子</h3>
 <p>语法：</p>
-<blockquote>
-<div class="box">
-> This is **box** shortcode
-> </div>
-</blockquote>
+<p><img src="https://raw.githubusercontent.com/redisread/Image/master/Blog/image-20210822151055228.png" alt="box" /></p>
 <p>渲染显示：</p>
 <div class="box">
 This is **box** shortcode
 </div>
 <h2 id="代码选项卡">代码选项卡</h2>
-<p>Make it easy to switch between different code</p>
 <p>可以在不同的代码块之间切换，语法：</p>
-<pre><code>
-<div id="123feb06dfc5fa0d" class="codetab">
-  <div class="codetab__links">
-    
-      <button class="codetab__link" aria-label="Tab link">java</button>
-    
-      <button class="codetab__link" aria-label="Tab link">javascript</button>
-    
-  </div>
-  
-  
-<div id="3142a23cb4739e3f" class="codetab__content">
-  <div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-java" data-lang="java"><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="err">&#39;</span><span class="n">Hello</span> <span class="n">World</span><span class="o">!</span><span class="err">&#39;</span><span class="o">)</span><span class="o">;</span>
-</code></pre></td></tr></table>
-</div>
-</div>
-</div>
-
-  
-<div id="e35d4fb6abd68312" class="codetab__content">
-  <div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Hello World!&#39;</span><span class="p">)</span><span class="p">;</span>
-</code></pre></td></tr></table>
-</div>
-</div>
-</div>
-
-</div>
-
-<script>
-  'use strict';
-
-  var containerId = JSON.parse("\"123feb06dfc5fa0d\"");
-  var containerElem = document.getElementById(containerId);
-  var codetabLinks = null;
-  var codetabContents = null;
-  var ids = [];
-
-  if (containerElem) {
-    codetabLinks = containerElem.querySelectorAll('.codetab__link');
-    codetabContents = containerElem.querySelectorAll('.codetab__content');
-  }
-
-  for (var i = 0; i < codetabContents.length; i++) {
-    ids = ids.concat(codetabContents[i].getAttribute('id'));
-    codetabContents[i].style.display = 'none';
-
-    if (0 === parseInt(i, 10) && !codetabContents[i].classList.contains('active')) {
-      codetabContents[i].classList.add('active');
-    }
-  }
-
-  for (var i = 0; i < codetabLinks.length; i++) {
-    codetabLinks[i].setAttribute('id', ids[i]);
-
-    if (0 === parseInt(i, 10) && !codetabLinks[i].classList.contains('active')) {
-      codetabLinks[i].classList.add('active');
-    } else {
-      codetabLinks[i].classList.remove('active');
-    }
-  }
-
-  if (codetabContents.length > 0) {
-    codetabContents[0].style.display = 'block';
-  }
-</script>
-</code></pre><p>渲染显示：</p>
+<p><img src="https://raw.githubusercontent.com/redisread/Image/master/Blog/image-20210822151330018.png" alt="code-tab" /></p>
+<p>渲染显示：</p>
 
 <div id="bbfc6d359a06a39f" class="codetab">
   <div class="codetab__links">
@@ -1710,83 +1627,8 @@ This is **box** shortcode
 </script>
 <h2 id="常规选项卡">常规选项卡</h2>
 <p>这个和代码选项卡类似，不同的是，这种选项卡更加“常规”。语法：</p>
-<pre><code>
-<div id="3420e0dc4384a5ab" class="tab">
-  <div class="tab__links">
-    
-    <button class="tab__link" aria-label="Tab link">Windows</button>
-    
-    <button class="tab__link" aria-label="Tab link">MacOS</button>
-    
-    <button class="tab__link" aria-label="Tab link">Ubuntu</button>
-    
-  </div>
-  
-  
-<div id="fc045b07ddfd8a84" class="tab__content">
-  <h3 id="windows-section">Windows section</h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Hello World!&#39;</span><span class="p">)</span><span class="p">;</span>
-</code></pre></td></tr></table>
-</div>
-</div><p>⚠️Becareful that the content in the tab should be different from each other. The tab makes unique id hashes depending on the tab contents. So, If you just copy-paste the tabs with multiple times, since it has the same contents, the tab will not work.</p>
-
-</div>
-  
-<div id="681fec6f465f1c34" class="tab__content">
-  <h3 id="macos-section">MacOS section</h3>
-<p>Hello world!
-</div>
-  
-<div id="723d4595fc2e2181" class="tab__content">
-  <h3 id="ubuntu-section">Ubuntu section</h3>
-<p>Great!
-</div>
-
-</div>
-
-<script>
-  'use strict';
-
-  var containerId = JSON.parse("\"3420e0dc4384a5ab\"");
-  var containerElem = document.getElementById(containerId);
-  var tabLinks = null;
-  var tabContents = null;
-  var ids = [];
-
-  if (containerElem) {
-    tabLinks = containerElem.querySelectorAll('.tab__link');
-    tabContents = containerElem.querySelectorAll('.tab__content');
-  }
-
-  for (var i = 0; i < tabContents.length; i++) {
-    ids = ids.concat(tabContents[i].getAttribute('id'));
-    tabContents[i].style.display = 'none';
-
-    if (0 === parseInt(i, 10) && !tabContents[i].classList.contains('active')) {
-      tabContents[i].classList.add('active');
-    }
-  }
-
-  for (var i = 0; i < tabLinks.length; i++) {
-    tabLinks[i].setAttribute('id', ids[i]);
-
-    if (0 === parseInt(i, 10) && !tabLinks[i].classList.contains('active')) {
-      tabLinks[i].classList.add('active');
-    } else {
-      tabLinks[i].classList.remove('active');
-    }
-  }
-
-  if (tabContents.length > 0) {
-    tabContents[0].style.display = 'block';
-  }
-</script>
-</code></pre><p>渲染显示：</p>
+<p><img src="https://raw.githubusercontent.com/redisread/Image/master/Blog/image-20210822151412190.png" alt="tab" /></p>
+<p>渲染显示：</p>
 
 <div id="f09fb25fccaa3686" class="tab">
   <div class="tab__links">
@@ -1865,32 +1707,8 @@ This is **box** shortcode
 </script>
 <h2 id="展开栏">展开栏</h2>
 <p>语法：</p>
-<pre><code><div class="expand">
-  <button type="button" class="expand__button" aria-label="Expand Button">
-    <span class="expand-icon expand-icon__right">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M9.29 15.88L13.17 12 9.29 8.12c-.39-.39-.39-1.02 0-1.41.39-.39 1.02-.39 1.41 0l4.59 4.59c.39.39.39 1.02 0 1.41L10.7 17.3c-.39.39-1.02.39-1.41 0-.38-.39-.39-1.03 0-1.42z"/></svg>
-    </span>
-    Expand me
-  </button>
-  <div class="expand__content">
-    <h3 id="title">Title</h3>
-<p>contents
-  </div>
-</div>
-
-<div class="expand">
-  <button type="button" class="expand__button" aria-label="Expand Button">
-    <span class="expand-icon expand-icon__right">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M9.29 15.88L13.17 12 9.29 8.12c-.39-.39-.39-1.02 0-1.41.39-.39 1.02-.39 1.41 0l4.59 4.59c.39.39.39 1.02 0 1.41L10.7 17.3c-.39.39-1.02.39-1.41 0-.38-.39-.39-1.03 0-1.42z"/></svg>
-    </span>
-    Expand me2
-  </button>
-  <div class="expand__content">
-    <h3 id="title2">Title2</h3>
-<p>contents2
-  </div>
-</div>
-</code></pre><p>渲染显示：</p>
+<p><img src="https://raw.githubusercontent.com/redisread/Image/master/Blog/image-20210822151433085.png" alt="expand" /></p>
+<p>渲染显示：</p>
 <div class="expand">
   <button type="button" class="expand__button" aria-label="Expand Button">
     <span class="expand-icon expand-icon__right">
@@ -1917,21 +1735,8 @@ This is **box** shortcode
 </div>
 <h2 id="彩色文本框">彩色文本框</h2>
 <p>语法：</p>
-<pre><code>Colored box
-
-<div class="alert alert-warning" role="alert"><strong>this</strong> is a text</div>
-
-
-<div class="alert alert-info" role="alert"><strong>this</strong> is a text</div>
-
-
-<div class="alert alert-success" role="alert"><strong>this</strong> is a text</div>
-
-
-<div class="alert alert-danger" role="alert"><strong>this</strong> is a text</div>
-
-</code></pre><p>渲染显示：</p>
-<p>Colored box</p>
+<p><img src="https://raw.githubusercontent.com/redisread/Image/master/Blog/image-20210822151517314.png" alt="color-box" /></p>
+<p>渲染显示：</p>
 <div class="alert alert-warning" role="alert"><strong>this</strong> is a text</div>
 
 <div class="alert alert-info" role="alert"><strong>this</strong> is a text</div>
@@ -1942,22 +1747,8 @@ This is **box** shortcode
 
 <h2 id="彩色注意框">彩色注意框</h2>
 <p>语法：</p>
-<pre><code><div class="notices success" >
-  success text
-</div>
-
-<div class="notices info" >
-  info text
-</div>
-
-<div class="notices warning" >
-  warning text
-</div>
-
-<div class="notices error" >
-  error text
-</div>
-</code></pre><p>渲染显示：</p>
+<p><img src="https://raw.githubusercontent.com/redisread/Image/master/Blog/image-20210822151605088.png" alt="notice-box" /></p>
+<p>渲染显示：</p>
 <div class="notices success" >
   success text
 </div>
@@ -2008,35 +1799,22 @@ This is **box** shortcode
   
 </figure>
 <h2 id="按钮">按钮</h2>
+<p>语法：</p>
+<p><img src="https://raw.githubusercontent.com/redisread/Image/master/Blog/image-20210822151228564.png" alt="button" /></p>
 <p>简单按钮：</p>
-<pre><code><a href="https://hugo.jiahongw.com/zh/posts/hugo/shortcodes/" class="button" style="width: 72px; height: 30px;" data-color="default" target="_blank" rel="noreferrer">
-  <span class="button__text">
-    button
-  </span>
-</a>
-</code></pre><a href="https://hugo.jiahongw.com/zh/posts/hugo/shortcodes/" class="button" style="width: 72px; height: 30px;" data-color="default" target="_blank" rel="noreferrer">
+<a href="https://hugo.jiahongw.com/zh/posts/hugo/shortcodes/" class="button" style="width: 72px; height: 30px;" data-color="default" target="_blank" rel="noreferrer">
   <span class="button__text">
     button
   </span>
 </a>
 <p>设置宽度高度：</p>
-<pre><code><a href="https://hugo.jiahongw.com/zh/posts/hugo/shortcodes/" class="button" style="width: 100px; height: 36px;" data-color="default" target="_blank" rel="noreferrer">
-  <span class="button__text">
-    button
-  </span>
-</a>
-</code></pre><a href="https://hugo.jiahongw.com/zh/posts/hugo/shortcodes/" class="button" style="width: 100px; height: 36px;" data-color="default" target="_blank" rel="noreferrer">
+<a href="https://hugo.jiahongw.com/zh/posts/hugo/shortcodes/" class="button" style="width: 100px; height: 36px;" data-color="default" target="_blank" rel="noreferrer">
   <span class="button__text">
     button
   </span>
 </a>
 <p>设置颜色：</p>
-<pre><code><a href="https://hugo.jiahongw.com/zh/posts/hugo/shortcodes/" class="button" style="width: 100px; height: 36px;" data-color="primary" target="_blank" rel="noreferrer">
-  <span class="button__text">
-    button
-  </span>
-</a>
-</code></pre><a href="https://hugo.jiahongw.com/zh/posts/hugo/shortcodes/" class="button" style="width: 100px; height: 36px;" data-color="primary" target="_blank" rel="noreferrer">
+<a href="https://hugo.jiahongw.com/zh/posts/hugo/shortcodes/" class="button" style="width: 100px; height: 36px;" data-color="primary" target="_blank" rel="noreferrer">
   <span class="button__text">
     button
   </span>
@@ -3300,14 +3078,14 @@ document.addEventListener('DOMContentLoaded', function () {
       
       
         
+      
+        
         
           
             
               <a href="https://hugo.jiahongw.com/zh/posts/hugo/shortcodes/" data-lang="zh" class="dropdown-item is-active">中文</a>
             
           
-        
-      
         
       
         
