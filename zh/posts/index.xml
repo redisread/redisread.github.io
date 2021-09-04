@@ -9,21 +9,12 @@
     <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
     <webMaster>1427298682@qq.com (VictorHong)</webMaster>
     <copyright>&amp;copy;{year}, Redisread</copyright>
-    <lastBuildDate>Wed, 01 Sep 2021 20:26:23 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 21 Aug 2021 21:36:35 +0800</lastBuildDate>
     
         <atom:link href="https://hugo.jiahongw.com/zh/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     
-      
-      <item>
-        <title>面向对象中的面向过程代码</title>
-        <link>https://hugo.jiahongw.com/zh/posts/designpattern/process-in-object/</link>
-        <pubDate>Wed, 01 Sep 2021 20:26:23 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        <guid>https://hugo.jiahongw.com/zh/posts/designpattern/process-in-object/</guid>
-        <description>滥用getter和setter方法。 滥用的话违反面向对象编程的封装性，相当于对象没有了封装。因为setter和getter 方法都是publi</description>
-      </item>
       
       <item>
         <title>一篇文章想到父亲</title>
