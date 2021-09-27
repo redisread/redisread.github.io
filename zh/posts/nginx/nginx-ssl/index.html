@@ -1493,7 +1493,7 @@
     <div class="single__meta">
       
 <div class="single__infos">
-  <time class="single__info" title="创建日期">📅&nbsp;2021年02月01日 </time>  &middot; <span class="single__info" title="阅读时长"> ☕ 2 分钟 </span>&middot; <span class="single__info" title="作者">👻&nbsp;Victor</span>
+  <time class="single__info" title="创建日期">📅&nbsp;2021年02月01日 </time>  &middot; <span class="single__info" title="阅读时长"> ☕ 3 分钟 </span>&middot; <span class="single__info" title="作者">👻&nbsp;Victor</span>
   <span class="single__info">
     
   </span>
@@ -1625,6 +1625,38 @@
 }
 </code></pre><p>配置http2.0</p>
 <p><a href="https://segmentfault.com/a/1190000017847301">https://segmentfault.com/a/1190000017847301</a></p>
+<p><a href="https://laravelacademy.org/post/22297">通过 Certbot 安装 Let&rsquo;s Encrypt 证书，实现免费的全站 HTTPS 访问 | Laravel 学院</a></p>
+<h2 id="配置nginx">配置Nginx</h2>
+<p>主要功能：</p>
+<ol>
+<li>静态资源</li>
+<li>反向代理</li>
+<li>API服务</li>
+</ol>
+<p>Nginx配置反向代理：</p>
+<h3 id="alias与root的区别">alias与root的区别</h3>
+<blockquote>
+<p>root 实际访问文件路径会拼接URL中的路径<br />
+alias 实际访问文件路径不会拼接URL中的路径</p>
+</blockquote>
+<p>示例如下：</p>
+<pre><code>location ^~ /sta/ {  
+   alias /usr/local/nginx/html/static/;  
+}
+</code></pre><p>请求：<code>http://test.com/sta/sta1.html</code><br />
+实际访问：<code>/usr/local/nginx/html/static/sta1.html</code> 文件</p>
+<pre><code>location ^~ /tea/ {  
+   root /usr/local/nginx/html/;  
+}
+</code></pre><p>请求：<code>http://test.com/tea/tea1.html</code><br />
+实际访问：<code>/usr/local/nginx/html/tea/tea1.html</code> 文件</p>
+<hr />
+<p>Ref：</p>
+<ul>
+<li><a href="https://www.cnblogs.com/woshimrf/p/nginx-config-location.html">Nginx location匹配规则 - Ryan.Miao - 博客园</a></li>
+<li><a href="https://www.cnblogs.com/54chensongxia/p/12938929.html">Nginx配置文件详解 - 程序员自由之路 - 博客园</a></li>
+</ul>
+<p>检测HTTP3（quic）：<a href="https://http3check.net/">HTTP/3 Check</a></p>
 
     </article>
     <script>
@@ -2889,14 +2921,14 @@ document.addEventListener('DOMContentLoaded', function () {
       
       
         
-      
-        
         
           
             
               <a href="https://hugo.jiahongw.com/zh/posts/nginx/nginx-ssl/" data-lang="zh" class="dropdown-item is-active">中文</a>
             
           
+        
+      
         
       
         
@@ -3051,6 +3083,11 @@ document.addEventListener('DOMContentLoaded', function () {
         <li><a href="#检查nginx">检查nginx</a></li>
         <li><a href="#安装certbot">安装certbot</a></li>
         <li><a href="#部署步骤">部署步骤</a></li>
+      </ul>
+    </li>
+    <li><a href="#配置nginx">配置Nginx</a>
+      <ul>
+        <li><a href="#alias与root的区别">alias与root的区别</a></li>
       </ul>
     </li>
   </ul>
