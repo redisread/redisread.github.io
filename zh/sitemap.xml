@@ -4,7 +4,7 @@
   
   <url>
     <loc>https://hugo.jiahongw.com/zh/</loc>
-    <lastmod>2021-09-12T10:20:16+09:00</lastmod>
+    <lastmod>2021-10-07T21:26:43+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -24,7 +24,7 @@
   
   <url>
     <loc>https://hugo.jiahongw.com/zh/categories/</loc>
-    <lastmod>2021-09-12T10:20:16+09:00</lastmod>
+    <lastmod>2021-10-07T21:26:43+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -43,13 +43,33 @@
   </url>
   
   <url>
-    <loc>https://hugo.jiahongw.com/zh/gallery/</loc>
-    <lastmod>2021-09-12T10:20:16+09:00</lastmod>
+    <loc>https://hugo.jiahongw.com/zh/tags/life/</loc>
+    <lastmod>2021-10-07T21:26:43+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hugo.jiahongw.com/zh/series/life/</loc>
+    <lastmod>2021-10-07T21:26:43+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hugo.jiahongw.com/zh/posts/</loc>
+    <lastmod>2021-10-07T21:26:43+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hugo.jiahongw.com/en/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://hugo.jiahongw.com/zh/posts/"
+                />
   </url>
   
   <url>
     <loc>https://hugo.jiahongw.com/zh/series/</loc>
-    <lastmod>2021-09-12T10:20:16+09:00</lastmod>
+    <lastmod>2021-10-07T21:26:43+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -69,7 +89,7 @@
   
   <url>
     <loc>https://hugo.jiahongw.com/zh/tags/</loc>
-    <lastmod>2021-09-12T10:20:16+09:00</lastmod>
+    <lastmod>2021-10-07T21:26:43+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -88,33 +108,23 @@
   </url>
   
   <url>
-    <loc>https://hugo.jiahongw.com/zh/gallery/beijing/</loc>
+    <loc>https://hugo.jiahongw.com/zh/tags/%E9%9D%92%E5%B2%9B/</loc>
+    <lastmod>2021-10-07T21:26:43+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hugo.jiahongw.com/zh/posts/life/qingdao-travel/</loc>
+    <lastmod>2021-10-07T21:26:43+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hugo.jiahongw.com/zh/gallery/</loc>
     <lastmod>2021-09-12T10:20:16+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hugo.jiahongw.com/zh/series/life/</loc>
-    <lastmod>2021-08-21T21:36:35+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://hugo.jiahongw.com/zh/tags/life/</loc>
-    <lastmod>2021-08-21T21:36:35+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://hugo.jiahongw.com/zh/posts/</loc>
-    <lastmod>2021-08-21T21:36:35+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://hugo.jiahongw.com/en/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://hugo.jiahongw.com/zh/posts/"
-                />
+    <loc>https://hugo.jiahongw.com/zh/gallery/beijing/</loc>
+    <lastmod>2021-09-12T10:20:16+09:00</lastmod>
   </url>
   
   <url>
@@ -138,12 +148,12 @@
   </url>
   
   <url>
-    <loc>https://hugo.jiahongw.com/zh/tags/java/</loc>
+    <loc>https://hugo.jiahongw.com/zh/categories/java/</loc>
     <lastmod>2021-08-12T21:21:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hugo.jiahongw.com/zh/categories/java/</loc>
+    <loc>https://hugo.jiahongw.com/zh/tags/java/</loc>
     <lastmod>2021-08-12T21:21:00+08:00</lastmod>
   </url>
   
@@ -578,12 +588,12 @@
   </url>
   
   <url>
-    <loc>https://hugo.jiahongw.com/zh/series/game/</loc>
+    <loc>https://hugo.jiahongw.com/zh/tags/game/</loc>
     <lastmod>2020-06-15T09:43:11+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hugo.jiahongw.com/zh/tags/game/</loc>
+    <loc>https://hugo.jiahongw.com/zh/series/game/</loc>
     <lastmod>2020-06-15T09:43:11+08:00</lastmod>
   </url>
   
@@ -608,12 +618,12 @@
   </url>
   
   <url>
-    <loc>https://hugo.jiahongw.com/zh/series/ue/</loc>
+    <loc>https://hugo.jiahongw.com/zh/tags/ue/</loc>
     <lastmod>2020-06-02T20:00:46+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hugo.jiahongw.com/zh/tags/ue/</loc>
+    <loc>https://hugo.jiahongw.com/zh/series/ue/</loc>
     <lastmod>2020-06-02T20:00:46+08:00</lastmod>
   </url>
   
@@ -773,12 +783,12 @@
   </url>
   
   <url>
-    <loc>https://hugo.jiahongw.com/zh/tags/c/</loc>
+    <loc>https://hugo.jiahongw.com/zh/series/c/</loc>
     <lastmod>2020-04-04T23:32:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hugo.jiahongw.com/zh/series/c/</loc>
+    <loc>https://hugo.jiahongw.com/zh/tags/c/</loc>
     <lastmod>2020-04-04T23:32:40+08:00</lastmod>
   </url>
   
@@ -873,12 +883,12 @@
   </url>
   
   <url>
-    <loc>https://hugo.jiahongw.com/zh/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/</loc>
+    <loc>https://hugo.jiahongw.com/zh/series/%E5%AF%86%E7%A0%81%E5%AD%A6/</loc>
     <lastmod>2020-04-03T14:20:19+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hugo.jiahongw.com/zh/series/%E5%AF%86%E7%A0%81%E5%AD%A6/</loc>
+    <loc>https://hugo.jiahongw.com/zh/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/</loc>
     <lastmod>2020-04-03T14:20:19+08:00</lastmod>
   </url>
   
@@ -1028,12 +1038,12 @@
   </url>
   
   <url>
-    <loc>https://hugo.jiahongw.com/zh/tags/%E7%88%AC%E8%99%AB/</loc>
+    <loc>https://hugo.jiahongw.com/zh/series/%E7%88%AC%E8%99%AB/</loc>
     <lastmod>2020-03-04T16:35:09+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hugo.jiahongw.com/zh/series/%E7%88%AC%E8%99%AB/</loc>
+    <loc>https://hugo.jiahongw.com/zh/tags/%E7%88%AC%E8%99%AB/</loc>
     <lastmod>2020-03-04T16:35:09+08:00</lastmod>
   </url>
   
