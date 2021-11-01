@@ -4,7 +4,7 @@
   
   <url>
     <loc>https://hugo.jiahongw.com/zh/</loc>
-    <lastmod>2021-10-16T18:35:36+08:00</lastmod>
+    <lastmod>2021-10-19T17:05:32+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -23,13 +23,8 @@
   </url>
   
   <url>
-    <loc>https://hugo.jiahongw.com/zh/posts/bookeffectivejava/2-item2/</loc>
-    <lastmod>2021-10-16T18:35:36+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://hugo.jiahongw.com/zh/categories/</loc>
-    <lastmod>2021-10-16T18:35:36+08:00</lastmod>
+    <lastmod>2021-10-19T17:05:32+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -48,18 +43,8 @@
   </url>
   
   <url>
-    <loc>https://hugo.jiahongw.com/zh/series/effectivejava/</loc>
-    <lastmod>2021-10-16T18:35:36+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://hugo.jiahongw.com/zh/tags/effectivejava/</loc>
-    <lastmod>2021-10-16T18:35:36+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://hugo.jiahongw.com/zh/posts/</loc>
-    <lastmod>2021-10-16T18:35:36+08:00</lastmod>
+    <lastmod>2021-10-19T17:05:32+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -74,7 +59,7 @@
   
   <url>
     <loc>https://hugo.jiahongw.com/zh/series/</loc>
-    <lastmod>2021-10-16T18:35:36+08:00</lastmod>
+    <lastmod>2021-10-19T17:05:32+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -94,7 +79,7 @@
   
   <url>
     <loc>https://hugo.jiahongw.com/zh/tags/</loc>
-    <lastmod>2021-10-16T18:35:36+08:00</lastmod>
+    <lastmod>2021-10-19T17:05:32+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -113,17 +98,47 @@
   </url>
   
   <url>
-    <loc>https://hugo.jiahongw.com/zh/posts/bookeffectivejava/2-item1/</loc>
+    <loc>https://hugo.jiahongw.com/zh/series/%E6%9E%B6%E6%9E%84/</loc>
+    <lastmod>2021-10-19T17:05:32+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hugo.jiahongw.com/zh/tags/%E6%9E%B6%E6%9E%84/</loc>
+    <lastmod>2021-10-19T17:05:32+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hugo.jiahongw.com/zh/posts/systemarchitecture/architecture-drawing/</loc>
+    <lastmod>2021-10-19T17:05:32+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hugo.jiahongw.com/zh/posts/bookeffectivejava/2%E5%9C%A8%E9%9D%A2%E5%AF%B9%E5%A4%9A%E4%B8%AA%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E5%8F%82%E6%95%B0%E6%97%B6%E8%AF%B7%E8%80%83%E8%99%91%E6%9E%84%E5%BB%BA%E5%99%A8/</loc>
+    <lastmod>2021-10-16T18:35:36+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hugo.jiahongw.com/zh/series/effectivejava/</loc>
+    <lastmod>2021-10-16T18:35:36+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hugo.jiahongw.com/zh/tags/effectivejava/</loc>
+    <lastmod>2021-10-16T18:35:36+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hugo.jiahongw.com/zh/posts/bookeffectivejava/1%E8%80%83%E8%99%91%E4%BB%A5%E9%9D%99%E6%80%81%E5%B7%A5%E5%8E%82%E6%96%B9%E6%B3%95%E4%BB%A3%E6%9B%BF%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0/</loc>
     <lastmod>2021-10-16T16:42:14+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hugo.jiahongw.com/zh/tags/life/</loc>
+    <loc>https://hugo.jiahongw.com/zh/series/life/</loc>
     <lastmod>2021-10-07T21:26:43+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hugo.jiahongw.com/zh/series/life/</loc>
+    <loc>https://hugo.jiahongw.com/zh/tags/life/</loc>
     <lastmod>2021-10-07T21:26:43+08:00</lastmod>
   </url>
   
@@ -168,12 +183,12 @@
   </url>
   
   <url>
-    <loc>https://hugo.jiahongw.com/zh/categories/java/</loc>
+    <loc>https://hugo.jiahongw.com/zh/tags/java/</loc>
     <lastmod>2021-08-12T21:21:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hugo.jiahongw.com/zh/tags/java/</loc>
+    <loc>https://hugo.jiahongw.com/zh/categories/java/</loc>
     <lastmod>2021-08-12T21:21:00+08:00</lastmod>
   </url>
   
@@ -828,12 +843,12 @@
   </url>
   
   <url>
-    <loc>https://hugo.jiahongw.com/zh/tags/markdown/</loc>
+    <loc>https://hugo.jiahongw.com/zh/series/markdown/</loc>
     <lastmod>2020-04-04T00:58:33+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hugo.jiahongw.com/zh/series/markdown/</loc>
+    <loc>https://hugo.jiahongw.com/zh/tags/markdown/</loc>
     <lastmod>2020-04-04T00:58:33+08:00</lastmod>
   </url>
   
@@ -873,12 +888,12 @@
   </url>
   
   <url>
-    <loc>https://hugo.jiahongw.com/zh/tags/github/</loc>
+    <loc>https://hugo.jiahongw.com/zh/series/github/</loc>
     <lastmod>2020-04-03T19:07:07+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hugo.jiahongw.com/zh/series/github/</loc>
+    <loc>https://hugo.jiahongw.com/zh/tags/github/</loc>
     <lastmod>2020-04-03T19:07:07+08:00</lastmod>
   </url>
   
@@ -943,12 +958,12 @@
   </url>
   
   <url>
-    <loc>https://hugo.jiahongw.com/zh/tags/algorithm/</loc>
+    <loc>https://hugo.jiahongw.com/zh/series/algorithm/</loc>
     <lastmod>2020-03-17T15:12:38+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hugo.jiahongw.com/zh/series/algorithm/</loc>
+    <loc>https://hugo.jiahongw.com/zh/tags/algorithm/</loc>
     <lastmod>2020-03-17T15:12:38+08:00</lastmod>
   </url>
   
