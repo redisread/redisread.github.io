@@ -17,24 +17,6 @@
     
       
       <item>
-        <title>My Hugo Lib</title>
-        <link>https://hugo.jiahongw.com/zh/showcase/hugo/myblog/</link>
-        <pubDate>Sun, 19 Jan 2020 21:13:42 +0900</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        <guid>https://hugo.jiahongw.com/zh/showcase/hugo/myblog/</guid>
-        <description></description>
-      </item>
-      
-      <item>
-        <title>My Hugo Item</title>
-        <link>https://hugo.jiahongw.com/zh/showcase/hugo/myitem/</link>
-        <pubDate>Sun, 19 Jan 2020 21:13:42 +0900</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        <guid>https://hugo.jiahongw.com/zh/showcase/hugo/myitem/</guid>
-        <description></description>
-      </item>
-      
-      <item>
         <title>(2)2-当构造函数有多个参数时，考虑改用构建器</title>
         <link>https://hugo.jiahongw.com/zh/posts/bookeffectivejava/2-item2/</link>
         <pubDate>Sat, 16 Oct 2021 18:35:36 +0800</pubDate>
