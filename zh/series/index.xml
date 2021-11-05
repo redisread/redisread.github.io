@@ -9,12 +9,21 @@
     <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
     <webMaster>1427298682@qq.com (VictorHong)</webMaster>
     <copyright>&amp;copy;{year}, Redisread</copyright>
-    <lastBuildDate>Tue, 19 Oct 2021 17:05:32 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 21 Oct 2021 15:31:40 +0800</lastBuildDate>
     
         <atom:link href="https://hugo.jiahongw.com/zh/series/index.xml" rel="self" type="application/rss+xml" />
     
     
     
+      
+      <item>
+        <title>DesignPattern</title>
+        <link>https://hugo.jiahongw.com/zh/series/designpattern/</link>
+        <pubDate>Thu, 21 Oct 2021 15:31:40 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <guid>https://hugo.jiahongw.com/zh/series/designpattern/</guid>
+        <description></description>
+      </item>
       
       <item>
         <title>架构</title>
