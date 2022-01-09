@@ -17,6 +17,15 @@
     
       
       <item>
+        <title>IDEA实用的插件列表</title>
+        <link>https://hugo.jiahongw.com/zh/talks/idea-plugins/</link>
+        <pubDate>Mon, 13 Dec 2021 16:50:04 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <guid>https://hugo.jiahongw.com/zh/talks/idea-plugins/</guid>
+        <description>1 SequenceDiagram 序列化图 2 JRebel 简介： 热部署工具。在我们每次修改代码后，不用重启程序，JRebel 会自动将所有的代码变更生效。这样，相当于“跳过”频繁的 Java 代</description>
+      </item>
+      
+      <item>
         <title>Database Talk</title>
         <link>https://hugo.jiahongw.com/zh/talks/database-talk/</link>
         <pubDate>Sun, 15 Nov 2020 00:06:50 +0900</pubDate>

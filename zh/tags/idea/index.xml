@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>IDEA on ✏Victor&#39;s Blog</title>
+    <link>https://hugo.jiahongw.com/zh/tags/idea/</link>
+    <description>Recent content in IDEA on ✏Victor&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
+    <webMaster>1427298682@qq.com (VictorHong)</webMaster>
+    <copyright>&amp;copy;{year}, Redisread</copyright>
+    <lastBuildDate>Mon, 13 Dec 2021 16:50:04 +0800</lastBuildDate>
+    
+        <atom:link href="https://hugo.jiahongw.com/zh/tags/idea/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+      
+      <item>
+        <title>IDEA实用的插件列表</title>
+        <link>https://hugo.jiahongw.com/zh/talks/idea-plugins/</link>
+        <pubDate>Mon, 13 Dec 2021 16:50:04 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <guid>https://hugo.jiahongw.com/zh/talks/idea-plugins/</guid>
+        <description>1 SequenceDiagram 序列化图 2 JRebel 简介： 热部署工具。在我们每次修改代码后，不用重启程序，JRebel 会自动将所有的代码变更生效。这样，相当于“跳过”频繁的 Java 代</description>
+      </item>
+      
+    
+  </channel>
+</rss>
