@@ -53,6 +53,24 @@
       </item>
       
       <item>
+        <title>行为模式</title>
+        <link>https://hugo.jiahongw.com/zh/tags/%E8%A1%8C%E4%B8%BA%E6%A8%A1%E5%BC%8F/</link>
+        <pubDate>Mon, 03 Jan 2022 22:41:31 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <guid>https://hugo.jiahongw.com/zh/tags/%E8%A1%8C%E4%B8%BA%E6%A8%A1%E5%BC%8F/</guid>
+        <description></description>
+      </item>
+      
+      <item>
+        <title>观察者模式</title>
+        <link>https://hugo.jiahongw.com/zh/tags/%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F/</link>
+        <pubDate>Mon, 03 Jan 2022 22:41:31 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <guid>https://hugo.jiahongw.com/zh/tags/%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F/</guid>
+        <description></description>
+      </item>
+      
+      <item>
         <title>IDEA</title>
         <link>https://hugo.jiahongw.com/zh/tags/idea/</link>
         <pubDate>Mon, 13 Dec 2021 16:50:04 +0800</pubDate>
@@ -85,6 +103,33 @@
         <pubDate>Sun, 28 Nov 2021 15:10:01 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/tags/vim/</guid>
+        <description></description>
+      </item>
+      
+      <item>
+        <title>工厂方法</title>
+        <link>https://hugo.jiahongw.com/zh/tags/%E5%B7%A5%E5%8E%82%E6%96%B9%E6%B3%95/</link>
+        <pubDate>Wed, 03 Nov 2021 16:05:37 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <guid>https://hugo.jiahongw.com/zh/tags/%E5%B7%A5%E5%8E%82%E6%96%B9%E6%B3%95/</guid>
+        <description></description>
+      </item>
+      
+      <item>
+        <title>抽象工厂</title>
+        <link>https://hugo.jiahongw.com/zh/tags/%E6%8A%BD%E8%B1%A1%E5%B7%A5%E5%8E%82/</link>
+        <pubDate>Wed, 03 Nov 2021 16:05:37 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <guid>https://hugo.jiahongw.com/zh/tags/%E6%8A%BD%E8%B1%A1%E5%B7%A5%E5%8E%82/</guid>
+        <description></description>
+      </item>
+      
+      <item>
+        <title>简单工厂</title>
+        <link>https://hugo.jiahongw.com/zh/tags/%E7%AE%80%E5%8D%95%E5%B7%A5%E5%8E%82/</link>
+        <pubDate>Wed, 03 Nov 2021 16:05:37 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <guid>https://hugo.jiahongw.com/zh/tags/%E7%AE%80%E5%8D%95%E5%B7%A5%E5%8E%82/</guid>
         <description></description>
       </item>
       

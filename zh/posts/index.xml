@@ -35,12 +35,30 @@
       </item>
       
       <item>
+        <title>观察者模式</title>
+        <link>https://hugo.jiahongw.com/zh/posts/designpattern/observerpattern/</link>
+        <pubDate>Mon, 03 Jan 2022 22:41:31 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <guid>https://hugo.jiahongw.com/zh/posts/designpattern/observerpattern/</guid>
+        <description>定义 观察者模式定义了对象之间的一对多依赖，这样一来，当一个对象改变状态时，它的所有依赖者都会收到通知并且自动更新。 一个比喻：报纸订阅（出版者</description>
+      </item>
+      
+      <item>
         <title>Nvchad使用</title>
         <link>https://hugo.jiahongw.com/zh/posts/efficient/nvchad%E4%BD%BF%E7%94%A8/</link>
         <pubDate>Sun, 28 Nov 2021 15:10:01 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/posts/efficient/nvchad%E4%BD%BF%E7%94%A8/</guid>
         <description>安装更新卸载 参考：https://nvchad.github.io/getting-started/setup 参考指令 参考：https://</description>
+      </item>
+      
+      <item>
+        <title>工厂方法模式</title>
+        <link>https://hugo.jiahongw.com/zh/posts/designpattern/factorymethodpattern/</link>
+        <pubDate>Wed, 03 Nov 2021 16:05:37 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <guid>https://hugo.jiahongw.com/zh/posts/designpattern/factorymethodpattern/</guid>
+        <description>当我们使用new创建一个对象的时候，需要指定一个具体类，这就是针对实现进行编程。当我们将创建对象的过程封装成一个方法或者接口的时候，就可以避</description>
       </item>
       
       <item>

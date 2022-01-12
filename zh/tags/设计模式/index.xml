@@ -25,6 +25,15 @@
         <description>定义 装饰器模式动态的将责任附加到对象上，若要拓展功能，装饰者提供了比继承更有弹性的替代方案。 架构（类图） classDiagram class Component { &amp;lt;&amp;lt;abstract&amp;gt;&amp;gt; + methodA() + methodB() } class ConcreateComponent { + methodA() + methodB() }</description>
       </item>
       
+      <item>
+        <title>工厂方法模式</title>
+        <link>https://hugo.jiahongw.com/zh/posts/designpattern/factorymethodpattern/</link>
+        <pubDate>Wed, 03 Nov 2021 16:05:37 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <guid>https://hugo.jiahongw.com/zh/posts/designpattern/factorymethodpattern/</guid>
+        <description>当我们使用new创建一个对象的时候，需要指定一个具体类，这就是针对实现进行编程。当我们将创建对象的过程封装成一个方法或者接口的时候，就可以避</description>
+      </item>
+      
     
   </channel>
 </rss>
