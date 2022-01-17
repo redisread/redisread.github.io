@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>命令模式 on ✏Victor&#39;s Blog</title>
+    <link>https://hugo.jiahongw.com/zh/tags/%E5%91%BD%E4%BB%A4%E6%A8%A1%E5%BC%8F/</link>
+    <description>Recent content in 命令模式 on ✏Victor&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
+    <webMaster>1427298682@qq.com (VictorHong)</webMaster>
+    <copyright>&amp;copy;{year}, Redisread</copyright>
+    <lastBuildDate>Thu, 13 Jan 2022 11:45:07 +0800</lastBuildDate>
+    
+        <atom:link href="https://hugo.jiahongw.com/zh/tags/%E5%91%BD%E4%BB%A4%E6%A8%A1%E5%BC%8F/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+      
+      <item>
+        <title>命令模式</title>
+        <link>https://hugo.jiahongw.com/zh/posts/designpattern/commandpattern/</link>
+        <pubDate>Thu, 13 Jan 2022 11:45:07 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <guid>https://hugo.jiahongw.com/zh/posts/designpattern/commandpattern/</guid>
+        <description>定义 命令模式将“请求”封装成对象，以便使用不同的请求、队列或者日志来参数化其他对象。命令模式也可以支持撤销的操作。 命令模式主要是将“命令的请</description>
+      </item>
+      
+    
+  </channel>
+</rss>

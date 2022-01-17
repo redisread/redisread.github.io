@@ -1493,7 +1493,7 @@
     <div class="single__meta">
       
 <div class="single__infos">
-  <time class="single__info" title="创建日期">📅&nbsp;2022年01月09日 </time>  &middot; <span class="single__info" title="阅读时长"> ☕ 8 分钟 </span>&middot; <span class="single__info" title="作者">👻&nbsp;Victor</span>
+  <time class="single__info" title="创建日期">📅&nbsp;2022年01月09日 </time>  &middot; <span class="single__info" title="阅读时长"> ☕ 10 分钟 </span>&middot; <span class="single__info" title="作者">👻&nbsp;Victor</span>
   <span class="single__info">
     
   </span>
@@ -1544,6 +1544,7 @@
             <li><a href="#抽象方法和静态方法">抽象方法和静态方法</a></li>
             <li><a href="#泛型">泛型</a></li>
             <li><a href="#包图">包图</a></li>
+            <li><a href="#note笔记">note笔记</a></li>
           </ul>
         </li>
         <li><a href="#时序图">时序图</a>
@@ -1577,6 +1578,7 @@
             <li><a href="#声明元素">声明元素</a></li>
             <li><a href="#分隔符">分隔符</a></li>
             <li><a href="#隐藏线">隐藏线</a></li>
+            <li><a href="#排列">排列</a></li>
           </ul>
         </li>
         <li><a href="#相关配置">相关配置</a>
@@ -1799,6 +1801,216 @@ package one.two {
 package three.four {
     World -- Hello
 }
+@enduml
+</code></pre><p>包可以使用颜色和替换样式：</p>
+<pre><code>@startuml
+'https://plantuml.com/class-diagram
+
+class Client
+
+class Facade
+
+Client -&gt; Facade
+
+package &quot;子系统&quot; &lt;&lt;cloud&gt;&gt; #DDDDDD{
+  class A
+  class B
+  class C
+  class D
+  class E
+
+}
+
+Facade -- A
+Facade -- C
+
+A - C
+A -- B
+A -- E
+C - E
+B - D
+
+@enduml
+</code></pre><pre><code class="language-plantuml" data-lang="plantuml">@startuml
+'https://plantuml.com/class-diagram
+
+class Client
+
+class Facade
+
+Client -&gt; Facade
+
+package &quot;子系统&quot; &lt;&lt;cloud&gt;&gt; #DDDDDD{
+  class A
+  class B
+  class C
+  class D
+  class E
+
+}
+
+Facade -- A
+Facade -- C
+
+A - C
+A -- B
+A -- E
+C - E
+B - D
+
+@enduml
+</code></pre><p>样式列表：</p>
+<pre><code>@startuml
+scale 750 width
+package foo1 &lt;&lt;Node&gt;&gt; {
+  class Class1
+}
+
+package foo2 &lt;&lt;Rectangle&gt;&gt; {
+  class Class2
+}
+
+package foo3 &lt;&lt;Folder&gt;&gt; {
+  class Class3
+}
+
+package foo4 &lt;&lt;Frame&gt;&gt; {
+  class Class4
+}
+
+package foo5 &lt;&lt;Cloud&gt;&gt; {
+  class Class5
+}
+
+package foo6 &lt;&lt;Database&gt;&gt; {
+  class Class6
+}
+
+@enduml
+
+</code></pre><pre><code class="language-plantuml" data-lang="plantuml">@startuml
+scale 750 width
+package foo1 &lt;&lt;Node&gt;&gt; {
+  class Class1
+}
+
+package foo2 &lt;&lt;Rectangle&gt;&gt; {
+  class Class2
+}
+
+package foo3 &lt;&lt;Folder&gt;&gt; {
+  class Class3
+}
+
+package foo4 &lt;&lt;Frame&gt;&gt; {
+  class Class4
+}
+
+package foo5 &lt;&lt;Cloud&gt;&gt; {
+  class Class5
+}
+
+package foo6 &lt;&lt;Database&gt;&gt; {
+  class Class6
+}
+
+@enduml
+</code></pre><h4 id="note笔记">note笔记</h4>
+<p>一般可以使用下面的语句进行在组件的上下左右添加笔记：</p>
+<pre><code>@startuml
+class A
+class B
+class C
+class D
+
+‘ 在组件A左边添加笔记
+note left of A : 笔记A
+
+‘ 在组件B右边添加笔记
+note right of B : 笔记B
+
+‘ 在组件C上边添加笔记
+note top of C : 笔记C
+
+‘ 在组件D下边添加笔记
+note bottom of D : 笔记D
+@enduml
+</code></pre><pre><code class="language-plantuml" data-lang="plantuml">@startuml
+class A
+class B
+class C
+class D
+
+‘ 在组件A左边添加笔记
+note left of A : 笔记A
+
+‘ 在组件B右边添加笔记
+note right of B : 笔记B
+
+‘ 在组件C上边添加笔记
+note top of C : 笔记C
+
+‘ 在组件D下边添加笔记
+note bottom of D : 笔记D
+@enduml
+</code></pre><p>可以在字段（field、attribute、member）或方法上添加注释。 这不能与命名空间分隔符(namespaceSeparator) <code>::</code> 一起使用</p>
+<p>注释属性和方法：</p>
+<pre><code>@startuml
+class A {
+{static} int counter
++void {abstract} start(int timeout)
+}
+note left of A::counter
+  该成员已注释
+end note
+note right of A::start
+  在 UML 注释了此方法
+end note
+@enduml
+</code></pre><pre><code class="language-plantuml" data-lang="plantuml">@startuml
+class A {
+{static} int counter
++void {abstract} start(int timeout)
+}
+note left of A::counter
+  该成员已注释
+end note
+note right of A::start
+  在 UML 注释了此方法
+end note
+@enduml
+</code></pre><p>注释同名方法：</p>
+<pre><code>@startuml
+class A {
+{static} int counter
++void {abstract} start(int timeoutms)
++void {abstract} start(Duration timeout)
+}
+note left of A::counter
+  该成员已注释
+end note
+note right of A::&quot;start(int timeoutms)&quot;
+  这个start方法的参数是int类型
+end note
+note right of A::&quot;start(Duration timeout)&quot;
+  这个start方法的参数是Duration类型
+end note
+@enduml
+</code></pre><pre><code class="language-plantuml" data-lang="plantuml">@startuml
+class A {
+{static} int counter
++void {abstract} start(int timeoutms)
++void {abstract} start(Duration timeout)
+}
+note left of A::counter
+  该成员已注释
+end note
+note right of A::&quot;start(int timeoutms)&quot;
+  这个start方法的参数是int类型
+end note
+note right of A::&quot;start(Duration timeout)&quot;
+  这个start方法的参数是Duration类型
+end note
 @enduml
 </code></pre><h3 id="时序图">时序图</h3>
 <blockquote>
@@ -2482,7 +2694,10 @@ usecase usecase [
 @enduml
 </code></pre><h4 id="隐藏线">隐藏线</h4>
 <p><code>-[hidden]-</code>可以画一条隐藏的线条，常常用于布局。</p>
-<h3 id="相关配置">相关配置</h3>
+<h4 id="排列">排列</h4>
+<p>可以添加下面的一行进行竖排列：</p>
+<pre><code>left to right direction
+</code></pre><h3 id="相关配置">相关配置</h3>
 <h4 id="安装graphviz">安装graphviz</h4>
 <p>Mac执行：</p>
 <pre><code>brew install graphviz
@@ -2494,6 +2709,7 @@ usecase usecase [
 <li><a href="https://www.cnblogs.com/54chensongxia/p/13236965.html">程序员必备画图技能之——时序图 - 程序员自由之路 - 博客园</a></li>
 <li><a href="https://juejin.cn/post/7012797326083227661">【程序员小知识】使用 PlantUML 画 UML（上）类图 - 掘金</a></li>
 <li><a href="https://mogeko.me/posts/zh-cn/083/">在 Hugo 博客上使用 PlantUML – Mogeko&rsquo;s Blog</a></li>
+<li><a href="https://crashedmind.github.io/PlantUMLHitchhikersGuide/layout/layout.html">https://crashedmind.github.io/PlantUMLHitchhikersGuide/layout/layout.html</a></li>
 </ul>
 
     </article>
@@ -2715,6 +2931,13 @@ usecase usecase [
       </a>
     
     <div class="grow"></div>
+    
+      <a href="https://hugo.jiahongw.com/zh/posts/designpattern/commandpattern/" class="pagination-single__right">      
+        <div class="pagination-single__right-title">命令模式</div>
+        <div class="pagination-single__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 1.42.39.39 1.02.39 1.41 0l6.59-6.59c.39-.39.39-1.02 0-1.41l-6.58-6.6c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41L16.17 11H5c-.55 0-1 .45-1 1s.45 1 1 1z"/></svg>
+        </div>
+      </a>
     
   
 </nav>
@@ -3937,6 +4160,7 @@ document.addEventListener('DOMContentLoaded', function () {
             <li><a href="#抽象方法和静态方法">抽象方法和静态方法</a></li>
             <li><a href="#泛型">泛型</a></li>
             <li><a href="#包图">包图</a></li>
+            <li><a href="#note笔记">note笔记</a></li>
           </ul>
         </li>
         <li><a href="#时序图">时序图</a>
@@ -3970,6 +4194,7 @@ document.addEventListener('DOMContentLoaded', function () {
             <li><a href="#声明元素">声明元素</a></li>
             <li><a href="#分隔符">分隔符</a></li>
             <li><a href="#隐藏线">隐藏线</a></li>
+            <li><a href="#排列">排列</a></li>
           </ul>
         </li>
         <li><a href="#相关配置">相关配置</a>

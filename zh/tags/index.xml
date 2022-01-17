@@ -9,12 +9,75 @@
     <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
     <webMaster>1427298682@qq.com (VictorHong)</webMaster>
     <copyright>&amp;copy;{year}, Redisread</copyright>
-    <lastBuildDate>Sun, 09 Jan 2022 17:01:54 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 16 Jan 2022 16:15:31 +0800</lastBuildDate>
     
         <atom:link href="https://hugo.jiahongw.com/zh/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     
+      
+      <item>
+        <title>设计模式</title>
+        <link>https://hugo.jiahongw.com/zh/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</link>
+        <pubDate>Sun, 16 Jan 2022 13:14:21 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <guid>https://hugo.jiahongw.com/zh/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</guid>
+        <description></description>
+      </item>
+      
+      <item>
+        <title>迭代器模式</title>
+        <link>https://hugo.jiahongw.com/zh/tags/%E8%BF%AD%E4%BB%A3%E5%99%A8%E6%A8%A1%E5%BC%8F/</link>
+        <pubDate>Sun, 16 Jan 2022 13:14:21 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <guid>https://hugo.jiahongw.com/zh/tags/%E8%BF%AD%E4%BB%A3%E5%99%A8%E6%A8%A1%E5%BC%8F/</guid>
+        <description></description>
+      </item>
+      
+      <item>
+        <title>模板方法模式</title>
+        <link>https://hugo.jiahongw.com/zh/tags/%E6%A8%A1%E6%9D%BF%E6%96%B9%E6%B3%95%E6%A8%A1%E5%BC%8F/</link>
+        <pubDate>Sat, 15 Jan 2022 22:04:19 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <guid>https://hugo.jiahongw.com/zh/tags/%E6%A8%A1%E6%9D%BF%E6%96%B9%E6%B3%95%E6%A8%A1%E5%BC%8F/</guid>
+        <description></description>
+      </item>
+      
+      <item>
+        <title>外观模式</title>
+        <link>https://hugo.jiahongw.com/zh/tags/%E5%A4%96%E8%A7%82%E6%A8%A1%E5%BC%8F/</link>
+        <pubDate>Sat, 15 Jan 2022 21:03:46 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <guid>https://hugo.jiahongw.com/zh/tags/%E5%A4%96%E8%A7%82%E6%A8%A1%E5%BC%8F/</guid>
+        <description></description>
+      </item>
+      
+      <item>
+        <title>门面模式</title>
+        <link>https://hugo.jiahongw.com/zh/tags/%E9%97%A8%E9%9D%A2%E6%A8%A1%E5%BC%8F/</link>
+        <pubDate>Sat, 15 Jan 2022 21:03:46 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <guid>https://hugo.jiahongw.com/zh/tags/%E9%97%A8%E9%9D%A2%E6%A8%A1%E5%BC%8F/</guid>
+        <description></description>
+      </item>
+      
+      <item>
+        <title>适配器模式</title>
+        <link>https://hugo.jiahongw.com/zh/tags/%E9%80%82%E9%85%8D%E5%99%A8%E6%A8%A1%E5%BC%8F/</link>
+        <pubDate>Sat, 15 Jan 2022 18:52:34 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <guid>https://hugo.jiahongw.com/zh/tags/%E9%80%82%E9%85%8D%E5%99%A8%E6%A8%A1%E5%BC%8F/</guid>
+        <description></description>
+      </item>
+      
+      <item>
+        <title>命令模式</title>
+        <link>https://hugo.jiahongw.com/zh/tags/%E5%91%BD%E4%BB%A4%E6%A8%A1%E5%BC%8F/</link>
+        <pubDate>Thu, 13 Jan 2022 11:45:07 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <guid>https://hugo.jiahongw.com/zh/tags/%E5%91%BD%E4%BB%A4%E6%A8%A1%E5%BC%8F/</guid>
+        <description></description>
+      </item>
       
       <item>
         <title>plantUML</title>
@@ -40,15 +103,6 @@
         <pubDate>Wed, 05 Jan 2022 11:44:23 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/tags/%E8%A3%85%E9%A5%B0%E5%99%A8%E6%A8%A1%E5%BC%8F/</guid>
-        <description></description>
-      </item>
-      
-      <item>
-        <title>设计模式</title>
-        <link>https://hugo.jiahongw.com/zh/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</link>
-        <pubDate>Wed, 05 Jan 2022 11:44:23 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        <guid>https://hugo.jiahongw.com/zh/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</guid>
         <description></description>
       </item>
       
@@ -134,20 +188,11 @@
       </item>
       
       <item>
-        <title>DesignPattern</title>
-        <link>https://hugo.jiahongw.com/zh/tags/designpattern/</link>
+        <title>单例模式</title>
+        <link>https://hugo.jiahongw.com/zh/tags/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/</link>
         <pubDate>Thu, 21 Oct 2021 15:31:40 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <guid>https://hugo.jiahongw.com/zh/tags/designpattern/</guid>
-        <description></description>
-      </item>
-      
-      <item>
-        <title>Singleton</title>
-        <link>https://hugo.jiahongw.com/zh/tags/singleton/</link>
-        <pubDate>Thu, 21 Oct 2021 15:31:40 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        <guid>https://hugo.jiahongw.com/zh/tags/singleton/</guid>
+        <guid>https://hugo.jiahongw.com/zh/tags/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/</guid>
         <description></description>
       </item>
       
