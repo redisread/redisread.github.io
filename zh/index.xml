@@ -9,12 +9,93 @@
     <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
     <webMaster>1427298682@qq.com (VictorHong)</webMaster>
     <copyright>&amp;copy;{year}, Redisread</copyright>
-    <lastBuildDate>Sun, 16 Jan 2022 16:15:31 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 28 Mar 2022 17:38:53 +0800</lastBuildDate>
     
         <atom:link href="https://hugo.jiahongw.com/zh/index.xml" rel="self" type="application/rss+xml" />
     
     
     
+      
+      <item>
+        <title>My Hugo Lib</title>
+        <link>https://hugo.jiahongw.com/zh/showcase/hugo/myblog/</link>
+        <pubDate>Sun, 19 Jan 2020 21:13:42 +0900</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <guid>https://hugo.jiahongw.com/zh/showcase/hugo/myblog/</guid>
+        <description></description>
+      </item>
+      
+      <item>
+        <title>My Hugo Item</title>
+        <link>https://hugo.jiahongw.com/zh/showcase/hugo/myitem/</link>
+        <pubDate>Sun, 19 Jan 2020 21:13:42 +0900</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <guid>https://hugo.jiahongw.com/zh/showcase/hugo/myitem/</guid>
+        <description></description>
+      </item>
+      
+      <item>
+        <title>CompletableFuture笔记</title>
+        <link>https://hugo.jiahongw.com/zh/posts/java/completablefuture/</link>
+        <pubDate>Mon, 28 Mar 2022 17:38:53 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <guid>https://hugo.jiahongw.com/zh/posts/java/completablefuture/</guid>
+        <description>创建线程池的方法： 1 2 3 4 ExecutorService executorService = Executors.newCachedThreadPool(); ExecutorService executorService = Executors.newFixedThreadPool(3); ScheduledExecutorService executorService = Executors.newScheduledThreadPool(3); ExecutorService executorService = Executors.newSingleThreadExecutor(); https://www.cnblogs.com/pcheng/p/13540619.html 多线程的问题 线程任务是实现了Runnable接口，或者直接写个类继承Thread</description>
+      </item>
+      
+      <item>
+        <title>设计模式小记</title>
+        <link>https://hugo.jiahongw.com/zh/posts/designpattern/design-pattern-note/</link>
+        <pubDate>Sun, 27 Mar 2022 19:20:05 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <guid>https://hugo.jiahongw.com/zh/posts/designpattern/design-pattern-note/</guid>
+        <description>设计原则 1.单一职责原则 2.开闭原则 3.里氏替换原则 4.依赖注入原则 5.接口分离原则 6.迪米特原则 将变化的东西抽离出来并且封装，一方面和原来</description>
+      </item>
+      
+      <item>
+        <title>ES索引原理</title>
+        <link>https://hugo.jiahongw.com/zh/posts/es/es-index/</link>
+        <pubDate>Sun, 27 Mar 2022 16:37:50 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <guid>https://hugo.jiahongw.com/zh/posts/es/es-index/</guid>
+        <description>索引原理 Lucene 倒排索引，具体的索引层级： Lucene的索引细节： Term Index是一个字典树，保存了单词的前缀和其在Term Dictionary中位</description>
+      </item>
+      
+      <item>
+        <title>ES-mappings</title>
+        <link>https://hugo.jiahongw.com/zh/posts/es/es-mappings/</link>
+        <pubDate>Sun, 27 Mar 2022 14:52:00 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <guid>https://hugo.jiahongw.com/zh/posts/es/es-mappings/</guid>
+        <description>ES Mappings ES的Mappings的作用类似mysql中定义表结构的schema，用来定义一个文档格式，例如包含的字段，是否倒排，是否存储等等。主要</description>
+      </item>
+      
+      <item>
+        <title>ES API参考</title>
+        <link>https://hugo.jiahongw.com/zh/posts/es/es-api/</link>
+        <pubDate>Sun, 27 Mar 2022 14:42:03 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <guid>https://hugo.jiahongw.com/zh/posts/es/es-api/</guid>
+        <description>ES HTTP API 使用模板： 创建索引 创建一个索引的方法很简单，在Kibana中运行下行请求即可创建一个名为“index1”的索引 1 PUT /index1 可以增加相关设置和</description>
+      </item>
+      
+      <item>
+        <title>ES相关问题</title>
+        <link>https://hugo.jiahongw.com/zh/posts/es/es-problems/</link>
+        <pubDate>Sun, 27 Mar 2022 10:36:37 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <guid>https://hugo.jiahongw.com/zh/posts/es/es-problems/</guid>
+        <description>ES集群故障：警惕通配符查询 https://elasticsearch.cn/article/171 ES查询索引未找到解决办法： https://www.codeleading.com/article/59664719033/ https://www.cnblogs.com/lmsthoughts/articles/7609802.html API:https://www.tabnine.com/code/java/methods/org.elasticsearch.search.builder.SearchSourceBuilder/sort ES mapping 排序未初始化问题 https://blog.csdn.net/xaio7biancheng/article/details/82657175 1 2 FieldSortBuilder timeSort = SortBuilders.fieldSort(tuple.getField()).order(SortOrder.ASC).unmappedType(&amp;#34;long&amp;#34;); searchSourceBuilder.sort(tuple.getField(), SortOrder.ASC).sort(timeSort); ES的ID 文档唯一标识由四个元数据字段</description>
+      </item>
+      
+      <item>
+        <title>代理模式</title>
+        <link>https://hugo.jiahongw.com/zh/posts/designpattern/proxypattern/</link>
+        <pubDate>Tue, 18 Jan 2022 10:51:06 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <guid>https://hugo.jiahongw.com/zh/posts/designpattern/proxypattern/</guid>
+        <description>定义 代理模式为另一个对象提供一个替身或者占位符以控制这个对象的访问。 框架 @startuml &#39; 代理模式 interface Subject { request() } class RealSubject implements Subject { + request() } class Proxy implements Subject { + request() } Proxy -&amp;gt; RealSubject : subject @enduml 使</description>
+      </item>
       
       <item>
         <title>组合模式</title>
@@ -134,6 +215,15 @@
       </item>
       
       <item>
+        <title>建造者模式</title>
+        <link>https://hugo.jiahongw.com/zh/posts/designpattern/builderpattern/</link>
+        <pubDate>Thu, 21 Oct 2021 10:47:09 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <guid>https://hugo.jiahongw.com/zh/posts/designpattern/builderpattern/</guid>
+        <description>建造者模式也称为生成器模式或者Builder模式。 建造者模式主要是为了解决调用构造函数的时候，参数太多，并且有一些是可选参数不填的情况。这种</description>
+      </item>
+      
+      <item>
         <title>架构制图</title>
         <link>https://hugo.jiahongw.com/zh/posts/systemarchitecture/architecture-drawing/</link>
         <pubDate>Tue, 19 Oct 2021 17:05:32 +0800</pubDate>
@@ -176,6 +266,15 @@
         <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/gallery/beijing/</guid>
         <description>The photo about Beijing with me.📹</description>
+      </item>
+      
+      <item>
+        <title>java8笔记📒</title>
+        <link>https://hugo.jiahongw.com/zh/posts/java/java8-note/</link>
+        <pubDate>Thu, 09 Sep 2021 11:14:17 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <guid>https://hugo.jiahongw.com/zh/posts/java/java8-note/</guid>
+        <description>✌cxc 《Java实战》笔记 stream的使用注意 一个 Stream pipeline 中包含一个源 Stream，接着是 0个或者多个中间操作( intermediat巳 op</description>
       </item>
       
       <item>
@@ -252,10 +351,10 @@
       
       <item>
         <title>maven目录结构</title>
-        <link>https://hugo.jiahongw.com/zh/posts/java/maven-dir/</link>
+        <link>https://hugo.jiahongw.com/zh/posts/middleware/maven-dir/</link>
         <pubDate>Thu, 24 Jun 2021 12:42:44 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <guid>https://hugo.jiahongw.com/zh/posts/java/maven-dir/</guid>
+        <guid>https://hugo.jiahongw.com/zh/posts/middleware/maven-dir/</guid>
         <description>基本运作流程 Maven工具在本地有一个存储库，然后当本地存储库没有的情况下会自动的去中央仓库寻找并且下载到本地存储库，然后在执行自动化构建。</description>
       </item>
       
@@ -284,6 +383,15 @@
         <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/posts/polarcode/polar-code-intro/</guid>
         <description>5G下的极化码 这个专栏介绍极化码的相关原理，一方面是因为我目前的毕业设计是关于5G极化码方向的，另一方面我想将自己所学的一些知识记录或者分享</description>
+      </item>
+      
+      <item>
+        <title>策略模式</title>
+        <link>https://hugo.jiahongw.com/zh/posts/designpattern/strategypattern/</link>
+        <pubDate>Sat, 27 Mar 2021 11:12:34 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <guid>https://hugo.jiahongw.com/zh/posts/designpattern/strategypattern/</guid>
+        <description>使用场景 避免冗长的if-else或switch分支判断 提供框架的扩展点 策略模式： 策略模式定义了算法族，分别封装起来，让他们之间可以互相替换。</description>
       </item>
       
       <item>

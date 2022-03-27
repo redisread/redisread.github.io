@@ -1887,7 +1887,6 @@ package foo6 &lt;&lt;Database&gt;&gt; {
 }
 
 @enduml
-
 </code></pre><pre><code class="language-plantuml" data-lang="plantuml">@startuml
 scale 750 width
 package foo1 &lt;&lt;Node&gt;&gt; {
@@ -2218,7 +2217,6 @@ Alice &lt;-- Bob
 
 deactivate Bob
 @enduml
-
 </code></pre><pre><code class="language-plantuml" data-lang="plantuml">@startuml
 activate Alice
 Alice -&gt; Bob
@@ -2269,7 +2267,7 @@ Alice &lt;-- Bob
 
 deactivate Bob
 @enduml
-</code></pre><p>​	<code>activate</code> 中继续 <code>activate</code> 可以嵌套活跃状态</p>
+</code></pre><p>​    <code>activate</code> 中继续 <code>activate</code> 可以嵌套活跃状态</p>
 <h4 id="创建角色和生命线">创建角色和生命线</h4>
 <pre><code>@startuml
 Alice -&gt; Bob
@@ -2355,7 +2353,6 @@ Alice &lt;-- Bob
 Alice -&gt; Bob
 Alice &lt;-- Bob
 @enduml
-
 </code></pre><ul>
 <li>消息之间加 <code>|||</code> , 会适当拉开消息间隔</li>
 <li><code>||&lt;pixel&gt;||</code>：pixel可以指定具体间隔的像素数</li>
@@ -2398,7 +2395,7 @@ end note
 @enduml
 </code></pre><h3 id="组件部署图">组件&amp;部署图</h3>
 <h4 id="箭头方向">箭头方向</h4>
-<p><code>-&gt;</code>表示向右，	<code>--&gt;</code>表示向下。还可以使用关键字<code>left</code>, <code>right</code>, <code>up</code> or <code>down</code>改变箭头方向。<code>-left-&gt;</code>或<code>-l-&gt;</code>表示向左。</p>
+<p><code>-&gt;</code>表示向右，    <code>--&gt;</code>表示向下。还可以使用关键字<code>left</code>, <code>right</code>, <code>up</code> or <code>down</code>改变箭头方向。<code>-left-&gt;</code>或<code>-l-&gt;</code>表示向左。</p>
 <pre><code>@startuml
 component componentA as A
 component componentB as B

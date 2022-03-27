@@ -9,7 +9,7 @@
     <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
     <webMaster>1427298682@qq.com (VictorHong)</webMaster>
     <copyright>&amp;copy;{year}, Redisread</copyright>
-    <lastBuildDate>Sun, 16 Jan 2022 16:15:31 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 28 Mar 2022 17:38:53 +0800</lastBuildDate>
     
         <atom:link href="https://hugo.jiahongw.com/zh/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -17,11 +17,56 @@
     
       
       <item>
+        <title>CompletableFuture</title>
+        <link>https://hugo.jiahongw.com/zh/tags/completablefuture/</link>
+        <pubDate>Mon, 28 Mar 2022 17:38:53 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <guid>https://hugo.jiahongw.com/zh/tags/completablefuture/</guid>
+        <description></description>
+      </item>
+      
+      <item>
+        <title>Java</title>
+        <link>https://hugo.jiahongw.com/zh/tags/java/</link>
+        <pubDate>Mon, 28 Mar 2022 17:38:53 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <guid>https://hugo.jiahongw.com/zh/tags/java/</guid>
+        <description></description>
+      </item>
+      
+      <item>
+        <title>设计原则</title>
+        <link>https://hugo.jiahongw.com/zh/tags/%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99/</link>
+        <pubDate>Sun, 27 Mar 2022 19:20:05 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <guid>https://hugo.jiahongw.com/zh/tags/%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99/</guid>
+        <description></description>
+      </item>
+      
+      <item>
         <title>设计模式</title>
         <link>https://hugo.jiahongw.com/zh/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</link>
-        <pubDate>Sun, 16 Jan 2022 13:14:21 +0800</pubDate>
+        <pubDate>Sun, 27 Mar 2022 19:20:05 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</guid>
+        <description></description>
+      </item>
+      
+      <item>
+        <title>ES</title>
+        <link>https://hugo.jiahongw.com/zh/tags/es/</link>
+        <pubDate>Sun, 27 Mar 2022 16:37:50 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <guid>https://hugo.jiahongw.com/zh/tags/es/</guid>
+        <description></description>
+      </item>
+      
+      <item>
+        <title>代理模式</title>
+        <link>https://hugo.jiahongw.com/zh/tags/%E4%BB%A3%E7%90%86%E6%A8%A1%E5%BC%8F/</link>
+        <pubDate>Tue, 18 Jan 2022 10:51:06 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <guid>https://hugo.jiahongw.com/zh/tags/%E4%BB%A3%E7%90%86%E6%A8%A1%E5%BC%8F/</guid>
         <description></description>
       </item>
       
@@ -197,6 +242,15 @@
       </item>
       
       <item>
+        <title>建造者模式</title>
+        <link>https://hugo.jiahongw.com/zh/tags/%E5%BB%BA%E9%80%A0%E8%80%85%E6%A8%A1%E5%BC%8F/</link>
+        <pubDate>Thu, 21 Oct 2021 10:47:09 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <guid>https://hugo.jiahongw.com/zh/tags/%E5%BB%BA%E9%80%A0%E8%80%85%E6%A8%A1%E5%BC%8F/</guid>
+        <description></description>
+      </item>
+      
+      <item>
         <title>架构</title>
         <link>https://hugo.jiahongw.com/zh/tags/%E6%9E%B6%E6%9E%84/</link>
         <pubDate>Tue, 19 Oct 2021 17:05:32 +0800</pubDate>
@@ -233,20 +287,20 @@
       </item>
       
       <item>
+        <title>Effective Java</title>
+        <link>https://hugo.jiahongw.com/zh/tags/effective-java/</link>
+        <pubDate>Thu, 09 Sep 2021 11:14:17 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <guid>https://hugo.jiahongw.com/zh/tags/effective-java/</guid>
+        <description></description>
+      </item>
+      
+      <item>
         <title>FunnySharing</title>
         <link>https://hugo.jiahongw.com/zh/tags/funnysharing/</link>
         <pubDate>Sat, 21 Aug 2021 16:15:37 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/tags/funnysharing/</guid>
-        <description></description>
-      </item>
-      
-      <item>
-        <title>Java</title>
-        <link>https://hugo.jiahongw.com/zh/tags/java/</link>
-        <pubDate>Thu, 12 Aug 2021 21:21:00 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        <guid>https://hugo.jiahongw.com/zh/tags/java/</guid>
         <description></description>
       </item>
       
@@ -301,6 +355,15 @@
         <pubDate>Thu, 24 Jun 2021 12:42:44 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/tags/maven/</guid>
+        <description></description>
+      </item>
+      
+      <item>
+        <title>策略模式</title>
+        <link>https://hugo.jiahongw.com/zh/tags/%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F/</link>
+        <pubDate>Sat, 27 Mar 2021 11:12:34 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <guid>https://hugo.jiahongw.com/zh/tags/%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F/</guid>
         <description></description>
       </item>
       
@@ -422,7 +485,7 @@
       </item>
       
       <item>
-        <title>epoll</title>
+        <title>Epoll</title>
         <link>https://hugo.jiahongw.com/zh/tags/epoll/</link>
         <pubDate>Wed, 18 Nov 2020 11:43:19 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>

@@ -3,8 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://hugo.jiahongw.com/zh/showcase/hugo/myblog/</loc>
+    <lastmod>2020-01-19T21:13:42+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hugo.jiahongw.com/zh/showcase/hugo/myitem/</loc>
+    <lastmod>2020-01-19T21:13:42+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://hugo.jiahongw.com/zh/</loc>
-    <lastmod>2022-01-16T16:15:31+08:00</lastmod>
+    <lastmod>2022-03-28T17:38:53+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -24,7 +34,7 @@
   
   <url>
     <loc>https://hugo.jiahongw.com/zh/categories/</loc>
-    <lastmod>2022-01-16T16:15:31+08:00</lastmod>
+    <lastmod>2022-03-28T17:38:53+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -43,8 +53,28 @@
   </url>
   
   <url>
+    <loc>https://hugo.jiahongw.com/zh/tags/completablefuture/</loc>
+    <lastmod>2022-03-28T17:38:53+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hugo.jiahongw.com/zh/posts/java/completablefuture/</loc>
+    <lastmod>2022-03-28T17:38:53+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hugo.jiahongw.com/zh/tags/java/</loc>
+    <lastmod>2022-03-28T17:38:53+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hugo.jiahongw.com/zh/series/java/</loc>
+    <lastmod>2022-03-28T17:38:53+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://hugo.jiahongw.com/zh/posts/</loc>
-    <lastmod>2022-01-16T16:15:31+08:00</lastmod>
+    <lastmod>2022-03-28T17:38:53+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -59,7 +89,7 @@
   
   <url>
     <loc>https://hugo.jiahongw.com/zh/series/</loc>
-    <lastmod>2022-01-16T16:15:31+08:00</lastmod>
+    <lastmod>2022-03-28T17:38:53+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -79,7 +109,7 @@
   
   <url>
     <loc>https://hugo.jiahongw.com/zh/tags/</loc>
-    <lastmod>2022-01-16T16:15:31+08:00</lastmod>
+    <lastmod>2022-03-28T17:38:53+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -98,18 +128,68 @@
   </url>
   
   <url>
-    <loc>https://hugo.jiahongw.com/zh/posts/designpattern/compositepattern/</loc>
-    <lastmod>2022-01-16T16:15:31+08:00</lastmod>
+    <loc>https://hugo.jiahongw.com/zh/tags/%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99/</loc>
+    <lastmod>2022-03-27T19:20:05+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://hugo.jiahongw.com/zh/series/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</loc>
-    <lastmod>2022-01-16T13:14:21+08:00</lastmod>
+    <lastmod>2022-03-27T19:20:05+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://hugo.jiahongw.com/zh/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</loc>
-    <lastmod>2022-01-16T13:14:21+08:00</lastmod>
+    <lastmod>2022-03-27T19:20:05+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hugo.jiahongw.com/zh/posts/designpattern/design-pattern-note/</loc>
+    <lastmod>2022-03-27T19:20:05+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hugo.jiahongw.com/zh/tags/es/</loc>
+    <lastmod>2022-03-27T16:37:50+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hugo.jiahongw.com/zh/series/es/</loc>
+    <lastmod>2022-03-27T16:37:50+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hugo.jiahongw.com/zh/posts/es/es-index/</loc>
+    <lastmod>2022-03-27T16:37:50+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hugo.jiahongw.com/zh/posts/es/es-mappings/</loc>
+    <lastmod>2022-03-27T14:52:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hugo.jiahongw.com/zh/posts/es/es-api/</loc>
+    <lastmod>2022-03-27T14:42:03+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hugo.jiahongw.com/zh/posts/es/es-problems/</loc>
+    <lastmod>2022-03-27T10:36:37+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hugo.jiahongw.com/zh/tags/%E4%BB%A3%E7%90%86%E6%A8%A1%E5%BC%8F/</loc>
+    <lastmod>2022-01-18T10:51:06+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hugo.jiahongw.com/zh/posts/designpattern/proxypattern/</loc>
+    <lastmod>2022-01-18T10:51:06+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hugo.jiahongw.com/zh/posts/designpattern/compositepattern/</loc>
+    <lastmod>2022-01-16T16:15:31+08:00</lastmod>
   </url>
   
   <url>
@@ -268,12 +348,22 @@
   </url>
   
   <url>
-    <loc>https://hugo.jiahongw.com/zh/series/%E6%9E%B6%E6%9E%84/</loc>
-    <lastmod>2021-10-19T17:05:32+08:00</lastmod>
+    <loc>https://hugo.jiahongw.com/zh/tags/%E5%BB%BA%E9%80%A0%E8%80%85%E6%A8%A1%E5%BC%8F/</loc>
+    <lastmod>2021-10-21T10:47:09+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hugo.jiahongw.com/zh/posts/designpattern/builderpattern/</loc>
+    <lastmod>2021-10-21T10:47:09+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://hugo.jiahongw.com/zh/tags/%E6%9E%B6%E6%9E%84/</loc>
+    <lastmod>2021-10-19T17:05:32+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hugo.jiahongw.com/zh/series/%E6%9E%B6%E6%9E%84/</loc>
     <lastmod>2021-10-19T17:05:32+08:00</lastmod>
   </url>
   
@@ -288,12 +378,12 @@
   </url>
   
   <url>
-    <loc>https://hugo.jiahongw.com/zh/tags/effectivejava/</loc>
+    <loc>https://hugo.jiahongw.com/zh/series/effectivejava/</loc>
     <lastmod>2021-10-16T18:35:36+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hugo.jiahongw.com/zh/series/effectivejava/</loc>
+    <loc>https://hugo.jiahongw.com/zh/tags/effectivejava/</loc>
     <lastmod>2021-10-16T18:35:36+08:00</lastmod>
   </url>
   
@@ -303,12 +393,12 @@
   </url>
   
   <url>
-    <loc>https://hugo.jiahongw.com/zh/tags/life/</loc>
+    <loc>https://hugo.jiahongw.com/zh/series/life/</loc>
     <lastmod>2021-10-07T21:26:43+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hugo.jiahongw.com/zh/series/life/</loc>
+    <loc>https://hugo.jiahongw.com/zh/tags/life/</loc>
     <lastmod>2021-10-07T21:26:43+08:00</lastmod>
   </url>
   
@@ -330,6 +420,16 @@
   <url>
     <loc>https://hugo.jiahongw.com/zh/gallery/beijing/</loc>
     <lastmod>2021-09-12T10:20:16+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hugo.jiahongw.com/zh/tags/effective-java/</loc>
+    <lastmod>2021-09-09T11:14:17+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hugo.jiahongw.com/zh/posts/java/java8-note/</loc>
+    <lastmod>2021-09-09T11:14:17+08:00</lastmod>
   </url>
   
   <url>
@@ -363,22 +463,17 @@
   </url>
   
   <url>
-    <loc>https://hugo.jiahongw.com/zh/tags/java/</loc>
-    <lastmod>2021-08-12T21:21:00+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://hugo.jiahongw.com/zh/posts/java/boxing-unboxing/</loc>
     <lastmod>2021-08-12T21:21:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hugo.jiahongw.com/zh/tags/polarcode/</loc>
+    <loc>https://hugo.jiahongw.com/zh/series/polarcode/</loc>
     <lastmod>2021-06-29T13:01:45+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hugo.jiahongw.com/zh/series/polarcode/</loc>
+    <loc>https://hugo.jiahongw.com/zh/tags/polarcode/</loc>
     <lastmod>2021-06-29T13:01:45+08:00</lastmod>
   </url>
   
@@ -423,17 +518,12 @@
   </url>
   
   <url>
-    <loc>https://hugo.jiahongw.com/zh/series/java/</loc>
-    <lastmod>2021-06-24T12:42:44+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://hugo.jiahongw.com/zh/tags/maven/</loc>
     <lastmod>2021-06-24T12:42:44+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hugo.jiahongw.com/zh/posts/java/maven-dir/</loc>
+    <loc>https://hugo.jiahongw.com/zh/posts/middleware/maven-dir/</loc>
     <lastmod>2021-06-24T12:42:44+08:00</lastmod>
   </url>
   
@@ -450,6 +540,16 @@
   <url>
     <loc>https://hugo.jiahongw.com/zh/posts/polarcode/polar-code-intro/</loc>
     <lastmod>2021-05-18T14:01:12+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hugo.jiahongw.com/zh/tags/%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F/</loc>
+    <lastmod>2021-03-27T11:12:34+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hugo.jiahongw.com/zh/posts/designpattern/strategypattern/</loc>
+    <lastmod>2021-03-27T11:12:34+08:00</lastmod>
   </url>
   
   <url>
@@ -738,12 +838,12 @@
   </url>
   
   <url>
-    <loc>https://hugo.jiahongw.com/zh/series/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</loc>
+    <loc>https://hugo.jiahongw.com/zh/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</loc>
     <lastmod>2020-07-28T18:02:38+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hugo.jiahongw.com/zh/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</loc>
+    <loc>https://hugo.jiahongw.com/zh/series/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</loc>
     <lastmod>2020-07-28T18:02:38+08:00</lastmod>
   </url>
   
@@ -798,12 +898,12 @@
   </url>
   
   <url>
-    <loc>https://hugo.jiahongw.com/zh/tags/game/</loc>
+    <loc>https://hugo.jiahongw.com/zh/series/game/</loc>
     <lastmod>2020-06-15T09:43:11+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hugo.jiahongw.com/zh/series/game/</loc>
+    <loc>https://hugo.jiahongw.com/zh/tags/game/</loc>
     <lastmod>2020-06-15T09:43:11+08:00</lastmod>
   </url>
   
@@ -1243,12 +1343,12 @@
   </url>
   
   <url>
-    <loc>https://hugo.jiahongw.com/zh/series/%E7%88%AC%E8%99%AB/</loc>
+    <loc>https://hugo.jiahongw.com/zh/tags/%E7%88%AC%E8%99%AB/</loc>
     <lastmod>2020-03-04T16:35:09+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hugo.jiahongw.com/zh/tags/%E7%88%AC%E8%99%AB/</loc>
+    <loc>https://hugo.jiahongw.com/zh/series/%E7%88%AC%E8%99%AB/</loc>
     <lastmod>2020-03-04T16:35:09+08:00</lastmod>
   </url>
   
@@ -1540,6 +1640,21 @@
   <url>
     <loc>https://hugo.jiahongw.com/zh/posts/hugo/shortcodes/</loc>
     <lastmod>2020-01-25T06:40:51+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hugo.jiahongw.com/zh/showcase/hugo/</loc>
+    <lastmod>2020-01-19T21:04:11+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hugo.jiahongw.com/en/showcase/hugo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://hugo.jiahongw.com/zh/showcase/hugo/"
+                />
   </url>
   
   <url>

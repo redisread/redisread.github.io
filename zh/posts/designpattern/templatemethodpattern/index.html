@@ -1564,7 +1564,32 @@ end note
 
 
 @enduml
-</code></pre><h3 id="区别">区别</h3>
+</code></pre><p>模板方法可以配合范型进行使用：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">AbstractService</span><span class="o">&lt;</span><span class="n">T</span><span class="o">,</span> <span class="n">L</span><span class="o">&gt;</span> <span class="o">{</span>
+  
+  <span class="kd">protected</span> <span class="kd">abstract</span> <span class="n">T</span> <span class="nf">getData</span><span class="o">(</span><span class="kt">int</span> <span class="n">x</span><span class="o">)</span><span class="o">;</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">calAndSaveTransaction</span><span class="o">(</span><span class="n">T</span> <span class="n">t</span><span class="o">,</span><span class="n">L</span> <span class="n">l</span><span class="o">)</span><span class="o">;</span>
+<span class="o">}</span>
+
+<span class="kd">public</span> <span class="n">ConcreteService</span> <span class="kd">implements</span> <span class="n">AbstractService</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">Integer</span><span class="o">&gt;</span> <span class="o">{</span>
+  <span class="o">.</span><span class="o">.</span><span class="o">.</span>
+<span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="区别">区别</h3>
 <ul>
 <li>策略模式和模板方法模式都封装算法，但是一个组合，一个继承。</li>
 <li>工厂方法是模板方法的一个特殊版本。</li>
