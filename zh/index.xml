@@ -17,6 +17,24 @@
     
       
       <item>
+        <title>My Hugo Lib</title>
+        <link>https://hugo.jiahongw.com/zh/showcase/hugo/myblog/</link>
+        <pubDate>Sun, 19 Jan 2020 21:13:42 +0900</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <guid>https://hugo.jiahongw.com/zh/showcase/hugo/myblog/</guid>
+        <description></description>
+      </item>
+      
+      <item>
+        <title>My Hugo Item</title>
+        <link>https://hugo.jiahongw.com/zh/showcase/hugo/myitem/</link>
+        <pubDate>Sun, 19 Jan 2020 21:13:42 +0900</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <guid>https://hugo.jiahongw.com/zh/showcase/hugo/myitem/</guid>
+        <description></description>
+      </item>
+      
+      <item>
         <title>CompletableFuture笔记</title>
         <link>https://hugo.jiahongw.com/zh/posts/java/completablefuture/</link>
         <pubDate>Mon, 28 Mar 2022 17:38:53 +0800</pubDate>
