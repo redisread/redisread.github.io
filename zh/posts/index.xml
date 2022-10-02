@@ -9,7 +9,7 @@
     <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
     <webMaster>1427298682@qq.com (VictorHong)</webMaster>
     <copyright>&amp;copy;{year}, Redisread</copyright>
-    <lastBuildDate>Wed, 28 Sep 2022 16:22:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 01 Oct 2022 14:30:00 +0000</lastBuildDate>
     
         <atom:link href="https://hugo.jiahongw.com/zh/posts/index.xml" rel="self" type="application/rss+xml" />
     
@@ -17,12 +17,21 @@
     
       
       <item>
+        <title>ES索引原理</title>
+        <link>https://hugo.jiahongw.com/zh/posts/es/es_index_inside/</link>
+        <pubDate>Sat, 01 Oct 2022 14:30:00 +0000</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <guid>https://hugo.jiahongw.com/zh/posts/es/es_index_inside/</guid>
+        <description>从“文档-单词矩阵”说起 ES中的一篇文档相当于MySQL数据库中的一行记录，对应的ES属于NoSQL，每篇文档都是JSON格式的，实际存储的</description>
+      </item>
+      
+      <item>
         <title>Test</title>
         <link>https://hugo.jiahongw.com/zh/posts/efficient/test/</link>
         <pubDate>Wed, 28 Sep 2022 16:22:00 +0000</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/posts/efficient/test/</guid>
-        <description>HED 1 11111111111111 HED2 2222222222222 3222222 I am a man classDiagram Strategy &amp;lt;|-- StrategyA : implements Strategy &amp;lt;|-- StrategyB : implements Strategy : algorithmInterface() StrategyA : algorithmInterface() StrategyB : algorithmInterface() https://zenn.dev/eetann/articles/2022-08-15-notion-api-with-github-actions 1 sdasdjasdasda</description>
+        <description>HED 1 💡 test 11111111111111 HED2 2222222222222 3222222 I am a man classDiagram Strategy &amp;lt;|-- StrategyA : implements Strategy &amp;lt;|-- StrategyB : implements Strategy : algorithmInterface() StrategyA : algorithmInterface() StrategyB : algorithmInterface() https://zenn.dev/eetann/articles/2022-08-15-notion-api-with-github-actions 1 sdasdjasdasda</description>
       </item>
       
       <item>

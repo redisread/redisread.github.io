@@ -9,12 +9,21 @@
     <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
     <webMaster>1427298682@qq.com (VictorHong)</webMaster>
     <copyright>&amp;copy;{year}, Redisread</copyright>
-    <lastBuildDate>Sun, 27 Mar 2022 16:37:50 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 01 Oct 2022 14:30:00 +0000</lastBuildDate>
     
         <atom:link href="https://hugo.jiahongw.com/zh/tags/es/index.xml" rel="self" type="application/rss+xml" />
     
     
     
+      
+      <item>
+        <title>ES索引原理</title>
+        <link>https://hugo.jiahongw.com/zh/posts/es/es_index_inside/</link>
+        <pubDate>Sat, 01 Oct 2022 14:30:00 +0000</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <guid>https://hugo.jiahongw.com/zh/posts/es/es_index_inside/</guid>
+        <description>从“文档-单词矩阵”说起 ES中的一篇文档相当于MySQL数据库中的一行记录，对应的ES属于NoSQL，每篇文档都是JSON格式的，实际存储的</description>
+      </item>
       
       <item>
         <title>ES索引原理</title>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lucene on ✏Victor&#39;s Blog</title>
+    <link>https://hugo.jiahongw.com/zh/tags/lucene/</link>
+    <description>Recent content in Lucene on ✏Victor&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
+    <webMaster>1427298682@qq.com (VictorHong)</webMaster>
+    <copyright>&amp;copy;{year}, Redisread</copyright>
+    <lastBuildDate>Sat, 01 Oct 2022 14:30:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://hugo.jiahongw.com/zh/tags/lucene/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+      
+      <item>
+        <title>ES索引原理</title>
+        <link>https://hugo.jiahongw.com/zh/posts/es/es_index_inside/</link>
+        <pubDate>Sat, 01 Oct 2022 14:30:00 +0000</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <guid>https://hugo.jiahongw.com/zh/posts/es/es_index_inside/</guid>
+        <description>从“文档-单词矩阵”说起 ES中的一篇文档相当于MySQL数据库中的一行记录，对应的ES属于NoSQL，每篇文档都是JSON格式的，实际存储的</description>
+      </item>
+      
+    
+  </channel>
+</rss>
