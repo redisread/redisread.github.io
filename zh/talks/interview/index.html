@@ -6981,311 +6981,394 @@ document.addEventListener('DOMContentLoaded', function () {
   <div class="toc " data-dir="ltr" data-folding="true">
     <nav id="TableOfContents">
   <ul>
-    <li>
-      <ul>
-        <li><a href="#面向对象与面向过程">⭕面向对象与面向过程</a></li>
-        <li><a href="#c程序设计模型">➕C++程序设计模型</a></li>
-        <li><a href="#多态">✖多态</a></li>
-        <li><a href="#-c11新特性">🖐 C++11新特性</a></li>
-        <li><a href="#const">📇const</a></li>
-        <li><a href="#static">🗽Static</a></li>
-        <li><a href="#-extern-c作用">📤 extern &ldquo;C"作用</a></li>
-        <li><a href="#inline内联函数-static静态函数-普通函数区别">📌inline内联函数 static静态函数 普通函数区别</a></li>
-        <li><a href="#c内存布局">💟C++内存布局</a></li>
-        <li><a href="#-c空类产生哪些成员函数">💱 C++空类产生哪些成员函数</a></li>
-        <li><a href="#-指针常见错误">✈ 指针常见错误</a></li>
-        <li><a href="#-c的内存结构">🚙 C的内存结构</a></li>
-        <li><a href="#程序运行时内存分配">🗡程序运行时内存分配</a></li>
-        <li><a href="#struct字节对齐问题">👽struct字节对齐问题</a></li>
-        <li><a href="#malloc一次性最大能申请多大内存空间">ⓜmalloc一次性最大能申请多大内存空间？</a></li>
-        <li><a href="#字节序了解吗讲一下大端对齐和小端对齐">🔶字节序了解吗？讲一下大端对齐和小端对齐</a></li>
-        <li><a href="#字符串与字符串指针的大小">📏字符串与字符串指针的大小</a></li>
-        <li><a href="#动态链接和静态链接的区别">💃动态链接和静态链接的区别</a></li>
-        <li><a href="#智能指针的多线程问题">🛩智能指针的多线程问题</a></li>
-        <li><a href="#-关于template的三个问题">🎪 关于template的三个问题</a></li>
-        <li><a href="#c的异常处理机制">❗c++的异常处理机制</a></li>
-        <li><a href="#执行期类型识别runtime-type-identificationrtti">🏃执行期类型识别（Runtime Type Identification，RTTI）</a></li>
-        <li><a href="#c构造函数">🚧C++构造函数</a></li>
-        <li><a href="#c拷贝构造函数">👮C++拷贝构造函数</a>
-          <ul>
-            <li><a href="#default-memberwise-initialization">Default Memberwise Initialization</a></li>
-            <li><a href="#bitwise-copy-semantics位逐次拷贝">Bitwise Copy Semantics(位逐次拷贝）</a></li>
-          </ul>
-        </li>
-        <li><a href="#程序转化语义">程序转化语义</a></li>
-        <li><a href="#cdata语义">💽C++——data语义</a></li>
-        <li><a href="#关于typedef的用法总结">关于typedef的用法总结</a></li>
-        <li><a href="#-智能指针">✒ 智能指针</a>
-          <ul>
-            <li><a href="#unique_ptr">unique_ptr</a></li>
-            <li><a href="#shared_ptr">shared_ptr</a></li>
-            <li><a href="#weak_ptr">weak_ptr</a></li>
-            <li><a href="#多线程读写shared_ptr需要加锁">多线程读写shared_ptr需要加锁</a></li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-  </ul>
-
-  <ul>
-    <li><a href="#c内存分区">C++内存分区</a></li>
-    <li><a href="#程序在内存中的分布">程序在内存中的分布</a>
-      <ul>
-        <li><a href="#堆与栈">堆与栈</a></li>
-      </ul>
-    </li>
-  </ul>
-
-  <ul>
-    <li><a href="#内存泄漏">内存泄漏</a>
-      <ul>
-        <li><a href="#检测内存泄漏的原理">检测内存泄漏的原理</a></li>
-      </ul>
-    </li>
-    <li><a href="#检测方法">检测方法</a>
-      <ul>
-        <li><a href="#最简单的">最简单的</a></li>
-      </ul>
-    </li>
-    <li><a href="#windows平台下的内存泄漏检测">Windows平台下的内存泄漏检测</a>
-      <ul>
-        <li><a href="#linux平台下的内存泄漏检测">Linux平台下的内存泄漏检测</a></li>
-      </ul>
-    </li>
-  </ul>
-
-  <ul>
-    <li><a href="#函数模板">函数模板</a>
+    <li><a href="#cc">C/C++</a>
       <ul>
         <li>
           <ul>
-            <li><a href="#函数模板格式">函数模板格式</a></li>
+            <li><a href="#面向对象与面向过程">⭕面向对象与面向过程</a></li>
+            <li><a href="#c程序设计模型">➕C++程序设计模型</a></li>
+            <li><a href="#多态">✖多态</a></li>
+            <li><a href="#-c11新特性">🖐 C++11新特性</a></li>
+            <li><a href="#const">📇const</a></li>
+            <li><a href="#static">🗽Static</a></li>
+            <li><a href="#-extern-c作用">📤 extern &ldquo;C"作用</a></li>
+            <li><a href="#inline内联函数-static静态函数-普通函数区别">📌inline内联函数 static静态函数 普通函数区别</a></li>
+            <li><a href="#c内存布局">💟C++内存布局</a></li>
+            <li><a href="#-c空类产生哪些成员函数">💱 C++空类产生哪些成员函数</a></li>
+            <li><a href="#-指针常见错误">✈ 指针常见错误</a></li>
+            <li><a href="#-c的内存结构">🚙 C的内存结构</a></li>
+            <li><a href="#程序运行时内存分配">🗡程序运行时内存分配</a></li>
+            <li><a href="#struct字节对齐问题">👽struct字节对齐问题</a></li>
+            <li><a href="#malloc一次性最大能申请多大内存空间">ⓜmalloc一次性最大能申请多大内存空间？</a></li>
+            <li><a href="#字节序了解吗讲一下大端对齐和小端对齐">🔶字节序了解吗？讲一下大端对齐和小端对齐</a></li>
+            <li><a href="#字符串与字符串指针的大小">📏字符串与字符串指针的大小</a></li>
+            <li><a href="#动态链接和静态链接的区别">💃动态链接和静态链接的区别</a></li>
+            <li><a href="#智能指针的多线程问题">🛩智能指针的多线程问题</a></li>
+            <li><a href="#-关于template的三个问题">🎪 关于template的三个问题</a></li>
+            <li><a href="#c的异常处理机制">❗c++的异常处理机制</a></li>
+            <li><a href="#执行期类型识别runtime-type-identificationrtti">🏃执行期类型识别（Runtime Type Identification，RTTI）</a></li>
+            <li><a href="#c构造函数">🚧C++构造函数</a></li>
+            <li><a href="#c拷贝构造函数">👮C++拷贝构造函数</a>
+              <ul>
+                <li><a href="#default-memberwise-initialization">Default Memberwise Initialization</a></li>
+                <li><a href="#bitwise-copy-semantics位逐次拷贝">Bitwise Copy Semantics(位逐次拷贝）</a></li>
+              </ul>
+            </li>
+            <li><a href="#程序转化语义">程序转化语义</a></li>
+            <li><a href="#cdata语义">💽C++——data语义</a></li>
+            <li><a href="#关于typedef的用法总结">关于typedef的用法总结</a></li>
+            <li><a href="#-智能指针">✒ 智能指针</a>
+              <ul>
+                <li><a href="#unique_ptr">unique_ptr</a></li>
+                <li><a href="#shared_ptr">shared_ptr</a></li>
+                <li><a href="#weak_ptr">weak_ptr</a></li>
+                <li><a href="#多线程读写shared_ptr需要加锁">多线程读写shared_ptr需要加锁</a></li>
+              </ul>
+            </li>
           </ul>
         </li>
       </ul>
     </li>
-    <li><a href="#类模板">类模板</a>
+    <li><a href="#c内存管理与程序内存分区">C++内存管理与程序内存分区</a>
+      <ul>
+        <li><a href="#c内存分区">C++内存分区</a></li>
+        <li><a href="#程序在内存中的分布">程序在内存中的分布</a>
+          <ul>
+            <li><a href="#堆与栈">堆与栈</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#c内存泄漏">C++内存泄漏</a>
+      <ul>
+        <li><a href="#内存泄漏">内存泄漏</a>
+          <ul>
+            <li><a href="#检测内存泄漏的原理">检测内存泄漏的原理</a></li>
+          </ul>
+        </li>
+        <li><a href="#检测方法">检测方法</a>
+          <ul>
+            <li><a href="#最简单的">最简单的</a></li>
+          </ul>
+        </li>
+        <li><a href="#windows平台下的内存泄漏检测">Windows平台下的内存泄漏检测</a>
+          <ul>
+            <li><a href="#linux平台下的内存泄漏检测">Linux平台下的内存泄漏检测</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#c函数指针">C++函数指针</a></li>
+    <li><a href="#malloc的原理">malloc的原理</a></li>
+    <li><a href="#c模板">C++模板</a>
+      <ul>
+        <li><a href="#函数模板">函数模板</a>
+          <ul>
+            <li>
+              <ul>
+                <li><a href="#函数模板格式">函数模板格式</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#类模板">类模板</a>
+          <ul>
+            <li>
+              <ul>
+                <li><a href="#类模板格式">类模板格式</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#c引用">C++引用</a></li>
+    <li><a href="#栈或者堆上面创建类">栈或者堆上面创建类</a>
+      <ul>
+        <li><a href="#在堆上创建类对象">在堆上创建类对象</a></li>
+        <li><a href="#在栈上创建类对象">在栈上创建类对象</a></li>
+      </ul>
+    </li>
+    <li><a href="#不使用第三个数交换两个数">不使用第三个数交换两个数</a>
+      <ul>
+        <li><a href="#加法">加法</a></li>
+        <li><a href="#异或">异或</a></li>
+      </ul>
+    </li>
+    <li><a href="#回调函数与仿函数">回调函数与仿函数</a></li>
+    <li><a href="#c析构函数为什么是虚函数">C++析构函数为什么是虚函数</a></li>
+    <li><a href="#实现memcpy">实现memcpy📝</a>
       <ul>
         <li>
           <ul>
-            <li><a href="#类模板格式">类模板格式</a></li>
+            <li><a href="#memmove与memcpy的区别">memmove与memcpy的区别？</a></li>
+            <li><a href="#strcpy与mencpy的区别">strcpy与mencpy的区别?</a></li>
           </ul>
         </li>
       </ul>
     </li>
-  </ul>
-
-  <ul>
-    <li><a href="#在堆上创建类对象">在堆上创建类对象</a></li>
-    <li><a href="#在栈上创建类对象">在栈上创建类对象</a></li>
-  </ul>
-
-  <ul>
-    <li><a href="#加法">加法</a></li>
-    <li><a href="#异或">异或</a></li>
-  </ul>
-
-  <ul>
-    <li>
-      <ul>
-        <li><a href="#memmove与memcpy的区别">memmove与memcpy的区别？</a></li>
-        <li><a href="#strcpy与mencpy的区别">strcpy与mencpy的区别?</a></li>
-      </ul>
-    </li>
-  </ul>
-
-  <ul>
-    <li>
-      <ul>
-        <li><a href="#-网络分层">🎚 网络分层</a></li>
-        <li><a href="#-为什么需要三次握手">🥉 为什么需要三次握手</a></li>
-        <li><a href="#-为什么是四次挥手">✋ 为什么是四次挥手？</a></li>
-        <li><a href="#-如果已经建立了连接但是客户端突然出现故障了怎么办">🏑 如果已经建立了连接，但是客户端突然出现故障了怎么办？</a></li>
-        <li><a href="#-get-和-post的区别">📉 ​GET 和 POST的区别</a></li>
-        <li><a href="#-http报文">🍂 HTTP报文</a>
-          <ul>
-            <li><a href="#请求报文">请求报文</a></li>
-            <li><a href="#响应报文">响应报文</a></li>
-          </ul>
-        </li>
-        <li><a href="#-http状态码">🚉 HTTP状态码：</a></li>
-        <li><a href="#-http的主要方法">✋ HTTP的主要方法</a></li>
-        <li><a href="#-http20与http10的区别">💫 HTTP2.0与HTTP1.0的区别</a></li>
-        <li><a href="#-什么是sql注入">📥 什么是SQL注入？</a></li>
-        <li><a href="#-cookie技术">🍪 Cookie技术</a></li>
-        <li><a href="#-session技术">💬 Session技术</a></li>
-        <li><a href="#-session和cookie的区别">📸 Session和Cookie的区别</a></li>
-        <li><a href="#-ip协议">© IP协议</a>
-          <ul>
-            <li><a href="#有了-ip-地址为什么还要用-mac-地址">有了 IP 地址，为什么还要用 MAC 地址</a></li>
-          </ul>
-        </li>
-        <li><a href="#-dns协议">🛰 DNS协议</a></li>
-        <li><a href="#heading"></a></li>
-        <li><a href="#-ftp协议">🗃 FTP协议</a></li>
-      </ul>
-    </li>
-    <li><a href="#x509-数字证书">X.509 数字证书</a>
-      <ul>
-        <li><a href="#数字证书的签署">数字证书的签署</a>
-          <ul>
-            <li><a href="#根认证机构的构建">根认证机构的构建</a></li>
-            <li><a href="#单级认证机构的证书签署">单级认证机构的证书签署</a></li>
-            <li><a href="#二级或以上认证机构的构建">二级（或以上）认证机构的构建</a></li>
-            <li><a href="#二级或以上认证机构的证书签署">二级（或以上）认证机构的证书签署</a></li>
-            <li><a href="#现实中的证书签署">现实中的证书签署</a></li>
-          </ul>
-        </li>
-        <li><a href="#服务器的配置">服务器的配置</a></li>
-        <li><a href="#客户端验证服务器的身份">客户端验证服务器的身份</a>
-          <ul>
-            <li><a href="#单级认证机构的验证">单级认证机构的验证</a></li>
-            <li><a href="#二级或以上认证机构的验证">二级（或以上）认证机构的验证</a></li>
-          </ul>
-        </li>
-        <li><a href="#加密传输的数据">加密传输的数据</a>
-          <ul>
-            <li><a href="#现实中的证书验证">现实中的证书验证</a></li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-  </ul>
-
-  <ul>
-    <li><a href="#http09">HTTP/0.9</a></li>
-    <li><a href="#http1x">HTTP/1.x</a>
-      <ul>
-        <li><a href="#短链接模型">短链接模型</a></li>
-        <li><a href="#长连接模型">长连接模型</a></li>
-        <li><a href="#流水线模型管线化">流水线模型(管线化)</a>
-          <ul>
-            <li><a href="#队头阻塞">队头阻塞</a></li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-    <li><a href="#http2">HTTP/2</a>
-      <ul>
-        <li><a href="#二进制分帧层">二进制分帧层</a>
-          <ul>
-            <li><a href="#数据流消息和帧">数据流、消息和帧</a></li>
-            <li><a href="#请求与响应复用">请求与响应复用</a></li>
-            <li><a href="#数据流优先级">数据流优先级</a></li>
-            <li><a href="#流控制">流控制</a></li>
-            <li><a href="#服务器推送">服务器推送</a></li>
-            <li><a href="#标头压缩">标头压缩</a></li>
-            <li><a href="#哈夫曼树如何压缩">哈夫曼树如何压缩</a></li>
-            <li><a href="#体验http2">体验HTTP2</a></li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-    <li><a href="#https详解">HTTPS详解</a>
-      <ul>
-        <li><a href="#什么是https">什么是HTTPS？</a></li>
-        <li><a href="#http协议存在的问题">HTTP协议存在的问题？</a></li>
-        <li><a href="#https的优势">HTTPS的优势？</a></li>
-        <li><a href="#https协议">HTTPS协议</a></li>
-        <li><a href="#数字证书">数字证书</a></li>
-        <li><a href="#https工作流程">HTTPS工作流程</a></li>
-      </ul>
-    </li>
-    <li><a href="#虚拟ip原理">虚拟IP原理</a></li>
-  </ul>
-
-  <ul>
-    <li><a href="#tcp">TCP〰</a>
+    <li><a href="#快速排序">快速排序⏲</a></li>
+    <li><a href="#堆排序">堆排序🎳</a></li>
+    <li><a href="#堆topk">👠堆TopK</a></li>
+    <li><a href="#多问为什么">多问为什么！</a>
       <ul>
         <li>
           <ul>
-            <li><a href="#tcp中流的解释">TCP中流的解释</a></li>
-            <li><a href="#tcp报文格式">TCP报文格式</a></li>
-            <li><a href="#三次握手">三次握手：</a></li>
-            <li><a href="#四次挥手">四次挥手</a></li>
-            <li><a href="#tcp的4个定时器">TCP的4个定时器</a></li>
-            <li><a href="#保证传输可靠">保证传输可靠</a></li>
-            <li><a href="#流量控制">流量控制</a></li>
-            <li><a href="#控制tcp发送报文段的时机">控制TCP发送报文段的时机</a></li>
-            <li><a href="#拥塞控制">拥塞控制</a></li>
+            <li><a href="#-网络分层">🎚 网络分层</a></li>
+            <li><a href="#-为什么需要三次握手">🥉 为什么需要三次握手</a></li>
+            <li><a href="#-为什么是四次挥手">✋ 为什么是四次挥手？</a></li>
+            <li><a href="#-如果已经建立了连接但是客户端突然出现故障了怎么办">🏑 如果已经建立了连接，但是客户端突然出现故障了怎么办？</a></li>
+            <li><a href="#-get-和-post的区别">📉 ​GET 和 POST的区别</a></li>
+            <li><a href="#-http报文">🍂 HTTP报文</a>
+              <ul>
+                <li><a href="#请求报文">请求报文</a></li>
+                <li><a href="#响应报文">响应报文</a></li>
+              </ul>
+            </li>
+            <li><a href="#-http状态码">🚉 HTTP状态码：</a></li>
+            <li><a href="#-http的主要方法">✋ HTTP的主要方法</a></li>
+            <li><a href="#-http20与http10的区别">💫 HTTP2.0与HTTP1.0的区别</a></li>
+            <li><a href="#-什么是sql注入">📥 什么是SQL注入？</a></li>
+            <li><a href="#-cookie技术">🍪 Cookie技术</a></li>
+            <li><a href="#-session技术">💬 Session技术</a></li>
+            <li><a href="#-session和cookie的区别">📸 Session和Cookie的区别</a></li>
+            <li><a href="#-ip协议">© IP协议</a>
+              <ul>
+                <li><a href="#有了-ip-地址为什么还要用-mac-地址">有了 IP 地址，为什么还要用 MAC 地址</a></li>
+              </ul>
+            </li>
+            <li><a href="#-dns协议">🛰 DNS协议</a></li>
+            <li><a href="#heading"></a></li>
+            <li><a href="#-ftp协议">🗃 FTP协议</a></li>
           </ul>
         </li>
-        <li><a href="#流量控制-1">流量控制</a></li>
-        <li><a href="#拥塞控制-1">拥塞控制</a></li>
+        <li><a href="#x509-数字证书">X.509 数字证书</a>
+          <ul>
+            <li><a href="#数字证书的签署">数字证书的签署</a>
+              <ul>
+                <li><a href="#根认证机构的构建">根认证机构的构建</a></li>
+                <li><a href="#单级认证机构的证书签署">单级认证机构的证书签署</a></li>
+                <li><a href="#二级或以上认证机构的构建">二级（或以上）认证机构的构建</a></li>
+                <li><a href="#二级或以上认证机构的证书签署">二级（或以上）认证机构的证书签署</a></li>
+                <li><a href="#现实中的证书签署">现实中的证书签署</a></li>
+              </ul>
+            </li>
+            <li><a href="#服务器的配置">服务器的配置</a></li>
+            <li><a href="#客户端验证服务器的身份">客户端验证服务器的身份</a>
+              <ul>
+                <li><a href="#单级认证机构的验证">单级认证机构的验证</a></li>
+                <li><a href="#二级或以上认证机构的验证">二级（或以上）认证机构的验证</a></li>
+              </ul>
+            </li>
+            <li><a href="#加密传输的数据">加密传输的数据</a>
+              <ul>
+                <li><a href="#现实中的证书验证">现实中的证书验证</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
       </ul>
     </li>
-    <li><a href="#udp">UDP📦</a>
+    <li><a href="#http概述">HTTP概述</a>
+      <ul>
+        <li><a href="#http09">HTTP/0.9</a></li>
+        <li><a href="#http1x">HTTP/1.x</a>
+          <ul>
+            <li><a href="#短链接模型">短链接模型</a></li>
+            <li><a href="#长连接模型">长连接模型</a></li>
+            <li><a href="#流水线模型管线化">流水线模型(管线化)</a>
+              <ul>
+                <li><a href="#队头阻塞">队头阻塞</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#http2">HTTP/2</a>
+          <ul>
+            <li><a href="#二进制分帧层">二进制分帧层</a>
+              <ul>
+                <li><a href="#数据流消息和帧">数据流、消息和帧</a></li>
+                <li><a href="#请求与响应复用">请求与响应复用</a></li>
+                <li><a href="#数据流优先级">数据流优先级</a></li>
+                <li><a href="#流控制">流控制</a></li>
+                <li><a href="#服务器推送">服务器推送</a></li>
+                <li><a href="#标头压缩">标头压缩</a></li>
+                <li><a href="#哈夫曼树如何压缩">哈夫曼树如何压缩</a></li>
+                <li><a href="#体验http2">体验HTTP2</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#https详解">HTTPS详解</a>
+          <ul>
+            <li><a href="#什么是https">什么是HTTPS？</a></li>
+            <li><a href="#http协议存在的问题">HTTP协议存在的问题？</a></li>
+            <li><a href="#https的优势">HTTPS的优势？</a></li>
+            <li><a href="#https协议">HTTPS协议</a></li>
+            <li><a href="#数字证书">数字证书</a></li>
+            <li><a href="#https工作流程">HTTPS工作流程</a></li>
+          </ul>
+        </li>
+        <li><a href="#虚拟ip原理">虚拟IP原理</a></li>
+      </ul>
+    </li>
+    <li><a href="#传输层">传输层🚙</a>
+      <ul>
+        <li><a href="#tcp">TCP〰</a>
+          <ul>
+            <li>
+              <ul>
+                <li><a href="#tcp中流的解释">TCP中流的解释</a></li>
+                <li><a href="#tcp报文格式">TCP报文格式</a></li>
+                <li><a href="#三次握手">三次握手：</a></li>
+                <li><a href="#四次挥手">四次挥手</a></li>
+                <li><a href="#tcp的4个定时器">TCP的4个定时器</a></li>
+                <li><a href="#保证传输可靠">保证传输可靠</a></li>
+                <li><a href="#流量控制">流量控制</a></li>
+                <li><a href="#控制tcp发送报文段的时机">控制TCP发送报文段的时机</a></li>
+                <li><a href="#拥塞控制">拥塞控制</a>
+                  <ul>
+                    <li><a href="#几种方法">几种方法</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#流量控制-1">流量控制</a></li>
+            <li><a href="#拥塞控制-1">拥塞控制</a></li>
+          </ul>
+        </li>
+        <li><a href="#udp">UDP📦</a>
+          <ul>
+            <li>
+              <ul>
+                <li><a href="#heading-1"></a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#拥塞控制算法">拥塞控制算法</a>
+          <ul>
+            <li><a href="#算法分类">算法分类</a></li>
+            <li><a href="#如何感知拥塞">如何感知拥塞</a></li>
+            <li><a href="#拥塞控制基本策略">拥塞控制基本策略</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#一泡尿的时间快速读懂quic协议httpsjuejinimpost6844903985262903304">一泡尿的时间，快速读懂QUIC协议</a>
       <ul>
         <li>
           <ul>
-            <li><a href="#heading-1"></a></li>
+            <li><a href="#为什么需要quic">为什么需要QUIC？</a>
+              <ul>
+                <li><a href="#目标">目标</a></li>
+              </ul>
+            </li>
+            <li><a href="#quic连接过程">QUIC连接过程</a></li>
+            <li><a href="#quic连接迁移">QUIC连接迁移</a></li>
+            <li><a href="#quic解决队头阻塞问题">QUIC解决队头阻塞问题</a></li>
+            <li><a href="#quic的拥塞控制">QUIC的拥塞控制</a></li>
+            <li><a href="#quic前向纠错fec">QUIC前向纠错FEC</a></li>
+            <li><a href="#quic重传序列号单调递增">QUIC重传序列号单调递增</a></li>
+            <li><a href="#ack-delay">ACK Delay</a></li>
+            <li><a href="#更多的-ack-块">更多的 ACK 块</a></li>
+            <li><a href="#quic流量控制">QUIC流量控制</a></li>
           </ul>
         </li>
       </ul>
     </li>
-    <li><a href="#拥塞控制算法">拥塞控制算法</a>
-      <ul>
-        <li><a href="#算法分类">算法分类</a></li>
-        <li><a href="#如何感知拥塞">如何感知拥塞</a></li>
-        <li><a href="#拥塞控制基本策略">拥塞控制基本策略</a></li>
-      </ul>
-    </li>
-  </ul>
-
-  <ul>
-    <li>
-      <ul>
-        <li><a href="#为什么需要quic">为什么需要QUIC？</a>
-          <ul>
-            <li><a href="#目标">目标</a></li>
-          </ul>
-        </li>
-        <li><a href="#quic连接过程">QUIC连接过程</a></li>
-        <li><a href="#quic连接迁移">QUIC连接迁移</a></li>
-        <li><a href="#quic解决队头阻塞问题">QUIC解决队头阻塞问题</a></li>
-        <li><a href="#quic的拥塞控制">QUIC的拥塞控制</a></li>
-        <li><a href="#quic前向纠错fec">QUIC前向纠错FEC</a></li>
-        <li><a href="#quic重传序列号单调递增">QUIC重传序列号单调递增</a></li>
-        <li><a href="#ack-delay">ACK Delay</a></li>
-        <li><a href="#更多的-ack-块">更多的 ACK 块</a></li>
-        <li><a href="#quic流量控制">QUIC流量控制</a></li>
-      </ul>
-    </li>
-  </ul>
-
-  <ul>
-    <li>
+    <li><a href="#参考与更多">参考与更多➕</a>
       <ul>
         <li>
           <ul>
-            <li><a href="#进程线程协程区别">进程、线程、协程区别💠</a></li>
-            <li><a href="#进程的几种状态">进程的几种状态</a></li>
-            <li><a href="#死锁活锁和饥饿httpswwwcnblogscomktgup3529143html">死锁，活锁和饥饿🔐</a></li>
-            <li><a href="#什么是守护进程">什么是守护进程？</a></li>
-            <li><a href="#linux运行内存分区">Linux运行内存分区🚩</a></li>
-            <li><a href="#进程间通信">进程间通信🦅</a></li>
-            <li><a href="#线程间通信">线程间通信👂</a></li>
-            <li><a href="#什么是孤儿进程僵尸进程">什么是孤儿进程、僵尸进程？</a></li>
-            <li><a href="#内核态和用户态">内核态和用户态🏒</a></li>
-            <li><a href="#free函数如何知道要释放的空间大小">free()函数如何知道要释放的空间大小❓</a></li>
-            <li><a href="#中断和轮询的特点">中断和轮询的特点🥚</a></li>
-            <li><a href="#分段与分页">分段与分页👓</a></li>
-            <li><a href="#进程调度算法">进程调度算法🔌</a></li>
-            <li><a href="#页面置换算法">页面置换算法💱</a></li>
-            <li><a href="#磁盘调度算法">磁盘调度算法💾</a></li>
-            <li><a href="#内存分配算法">内存分配算法</a></li>
-            <li><a href="#伙伴算法和slab算法">伙伴算法和slab算法</a></li>
-            <li><a href="#mmap和brk的区别">mmap和brk的区别</a></li>
-            <li><a href="#如何查看端口是否被占用">如何查看端口是否被占用？</a></li>
-            <li><a href="#linux的fork实现">Linux的fork实现</a></li>
-            <li><a href="#malloc原理">Malloc原理🚴</a></li>
-            <li><a href="#mmap">mmap()</a></li>
-            <li><a href="#内存管理的本质">内存管理的本质</a></li>
-            <li><a href="#linux缓冲区">Linux缓冲区🐃</a></li>
-            <li><a href="#什么是rpc">什么是RPC</a></li>
-            <li><a href="#线程同步的方式有哪些">线程同步的方式有哪些？</a></li>
-            <li><a href="#中断和轮询的特点-1">中断和轮询的特点?</a></li>
-            <li><a href="#输入与输出">输入与输出</a></li>
+            <li>
+              <ul>
+                <li><a href="#进程线程协程区别">进程、线程、协程区别💠</a>
+                  <ul>
+                    <li><a href="#进程与线程的来由">进程与线程的来由☄</a></li>
+                    <li><a href="#进程与线程的数据">进程与线程的数据🗡</a></li>
+                    <li><a href="#上下文切换">上下文切换📊</a></li>
+                  </ul>
+                </li>
+                <li><a href="#进程的几种状态">进程的几种状态</a></li>
+                <li><a href="#死锁活锁和饥饿httpswwwcnblogscomktgup3529143html">死锁，活锁和饥饿🔐</a>
+                  <ul>
+                    <li><a href="#如何检测死锁">如何检测死锁</a></li>
+                    <li><a href="#死锁恢复">死锁恢复</a></li>
+                  </ul>
+                </li>
+                <li><a href="#什么是守护进程">什么是守护进程？</a></li>
+                <li><a href="#linux运行内存分区">Linux运行内存分区🚩</a></li>
+                <li><a href="#进程间通信">进程间通信🦅</a>
+                  <ul>
+                    <li><a href="#为什么共享内存更快">为什么共享内存更快？</a></li>
+                  </ul>
+                </li>
+                <li><a href="#线程间通信">线程间通信👂</a></li>
+                <li><a href="#什么是孤儿进程僵尸进程">什么是孤儿进程、僵尸进程？</a></li>
+                <li><a href="#内核态和用户态">内核态和用户态🏒</a>
+                  <ul>
+                    <li><a href="#用户态切换到内核态的3种方式">用户态切换到内核态的3种方式</a></li>
+                  </ul>
+                </li>
+                <li><a href="#free函数如何知道要释放的空间大小">free()函数如何知道要释放的空间大小❓</a></li>
+                <li><a href="#中断和轮询的特点">中断和轮询的特点🥚</a></li>
+                <li><a href="#分段与分页">分段与分页👓</a>
+                  <ul>
+                    <li><a href="#内存分段">内存分段</a></li>
+                    <li><a href="#内存分页">内存分页</a></li>
+                    <li><a href="#段页式管理">段页式管理</a></li>
+                  </ul>
+                </li>
+                <li><a href="#进程调度算法">进程调度算法🔌</a></li>
+                <li><a href="#页面置换算法">页面置换算法💱</a>
+                  <ul>
+                    <li><a href="#什么是页面置换算法">什么是页面置换算法？</a></li>
+                    <li><a href="#常见的页面置换算法">常见的页面置换算法</a></li>
+                  </ul>
+                </li>
+                <li><a href="#磁盘调度算法">磁盘调度算法💾</a></li>
+                <li><a href="#内存分配算法">内存分配算法</a>
+                  <ul>
+                    <li><a href="#首次适应算法first-fit">首次适应算法（First Fit）</a></li>
+                    <li><a href="#最佳适应算法best-fit">最佳适应算法（Best Fit)</a></li>
+                    <li><a href="#最差适应算法worst-fit">最差适应算法（Worst Fit)</a></li>
+                    <li><a href="#伙伴算法buddy">伙伴算法（buddy）</a></li>
+                    <li><a href="#slab分配算法">Slab分配算法</a></li>
+                    <li><a href="#cma算法">CMA算法</a></li>
+                  </ul>
+                </li>
+                <li><a href="#伙伴算法和slab算法">伙伴算法和slab算法</a>
+                  <ul>
+                    <li><a href="#伙伴算法buddy分配算法">伙伴算法(Buddy分配算法)</a></li>
+                    <li><a href="#slab分配算法-1">Slab分配算法</a></li>
+                    <li><a href="#slab与buddy的关系">Slab与Buddy的关系</a></li>
+                  </ul>
+                </li>
+                <li><a href="#mmap和brk的区别">mmap和brk的区别</a></li>
+                <li><a href="#如何查看端口是否被占用">如何查看端口是否被占用？</a></li>
+                <li><a href="#linux的fork实现">Linux的fork实现</a></li>
+                <li><a href="#malloc原理">Malloc原理🚴</a>
+                  <ul>
+                    <li><a href="#linux进程堆管理">Linux进程堆管理</a></li>
+                    <li><a href="#brk与sbrk">brk与sbrk</a></li>
+                    <li><a href="#简单实现malloc">简单实现malloc</a></li>
+                    <li><a href="#正式实现malloc">正式实现malloc</a></li>
+                    <li><a href="#calloc的实现">calloc的实现</a></li>
+                    <li><a href="#free的实现">free的实现</a></li>
+                    <li><a href="#realloc的实现">realloc的实现</a></li>
+                    <li><a href="#遗留问题和优化">遗留问题和优化</a></li>
+                  </ul>
+                </li>
+                <li><a href="#mmap">mmap()</a></li>
+                <li><a href="#内存管理的本质">内存管理的本质</a></li>
+                <li><a href="#linux缓冲区">Linux缓冲区🐃</a></li>
+                <li><a href="#什么是rpc">什么是RPC</a></li>
+                <li><a href="#线程同步的方式有哪些">线程同步的方式有哪些？</a></li>
+                <li><a href="#中断和轮询的特点-1">中断和轮询的特点?</a></li>
+                <li><a href="#输入与输出">输入与输出</a></li>
+              </ul>
+            </li>
           </ul>
         </li>
       </ul>

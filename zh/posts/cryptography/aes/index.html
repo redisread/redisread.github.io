@@ -3576,37 +3576,68 @@ document.addEventListener('DOMContentLoaded', function () {
   <div class="toc " data-dir="ltr" data-folding="true">
     <nav id="TableOfContents">
   <ul>
-    <li>
+    <li><a href="#对称加密">对称加密</a>
       <ul>
-        <li><a href="#对称加密模型">对称加密模型</a></li>
-        <li><a href="#对称加密的使用要求">对称加密的使用要求</a></li>
-      </ul>
-    </li>
-  </ul>
-
-  <ul>
-    <li>
-      <ul>
-        <li><a href="#算法原理">算法原理：</a>
+        <li>
           <ul>
-            <li><a href="#特点">特点</a></li>
-            <li><a href="#数学知识">数学知识</a></li>
-            <li><a href="#aes步骤详解">AES步骤详解</a></li>
+            <li><a href="#对称加密模型">对称加密模型</a></li>
+            <li><a href="#对称加密的使用要求">对称加密的使用要求</a></li>
           </ul>
         </li>
-        <li><a href="#实现步骤及代码">实现步骤及代码</a>
+      </ul>
+    </li>
+    <li><a href="#aes算法">AES算法</a>
+      <ul>
+        <li>
           <ul>
-            <li><a href="#密钥加法层">密钥加法层</a></li>
-            <li><a href="#aes密钥生成">AES密钥生成</a></li>
-            <li><a href="#字节替换层">字节替换层</a></li>
-            <li><a href="#行移位层">行移位层</a></li>
-            <li><a href="#列混淆层">列混淆层</a></li>
-            <li><a href="#密钥加法层-1">密钥加法层</a></li>
-            <li><a href="#实现加密函数">实现加密函数</a></li>
-            <li><a href="#实现解密函数">实现解密函数</a></li>
-            <li><a href="#测试加密解密函数">测试加密解密函数</a></li>
-            <li><a href="#实现加解密文件">实现加解密文件</a></li>
-            <li><a href="#aes五种加密模式">AES五种加密模式</a></li>
+            <li><a href="#算法原理">算法原理：</a>
+              <ul>
+                <li><a href="#特点">特点</a></li>
+                <li><a href="#数学知识">数学知识</a>
+                  <ul>
+                    <li><a href="#素域">素域</a>
+                      <ul>
+                        <li><a href="#素域内的算数运算规则如下">素域内的算数运算规则如下</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#扩展域">扩展域</a>
+                      <ul>
+                        <li><a href="#扩展域gf2m内的加减法">扩展域$GF(2^m)$内的加减法</a></li>
+                        <li><a href="#扩展域gf2m内的乘法">扩展域GF(2^m)内的乘法</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="#aes步骤详解">AES步骤详解</a></li>
+              </ul>
+            </li>
+            <li><a href="#实现步骤及代码">实现步骤及代码</a>
+              <ul>
+                <li><a href="#密钥加法层">密钥加法层</a></li>
+                <li><a href="#aes密钥生成">AES密钥生成</a></li>
+                <li><a href="#字节替换层">字节替换层</a></li>
+                <li><a href="#行移位层">行移位层</a></li>
+                <li><a href="#列混淆层">列混淆层</a></li>
+                <li><a href="#密钥加法层-1">密钥加法层</a></li>
+                <li><a href="#实现加密函数">实现加密函数</a></li>
+                <li><a href="#实现解密函数">实现解密函数</a></li>
+                <li><a href="#测试加密解密函数">测试加密解密函数</a></li>
+                <li><a href="#实现加解密文件">实现加解密文件</a></li>
+                <li><a href="#aes五种加密模式">AES五种加密模式</a>
+                  <ul>
+                    <li>
+                      <ul>
+                        <li><a href="#ecb模式电子密码本模式">ECB模式(电子密码本模式)</a></li>
+                        <li><a href="#cbc模式分组链接模式">CBC模式(分组链接模式)</a></li>
+                        <li><a href="#cfb模式密文反馈模式">CFB模式(密文反馈模式)</a></li>
+                        <li><a href="#ofb模式输出反馈模式">OFB模式(输出反馈模式)</a></li>
+                        <li><a href="#ctr模式计数器模式">CTR模式(计数器模式)</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
           </ul>
         </li>
       </ul>

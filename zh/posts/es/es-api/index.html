@@ -4435,53 +4435,67 @@ document.addEventListener('DOMContentLoaded', function () {
         <div class="toc toc__outer " data-dir="ltr" data-folding="true">
           <nav id="TableOfContents">
   <ul>
-    <li><a href="#es-http-api">ES HTTP API</a>
+    <li>
       <ul>
-        <li><a href="#创建索引">创建索引</a></li>
-        <li><a href="#关闭索引">关闭索引</a></li>
-        <li><a href="#打开索引">打开索引</a></li>
-        <li><a href="#删除索引">删除索引</a></li>
-        <li><a href="#展示索引">展示索引</a></li>
-        <li><a href="#读写索引">读写索引</a>
+        <li><a href="#es-http-api">ES HTTP API</a>
           <ul>
-            <li><a href="#创建文档">创建文档</a></li>
-            <li><a href="#更新文档">更新文档</a></li>
+            <li><a href="#创建索引">创建索引</a></li>
+            <li><a href="#关闭索引">关闭索引</a></li>
+            <li><a href="#打开索引">打开索引</a></li>
+            <li><a href="#删除索引">删除索引</a></li>
+            <li><a href="#展示索引">展示索引</a></li>
+            <li><a href="#读写索引">读写索引</a>
+              <ul>
+                <li><a href="#创建文档">创建文档</a></li>
+                <li><a href="#更新文档">更新文档</a>
+                  <ul>
+                    <li><a href="#查询并更新文档">查询并更新文档</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#查询索引">查询索引</a></li>
+            <li><a href="#查询文档">查询文档</a>
+              <ul>
+                <li>
+                  <ul>
+                    <li><a href="#1-根据-get-api-查询">1 根据 get api 查询</a></li>
+                    <li><a href="#2-根据-ids-query-查询">2 根据 ids query 查询</a></li>
+                    <li><a href="#3-根据-term--terms--match-查询">3 根据 term , terms , match 查询</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#查询返回指定的字段">查询返回指定的字段</a></li>
+            <li><a href="#去重">去重</a></li>
+            <li><a href="#公共参数设置">公共参数设置</a>
+              <ul>
+                <li><a href="#结果过滤参数filter_path">结果过滤参数filter_path</a></li>
+                <li><a href="#铺平参数flat_settings">铺平参数flat_settings</a></li>
+              </ul>
+            </li>
+            <li><a href="#请求参数查询">请求参数查询</a></li>
+            <li><a href="#reindex">ReIndex</a></li>
+            <li><a href="#mapping">Mapping</a></li>
           </ul>
         </li>
-        <li><a href="#查询索引">查询索引</a></li>
-        <li><a href="#查询文档">查询文档</a>
+        <li><a href="#es-java-api">ES Java API</a>
           <ul>
-            <li></li>
+            <li><a href="#添加依赖包">添加依赖包</a></li>
+            <li><a href="#rest-client">Rest Client</a></li>
+            <li><a href="#java-low-level-rest-client">Java Low Level REST Client</a></li>
+            <li><a href="#java-high-level-rest-client">Java High Level REST Client</a>
+              <ul>
+                <li><a href="#文档更新">文档更新</a></li>
+              </ul>
+            </li>
+            <li><a href="#scroll查询">Scroll查询</a></li>
           </ul>
         </li>
-        <li><a href="#查询返回指定的字段">查询返回指定的字段</a></li>
-        <li><a href="#去重">去重</a></li>
-        <li><a href="#公共参数设置">公共参数设置</a>
-          <ul>
-            <li><a href="#结果过滤参数filter_path">结果过滤参数filter_path</a></li>
-            <li><a href="#铺平参数flat_settings">铺平参数flat_settings</a></li>
-          </ul>
-        </li>
-        <li><a href="#请求参数查询">请求参数查询</a></li>
-        <li><a href="#reindex">ReIndex</a></li>
-        <li><a href="#mapping">Mapping</a></li>
+        <li><a href="#本地实践">本地实践</a></li>
+        <li><a href="#问题">问题</a></li>
       </ul>
     </li>
-    <li><a href="#es-java-api">ES Java API</a>
-      <ul>
-        <li><a href="#添加依赖包">添加依赖包</a></li>
-        <li><a href="#rest-client">Rest Client</a></li>
-        <li><a href="#java-low-level-rest-client">Java Low Level REST Client</a></li>
-        <li><a href="#java-high-level-rest-client">Java High Level REST Client</a>
-          <ul>
-            <li><a href="#文档更新">文档更新</a></li>
-          </ul>
-        </li>
-        <li><a href="#scroll查询">Scroll查询</a></li>
-      </ul>
-    </li>
-    <li><a href="#本地实践">本地实践</a></li>
-    <li><a href="#问题">问题</a></li>
   </ul>
 </nav>
         </div>

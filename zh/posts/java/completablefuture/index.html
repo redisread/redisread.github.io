@@ -4805,67 +4805,71 @@ document.addEventListener('DOMContentLoaded', function () {
   <ul>
     <li>
       <ul>
-        <li><a href="#多线程的问题">多线程的问题</a></li>
-        <li><a href="#future">Future</a>
+        <li>
           <ul>
-            <li><a href="#使用callable结合future">使用（Callable结合Future）</a></li>
-            <li><a href="#取消future">取消Future</a></li>
-            <li><a href="#invokeall方法">invokeAll方法</a></li>
-            <li><a href="#invokeany方法">invokeAny方法</a></li>
+            <li><a href="#多线程的问题">多线程的问题</a></li>
+            <li><a href="#future">Future</a>
+              <ul>
+                <li><a href="#使用callable结合future">使用（Callable结合Future）</a></li>
+                <li><a href="#取消future">取消Future</a></li>
+                <li><a href="#invokeall方法">invokeAll方法</a></li>
+                <li><a href="#invokeany方法">invokeAny方法</a></li>
+              </ul>
+            </li>
+            <li><a href="#future-的局限">Future 的局限</a></li>
+            <li><a href="#completablefuture简介">CompletableFuture简介</a>
+              <ul>
+                <li><a href="#completablefuture能够解决什么问题">CompletableFuture能够解决什么问题？</a></li>
+                <li><a href="#completablefuture具备什么功能">CompletableFuture具备什么功能？</a></li>
+              </ul>
+            </li>
+            <li><a href="#比较">比较</a></li>
+            <li><a href="#使用">使用</a>
+              <ul>
+                <li><a href="#简单使用">简单使用</a></li>
+                <li><a href="#runasync">runAsync()</a></li>
+                <li><a href="#supplyasync">supplyAsync()</a></li>
+                <li><a href="#thenapply">thenApply()</a></li>
+                <li><a href="#thenaccept-和-thenrun">thenAccept() 和 thenRun()</a></li>
+                <li><a href="#thencompose-组合">thenCompose()-组合</a></li>
+                <li><a href="#thencombine-组合操作">thenCombine()-组合操作</a></li>
+                <li><a href="#completablefutureallof-组合多个全部">CompletableFuture.allOf()-组合多个（全部）</a></li>
+                <li><a href="#completablefutureanyof-组合多个任意">CompletableFuture.anyOf()-组合多个（任意）</a></li>
+                <li><a href="#异常处理">异常处理</a></li>
+              </ul>
+            </li>
+            <li><a href="#区别">区别</a>
+              <ul>
+                <li><a href="#返回值">返回值</a></li>
+                <li><a href="#二元依赖">二元依赖</a></li>
+              </ul>
+            </li>
           </ul>
         </li>
-        <li><a href="#future-的局限">Future 的局限</a></li>
-        <li><a href="#completablefuture简介">CompletableFuture简介</a>
+        <li><a href="#总结">总结</a>
           <ul>
-            <li><a href="#completablefuture能够解决什么问题">CompletableFuture能够解决什么问题？</a></li>
-            <li><a href="#completablefuture具备什么功能">CompletableFuture具备什么功能？</a></li>
-          </ul>
-        </li>
-        <li><a href="#比较">比较</a></li>
-        <li><a href="#使用">使用</a>
-          <ul>
-            <li><a href="#简单使用">简单使用</a></li>
-            <li><a href="#runasync">runAsync()</a></li>
-            <li><a href="#supplyasync">supplyAsync()</a></li>
-            <li><a href="#thenapply">thenApply()</a></li>
-            <li><a href="#thenaccept-和-thenrun">thenAccept() 和 thenRun()</a></li>
-            <li><a href="#thencompose-组合">thenCompose()-组合</a></li>
-            <li><a href="#thencombine-组合操作">thenCombine()-组合操作</a></li>
-            <li><a href="#completablefutureallof-组合多个全部">CompletableFuture.allOf()-组合多个（全部）</a></li>
-            <li><a href="#completablefutureanyof-组合多个任意">CompletableFuture.anyOf()-组合多个（任意）</a></li>
-            <li><a href="#异常处理">异常处理</a></li>
-          </ul>
-        </li>
-        <li><a href="#区别">区别</a>
-          <ul>
-            <li><a href="#返回值">返回值</a></li>
-            <li><a href="#二元依赖">二元依赖</a></li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-    <li><a href="#总结">总结</a>
-      <ul>
-        <li><a href="#使用场景">使用场景</a>
-          <ul>
-            <li><a href="#多服务调用">多服务调用</a></li>
-            <li><a href="#多线程组装数据">多线程组装数据。</a></li>
-          </ul>
-        </li>
-        <li><a href="#原理">原理</a></li>
-        <li><a href="#java实战">Java实战</a>
-          <ul>
-            <li><a href="#java的并发之路">Java的并发之路</a></li>
-            <li><a href="#多线程并发内幕">多线程并发内幕</a></li>
-            <li><a href="#使多线程的演进过程">使多线程的演进过程</a></li>
-            <li><a href="#可能阻塞线程的因素">可能阻塞线程的因素</a></li>
-            <li><a href="#学习并发的模式">学习并发的模式</a></li>
-            <li><a href="#使用completablefuture">使用CompletableFuture</a></li>
-          </ul>
-        </li>
-        <li><a href="#java中的线程池">Java中的线程池</a>
-          <ul>
-            <li><a href="#线程池的好处">线程池的好处</a></li>
+            <li><a href="#使用场景">使用场景</a>
+              <ul>
+                <li><a href="#多服务调用">多服务调用</a></li>
+                <li><a href="#多线程组装数据">多线程组装数据。</a></li>
+              </ul>
+            </li>
+            <li><a href="#原理">原理</a></li>
+            <li><a href="#java实战">Java实战</a>
+              <ul>
+                <li><a href="#java的并发之路">Java的并发之路</a></li>
+                <li><a href="#多线程并发内幕">多线程并发内幕</a></li>
+                <li><a href="#使多线程的演进过程">使多线程的演进过程</a></li>
+                <li><a href="#可能阻塞线程的因素">可能阻塞线程的因素</a></li>
+                <li><a href="#学习并发的模式">学习并发的模式</a></li>
+                <li><a href="#使用completablefuture">使用CompletableFuture</a></li>
+              </ul>
+            </li>
+            <li><a href="#java中的线程池">Java中的线程池</a>
+              <ul>
+                <li><a href="#线程池的好处">线程池的好处</a></li>
+              </ul>
+            </li>
           </ul>
         </li>
       </ul>

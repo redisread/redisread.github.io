@@ -2603,13 +2603,17 @@ document.addEventListener('DOMContentLoaded', function () {
   <div class="toc " data-dir="ltr" data-folding="true">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#深度像素格式">深度像素格式</a></li>
-    <li><a href="#way1直接使用enqueue_render_command命令获取效率较低">Way1：直接使用ENQUEUE_RENDER_COMMAND命令获取(效率较低)</a></li>
-    <li><a href="#way2写个请求类读取">Way2：写个请求类读取</a>
+    <li><a href="#获取深度缓存">获取深度缓存</a>
       <ul>
-        <li><a href="#1-首先在项目的buildcs文件添加">1. 首先在项目的build.cs文件添加：</a></li>
-        <li><a href="#2-类实现">2. 类实现</a></li>
-        <li><a href="#3-调用">3. 调用</a></li>
+        <li><a href="#深度像素格式">深度像素格式</a></li>
+        <li><a href="#way1直接使用enqueue_render_command命令获取效率较低">Way1：直接使用ENQUEUE_RENDER_COMMAND命令获取(效率较低)</a></li>
+        <li><a href="#way2写个请求类读取">Way2：写个请求类读取</a>
+          <ul>
+            <li><a href="#1-首先在项目的buildcs文件添加">1. 首先在项目的build.cs文件添加：</a></li>
+            <li><a href="#2-类实现">2. 类实现</a></li>
+            <li><a href="#3-调用">3. 调用</a></li>
+          </ul>
+        </li>
       </ul>
     </li>
   </ul>
