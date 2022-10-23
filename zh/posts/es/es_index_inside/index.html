@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>ES索引原理 – ✏Victor&#39;s Blog</title>
+    <title>ES原理分析 – ✏Victor&#39;s Blog</title>
     
 
   
@@ -1160,7 +1160,7 @@
 
 
 <meta property="og:site_name" content="✏Victor&#39;s Blog">
-<meta property="og:title" content="ES索引原理">
+<meta property="og:title" content="ES原理分析">
 <meta property="og:url" content="https://hugo.jiahongw.com/zh/posts/es/es_index_inside/">
 <meta property="og:type" content="article">
 <meta property="og:description" content="ES是基于Lucene的存储应用，核心是倒排索引。">
@@ -1192,7 +1192,7 @@
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "headline": "ES索引原理",
+    "headline": "ES原理分析",
     "datePublished": "2022-10-01T14:30:00Z",
     "dateModified": "2022-10-01T14:30:00Z",
     "url" : "https://hugo.jiahongw.com/zh/posts/es/es_index_inside/",
@@ -1480,7 +1480,7 @@
   
   <li  class="is-active" >
     
-      <span>ES索引原理</span>
+      <span>ES原理分析</span>
     
   </li>
   
@@ -1489,7 +1489,7 @@
 </nav>
   
   <div class="single">
-    <h2 class="single__title">ES索引原理</h2>
+    <h2 class="single__title">ES原理分析</h2>
     <div class="single__meta">
       
 <div class="single__infos">
@@ -1527,7 +1527,7 @@
 <p>ES作为一种非关系型数据库，他和传统的关系型数据库有什么区别呢？(参考：<a href="https://www.trustradius.com/compare-products/elasticsearch-vs-mysql">elasticsearch-vs-mysql</a>)</p>
 <ul>
 <li>底层的数据结构不同，ES使用<strong>倒排索引</strong>，而MySQL使用<strong>B+树</strong>。</li>
-<li>MySQL支持事务，ES不支持事务，可以这么认为，MySQL更加适合OLTP，ES更适合OLAP。</li>
+<li>MySQL<strong>支持事务</strong>，ES<strong>不支持事务</strong>，可以这么认为，<strong>MySQL更加适合OLTP，ES更适合OLAP</strong>。</li>
 <li>MYSQL是单机的，ES是分布式的，支持水平拓展以及高可用的特性。</li>
 <li>ES拥有灵活的数据类型，创建更多的索引（默认都是索引）。</li>
 </ul>
@@ -1540,15 +1540,15 @@
 <li>
 <p>全文检索（模糊查询）</p>
 <p>常见：百科搜索（百度百科、维基百科）、论坛博客（CSDN、简书、掘金、Stack Overflow）、电商网站（京东、淘宝、拼多多）</p>
-<p><img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/1fa18cca-c0e7-4d00-bd0b-5a6079a00233/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20221023%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20221023T124523Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=a6671dad07bbfe7cb6e382a8f6bb5f6af222ff5ed46ba372cfc6082590e7b828&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject" alt="" /></p>
+<p><img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/1fa18cca-c0e7-4d00-bd0b-5a6079a00233/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20221023%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20221023T164842Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=a978e05077ef804401f713261f069d78649a6b7a59c764b9c2d459fd2d8cebd0&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject" alt="" /></p>
 </li>
 <li>
 <p>日志收集和监控</p>
-<p><img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/f8bf9578-c4f5-427e-9a25-f9b05d23ba4a/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20221023%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20221023T124523Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=25f9580df310ce8174e498a43e20d6105475facaacff4e1989caeb1f673f264d&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject" alt="" /></p>
+<p><img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/f8bf9578-c4f5-427e-9a25-f9b05d23ba4a/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20221023%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20221023T164842Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=137940762a30df940cc0218e6924d45cf2e3110be22b072a1231046a56859bf3&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject" alt="" /></p>
 </li>
 <li>
 <p>BI系统</p>
-<p><img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/03c3b7e5-76f1-4066-8483-b6965bfd383f/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20221023%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20221023T124528Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=4689eece36945c58d431907aa2c39f4403f8b04b4178827c46c93006ecc7091a&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject" alt="" /></p>
+<p><img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/03c3b7e5-76f1-4066-8483-b6965bfd383f/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20221023%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20221023T164842Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=e6288e94e77a05bc562579354ef479215a64a2a2035de98ec1815b3c5c20538f&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject" alt="" /></p>
 </li>
 <li>
 <p>结构化查询和数据异构</p>
@@ -1565,8 +1565,11 @@
 <p>常常说ES(Lucene)的底层结构是<a href="https://zh.m.wikipedia.org/zh/%E5%80%92%E6%8E%92%E7%B4%A2%E5%BC%95">倒排索引</a>，其实ES的索引构建由<strong>词典</strong>和<strong>倒排表</strong>构成，其中<strong>词典结构</strong><br />
 尤为重要。</p>
 <hr />
-<p>📗<strong>词典-FS</strong></p>
-<p>各种词典结构的优点和缺点（参考：<a href="https://www.jianshu.com/p/b00079460b29">Lucene底层原理</a>）：</p>
+<p>📗<strong>词典-FST</strong></p>
+<blockquote>
+<p>参考：<a href="https://www.jianshu.com/p/b00079460b29">Lucene底层原理</a> 和 <a href="https://www.shenyanchao.cn/blog/2018/12/04/lucene-fst/">关于Lucene的词典FST深入剖析 | 申艳超-博客</a></p>
+</blockquote>
+<p>各种词典结构的优点和缺点：</p>
 <p><img src="https://raw.githubusercontent.com/redisread/Image/master/notionimg/14/db/14dbdcb181a44b4e0baa56fe25a2fa1c.png" alt="" /></p>
 <p>上面列出的一些词典的结构，最简单如排序数组，可以通过二分查找来检索数据；更快的有在内存直接使用的哈希表；磁盘查找有B树、B+树，其中<a href="https://www.mysql.com/">MySQL</a>是使用B+树作为词典；而<a href="https://redis.io/">Redis</a>使用跳跃表和哈希表等。</p>
 <p>但一个能支持TB级数据的倒排索引结构需要在时间和空间上有个平衡，主要有如下的三种主要实现方式提供ES进行选择：B+树、跳跃表、FST</p>
@@ -1601,7 +1604,7 @@
 </tr>
 </tbody>
 </table>
-<p>lucene从4.x开始大量使用的数据结构是FST（Finite State Transducer,有限状态转换器）。FST有两个优点：</p>
+<p>lucene从4.x开始大量使用的数据结构是<strong>FST</strong>（<em>Finite State Transducer,有限状态转换器</em>）。FST有两个优点：</p>
 <ol>
 <li><strong>空间占用小</strong>。通过对词典中单词前缀和后缀的重复利用，压缩了存储空间。</li>
 <li><strong>查询速度快</strong>。O(len(str))的查询时间复杂度。（str是输入的查询字符串长度）</li>
@@ -1612,13 +1615,13 @@
 <pre><code>假设我们有一个这样的Set: mon,tues,thurs。FST是这样的：
 
 
-![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/7a521058-a827-44d4-b6b2-60de6c13d7bc/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20221023%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20221023T124529Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=e8a1679a7aea1f591fccb8516d28e17c699ab7174e409608a3b39baaa359df34&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject)
+![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/7a521058-a827-44d4-b6b2-60de6c13d7bc/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20221023%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20221023T164843Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=74596cfa38102bd80a510b20486234e76b4bea4e8da9379787769a7f9cdcc57a&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject)
 
 
 相应的TRIE则是这样的，只共享了前缀。
 
 
-![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/84212a63-12c8-424c-89dd-2e386a0d4a81/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20221023%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20221023T124529Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=9ed0cff71994e8ea0206c26f602b7b820774eb64d8859d28ee33104d97ed1c3b&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject)
+![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/84212a63-12c8-424c-89dd-2e386a0d4a81/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20221023%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20221023T164843Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=22411d4c1e81b9ccee867150092a3c1287bea1c8524d15966dc1fc8f5c8d7039&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject)
 </code></pre>
 <hr />
 <p><strong>♾️ 倒排表</strong></p>
@@ -1793,7 +1796,7 @@
 <li>Query阶段：得到目标结果对应的doc Id和排序信息，并且做聚合</li>
 <li>Fetch阶段：根据doc Id列表查找对应的数据内容</li>
 </ul>
-<p><img src="https://raw.githubusercontent.com/redisread/Image/master/notionimg/a3/02/a30230aa3d75f567b6aca192e2096022.png" alt="" /></p>
+<p><img src="https://raw.githubusercontent.com/redisread/Image/master/notionimg/f6/72/f672ef3b12c55a8038869fdb93bf1a62.png" alt="" /></p>
 <h3 id="定时合并段文件flush"><strong>定时合并段文件Flush</strong></h3>
 <p>由于自动刷新流程（每秒）每秒会创建一个新的段 ，这样会导致短时间内的段数量暴增。而段数目太多会带来较大的麻烦。 每一个段都会消耗文件句柄、内存和cpu运行周期。更重要的是，每个搜索请求都必须轮流检查每个段然后合并查询结果，所以段越多，搜索也就越慢。</p>
 <p>es 有一个后台程序，用于 <strong>merge</strong> 合并这些 segment 文件，把小 segment 整合到一个大的 segment 中，并修改 commit point 的 segment 记录。<strong>merge 过程还会清理被删除的数据。</strong></p>
@@ -1830,7 +1833,7 @@
 </li>
 <li>
 <p><strong>动态扩容</strong>：之前的两个节点继续水平扩容，再增加一个节点，此时集群状态会如下图所示：</p>
-<p><img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/6287459d-93c7-4448-a50c-3d01ccede2b3/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20221023%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20221023T124530Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=6477babfd5bbaf474c4e04a6342d0748fd14e8d0f7d81ad716d924ddce81e437&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject" alt="" /></p>
+<p><img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/6287459d-93c7-4448-a50c-3d01ccede2b3/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20221023%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20221023T164845Z&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=1e90280ae0f61e97b23cf87501b25ad21f16a8848fbb01e86afe37a01285e91e&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject" alt="" /></p>
 <p>为了分散负载，ES 会对分片进行重新分配。Node 1 和 Node 2 上各有一个分片被迁移到了新的 Node 3 节点，现在每个节点上都拥有2个分片，而不是之前的3个。</p>
 </li>
 </ul>
@@ -2060,7 +2063,7 @@
 <ul>
 <li>
 <p><strong>ES模糊查询导致CPU飙升</strong></p>
-<p><a href="https://elasticsearch.cn/article/171">bookmark</a></p>
+<p><a href="https://elasticsearch.cn/article/171">[原创] ElasticSearch集群故障案例分析: 警惕通配符查询 - Elastic 中文社区</a></p>
 </li>
 <li>
 <p><strong>分片设置不合理导致ES写入挤压</strong></p>
@@ -2068,11 +2071,12 @@
 </ul>
 <hr />
 <p>参考：</p>
-<p><a href="https://www.6aiq.com/article/1627091326793">bookmark</a></p>
-<p><a href="https://blog.csdn.net/truelove12358/article/details/105577414">bookmark</a></p>
-<p><a href="https://blog.csdn.net/waltonhuang/article/details/106694326">bookmark</a></p>
-<p><a href="https://elasticsearch.cn/article/446">bookmark</a></p>
-<p><a href="https://www.6aiq.com/article/1627091326793">bookmark</a></p>
+<ul>
+<li><a href="https://www.6aiq.com/article/1627091326793">去哪儿网 | Lucene 倒排索引原理 - AIQ</a></li>
+<li><a href="https://blog.csdn.net/truelove12358/article/details/105577414">Elasticsearch倒排索引与B+Tree对比_MayMatrix的博客-CSDN博客_倒排索引和b+索引的区别</a></li>
+<li><a href="https://blog.csdn.net/waltonhuang/article/details/106694326">b-k-d树 原理 图文解析_stevewongbuaa的博客-CSDN博客_bkd树</a></li>
+<li><a href="https://elasticsearch.cn/article/446">number?keyword?傻傻分不清楚 - Elastic 中文社区</a></li>
+</ul>
 
     </article>
     <script>
@@ -2139,13 +2143,13 @@
       
     
       
-        <a href="https://twitter.com/intent/tweet?text=ES%e7%b4%a2%e5%bc%95%e5%8e%9f%e7%90%86&url=https%3a%2f%2fhugo.jiahongw.com%2fzh%2fposts%2fes%2fes_index_inside%2f&hashtags=ES%2cES%e7%b4%a2%e5%bc%95%2cLucene&via=Victor" title="Twitter" aria-label="Twitter Share Button" class="donation__item" target="_blank" rel="noreferrer" data-type="share">
+        <a href="https://twitter.com/intent/tweet?text=ES%e5%8e%9f%e7%90%86%e5%88%86%e6%9e%90&url=https%3a%2f%2fhugo.jiahongw.com%2fzh%2fposts%2fes%2fes_index_inside%2f&hashtags=ES%2cES%e7%b4%a2%e5%bc%95%2cLucene&via=Victor" title="Twitter" aria-label="Twitter Share Button" class="donation__item" target="_blank" rel="noreferrer" data-type="share">
           <svg data-name="twitter" enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="35" height="35" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="m21.534 7.113c.976-.693 1.797-1.558 2.466-2.554v-.001c-.893.391-1.843.651-2.835.777 1.02-.609 1.799-1.566 2.165-2.719-.951.567-2.001.967-3.12 1.191-.903-.962-2.19-1.557-3.594-1.557-2.724 0-4.917 2.211-4.917 4.921 0 .39.033.765.114 1.122-4.09-.2-7.71-2.16-10.142-5.147-.424.737-.674 1.58-.674 2.487 0 1.704.877 3.214 2.186 4.089-.791-.015-1.566-.245-2.223-.606v.054c0 2.391 1.705 4.377 3.942 4.835-.401.11-.837.162-1.29.162-.315 0-.633-.018-.931-.084.637 1.948 2.447 3.381 4.597 3.428-1.674 1.309-3.8 2.098-6.101 2.098-.403 0-.79-.018-1.177-.067 2.18 1.405 4.762 2.208 7.548 2.208 8.683 0 14.342-7.244 13.986-14.637z"/></svg>
         </a>
       
     
       
-        <a href="https://www.reddit.com/submit?url=https%3a%2f%2fhugo.jiahongw.com%2fzh%2fposts%2fes%2fes_index_inside%2f&amp;title=ES%e7%b4%a2%e5%bc%95%e5%8e%9f%e7%90%86" target="_blank" rel="noreferer" title="Reddit" aria-label="Reddit Share Button" onclick="window.open('http://www.reddit.com/submit?url=' + encodeURIComponent(document.URL) + '&amp;title=' +  encodeURIComponent(document.title)); return false;" class="donation__item" data-type="share">
+        <a href="https://www.reddit.com/submit?url=https%3a%2f%2fhugo.jiahongw.com%2fzh%2fposts%2fes%2fes_index_inside%2f&amp;title=ES%e5%8e%9f%e7%90%86%e5%88%86%e6%9e%90" target="_blank" rel="noreferer" title="Reddit" aria-label="Reddit Share Button" onclick="window.open('http://www.reddit.com/submit?url=' + encodeURIComponent(document.URL) + '&amp;title=' +  encodeURIComponent(document.title)); return false;" class="donation__item" data-type="share">
           <svg data-name="reddit" enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="35" height="35" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="m21.325 9.308c-.758 0-1.425.319-1.916.816-1.805-1.268-4.239-2.084-6.936-2.171l1.401-6.406 4.461 1.016c0 1.108.89 2.013 1.982 2.013 1.113 0 2.008-.929 2.008-2.038s-.889-2.038-2.007-2.038c-.779 0-1.451.477-1.786 1.129l-4.927-1.108c-.248-.067-.491.113-.557.365l-1.538 7.062c-2.676.113-5.084.928-6.895 2.197-.491-.518-1.184-.837-1.942-.837-2.812 0-3.733 3.829-1.158 5.138-.091.405-.132.837-.132 1.268 0 4.301 4.775 7.786 10.638 7.786 5.888 0 10.663-3.485 10.663-7.786 0-.431-.045-.883-.156-1.289 2.523-1.314 1.594-5.115-1.203-5.117zm-15.724 5.41c0-1.129.89-2.038 2.008-2.038 1.092 0 1.983.903 1.983 2.038 0 1.109-.89 2.013-1.983 2.013-1.113.005-2.008-.904-2.008-2.013zm10.839 4.798c-1.841 1.868-7.036 1.868-8.878 0-.203-.18-.203-.498 0-.703.177-.18.491-.18.668 0 1.406 1.463 6.07 1.488 7.537 0 .177-.18.491-.18.668 0 .207.206.207.524.005.703zm-.041-2.781c-1.092 0-1.982-.903-1.982-2.011 0-1.129.89-2.038 1.982-2.038 1.113 0 2.008.903 2.008 2.038-.005 1.103-.895 2.011-2.008 2.011z"/></svg>
         </a>
       
@@ -2331,7 +2335,7 @@
 <script>
   var gitalk = new Gitalk({
     id: '2022-10-01 14:30:00 \x2b0000 UTC',
-    title: 'ES索引原理',
+    title: 'ES原理分析',
     clientID: '5880093503923d139adb',
     clientSecret: 'aa0741ecdc011069553c3c898e8e0f54915af0bb',
     repo: 'redisread.github.io',
