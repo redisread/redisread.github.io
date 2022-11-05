@@ -25,15 +25,6 @@
         <description>创建线程池的方法： 1 2 3 4 ExecutorService executorService = Executors.newCachedThreadPool(); ExecutorService executorService = Executors.newFixedThreadPool(3); ScheduledExecutorService executorService = Executors.newScheduledThreadPool(3); ExecutorService executorService = Executors.newSingleThreadExecutor(); https://www.cnblogs.com/pcheng/p/13540619.html 多线程的问题 线程任务是实现了Runnable接口，或者直接写个类继承Thread</description>
       </item>
       
-      <item>
-        <title>maven目录结构</title>
-        <link>https://hugo.jiahongw.com/zh/posts/middleware/maven-dir/</link>
-        <pubDate>Thu, 24 Jun 2021 12:42:44 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        <guid>https://hugo.jiahongw.com/zh/posts/middleware/maven-dir/</guid>
-        <description>基本运作流程 Maven工具在本地有一个存储库，然后当本地存储库没有的情况下会自动的去中央仓库寻找并且下载到本地存储库，然后在执行自动化构建。</description>
-      </item>
-      
     
   </channel>
 </rss>

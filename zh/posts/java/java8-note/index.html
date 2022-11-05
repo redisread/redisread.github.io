@@ -1493,7 +1493,7 @@
     <div class="single__meta">
       
 <div class="single__infos">
-  <time class="single__info" title="创建日期">📅&nbsp;2021年09月09日 </time>  &middot; <span class="single__info" title="阅读时长"> ☕ 6 分钟 </span>&middot; <span class="single__info" title="作者">🥊&nbsp;Victor</span>
+  <time class="single__info" title="创建日期">📅&nbsp;2021年09月09日 </time>  &middot; <span class="single__info" title="阅读时长"> ☕ 7 分钟 </span>&middot; <span class="single__info" title="作者">🥊&nbsp;Victor</span>
   <span class="single__info">
     
   </span>
@@ -1916,6 +1916,30 @@ Exception in thread &quot;main&quot; java.lang.IllegalStateException: stream has
 <p><a href="https://blog.csdn.net/weixin_41835612/article/details/83713891">Java8 Stream使用flatMap合并List</a></p>
 <h4 id="completablefuture">CompletableFuture</h4>
 <p><a href="https://km.sankuai.com/page/212004627">CompletableFuture的使用</a></p>
+<h2 id="java语法糖">Java语法糖</h2>
+<h4 id="函数式接口">函数式接口</h4>
+<ul>
+<li>
+<p>Supplier接口(供应接口)</p>
+<p>java.util.function.Supplier<T> 接口仅包含一个无参的方法： T get() 。用来获取一个泛型参数指定类型的对象数据。由于这是一个函数式接口，</p>
+<p>这也就意味着对应的Lambda表达式需要“<strong>对外提供</strong>”一个符合泛型类型的对象数据。</p>
+</li>
+<li>
+<p>Consumer接口</p>
+<p>java.util.function.Consumer<T> 接口则正好与Supplier接口相反，它不是生产一个数据，而是<strong>消费</strong>一个数据，其数据类型由泛型决定</p>
+<p><strong>抽象方法：accept</strong></p>
+<p>Consumer 接口中包含抽象方法 void accept(T t) ，意为消费一个指定泛型的数据。</p>
+</li>
+<li>
+<p>Predicate接口</p>
+</li>
+<li>
+<p>Function接口</p>
+<p>java.util.function.Function&lt;T,R&gt; 接口用来根据一个类型的数据得到另一个类型的数据，前者称为前置条件，后者称为后置条件</p>
+</li>
+</ul>
+<p><code>Supplier</code> 的一个主要用例是<strong>延迟执行</strong>（deferred execution）</p>
+<p><a href="https://geek-docs.com/java/java-examples/java-using-supplier-create-log-messages.html">Java 利用Supplier创建日志消息|极客教程</a></p>
 
     </article>
     <script>
@@ -2134,10 +2158,6 @@ Exception in thread &quot;main&quot; java.lang.IllegalStateException: stream has
         
         <li>
           <a href="/zh/posts/java/boxing-unboxing/" class="related__link">Java装箱拆箱</a>
-        </li>
-        
-        <li>
-          <a href="/zh/posts/middleware/maven-dir/" class="related__link">maven目录结构</a>
         </li>
         
     </ul>
@@ -3214,14 +3234,14 @@ document.addEventListener('DOMContentLoaded', function () {
       
       
         
-      
-        
         
           
             
               <a href="https://hugo.jiahongw.com/zh/posts/java/java8-note/" data-lang="zh" class="dropdown-item is-active">中文</a>
             
           
+        
+      
         
       
         
@@ -3391,6 +3411,15 @@ document.addEventListener('DOMContentLoaded', function () {
                 <li><a href="#partition">partition</a></li>
                 <li><a href="#flatmap">flatMap</a></li>
                 <li><a href="#completablefuture">CompletableFuture</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#java语法糖">Java语法糖</a>
+          <ul>
+            <li>
+              <ul>
+                <li><a href="#函数式接口">函数式接口</a></li>
               </ul>
             </li>
           </ul>

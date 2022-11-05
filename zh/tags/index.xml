@@ -44,24 +44,6 @@
       </item>
       
       <item>
-        <title>gg</title>
-        <link>https://hugo.jiahongw.com/zh/tags/gg/</link>
-        <pubDate>Wed, 28 Sep 2022 16:22:00 +0000</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        <guid>https://hugo.jiahongw.com/zh/tags/gg/</guid>
-        <description></description>
-      </item>
-      
-      <item>
-        <title>test</title>
-        <link>https://hugo.jiahongw.com/zh/tags/test/</link>
-        <pubDate>Wed, 28 Sep 2022 16:22:00 +0000</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        <guid>https://hugo.jiahongw.com/zh/tags/test/</guid>
-        <description></description>
-      </item>
-      
-      <item>
         <title>CompletableFuture</title>
         <link>https://hugo.jiahongw.com/zh/tags/completablefuture/</link>
         <pubDate>Mon, 28 Mar 2022 17:38:53 +0800</pubDate>
@@ -386,15 +368,6 @@
       </item>
       
       <item>
-        <title>Maven</title>
-        <link>https://hugo.jiahongw.com/zh/tags/maven/</link>
-        <pubDate>Thu, 24 Jun 2021 12:42:44 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        <guid>https://hugo.jiahongw.com/zh/tags/maven/</guid>
-        <description></description>
-      </item>
-      
-      <item>
         <title>策略模式</title>
         <link>https://hugo.jiahongw.com/zh/tags/%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F/</link>
         <pubDate>Sat, 27 Mar 2021 11:12:34 +0800</pubDate>
@@ -521,7 +494,7 @@
       </item>
       
       <item>
-        <title>Epoll</title>
+        <title>epoll</title>
         <link>https://hugo.jiahongw.com/zh/tags/epoll/</link>
         <pubDate>Wed, 18 Nov 2020 11:43:19 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
@@ -751,15 +724,6 @@
         <pubDate>Sat, 11 Apr 2020 23:24:18 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/tags/shell/</guid>
-        <description></description>
-      </item>
-      
-      <item>
-        <title>docker</title>
-        <link>https://hugo.jiahongw.com/zh/tags/docker/</link>
-        <pubDate>Thu, 09 Apr 2020 17:00:28 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        <guid>https://hugo.jiahongw.com/zh/tags/docker/</guid>
         <description></description>
       </item>
       

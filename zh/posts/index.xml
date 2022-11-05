@@ -18,29 +18,11 @@
       
       <item>
         <title>ES原理分析</title>
-        <link>https://hugo.jiahongw.com/zh/posts/es/es_index_inside/</link>
-        <pubDate>Sat, 01 Oct 2022 14:30:00 +0000</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        <guid>https://hugo.jiahongw.com/zh/posts/es/es_index_inside/</guid>
-        <description>简介 什么是ES？ ES的全称是ElasticSearch（下面简称ES），是一个分布式、高扩展、近实时的搜索与数据分析引擎（底层基于Apach</description>
-      </item>
-      
-      <item>
-        <title>ES原理分析</title>
         <link>https://hugo.jiahongw.com/zh/posts/notion/es/202210011430/</link>
         <pubDate>Sat, 01 Oct 2022 14:30:00 +0000</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/posts/notion/es/202210011430/</guid>
         <description>简介 什么是ES？ ES的全称是ElasticSearch（下面简称ES），是一个分布式、高扩展、近实时的搜索与数据分析引擎（底层基于Apach</description>
-      </item>
-      
-      <item>
-        <title>Test</title>
-        <link>https://hugo.jiahongw.com/zh/posts/efficient/test/</link>
-        <pubDate>Wed, 28 Sep 2022 16:22:00 +0000</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        <guid>https://hugo.jiahongw.com/zh/posts/efficient/test/</guid>
-        <description>HED 1 💡 test 11111111111111 HED2 2222222222222 3222222 I am a man classDiagram Strategy &amp;lt;|-- StrategyA : implements Strategy &amp;lt;|-- StrategyB : implements Strategy : algorithmInterface() StrategyA : algorithmInterface() StrategyB : algorithmInterface() https://zenn.dev/eetann/articles/2022-08-15-notion-api-with-github-actions 1 sdasdjasdasda</description>
       </item>
       
       <item>
@@ -59,42 +41,6 @@
         <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/posts/designpattern/design-pattern-note/</guid>
         <description>设计原则 1.单一职责原则 2.开闭原则 3.里氏替换原则 4.依赖注入原则 5.接口分离原则 6.迪米特原则 将变化的东西抽离出来并且封装，一方面和原来</description>
-      </item>
-      
-      <item>
-        <title>ES索引原理</title>
-        <link>https://hugo.jiahongw.com/zh/posts/es/es-index/</link>
-        <pubDate>Sun, 27 Mar 2022 16:37:50 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        <guid>https://hugo.jiahongw.com/zh/posts/es/es-index/</guid>
-        <description>索引原理 Lucene 倒排索引，具体的索引层级： Lucene的索引细节： Term Index是一个字典树，保存了单词的前缀和其在Term Dictionary中位</description>
-      </item>
-      
-      <item>
-        <title>ES-mappings</title>
-        <link>https://hugo.jiahongw.com/zh/posts/es/es-mappings/</link>
-        <pubDate>Sun, 27 Mar 2022 14:52:00 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        <guid>https://hugo.jiahongw.com/zh/posts/es/es-mappings/</guid>
-        <description>ES Mappings ES的Mappings的作用类似mysql中定义表结构的schema，用来定义一个文档格式，例如包含的字段，是否倒排，是否存储等等。主要</description>
-      </item>
-      
-      <item>
-        <title>ES API参考</title>
-        <link>https://hugo.jiahongw.com/zh/posts/es/es-api/</link>
-        <pubDate>Sun, 27 Mar 2022 14:42:03 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        <guid>https://hugo.jiahongw.com/zh/posts/es/es-api/</guid>
-        <description>ES HTTP API 使用模板： 创建索引 创建一个索引的方法很简单，在Kibana中运行下行请求即可创建一个名为“index1”的索引 1 PUT /index1 可以增加相关设置和</description>
-      </item>
-      
-      <item>
-        <title>ES相关问题</title>
-        <link>https://hugo.jiahongw.com/zh/posts/es/es-problems/</link>
-        <pubDate>Sun, 27 Mar 2022 10:36:37 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        <guid>https://hugo.jiahongw.com/zh/posts/es/es-problems/</guid>
-        <description>ES集群故障：警惕通配符查询 https://elasticsearch.cn/article/171 ES查询索引未找到解决办法： https://www.codeleading.com/article/59664719033/ https://www.cnblogs.com/lmsthoughts/articles/7609802.html API:https://www.tabnine.com/code/java/methods/org.elasticsearch.search.builder.SearchSourceBuilder/sort ES mapping 排序未初始化问题 https://blog.csdn.net/xaio7biancheng/article/details/82657175 1 2 FieldSortBuilder timeSort = SortBuilders.fieldSort(tuple.getField()).order(SortOrder.ASC).unmappedType(&amp;#34;long&amp;#34;); searchSourceBuilder.sort(tuple.getField(), SortOrder.ASC).sort(timeSort); ES的ID 文档唯一标识由四个元数据字段</description>
       </item>
       
       <item>
@@ -338,15 +284,6 @@
         <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/posts/polarcode/polar-code-decode/</guid>
         <description>Arıkan教授在文献[1]提出了串行抵消SC译码算法。SC译码算法类似一个深度优先搜索的算法，其根据两个判决函数进行迭代计算最大似然对数比</description>
-      </item>
-      
-      <item>
-        <title>maven目录结构</title>
-        <link>https://hugo.jiahongw.com/zh/posts/middleware/maven-dir/</link>
-        <pubDate>Thu, 24 Jun 2021 12:42:44 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        <guid>https://hugo.jiahongw.com/zh/posts/middleware/maven-dir/</guid>
-        <description>基本运作流程 Maven工具在本地有一个存储库，然后当本地存储库没有的情况下会自动的去中央仓库寻找并且下载到本地存储库，然后在执行自动化构建。</description>
       </item>
       
       <item>
@@ -765,15 +702,6 @@
         <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/posts/linux/linux-shell/</guid>
         <description>&lt;p&gt;Linux基本操作。🤠&lt;/p&gt;</description>
-      </item>
-      
-      <item>
-        <title>入门Docker</title>
-        <link>https://hugo.jiahongw.com/zh/posts/middleware/docker-begin/</link>
-        <pubDate>Thu, 09 Apr 2020 17:00:28 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        <guid>https://hugo.jiahongw.com/zh/posts/middleware/docker-begin/</guid>
-        <description>&lt;p&gt;Docker是基于内核的容器,可以运行在宿主机上,看作是一个容器.&lt;/p&gt;</description>
       </item>
       
       <item>
