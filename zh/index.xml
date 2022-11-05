@@ -26,6 +26,15 @@
       </item>
       
       <item>
+        <title>ES原理分析</title>
+        <link>https://hugo.jiahongw.com/zh/posts/notion/es/202210011430/</link>
+        <pubDate>Sat, 01 Oct 2022 14:30:00 +0000</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <guid>https://hugo.jiahongw.com/zh/posts/notion/es/202210011430/</guid>
+        <description>简介 什么是ES？ ES的全称是ElasticSearch（下面简称ES），是一个分布式、高扩展、近实时的搜索与数据分析引擎（底层基于Apach</description>
+      </item>
+      
+      <item>
         <title>Test</title>
         <link>https://hugo.jiahongw.com/zh/posts/efficient/test/</link>
         <pubDate>Wed, 28 Sep 2022 16:22:00 +0000</pubDate>
