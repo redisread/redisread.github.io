@@ -18,10 +18,10 @@
       
       <item>
         <title>AddressSanitizer Tool</title>
-        <link>https://hugo.jiahongw.com/zh/posts/mlk/addresssanitizer/</link>
+        <link>https://hugo.jiahongw.com/zh/posts/%E5%87%86%E5%A4%87%E4%B8%A2%E5%BC%83/mlk/addresssanitizer/</link>
         <pubDate>Thu, 07 Jan 2021 10:09:40 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <guid>https://hugo.jiahongw.com/zh/posts/mlk/addresssanitizer/</guid>
+        <guid>https://hugo.jiahongw.com/zh/posts/%E5%87%86%E5%A4%87%E4%B8%A2%E5%BC%83/mlk/addresssanitizer/</guid>
         <description>AddressSanitizer 基本介绍 官网：http://clang.llvm.org/docs/AddressSanitizer.html 源码：https://git</description>
       </item>
       

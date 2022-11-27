@@ -27,10 +27,10 @@
       
       <item>
         <title>CloudFlare&#43;Nginx配置HTTPS连接</title>
-        <link>https://hugo.jiahongw.com/zh/posts/settings/https-set/</link>
+        <link>https://hugo.jiahongw.com/zh/posts/%E5%87%86%E5%A4%87%E4%B8%A2%E5%BC%83/https-set/</link>
         <pubDate>Wed, 18 Nov 2020 11:58:01 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <guid>https://hugo.jiahongw.com/zh/posts/settings/https-set/</guid>
+        <guid>https://hugo.jiahongw.com/zh/posts/%E5%87%86%E5%A4%87%E4%B8%A2%E5%BC%83/https-set/</guid>
         <description>参考地址： cloudflare.com 使用Cloudflare和Nginx来托管网站 管理 Cloudflare Origin CA 证书 已安装nginx支持https配置 nginx启动、重启、关闭 ngin</description>
       </item>
       

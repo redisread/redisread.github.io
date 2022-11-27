@@ -34,15 +34,6 @@
         <description>HUGO + Github + Github Action 持续集成部署个人博客 安装 HUGO 本地环境 首先在 HUGO 的官网下载Hugo的 Windows 安装包，然后将路径添加到环境变量即可。 step1:下载 hugo step</description>
       </item>
       
-      <item>
-        <title>配置基于Github的PicGo图床</title>
-        <link>https://hugo.jiahongw.com/zh/posts/settings/image-bed/</link>
-        <pubDate>Tue, 04 Feb 2020 23:51:21 +0900</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        <guid>https://hugo.jiahongw.com/zh/posts/settings/image-bed/</guid>
-        <description>&lt;p&gt;使用Github+PicGo建立一个免费的个人图床。&lt;/p&gt;</description>
-      </item>
-      
     
   </channel>
 </rss>
