@@ -9,12 +9,21 @@
     <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
     <webMaster>1427298682@qq.com (VictorHong)</webMaster>
     <copyright>&amp;copy;{year}, Redisread</copyright>
-    <lastBuildDate>Sun, 06 Nov 2022 11:49:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 27 Nov 2022 14:51:51 +0800</lastBuildDate>
     
         <atom:link href="https://hugo.jiahongw.com/zh/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     
+      
+      <item>
+        <title>使用Markdown规范检查工具</title>
+        <link>https://hugo.jiahongw.com/zh/posts/hugo/markdown-lint/</link>
+        <pubDate>Sun, 27 Nov 2022 14:51:51 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <guid>https://hugo.jiahongw.com/zh/posts/hugo/markdown-lint/</guid>
+        <description>目前有中文和英文的 Markdown 规范检查工具，目前中文支持的比较少，英文的支持比较多，但是对英文比较友好，对中文支持也较少。 下面介绍这几个工具 lint-md github 仓库：</description>
+      </item>
       
       <item>
         <title>Docker原理分析</title>
@@ -431,15 +440,6 @@
       </item>
       
       <item>
-        <title>这段时间的一些记录</title>
-        <link>https://hugo.jiahongw.com/zh/posts/undefined/find-and-note/</link>
-        <pubDate>Sun, 20 Dec 2020 18:05:01 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        <guid>https://hugo.jiahongw.com/zh/posts/undefined/find-and-note/</guid>
-        <description>Find and Note 代码规范 pylint https://www.jianshu.com/p/c0bd637f706d https://pylint.readthedocs.io/en/latest/tutorial.html flake8 https://www.jianshu.com/p/adf743fc8e78 日志的等级 日志级别 | 描述 &amp;mdash;|&amp;mdash; OFF | 关闭：最高级别，不打印日志。 FATAL | 致命：指明非常严重的可能会导致应用终止执行错误事件。 ERROR</description>
-      </item>
-      
-      <item>
         <title>汉明码</title>
         <link>https://hugo.jiahongw.com/zh/posts/network/hamming-code/</link>
         <pubDate>Wed, 25 Nov 2020 13:14:50 +0800</pubDate>
@@ -602,15 +602,6 @@
       </item>
       
       <item>
-        <title>使用小书匠在线编写博文</title>
-        <link>https://hugo.jiahongw.com/zh/posts/hugo/xiaoshujiang/</link>
-        <pubDate>Tue, 30 Jun 2020 10:00:11 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        <guid>https://hugo.jiahongw.com/zh/posts/hugo/xiaoshujiang/</guid>
-        <description>地址：http://markdown.xiaoshujiang.com/ This is a Test!</description>
-      </item>
-      
-      <item>
         <title>UE编辑器下模拟使用HitProxy</title>
         <link>https://hugo.jiahongw.com/zh/posts/ue/ue-hitproxy/</link>
         <pubDate>Mon, 15 Jun 2020 09:43:11 +0800</pubDate>
@@ -635,15 +626,6 @@
         <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/posts/ue/ue-game-render/</guid>
         <description>&lt;p&gt;探索UE4游戏线程的进入&lt;/p&gt;</description>
-      </item>
-      
-      <item>
-        <title>UE4多线程</title>
-        <link>https://hugo.jiahongw.com/zh/posts/ue/ue-thread-commuicate/</link>
-        <pubDate>Tue, 02 Jun 2020 20:00:46 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        <guid>https://hugo.jiahongw.com/zh/posts/ue/ue-thread-commuicate/</guid>
-        <description>&lt;p&gt;==通常的游戏引擎中游戏线程和渲染线程都是独立的，相互之间会存在一个同步的机制==&lt;/p&gt;</description>
       </item>
       
       <item>
@@ -747,15 +729,6 @@
         <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/posts/candcplusplus/c-read-write/</guid>
         <description>&lt;p&gt;c文件读写🗃&lt;/p&gt;</description>
-      </item>
-      
-      <item>
-        <title>在markdown使用html</title>
-        <link>https://hugo.jiahongw.com/zh/posts/writingtips/markdown-html/</link>
-        <pubDate>Sat, 04 Apr 2020 00:58:33 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        <guid>https://hugo.jiahongw.com/zh/posts/writingtips/markdown-html/</guid>
-        <description>&lt;p&gt;在markdown文件中嵌入&lt;code&gt;html&lt;/code&gt;代码.🛶&lt;/p&gt;</description>
       </item>
       
       <item>
@@ -921,12 +894,12 @@
       </item>
       
       <item>
-        <title>Hugo配置</title>
+        <title>部署HUGO博客</title>
         <link>https://hugo.jiahongw.com/zh/posts/hugo/hugo_setup/</link>
         <pubDate>Mon, 10 Feb 2020 20:50:09 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/posts/hugo/hugo_setup/</guid>
-        <description>HUGO + Github + Github Action持续集成部署个人博客 HUGO本地环境 首先在HUGO的官网下载Hugo的Windows安装包，然后将路径添加到环境变量即</description>
+        <description>HUGO + Github + Github Action 持续集成部署个人博客 安装 HUGO 本地环境 首先在 HUGO 的官网下载Hugo的 Windows 安装包，然后将路径添加到环境变量即可。 step1:下载 hugo step</description>
       </item>
       
       <item>
@@ -953,7 +926,7 @@
         <pubDate>Sat, 25 Jan 2020 06:40:51 +0900</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/posts/hugo/shortcodes/</guid>
-        <description>盒子 支持Markdown语法的盒子 语法： 或者： 1 &amp;lt;div class=&amp;#34;box&amp;#34;&amp;gt;This is &amp;lt;strong&amp;gt;boxmd&amp;lt;/strong&amp;gt; shortcode&amp;lt;/div&amp;gt; 渲染显示： This is boxmd shortcode 简单盒子 语法： 渲染显示： This is **box** shortcode 代码选项卡 可以在不同的代码块之间</description>
+        <description>盒子 支持 Markdown 语法的盒子 语法： 或者： 1 &amp;lt;div class=&amp;#34;box&amp;#34;&amp;gt;This is &amp;lt;strong&amp;gt;boxmd&amp;lt;/strong&amp;gt; shortcode&amp;lt;/div&amp;gt; 渲染显示： This is boxmd shortcode 简单盒子 语法： 渲染显示： This is **box** shortcode 代码选项卡 可以在不同的代码块之间切换，语法： 渲</description>
       </item>
       
     

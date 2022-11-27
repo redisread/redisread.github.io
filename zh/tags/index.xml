@@ -9,12 +9,21 @@
     <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
     <webMaster>1427298682@qq.com (VictorHong)</webMaster>
     <copyright>&amp;copy;{year}, Redisread</copyright>
-    <lastBuildDate>Sun, 06 Nov 2022 11:49:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 27 Nov 2022 14:51:51 +0800</lastBuildDate>
     
         <atom:link href="https://hugo.jiahongw.com/zh/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     
+      
+      <item>
+        <title>markdown</title>
+        <link>https://hugo.jiahongw.com/zh/tags/markdown/</link>
+        <pubDate>Sun, 27 Nov 2022 14:51:51 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <guid>https://hugo.jiahongw.com/zh/tags/markdown/</guid>
+        <description></description>
+      </item>
       
       <item>
         <title>Docker</title>
@@ -539,7 +548,7 @@
       </item>
       
       <item>
-        <title>Epoll</title>
+        <title>epoll</title>
         <link>https://hugo.jiahongw.com/zh/tags/epoll/</link>
         <pubDate>Wed, 18 Nov 2020 11:43:19 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
@@ -629,15 +638,6 @@
       </item>
       
       <item>
-        <title>小书匠</title>
-        <link>https://hugo.jiahongw.com/zh/tags/%E5%B0%8F%E4%B9%A6%E5%8C%A0/</link>
-        <pubDate>Tue, 30 Jun 2020 10:00:11 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        <guid>https://hugo.jiahongw.com/zh/tags/%E5%B0%8F%E4%B9%A6%E5%8C%A0/</guid>
-        <description></description>
-      </item>
-      
-      <item>
         <title>C&#43;&#43;</title>
         <link>https://hugo.jiahongw.com/zh/tags/c&#43;&#43;/</link>
         <pubDate>Mon, 15 Jun 2020 09:43:11 +0800</pubDate>
@@ -661,15 +661,6 @@
         <pubDate>Mon, 15 Jun 2020 09:43:11 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/tags/ue4/</guid>
-        <description></description>
-      </item>
-      
-      <item>
-        <title>UE</title>
-        <link>https://hugo.jiahongw.com/zh/tags/ue/</link>
-        <pubDate>Tue, 02 Jun 2020 20:00:46 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        <guid>https://hugo.jiahongw.com/zh/tags/ue/</guid>
         <description></description>
       </item>
       
@@ -787,24 +778,6 @@
         <pubDate>Sat, 04 Apr 2020 23:32:40 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/tags/%E6%96%87%E4%BB%B6%E8%AF%BB%E5%86%99/</guid>
-        <description></description>
-      </item>
-      
-      <item>
-        <title>html</title>
-        <link>https://hugo.jiahongw.com/zh/tags/html/</link>
-        <pubDate>Sat, 04 Apr 2020 00:58:33 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        <guid>https://hugo.jiahongw.com/zh/tags/html/</guid>
-        <description></description>
-      </item>
-      
-      <item>
-        <title>markdown</title>
-        <link>https://hugo.jiahongw.com/zh/tags/markdown/</link>
-        <pubDate>Sat, 04 Apr 2020 00:58:33 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        <guid>https://hugo.jiahongw.com/zh/tags/markdown/</guid>
         <description></description>
       </item>
       

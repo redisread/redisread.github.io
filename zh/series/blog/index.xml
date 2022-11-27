@@ -62,12 +62,12 @@
       </item>
       
       <item>
-        <title>Hugo配置</title>
+        <title>部署HUGO博客</title>
         <link>https://hugo.jiahongw.com/zh/posts/hugo/hugo_setup/</link>
         <pubDate>Mon, 10 Feb 2020 20:50:09 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/posts/hugo/hugo_setup/</guid>
-        <description>HUGO + Github + Github Action持续集成部署个人博客 HUGO本地环境 首先在HUGO的官网下载Hugo的Windows安装包，然后将路径添加到环境变量即</description>
+        <description>HUGO + Github + Github Action 持续集成部署个人博客 安装 HUGO 本地环境 首先在 HUGO 的官网下载Hugo的 Windows 安装包，然后将路径添加到环境变量即可。 step1:下载 hugo step</description>
       </item>
       
     

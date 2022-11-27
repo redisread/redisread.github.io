@@ -9,7 +9,7 @@
     <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
     <webMaster>1427298682@qq.com (VictorHong)</webMaster>
     <copyright>&amp;copy;{year}, Redisread</copyright>
-    <lastBuildDate>Sat, 04 Apr 2020 00:58:33 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 27 Nov 2022 14:51:51 +0800</lastBuildDate>
     
         <atom:link href="https://hugo.jiahongw.com/zh/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
     
@@ -17,12 +17,12 @@
     
       
       <item>
-        <title>在markdown使用html</title>
-        <link>https://hugo.jiahongw.com/zh/posts/writingtips/markdown-html/</link>
-        <pubDate>Sat, 04 Apr 2020 00:58:33 +0800</pubDate>
+        <title>使用Markdown规范检查工具</title>
+        <link>https://hugo.jiahongw.com/zh/posts/hugo/markdown-lint/</link>
+        <pubDate>Sun, 27 Nov 2022 14:51:51 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <guid>https://hugo.jiahongw.com/zh/posts/writingtips/markdown-html/</guid>
-        <description>&lt;p&gt;在markdown文件中嵌入&lt;code&gt;html&lt;/code&gt;代码.🛶&lt;/p&gt;</description>
+        <guid>https://hugo.jiahongw.com/zh/posts/hugo/markdown-lint/</guid>
+        <description>目前有中文和英文的 Markdown 规范检查工具，目前中文支持的比较少，英文的支持比较多，但是对英文比较友好，对中文支持也较少。 下面介绍这几个工具 lint-md github 仓库：</description>
       </item>
       
       <item>

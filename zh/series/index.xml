@@ -9,7 +9,7 @@
     <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
     <webMaster>1427298682@qq.com (VictorHong)</webMaster>
     <copyright>&amp;copy;{year}, Redisread</copyright>
-    <lastBuildDate>Sun, 06 Nov 2022 11:49:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 27 Nov 2022 14:51:51 +0800</lastBuildDate>
     
         <atom:link href="https://hugo.jiahongw.com/zh/series/index.xml" rel="self" type="application/rss+xml" />
     
@@ -161,15 +161,6 @@
       </item>
       
       <item>
-        <title>UE</title>
-        <link>https://hugo.jiahongw.com/zh/series/ue/</link>
-        <pubDate>Tue, 02 Jun 2020 20:00:46 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        <guid>https://hugo.jiahongw.com/zh/series/ue/</guid>
-        <description></description>
-      </item>
-      
-      <item>
         <title>Math</title>
         <link>https://hugo.jiahongw.com/zh/series/math/</link>
         <pubDate>Wed, 06 May 2020 11:12:38 +0800</pubDate>
@@ -193,15 +184,6 @@
         <pubDate>Sat, 04 Apr 2020 23:32:40 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
         <guid>https://hugo.jiahongw.com/zh/series/c/</guid>
-        <description></description>
-      </item>
-      
-      <item>
-        <title>markdown</title>
-        <link>https://hugo.jiahongw.com/zh/series/markdown/</link>
-        <pubDate>Sat, 04 Apr 2020 00:58:33 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        <guid>https://hugo.jiahongw.com/zh/series/markdown/</guid>
         <description></description>
       </item>
       

@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Hugo配置 – ✏Victor&#39;s Blog</title>
+    <title>部署HUGO博客 – ✏Victor&#39;s Blog</title>
     
 
   
@@ -1160,7 +1160,7 @@
 
 
 <meta property="og:site_name" content="✏Victor&#39;s Blog">
-<meta property="og:title" content="Hugo配置">
+<meta property="og:title" content="部署HUGO博客">
 <meta property="og:url" content="https://hugo.jiahongw.com/zh/posts/hugo/hugo_setup/">
 <meta property="og:type" content="article">
 <meta property="og:description" content="Guide to set Hugo site.">
@@ -1192,7 +1192,7 @@
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "headline": "Hugo配置",
+    "headline": "部署HUGO博客",
     "datePublished": "2020-02-10T20:50:09+08:00",
     "dateModified": "2020-02-10T20:50:09+08:00",
     "url" : "https://hugo.jiahongw.com/zh/posts/hugo/hugo_setup/",
@@ -1480,7 +1480,7 @@
   
   <li  class="is-active" >
     
-      <span>Hugo配置</span>
+      <span>部署HUGO博客</span>
     
   </li>
   
@@ -1489,7 +1489,7 @@
 </nav>
   
   <div class="single">
-    <h2 class="single__title">Hugo配置</h2>
+    <h2 class="single__title">部署HUGO博客</h2>
     <div class="single__meta">
       
 <div class="single__infos">
@@ -1517,16 +1517,24 @@
     </div>
     <article class="single__contents" data-dir="ltr">
       
-      <p>HUGO + Github + Github Action持续集成部署个人博客</p>
-<h2 id="hugo本地环境">HUGO本地环境</h2>
-<p>首先在HUGO的官网下载<a href="https://github.com/gohugoio/hugo/releases">Hugo</a>的Windows安装包，然后将路径添加到环境变量即可。</p>
-<p>step1:下载hugo</p>
-<p><img src="https://gitee.com/wujiahong1998/MyBed/raw/master/img/20200210172917.png" alt="" /></p>
+      <blockquote>
+<p>HUGO + Github + Github Action 持续集成部署个人博客</p>
+</blockquote>
+<h2 id="安装-hugo-本地环境">安装 HUGO 本地环境</h2>
+<p>首先在 HUGO 的官网下载<a href="https://github.com/gohugoio/hugo/releases">Hugo</a>的 Windows 安装包，然后将路径添加到环境变量即可。</p>
+<p>step1:下载 hugo</p>
+<p><img src="https://cos.jiahongw.com/uPic/20200210172917.png" alt="github下载hugo" /></p>
 <p>step2:配置环境变量</p>
-<p><img src="https://gitee.com/wujiahong1998/MyBed/raw/master/img/20200210173107.png" alt="" /></p>
-<h2 id="hugo站点配置及主题配置">HUGO站点配置及主题配置</h2>
+<p><img src="https://cos.jiahongw.com/uPic/20200210173107.png" alt="配置hugo环境变量" /></p>
+<blockquote>
+<p>其他系统安装 HUGO 的方法：</p>
+<ul>
+<li>Mac：<code>brew install hugo</code></li>
+</ul>
+</blockquote>
+<h2 id="hugo-站点配置及主题配置">HUGO 站点配置及主题配置</h2>
 <h3 id="创建站点">创建站点</h3>
-<p>在目录下直接输入下面的代码即可创建一个名为blog的hugo站点(注意：新建的站点是没有自带主题的)</p>
+<p>在目录下直接输入下面的代码即可创建一个名为 blog 的 hugo 站点(注意：新建的站点是没有自带主题的)</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -1535,7 +1543,7 @@
 <pre class="chroma"><code class="language-bash" data-lang="bash">hugo new site blog
 </code></pre></td></tr></table>
 </div>
-</div><p>或者进入blog文件夹内直接输入以下语句：</p>
+</div><p>或者进入 blog 文件夹内直接输入以下语句：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -1546,21 +1554,22 @@
 </div>
 </div><h3 id="下载主题">下载主题</h3>
 <p>可以在<a href="https://themes.gohugo.io/">hugo theme</a>下载主题，然后根据主题的文档进行配置</p>
-<p><img src="https://gitee.com/wujiahong1998/MyBed/raw/master/img/20200210173607.png" alt="" /></p>
-<p>放到站点文件夹themes内，配置config.toml</p>
-<p><img src="https://gitee.com/wujiahong1998/MyBed/raw/master/img/20200210173725.png" alt="" /></p>
+<p><img src="https://cos.jiahongw.com/uPic/20200210173607.png" alt="下载hugo博客框架下的主题" /></p>
+<p>放到站点文件夹 themes 内，配置 config.toml</p>
+<p><img src="https://cos.jiahongw.com/uPic/20200210173725.png" alt="将主题报放到指定文件夹下" /></p>
 <h3 id="本地测试运行">本地测试运行</h3>
 <p>输入<code>hugo server</code>测试</p>
-<p><img src="https://gitee.com/wujiahong1998/MyBed/raw/master/img/20200210173950.png" alt="" /></p>
-<h2 id="github配置">Github配置</h2>
-<h3 id="创建站点仓库并且设置githubpage">创建站点仓库并且设置GithubPage</h3>
-<p><img src="https://gitee.com/wujiahong1998/MyBed/raw/master/img/20200210174906.png" alt="" /></p>
-<p>可以在Setting中看见如下：</p>
-<p><img src="https://gitee.com/wujiahong1998/MyBed/raw/master/img/20200210175031.png" alt="" /></p>
-<h3 id="创建一个存储项目的仓库">创建一个存储项目的仓库</h3>
-<p><img src="https://gitee.com/wujiahong1998/MyBed/raw/master/img/20200210175700.png" alt="" /></p>
-<h3 id="配置github-action">配置Github Action</h3>
-<p>首先在项目仓库点击action，选择<strong>Simple workflow</strong>，输入一下的配置代码：</p>
+<p><img src="https://cos.jiahongw.com/uPic/20200210173950.png" alt="本地测试" /></p>
+<h2 id="github-配置">Github 配置</h2>
+<h3 id="创建站点仓库并且设置-githubpage">创建站点仓库并且设置 GithubPage</h3>
+<p><img src="https://cos.jiahongw.com/uPic/20200210174906.png" alt="创建GithubPage仓库" /></p>
+<p>可以在 Setting 中看见如下：</p>
+<p><img src="https://cos.jiahongw.com/uPic/20200210175031.png" alt="GithubPage的url" /></p>
+<h3 id="创建另一个存储项目的仓库">创建另一个存储项目的仓库</h3>
+<p>创建另一个存储项目的仓库，存储写的博客文章</p>
+<p><img src="https://cos.jiahongw.com/uPic/20200210175700.png" alt="创建另外一个仓库" /></p>
+<h3 id="配置-github-action">配置 Github Action</h3>
+<p>首先在项目仓库点击 action，选择<strong>Simple workflow</strong>，输入一下的配置代码：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt"> 1
@@ -1593,7 +1602,7 @@
 </span><span class="lnt">28
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-yml" data-lang="yml"><span class="k">name</span><span class="p">:</span><span class="w"> </span>CI<span class="w"> </span><span class="c">#自动化的名称</span><span class="w">
+<pre class="chroma"><code class="language-yml" data-lang="yml"><span class="k">name</span><span class="p">:</span><span class="w"> </span>HUGO_CI<span class="w"> </span><span class="c">#自动化的名称</span><span class="w">
 </span><span class="w"></span><span class="k">on</span><span class="p">:</span><span class="w">
 </span><span class="w"></span><span class="w">  </span><span class="k">push</span><span class="p">:</span><span class="w"> </span><span class="c"># push的时候触发</span><span class="w">
 </span><span class="w">    </span><span class="k">branches</span><span class="p">:</span><span class="w"> </span><span class="c"># 那些分支需要触发</span><span class="w">
@@ -1603,14 +1612,14 @@
 </span><span class="w"></span><span class="w">    </span><span class="k">runs-on</span><span class="p">:</span><span class="w"> </span>ubuntu-latest<span class="w"> </span><span class="c"># 镜像市场</span><span class="w">
 </span><span class="w">    </span><span class="k">steps</span><span class="p">:</span><span class="w">
 </span><span class="w"></span><span class="w">      </span>- <span class="k">name</span><span class="p">:</span><span class="w"> </span>checkout<span class="w"> </span><span class="c"># 步骤的名称</span><span class="w">
-</span><span class="w">        </span><span class="k">uses</span><span class="p">:</span><span class="w"> </span>actions/checkout@v1<span class="w"> </span><span class="c">#软件市场的名称</span><span class="w">
+</span><span class="w">        </span><span class="k">uses</span><span class="p">:</span><span class="w"> </span>actions/checkout@v3<span class="w"> </span><span class="c">#软件市场的名称</span><span class="w">
 </span><span class="w">        </span><span class="k">with</span><span class="p">:</span><span class="w"> </span><span class="c"># 参数</span><span class="w">
 </span><span class="w">          </span><span class="k">submodules</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
 </span><span class="w">      </span>- <span class="k">name</span><span class="p">:</span><span class="w"> </span>Setup<span class="w"> </span>Hugo<span class="w">
 </span><span class="w">        </span><span class="k">uses</span><span class="p">:</span><span class="w"> </span>peaceiris/actions-hugo@v2<span class="m">.2</span><span class="m">.2</span><span class="w">
 </span><span class="w">        </span><span class="k">with</span><span class="p">:</span><span class="w">
-</span><span class="w"></span><span class="w">          </span><span class="k">hugo-version</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;0.64.1&#39;</span><span class="w">
-</span><span class="w">          </span><span class="k">extended</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w"></span><span class="w">          </span><span class="k">hugo-version</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;0.64.1&#39;</span><span class="w"> </span><span class="c"># 设置HUGO框架的版本</span><span class="w">
+</span><span class="w">          </span><span class="k">extended</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="c"># 是否选择拓展版HUGO框架，选择是</span><span class="w">
 </span><span class="w">      </span>- <span class="k">name</span><span class="p">:</span><span class="w"> </span>Build<span class="w">
 </span><span class="w">        </span><span class="k">run</span><span class="p">:</span><span class="w"> </span>hugo<span class="w"> </span>-D<span class="w">
 </span><span class="w">      </span>- <span class="k">name</span><span class="p">:</span><span class="w"> </span>Deploy<span class="w">
@@ -1623,11 +1632,11 @@
 </span><span class="w">
 </span></code></pre></td></tr></table>
 </div>
-</div><p><img src="https://gitee.com/wujiahong1998/MyBed/raw/master/img/20200211012715.png" alt="" /></p>
+</div><p><img src="https://cos.jiahongw.com/uPic/20200211012715.png" alt="过程" /></p>
 <p>准备部署，我们开发的项目及<strong>github pages</strong>实际是分开的，一个用于保存项目，相当于源代码，另外一个用于保存最终的网页文件。</p>
 <ol>
 <li>
-<p>使用git生成ssh key(相当于生成对密钥)</p>
+<p>使用 git 生成 ssh key(相当于生成对密钥)</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -1647,14 +1656,15 @@
 </blockquote>
 </li>
 <li>
-<p>打开<strong>HUGO_blog</strong>仓库的settings，再点击<strong>Secrets</strong>，然后添加刚刚生成的私钥，name为<strong>ACTIONS_DEPLOY_KEY</strong></p>
+<p>打开<strong>HUGO_blog</strong>仓库的 settings，再点击<strong>Secrets</strong>，然后添加刚刚生成的私钥，name 为<strong>ACTIONS_DEPLOY_KEY</strong></p>
 </li>
 <li>
 <p>同理，打开<strong>redisread.github.io</strong>，点击<strong>Deploy keys</strong>，添加公钥，<strong>Allow write access</strong>一定要勾上，否则会无法提交</p>
 </li>
 </ol>
-<p>然后，你就可以提交代码了，push成功后，打开仓库<strong>actions</strong>，至此部署成功，大功告成！</p>
-<p><img src="https://i.loli.net/2020/07/25/BrGxitRSbFDlLko.png" alt="finish" /></p>
+<p>然后，你就可以提交代码了，push 成功后，打开仓库<strong>actions</strong>，至此部署成功，大功告成！</p>
+<p><img src="https://cos.jiahongw.com/uPic/BrGxitRSbFDlLko.png" alt="finish" /></p>
+<p>后续可以自己写文章然后 push 了，<code>github action</code>会自动帮你部署。</p>
 
     </article>
     <script>
@@ -1721,13 +1731,13 @@
       
     
       
-        <a href="https://twitter.com/intent/tweet?text=Hugo%e9%85%8d%e7%bd%ae&url=https%3a%2f%2fhugo.jiahongw.com%2fzh%2fposts%2fhugo%2fhugo_setup%2f&hashtags=Hugo%2cGithub&via=Victor" title="Twitter" aria-label="Twitter Share Button" class="donation__item" target="_blank" rel="noreferrer" data-type="share">
+        <a href="https://twitter.com/intent/tweet?text=%e9%83%a8%e7%bd%b2HUGO%e5%8d%9a%e5%ae%a2&url=https%3a%2f%2fhugo.jiahongw.com%2fzh%2fposts%2fhugo%2fhugo_setup%2f&hashtags=Hugo%2cGithub&via=Victor" title="Twitter" aria-label="Twitter Share Button" class="donation__item" target="_blank" rel="noreferrer" data-type="share">
           <svg data-name="twitter" enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="35" height="35" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="m21.534 7.113c.976-.693 1.797-1.558 2.466-2.554v-.001c-.893.391-1.843.651-2.835.777 1.02-.609 1.799-1.566 2.165-2.719-.951.567-2.001.967-3.12 1.191-.903-.962-2.19-1.557-3.594-1.557-2.724 0-4.917 2.211-4.917 4.921 0 .39.033.765.114 1.122-4.09-.2-7.71-2.16-10.142-5.147-.424.737-.674 1.58-.674 2.487 0 1.704.877 3.214 2.186 4.089-.791-.015-1.566-.245-2.223-.606v.054c0 2.391 1.705 4.377 3.942 4.835-.401.11-.837.162-1.29.162-.315 0-.633-.018-.931-.084.637 1.948 2.447 3.381 4.597 3.428-1.674 1.309-3.8 2.098-6.101 2.098-.403 0-.79-.018-1.177-.067 2.18 1.405 4.762 2.208 7.548 2.208 8.683 0 14.342-7.244 13.986-14.637z"/></svg>
         </a>
       
     
       
-        <a href="https://www.reddit.com/submit?url=https%3a%2f%2fhugo.jiahongw.com%2fzh%2fposts%2fhugo%2fhugo_setup%2f&amp;title=Hugo%e9%85%8d%e7%bd%ae" target="_blank" rel="noreferer" title="Reddit" aria-label="Reddit Share Button" onclick="window.open('http://www.reddit.com/submit?url=' + encodeURIComponent(document.URL) + '&amp;title=' +  encodeURIComponent(document.title)); return false;" class="donation__item" data-type="share">
+        <a href="https://www.reddit.com/submit?url=https%3a%2f%2fhugo.jiahongw.com%2fzh%2fposts%2fhugo%2fhugo_setup%2f&amp;title=%e9%83%a8%e7%bd%b2HUGO%e5%8d%9a%e5%ae%a2" target="_blank" rel="noreferer" title="Reddit" aria-label="Reddit Share Button" onclick="window.open('http://www.reddit.com/submit?url=' + encodeURIComponent(document.URL) + '&amp;title=' +  encodeURIComponent(document.title)); return false;" class="donation__item" data-type="share">
           <svg data-name="reddit" enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="35" height="35" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="m21.325 9.308c-.758 0-1.425.319-1.916.816-1.805-1.268-4.239-2.084-6.936-2.171l1.401-6.406 4.461 1.016c0 1.108.89 2.013 1.982 2.013 1.113 0 2.008-.929 2.008-2.038s-.889-2.038-2.007-2.038c-.779 0-1.451.477-1.786 1.129l-4.927-1.108c-.248-.067-.491.113-.557.365l-1.538 7.062c-2.676.113-5.084.928-6.895 2.197-.491-.518-1.184-.837-1.942-.837-2.812 0-3.733 3.829-1.158 5.138-.091.405-.132.837-.132 1.268 0 4.301 4.775 7.786 10.638 7.786 5.888 0 10.663-3.485 10.663-7.786 0-.431-.045-.883-.156-1.289 2.523-1.314 1.594-5.115-1.203-5.117zm-15.724 5.41c0-1.129.89-2.038 2.008-2.038 1.092 0 1.983.903 1.983 2.038 0 1.109-.89 2.013-1.983 2.013-1.113.005-2.008-.904-2.008-2.013zm10.839 4.798c-1.841 1.868-7.036 1.868-8.878 0-.203-.18-.203-.498 0-.703.177-.18.491-.18.668 0 1.406 1.463 6.07 1.488 7.537 0 .177-.18.491-.18.668 0 .207.206.207.524.005.703zm-.041-2.781c-1.092 0-1.982-.903-1.982-2.011 0-1.129.89-2.038 1.982-2.038 1.113 0 2.008.903 2.008 2.038-.005 1.103-.895 2.011-2.008 2.011z"/></svg>
         </a>
       
@@ -1908,7 +1918,7 @@
 <script>
   var gitalk = new Gitalk({
     id: '2020-02-10 20:50:09 \x2b0800 \x2b0800',
-    title: 'Hugo配置',
+    title: '部署HUGO博客',
     clientID: '5880093503923d139adb',
     clientSecret: 'aa0741ecdc011069553c3c898e8e0f54915af0bb',
     repo: 'redisread.github.io',
@@ -2273,19 +2283,19 @@ document.addEventListener('DOMContentLoaded', function () {
   <ul>
     <li>
       <ul>
-        <li><a href="#hugo本地环境">HUGO本地环境</a></li>
-        <li><a href="#hugo站点配置及主题配置">HUGO站点配置及主题配置</a>
+        <li><a href="#安装-hugo-本地环境">安装 HUGO 本地环境</a></li>
+        <li><a href="#hugo-站点配置及主题配置">HUGO 站点配置及主题配置</a>
           <ul>
             <li><a href="#创建站点">创建站点</a></li>
             <li><a href="#下载主题">下载主题</a></li>
             <li><a href="#本地测试运行">本地测试运行</a></li>
           </ul>
         </li>
-        <li><a href="#github配置">Github配置</a>
+        <li><a href="#github-配置">Github 配置</a>
           <ul>
-            <li><a href="#创建站点仓库并且设置githubpage">创建站点仓库并且设置GithubPage</a></li>
-            <li><a href="#创建一个存储项目的仓库">创建一个存储项目的仓库</a></li>
-            <li><a href="#配置github-action">配置Github Action</a></li>
+            <li><a href="#创建站点仓库并且设置-githubpage">创建站点仓库并且设置 GithubPage</a></li>
+            <li><a href="#创建另一个存储项目的仓库">创建另一个存储项目的仓库</a></li>
+            <li><a href="#配置-github-action">配置 Github Action</a></li>
           </ul>
         </li>
       </ul>
