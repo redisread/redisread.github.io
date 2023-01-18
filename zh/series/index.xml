@@ -8,7 +8,7 @@
     <language>zh</language>
     <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
     <webMaster>1427298682@qq.com (VictorHong)</webMaster>
-    <copyright>&amp;copy;{year}, Redisread, [粤ICP备20043735号](beian.miit.gov.cn)</copyright>
+    <copyright>&amp;copy;{year}, Redisread, [粤ICP备20043735号](https://beian.miit.gov.cn)</copyright>
     <lastBuildDate>Sun, 27 Nov 2022 15:12:33 +0800</lastBuildDate>
     
         <atom:link href="https://hugo.jiahongw.com/zh/series/index.xml" rel="self" type="application/rss+xml" />
@@ -53,7 +53,7 @@
       </item>
       
       <item>
-        <title>Life</title>
+        <title>life</title>
         <link>https://hugo.jiahongw.com/zh/series/life/</link>
         <pubDate>Thu, 07 Oct 2021 21:26:43 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
