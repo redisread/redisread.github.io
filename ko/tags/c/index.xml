@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>C on </title>
+    <link>https://hugo.jiahongw.com/ko/tags/c/</link>
+    <description>Recent content in C on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
+    <webMaster>1427298682@qq.com (VictorHong)</webMaster>
+    <copyright>©2023, Redisread, <a href="https://beian.miit.gov.cn">粤ICP备20043735号</a></copyright>
+    <lastBuildDate>Sat, 04 Apr 2020 23:32:40 +0800</lastBuildDate>
+    
+        <atom:link href="https://hugo.jiahongw.com/ko/tags/c/index.xml" rel="self" type="application/rss+xml" />
+    
+
+      
+      <item>
+        <title>C文件读写</title>
+        <link>https://hugo.jiahongw.com/ko/zh/posts/candcplusplus/c-read-write/</link>
+        <pubDate>Sat, 04 Apr 2020 23:32:40 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <atom:modified>Sat, 04 Apr 2020 23:32:40 +0800</atom:modified>
+        <guid>https://hugo.jiahongw.com/ko/zh/posts/candcplusplus/c-read-write/</guid>
+        <description>&lt;p&gt;c文件读写🗃️&lt;/p&gt;</description>
+        
+        <dc:creator>Victor</dc:creator>
+        <media:content url="https://hugo.jiahongw.comhttps://gitee.com/wujiahong1998/MyBed/raw/master/img/%e6%96%87%e4%bb%b6.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>C</category>
+            
+          
+            
+              <category>文件读写</category>
+            
+          
+        
+        
+          
+            
+          
+        
+        
+          
+            
+              <category>C</category>
+            
+          
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

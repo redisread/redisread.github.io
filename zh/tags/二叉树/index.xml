@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>二叉树 on ✏Victor&#39;s Blog</title>
     <link>https://hugo.jiahongw.com/zh/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/</link>
@@ -8,23 +13,48 @@
     <language>zh</language>
     <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
     <webMaster>1427298682@qq.com (VictorHong)</webMaster>
-    <copyright>&amp;copy;{year}, Redisread, [粤ICP备20043735号](https://beian.miit.gov.cn)</copyright>
+    <copyright>©2023, Redisread, <a href="https://beian.miit.gov.cn">粤ICP备20043735号</a></copyright>
     <lastBuildDate>Mon, 27 Jul 2020 22:07:13 +0800</lastBuildDate>
     
         <atom:link href="https://hugo.jiahongw.com/zh/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    
+
       
       <item>
         <title>高级的二叉树</title>
         <link>https://hugo.jiahongw.com/zh/posts/algorithmstructure/bst/</link>
         <pubDate>Mon, 27 Jul 2020 22:07:13 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
+        <atom:modified>Mon, 27 Jul 2020 22:07:13 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/zh/posts/algorithmstructure/bst/</guid>
         <description>&lt;p&gt;树是一种非常实用的结构！🌴&lt;/p&gt;</description>
+        
+        <dc:creator>Victor</dc:creator>
+        <media:content url="https://hugo.jiahongw.comhttps://i.loli.net/2020/07/28/gITBSqFisc5m49X.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>二叉树</category>
+            
+          
+        
+        
+          
+            
+          
+        
+        
+          
+            
+              <category>数据结构</category>
+            
+          
+        
       </item>
       
+
     
   </channel>
 </rss>

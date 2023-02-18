@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>Markdown on </title>
+    <link>https://hugo.jiahongw.com/ko/tags/markdown/</link>
+    <description>Recent content in Markdown on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
+    <webMaster>1427298682@qq.com (VictorHong)</webMaster>
+    <copyright>©2023, Redisread, <a href="https://beian.miit.gov.cn">粤ICP备20043735号</a></copyright>
+    <lastBuildDate>Sun, 27 Nov 2022 14:51:51 +0800</lastBuildDate>
+    
+        <atom:link href="https://hugo.jiahongw.com/ko/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
+    
+
+      
+      <item>
+        <title>使用Markdown规范检查工具</title>
+        <link>https://hugo.jiahongw.com/ko/zh/posts/hugo/markdown-lint/</link>
+        <pubDate>Sun, 27 Nov 2022 14:51:51 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <atom:modified>Sun, 27 Nov 2022 14:51:51 +0800</atom:modified>
+        <guid>https://hugo.jiahongw.com/ko/zh/posts/hugo/markdown-lint/</guid>
+        <description>目前有中文和英文的 Markdown 规范检查工具，目前中文支持的比较少，英文的支持比较多，但是对英文比较友好，对中文支持也较少。 下面介绍这几个工具 lint-md github 仓库：</description>
+        
+        <dc:creator>Victor</dc:creator>
+        <media:content url="https://hugo.jiahongw.comhttps://cos.jiahongw.com/uPic/%28null%29.jpg" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>Markdown</category>
+            
+          
+        
+        
+          
+            
+          
+        
+        
+          
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>Markdown使用笔记</title>
+        <link>https://hugo.jiahongw.com/ko/zh/posts/usefulpower/markdown-deep/</link>
+        <pubDate>Fri, 14 Feb 2020 16:12:40 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <atom:modified>Fri, 14 Feb 2020 16:12:40 +0800</atom:modified>
+        <guid>https://hugo.jiahongw.com/ko/zh/posts/usefulpower/markdown-deep/</guid>
+        <description>&lt;p&gt;👱‍♀️介绍一些 markdown 中比较实用的一些写作方法。&lt;/p&gt;</description>
+        
+        <dc:creator>Victor</dc:creator>
+        <media:content url="https://hugo.jiahongw.comhttps://i.loli.net/2020/02/15/GCFzA4r1EyhekDY.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>markdown</category>
+            
+          
+            
+              <category>Typora</category>
+            
+          
+        
+        
+          
+            
+              <category>写作</category>
+            
+          
+        
+        
+          
+            
+              <category>Blog</category>
+            
+          
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

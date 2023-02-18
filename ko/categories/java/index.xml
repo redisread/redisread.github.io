@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>Java on </title>
+    <link>https://hugo.jiahongw.com/ko/categories/java/</link>
+    <description>Recent content in Java on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
+    <webMaster>1427298682@qq.com (VictorHong)</webMaster>
+    <copyright>©2023, Redisread, <a href="https://beian.miit.gov.cn">粤ICP备20043735号</a></copyright>
+    <lastBuildDate>Thu, 12 Aug 2021 21:21:00 +0800</lastBuildDate>
+    
+        <atom:link href="https://hugo.jiahongw.com/ko/categories/java/index.xml" rel="self" type="application/rss+xml" />
+    
+
+      
+      <item>
+        <title>Java装箱拆箱</title>
+        <link>https://hugo.jiahongw.com/ko/zh/posts/java/boxing-unboxing/</link>
+        <pubDate>Thu, 12 Aug 2021 21:21:00 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <atom:modified>Thu, 12 Aug 2021 21:21:00 +0800</atom:modified>
+        <guid>https://hugo.jiahongw.com/ko/zh/posts/java/boxing-unboxing/</guid>
+        <description>Java语言虽然号称一切都是对象，但原始数据类型是例外。 在Java 5中，引入了自动装箱和自动拆箱功能（boxing/unboxing），Ja</description>
+        
+        <dc:creator>Victor</dc:creator>
+        <media:content url="https://hugo.jiahongw.comhttps://raw.githubusercontent.com/redisread/Image/master/Java/java.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>Java</category>
+            
+          
+        
+        
+          
+            
+              <category>Java</category>
+            
+          
+        
+        
+          
+            
+          
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>迭代器模式 on </title>
+    <link>https://hugo.jiahongw.com/ko/tags/%E8%BF%AD%E4%BB%A3%E5%99%A8%E6%A8%A1%E5%BC%8F/</link>
+    <description>Recent content in 迭代器模式 on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
+    <webMaster>1427298682@qq.com (VictorHong)</webMaster>
+    <copyright>©2023, Redisread, <a href="https://beian.miit.gov.cn">粤ICP备20043735号</a></copyright>
+    <lastBuildDate>Sun, 16 Jan 2022 13:14:21 +0800</lastBuildDate>
+    
+        <atom:link href="https://hugo.jiahongw.com/ko/tags/%E8%BF%AD%E4%BB%A3%E5%99%A8%E6%A8%A1%E5%BC%8F/index.xml" rel="self" type="application/rss+xml" />
+    
+
+      
+      <item>
+        <title>迭代器模式</title>
+        <link>https://hugo.jiahongw.com/ko/zh/posts/designpattern/iteratorpattern/</link>
+        <pubDate>Sun, 16 Jan 2022 13:14:21 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <atom:modified>Sun, 16 Jan 2022 13:14:21 +0800</atom:modified>
+        <guid>https://hugo.jiahongw.com/ko/zh/posts/designpattern/iteratorpattern/</guid>
+        <description>迭代器模式也叫游标模式。 定义 迭代器模式提供了一种方法顺序访问一个聚合对象中的各个元素，而不暴露其内部的表示。 迭代器模式封装了遍历。并且迭代器</description>
+        
+        <dc:creator>Victor</dc:creator>
+        <media:content url="https://hugo.jiahongw.comhttps://cos.jiahongw.com/uPic/5069096.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>设计模式</category>
+            
+          
+            
+              <category>迭代器模式</category>
+            
+          
+        
+        
+          
+            
+          
+        
+        
+          
+            
+              <category>设计模式</category>
+            
+          
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>
