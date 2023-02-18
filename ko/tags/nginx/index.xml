@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>nginx on </title>
+    <link>https://hugo.jiahongw.com/ko/tags/nginx/</link>
+    <description>Recent content in nginx on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
+    <webMaster>1427298682@qq.com (VictorHong)</webMaster>
+    <copyright>©2023, Redisread, <a href="https://beian.miit.gov.cn">粤ICP备20043735号</a></copyright>
+    <lastBuildDate>Mon, 01 Feb 2021 10:02:08 +0800</lastBuildDate>
+    
+        <atom:link href="https://hugo.jiahongw.com/ko/tags/nginx/index.xml" rel="self" type="application/rss+xml" />
+    
+
+      
+      <item>
+        <title>Nginx配置SSL证书</title>
+        <link>https://hugo.jiahongw.com/ko/zh/posts/nginx/nginx-ssl/</link>
+        <pubDate>Mon, 01 Feb 2021 10:02:08 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <atom:modified>Mon, 01 Feb 2021 10:02:08 +0800</atom:modified>
+        <guid>https://hugo.jiahongw.com/ko/zh/posts/nginx/nginx-ssl/</guid>
+        <description>在home目录下安装的nginx程序d 申请证书 letsencrypt的证书 申请网站：https://letsencrypt.osfipin.</description>
+        
+        <dc:creator>Victor</dc:creator>
+        <media:content url="https://hugo.jiahongw.comhttps://i.loli.net/2021/02/01/VXhnNbyzqu37vtd.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>nginx</category>
+            
+          
+        
+        
+          
+            
+          
+        
+        
+          
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>CloudFlare&#43;Nginx配置HTTPS连接</title>
+        <link>https://hugo.jiahongw.com/ko/zh/posts/%E5%87%86%E5%A4%87%E4%B8%A2%E5%BC%83/https-set/</link>
+        <pubDate>Wed, 18 Nov 2020 11:58:01 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <atom:modified>Wed, 18 Nov 2020 11:58:01 +0800</atom:modified>
+        <guid>https://hugo.jiahongw.com/ko/zh/posts/%E5%87%86%E5%A4%87%E4%B8%A2%E5%BC%83/https-set/</guid>
+        <description>参考地址： cloudflare.com 使用Cloudflare和Nginx来托管网站 管理 Cloudflare Origin CA 证书 已安装nginx支持https配置 nginx启动、重启、关闭 ngin</description>
+        
+        <dc:creator>Victor</dc:creator>
+        <media:content url="https://hugo.jiahongw.comhttps://i.loli.net/2020/11/18/e8q9NKWMfx1PuYh.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>Nginx</category>
+            
+          
+            
+              <category>https</category>
+            
+          
+        
+        
+          
+            
+          
+        
+        
+          
+            
+          
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

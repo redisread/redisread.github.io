@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>epoll on </title>
+    <link>https://hugo.jiahongw.com/ko/tags/epoll/</link>
+    <description>Recent content in epoll on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
+    <webMaster>1427298682@qq.com (VictorHong)</webMaster>
+    <copyright>©2023, Redisread, <a href="https://beian.miit.gov.cn">粤ICP备20043735号</a></copyright>
+    <lastBuildDate>Wed, 18 Nov 2020 11:43:19 +0800</lastBuildDate>
+    
+        <atom:link href="https://hugo.jiahongw.com/ko/tags/epoll/index.xml" rel="self" type="application/rss+xml" />
+    
+
+      
+      <item>
+        <title>Select Poll Epoll 详解</title>
+        <link>https://hugo.jiahongw.com/ko/zh/posts/linux/select-poll-epoll/</link>
+        <pubDate>Wed, 18 Nov 2020 11:43:19 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <atom:modified>Wed, 18 Nov 2020 11:43:19 +0800</atom:modified>
+        <guid>https://hugo.jiahongw.com/ko/zh/posts/linux/select-poll-epoll/</guid>
+        <description>同步异步与阻塞非阻塞 用户空间和内核空间 操作系统为了支持多个应用同时运行，需要保证不同进程之间相对独立（一个进程的崩溃不会影响其他的进程 ， 恶意</description>
+        
+        <dc:creator>Victor</dc:creator>
+        <media:content url="https://hugo.jiahongw.comhttps://i.loli.net/2020/11/18/Cv8I7Slfh23FBew.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>Epoll</category>
+            
+          
+            
+              <category>Select</category>
+            
+          
+            
+              <category>Poll</category>
+            
+          
+        
+        
+          
+            
+          
+        
+        
+          
+            
+              <category>Linux</category>
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>epoll的水平触发与边缘触发</title>
+        <link>https://hugo.jiahongw.com/ko/zh/posts/linux/epoll-lt-et/</link>
+        <pubDate>Tue, 28 Jul 2020 12:00:13 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <atom:modified>Tue, 28 Jul 2020 12:00:13 +0800</atom:modified>
+        <guid>https://hugo.jiahongw.com/ko/zh/posts/linux/epoll-lt-et/</guid>
+        <description>描述符的就绪状态有两种判断方法: 边沿触发和水平触发。 水平触发 我认为这是“拉”模式或“民意调查”模式。为了确定描述符是否就绪，进程尝试执行非阻</description>
+        
+        <dc:creator>Victor</dc:creator>
+        <media:content url="https://hugo.jiahongw.comhttps://i.loli.net/2020/07/28/EFsmxfOJ3jI5WlR.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>Linux</category>
+            
+          
+            
+              <category>epoll</category>
+            
+          
+        
+        
+          
+            
+          
+        
+        
+          
+            
+              <category>Linux</category>
+            
+          
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

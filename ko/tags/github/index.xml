@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>github on </title>
+    <link>https://hugo.jiahongw.com/ko/tags/github/</link>
+    <description>Recent content in github on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
+    <webMaster>1427298682@qq.com (VictorHong)</webMaster>
+    <copyright>©2023, Redisread, <a href="https://beian.miit.gov.cn">粤ICP备20043735号</a></copyright>
+    <lastBuildDate>Fri, 03 Apr 2020 19:07:07 +0800</lastBuildDate>
+    
+        <atom:link href="https://hugo.jiahongw.com/ko/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    
+
+      
+      <item>
+        <title>Git免密push</title>
+        <link>https://hugo.jiahongw.com/ko/zh/posts/git/git-push-no-pw/</link>
+        <pubDate>Fri, 03 Apr 2020 19:07:07 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <atom:modified>Fri, 03 Apr 2020 19:07:07 +0800</atom:modified>
+        <guid>https://hugo.jiahongw.com/ko/zh/posts/git/git-push-no-pw/</guid>
+        <description>&lt;p&gt;每次push都需要输入用户名和密码,其实可以免去这些操作.🚛&lt;/p&gt;</description>
+        
+        <dc:creator>Victor</dc:creator>
+        <media:content url="https://hugo.jiahongw.comhttps://i.loli.net/2020/04/03/xw9tEWQy1L2cJHm.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>git</category>
+            
+          
+            
+              <category>github</category>
+            
+          
+        
+        
+          
+            
+          
+        
+        
+          
+            
+              <category>github</category>
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>部署HUGO博客</title>
+        <link>https://hugo.jiahongw.com/ko/zh/posts/hugo/hugo_setup/</link>
+        <pubDate>Mon, 10 Feb 2020 20:50:09 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <atom:modified>Mon, 10 Feb 2020 20:50:09 +0800</atom:modified>
+        <guid>https://hugo.jiahongw.com/ko/zh/posts/hugo/hugo_setup/</guid>
+        <description>HUGO + Github + Github Action 持续集成部署个人博客 安装 HUGO 本地环境 首先在 HUGO 的官网下载Hugo的 Windows 安装包，然后将路径添加到环境变量即可。 step1:下载 hugo step</description>
+        
+        <dc:creator>Victor</dc:creator>
+        <media:content url="https://hugo.jiahongw.comhttps://d33wubrfki0l68.cloudfront.net/c38c7334cc3f23585738e40334284fddcaf03d5e/2e17c/images/hugo-logo-wide.svg" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>Hugo</category>
+            
+          
+            
+              <category>Github</category>
+            
+          
+        
+        
+          
+            
+          
+        
+        
+          
+            
+              <category>Blog</category>
+            
+          
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

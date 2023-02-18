@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>行为模式 on ✏Victor&#39;s Blog</title>
     <link>https://hugo.jiahongw.com/zh/tags/%E8%A1%8C%E4%B8%BA%E6%A8%A1%E5%BC%8F/</link>
@@ -8,21 +13,49 @@
     <language>zh</language>
     <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
     <webMaster>1427298682@qq.com (VictorHong)</webMaster>
-    <copyright>&amp;copy;{year}, Redisread, [粤ICP备20043735号](https://beian.miit.gov.cn)</copyright>
+    <copyright>©2023, Redisread, <a href="https://beian.miit.gov.cn">粤ICP备20043735号</a></copyright>
     <lastBuildDate>Mon, 03 Jan 2022 22:41:31 +0800</lastBuildDate>
     
         <atom:link href="https://hugo.jiahongw.com/zh/tags/%E8%A1%8C%E4%B8%BA%E6%A8%A1%E5%BC%8F/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    
+
       
       <item>
         <title>观察者模式</title>
         <link>https://hugo.jiahongw.com/zh/posts/designpattern/observerpattern/</link>
         <pubDate>Mon, 03 Jan 2022 22:41:31 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
+        <atom:modified>Mon, 03 Jan 2022 22:41:31 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/zh/posts/designpattern/observerpattern/</guid>
         <description>定义 观察者模式定义了对象之间的一对多依赖，这样一来，当一个对象改变状态时，它的所有依赖者都会收到通知并且自动更新。 一个比喻：报纸订阅（出版者</description>
+        
+        <dc:creator>Victor</dc:creator>
+        <media:content url="https://hugo.jiahongw.comhttps://cos.jiahongw.com/uPic/3881299.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>观察者模式</category>
+            
+          
+            
+              <category>行为模式</category>
+            
+          
+        
+        
+          
+            
+          
+        
+        
+          
+            
+              <category>设计模式</category>
+            
+          
+        
       </item>
       
       <item>
@@ -30,10 +63,40 @@
         <link>https://hugo.jiahongw.com/zh/posts/designpattern/strategypattern/</link>
         <pubDate>Sat, 27 Mar 2021 11:12:34 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
+        <atom:modified>Sat, 27 Mar 2021 11:12:34 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/zh/posts/designpattern/strategypattern/</guid>
         <description>使用场景 避免冗长的if-else或switch分支判断 提供框架的扩展点 策略模式： 策略模式定义了算法族，分别封装起来，让他们之间可以互相替换。</description>
+        
+        <dc:creator>Victor</dc:creator>
+        <media:content url="https://hugo.jiahongw.comhttps://cos.jiahongw.com/uPic/image-20220327140807638.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>行为模式</category>
+            
+          
+            
+              <category>策略模式</category>
+            
+          
+        
+        
+          
+            
+          
+        
+        
+          
+            
+              <category>设计模式</category>
+            
+          
+        
       </item>
       
+
     
   </channel>
 </rss>

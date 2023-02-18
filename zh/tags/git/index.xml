@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>git on ✏Victor&#39;s Blog</title>
     <link>https://hugo.jiahongw.com/zh/tags/git/</link>
@@ -8,23 +13,52 @@
     <language>zh</language>
     <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
     <webMaster>1427298682@qq.com (VictorHong)</webMaster>
-    <copyright>&amp;copy;{year}, Redisread, [粤ICP备20043735号](https://beian.miit.gov.cn)</copyright>
+    <copyright>©2023, Redisread, <a href="https://beian.miit.gov.cn">粤ICP备20043735号</a></copyright>
     <lastBuildDate>Fri, 03 Apr 2020 19:07:07 +0800</lastBuildDate>
     
         <atom:link href="https://hugo.jiahongw.com/zh/tags/git/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    
+
       
       <item>
         <title>Git免密push</title>
         <link>https://hugo.jiahongw.com/zh/posts/git/git-push-no-pw/</link>
         <pubDate>Fri, 03 Apr 2020 19:07:07 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
+        <atom:modified>Fri, 03 Apr 2020 19:07:07 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/zh/posts/git/git-push-no-pw/</guid>
         <description>&lt;p&gt;每次push都需要输入用户名和密码,其实可以免去这些操作.🚛&lt;/p&gt;</description>
+        
+        <dc:creator>Victor</dc:creator>
+        <media:content url="https://hugo.jiahongw.comhttps://i.loli.net/2020/04/03/xw9tEWQy1L2cJHm.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>git</category>
+            
+          
+            
+              <category>github</category>
+            
+          
+        
+        
+          
+            
+          
+        
+        
+          
+            
+              <category>github</category>
+            
+          
+        
       </item>
       
+
     
   </channel>
 </rss>

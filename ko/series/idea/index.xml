@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>idea on </title>
+    <link>https://hugo.jiahongw.com/ko/series/idea/</link>
+    <description>Recent content in idea on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
+    <webMaster>1427298682@qq.com (VictorHong)</webMaster>
+    <copyright>©2023, Redisread, <a href="https://beian.miit.gov.cn">粤ICP备20043735号</a></copyright>
+    <lastBuildDate>Mon, 16 Nov 2020 01:24:37 +0800</lastBuildDate>
+    
+        <atom:link href="https://hugo.jiahongw.com/ko/series/idea/index.xml" rel="self" type="application/rss+xml" />
+    
+
+      
+      <item>
+        <title>博客小记</title>
+        <link>https://hugo.jiahongw.com/ko/zh/posts/ideas/first-thoughts/</link>
+        <pubDate>Mon, 16 Nov 2020 01:24:37 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <atom:modified>Mon, 16 Nov 2020 01:24:37 +0800</atom:modified>
+        <guid>https://hugo.jiahongw.com/ko/zh/posts/ideas/first-thoughts/</guid>
+        <description>从今天开始，准备记录以下自己平时的想法。因为有趣的想法可能一瞬间就消失了。如果没有将这些想法及过程记录下来，后面可能被什么事情给耽搁了，很快</description>
+        
+        <dc:creator>Victor</dc:creator>
+        <media:content url="https://hugo.jiahongw.comhttps://i.loli.net/2020/11/16/CRAVtXZIBHxfhel.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>life</category>
+            
+          
+        
+        
+          
+            
+          
+        
+        
+          
+            
+              <category>idea</category>
+            
+          
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

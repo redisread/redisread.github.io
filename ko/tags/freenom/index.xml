@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>freenom on </title>
+    <link>https://hugo.jiahongw.com/ko/tags/freenom/</link>
+    <description>Recent content in freenom on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
+    <webMaster>1427298682@qq.com (VictorHong)</webMaster>
+    <copyright>©2023, Redisread, <a href="https://beian.miit.gov.cn">粤ICP备20043735号</a></copyright>
+    <lastBuildDate>Sun, 27 Nov 2022 15:12:33 +0800</lastBuildDate>
+    
+        <atom:link href="https://hugo.jiahongw.com/ko/tags/freenom/index.xml" rel="self" type="application/rss+xml" />
+    
+
+      
+      <item>
+        <title>Freenom 免费域名申请 &amp; 自动域名续费</title>
+        <link>https://hugo.jiahongw.com/ko/zh/posts/usefulpower/freenom-domain/</link>
+        <pubDate>Sun, 27 Nov 2022 15:12:33 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <atom:modified>Sun, 27 Nov 2022 15:12:33 +0800</atom:modified>
+        <guid>https://hugo.jiahongw.com/ko/zh/posts/usefulpower/freenom-domain/</guid>
+        <description>&lt;p&gt;&lt;a href=&#34;https://my.freenom.com/&#34;&gt;Freenom&lt;/a&gt; 是目前为数不多的免费域名提供商，提供 &lt;code&gt;.ga&lt;/code&gt;, &lt;code&gt;.ml&lt;/code&gt;, &lt;code&gt;.gq&lt;/code&gt;, &lt;code&gt;.tk&lt;/code&gt;, &lt;code&gt;.cf&lt;/code&gt; 五个免费顶级域。当然也有一些付费的域名，对于普通人来说，免费域名就够了。&lt;span&gt;&lt;code&gt;😏&lt;/code&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;另外，本文后面还提供了一种自动续租 Freenom 免费域名的方法。&lt;/p&gt;</description>
+        
+        <dc:creator>Victor</dc:creator>
+        <media:content url="https://hugo.jiahongw.comhttps://my.freenom.com/templates/freenom/img/logo.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>域名</category>
+            
+          
+            
+              <category>freenom</category>
+            
+          
+        
+        
+          
+            
+          
+        
+        
+          
+            
+              <category>Blog</category>
+            
+          
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>
