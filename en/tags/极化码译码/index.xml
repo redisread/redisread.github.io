@@ -25,7 +25,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/polarcode/polar-code-decode/</link>
         <pubDate>Thu, 24 Jun 2021 14:04:45 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/polarcode/polar-code-decode/</guid>
         <description>Arıkan教授在文献[1]提出了串行抵消SC译码算法。SC译码算法类似一个深度优先搜索的算法，其根据两个判决函数进行迭代计算最大似然对数比</description>
         

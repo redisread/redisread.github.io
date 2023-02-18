@@ -25,7 +25,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/git/git-push-no-pw/</link>
         <pubDate>Fri, 03 Apr 2020 19:07:07 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/git/git-push-no-pw/</guid>
         <description>&lt;p&gt;每次push都需要输入用户名和密码,其实可以免去这些操作.🚛&lt;/p&gt;</description>
         
@@ -63,7 +63,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/hugo/hugo_setup/</link>
         <pubDate>Mon, 10 Feb 2020 20:50:09 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/hugo/hugo_setup/</guid>
         <description>HUGO + Github + Github Action 持续集成部署个人博客 安装 HUGO 本地环境 首先在 HUGO 的官网下载Hugo的 Windows 安装包，然后将路径添加到环境变量即可。 step1:下载 hugo step</description>
         

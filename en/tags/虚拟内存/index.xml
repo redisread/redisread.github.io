@@ -25,7 +25,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/linux/virtual-memory/</link>
         <pubDate>Wed, 18 Nov 2020 11:34:29 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/linux/virtual-memory/</guid>
         <description>虚拟存储器作为现代操作系统中存储器管理的一项重要技术，实现了内存扩充功能。**但该功能并非是从物理上实际地扩大内存的容量，而是从逻辑上实现对</description>
         

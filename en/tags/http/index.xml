@@ -25,7 +25,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/network/http-message/</link>
         <pubDate>Wed, 18 Nov 2020 11:52:50 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/network/http-message/</guid>
         <description>🍂 HTTP报文 请求报文 HTTP 请求报文由3部分组成(请求行+请求头+请求体) 请求行包括：请求方法、请求URL、HTTP协议及版本： GET和POST</description>
         
@@ -59,7 +59,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/network/http/</link>
         <pubDate>Tue, 28 Jul 2020 11:12:16 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/network/http/</guid>
         <description>HTTP是一个属于应用层的面向对象的协议，由于其简捷、快速的方式，适用于分布式超媒体信息系统。 HTTP/0.9 HTTP 是基于 TCP/IP 协议的应用层协议。它不涉及数据包（</description>
         

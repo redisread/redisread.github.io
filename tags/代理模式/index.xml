@@ -25,7 +25,7 @@
         <link>https://hugo.jiahongw.com/posts/designpattern/proxypattern/</link>
         <pubDate>Tue, 18 Jan 2022 10:51:06 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/posts/designpattern/proxypattern/</guid>
         <description>定义 代理模式为另一个对象提供一个替身或者占位符以控制这个对象的访问。 框架 @startuml &amp;#39; 代理模式 interface Subject { request() } class RealSubject implements Subject { + request() } class Proxy implements Subject { + request() } Proxy -&amp;gt; RealSubject : subject @enduml 使</description>
         

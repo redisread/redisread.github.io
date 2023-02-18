@@ -25,7 +25,7 @@
         <link>https://hugo.jiahongw.com/talks/idea-plugins/</link>
         <pubDate>Mon, 13 Dec 2021 16:50:04 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/talks/idea-plugins/</guid>
         <description>1 SequenceDiagram 序列化图 2 JRebel 简介： 热部署工具。在我们每次修改代码后，不用重启程序，JRebel 会自动将所有的代码变更生效。这样，相当于“跳过”频繁的 Java 代</description>
         

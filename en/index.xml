@@ -42,7 +42,7 @@
         <link>https://hugo.jiahongw.com/en/zh/showcase/hugo/myblog/</link>
         <pubDate>Sun, 19 Jan 2020 21:13:42 +0900</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/showcase/hugo/myblog/</guid>
         <description></description>
         
@@ -60,7 +60,7 @@
         <link>https://hugo.jiahongw.com/en/zh/showcase/hugo/myitem/</link>
         <pubDate>Sun, 19 Jan 2020 21:13:42 +0900</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/showcase/hugo/myitem/</guid>
         <description></description>
         
@@ -78,7 +78,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/usefulpower/freenom-domain/</link>
         <pubDate>Sun, 27 Nov 2022 15:12:33 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/usefulpower/freenom-domain/</guid>
         <description>&lt;p&gt;&lt;a href=&#34;https://my.freenom.com/&#34;&gt;Freenom&lt;/a&gt; 是目前为数不多的免费域名提供商，提供 &lt;code&gt;.ga&lt;/code&gt;, &lt;code&gt;.ml&lt;/code&gt;, &lt;code&gt;.gq&lt;/code&gt;, &lt;code&gt;.tk&lt;/code&gt;, &lt;code&gt;.cf&lt;/code&gt; 五个免费顶级域。当然也有一些付费的域名，对于普通人来说，免费域名就够了。&lt;span&gt;&lt;code&gt;😏&lt;/code&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;另外，本文后面还提供了一种自动续租 Freenom 免费域名的方法。&lt;/p&gt;</description>
@@ -117,7 +117,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/hugo/markdown-lint/</link>
         <pubDate>Sun, 27 Nov 2022 14:51:51 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/hugo/markdown-lint/</guid>
         <description>目前有中文和英文的 Markdown 规范检查工具，目前中文支持的比较少，英文的支持比较多，但是对英文比较友好，对中文支持也较少。 下面介绍这几个工具 lint-md github 仓库：</description>
         
@@ -149,7 +149,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/notion/kafka/202211061101/</link>
         <pubDate>Sun, 06 Nov 2022 11:01:00 +0000</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/notion/kafka/202211061101/</guid>
         <description>简介 Kafka最初由Linkedin公司开发，是一个分布式、分区的、多副本的、多订阅者，基于zookeeper协调的分布式日志系统（也可以当</description>
         
@@ -183,7 +183,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/notion/es/202210011430/</link>
         <pubDate>Sat, 01 Oct 2022 14:30:00 +0000</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/notion/es/202210011430/</guid>
         <description>简介 什么是ES？ ES的全称是ElasticSearch（下面简称ES），是一个分布式、高扩展、近实时的搜索与数据分析引擎（底层基于Apach</description>
         
@@ -221,7 +221,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/java/completablefuture/</link>
         <pubDate>Mon, 28 Mar 2022 17:38:53 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/java/completablefuture/</guid>
         <description>创建线程池的方法： 1 2 3 4 ExecutorService executorService = Executors.newCachedThreadPool(); ExecutorService executorService = Executors.newFixedThreadPool(3); ScheduledExecutorService executorService = Executors.newScheduledThreadPool(3); ExecutorService executorService = Executors.newSingleThreadExecutor(); https://www.cnblogs.com/pcheng/p/13540619.html 多线程的问题 线程任务是实现了Runnable接口，或者直接写个类继承Thread</description>
         
@@ -259,7 +259,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/designpattern/design-pattern-note/</link>
         <pubDate>Sun, 27 Mar 2022 19:20:05 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/designpattern/design-pattern-note/</guid>
         <description>设计原则 1.单一职责原则 2.开闭原则 3.里氏替换原则 4.依赖注入原则 5.接口分离原则 6.迪米特原则 将变化的东西抽离出来并且封装，一方面和原来</description>
         
@@ -297,7 +297,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/designpattern/proxypattern/</link>
         <pubDate>Tue, 18 Jan 2022 10:51:06 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/designpattern/proxypattern/</guid>
         <description>定义 代理模式为另一个对象提供一个替身或者占位符以控制这个对象的访问。 框架 @startuml &amp;#39; 代理模式 interface Subject { request() } class RealSubject implements Subject { + request() } class Proxy implements Subject { + request() } Proxy -&amp;gt; RealSubject : subject @enduml 使</description>
         
@@ -335,7 +335,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/designpattern/compositepattern/</link>
         <pubDate>Sun, 16 Jan 2022 16:15:31 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/designpattern/compositepattern/</guid>
         <description>组合模式跟我们之前讲的面向对象设计中的“组合关系(通过组合来组装两个类)”，完全是两码事。这里讲的“组合模式”，主要是用来处理树形结构数据。</description>
         
@@ -365,7 +365,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/designpattern/iteratorpattern/</link>
         <pubDate>Sun, 16 Jan 2022 13:14:21 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/designpattern/iteratorpattern/</guid>
         <description>迭代器模式也叫游标模式。 定义 迭代器模式提供了一种方法顺序访问一个聚合对象中的各个元素，而不暴露其内部的表示。 迭代器模式封装了遍历。并且迭代器</description>
         
@@ -403,7 +403,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/designpattern/templatemethodpattern/</link>
         <pubDate>Sat, 15 Jan 2022 22:04:19 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/designpattern/templatemethodpattern/</guid>
         <description>定义 模板方法模式在一个方法中定义一个算法的架构，而将一些步骤延迟到子类中。模板方法使得子类可以在不改变算法结构的情况下，重新定义算法中的某些</description>
         
@@ -441,7 +441,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/designpattern/facadepattern/</link>
         <pubDate>Sat, 15 Jan 2022 21:03:46 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/designpattern/facadepattern/</guid>
         <description>定义 外观模式定义了一个统一的接口，用来访问子系统中的一群接口。外观定义了一个高层接口，让子系统更容易使用。 外观模式可以解决接口的复用性和易用</description>
         
@@ -483,7 +483,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/designpattern/adaptorpattern/</link>
         <pubDate>Sat, 15 Jan 2022 18:52:34 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/designpattern/adaptorpattern/</guid>
         <description>定义 适配器将一个类的接口，转换成客户端期望的另一个接口。适配器让原本不兼容的类达到兼容。 （可以让客户从实现的接口解耦） 适配器模式下必须有一个</description>
         
@@ -521,7 +521,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/designpattern/commandpattern/</link>
         <pubDate>Thu, 13 Jan 2022 11:45:07 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/designpattern/commandpattern/</guid>
         <description>定义 命令模式将“请求”封装成对象，以便使用不同的请求、队列或者日志来参数化其他对象。命令模式也可以支持撤销的操作。 命令模式主要是将“命令的请</description>
         
@@ -559,7 +559,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/efficient/plantuml-note/</link>
         <pubDate>Sun, 09 Jan 2022 17:01:54 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/efficient/plantuml-note/</guid>
         <description>类图绘制 参考：【程序员小知识】使用 PlantUML 画 UML（上）类图 - 掘金 一览： 需要注意，一组@startuml/@enduml 对应一张 png，如果一个文</description>
         
@@ -595,7 +595,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/designpattern/decoratorpattern/</link>
         <pubDate>Wed, 05 Jan 2022 11:44:23 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/designpattern/decoratorpattern/</guid>
         <description>定义 装饰器模式动态的将责任附加到对象上，若要拓展功能，装饰者提供了比继承更有弹性的替代方案。 架构（类图） classDiagram class Component { &amp;lt;&amp;lt;abstract&amp;gt;&amp;gt; + methodA() + methodB() } class ConcreateComponent { + methodA() + methodB() }</description>
         
@@ -633,7 +633,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/designpattern/observerpattern/</link>
         <pubDate>Mon, 03 Jan 2022 22:41:31 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/designpattern/observerpattern/</guid>
         <description>定义 观察者模式定义了对象之间的一对多依赖，这样一来，当一个对象改变状态时，它的所有依赖者都会收到通知并且自动更新。 一个比喻：报纸订阅（出版者</description>
         
@@ -671,7 +671,7 @@
         <link>https://hugo.jiahongw.com/en/zh/talks/idea-plugins/</link>
         <pubDate>Mon, 13 Dec 2021 16:50:04 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/talks/idea-plugins/</guid>
         <description>1 SequenceDiagram 序列化图 2 JRebel 简介： 热部署工具。在我们每次修改代码后，不用重启程序，JRebel 会自动将所有的代码变更生效。这样，相当于“跳过”频繁的 Java 代</description>
         
@@ -743,7 +743,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/designpattern/factorymethodpattern/</link>
         <pubDate>Wed, 03 Nov 2021 16:05:37 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/designpattern/factorymethodpattern/</guid>
         <description>当我们使用new创建一个对象的时候，需要指定一个具体类，这就是针对实现进行编程。当我们将创建对象的过程封装成一个方法或者接口的时候，就可以避</description>
         
@@ -789,7 +789,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/designpattern/singletonpattern/</link>
         <pubDate>Thu, 21 Oct 2021 15:31:40 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/designpattern/singletonpattern/</guid>
         <description>什么是单例 单例设计模式（Singleton Design Pattern）理解起来非常简单。一个类只允许创建一个对象（或者实例），那这个类就是一个单例类，</description>
         
@@ -827,7 +827,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/designpattern/builderpattern/</link>
         <pubDate>Thu, 21 Oct 2021 10:47:09 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/designpattern/builderpattern/</guid>
         <description>建造者模式也称为生成器模式或者Builder模式。 建造者模式主要是为了解决调用构造函数的时候，参数太多，并且有一些是可选参数不填的情况。这种</description>
         
@@ -865,7 +865,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/systemarchitecture/architecture-drawing/</link>
         <pubDate>Tue, 19 Oct 2021 17:05:32 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/systemarchitecture/architecture-drawing/</guid>
         <description>什么是软件架构 软件架构的三种定义： 维基百科：软件架构可以和建筑物的架构相比拟。软件架构是构建计算机，开发系统以及计划进行的基础，可以列出开发</description>
         
@@ -899,7 +899,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/life/qingdao-travel/</link>
         <pubDate>Thu, 07 Oct 2021 21:26:43 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/life/qingdao-travel/</guid>
         <description>出发前的准备 我这里列了一个大致的攻略（虽然最后崂山没去成）： 青岛攻略 还准备了一个行程路线： 第一站 我们下车的地方是青岛站，一下来，就是一种欧式</description>
         
@@ -937,7 +937,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/java/java8-note/</link>
         <pubDate>Thu, 09 Sep 2021 11:14:17 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/java/java8-note/</guid>
         <description>✌️cxc 《Java实战》笔记 stream的使用注意 一个 Stream pipeline 中包含一个源 Stream，接着是 0个或者多个中间操作( intermediat巳 o</description>
         
@@ -973,7 +973,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/efficient/vim/</link>
         <pubDate>Sat, 04 Sep 2021 23:12:34 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/efficient/vim/</guid>
         <description>Bash Shell 命令行通用快捷键： 快捷键 作用 删除前一个字符 删除前一个单词 删除至行首 &amp;lt;++&amp;gt; &amp;lt;++&amp;gt; &amp;lt;++&amp;gt; &amp;lt;++&amp;gt; &amp;lt;++&amp;gt; &amp;lt;++&amp;gt; &amp;lt;++&amp;gt; &amp;lt;++&amp;gt; &amp;lt;++&amp;gt; &amp;lt;++&amp;gt; &amp;lt;++&amp;gt; &amp;lt;++&amp;gt; &amp;lt;++&amp;gt; &amp;lt;++&amp;gt; &amp;lt;++&amp;gt; Key Mapping: map表示递归的映射 unmap表示删</description>
         
@@ -1005,7 +1005,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/life/myfather-some/</link>
         <pubDate>Sat, 21 Aug 2021 21:36:35 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/life/myfather-some/</guid>
         <description>不经意间看见了下面的这篇博文，联想到自己，我自己和父亲的关系就非常类似下面博主和他父亲的关系。 文章链接(可能需要翻墙) 我自己对待父亲其实一直</description>
         
@@ -1039,7 +1039,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/life/code-problem-solving-onstreet/</link>
         <pubDate>Sat, 21 Aug 2021 16:15:37 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/life/code-problem-solving-onstreet/</guid>
         <description>Youtube中的一个非常有意思的视频活动。在芝加哥的大街上，看看路人能否解决一些初级的编程问题，解决问题的能够得到100美元，非常有意思。</description>
         
@@ -1073,7 +1073,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/java/boxing-unboxing/</link>
         <pubDate>Thu, 12 Aug 2021 21:21:00 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/java/boxing-unboxing/</guid>
         <description>Java语言虽然号称一切都是对象，但原始数据类型是例外。 在Java 5中，引入了自动装箱和自动拆箱功能（boxing/unboxing），Ja</description>
         
@@ -1107,7 +1107,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/polarcode/polar-code-encode/</link>
         <pubDate>Tue, 29 Jun 2021 13:01:45 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/polarcode/polar-code-encode/</guid>
         <description>极化编码的基本思想是：只在$Z\left( W_{N}^{\left( i \right)} \right)$近于0的坐标信道$W_{N}^{\left( i \right)}$上发送数据比</description>
         
@@ -1145,7 +1145,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/polarcode/polar-code-fundamentals/</link>
         <pubDate>Tue, 29 Jun 2021 12:48:45 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/polarcode/polar-code-fundamentals/</guid>
         <description>基本概念 信噪比 信噪比，英文名称叫做SNR（SIGNAL-NOISE RATIO )，是指一个电子设备或者电子系统中信号与噪声的比例。信噪比的计算可以为有</description>
         
@@ -1183,7 +1183,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/polarcode/polar-code-channel-model/</link>
         <pubDate>Thu, 24 Jun 2021 21:19:45 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/polarcode/polar-code-channel-model/</guid>
         <description>在通信过程中，物理层传输的就是电信号，假如我们只用0和1传输信号，并且这些信道互相都没有关系，我们称为二进制离散无记忆信道。信道模型是研究信</description>
         
@@ -1221,7 +1221,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/polarcode/polar-code-decode/</link>
         <pubDate>Thu, 24 Jun 2021 14:04:45 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/polarcode/polar-code-decode/</guid>
         <description>Arıkan教授在文献[1]提出了串行抵消SC译码算法。SC译码算法类似一个深度优先搜索的算法，其根据两个判决函数进行迭代计算最大似然对数比</description>
         
@@ -1259,7 +1259,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/life/biyeluxing/</link>
         <pubDate>Wed, 23 Jun 2021 21:39:06 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/life/biyeluxing/</guid>
         <description>出发前的准备 冲锋衣（防风，防晒，防雨，防寒） 登山鞋或者越野鞋 登山杖 帽子 防晒霜 一次性内裤和一次性雨衣 相机 厚的衣服 口罩 学生证 身份证 驾驶证 基本路线</description>
         
@@ -1293,7 +1293,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/polarcode/polar-code-intro/</link>
         <pubDate>Tue, 18 May 2021 14:01:12 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/polarcode/polar-code-intro/</guid>
         <description>5G下的极化码 这个专栏介绍极化码的相关原理，一方面是因为我目前的毕业设计是关于5G极化码方向的，另一方面我想将自己所学的一些知识记录或者分享</description>
         
@@ -1327,7 +1327,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/designpattern/strategypattern/</link>
         <pubDate>Sat, 27 Mar 2021 11:12:34 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/designpattern/strategypattern/</guid>
         <description>使用场景 避免冗长的if-else或switch分支判断 提供框架的扩展点 策略模式： 策略模式定义了算法族，分别封装起来，让他们之间可以互相替换。</description>
         
@@ -1365,7 +1365,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/nginx/nginx-ssl/</link>
         <pubDate>Mon, 01 Feb 2021 10:02:08 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/nginx/nginx-ssl/</guid>
         <description>在home目录下安装的nginx程序d 申请证书 letsencrypt的证书 申请网站：https://letsencrypt.osfipin.</description>
         
@@ -1397,7 +1397,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/linux/buffer-overflow/</link>
         <pubDate>Wed, 20 Jan 2021 16:39:48 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/linux/buffer-overflow/</guid>
         <description>《转载》 https://www.cnblogs.com/fanzhidongyzby/p/3250405.html 按照冯·诺依曼存储程序原理，程序代码是作为二进制数据存储在内存的，同样程序的数据也在内存中，因此直接从内存的二进制形式上是无法区分</description>
         
@@ -1429,7 +1429,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/linux/linking/</link>
         <pubDate>Thu, 14 Jan 2021 14:55:45 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/linux/linking/</guid>
         <description>链接 链接(linking)是将各种代码和数据片段收集并组合成为一个单一文件的过程，这个文件可被加载（复制）到内存并执行。 链接可以执行于编译时</description>
         
@@ -1687,7 +1687,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/network/hamming-code/</link>
         <pubDate>Wed, 25 Nov 2020 13:14:50 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/network/hamming-code/</guid>
         <description>什么是汉明码？ 看下面这张图，蓝色的表示需要发送的数据，我们就假设发送的数据为0101吧，外面橙色的码就是汉明码，汉明码是一种纠错码，但是只能</description>
         
@@ -1721,7 +1721,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/ideas/programer-go-go/</link>
         <pubDate>Tue, 24 Nov 2020 21:56:16 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/ideas/programer-go-go/</guid>
         <description>求职原理三要素 1. 价值 绝⼤部分公司购买⼈才都是为了使⽤，所以他们看中的是其使⽤价值！这个使⽤价值说得更直⽩⼀点，就是⼈才如何直接或者间接的为公</description>
         
@@ -1755,7 +1755,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/ideas/seven-habits/</link>
         <pubDate>Thu, 19 Nov 2020 22:50:47 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/ideas/seven-habits/</guid>
         <description>最近在知乎专栏《高效学习法》中看到一篇比较有用的文章，主要就是讲高效人士的六个好习惯。我觉得这些习惯倒是可以好好学习，因为其实有很多时候我们</description>
         
@@ -1789,7 +1789,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/network/quic-protocol/</link>
         <pubDate>Wed, 18 Nov 2020 18:22:14 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/network/quic-protocol/</guid>
         <description>如何让网络数据传输地更快？(合并一些层) 为什么需要QUIC？ 中间设备的僵化 可能是 TCP 协议使用得太久，也非常可靠。所以我们很多中间设备，包括防火</description>
         
@@ -1823,7 +1823,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/network/congestion-control/</link>
         <pubDate>Wed, 18 Nov 2020 15:31:12 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/network/congestion-control/</guid>
         <description>TCP拥塞控制算法的目的可以简单概括为：公平竞争、充分利用网络带宽、降低网络延时、优化用户体验，然而就目前而言要实现这些目标就难免有权衡和取</description>
         
@@ -1857,7 +1857,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/algorithmstructure/huffman-coding/</link>
         <pubDate>Wed, 18 Nov 2020 12:00:27 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/algorithmstructure/huffman-coding/</guid>
         <description>哈夫曼编码算法用字符在文件中出现的频率表来建立一个用0，1串表示各字符的最优表示方式。给出现频率高的字符较短的编码，出现频率较低的字符以较长</description>
         
@@ -1927,7 +1927,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/network/http-message/</link>
         <pubDate>Wed, 18 Nov 2020 11:52:50 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/network/http-message/</guid>
         <description>🍂 HTTP报文 请求报文 HTTP 请求报文由3部分组成(请求行+请求头+请求体) 请求行包括：请求方法、请求URL、HTTP协议及版本： GET和POST</description>
         
@@ -1961,7 +1961,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/linux/select-poll-epoll/</link>
         <pubDate>Wed, 18 Nov 2020 11:43:19 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/linux/select-poll-epoll/</guid>
         <description>同步异步与阻塞非阻塞 用户空间和内核空间 操作系统为了支持多个应用同时运行，需要保证不同进程之间相对独立（一个进程的崩溃不会影响其他的进程 ， 恶意</description>
         
@@ -2003,7 +2003,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/linux/virtual-memory/</link>
         <pubDate>Wed, 18 Nov 2020 11:34:29 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/linux/virtual-memory/</guid>
         <description>虚拟存储器作为现代操作系统中存储器管理的一项重要技术，实现了内存扩充功能。**但该功能并非是从物理上实际地扩大内存的容量，而是从逻辑上实现对</description>
         
@@ -2037,7 +2037,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/ideas/first-thoughts/</link>
         <pubDate>Mon, 16 Nov 2020 01:24:37 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/ideas/first-thoughts/</guid>
         <description>从今天开始，准备记录以下自己平时的想法。因为有趣的想法可能一瞬间就消失了。如果没有将这些想法及过程记录下来，后面可能被什么事情给耽搁了，很快</description>
         
@@ -2071,7 +2071,7 @@
         <link>https://hugo.jiahongw.com/en/zh/talks/database-talk/</link>
         <pubDate>Sun, 15 Nov 2020 00:06:50 +0900</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/talks/database-talk/</guid>
         <description>数据库事务 事务（Transaction）是由一系列对系统中数据进行访问与更新的操作所组成的一个程序执行逻辑单元。事务是DBMS中最基础的单位</description>
         
@@ -2101,7 +2101,7 @@
         <link>https://hugo.jiahongw.com/en/zh/talks/leetcode/</link>
         <pubDate>Sun, 15 Nov 2020 00:04:50 +0900</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/talks/leetcode/</guid>
         <description>546. 移除盒子 给出一些不同颜色的盒子，盒子的颜色由数字表示，即不同的数字表示不同的颜色。 你将经过若干轮操作去去掉盒子，直到所有的盒子都去掉为止。</description>
         
@@ -2131,7 +2131,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/algorithmstructure/hash/</link>
         <pubDate>Sun, 16 Aug 2020 13:17:07 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/algorithmstructure/hash/</guid>
         <description>哈希表 什么是哈希表？ 哈希表（Hash table，也叫散列表），是根据关键码值(Key value)而直接进行访问的数据结构。也就是说，它通过把</description>
         
@@ -2169,7 +2169,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/linux/memory-control/</link>
         <pubDate>Thu, 30 Jul 2020 09:01:25 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/linux/memory-control/</guid>
         <description>关于程序的装入 绝对装入：绝对映射，程序中逻辑地址与内存物理地址完全相同 （单片机) 可重定位装入：静态映射，在装入时对逻辑地址进行修改 动态运行时</description>
         
@@ -2203,7 +2203,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/network/net-level/</link>
         <pubDate>Tue, 28 Jul 2020 18:02:38 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/network/net-level/</guid>
         <description>网络层 网际协议IP是TCP/IP体系中两个最主要的协议之一[STEV94][COME06][FORO10]，也是最重要的因特网标准协议之一。</description>
         
@@ -2241,7 +2241,7 @@
         <link>https://hugo.jiahongw.com/en/zh/talks/leetcode-hot/</link>
         <pubDate>Tue, 28 Jul 2020 16:04:50 +0900</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/talks/leetcode-hot/</guid>
         <description>公司 岗位 题目 帖子时间 ==字节跳动 java 剑指 Offer 53 - II. 0～n-1中缺失的数字 2020.07.18== （双指针） ==字节跳动 java 如何判断一个单链表是不是有环 2020.07.18== （快慢指针） ==</description>
         
@@ -2271,7 +2271,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/linux/epoll-lt-et/</link>
         <pubDate>Tue, 28 Jul 2020 12:00:13 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/linux/epoll-lt-et/</guid>
         <description>描述符的就绪状态有两种判断方法: 边沿触发和水平触发。 水平触发 我认为这是“拉”模式或“民意调查”模式。为了确定描述符是否就绪，进程尝试执行非阻</description>
         
@@ -2309,7 +2309,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/network/http/</link>
         <pubDate>Tue, 28 Jul 2020 11:12:16 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/network/http/</guid>
         <description>HTTP是一个属于应用层的面向对象的协议，由于其简捷、快速的方式，适用于分布式超媒体信息系统。 HTTP/0.9 HTTP 是基于 TCP/IP 协议的应用层协议。它不涉及数据包（</description>
         
@@ -2351,7 +2351,7 @@
         <link>https://hugo.jiahongw.com/en/zh/talks/interview/</link>
         <pubDate>Tue, 28 Jul 2020 00:04:50 +0900</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/talks/interview/</guid>
         <description>C/C++ ⭕面向对象与面向过程 Leetcode对面向对象的理解：面向对象的编程方式使得每一个类都只做一件事。面向过程会让一个类越来越全能，就像一个管</description>
         
@@ -2381,7 +2381,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/algorithmstructure/bst/</link>
         <pubDate>Mon, 27 Jul 2020 22:07:13 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/algorithmstructure/bst/</guid>
         <description>&lt;p&gt;树是一种非常实用的结构！🌴&lt;/p&gt;</description>
         
@@ -2415,7 +2415,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/ue/ue-hitproxy/</link>
         <pubDate>Mon, 15 Jun 2020 09:43:11 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/ue/ue-hitproxy/</guid>
         <description>需要从 UGameViewportClient 类继承 修改返回值为true,路径：\Source\Runtime\Engine\Private\GameViewportClient</description>
         
@@ -2457,7 +2457,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/ue/ue-depth/</link>
         <pubDate>Mon, 15 Jun 2020 09:42:11 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/ue/ue-depth/</guid>
         <description>&lt;p&gt;在UE4中获取深度缓存，调用渲染命令读取。&lt;/p&gt;</description>
         
@@ -2499,7 +2499,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/ue/ue-game-render/</link>
         <pubDate>Wed, 03 Jun 2020 09:42:11 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/ue/ue-game-render/</guid>
         <description>&lt;p&gt;探索UE4游戏线程的进入&lt;/p&gt;</description>
         
@@ -2541,7 +2541,7 @@
         <link>https://hugo.jiahongw.com/en/zh/talks/ue4-talks/</link>
         <pubDate>Sat, 30 May 2020 20:00:19 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/talks/ue4-talks/</guid>
         <description>UE4问题汇总 UE4光照构建失败⚠️ https://blog.csdn.net/earlyAutumnOfRain/article/details/80863561 UE4导入灰度图 https://www.cnblogs.com/gucheng/p/10116857.html 详解UE4静态库与动态库的导入与使用 https://gameinstitute.qq.com/community/detail/121551 Ue4_序列化浅析_ https://blog.csdn.net/mohuak/article/details/83027211 UE快捷键 https://www.unrealengine.com/zh-CN/tech-blog/designer-s-guide-to-unreal-engine-keyboard-shortcuts UE4资源加</description>
         
@@ -2571,7 +2571,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/ue/ue4-render/</link>
         <pubDate>Fri, 29 May 2020 09:42:11 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/ue/ue4-render/</guid>
         <description>&lt;p&gt;大概介绍以下UE4的主要渲染过程。&lt;/p&gt;</description>
         
@@ -2613,7 +2613,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/cryptography/rsa/</link>
         <pubDate>Wed, 06 May 2020 16:00:46 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/cryptography/rsa/</guid>
         <description>RSA算法 RSA加密算法是一种非对称加密算法，在公开密钥加密和电子商业中被广泛使用。 对极大整数做因数分解的难度决定了 RSA 算法的可靠性。换言之，</description>
         
@@ -2645,7 +2645,7 @@
         <link>https://hugo.jiahongw.com/en/zh/talks/kubpeng_exercise/</link>
         <pubDate>Sat, 18 Apr 2020 17:13:00 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/talks/kubpeng_exercise/</guid>
         <description>[toc] 1. 鲲鹏云服务 鲲鹏处理器与服务器 鲲鹏处理器 华为鲲鹏处理器是华为自主研发的基于ARM架构的企业级系列处理器产品，包含“算、存、传、管、智”五个</description>
         
@@ -2677,7 +2677,7 @@
         <link>https://hugo.jiahongw.com/en/zh/talks/cpp_router/</link>
         <pubDate>Fri, 17 Apr 2020 00:26:00 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/talks/cpp_router/</guid>
         <description>C++学习路线🌱 hode on!💠</description>
         
@@ -2709,7 +2709,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/linux/linux-grep/</link>
         <pubDate>Thu, 16 Apr 2020 10:56:00 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/linux/linux-grep/</guid>
         <description>&lt;h2 id=&#34;heading&#34;&gt;|&lt;/h2&gt;
 &lt;p&gt;管道符，“|”，表示将前一个命令的处理结果输出传递给后面的命令处理。&lt;/p&gt;</description>
@@ -2756,7 +2756,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/linux/linux-users/</link>
         <pubDate>Wed, 15 Apr 2020 16:34:03 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/linux/linux-users/</guid>
         <description>&lt;p&gt;每一个用户都是一个个体，每一个个体都属于一个群组，而每一个群组又有区别!&lt;/p&gt;
 &lt;p&gt;——Users&lt;/p&gt;</description>
@@ -2795,7 +2795,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/linux/vim-use/</link>
         <pubDate>Mon, 13 Apr 2020 23:01:25 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/linux/vim-use/</guid>
         <description>&lt;p&gt;在大学时代，Vim 的大名就已如雷贯耳，但由于它陡峭的学习曲线，一直望而却步。等真正开始学习之后，发现并没有想象中的复杂，也没有所谓的瓶颈，只要在实际写代码中强迫自己使用就可以了，无形中就会形成习惯。&lt;/p&gt;
 &lt;p&gt;​																														——&lt;a href=&#34;https://geekplux.com/&#34;&gt;GeekPlux&lt;/a&gt;&lt;/p&gt;</description>
@@ -2834,7 +2834,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/linux/linux-shell/</link>
         <pubDate>Sat, 11 Apr 2020 23:24:18 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/linux/linux-shell/</guid>
         <description>&lt;p&gt;Linux基本操作。🤠&lt;/p&gt;</description>
         
@@ -2874,7 +2874,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/candcplusplus/cpp-duotai/</link>
         <pubDate>Sun, 05 Apr 2020 15:05:37 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/candcplusplus/cpp-duotai/</guid>
         <description>&lt;p&gt;C++特性之多态🍄&lt;/p&gt;</description>
         
@@ -2910,7 +2910,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/candcplusplus/c-read-write/</link>
         <pubDate>Sat, 04 Apr 2020 23:32:40 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/candcplusplus/c-read-write/</guid>
         <description>&lt;p&gt;c文件读写🗃️&lt;/p&gt;</description>
         
@@ -2948,7 +2948,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/network/udp-tcp/</link>
         <pubDate>Fri, 03 Apr 2020 21:42:11 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/network/udp-tcp/</guid>
         <description>&lt;p&gt;TCP/IP编程&lt;/p&gt;</description>
         
@@ -2990,7 +2990,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/git/git-push-no-pw/</link>
         <pubDate>Fri, 03 Apr 2020 19:07:07 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/git/git-push-no-pw/</guid>
         <description>&lt;p&gt;每次push都需要输入用户名和密码,其实可以免去这些操作.🚛&lt;/p&gt;</description>
         
@@ -3028,7 +3028,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/cryptography/aes/</link>
         <pubDate>Fri, 03 Apr 2020 14:20:19 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/cryptography/aes/</guid>
         <description>&lt;p&gt;AES算法是继DES之后比较快且比较简单的加密算法.⚖&lt;/p&gt;</description>
         
@@ -3070,7 +3070,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/algorithmstructure/hash-circle/</link>
         <pubDate>Tue, 17 Mar 2020 15:12:38 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/algorithmstructure/hash-circle/</guid>
         <description>&lt;p&gt;走得慢的时候，为什么不跑呢？#️⃣&lt;/p&gt;</description>
         
@@ -3116,7 +3116,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/algorithmstructure/sort/</link>
         <pubDate>Wed, 11 Mar 2020 22:07:13 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/algorithmstructure/sort/</guid>
         <description>&lt;p&gt;排序是最基本的算法，里面包含了最基础的思想。一个简单的优化可以让排序快很多。&lt;/p&gt;</description>
         
@@ -3158,7 +3158,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/deeplearning/machine-learning-base/</link>
         <pubDate>Sun, 08 Mar 2020 23:33:24 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/deeplearning/machine-learning-base/</guid>
         <description>&lt;p&gt;机器学习有这些基本的算法组成，要门机器学习，就需要打个地基✒️&lt;/p&gt;</description>
         
@@ -3208,7 +3208,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/spider/scrapy-1/</link>
         <pubDate>Wed, 04 Mar 2020 16:35:09 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/spider/scrapy-1/</guid>
         <description>&lt;p&gt;使用Scrapy爬取文章的一个小项目..&lt;/p&gt;</description>
         
@@ -3246,7 +3246,7 @@
         <link>https://hugo.jiahongw.com/en/zh/talks/tools/</link>
         <pubDate>Wed, 04 Mar 2020 16:20:19 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/talks/tools/</guid>
         <description>&lt;p&gt;好的工具🗝️  就成功了一半。&lt;/p&gt;</description>
         
@@ -3276,7 +3276,7 @@
         <link>https://hugo.jiahongw.com/en/zh/talks/github-lib/</link>
         <pubDate>Wed, 04 Mar 2020 16:16:05 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/talks/github-lib/</guid>
         <description>&lt;p&gt;All about Intresting in Github.&lt;/p&gt;</description>
         
@@ -3306,7 +3306,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/usefulpower/ppt-use/</link>
         <pubDate>Sun, 01 Mar 2020 15:18:15 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/usefulpower/ppt-use/</guid>
         <description>&lt;p&gt;在 Pt 页面增加了一些用 JS 实现的 PPT，主要展示一些效果。🔌&lt;/p&gt;</description>
         
@@ -3344,7 +3344,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/deeplearning/mxnet-begin/</link>
         <pubDate>Sun, 23 Feb 2020 15:49:10 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/deeplearning/mxnet-begin/</guid>
         <description>&lt;p&gt;使用MXNet的好处你永远想象不到。🉑&lt;/p&gt;</description>
         
@@ -3390,7 +3390,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/usefulpower/markdown-deep/</link>
         <pubDate>Fri, 14 Feb 2020 16:12:40 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/usefulpower/markdown-deep/</guid>
         <description>&lt;p&gt;👱‍♀️介绍一些 markdown 中比较实用的一些写作方法。&lt;/p&gt;</description>
         

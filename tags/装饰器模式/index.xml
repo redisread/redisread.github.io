@@ -25,7 +25,7 @@
         <link>https://hugo.jiahongw.com/posts/designpattern/decoratorpattern/</link>
         <pubDate>Wed, 05 Jan 2022 11:44:23 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/posts/designpattern/decoratorpattern/</guid>
         <description>定义 装饰器模式动态的将责任附加到对象上，若要拓展功能，装饰者提供了比继承更有弹性的替代方案。 架构（类图） classDiagram class Component { &amp;lt;&amp;lt;abstract&amp;gt;&amp;gt; + methodA() + methodB() } class ConcreateComponent { + methodA() + methodB() }</description>
         
