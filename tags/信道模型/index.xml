@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>信道模型 on ✏VictorHong&#39;s Blog</title>
+    <link>https://hugo.jiahongw.com/tags/%E4%BF%A1%E9%81%93%E6%A8%A1%E5%9E%8B/</link>
+    <description>Recent content in 信道模型 on ✏VictorHong&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
+    <webMaster>1427298682@qq.com (VictorHong)</webMaster>
+    <copyright>©2021-2023| VictorHong | <a href="https://beian.miit.gov.cn">粤ICP备20043735号</a></copyright>
+    <lastBuildDate>Thu, 24 Jun 2021 21:19:45 +0800</lastBuildDate>
+    
+        <atom:link href="https://hugo.jiahongw.com/tags/%E4%BF%A1%E9%81%93%E6%A8%A1%E5%9E%8B/index.xml" rel="self" type="application/rss+xml" />
+    
+
+      
+      <item>
+        <title>极化码-信道模型</title>
+        <link>https://hugo.jiahongw.com/posts/polarcode/polar-code-channel-model/</link>
+        <pubDate>Thu, 24 Jun 2021 21:19:45 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <guid>https://hugo.jiahongw.com/posts/polarcode/polar-code-channel-model/</guid>
+        <description>在通信过程中，物理层传输的就是电信号，假如我们只用0和1传输信号，并且这些信道互相都没有关系，我们称为二进制离散无记忆信道。信道模型是研究信</description>
+        
+        <dc:creator>Victor</dc:creator>
+        <media:content url="https://hugo.jiahongw.comhttps://raw.githubusercontent.com/redisread/Image/master/Java_Maven/channel_model_icon.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>PolarCode</category>
+            
+          
+            
+              <category>信道模型</category>
+            
+          
+        
+        
+          
+            
+          
+        
+        
+          
+            
+              <category>PolarCode</category>
+            
+          
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

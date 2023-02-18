@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>爬虫 on VictorHong&#39;s Blog</title>
+    <link>https://hugo.jiahongw.com/en/series/%E7%88%AC%E8%99%AB/</link>
+    <description>Recent content in 爬虫 on VictorHong&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
+    <webMaster>1427298682@qq.com (VictorHong)</webMaster>
+    <copyright>©2021-2023| VictorHong | <a href="https://beian.miit.gov.cn">粤ICP备20043735号</a></copyright>
+    <lastBuildDate>Wed, 04 Mar 2020 16:35:09 +0800</lastBuildDate>
+    
+        <atom:link href="https://hugo.jiahongw.com/en/series/%E7%88%AC%E8%99%AB/index.xml" rel="self" type="application/rss+xml" />
+    
+
+      
+      <item>
+        <title>Scrapy框架</title>
+        <link>https://hugo.jiahongw.com/en/zh/posts/spider/scrapy-1/</link>
+        <pubDate>Wed, 04 Mar 2020 16:35:09 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <guid>https://hugo.jiahongw.com/en/zh/posts/spider/scrapy-1/</guid>
+        <description>&lt;p&gt;使用Scrapy爬取文章的一个小项目..&lt;/p&gt;</description>
+        
+        <dc:creator>Victor</dc:creator>
+        <media:content url="https://hugo.jiahongw.comhttps://i.loli.net/2020/03/04/VDPQo3qaGYrCTd1.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>爬虫</category>
+            
+          
+            
+              <category>Scrapy</category>
+            
+          
+        
+        
+          
+            
+          
+        
+        
+          
+            
+              <category>爬虫</category>
+            
+          
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

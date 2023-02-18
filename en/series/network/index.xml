@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>network on VictorHong&#39;s Blog</title>
+    <link>https://hugo.jiahongw.com/en/series/network/</link>
+    <description>Recent content in network on VictorHong&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
+    <webMaster>1427298682@qq.com (VictorHong)</webMaster>
+    <copyright>©2021-2023| VictorHong | <a href="https://beian.miit.gov.cn">粤ICP备20043735号</a></copyright>
+    <lastBuildDate>Wed, 25 Nov 2020 13:14:50 +0800</lastBuildDate>
+    
+        <atom:link href="https://hugo.jiahongw.com/en/series/network/index.xml" rel="self" type="application/rss+xml" />
+    
+
+      
+      <item>
+        <title>汉明码</title>
+        <link>https://hugo.jiahongw.com/en/zh/posts/network/hamming-code/</link>
+        <pubDate>Wed, 25 Nov 2020 13:14:50 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <guid>https://hugo.jiahongw.com/en/zh/posts/network/hamming-code/</guid>
+        <description>什么是汉明码？ 看下面这张图，蓝色的表示需要发送的数据，我们就假设发送的数据为0101吧，外面橙色的码就是汉明码，汉明码是一种纠错码，但是只能</description>
+        
+        <dc:creator>Victor</dc:creator>
+        <media:content url="https://hugo.jiahongw.comhttps://i.loli.net/2020/11/20/4BnzoQXjSFtOGDs.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>汉明码</category>
+            
+          
+        
+        
+          
+            
+          
+        
+        
+          
+            
+              <category>network</category>
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>Quic协议为什么这么好</title>
+        <link>https://hugo.jiahongw.com/en/zh/posts/network/quic-protocol/</link>
+        <pubDate>Wed, 18 Nov 2020 18:22:14 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <guid>https://hugo.jiahongw.com/en/zh/posts/network/quic-protocol/</guid>
+        <description>如何让网络数据传输地更快？(合并一些层) 为什么需要QUIC？ 中间设备的僵化 可能是 TCP 协议使用得太久，也非常可靠。所以我们很多中间设备，包括防火</description>
+        
+        <dc:creator>Victor</dc:creator>
+        <media:content url="https://hugo.jiahongw.comhttps://i.loli.net/2020/11/18/nk9DPifsVOJra8q.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>quic</category>
+            
+          
+        
+        
+          
+            
+          
+        
+        
+          
+            
+              <category>network</category>
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>拥塞控制算法</title>
+        <link>https://hugo.jiahongw.com/en/zh/posts/network/congestion-control/</link>
+        <pubDate>Wed, 18 Nov 2020 15:31:12 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <guid>https://hugo.jiahongw.com/en/zh/posts/network/congestion-control/</guid>
+        <description>TCP拥塞控制算法的目的可以简单概括为：公平竞争、充分利用网络带宽、降低网络延时、优化用户体验，然而就目前而言要实现这些目标就难免有权衡和取</description>
+        
+        <dc:creator>Victor</dc:creator>
+        <media:content url="https://hugo.jiahongw.comhttps://i.loli.net/2020/11/18/opUXulDqz6c2gkJ.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>拥塞控制</category>
+            
+          
+        
+        
+          
+            
+          
+        
+        
+          
+            
+              <category>network</category>
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>Http报文格式及Http方法</title>
+        <link>https://hugo.jiahongw.com/en/zh/posts/network/http-message/</link>
+        <pubDate>Wed, 18 Nov 2020 11:52:50 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <guid>https://hugo.jiahongw.com/en/zh/posts/network/http-message/</guid>
+        <description>🍂 HTTP报文 请求报文 HTTP 请求报文由3部分组成(请求行+请求头+请求体) 请求行包括：请求方法、请求URL、HTTP协议及版本： GET和POST</description>
+        
+        <dc:creator>Victor</dc:creator>
+        <media:content url="https://hugo.jiahongw.comhttps://i.loli.net/2020/11/18/4CDbIrGoRW3qBF7.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>http</category>
+            
+          
+        
+        
+          
+            
+          
+        
+        
+          
+            
+              <category>network</category>
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>Http协议浅析</title>
+        <link>https://hugo.jiahongw.com/en/zh/posts/network/http/</link>
+        <pubDate>Tue, 28 Jul 2020 11:12:16 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <guid>https://hugo.jiahongw.com/en/zh/posts/network/http/</guid>
+        <description>HTTP是一个属于应用层的面向对象的协议，由于其简捷、快速的方式，适用于分布式超媒体信息系统。 HTTP/0.9 HTTP 是基于 TCP/IP 协议的应用层协议。它不涉及数据包（</description>
+        
+        <dc:creator>Victor</dc:creator>
+        <media:content url="https://hugo.jiahongw.comhttps://i.loli.net/2020/07/28/rcCOMEJ7YIALT3G.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>network</category>
+            
+          
+            
+              <category>http</category>
+            
+          
+            
+              <category>https</category>
+            
+          
+        
+        
+          
+            
+          
+        
+        
+          
+            
+              <category>network</category>
+            
+          
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

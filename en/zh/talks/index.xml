@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>Talks on VictorHong&#39;s Blog</title>
+    <link>https://hugo.jiahongw.com/en/zh/talks/</link>
+    <description>Recent content in Talks on VictorHong&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
+    <webMaster>1427298682@qq.com (VictorHong)</webMaster>
+    <copyright>©2021-2023| VictorHong | <a href="https://beian.miit.gov.cn">粤ICP备20043735号</a></copyright>
+    <lastBuildDate>Mon, 30 Dec 2019 11:14:14 +0900</lastBuildDate>
+    
+        <atom:link href="https://hugo.jiahongw.com/en/zh/talks/index.xml" rel="self" type="application/rss+xml" />
+    
+
+      
+      <item>
+        <title>IDEA实用的插件列表</title>
+        <link>https://hugo.jiahongw.com/en/zh/talks/idea-plugins/</link>
+        <pubDate>Mon, 13 Dec 2021 16:50:04 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <guid>https://hugo.jiahongw.com/en/zh/talks/idea-plugins/</guid>
+        <description>1 SequenceDiagram 序列化图 2 JRebel 简介： 热部署工具。在我们每次修改代码后，不用重启程序，JRebel 会自动将所有的代码变更生效。这样，相当于“跳过”频繁的 Java 代</description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>IDEA</category>
+            
+          
+        
+        
+          
+            
+          
+        
+        
+          
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>Database Talk</title>
+        <link>https://hugo.jiahongw.com/en/zh/talks/database-talk/</link>
+        <pubDate>Sun, 15 Nov 2020 00:06:50 +0900</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <guid>https://hugo.jiahongw.com/en/zh/talks/database-talk/</guid>
+        <description>数据库事务 事务（Transaction）是由一系列对系统中数据进行访问与更新的操作所组成的一个程序执行逻辑单元。事务是DBMS中最基础的单位</description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        
+        
+        
+        
+          
+            
+          
+        
+        
+          
+            
+          
+        
+        
+          
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>Leetcode Problem Solve</title>
+        <link>https://hugo.jiahongw.com/en/zh/talks/leetcode/</link>
+        <pubDate>Sun, 15 Nov 2020 00:04:50 +0900</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <guid>https://hugo.jiahongw.com/en/zh/talks/leetcode/</guid>
+        <description>546. 移除盒子 给出一些不同颜色的盒子，盒子的颜色由数字表示，即不同的数字表示不同的颜色。 你将经过若干轮操作去去掉盒子，直到所有的盒子都去掉为止。</description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        
+        
+        
+        
+          
+            
+          
+        
+        
+          
+            
+          
+        
+        
+          
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>Leetcode高频</title>
+        <link>https://hugo.jiahongw.com/en/zh/talks/leetcode-hot/</link>
+        <pubDate>Tue, 28 Jul 2020 16:04:50 +0900</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <guid>https://hugo.jiahongw.com/en/zh/talks/leetcode-hot/</guid>
+        <description>公司 岗位 题目 帖子时间 ==字节跳动 java 剑指 Offer 53 - II. 0～n-1中缺失的数字 2020.07.18== （双指针） ==字节跳动 java 如何判断一个单链表是不是有环 2020.07.18== （快慢指针） ==</description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        
+        
+        
+        
+          
+            
+          
+        
+        
+          
+            
+          
+        
+        
+          
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>interview</title>
+        <link>https://hugo.jiahongw.com/en/zh/talks/interview/</link>
+        <pubDate>Tue, 28 Jul 2020 00:04:50 +0900</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <guid>https://hugo.jiahongw.com/en/zh/talks/interview/</guid>
+        <description>C/C++ ⭕面向对象与面向过程 Leetcode对面向对象的理解：面向对象的编程方式使得每一个类都只做一件事。面向过程会让一个类越来越全能，就像一个管</description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        
+        
+        
+        
+          
+            
+          
+        
+        
+          
+            
+          
+        
+        
+          
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>UE4 Problems</title>
+        <link>https://hugo.jiahongw.com/en/zh/talks/ue4-talks/</link>
+        <pubDate>Sat, 30 May 2020 20:00:19 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <guid>https://hugo.jiahongw.com/en/zh/talks/ue4-talks/</guid>
+        <description>UE4问题汇总 UE4光照构建失败⚠️ https://blog.csdn.net/earlyAutumnOfRain/article/details/80863561 UE4导入灰度图 https://www.cnblogs.com/gucheng/p/10116857.html 详解UE4静态库与动态库的导入与使用 https://gameinstitute.qq.com/community/detail/121551 Ue4_序列化浅析_ https://blog.csdn.net/mohuak/article/details/83027211 UE快捷键 https://www.unrealengine.com/zh-CN/tech-blog/designer-s-guide-to-unreal-engine-keyboard-shortcuts UE4资源加</description>
+        
+        <dc:creator>Victor</dc:creator>
+        <media:content url="https://hugo.jiahongw.comhttps://i.loli.net/2020/05/30/ozvN8LMnpmk1JTQ.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+          
+        
+        
+          
+            
+          
+        
+        
+          
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>鲲鹏Learning🏸</title>
+        <link>https://hugo.jiahongw.com/en/zh/talks/kubpeng_exercise/</link>
+        <pubDate>Sat, 18 Apr 2020 17:13:00 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <guid>https://hugo.jiahongw.com/en/zh/talks/kubpeng_exercise/</guid>
+        <description>[toc] 1. 鲲鹏云服务 鲲鹏处理器与服务器 鲲鹏处理器 华为鲲鹏处理器是华为自主研发的基于ARM架构的企业级系列处理器产品，包含“算、存、传、管、智”五个</description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>云计算</category>
+            
+          
+        
+        
+          
+            
+          
+        
+        
+          
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>C&#43;&#43;学习路线</title>
+        <link>https://hugo.jiahongw.com/en/zh/talks/cpp_router/</link>
+        <pubDate>Fri, 17 Apr 2020 00:26:00 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <guid>https://hugo.jiahongw.com/en/zh/talks/cpp_router/</guid>
+        <description>C++学习路线🌱 hode on!💠</description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>C&#43;&#43;</category>
+            
+          
+        
+        
+          
+            
+          
+        
+        
+          
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>Tools</title>
+        <link>https://hugo.jiahongw.com/en/zh/talks/tools/</link>
+        <pubDate>Wed, 04 Mar 2020 16:20:19 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <guid>https://hugo.jiahongw.com/en/zh/talks/tools/</guid>
+        <description>&lt;p&gt;好的工具🗝️  就成功了一半。&lt;/p&gt;</description>
+        
+        <dc:creator>Victor</dc:creator>
+        <media:content url="https://hugo.jiahongw.comhttps://i.loli.net/2020/03/04/93TKXJFUDYnbQsR.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+          
+        
+        
+          
+            
+          
+        
+        
+          
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>Good库</title>
+        <link>https://hugo.jiahongw.com/en/zh/talks/github-lib/</link>
+        <pubDate>Wed, 04 Mar 2020 16:16:05 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <guid>https://hugo.jiahongw.com/en/zh/talks/github-lib/</guid>
+        <description>&lt;p&gt;All about Intresting in Github.&lt;/p&gt;</description>
+        
+        <dc:creator>Victor</dc:creator>
+        <media:content url="https://hugo.jiahongw.comhttps://i.loli.net/2020/03/04/UD37S59viJ6ybwu.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+          
+        
+        
+          
+            
+          
+        
+        
+          
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>My Awesome links</title>
+        <link>https://hugo.jiahongw.com/en/zh/talks/mylinks/</link>
+        <pubDate>Tue, 31 Dec 2019 00:04:50 +0900</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <guid>https://hugo.jiahongw.com/en/zh/talks/mylinks/</guid>
+        <description>A Short Video： ——以下 Aaron Swartz的宣言，我想这才是信息革命的真谛—— 信息就是力量。但就像所有力量一样，有些人只想占为己有。世界上所有的</description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        
+        
+        
+        
+          
+            
+          
+        
+        
+          
+            
+          
+        
+        
+          
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>B站视频</title>
+        <link>https://hugo.jiahongw.com/en/zh/talks/blibli/</link>
+        <pubDate>Fri, 01 Mar 2019 00:04:50 +0900</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <guid>https://hugo.jiahongw.com/en/zh/talks/blibli/</guid>
+        <description>一个测试视频:</description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        
+        
+        
+        
+          
+            
+          
+        
+        
+          
+            
+          
+        
+        
+          
+            
+          
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

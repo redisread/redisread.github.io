@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>vim on VictorHong&#39;s Blog</title>
+    <link>https://hugo.jiahongw.com/en/tags/vim/</link>
+    <description>Recent content in vim on VictorHong&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
+    <webMaster>1427298682@qq.com (VictorHong)</webMaster>
+    <copyright>©2021-2023| VictorHong | <a href="https://beian.miit.gov.cn">粤ICP备20043735号</a></copyright>
+    <lastBuildDate>Sun, 28 Nov 2021 15:10:01 +0800</lastBuildDate>
+    
+        <atom:link href="https://hugo.jiahongw.com/en/tags/vim/index.xml" rel="self" type="application/rss+xml" />
+    
+
+      
+      <item>
+        <title>Nvchad使用</title>
+        <link>https://hugo.jiahongw.com/en/zh/posts/efficient/nvchad%E4%BD%BF%E7%94%A8/</link>
+        <pubDate>Sun, 28 Nov 2021 15:10:01 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <atom:modified>Sun, 28 Nov 2021 15:10:01 +0800</atom:modified>
+        <guid>https://hugo.jiahongw.com/en/zh/posts/efficient/nvchad%E4%BD%BF%E7%94%A8/</guid>
+        <description>安装更新卸载 参考：https://nvchad.github.io/getting-started/setup 参考指令 参考：https://</description>
+        
+        <dc:creator>Victor</dc:creator>
+        <media:content url="https://hugo.jiahongw.comhttps://nvchad.github.io/img/logo.svg" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>Nvchad</category>
+            
+          
+            
+              <category>nvim</category>
+            
+          
+            
+              <category>vim</category>
+            
+          
+        
+        
+          
+            
+          
+        
+        
+          
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>vim使用笔记</title>
+        <link>https://hugo.jiahongw.com/en/zh/posts/efficient/vim/</link>
+        <pubDate>Sat, 04 Sep 2021 23:12:34 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <guid>https://hugo.jiahongw.com/en/zh/posts/efficient/vim/</guid>
+        <description>Bash Shell 命令行通用快捷键： 快捷键 作用 删除前一个字符 删除前一个单词 删除至行首 &amp;lt;++&amp;gt; &amp;lt;++&amp;gt; &amp;lt;++&amp;gt; &amp;lt;++&amp;gt; &amp;lt;++&amp;gt; &amp;lt;++&amp;gt; &amp;lt;++&amp;gt; &amp;lt;++&amp;gt; &amp;lt;++&amp;gt; &amp;lt;++&amp;gt; &amp;lt;++&amp;gt; &amp;lt;++&amp;gt; &amp;lt;++&amp;gt; &amp;lt;++&amp;gt; &amp;lt;++&amp;gt; Key Mapping: map表示递归的映射 unmap表示删</description>
+        
+        <dc:creator>Victor</dc:creator>
+        <media:content url="https://hugo.jiahongw.comhttps://cos.jiahongw.com/uPic/4691236_vim_icon.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>vim</category>
+            
+          
+        
+        
+          
+            
+          
+        
+        
+          
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>Linux编辑利器-Vim</title>
+        <link>https://hugo.jiahongw.com/en/zh/posts/linux/vim-use/</link>
+        <pubDate>Mon, 13 Apr 2020 23:01:25 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <atom:modified>Sun, 19 Feb 2023 00:52:44 +0800</atom:modified>
+        <guid>https://hugo.jiahongw.com/en/zh/posts/linux/vim-use/</guid>
+        <description>&lt;p&gt;在大学时代，Vim 的大名就已如雷贯耳，但由于它陡峭的学习曲线，一直望而却步。等真正开始学习之后，发现并没有想象中的复杂，也没有所谓的瓶颈，只要在实际写代码中强迫自己使用就可以了，无形中就会形成习惯。&lt;/p&gt;
+&lt;p&gt;​																														——&lt;a href=&#34;https://geekplux.com/&#34;&gt;GeekPlux&lt;/a&gt;&lt;/p&gt;</description>
+        
+        <dc:creator>Victor</dc:creator>
+        <media:content url="https://hugo.jiahongw.comhttps://i.loli.net/2020/04/13/IJ9BjeUSnymkaqO.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>Linux</category>
+            
+          
+            
+              <category>Vim</category>
+            
+          
+        
+        
+          
+            
+          
+        
+        
+          
+            
+              <category>Linux</category>
+            
+          
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>
