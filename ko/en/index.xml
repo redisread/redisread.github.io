@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" 
-  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
-  xmlns:dc="http://purl.org/dc/elements/1.1/" 
-  xmlns:atom="http://www.w3.org/2005/Atom" 
-  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
-  xmlns:media="http://search.yahoo.com/mrss/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ens on </title>
     <link>https://hugo.jiahongw.com/ko/en/</link>
@@ -13,35 +8,21 @@
     <language>ko</language>
     <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
     <webMaster>1427298682@qq.com (VictorHong)</webMaster>
-    <copyright>©2023, Redisread, <a href="https://beian.miit.gov.cn">粤ICP备20043735号</a></copyright>
-    <lastBuildDate>Sat, 25 Jan 2020 06:40:51 +0900</lastBuildDate>
+    <copyright>&amp;copy;{year}, Redisread, [粤ICP备20043735号](https://beian.miit.gov.cn)</copyright>
+    <lastBuildDate>Thu, 28 Feb 2019 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://hugo.jiahongw.com/ko/en/index.xml" rel="self" type="application/rss+xml" />
     
-
+    
+    
       
       <item>
         <title>Posts</title>
         <link>https://hugo.jiahongw.com/ko/en/posts/</link>
         <pubDate>Sat, 25 Jan 2020 06:40:51 +0900</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        
         <guid>https://hugo.jiahongw.com/ko/en/posts/</guid>
         <description></description>
-        
-        <dc:creator>Hugo Authors</dc:creator>
-        
-        
-        
-        
-          
-            
-              <category>index</category>
-            
-          
-        
-        
-        
       </item>
       
       <item>
@@ -49,17 +30,8 @@
         <link>https://hugo.jiahongw.com/ko/en/showcase/</link>
         <pubDate>Sun, 19 Jan 2020 15:43:38 +0900</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Jan 2020 15:43:38 +0900</atom:modified>
         <guid>https://hugo.jiahongw.com/ko/en/showcase/</guid>
         <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
       </item>
       
       <item>
@@ -67,17 +39,8 @@
         <link>https://hugo.jiahongw.com/ko/en/archive/</link>
         <pubDate>Sat, 19 Oct 2019 11:44:14 +0900</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sat, 19 Oct 2019 11:44:14 +0900</atom:modified>
         <guid>https://hugo.jiahongw.com/ko/en/archive/</guid>
         <description>archive page</description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
       </item>
       
       <item>
@@ -85,22 +48,12 @@
         <link>https://hugo.jiahongw.com/ko/en/about/</link>
         <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Thu, 28 Feb 2019 00:00:00 +0000</atom:modified>
         <guid>https://hugo.jiahongw.com/ko/en/about/</guid>
         <description>Written in Go, Hugo is an open source static site generator available under the Apache Licence 2.0. Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
 Hugo makes use of a variety of open source projects including:
-https://github.com/russross/blackfriday https://github.</description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
+ https://github.</description>
       </item>
       
-
     
   </channel>
 </rss>

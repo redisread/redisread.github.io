@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" 
-  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
-  xmlns:dc="http://purl.org/dc/elements/1.1/" 
-  xmlns:atom="http://www.w3.org/2005/Atom" 
-  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
-  xmlns:media="http://search.yahoo.com/mrss/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>虚拟内存 on ✏Victor&#39;s Blog</title>
     <link>https://hugo.jiahongw.com/zh/tags/%E8%99%9A%E6%8B%9F%E5%86%85%E5%AD%98/</link>
@@ -13,48 +8,23 @@
     <language>zh</language>
     <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
     <webMaster>1427298682@qq.com (VictorHong)</webMaster>
-    <copyright>©2023, Redisread, <a href="https://beian.miit.gov.cn">粤ICP备20043735号</a></copyright>
+    <copyright>&amp;copy;{year}, Redisread, [粤ICP备20043735号](https://beian.miit.gov.cn)</copyright>
     <lastBuildDate>Wed, 18 Nov 2020 11:34:29 +0800</lastBuildDate>
     
         <atom:link href="https://hugo.jiahongw.com/zh/tags/%E8%99%9A%E6%8B%9F%E5%86%85%E5%AD%98/index.xml" rel="self" type="application/rss+xml" />
     
-
+    
+    
       
       <item>
         <title>Linux虚拟内存与分页存储管理</title>
         <link>https://hugo.jiahongw.com/zh/posts/linux/virtual-memory/</link>
         <pubDate>Wed, 18 Nov 2020 11:34:29 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Wed, 18 Nov 2020 11:34:29 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/zh/posts/linux/virtual-memory/</guid>
         <description>虚拟存储器作为现代操作系统中存储器管理的一项重要技术，实现了内存扩充功能。**但该功能并非是从物理上实际地扩大内存的容量，而是从逻辑上实现对</description>
-        
-        <dc:creator>Victor</dc:creator>
-        <media:content url="https://hugo.jiahongw.comhttps://i.loli.net/2020/11/18/T2kt5XzZRpJ3AfI.png" medium="image"><media:title type="html">featured image</media:title></media:content>
-        
-        
-        
-          
-            
-              <category>虚拟内存</category>
-            
-          
-        
-        
-          
-            
-          
-        
-        
-          
-            
-              <category>Linux</category>
-            
-          
-        
       </item>
       
-
     
   </channel>
 </rss>

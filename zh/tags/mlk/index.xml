@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" 
-  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
-  xmlns:dc="http://purl.org/dc/elements/1.1/" 
-  xmlns:atom="http://www.w3.org/2005/Atom" 
-  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
-  xmlns:media="http://search.yahoo.com/mrss/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>MLK on ✏Victor&#39;s Blog</title>
     <link>https://hugo.jiahongw.com/zh/tags/mlk/</link>
@@ -13,43 +8,21 @@
     <language>zh</language>
     <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
     <webMaster>1427298682@qq.com (VictorHong)</webMaster>
-    <copyright>©2023, Redisread, <a href="https://beian.miit.gov.cn">粤ICP备20043735号</a></copyright>
+    <copyright>&amp;copy;{year}, Redisread, [粤ICP备20043735号](https://beian.miit.gov.cn)</copyright>
     <lastBuildDate>Thu, 14 Jan 2021 11:26:46 +0800</lastBuildDate>
     
         <atom:link href="https://hugo.jiahongw.com/zh/tags/mlk/index.xml" rel="self" type="application/rss+xml" />
     
-
+    
+    
       
       <item>
         <title>打桩机制</title>
         <link>https://hugo.jiahongw.com/zh/posts/%E5%87%86%E5%A4%87%E4%B8%A2%E5%BC%83/mlk/interposition/</link>
         <pubDate>Thu, 14 Jan 2021 11:26:46 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Thu, 14 Jan 2021 11:26:46 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/zh/posts/%E5%87%86%E5%A4%87%E4%B8%A2%E5%BC%83/mlk/interposition/</guid>
         <description>库打桩机制 LInux链接器有强大的库打桩机制，它允许你对共享库的代码进行截取，从而执行自己的代码。而为了调试，你通常可以在自己的代码中加入一</description>
-        
-        <dc:creator>Victor</dc:creator>
-        <media:content url="https://hugo.jiahongw.comhttps://i.loli.net/2021/01/14/7OgZPEvV8lrw9JR.png" medium="image"><media:title type="html">featured image</media:title></media:content>
-        
-        
-        
-          
-            
-              <category>MLK</category>
-            
-          
-        
-        
-          
-            
-          
-        
-        
-          
-            
-          
-        
       </item>
       
       <item>
@@ -57,31 +30,8 @@
         <link>https://hugo.jiahongw.com/zh/posts/%E5%87%86%E5%A4%87%E4%B8%A2%E5%BC%83/mlk/diehard/</link>
         <pubDate>Tue, 12 Jan 2021 16:54:58 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Tue, 12 Jan 2021 16:54:58 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/zh/posts/%E5%87%86%E5%A4%87%E4%B8%A2%E5%BC%83/mlk/diehard/</guid>
         <description>DieHard 一个基于概率内存安全的运行时系统。 基本介绍 源码：https://github.com/emeryberger/DieHard 支持 Windows Linux Mac OS X</description>
-        
-        <dc:creator>Victor</dc:creator>
-        <media:content url="https://hugo.jiahongw.comhttps://i.loli.net/2021/01/21/S4aWHn8rcwDguId.png" medium="image"><media:title type="html">featured image</media:title></media:content>
-        
-        
-        
-          
-            
-              <category>MLK</category>
-            
-          
-        
-        
-          
-            
-          
-        
-        
-          
-            
-          
-        
       </item>
       
       <item>
@@ -89,31 +39,8 @@
         <link>https://hugo.jiahongw.com/zh/posts/%E5%87%86%E5%A4%87%E4%B8%A2%E5%BC%83/mlk/valgrind/</link>
         <pubDate>Tue, 12 Jan 2021 16:53:04 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Tue, 12 Jan 2021 16:53:04 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/zh/posts/%E5%87%86%E5%A4%87%E4%B8%A2%E5%BC%83/mlk/valgrind/</guid>
         <description>Valgrind Valgrind发行版目前包括七个生产质量工具：一个内存错误检测器，两个线程错误检测器，一个缓存和分支预测探查器，一个生成调用图的缓存和分</description>
-        
-        <dc:creator>Victor</dc:creator>
-        <media:content url="https://hugo.jiahongw.comhttps://i.loli.net/2021/01/22/Y1GSoIZW8jHBAQz.png" medium="image"><media:title type="html">featured image</media:title></media:content>
-        
-        
-        
-          
-            
-              <category>MLK</category>
-            
-          
-        
-        
-          
-            
-          
-        
-        
-          
-            
-          
-        
       </item>
       
       <item>
@@ -121,31 +48,8 @@
         <link>https://hugo.jiahongw.com/zh/posts/%E5%87%86%E5%A4%87%E4%B8%A2%E5%BC%83/mlk/duma/</link>
         <pubDate>Tue, 12 Jan 2021 16:52:41 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Tue, 12 Jan 2021 16:52:41 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/zh/posts/%E5%87%86%E5%A4%87%E4%B8%A2%E5%BC%83/mlk/duma/</guid>
         <description>duma DUMA是一个开源库(在GNU通用公共许可证下)，用于检测C和C++程序中的缓冲区溢出和运行错误，是一个Red-Zone memory allocato</description>
-        
-        <dc:creator>Victor</dc:creator>
-        <media:content url="https://hugo.jiahongw.comhttps://i.loli.net/2021/01/14/GyBm4EuQsfKXVti.png" medium="image"><media:title type="html">featured image</media:title></media:content>
-        
-        
-        
-          
-            
-              <category>MLK</category>
-            
-          
-        
-        
-          
-            
-          
-        
-        
-          
-            
-          
-        
       </item>
       
       <item>
@@ -153,31 +57,8 @@
         <link>https://hugo.jiahongw.com/zh/posts/%E5%87%86%E5%A4%87%E4%B8%A2%E5%BC%83/mlk/eletric-fence/</link>
         <pubDate>Tue, 12 Jan 2021 16:52:17 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Tue, 12 Jan 2021 16:52:17 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/zh/posts/%E5%87%86%E5%A4%87%E4%B8%A2%E5%BC%83/mlk/eletric-fence/</guid>
         <description>Eletric-Fence Electric Fence是另一种malloc（）调试器。它使用系统的虚拟内存硬件来检测软件何时超出了malloc（）缓冲区的边界。它还将检测free（</description>
-        
-        <dc:creator>Victor</dc:creator>
-        <media:content url="https://hugo.jiahongw.comhttps://i.loli.net/2021/01/14/rRaLjNvdKhIFxGi.png" medium="image"><media:title type="html">featured image</media:title></media:content>
-        
-        
-        
-          
-            
-              <category>MLK</category>
-            
-          
-        
-        
-          
-            
-          
-        
-        
-          
-            
-          
-        
       </item>
       
       <item>
@@ -185,31 +66,8 @@
         <link>https://hugo.jiahongw.com/zh/posts/%E5%87%86%E5%A4%87%E4%B8%A2%E5%BC%83/mlk/dbgmem/</link>
         <pubDate>Tue, 12 Jan 2021 16:29:16 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Tue, 12 Jan 2021 16:29:16 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/zh/posts/%E5%87%86%E5%A4%87%E4%B8%A2%E5%BC%83/mlk/dbgmem/</guid>
         <description>Dbgmem DBGMEM是用于C和C ++程序的功能丰富的内存调试器。目前仅适用于Linux。 基本介绍 官网： http://dbgmem.sourceforge.net/ 源码： https://sourceforge.net/p/dbgmem/code/HEAD/tree/ Github: https://github.com/MoserMichael/cstuff 文档： http://dbgmem.sourceforge.net/README.html 支持 使用Perl编写，</description>
-        
-        <dc:creator>Victor</dc:creator>
-        <media:content url="https://hugo.jiahongw.comhttps://i.loli.net/2021/01/14/J4yIZEVO9pHSN8q.png" medium="image"><media:title type="html">featured image</media:title></media:content>
-        
-        
-        
-          
-            
-              <category>MLK</category>
-            
-          
-        
-        
-          
-            
-          
-        
-        
-          
-            
-          
-        
       </item>
       
       <item>
@@ -217,36 +75,10 @@
         <link>https://hugo.jiahongw.com/zh/posts/%E5%87%86%E5%A4%87%E4%B8%A2%E5%BC%83/mlk/addresssanitizer/</link>
         <pubDate>Thu, 07 Jan 2021 10:09:40 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Thu, 07 Jan 2021 10:09:40 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/zh/posts/%E5%87%86%E5%A4%87%E4%B8%A2%E5%BC%83/mlk/addresssanitizer/</guid>
         <description>AddressSanitizer 基本介绍 官网：http://clang.llvm.org/docs/AddressSanitizer.html 源码：https://git</description>
-        
-        <dc:creator>Victor</dc:creator>
-        <media:content url="https://hugo.jiahongw.comhttps://i.loli.net/2021/01/07/p8frJDq2YzFPIbu.png" medium="image"><media:title type="html">featured image</media:title></media:content>
-        
-        
-        
-          
-            
-              <category>MLK</category>
-            
-          
-        
-        
-          
-            
-          
-        
-        
-          
-            
-              <category>MLK</category>
-            
-          
-        
       </item>
       
-
     
   </channel>
 </rss>

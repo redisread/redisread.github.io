@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" 
-  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
-  xmlns:dc="http://purl.org/dc/elements/1.1/" 
-  xmlns:atom="http://www.w3.org/2005/Atom" 
-  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
-  xmlns:media="http://search.yahoo.com/mrss/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>article on ✏Victor&#39;s Blog</title>
     <link>https://hugo.jiahongw.com/zh/publication/article/</link>
@@ -13,32 +8,23 @@
     <language>zh</language>
     <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
     <webMaster>1427298682@qq.com (VictorHong)</webMaster>
-    <copyright>©2023, Redisread, <a href="https://beian.miit.gov.cn">粤ICP备20043735号</a></copyright>
+    <copyright>&amp;copy;{year}, Redisread, [粤ICP备20043735号](https://beian.miit.gov.cn)</copyright>
     <lastBuildDate>Thu, 05 Mar 2020 14:08:48 +0000</lastBuildDate>
     
         <atom:link href="https://hugo.jiahongw.com/zh/publication/article/index.xml" rel="self" type="application/rss+xml" />
     
-
+    
+    
       
       <item>
         <title>Good Title</title>
         <link>https://hugo.jiahongw.com/zh/publication/article/article_any_folder_name_1/</link>
         <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Fri, 01 Jun 2018 00:00:00 +0000</atom:modified>
         <guid>https://hugo.jiahongw.com/zh/publication/article/article_any_folder_name_1/</guid>
         <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
       </item>
       
-
     
   </channel>
 </rss>

@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" 
-  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
-  xmlns:dc="http://purl.org/dc/elements/1.1/" 
-  xmlns:atom="http://www.w3.org/2005/Atom" 
-  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
-  xmlns:media="http://search.yahoo.com/mrss/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>shortcode on </title>
     <link>https://hugo.jiahongw.com/ko/tags/shortcode/</link>
@@ -13,79 +8,24 @@
     <language>ko</language>
     <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
     <webMaster>1427298682@qq.com (VictorHong)</webMaster>
-    <copyright>©2023, Redisread, <a href="https://beian.miit.gov.cn">粤ICP备20043735号</a></copyright>
+    <copyright>&amp;copy;{year}, Redisread, [粤ICP备20043735号](https://beian.miit.gov.cn)</copyright>
     <lastBuildDate>Sat, 25 Jan 2020 06:40:51 +0900</lastBuildDate>
     
         <atom:link href="https://hugo.jiahongw.com/ko/tags/shortcode/index.xml" rel="self" type="application/rss+xml" />
     
-
+    
+    
       
       <item>
         <title>Shortcodes</title>
         <link>https://hugo.jiahongw.com/ko/en/posts/shortcodes/</link>
         <pubDate>Sat, 25 Jan 2020 06:40:51 +0900</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sat, 25 Jan 2020 06:40:51 +0900</atom:modified>
         <guid>https://hugo.jiahongw.com/ko/en/posts/shortcodes/</guid>
-        <description>Markdownify box This is boxmd shortcode Simple box This is **box** shortcode Code tabs Make it easy to switch between different code
-java javascript 1 System.out.println(&amp;#39;Hello World!&amp;#39;); 1 console.log(&amp;#39;Hello World!&amp;#39;); Tabs for general purpose Windows MacOS Ubuntu Windows section 1 console.log(&amp;#39;Hello World!&amp;#39;); ⚠️Becareful that the content in the tab should be different from each other. The tab makes unique id hashes depending on the tab contents. So, If you just copy-paste the tabs with multiple times, since it has the same contents, the tab will not work.</description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        <media:content url="https://hugo.jiahongw.comimages/feature3/code-file.png" medium="image"><media:title type="html">featured image</media:title></media:content>
-        
-        
-        
-          
-            
-              <category>shortcode</category>
-            
-          
-        
-        
-          
-            
-          
-        
-        
-          
-            
-          
-        
+        <description>Markdownify box This is boxmd shortcode Simple box This is **box** shortcode  Code tabs Make it easy to switch between different code
+java javascript  1  System.out.println(&amp;#39;Hello World!&amp;#39;);     1  console.log(&amp;#39;Hello World!&amp;#39;);       &#39;use strict&#39;; var containerId = JSON.parse(&#34;\&#34;642b4352e05d9e04\&#34;&#34;); var containerElem = document.getElementById(containerId); var codetabLinks = null; var codetabContents = null; var ids = []; if (containerElem) { codetabLinks = containerElem.</description>
       </item>
       
-      <item>
-        <title>Shortcodes使用</title>
-        <link>https://hugo.jiahongw.com/ko/zh/posts/hugo/shortcodes/</link>
-        <pubDate>Sat, 25 Jan 2020 06:40:51 +0900</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sat, 25 Jan 2020 06:40:51 +0900</atom:modified>
-        <guid>https://hugo.jiahongw.com/ko/zh/posts/hugo/shortcodes/</guid>
-        <description>盒子 支持 Markdown 语法的盒子 语法： 或者： 1 &amp;lt;div class=&amp;#34;box&amp;#34;&amp;gt;This is &amp;lt;strong&amp;gt;boxmd&amp;lt;/strong&amp;gt; shortcode&amp;lt;/div&amp;gt; 渲染显示： This is boxmd shortcode 简单盒子 语法： 渲染显示： This is **box** shortcode 代码选项卡 可以在不同的代码块之间切换，语法： 渲</description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        <media:content url="https://hugo.jiahongw.comimages/feature3/code-file.png" medium="image"><media:title type="html">featured image</media:title></media:content>
-        
-        
-        
-          
-            
-              <category>shortcode</category>
-            
-          
-        
-        
-          
-            
-          
-        
-        
-          
-            
-          
-        
-      </item>
-      
-
     
   </channel>
 </rss>
