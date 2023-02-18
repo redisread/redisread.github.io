@@ -25,7 +25,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/designpattern/factorymethodpattern/</link>
         <pubDate>Wed, 03 Nov 2021 16:05:37 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
+        <atom:modified>Wed, 03 Nov 2021 16:05:37 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/designpattern/factorymethodpattern/</guid>
         <description>当我们使用new创建一个对象的时候，需要指定一个具体类，这就是针对实现进行编程。当我们将创建对象的过程封装成一个方法或者接口的时候，就可以避</description>
         

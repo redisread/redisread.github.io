@@ -25,7 +25,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/polarcode/polar-code-encode/</link>
         <pubDate>Tue, 29 Jun 2021 13:01:45 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
+        <atom:modified>Tue, 29 Jun 2021 13:01:45 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/polarcode/polar-code-encode/</guid>
         <description>极化编码的基本思想是：只在$Z\left( W_{N}^{\left( i \right)} \right)$近于0的坐标信道$W_{N}^{\left( i \right)}$上发送数据比</description>
         

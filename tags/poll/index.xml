@@ -25,7 +25,7 @@
         <link>https://hugo.jiahongw.com/posts/linux/select-poll-epoll/</link>
         <pubDate>Wed, 18 Nov 2020 11:43:19 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
+        <atom:modified>Wed, 18 Nov 2020 11:43:19 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/posts/linux/select-poll-epoll/</guid>
         <description>同步异步与阻塞非阻塞 用户空间和内核空间 操作系统为了支持多个应用同时运行，需要保证不同进程之间相对独立（一个进程的崩溃不会影响其他的进程 ， 恶意</description>
         

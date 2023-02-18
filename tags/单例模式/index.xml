@@ -25,7 +25,7 @@
         <link>https://hugo.jiahongw.com/posts/designpattern/singletonpattern/</link>
         <pubDate>Thu, 21 Oct 2021 15:31:40 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
+        <atom:modified>Thu, 21 Oct 2021 15:31:40 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/posts/designpattern/singletonpattern/</guid>
         <description>什么是单例 单例设计模式（Singleton Design Pattern）理解起来非常简单。一个类只允许创建一个对象（或者实例），那这个类就是一个单例类，</description>
         

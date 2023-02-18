@@ -19,48 +19,6 @@
     
 
       
-      <item>
-        <title>About</title>
-        <link>https://hugo.jiahongw.com/zh/about/</link>
-        <pubDate>Thu, 30 Jan 2020 12:50:46 +0900</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
-        <guid>https://hugo.jiahongw.com/zh/about/</guid>
-        <description>我是一个不够严谨的程序员🙉. 我喜欢📖,还有🏓. 或许有时候我想的不够远，但是有时候我想的很深入。 我最喜欢的 Aaron Swartz 语录: 在长大的过程中，我才慢慢发</description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>Posts</title>
-        <link>https://hugo.jiahongw.com/zh/posts/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
-        <guid>https://hugo.jiahongw.com/zh/posts/</guid>
-        <description></description>
-        
-        <dc:creator>Victor</dc:creator>
-        
-        
-        
-        
-          
-            
-              <category>index</category>
-            
-          
-        
-        
-        
-      </item>
-      
 
     
   </channel>

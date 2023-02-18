@@ -25,7 +25,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/efficient/plantuml-note/</link>
         <pubDate>Sun, 09 Jan 2022 17:01:54 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
+        <atom:modified>Sun, 09 Jan 2022 17:01:54 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/efficient/plantuml-note/</guid>
         <description>类图绘制 参考：【程序员小知识】使用 PlantUML 画 UML（上）类图 - 掘金 一览： 需要注意，一组@startuml/@enduml 对应一张 png，如果一个文</description>
         

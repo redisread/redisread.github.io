@@ -25,7 +25,7 @@
         <link>https://hugo.jiahongw.com/posts/designpattern/observerpattern/</link>
         <pubDate>Mon, 03 Jan 2022 22:41:31 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
+        <atom:modified>Mon, 03 Jan 2022 22:41:31 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/posts/designpattern/observerpattern/</guid>
         <description>定义 观察者模式定义了对象之间的一对多依赖，这样一来，当一个对象改变状态时，它的所有依赖者都会收到通知并且自动更新。 一个比喻：报纸订阅（出版者</description>
         
@@ -63,7 +63,7 @@
         <link>https://hugo.jiahongw.com/posts/designpattern/strategypattern/</link>
         <pubDate>Sat, 27 Mar 2021 11:12:34 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
+        <atom:modified>Sat, 27 Mar 2021 11:12:34 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/posts/designpattern/strategypattern/</guid>
         <description>使用场景 避免冗长的if-else或switch分支判断 提供框架的扩展点 策略模式： 策略模式定义了算法族，分别封装起来，让他们之间可以互相替换。</description>
         

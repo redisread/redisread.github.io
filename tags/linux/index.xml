@@ -25,7 +25,7 @@
         <link>https://hugo.jiahongw.com/posts/linux/buffer-overflow/</link>
         <pubDate>Wed, 20 Jan 2021 16:39:48 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
+        <atom:modified>Wed, 20 Jan 2021 16:39:48 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/posts/linux/buffer-overflow/</guid>
         <description>《转载》 https://www.cnblogs.com/fanzhidongyzby/p/3250405.html 按照冯·诺依曼存储程序原理，程序代码是作为二进制数据存储在内存的，同样程序的数据也在内存中，因此直接从内存的二进制形式上是无法区分</description>
         
@@ -57,7 +57,7 @@
         <link>https://hugo.jiahongw.com/posts/linux/linking/</link>
         <pubDate>Thu, 14 Jan 2021 14:55:45 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
+        <atom:modified>Thu, 14 Jan 2021 14:55:45 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/posts/linux/linking/</guid>
         <description>链接 链接(linking)是将各种代码和数据片段收集并组合成为一个单一文件的过程，这个文件可被加载（复制）到内存并执行。 链接可以执行于编译时</description>
         
@@ -89,7 +89,7 @@
         <link>https://hugo.jiahongw.com/posts/linux/memory-control/</link>
         <pubDate>Thu, 30 Jul 2020 09:01:25 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
+        <atom:modified>Thu, 30 Jul 2020 09:01:25 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/posts/linux/memory-control/</guid>
         <description>关于程序的装入 绝对装入：绝对映射，程序中逻辑地址与内存物理地址完全相同 （单片机) 可重定位装入：静态映射，在装入时对逻辑地址进行修改 动态运行时</description>
         
@@ -123,7 +123,7 @@
         <link>https://hugo.jiahongw.com/posts/linux/epoll-lt-et/</link>
         <pubDate>Tue, 28 Jul 2020 12:00:13 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
+        <atom:modified>Tue, 28 Jul 2020 12:00:13 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/posts/linux/epoll-lt-et/</guid>
         <description>描述符的就绪状态有两种判断方法: 边沿触发和水平触发。 水平触发 我认为这是“拉”模式或“民意调查”模式。为了确定描述符是否就绪，进程尝试执行非阻</description>
         
@@ -161,7 +161,7 @@
         <link>https://hugo.jiahongw.com/posts/linux/linux-grep/</link>
         <pubDate>Thu, 16 Apr 2020 10:56:00 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
+        <atom:modified>Thu, 16 Apr 2020 10:56:00 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/posts/linux/linux-grep/</guid>
         <description>&lt;h2 id=&#34;heading&#34;&gt;|&lt;/h2&gt;
 &lt;p&gt;管道符，“|”，表示将前一个命令的处理结果输出传递给后面的命令处理。&lt;/p&gt;</description>
@@ -208,7 +208,7 @@
         <link>https://hugo.jiahongw.com/posts/linux/linux-users/</link>
         <pubDate>Wed, 15 Apr 2020 16:34:03 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
+        <atom:modified>Wed, 15 Apr 2020 16:34:03 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/posts/linux/linux-users/</guid>
         <description>&lt;p&gt;每一个用户都是一个个体，每一个个体都属于一个群组，而每一个群组又有区别!&lt;/p&gt;
 &lt;p&gt;——Users&lt;/p&gt;</description>
@@ -247,7 +247,7 @@
         <link>https://hugo.jiahongw.com/posts/linux/vim-use/</link>
         <pubDate>Mon, 13 Apr 2020 23:01:25 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
+        <atom:modified>Mon, 13 Apr 2020 23:01:25 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/posts/linux/vim-use/</guid>
         <description>&lt;p&gt;在大学时代，Vim 的大名就已如雷贯耳，但由于它陡峭的学习曲线，一直望而却步。等真正开始学习之后，发现并没有想象中的复杂，也没有所谓的瓶颈，只要在实际写代码中强迫自己使用就可以了，无形中就会形成习惯。&lt;/p&gt;
 &lt;p&gt;​																														——&lt;a href=&#34;https://geekplux.com/&#34;&gt;GeekPlux&lt;/a&gt;&lt;/p&gt;</description>
@@ -286,7 +286,7 @@
         <link>https://hugo.jiahongw.com/posts/linux/linux-shell/</link>
         <pubDate>Sat, 11 Apr 2020 23:24:18 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
+        <atom:modified>Sat, 11 Apr 2020 23:24:18 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/posts/linux/linux-shell/</guid>
         <description>&lt;p&gt;Linux基本操作。🤠&lt;/p&gt;</description>
         

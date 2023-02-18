@@ -25,7 +25,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/network/quic-protocol/</link>
         <pubDate>Wed, 18 Nov 2020 18:22:14 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
+        <atom:modified>Wed, 18 Nov 2020 18:22:14 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/network/quic-protocol/</guid>
         <description>如何让网络数据传输地更快？(合并一些层) 为什么需要QUIC？ 中间设备的僵化 可能是 TCP 协议使用得太久，也非常可靠。所以我们很多中间设备，包括防火</description>
         

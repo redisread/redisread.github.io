@@ -25,7 +25,7 @@
         <link>https://hugo.jiahongw.com/posts/designpattern/templatemethodpattern/</link>
         <pubDate>Sat, 15 Jan 2022 22:04:19 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
+        <atom:modified>Sat, 15 Jan 2022 22:04:19 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/posts/designpattern/templatemethodpattern/</guid>
         <description>定义 模板方法模式在一个方法中定义一个算法的架构，而将一些步骤延迟到子类中。模板方法使得子类可以在不改变算法结构的情况下，重新定义算法中的某些</description>
         

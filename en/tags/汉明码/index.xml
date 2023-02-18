@@ -25,7 +25,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/network/hamming-code/</link>
         <pubDate>Wed, 25 Nov 2020 13:14:50 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
+        <atom:modified>Wed, 25 Nov 2020 13:14:50 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/network/hamming-code/</guid>
         <description>什么是汉明码？ 看下面这张图，蓝色的表示需要发送的数据，我们就假设发送的数据为0101吧，外面橙色的码就是汉明码，汉明码是一种纠错码，但是只能</description>
         

@@ -25,7 +25,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/designpattern/design-pattern-note/</link>
         <pubDate>Sun, 27 Mar 2022 19:20:05 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
+        <atom:modified>Sun, 27 Mar 2022 19:20:05 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/designpattern/design-pattern-note/</guid>
         <description>设计原则 1.单一职责原则 2.开闭原则 3.里氏替换原则 4.依赖注入原则 5.接口分离原则 6.迪米特原则 将变化的东西抽离出来并且封装，一方面和原来</description>
         
@@ -63,7 +63,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/designpattern/proxypattern/</link>
         <pubDate>Tue, 18 Jan 2022 10:51:06 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
+        <atom:modified>Tue, 18 Jan 2022 10:51:06 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/designpattern/proxypattern/</guid>
         <description>定义 代理模式为另一个对象提供一个替身或者占位符以控制这个对象的访问。 框架 @startuml &amp;#39; 代理模式 interface Subject { request() } class RealSubject implements Subject { + request() } class Proxy implements Subject { + request() } Proxy -&amp;gt; RealSubject : subject @enduml 使</description>
         
@@ -101,7 +101,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/designpattern/iteratorpattern/</link>
         <pubDate>Sun, 16 Jan 2022 13:14:21 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
+        <atom:modified>Sun, 16 Jan 2022 13:14:21 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/designpattern/iteratorpattern/</guid>
         <description>迭代器模式也叫游标模式。 定义 迭代器模式提供了一种方法顺序访问一个聚合对象中的各个元素，而不暴露其内部的表示。 迭代器模式封装了遍历。并且迭代器</description>
         
@@ -139,7 +139,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/designpattern/templatemethodpattern/</link>
         <pubDate>Sat, 15 Jan 2022 22:04:19 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
+        <atom:modified>Sat, 15 Jan 2022 22:04:19 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/designpattern/templatemethodpattern/</guid>
         <description>定义 模板方法模式在一个方法中定义一个算法的架构，而将一些步骤延迟到子类中。模板方法使得子类可以在不改变算法结构的情况下，重新定义算法中的某些</description>
         
@@ -177,7 +177,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/designpattern/facadepattern/</link>
         <pubDate>Sat, 15 Jan 2022 21:03:46 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
+        <atom:modified>Sat, 15 Jan 2022 21:03:46 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/designpattern/facadepattern/</guid>
         <description>定义 外观模式定义了一个统一的接口，用来访问子系统中的一群接口。外观定义了一个高层接口，让子系统更容易使用。 外观模式可以解决接口的复用性和易用</description>
         
@@ -219,7 +219,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/designpattern/adaptorpattern/</link>
         <pubDate>Sat, 15 Jan 2022 18:52:34 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
+        <atom:modified>Sat, 15 Jan 2022 18:52:34 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/designpattern/adaptorpattern/</guid>
         <description>定义 适配器将一个类的接口，转换成客户端期望的另一个接口。适配器让原本不兼容的类达到兼容。 （可以让客户从实现的接口解耦） 适配器模式下必须有一个</description>
         
@@ -257,7 +257,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/designpattern/commandpattern/</link>
         <pubDate>Thu, 13 Jan 2022 11:45:07 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
+        <atom:modified>Thu, 13 Jan 2022 11:45:07 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/designpattern/commandpattern/</guid>
         <description>定义 命令模式将“请求”封装成对象，以便使用不同的请求、队列或者日志来参数化其他对象。命令模式也可以支持撤销的操作。 命令模式主要是将“命令的请</description>
         
@@ -295,7 +295,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/designpattern/decoratorpattern/</link>
         <pubDate>Wed, 05 Jan 2022 11:44:23 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
+        <atom:modified>Wed, 05 Jan 2022 11:44:23 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/designpattern/decoratorpattern/</guid>
         <description>定义 装饰器模式动态的将责任附加到对象上，若要拓展功能，装饰者提供了比继承更有弹性的替代方案。 架构（类图） classDiagram class Component { &amp;lt;&amp;lt;abstract&amp;gt;&amp;gt; + methodA() + methodB() } class ConcreateComponent { + methodA() + methodB() }</description>
         
@@ -333,7 +333,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/designpattern/observerpattern/</link>
         <pubDate>Mon, 03 Jan 2022 22:41:31 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
+        <atom:modified>Mon, 03 Jan 2022 22:41:31 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/designpattern/observerpattern/</guid>
         <description>定义 观察者模式定义了对象之间的一对多依赖，这样一来，当一个对象改变状态时，它的所有依赖者都会收到通知并且自动更新。 一个比喻：报纸订阅（出版者</description>
         
@@ -371,7 +371,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/designpattern/factorymethodpattern/</link>
         <pubDate>Wed, 03 Nov 2021 16:05:37 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
+        <atom:modified>Wed, 03 Nov 2021 16:05:37 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/designpattern/factorymethodpattern/</guid>
         <description>当我们使用new创建一个对象的时候，需要指定一个具体类，这就是针对实现进行编程。当我们将创建对象的过程封装成一个方法或者接口的时候，就可以避</description>
         
@@ -417,7 +417,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/designpattern/singletonpattern/</link>
         <pubDate>Thu, 21 Oct 2021 15:31:40 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
+        <atom:modified>Thu, 21 Oct 2021 15:31:40 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/designpattern/singletonpattern/</guid>
         <description>什么是单例 单例设计模式（Singleton Design Pattern）理解起来非常简单。一个类只允许创建一个对象（或者实例），那这个类就是一个单例类，</description>
         
@@ -455,7 +455,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/designpattern/builderpattern/</link>
         <pubDate>Thu, 21 Oct 2021 10:47:09 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
+        <atom:modified>Thu, 21 Oct 2021 10:47:09 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/designpattern/builderpattern/</guid>
         <description>建造者模式也称为生成器模式或者Builder模式。 建造者模式主要是为了解决调用构造函数的时候，参数太多，并且有一些是可选参数不填的情况。这种</description>
         
@@ -493,7 +493,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/designpattern/strategypattern/</link>
         <pubDate>Sat, 27 Mar 2021 11:12:34 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
+        <atom:modified>Sat, 27 Mar 2021 11:12:34 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/designpattern/strategypattern/</guid>
         <description>使用场景 避免冗长的if-else或switch分支判断 提供框架的扩展点 策略模式： 策略模式定义了算法族，分别封装起来，让他们之间可以互相替换。</description>
         

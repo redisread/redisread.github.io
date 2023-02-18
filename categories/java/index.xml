@@ -25,7 +25,7 @@
         <link>https://hugo.jiahongw.com/posts/java/boxing-unboxing/</link>
         <pubDate>Thu, 12 Aug 2021 21:21:00 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
+        <atom:modified>Thu, 12 Aug 2021 21:21:00 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/posts/java/boxing-unboxing/</guid>
         <description>Java语言虽然号称一切都是对象，但原始数据类型是例外。 在Java 5中，引入了自动装箱和自动拆箱功能（boxing/unboxing），Ja</description>
         

@@ -25,7 +25,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/designpattern/strategypattern/</link>
         <pubDate>Sat, 27 Mar 2021 11:12:34 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
+        <atom:modified>Sat, 27 Mar 2021 11:12:34 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/designpattern/strategypattern/</guid>
         <description>使用场景 避免冗长的if-else或switch分支判断 提供框架的扩展点 策略模式： 策略模式定义了算法族，分别封装起来，让他们之间可以互相替换。</description>
         

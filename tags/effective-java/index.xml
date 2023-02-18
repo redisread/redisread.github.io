@@ -25,7 +25,7 @@
         <link>https://hugo.jiahongw.com/posts/java/java8-note/</link>
         <pubDate>Thu, 09 Sep 2021 11:14:17 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
+        <atom:modified>Thu, 09 Sep 2021 11:14:17 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/posts/java/java8-note/</guid>
         <description>✌️cxc 《Java实战》笔记 stream的使用注意 一个 Stream pipeline 中包含一个源 Stream，接着是 0个或者多个中间操作( intermediat巳 o</description>
         

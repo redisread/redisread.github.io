@@ -25,7 +25,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/linux/select-poll-epoll/</link>
         <pubDate>Wed, 18 Nov 2020 11:43:19 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
+        <atom:modified>Wed, 18 Nov 2020 11:43:19 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/linux/select-poll-epoll/</guid>
         <description>同步异步与阻塞非阻塞 用户空间和内核空间 操作系统为了支持多个应用同时运行，需要保证不同进程之间相对独立（一个进程的崩溃不会影响其他的进程 ， 恶意</description>
         
@@ -67,7 +67,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/linux/virtual-memory/</link>
         <pubDate>Wed, 18 Nov 2020 11:34:29 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
+        <atom:modified>Wed, 18 Nov 2020 11:34:29 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/linux/virtual-memory/</guid>
         <description>虚拟存储器作为现代操作系统中存储器管理的一项重要技术，实现了内存扩充功能。**但该功能并非是从物理上实际地扩大内存的容量，而是从逻辑上实现对</description>
         
@@ -101,7 +101,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/linux/memory-control/</link>
         <pubDate>Thu, 30 Jul 2020 09:01:25 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
+        <atom:modified>Thu, 30 Jul 2020 09:01:25 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/linux/memory-control/</guid>
         <description>关于程序的装入 绝对装入：绝对映射，程序中逻辑地址与内存物理地址完全相同 （单片机) 可重定位装入：静态映射，在装入时对逻辑地址进行修改 动态运行时</description>
         
@@ -135,7 +135,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/linux/epoll-lt-et/</link>
         <pubDate>Tue, 28 Jul 2020 12:00:13 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
+        <atom:modified>Tue, 28 Jul 2020 12:00:13 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/linux/epoll-lt-et/</guid>
         <description>描述符的就绪状态有两种判断方法: 边沿触发和水平触发。 水平触发 我认为这是“拉”模式或“民意调查”模式。为了确定描述符是否就绪，进程尝试执行非阻</description>
         
@@ -173,7 +173,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/linux/linux-grep/</link>
         <pubDate>Thu, 16 Apr 2020 10:56:00 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
+        <atom:modified>Thu, 16 Apr 2020 10:56:00 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/linux/linux-grep/</guid>
         <description>&lt;h2 id=&#34;heading&#34;&gt;|&lt;/h2&gt;
 &lt;p&gt;管道符，“|”，表示将前一个命令的处理结果输出传递给后面的命令处理。&lt;/p&gt;</description>
@@ -220,7 +220,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/linux/linux-users/</link>
         <pubDate>Wed, 15 Apr 2020 16:34:03 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
+        <atom:modified>Wed, 15 Apr 2020 16:34:03 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/linux/linux-users/</guid>
         <description>&lt;p&gt;每一个用户都是一个个体，每一个个体都属于一个群组，而每一个群组又有区别!&lt;/p&gt;
 &lt;p&gt;——Users&lt;/p&gt;</description>
@@ -259,7 +259,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/linux/vim-use/</link>
         <pubDate>Mon, 13 Apr 2020 23:01:25 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
+        <atom:modified>Mon, 13 Apr 2020 23:01:25 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/linux/vim-use/</guid>
         <description>&lt;p&gt;在大学时代，Vim 的大名就已如雷贯耳，但由于它陡峭的学习曲线，一直望而却步。等真正开始学习之后，发现并没有想象中的复杂，也没有所谓的瓶颈，只要在实际写代码中强迫自己使用就可以了，无形中就会形成习惯。&lt;/p&gt;
 &lt;p&gt;​																														——&lt;a href=&#34;https://geekplux.com/&#34;&gt;GeekPlux&lt;/a&gt;&lt;/p&gt;</description>

@@ -25,7 +25,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/network/congestion-control/</link>
         <pubDate>Wed, 18 Nov 2020 15:31:12 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
+        <atom:modified>Wed, 18 Nov 2020 15:31:12 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/network/congestion-control/</guid>
         <description>TCP拥塞控制算法的目的可以简单概括为：公平竞争、充分利用网络带宽、降低网络延时、优化用户体验，然而就目前而言要实现这些目标就难免有权衡和取</description>
         

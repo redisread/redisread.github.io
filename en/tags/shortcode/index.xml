@@ -25,7 +25,7 @@
         <link>https://hugo.jiahongw.com/en/zh/posts/hugo/shortcodes/</link>
         <pubDate>Sat, 25 Jan 2020 06:40:51 +0900</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
+        <atom:modified>Sat, 25 Jan 2020 06:40:51 +0900</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/hugo/shortcodes/</guid>
         <description>盒子 支持 Markdown 语法的盒子 语法： 或者： 1 &amp;lt;div class=&amp;#34;box&amp;#34;&amp;gt;This is &amp;lt;strong&amp;gt;boxmd&amp;lt;/strong&amp;gt; shortcode&amp;lt;/div&amp;gt; 渲染显示： This is boxmd shortcode 简单盒子 语法： 渲染显示： This is **box** shortcode 代码选项卡 可以在不同的代码块之间切换，语法： 渲</description>
         

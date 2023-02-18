@@ -25,7 +25,7 @@
         <link>https://hugo.jiahongw.com/posts/designpattern/commandpattern/</link>
         <pubDate>Thu, 13 Jan 2022 11:45:07 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
+        <atom:modified>Thu, 13 Jan 2022 11:45:07 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/posts/designpattern/commandpattern/</guid>
         <description>定义 命令模式将“请求”封装成对象，以便使用不同的请求、队列或者日志来参数化其他对象。命令模式也可以支持撤销的操作。 命令模式主要是将“命令的请</description>
         

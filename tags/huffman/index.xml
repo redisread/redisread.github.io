@@ -25,7 +25,7 @@
         <link>https://hugo.jiahongw.com/posts/algorithmstructure/huffman-coding/</link>
         <pubDate>Wed, 18 Nov 2020 12:00:27 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sun, 19 Feb 2023 01:04:10 +0800</atom:modified>
+        <atom:modified>Wed, 18 Nov 2020 12:00:27 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/posts/algorithmstructure/huffman-coding/</guid>
         <description>哈夫曼编码算法用字符在文件中出现的频率表来建立一个用0，1串表示各字符的最优表示方式。给出现频率高的字符较短的编码，出现频率较低的字符以较长</description>
         
