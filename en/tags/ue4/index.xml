@@ -29,14 +29,14 @@
         <guid>https://hugo.jiahongw.com/en/zh/posts/ue/ue-hitproxy/</guid>
         <description>需要从 UGameViewportClient 类继承 修改返回值为true,路径：\Source\Runtime\Engine\Private\GameViewportClient</description>
         
-        <dc:creator>Victor</dc:creator>
+        <dc:creator>VictorHong</dc:creator>
         <media:content url="https://hugo.jiahongw.comhttps://i.loli.net/2020/06/15/ivEDkwYhIQ5xVn7.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
           
             
-              <category>C&#43;&#43;</category>
+              <category>c&#43;&#43;</category>
             
           
             
@@ -44,21 +44,17 @@
             
           
             
-              <category>Game</category>
+              <category>游戏引擎</category>
             
           
         
         
           
             
-          
-        
-        
-          
-            
-              <category>Game</category>
+              <category>UE4开发</category>
             
           
+        
         
       </item>
       
@@ -71,14 +67,14 @@
         <guid>https://hugo.jiahongw.com/en/zh/posts/ue/ue-depth/</guid>
         <description>&lt;p&gt;在UE4中获取深度缓存，调用渲染命令读取。&lt;/p&gt;</description>
         
-        <dc:creator>Victor</dc:creator>
+        <dc:creator>VictorHong</dc:creator>
         <media:content url="https://hugo.jiahongw.comhttps://i.loli.net/2020/06/15/ivEDkwYhIQ5xVn7.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
           
             
-              <category>C&#43;&#43;</category>
+              <category>c&#43;&#43;</category>
             
           
             
@@ -86,21 +82,17 @@
             
           
             
-              <category>Game</category>
+              <category>游戏引擎</category>
             
           
         
         
           
             
-          
-        
-        
-          
-            
-              <category>Game</category>
+              <category>UE4开发</category>
             
           
+        
         
       </item>
       
@@ -113,14 +105,14 @@
         <guid>https://hugo.jiahongw.com/en/zh/posts/ue/ue-game-render/</guid>
         <description>&lt;p&gt;探索UE4游戏线程的进入&lt;/p&gt;</description>
         
-        <dc:creator>Victor</dc:creator>
+        <dc:creator>VictorHong</dc:creator>
         <media:content url="https://hugo.jiahongw.comhttps://i.loli.net/2020/06/15/ivEDkwYhIQ5xVn7.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
           
             
-              <category>C&#43;&#43;</category>
+              <category>c&#43;&#43;</category>
             
           
             
@@ -128,21 +120,17 @@
             
           
             
-              <category>Game</category>
+              <category>游戏引擎</category>
             
           
         
         
           
             
-          
-        
-        
-          
-            
-              <category>Game</category>
+              <category>UE4开发</category>
             
           
+        
         
       </item>
       
@@ -155,14 +143,14 @@
         <guid>https://hugo.jiahongw.com/en/zh/posts/ue/ue4-render/</guid>
         <description>&lt;p&gt;大概介绍以下UE4的主要渲染过程。&lt;/p&gt;</description>
         
-        <dc:creator>Victor</dc:creator>
+        <dc:creator>VictorHong</dc:creator>
         <media:content url="https://hugo.jiahongw.comhttps://i.loli.net/2020/06/15/ivEDkwYhIQ5xVn7.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
           
             
-              <category>C&#43;&#43;</category>
+              <category>c&#43;&#43;</category>
             
           
             
@@ -170,21 +158,17 @@
             
           
             
-              <category>Game</category>
+              <category>游戏引擎</category>
             
           
         
         
           
             
-          
-        
-        
-          
-            
-              <category>Game</category>
+              <category>UE4开发</category>
             
           
+        
         
       </item>
       

@@ -57,24 +57,6 @@
       </item>
       
       <item>
-        <title>Markdown</title>
-        <link>https://hugo.jiahongw.com/en/tags/markdown/</link>
-        <pubDate>Sun, 27 Nov 2022 14:51:51 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/markdown/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
         <title>CompletableFuture</title>
         <link>https://hugo.jiahongw.com/en/tags/completablefuture/</link>
         <pubDate>Mon, 28 Mar 2022 17:38:53 +0800</pubDate>
@@ -93,7 +75,7 @@
       </item>
       
       <item>
-        <title>Java</title>
+        <title>java</title>
         <link>https://hugo.jiahongw.com/en/tags/java/</link>
         <pubDate>Mon, 28 Mar 2022 17:38:53 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
@@ -111,12 +93,12 @@
       </item>
       
       <item>
-        <title>设计原则</title>
-        <link>https://hugo.jiahongw.com/en/tags/%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99/</link>
-        <pubDate>Sun, 27 Mar 2022 19:20:05 +0800</pubDate>
+        <title>开发方法论</title>
+        <link>https://hugo.jiahongw.com/en/tags/%E5%BC%80%E5%8F%91%E6%96%B9%E6%B3%95%E8%AE%BA/</link>
+        <pubDate>Mon, 28 Mar 2022 17:38:53 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
         
-        <guid>https://hugo.jiahongw.com/en/tags/%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99/</guid>
+        <guid>https://hugo.jiahongw.com/en/tags/%E5%BC%80%E5%8F%91%E6%96%B9%E6%B3%95%E8%AE%BA/</guid>
         <description></description>
         
         <dc:creator>VictorHong</dc:creator>
@@ -131,7 +113,7 @@
       <item>
         <title>设计模式</title>
         <link>https://hugo.jiahongw.com/en/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</link>
-        <pubDate>Sun, 27 Mar 2022 19:20:05 +0800</pubDate>
+        <pubDate>Sat, 22 Jan 2022 21:52:34 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
         
         <guid>https://hugo.jiahongw.com/en/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</guid>
@@ -147,408 +129,30 @@
       </item>
       
       <item>
-        <title>代理模式</title>
-        <link>https://hugo.jiahongw.com/en/tags/%E4%BB%A3%E7%90%86%E6%A8%A1%E5%BC%8F/</link>
-        <pubDate>Tue, 18 Jan 2022 10:51:06 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/%E4%BB%A3%E7%90%86%E6%A8%A1%E5%BC%8F/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>迭代器模式</title>
-        <link>https://hugo.jiahongw.com/en/tags/%E8%BF%AD%E4%BB%A3%E5%99%A8%E6%A8%A1%E5%BC%8F/</link>
-        <pubDate>Sun, 16 Jan 2022 13:14:21 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/%E8%BF%AD%E4%BB%A3%E5%99%A8%E6%A8%A1%E5%BC%8F/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>模板方法模式</title>
-        <link>https://hugo.jiahongw.com/en/tags/%E6%A8%A1%E6%9D%BF%E6%96%B9%E6%B3%95%E6%A8%A1%E5%BC%8F/</link>
-        <pubDate>Sat, 15 Jan 2022 22:04:19 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/%E6%A8%A1%E6%9D%BF%E6%96%B9%E6%B3%95%E6%A8%A1%E5%BC%8F/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>外观模式</title>
-        <link>https://hugo.jiahongw.com/en/tags/%E5%A4%96%E8%A7%82%E6%A8%A1%E5%BC%8F/</link>
-        <pubDate>Sat, 15 Jan 2022 21:03:46 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/%E5%A4%96%E8%A7%82%E6%A8%A1%E5%BC%8F/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>门面模式</title>
-        <link>https://hugo.jiahongw.com/en/tags/%E9%97%A8%E9%9D%A2%E6%A8%A1%E5%BC%8F/</link>
-        <pubDate>Sat, 15 Jan 2022 21:03:46 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/%E9%97%A8%E9%9D%A2%E6%A8%A1%E5%BC%8F/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>适配器模式</title>
-        <link>https://hugo.jiahongw.com/en/tags/%E9%80%82%E9%85%8D%E5%99%A8%E6%A8%A1%E5%BC%8F/</link>
-        <pubDate>Sat, 15 Jan 2022 18:52:34 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/%E9%80%82%E9%85%8D%E5%99%A8%E6%A8%A1%E5%BC%8F/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>命令模式</title>
-        <link>https://hugo.jiahongw.com/en/tags/%E5%91%BD%E4%BB%A4%E6%A8%A1%E5%BC%8F/</link>
-        <pubDate>Thu, 13 Jan 2022 11:45:07 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/%E5%91%BD%E4%BB%A4%E6%A8%A1%E5%BC%8F/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>plantUML</title>
-        <link>https://hugo.jiahongw.com/en/tags/plantuml/</link>
-        <pubDate>Sun, 09 Jan 2022 17:01:54 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/plantuml/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>工具</title>
-        <link>https://hugo.jiahongw.com/en/tags/%E5%B7%A5%E5%85%B7/</link>
-        <pubDate>Sun, 09 Jan 2022 17:01:54 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/%E5%B7%A5%E5%85%B7/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>装饰器模式</title>
-        <link>https://hugo.jiahongw.com/en/tags/%E8%A3%85%E9%A5%B0%E5%99%A8%E6%A8%A1%E5%BC%8F/</link>
-        <pubDate>Wed, 05 Jan 2022 11:44:23 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/%E8%A3%85%E9%A5%B0%E5%99%A8%E6%A8%A1%E5%BC%8F/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>行为模式</title>
-        <link>https://hugo.jiahongw.com/en/tags/%E8%A1%8C%E4%B8%BA%E6%A8%A1%E5%BC%8F/</link>
-        <pubDate>Mon, 03 Jan 2022 22:41:31 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/%E8%A1%8C%E4%B8%BA%E6%A8%A1%E5%BC%8F/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>观察者模式</title>
-        <link>https://hugo.jiahongw.com/en/tags/%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F/</link>
-        <pubDate>Mon, 03 Jan 2022 22:41:31 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>IDEA</title>
-        <link>https://hugo.jiahongw.com/en/tags/idea/</link>
-        <pubDate>Mon, 13 Dec 2021 16:50:04 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/idea/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>Nvchad</title>
-        <link>https://hugo.jiahongw.com/en/tags/nvchad/</link>
-        <pubDate>Sun, 28 Nov 2021 15:10:01 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/nvchad/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>nvim</title>
-        <link>https://hugo.jiahongw.com/en/tags/nvim/</link>
-        <pubDate>Sun, 28 Nov 2021 15:10:01 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/nvim/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>vim</title>
-        <link>https://hugo.jiahongw.com/en/tags/vim/</link>
-        <pubDate>Sun, 28 Nov 2021 15:10:01 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/vim/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>工厂方法</title>
-        <link>https://hugo.jiahongw.com/en/tags/%E5%B7%A5%E5%8E%82%E6%96%B9%E6%B3%95/</link>
-        <pubDate>Wed, 03 Nov 2021 16:05:37 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/%E5%B7%A5%E5%8E%82%E6%96%B9%E6%B3%95/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>抽象工厂</title>
-        <link>https://hugo.jiahongw.com/en/tags/%E6%8A%BD%E8%B1%A1%E5%B7%A5%E5%8E%82/</link>
-        <pubDate>Wed, 03 Nov 2021 16:05:37 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/%E6%8A%BD%E8%B1%A1%E5%B7%A5%E5%8E%82/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>简单工厂</title>
-        <link>https://hugo.jiahongw.com/en/tags/%E7%AE%80%E5%8D%95%E5%B7%A5%E5%8E%82/</link>
-        <pubDate>Wed, 03 Nov 2021 16:05:37 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/%E7%AE%80%E5%8D%95%E5%B7%A5%E5%8E%82/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>单例模式</title>
-        <link>https://hugo.jiahongw.com/en/tags/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/</link>
-        <pubDate>Thu, 21 Oct 2021 15:31:40 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>建造者模式</title>
-        <link>https://hugo.jiahongw.com/en/tags/%E5%BB%BA%E9%80%A0%E8%80%85%E6%A8%A1%E5%BC%8F/</link>
-        <pubDate>Thu, 21 Oct 2021 10:47:09 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/%E5%BB%BA%E9%80%A0%E8%80%85%E6%A8%A1%E5%BC%8F/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>架构</title>
-        <link>https://hugo.jiahongw.com/en/tags/%E6%9E%B6%E6%9E%84/</link>
-        <pubDate>Tue, 19 Oct 2021 17:05:32 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/%E6%9E%B6%E6%9E%84/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>life</title>
-        <link>https://hugo.jiahongw.com/en/tags/life/</link>
+        <title>旅行</title>
+        <link>https://hugo.jiahongw.com/en/tags/%E6%97%85%E8%A1%8C/</link>
         <pubDate>Thu, 07 Oct 2021 21:26:43 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
         
-        <guid>https://hugo.jiahongw.com/en/tags/life/</guid>
+        <guid>https://hugo.jiahongw.com/en/tags/%E6%97%85%E8%A1%8C/</guid>
+        <description></description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>生活</title>
+        <link>https://hugo.jiahongw.com/en/tags/%E7%94%9F%E6%B4%BB/</link>
+        <pubDate>Thu, 07 Oct 2021 21:26:43 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        
+        <guid>https://hugo.jiahongw.com/en/tags/%E7%94%9F%E6%B4%BB/</guid>
         <description></description>
         
         <dc:creator>VictorHong</dc:creator>
@@ -579,12 +183,12 @@
       </item>
       
       <item>
-        <title>Effective Java</title>
-        <link>https://hugo.jiahongw.com/en/tags/effective-java/</link>
-        <pubDate>Thu, 09 Sep 2021 11:14:17 +0800</pubDate>
+        <title>git</title>
+        <link>https://hugo.jiahongw.com/en/tags/git/</link>
+        <pubDate>Sat, 04 Sep 2021 23:14:21 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
         
-        <guid>https://hugo.jiahongw.com/en/tags/effective-java/</guid>
+        <guid>https://hugo.jiahongw.com/en/tags/git/</guid>
         <description></description>
         
         <dc:creator>VictorHong</dc:creator>
@@ -597,12 +201,12 @@
       </item>
       
       <item>
-        <title>FunnySharing</title>
-        <link>https://hugo.jiahongw.com/en/tags/funnysharing/</link>
+        <title>youtube</title>
+        <link>https://hugo.jiahongw.com/en/tags/youtube/</link>
         <pubDate>Sat, 21 Aug 2021 16:15:37 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
         
-        <guid>https://hugo.jiahongw.com/en/tags/funnysharing/</guid>
+        <guid>https://hugo.jiahongw.com/en/tags/youtube/</guid>
         <description></description>
         
         <dc:creator>VictorHong</dc:creator>
@@ -615,48 +219,30 @@
       </item>
       
       <item>
-        <title>PolarCode</title>
-        <link>https://hugo.jiahongw.com/en/tags/polarcode/</link>
+        <title>编程</title>
+        <link>https://hugo.jiahongw.com/en/tags/%E7%BC%96%E7%A8%8B/</link>
+        <pubDate>Sat, 21 Aug 2021 16:15:37 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        
+        <guid>https://hugo.jiahongw.com/en/tags/%E7%BC%96%E7%A8%8B/</guid>
+        <description></description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>极化码</title>
+        <link>https://hugo.jiahongw.com/en/tags/%E6%9E%81%E5%8C%96%E7%A0%81/</link>
         <pubDate>Tue, 29 Jun 2021 13:01:45 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
         
-        <guid>https://hugo.jiahongw.com/en/tags/polarcode/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>编码</title>
-        <link>https://hugo.jiahongw.com/en/tags/%E7%BC%96%E7%A0%81/</link>
-        <pubDate>Tue, 29 Jun 2021 13:01:45 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/%E7%BC%96%E7%A0%81/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>基本原理</title>
-        <link>https://hugo.jiahongw.com/en/tags/%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86/</link>
-        <pubDate>Tue, 29 Jun 2021 12:48:45 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86/</guid>
+        <guid>https://hugo.jiahongw.com/en/tags/%E6%9E%81%E5%8C%96%E7%A0%81/</guid>
         <description></description>
         
         <dc:creator>VictorHong</dc:creator>
@@ -687,12 +273,12 @@
       </item>
       
       <item>
-        <title>极化码译码</title>
-        <link>https://hugo.jiahongw.com/en/tags/%E6%9E%81%E5%8C%96%E7%A0%81%E8%AF%91%E7%A0%81/</link>
-        <pubDate>Thu, 24 Jun 2021 14:04:45 +0800</pubDate>
+        <title>PolarCode</title>
+        <link>https://hugo.jiahongw.com/en/tags/polarcode/</link>
+        <pubDate>Tue, 18 May 2021 14:01:12 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
         
-        <guid>https://hugo.jiahongw.com/en/tags/%E6%9E%81%E5%8C%96%E7%A0%81%E8%AF%91%E7%A0%81/</guid>
+        <guid>https://hugo.jiahongw.com/en/tags/polarcode/</guid>
         <description></description>
         
         <dc:creator>VictorHong</dc:creator>
@@ -705,426 +291,12 @@
       </item>
       
       <item>
-        <title>策略模式</title>
-        <link>https://hugo.jiahongw.com/en/tags/%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F/</link>
-        <pubDate>Sat, 27 Mar 2021 11:12:34 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>nginx</title>
-        <link>https://hugo.jiahongw.com/en/tags/nginx/</link>
-        <pubDate>Mon, 01 Feb 2021 10:02:08 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/nginx/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>Linux</title>
-        <link>https://hugo.jiahongw.com/en/tags/linux/</link>
-        <pubDate>Wed, 20 Jan 2021 16:39:48 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/linux/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>MLK</title>
-        <link>https://hugo.jiahongw.com/en/tags/mlk/</link>
-        <pubDate>Thu, 14 Jan 2021 11:26:46 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/mlk/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>汉明码</title>
-        <link>https://hugo.jiahongw.com/en/tags/%E6%B1%89%E6%98%8E%E7%A0%81/</link>
-        <pubDate>Wed, 25 Nov 2020 13:14:50 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/%E6%B1%89%E6%98%8E%E7%A0%81/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>跳槽</title>
-        <link>https://hugo.jiahongw.com/en/tags/%E8%B7%B3%E6%A7%BD/</link>
-        <pubDate>Tue, 24 Nov 2020 21:56:16 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/%E8%B7%B3%E6%A7%BD/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>习惯</title>
-        <link>https://hugo.jiahongw.com/en/tags/%E4%B9%A0%E6%83%AF/</link>
-        <pubDate>Thu, 19 Nov 2020 22:50:47 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/%E4%B9%A0%E6%83%AF/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>quic</title>
-        <link>https://hugo.jiahongw.com/en/tags/quic/</link>
-        <pubDate>Wed, 18 Nov 2020 18:22:14 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/quic/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>拥塞控制</title>
-        <link>https://hugo.jiahongw.com/en/tags/%E6%8B%A5%E5%A1%9E%E6%8E%A7%E5%88%B6/</link>
-        <pubDate>Wed, 18 Nov 2020 15:31:12 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/%E6%8B%A5%E5%A1%9E%E6%8E%A7%E5%88%B6/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>huffman</title>
-        <link>https://hugo.jiahongw.com/en/tags/huffman/</link>
-        <pubDate>Wed, 18 Nov 2020 12:00:27 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/huffman/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>https</title>
-        <link>https://hugo.jiahongw.com/en/tags/https/</link>
-        <pubDate>Wed, 18 Nov 2020 11:58:01 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/https/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>http</title>
-        <link>https://hugo.jiahongw.com/en/tags/http/</link>
-        <pubDate>Wed, 18 Nov 2020 11:52:50 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/http/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>epoll</title>
-        <link>https://hugo.jiahongw.com/en/tags/epoll/</link>
-        <pubDate>Wed, 18 Nov 2020 11:43:19 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/epoll/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>Poll</title>
-        <link>https://hugo.jiahongw.com/en/tags/poll/</link>
-        <pubDate>Wed, 18 Nov 2020 11:43:19 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/poll/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>Select</title>
-        <link>https://hugo.jiahongw.com/en/tags/select/</link>
-        <pubDate>Wed, 18 Nov 2020 11:43:19 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/select/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>虚拟内存</title>
-        <link>https://hugo.jiahongw.com/en/tags/%E8%99%9A%E6%8B%9F%E5%86%85%E5%AD%98/</link>
-        <pubDate>Wed, 18 Nov 2020 11:34:29 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/%E8%99%9A%E6%8B%9F%E5%86%85%E5%AD%98/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>哈希表</title>
-        <link>https://hugo.jiahongw.com/en/tags/%E5%93%88%E5%B8%8C%E8%A1%A8/</link>
-        <pubDate>Sun, 16 Aug 2020 13:17:07 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/%E5%93%88%E5%B8%8C%E8%A1%A8/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>数据结构</title>
-        <link>https://hugo.jiahongw.com/en/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</link>
-        <pubDate>Sun, 16 Aug 2020 13:17:07 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>网络层</title>
-        <link>https://hugo.jiahongw.com/en/tags/%E7%BD%91%E7%BB%9C%E5%B1%82/</link>
-        <pubDate>Tue, 28 Jul 2020 18:02:38 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/%E7%BD%91%E7%BB%9C%E5%B1%82/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>计算机网络</title>
-        <link>https://hugo.jiahongw.com/en/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</link>
-        <pubDate>Tue, 28 Jul 2020 18:02:38 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>network</title>
-        <link>https://hugo.jiahongw.com/en/tags/network/</link>
-        <pubDate>Tue, 28 Jul 2020 11:12:16 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/network/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>二叉树</title>
-        <link>https://hugo.jiahongw.com/en/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/</link>
-        <pubDate>Mon, 27 Jul 2020 22:07:13 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>C&#43;&#43;</title>
+        <title>c&#43;&#43;</title>
         <link>https://hugo.jiahongw.com/en/tags/c&#43;&#43;/</link>
         <pubDate>Mon, 15 Jun 2020 09:43:11 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
         
         <guid>https://hugo.jiahongw.com/en/tags/c&#43;&#43;/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>Game</title>
-        <link>https://hugo.jiahongw.com/en/tags/game/</link>
-        <pubDate>Mon, 15 Jun 2020 09:43:11 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/game/</guid>
         <description></description>
         
         <dc:creator>VictorHong</dc:creator>
@@ -1155,6 +327,24 @@
       </item>
       
       <item>
+        <title>游戏引擎</title>
+        <link>https://hugo.jiahongw.com/en/tags/%E6%B8%B8%E6%88%8F%E5%BC%95%E6%93%8E/</link>
+        <pubDate>Mon, 15 Jun 2020 09:43:11 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        
+        <guid>https://hugo.jiahongw.com/en/tags/%E6%B8%B8%E6%88%8F%E5%BC%95%E6%93%8E/</guid>
+        <description></description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
         <title>rsa</title>
         <link>https://hugo.jiahongw.com/en/tags/rsa/</link>
         <pubDate>Wed, 06 May 2020 16:00:46 +0800</pubDate>
@@ -1173,246 +363,12 @@
       </item>
       
       <item>
-        <title>grep</title>
-        <link>https://hugo.jiahongw.com/en/tags/grep/</link>
-        <pubDate>Thu, 16 Apr 2020 10:56:00 +0800</pubDate>
+        <title>密码学</title>
+        <link>https://hugo.jiahongw.com/en/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/</link>
+        <pubDate>Wed, 06 May 2020 16:00:46 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
         
-        <guid>https://hugo.jiahongw.com/en/tags/grep/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>gzip</title>
-        <link>https://hugo.jiahongw.com/en/tags/gzip/</link>
-        <pubDate>Thu, 16 Apr 2020 10:56:00 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/gzip/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>tar</title>
-        <link>https://hugo.jiahongw.com/en/tags/tar/</link>
-        <pubDate>Thu, 16 Apr 2020 10:56:00 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/tar/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>用户管理</title>
-        <link>https://hugo.jiahongw.com/en/tags/%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86/</link>
-        <pubDate>Wed, 15 Apr 2020 16:34:03 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>bash</title>
-        <link>https://hugo.jiahongw.com/en/tags/bash/</link>
-        <pubDate>Sat, 11 Apr 2020 23:24:18 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/bash/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>Shell</title>
-        <link>https://hugo.jiahongw.com/en/tags/shell/</link>
-        <pubDate>Sat, 11 Apr 2020 23:24:18 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/shell/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>多态</title>
-        <link>https://hugo.jiahongw.com/en/tags/%E5%A4%9A%E6%80%81/</link>
-        <pubDate>Sun, 05 Apr 2020 15:05:37 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/%E5%A4%9A%E6%80%81/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>C</title>
-        <link>https://hugo.jiahongw.com/en/tags/c/</link>
-        <pubDate>Sat, 04 Apr 2020 23:32:40 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/c/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>文件读写</title>
-        <link>https://hugo.jiahongw.com/en/tags/%E6%96%87%E4%BB%B6%E8%AF%BB%E5%86%99/</link>
-        <pubDate>Sat, 04 Apr 2020 23:32:40 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/%E6%96%87%E4%BB%B6%E8%AF%BB%E5%86%99/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>tcp</title>
-        <link>https://hugo.jiahongw.com/en/tags/tcp/</link>
-        <pubDate>Fri, 03 Apr 2020 21:42:11 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/tcp/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>udp</title>
-        <link>https://hugo.jiahongw.com/en/tags/udp/</link>
-        <pubDate>Fri, 03 Apr 2020 21:42:11 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/udp/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>网络</title>
-        <link>https://hugo.jiahongw.com/en/tags/%E7%BD%91%E7%BB%9C/</link>
-        <pubDate>Fri, 03 Apr 2020 21:42:11 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/%E7%BD%91%E7%BB%9C/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>git</title>
-        <link>https://hugo.jiahongw.com/en/tags/git/</link>
-        <pubDate>Fri, 03 Apr 2020 19:07:07 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/git/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>github</title>
-        <link>https://hugo.jiahongw.com/en/tags/github/</link>
-        <pubDate>Fri, 03 Apr 2020 19:07:07 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/github/</guid>
+        <guid>https://hugo.jiahongw.com/en/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/</guid>
         <description></description>
         
         <dc:creator>VictorHong</dc:creator>
@@ -1443,241 +399,7 @@
       </item>
       
       <item>
-        <title>加密</title>
-        <link>https://hugo.jiahongw.com/en/tags/%E5%8A%A0%E5%AF%86/</link>
-        <pubDate>Fri, 03 Apr 2020 14:20:19 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/%E5%8A%A0%E5%AF%86/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>密码学</title>
-        <link>https://hugo.jiahongw.com/en/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/</link>
-        <pubDate>Fri, 03 Apr 2020 14:20:19 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>Algorithm</title>
-        <link>https://hugo.jiahongw.com/en/tags/algorithm/</link>
-        <pubDate>Tue, 17 Mar 2020 15:12:38 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/algorithm/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>Hash</title>
-        <link>https://hugo.jiahongw.com/en/tags/hash/</link>
-        <pubDate>Tue, 17 Mar 2020 15:12:38 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/hash/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>md5</title>
-        <link>https://hugo.jiahongw.com/en/tags/md5/</link>
-        <pubDate>Tue, 17 Mar 2020 15:12:38 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/md5/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>sha</title>
-        <link>https://hugo.jiahongw.com/en/tags/sha/</link>
-        <pubDate>Tue, 17 Mar 2020 15:12:38 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/sha/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>排序</title>
-        <link>https://hugo.jiahongw.com/en/tags/%E6%8E%92%E5%BA%8F/</link>
-        <pubDate>Wed, 11 Mar 2020 22:07:13 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/%E6%8E%92%E5%BA%8F/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>算法</title>
-        <link>https://hugo.jiahongw.com/en/tags/%E7%AE%97%E6%B3%95/</link>
-        <pubDate>Wed, 11 Mar 2020 22:07:13 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/%E7%AE%97%E6%B3%95/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>kNN</title>
-        <link>https://hugo.jiahongw.com/en/tags/knn/</link>
-        <pubDate>Sun, 08 Mar 2020 23:33:24 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/knn/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>PCA</title>
-        <link>https://hugo.jiahongw.com/en/tags/pca/</link>
-        <pubDate>Sun, 08 Mar 2020 23:33:24 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/pca/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>SVM</title>
-        <link>https://hugo.jiahongw.com/en/tags/svm/</link>
-        <pubDate>Sun, 08 Mar 2020 23:33:24 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/svm/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>决策树</title>
-        <link>https://hugo.jiahongw.com/en/tags/%E5%86%B3%E7%AD%96%E6%A0%91/</link>
-        <pubDate>Sun, 08 Mar 2020 23:33:24 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/%E5%86%B3%E7%AD%96%E6%A0%91/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>机器学习</title>
-        <link>https://hugo.jiahongw.com/en/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</link>
-        <pubDate>Sun, 08 Mar 2020 23:33:24 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>Scrapy</title>
+        <title>scrapy</title>
         <link>https://hugo.jiahongw.com/en/tags/scrapy/</link>
         <pubDate>Wed, 04 Mar 2020 16:35:09 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
@@ -1713,12 +435,12 @@
       </item>
       
       <item>
-        <title>blog</title>
-        <link>https://hugo.jiahongw.com/en/tags/blog/</link>
-        <pubDate>Sun, 01 Mar 2020 15:18:15 +0800</pubDate>
+        <title>github</title>
+        <link>https://hugo.jiahongw.com/en/tags/github/</link>
+        <pubDate>Mon, 10 Feb 2020 20:50:09 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
         
-        <guid>https://hugo.jiahongw.com/en/tags/blog/</guid>
+        <guid>https://hugo.jiahongw.com/en/tags/github/</guid>
         <description></description>
         
         <dc:creator>VictorHong</dc:creator>
@@ -1731,12 +453,12 @@
       </item>
       
       <item>
-        <title>ppt</title>
-        <link>https://hugo.jiahongw.com/en/tags/ppt/</link>
-        <pubDate>Sun, 01 Mar 2020 15:18:15 +0800</pubDate>
+        <title>hugo</title>
+        <link>https://hugo.jiahongw.com/en/tags/hugo/</link>
+        <pubDate>Mon, 10 Feb 2020 20:50:09 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
         
-        <guid>https://hugo.jiahongw.com/en/tags/ppt/</guid>
+        <guid>https://hugo.jiahongw.com/en/tags/hugo/</guid>
         <description></description>
         
         <dc:creator>VictorHong</dc:creator>
@@ -1749,12 +471,12 @@
       </item>
       
       <item>
-        <title>liner</title>
-        <link>https://hugo.jiahongw.com/en/tags/liner/</link>
-        <pubDate>Sun, 23 Feb 2020 15:49:10 +0800</pubDate>
+        <title>shortcode</title>
+        <link>https://hugo.jiahongw.com/en/tags/shortcode/</link>
+        <pubDate>Sat, 25 Jan 2020 06:40:51 +0900</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
         
-        <guid>https://hugo.jiahongw.com/en/tags/liner/</guid>
+        <guid>https://hugo.jiahongw.com/en/tags/shortcode/</guid>
         <description></description>
         
         <dc:creator>VictorHong</dc:creator>
@@ -1767,12 +489,12 @@
       </item>
       
       <item>
-        <title>MXNet</title>
-        <link>https://hugo.jiahongw.com/en/tags/mxnet/</link>
-        <pubDate>Sun, 23 Feb 2020 15:49:10 +0800</pubDate>
+        <title>zzo</title>
+        <link>https://hugo.jiahongw.com/en/tags/zzo/</link>
+        <pubDate>Sat, 25 Jan 2020 06:40:51 +0900</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
         
-        <guid>https://hugo.jiahongw.com/en/tags/mxnet/</guid>
+        <guid>https://hugo.jiahongw.com/en/tags/zzo/</guid>
         <description></description>
         
         <dc:creator>VictorHong</dc:creator>
@@ -1785,30 +507,12 @@
       </item>
       
       <item>
-        <title>python</title>
-        <link>https://hugo.jiahongw.com/en/tags/python/</link>
-        <pubDate>Sun, 23 Feb 2020 15:49:10 +0800</pubDate>
+        <title>博客搭建</title>
+        <link>https://hugo.jiahongw.com/en/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</link>
+        <pubDate>Sat, 25 Jan 2020 06:40:51 +0900</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
         
-        <guid>https://hugo.jiahongw.com/en/tags/python/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>深度学习</title>
-        <link>https://hugo.jiahongw.com/en/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/</link>
-        <pubDate>Sun, 23 Feb 2020 15:49:10 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/</guid>
+        <guid>https://hugo.jiahongw.com/en/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</guid>
         <description></description>
         
         <dc:creator>VictorHong</dc:creator>

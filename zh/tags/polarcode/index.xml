@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>PolarCode on ✏VictorHong&#39;s Blog</title>
+    <link>https://hugo.jiahongw.com/zh/tags/polarcode/</link>
+    <description>Recent content in PolarCode on ✏VictorHong&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
+    <webMaster>1427298682@qq.com (VictorHong)</webMaster>
+    <copyright>©2021-2023| VictorHong | <a href="https://beian.miit.gov.cn">粤ICP备20043735号</a></copyright>
+    <lastBuildDate>Tue, 18 May 2021 14:01:12 +0800</lastBuildDate>
+    
+        <atom:link href="https://hugo.jiahongw.com/zh/tags/polarcode/index.xml" rel="self" type="application/rss+xml" />
+    
+
+      
+      <item>
+        <title>5G下的极化码</title>
+        <link>https://hugo.jiahongw.com/zh/posts/polarcode/polar-code-intro/</link>
+        <pubDate>Tue, 18 May 2021 14:01:12 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <atom:modified>Tue, 18 May 2021 14:01:12 +0800</atom:modified>
+        <guid>https://hugo.jiahongw.com/zh/posts/polarcode/polar-code-intro/</guid>
+        <description>5G下的极化码 这个专栏介绍极化码的相关原理，一方面是因为我目前的毕业设计是关于5G极化码方向的，另一方面我想将自己所学的一些知识记录或者分享</description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        <media:content url="https://hugo.jiahongw.comhttps://i.loli.net/2021/05/18/HAxasJOeRDVG29W.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>PolarCode</category>
+            
+          
+        
+        
+          
+            
+              <category>极化码</category>
+            
+          
+        
+        
+          
+            
+              <category>极化码原理</category>
+            
+          
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

@@ -29,7 +29,7 @@
         <guid>https://hugo.jiahongw.com/en/zh/posts/cryptography/aes/</guid>
         <description>&lt;p&gt;AES算法是继DES之后比较快且比较简单的加密算法.⚖&lt;/p&gt;</description>
         
-        <dc:creator>Victor</dc:creator>
+        <dc:creator>VictorHong</dc:creator>
         <media:content url="https://hugo.jiahongw.comhttps://i.loli.net/2020/04/03/328xKkTg7YDQZXt.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
@@ -43,20 +43,16 @@
               <category>密码学</category>
             
           
-            
-              <category>加密</category>
-            
-          
-        
-        
-          
-            
-          
         
         
           
             
               <category>密码学</category>
+            
+          
+        
+        
+          
             
           
         

@@ -14,10 +14,900 @@
     <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
     <webMaster>1427298682@qq.com (VictorHong)</webMaster>
     <copyright>©2021-2023| VictorHong | <a href="https://beian.miit.gov.cn">粤ICP备20043735号</a></copyright>
+    <lastBuildDate>Sun, 27 Nov 2022 15:12:33 +0800</lastBuildDate>
     
         <atom:link href="https://hugo.jiahongw.com/zh/index.xml" rel="self" type="application/rss+xml" />
     
+      
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
 
+      
+      <item>
+        <title>我现在在做什么？</title>
+        <link>https://hugo.jiahongw.com/zh/now/</link>
+        <pubDate>Sun, 19 Feb 2023 12:50:46 +0900</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <atom:modified>Sun, 19 Feb 2023 12:50:46 +0900</atom:modified>
+        <guid>https://hugo.jiahongw.com/zh/now/</guid>
+        <description>工作💻 作为Java后端开发，开发仓储库存管理系统。 看书📚 正在看 《创造：用非传统方式做有价值的事》 What else? 还没想到&amp;hellip;</description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>Freenom 免费域名申请 &amp; 自动域名续费</title>
+        <link>https://hugo.jiahongw.com/zh/posts/hugo/freenom-domain/</link>
+        <pubDate>Sun, 27 Nov 2022 15:12:33 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <atom:modified>Sun, 27 Nov 2022 15:12:33 +0800</atom:modified>
+        <guid>https://hugo.jiahongw.com/zh/posts/hugo/freenom-domain/</guid>
+        <description>Freenom 是目前为数不多的免费域名提供商，提供 .ga, .ml, .gq, .tk, .cf 五个免费顶级域。当然也有一些付费的域名，对于普通人来说，免费域名就够了。😏 另外，本文后面还提</description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        <media:content url="https://hugo.jiahongw.comhttps://my.freenom.com/templates/freenom/img/logo.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>域名</category>
+            
+          
+            
+              <category>freenom</category>
+            
+          
+        
+        
+          
+            
+              <category>博客搭建</category>
+            
+          
+        
+        
+          
+            
+              <category>折腾计划</category>
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>CompletableFuture使用笔记</title>
+        <link>https://hugo.jiahongw.com/zh/posts/dev/completable-future/</link>
+        <pubDate>Mon, 28 Mar 2022 17:38:53 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <atom:modified>Mon, 28 Mar 2022 17:38:53 +0800</atom:modified>
+        <guid>https://hugo.jiahongw.com/zh/posts/dev/completable-future/</guid>
+        <description>创建线程池的方法： 1 2 3 4 ExecutorService executorService = Executors.newCachedThreadPool(); ExecutorService executorService = Executors.newFixedThreadPool(3); ScheduledExecutorService executorService = Executors.newScheduledThreadPool(3); ExecutorService executorService = Executors.newSingleThreadExecutor(); https://www.cnblogs.com/pcheng/p/13540619.html 多线程的问题 线程任务是实现了Runnable接口，或者直接写个类继承Thread</description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        <media:content url="https://hugo.jiahongw.comhttps://cos.jiahongw.com/uPic/java.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>java</category>
+            
+          
+            
+              <category>CompletableFuture</category>
+            
+          
+            
+              <category>开发方法论</category>
+            
+          
+        
+        
+          
+            
+              <category>开发方法论</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
+        <title>理解设计模式</title>
+        <link>https://hugo.jiahongw.com/zh/posts/dev/design-pattern/</link>
+        <pubDate>Sat, 22 Jan 2022 21:52:34 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <atom:modified>Sat, 22 Jan 2022 21:52:34 +0800</atom:modified>
+        <guid>https://hugo.jiahongw.com/zh/posts/dev/design-pattern/</guid>
+        <description>原则 设计原则 单一职责原则 Single Responsibility Principle，一个类应该只负责一个职责。 开闭原则 Open-Closed Principle, OCP，一个软件实体应当对扩展开放，对修改关闭。即软件</description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        <media:content url="https://hugo.jiahongw.comhttps://cos.jiahongw.com/uPic/pexels-jessica-lewis-creative-998587.jpg" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>设计模式</category>
+            
+          
+            
+              <category>开发方法论</category>
+            
+          
+        
+        
+          
+            
+              <category>开发方法论</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
+        <title>青岛之旅</title>
+        <link>https://hugo.jiahongw.com/zh/posts/life/qingdao-travel/</link>
+        <pubDate>Thu, 07 Oct 2021 21:26:43 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <atom:modified>Thu, 07 Oct 2021 21:26:43 +0800</atom:modified>
+        <guid>https://hugo.jiahongw.com/zh/posts/life/qingdao-travel/</guid>
+        <description>出发前的准备 我这里列了一个大致的攻略（虽然最后崂山没去成）： 青岛攻略 还准备了一个行程路线： 第一站 我们下车的地方是青岛站，一下来，就是一种欧式</description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        <media:content url="https://hugo.jiahongw.comhttps://cos.jiahongw.com/uPic/image-20211007213600286.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>青岛</category>
+            
+          
+            
+              <category>生活</category>
+            
+          
+            
+              <category>旅行</category>
+            
+          
+        
+        
+          
+            
+              <category>生活</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
+        <title>git使用笔记</title>
+        <link>https://hugo.jiahongw.com/zh/posts/dev/git-note/</link>
+        <pubDate>Sat, 04 Sep 2021 23:14:21 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <atom:modified>Sat, 04 Sep 2021 23:14:21 +0800</atom:modified>
+        <guid>https://hugo.jiahongw.com/zh/posts/dev/git-note/</guid>
+        <description>配置信息 git的config的信息又一个全局的配置文件，也有一个局部（当前git项目）的配置文件。他们的位置分别在： 全局配置文件.gitco</description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        <media:content url="https://hugo.jiahongw.comhttps://cos.jiahongw.com/uPic/VpfE08.jpg" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>git</category>
+            
+          
+            
+              <category>开发方法论</category>
+            
+          
+        
+        
+          
+            
+              <category>开发方法论</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
+        <title>街头代码编程</title>
+        <link>https://hugo.jiahongw.com/zh/posts/see/code-problem-solving-onstreet/</link>
+        <pubDate>Sat, 21 Aug 2021 16:15:37 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <atom:modified>Sat, 21 Aug 2021 16:15:37 +0800</atom:modified>
+        <guid>https://hugo.jiahongw.com/zh/posts/see/code-problem-solving-onstreet/</guid>
+        <description>Youtube中的一个非常有意思的视频活动。在芝加哥的大街上，看看路人能否解决一些初级的编程问题，解决问题的能够得到100美元，非常有意思。</description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        <media:content url="https://hugo.jiahongw.comhttps://cos.jiahongw.com/uPic/image-20210821162354596.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>编程</category>
+            
+          
+            
+              <category>youtube</category>
+            
+          
+        
+        
+          
+            
+              <category>见闻</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
+        <title>极化码-编码</title>
+        <link>https://hugo.jiahongw.com/zh/posts/polarcode/polar-code-encode/</link>
+        <pubDate>Tue, 29 Jun 2021 13:01:45 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <atom:modified>Tue, 29 Jun 2021 13:01:45 +0800</atom:modified>
+        <guid>https://hugo.jiahongw.com/zh/posts/polarcode/polar-code-encode/</guid>
+        <description>极化编码的基本思想是：只在$Z\left( W_{N}^{\left( i \right)} \right)$近于0的坐标信道$W_{N}^{\left( i \right)}$上发送数据比</description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        <media:content url="https://hugo.jiahongw.comhttps://raw.githubusercontent.com/redisread/Image/master/PolarCode/Encode/logo.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>极化码</category>
+            
+          
+        
+        
+          
+            
+              <category>极化码</category>
+            
+          
+        
+        
+          
+            
+              <category>极化码原理</category>
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>极化码-基本原理</title>
+        <link>https://hugo.jiahongw.com/zh/posts/polarcode/polar-code-fundamentals/</link>
+        <pubDate>Tue, 29 Jun 2021 12:48:45 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <atom:modified>Tue, 29 Jun 2021 12:48:45 +0800</atom:modified>
+        <guid>https://hugo.jiahongw.com/zh/posts/polarcode/polar-code-fundamentals/</guid>
+        <description>基本概念 信噪比 信噪比，英文名称叫做SNR（SIGNAL-NOISE RATIO )，是指一个电子设备或者电子系统中信号与噪声的比例。信噪比的计算可以为有</description>
+        
+        <dc:creator>Victor</dc:creator>
+        <media:content url="https://hugo.jiahongw.comhttps://raw.githubusercontent.com/redisread/Image/master/PolarCode/Fundamentals/logo.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>极化码</category>
+            
+          
+        
+        
+          
+            
+              <category>极化码</category>
+            
+          
+        
+        
+          
+            
+              <category>极化码原理</category>
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>极化码-信道模型</title>
+        <link>https://hugo.jiahongw.com/zh/posts/polarcode/polar-code-channel-model/</link>
+        <pubDate>Thu, 24 Jun 2021 21:19:45 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <atom:modified>Thu, 24 Jun 2021 21:19:45 +0800</atom:modified>
+        <guid>https://hugo.jiahongw.com/zh/posts/polarcode/polar-code-channel-model/</guid>
+        <description>在通信过程中，物理层传输的就是电信号，假如我们只用0和1传输信号，并且这些信道互相都没有关系，我们称为二进制离散无记忆信道。信道模型是研究信</description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        <media:content url="https://hugo.jiahongw.comhttps://cos.jiahongw.com/uPic/channel_model_icon.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>极化码</category>
+            
+          
+            
+              <category>信道模型</category>
+            
+          
+        
+        
+          
+            
+              <category>极化码</category>
+            
+          
+        
+        
+          
+            
+              <category>极化码原理</category>
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>极化码-译码</title>
+        <link>https://hugo.jiahongw.com/zh/posts/polarcode/polar-code-decode/</link>
+        <pubDate>Thu, 24 Jun 2021 14:04:45 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <atom:modified>Thu, 24 Jun 2021 14:04:45 +0800</atom:modified>
+        <guid>https://hugo.jiahongw.com/zh/posts/polarcode/polar-code-decode/</guid>
+        <description>Arıkan教授在文献[1]提出了串行抵消SC译码算法。SC译码算法类似一个深度优先搜索的算法，其根据两个判决函数进行迭代计算最大似然对数比</description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        <media:content url="https://hugo.jiahongw.comhttps://raw.githubusercontent.com/redisread/Image/master/PolarCode/Decode/Decode-File.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>极化码</category>
+            
+          
+        
+        
+          
+            
+              <category>极化码</category>
+            
+          
+        
+        
+          
+            
+              <category>极化码原理</category>
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>毕业旅行-川西</title>
+        <link>https://hugo.jiahongw.com/zh/posts/life/biyeluxing/</link>
+        <pubDate>Wed, 23 Jun 2021 21:39:06 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <atom:modified>Wed, 23 Jun 2021 21:39:06 +0800</atom:modified>
+        <guid>https://hugo.jiahongw.com/zh/posts/life/biyeluxing/</guid>
+        <description>出发前的准备 冲锋衣（防风，防晒，防雨，防寒） 登山鞋或者越野鞋 登山杖 帽子 防晒霜 一次性内裤和一次性雨衣 相机 厚的衣服 口罩 学生证 身份证 驾驶证 基本路线</description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        <media:content url="https://hugo.jiahongw.comhttps://i.loli.net/2021/06/23/bfAkG5v4X8qQpRD.jpg" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>生活</category>
+            
+          
+        
+        
+          
+            
+              <category>生活</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
+        <title>5G下的极化码</title>
+        <link>https://hugo.jiahongw.com/zh/posts/polarcode/polar-code-intro/</link>
+        <pubDate>Tue, 18 May 2021 14:01:12 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <atom:modified>Tue, 18 May 2021 14:01:12 +0800</atom:modified>
+        <guid>https://hugo.jiahongw.com/zh/posts/polarcode/polar-code-intro/</guid>
+        <description>5G下的极化码 这个专栏介绍极化码的相关原理，一方面是因为我目前的毕业设计是关于5G极化码方向的，另一方面我想将自己所学的一些知识记录或者分享</description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        <media:content url="https://hugo.jiahongw.comhttps://i.loli.net/2021/05/18/HAxasJOeRDVG29W.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>PolarCode</category>
+            
+          
+        
+        
+          
+            
+              <category>极化码</category>
+            
+          
+        
+        
+          
+            
+              <category>极化码原理</category>
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>UE编辑器下模拟使用HitProxy</title>
+        <link>https://hugo.jiahongw.com/zh/posts/ue/ue-hitproxy/</link>
+        <pubDate>Mon, 15 Jun 2020 09:43:11 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <atom:modified>Mon, 15 Jun 2020 09:43:11 +0800</atom:modified>
+        <guid>https://hugo.jiahongw.com/zh/posts/ue/ue-hitproxy/</guid>
+        <description>需要从 UGameViewportClient 类继承 修改返回值为true,路径：\Source\Runtime\Engine\Private\GameViewportClient</description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        <media:content url="https://hugo.jiahongw.comhttps://i.loli.net/2020/06/15/ivEDkwYhIQ5xVn7.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>c&#43;&#43;</category>
+            
+          
+            
+              <category>UE4</category>
+            
+          
+            
+              <category>游戏引擎</category>
+            
+          
+        
+        
+          
+            
+              <category>UE4开发</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
+        <title>UE4获取深度值</title>
+        <link>https://hugo.jiahongw.com/zh/posts/ue/ue-depth/</link>
+        <pubDate>Mon, 15 Jun 2020 09:42:11 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <atom:modified>Mon, 15 Jun 2020 09:42:11 +0800</atom:modified>
+        <guid>https://hugo.jiahongw.com/zh/posts/ue/ue-depth/</guid>
+        <description>&lt;p&gt;在UE4中获取深度缓存，调用渲染命令读取。&lt;/p&gt;</description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        <media:content url="https://hugo.jiahongw.comhttps://i.loli.net/2020/06/15/ivEDkwYhIQ5xVn7.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>c&#43;&#43;</category>
+            
+          
+            
+              <category>UE4</category>
+            
+          
+            
+              <category>游戏引擎</category>
+            
+          
+        
+        
+          
+            
+              <category>UE4开发</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
+        <title>UE游戏、渲染线程</title>
+        <link>https://hugo.jiahongw.com/zh/posts/ue/ue-game-render/</link>
+        <pubDate>Wed, 03 Jun 2020 09:42:11 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <atom:modified>Wed, 03 Jun 2020 09:42:11 +0800</atom:modified>
+        <guid>https://hugo.jiahongw.com/zh/posts/ue/ue-game-render/</guid>
+        <description>&lt;p&gt;探索UE4游戏线程的进入&lt;/p&gt;</description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        <media:content url="https://hugo.jiahongw.comhttps://i.loli.net/2020/06/15/ivEDkwYhIQ5xVn7.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>c&#43;&#43;</category>
+            
+          
+            
+              <category>UE4</category>
+            
+          
+            
+              <category>游戏引擎</category>
+            
+          
+        
+        
+          
+            
+              <category>UE4开发</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
+        <title>UE4渲染过程</title>
+        <link>https://hugo.jiahongw.com/zh/posts/ue/ue4-render/</link>
+        <pubDate>Fri, 29 May 2020 09:42:11 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <atom:modified>Fri, 29 May 2020 09:42:11 +0800</atom:modified>
+        <guid>https://hugo.jiahongw.com/zh/posts/ue/ue4-render/</guid>
+        <description>&lt;p&gt;大概介绍以下UE4的主要渲染过程。&lt;/p&gt;</description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        <media:content url="https://hugo.jiahongw.comhttps://i.loli.net/2020/06/15/ivEDkwYhIQ5xVn7.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>c&#43;&#43;</category>
+            
+          
+            
+              <category>UE4</category>
+            
+          
+            
+              <category>游戏引擎</category>
+            
+          
+        
+        
+          
+            
+              <category>UE4开发</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
+        <title>RSA加密算法</title>
+        <link>https://hugo.jiahongw.com/zh/posts/cryptography/rsa/</link>
+        <pubDate>Wed, 06 May 2020 16:00:46 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <atom:modified>Wed, 06 May 2020 16:00:46 +0800</atom:modified>
+        <guid>https://hugo.jiahongw.com/zh/posts/cryptography/rsa/</guid>
+        <description>RSA算法 RSA加密算法是一种非对称加密算法，在公开密钥加密和电子商业中被广泛使用。 对极大整数做因数分解的难度决定了 RSA 算法的可靠性。换言之，</description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        <media:content url="https://hugo.jiahongw.comhttps://i.loli.net/2020/05/06/g6cJXue3kVqS2WT.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>rsa</category>
+            
+          
+            
+              <category>密码学</category>
+            
+          
+        
+        
+          
+            
+              <category>密码学</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
+        <title>Aes-高级加密标准</title>
+        <link>https://hugo.jiahongw.com/zh/posts/cryptography/aes/</link>
+        <pubDate>Fri, 03 Apr 2020 14:20:19 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <atom:modified>Fri, 03 Apr 2020 14:20:19 +0800</atom:modified>
+        <guid>https://hugo.jiahongw.com/zh/posts/cryptography/aes/</guid>
+        <description>&lt;p&gt;AES算法是继DES之后比较快且比较简单的加密算法.⚖&lt;/p&gt;</description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        <media:content url="https://hugo.jiahongw.comhttps://i.loli.net/2020/04/03/328xKkTg7YDQZXt.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>AES</category>
+            
+          
+            
+              <category>密码学</category>
+            
+          
+        
+        
+          
+            
+              <category>密码学</category>
+            
+          
+        
+        
+          
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>使用Scrapy框架编写爬虫</title>
+        <link>https://hugo.jiahongw.com/zh/posts/dev/scrapy-exercise/</link>
+        <pubDate>Wed, 04 Mar 2020 16:35:09 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <atom:modified>Wed, 04 Mar 2020 16:35:09 +0800</atom:modified>
+        <guid>https://hugo.jiahongw.com/zh/posts/dev/scrapy-exercise/</guid>
+        <description>&lt;p&gt;使用Scrapy爬取文章的一个小项目..&lt;/p&gt;</description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        <media:content url="https://hugo.jiahongw.comhttps://i.loli.net/2020/03/04/VDPQo3qaGYrCTd1.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>爬虫</category>
+            
+          
+            
+              <category>scrapy</category>
+            
+          
+        
+        
+          
+            
+          
+        
+        
+      </item>
+      
+      <item>
+        <title>部署HUGO博客</title>
+        <link>https://hugo.jiahongw.com/zh/posts/hugo/hugo_setup/</link>
+        <pubDate>Mon, 10 Feb 2020 20:50:09 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <atom:modified>Mon, 10 Feb 2020 20:50:09 +0800</atom:modified>
+        <guid>https://hugo.jiahongw.com/zh/posts/hugo/hugo_setup/</guid>
+        <description>HUGO + Github + Github Action 持续集成部署个人博客 安装 HUGO 本地环境 首先在 HUGO 的官网下载Hugo的 Windows 安装包，然后将路径添加到环境变量即可。 step1:下载 hugo step</description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        <media:content url="https://hugo.jiahongw.comhttps://cos.jiahongw.com/uPic/hugo-logo-wide.svg" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>hugo</category>
+            
+          
+            
+              <category>github</category>
+            
+          
+        
+        
+          
+            
+              <category>博客搭建</category>
+            
+          
+        
+        
+          
+            
+              <category>折腾计划</category>
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>Shortcodes使用参考</title>
+        <link>https://hugo.jiahongw.com/zh/posts/hugo/shortcodes/</link>
+        <pubDate>Sat, 25 Jan 2020 06:40:51 +0900</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <atom:modified>Sat, 25 Jan 2020 06:40:51 +0900</atom:modified>
+        <guid>https://hugo.jiahongw.com/zh/posts/hugo/shortcodes/</guid>
+        <description>盒子 支持 Markdown 语法的盒子 语法： 或者： 1 &amp;lt;div class=&amp;#34;box&amp;#34;&amp;gt;This is &amp;lt;strong&amp;gt;boxmd&amp;lt;/strong&amp;gt; shortcode&amp;lt;/div&amp;gt; 渲染显示： This is boxmd shortcode 简单盒子 语法： 渲染显示： This is **box** shortcode 代码选项卡 可以在不同的代码块之间切换，语法： 渲</description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        <media:content url="https://hugo.jiahongw.comimages/feature3/code-file.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>shortcode</category>
+            
+          
+            
+              <category>zzo</category>
+            
+          
+            
+              <category>博客搭建</category>
+            
+          
+        
+        
+          
+            
+              <category>博客搭建</category>
+            
+          
+        
+        
+          
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>互联网之子的故事</title>
+        <link>https://hugo.jiahongw.com/zh/talks/aaron-swartz-story/</link>
+        <pubDate>Tue, 31 Dec 2019 00:04:50 +0900</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <atom:modified>Tue, 31 Dec 2019 00:04:50 +0900</atom:modified>
+        <guid>https://hugo.jiahongw.com/zh/talks/aaron-swartz-story/</guid>
+        <description>A Short Video： ——以下 Aaron Swartz的宣言，我想这才是信息革命的真谛—— 信息就是力量。但就像所有力量一样，有些人只想占为己有。世界上所有的</description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        
+        
+        
+        
+          
+            
+          
+        
+        
+          
+            
+          
+        
+        
+          
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>Good Title</title>
+        <link>https://hugo.jiahongw.com/zh/publication/article/article_any_folder_name_1/</link>
+        <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <atom:modified>Fri, 01 Jun 2018 00:00:00 +0000</atom:modified>
+        <guid>https://hugo.jiahongw.com/zh/publication/article/article_any_folder_name_1/</guid>
+        <description></description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>Donec vel ipsum vulputate, dapibus magna quis</title>
+        <link>https://hugo.jiahongw.com/zh/publication/book/book_any_folder_name_1/</link>
+        <pubDate>Thu, 01 Jun 2017 00:00:00 +0000</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <atom:modified>Thu, 01 Jun 2017 00:00:00 +0000</atom:modified>
+        <guid>https://hugo.jiahongw.com/zh/publication/book/book_any_folder_name_1/</guid>
+        <description></description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>Book Review: Duis vulputate</title>
+        <link>https://hugo.jiahongw.com/zh/publication/misc/misc_any_folder_name_1/</link>
+        <pubDate>Tue, 01 Nov 2016 00:00:00 +0000</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <atom:modified>Tue, 01 Nov 2016 00:00:00 +0000</atom:modified>
+        <guid>https://hugo.jiahongw.com/zh/publication/misc/misc_any_folder_name_1/</guid>
+        <description></description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
 
     

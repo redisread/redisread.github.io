@@ -6,9 +6,9 @@
   xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
-    <title>Java on VictorHong&#39;s Blog</title>
+    <title>java on VictorHong&#39;s Blog</title>
     <link>https://hugo.jiahongw.com/en/tags/java/</link>
-    <description>Recent content in Java on VictorHong&#39;s Blog</description>
+    <description>Recent content in java on VictorHong&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
@@ -21,110 +21,40 @@
 
       
       <item>
-        <title>CompletableFuture笔记</title>
-        <link>https://hugo.jiahongw.com/en/zh/posts/java/completablefuture/</link>
+        <title>CompletableFuture使用笔记</title>
+        <link>https://hugo.jiahongw.com/en/zh/posts/dev/completable-future/</link>
         <pubDate>Mon, 28 Mar 2022 17:38:53 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
         <atom:modified>Mon, 28 Mar 2022 17:38:53 +0800</atom:modified>
-        <guid>https://hugo.jiahongw.com/en/zh/posts/java/completablefuture/</guid>
+        <guid>https://hugo.jiahongw.com/en/zh/posts/dev/completable-future/</guid>
         <description>创建线程池的方法： 1 2 3 4 ExecutorService executorService = Executors.newCachedThreadPool(); ExecutorService executorService = Executors.newFixedThreadPool(3); ScheduledExecutorService executorService = Executors.newScheduledThreadPool(3); ExecutorService executorService = Executors.newSingleThreadExecutor(); https://www.cnblogs.com/pcheng/p/13540619.html 多线程的问题 线程任务是实现了Runnable接口，或者直接写个类继承Thread</description>
         
-        <dc:creator>Victor</dc:creator>
-        <media:content url="https://hugo.jiahongw.comhttps://raw.githubusercontent.com/redisread/Image/master/Java/java.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <dc:creator>VictorHong</dc:creator>
+        <media:content url="https://hugo.jiahongw.comhttps://cos.jiahongw.com/uPic/java.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
           
             
-              <category>Java</category>
+              <category>java</category>
             
           
             
               <category>CompletableFuture</category>
             
           
-        
-        
-          
+            
+              <category>开发方法论</category>
             
           
         
         
           
             
-              <category>Java</category>
+              <category>开发方法论</category>
             
           
         
-      </item>
-      
-      <item>
-        <title>java8笔记📒</title>
-        <link>https://hugo.jiahongw.com/en/zh/posts/java/java8-note/</link>
-        <pubDate>Thu, 09 Sep 2021 11:14:17 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Thu, 09 Sep 2021 11:14:17 +0800</atom:modified>
-        <guid>https://hugo.jiahongw.com/en/zh/posts/java/java8-note/</guid>
-        <description>✌️cxc 《Java实战》笔记 stream的使用注意 一个 Stream pipeline 中包含一个源 Stream，接着是 0个或者多个中间操作( intermediat巳 o</description>
-        
-        <dc:creator>Victor</dc:creator>
-        <media:content url="https://hugo.jiahongw.comhttps://raw.githubusercontent.com/redisread/Image/master/2021-09-09/4519129_java_icon.png" medium="image"><media:title type="html">featured image</media:title></media:content>
-        
-        
-        
-          
-            
-              <category>Java</category>
-            
-          
-            
-              <category>Effective Java</category>
-            
-          
-        
-        
-          
-            
-          
-        
-        
-          
-            
-          
-        
-      </item>
-      
-      <item>
-        <title>Java装箱拆箱</title>
-        <link>https://hugo.jiahongw.com/en/zh/posts/java/boxing-unboxing/</link>
-        <pubDate>Thu, 12 Aug 2021 21:21:00 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Thu, 12 Aug 2021 21:21:00 +0800</atom:modified>
-        <guid>https://hugo.jiahongw.com/en/zh/posts/java/boxing-unboxing/</guid>
-        <description>Java语言虽然号称一切都是对象，但原始数据类型是例外。 在Java 5中，引入了自动装箱和自动拆箱功能（boxing/unboxing），Ja</description>
-        
-        <dc:creator>Victor</dc:creator>
-        <media:content url="https://hugo.jiahongw.comhttps://raw.githubusercontent.com/redisread/Image/master/Java/java.png" medium="image"><media:title type="html">featured image</media:title></media:content>
-        
-        
-        
-          
-            
-              <category>Java</category>
-            
-          
-        
-        
-          
-            
-              <category>Java</category>
-            
-          
-        
-        
-          
-            
-          
         
       </item>
       

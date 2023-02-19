@@ -6,9 +6,9 @@
   xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
-    <title>Hugo on VictorHong&#39;s Blog</title>
+    <title>hugo on VictorHong&#39;s Blog</title>
     <link>https://hugo.jiahongw.com/en/tags/hugo/</link>
-    <description>Recent content in Hugo on VictorHong&#39;s Blog</description>
+    <description>Recent content in hugo on VictorHong&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
@@ -29,30 +29,32 @@
         <guid>https://hugo.jiahongw.com/en/zh/posts/hugo/hugo_setup/</guid>
         <description>HUGO + Github + Github Action 持续集成部署个人博客 安装 HUGO 本地环境 首先在 HUGO 的官网下载Hugo的 Windows 安装包，然后将路径添加到环境变量即可。 step1:下载 hugo step</description>
         
-        <dc:creator>Victor</dc:creator>
-        <media:content url="https://hugo.jiahongw.comhttps://d33wubrfki0l68.cloudfront.net/c38c7334cc3f23585738e40334284fddcaf03d5e/2e17c/images/hugo-logo-wide.svg" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <dc:creator>VictorHong</dc:creator>
+        <media:content url="https://hugo.jiahongw.comhttps://cos.jiahongw.com/uPic/hugo-logo-wide.svg" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
           
             
-              <category>Hugo</category>
+              <category>hugo</category>
             
           
             
-              <category>Github</category>
-            
-          
-        
-        
-          
+              <category>github</category>
             
           
         
         
           
             
-              <category>Blog</category>
+              <category>博客搭建</category>
+            
+          
+        
+        
+          
+            
+              <category>折腾计划</category>
             
           
         

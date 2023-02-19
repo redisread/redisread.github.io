@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>Categories on ✏VictorHong&#39;s Blog</title>
+    <link>https://hugo.jiahongw.com/zh/categories/</link>
+    <description>Recent content in Categories on ✏VictorHong&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
+    <webMaster>1427298682@qq.com (VictorHong)</webMaster>
+    <copyright>©2021-2023| VictorHong | <a href="https://beian.miit.gov.cn">粤ICP备20043735号</a></copyright>
+    <lastBuildDate>Sun, 27 Nov 2022 15:12:33 +0800</lastBuildDate>
+    
+        <atom:link href="https://hugo.jiahongw.com/zh/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+
+      
+      <item>
+        <title>博客搭建</title>
+        <link>https://hugo.jiahongw.com/zh/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</link>
+        <pubDate>Sun, 27 Nov 2022 15:12:33 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        
+        <guid>https://hugo.jiahongw.com/zh/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</guid>
+        <description></description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>开发方法论</title>
+        <link>https://hugo.jiahongw.com/zh/categories/%E5%BC%80%E5%8F%91%E6%96%B9%E6%B3%95%E8%AE%BA/</link>
+        <pubDate>Mon, 28 Mar 2022 17:38:53 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        
+        <guid>https://hugo.jiahongw.com/zh/categories/%E5%BC%80%E5%8F%91%E6%96%B9%E6%B3%95%E8%AE%BA/</guid>
+        <description></description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>生活</title>
+        <link>https://hugo.jiahongw.com/zh/categories/%E7%94%9F%E6%B4%BB/</link>
+        <pubDate>Thu, 07 Oct 2021 21:26:43 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        
+        <guid>https://hugo.jiahongw.com/zh/categories/%E7%94%9F%E6%B4%BB/</guid>
+        <description></description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>见闻</title>
+        <link>https://hugo.jiahongw.com/zh/categories/%E8%A7%81%E9%97%BB/</link>
+        <pubDate>Sat, 21 Aug 2021 16:15:37 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        
+        <guid>https://hugo.jiahongw.com/zh/categories/%E8%A7%81%E9%97%BB/</guid>
+        <description></description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>极化码</title>
+        <link>https://hugo.jiahongw.com/zh/categories/%E6%9E%81%E5%8C%96%E7%A0%81/</link>
+        <pubDate>Tue, 29 Jun 2021 13:01:45 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        
+        <guid>https://hugo.jiahongw.com/zh/categories/%E6%9E%81%E5%8C%96%E7%A0%81/</guid>
+        <description></description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>UE4开发</title>
+        <link>https://hugo.jiahongw.com/zh/categories/ue4%E5%BC%80%E5%8F%91/</link>
+        <pubDate>Mon, 15 Jun 2020 09:43:11 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        
+        <guid>https://hugo.jiahongw.com/zh/categories/ue4%E5%BC%80%E5%8F%91/</guid>
+        <description></description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>密码学</title>
+        <link>https://hugo.jiahongw.com/zh/categories/%E5%AF%86%E7%A0%81%E5%AD%A6/</link>
+        <pubDate>Wed, 06 May 2020 16:00:46 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        
+        <guid>https://hugo.jiahongw.com/zh/categories/%E5%AF%86%E7%A0%81%E5%AD%A6/</guid>
+        <description></description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

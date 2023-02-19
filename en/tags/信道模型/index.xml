@@ -29,14 +29,14 @@
         <guid>https://hugo.jiahongw.com/en/zh/posts/polarcode/polar-code-channel-model/</guid>
         <description>在通信过程中，物理层传输的就是电信号，假如我们只用0和1传输信号，并且这些信道互相都没有关系，我们称为二进制离散无记忆信道。信道模型是研究信</description>
         
-        <dc:creator>Victor</dc:creator>
-        <media:content url="https://hugo.jiahongw.comhttps://raw.githubusercontent.com/redisread/Image/master/Java_Maven/channel_model_icon.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <dc:creator>VictorHong</dc:creator>
+        <media:content url="https://hugo.jiahongw.comhttps://cos.jiahongw.com/uPic/channel_model_icon.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
           
             
-              <category>PolarCode</category>
+              <category>极化码</category>
             
           
             
@@ -47,12 +47,14 @@
         
           
             
+              <category>极化码</category>
+            
           
         
         
           
             
-              <category>PolarCode</category>
+              <category>极化码原理</category>
             
           
         
