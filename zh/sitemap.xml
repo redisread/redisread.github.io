@@ -8,6 +8,9 @@
     <loc>https://hugo.jiahongw.com/zh/showcase/hugo/myitem/</loc>
     <lastmod>2020-01-19T21:13:42+09:00</lastmod>
   </url><url>
+    <loc>https://hugo.jiahongw.com/zh/message/</loc>
+    <lastmod>2023-02-19T12:50:46+09:00</lastmod>
+  </url><url>
     <loc>https://hugo.jiahongw.com/zh/now/</loc>
     <lastmod>2023-02-19T12:50:46+09:00</lastmod>
   </url><url>
@@ -618,10 +621,10 @@
     <loc>https://hugo.jiahongw.com/zh/posts/hugo/hugo_setup/</loc>
     <lastmod>2020-02-10T20:50:09+08:00</lastmod>
   </url><url>
-    <loc>https://hugo.jiahongw.com/zh/about/</loc>
+    <loc>https://hugo.jiahongw.com/zh/archive/</loc>
     <lastmod>2020-01-30T12:50:46+09:00</lastmod>
   </url><url>
-    <loc>https://hugo.jiahongw.com/zh/archive/</loc>
+    <loc>https://hugo.jiahongw.com/zh/about/</loc>
     <lastmod>2020-01-30T12:50:46+09:00</lastmod>
   </url><url>
     <loc>https://hugo.jiahongw.com/zh/tags/shortcode/</loc>
