@@ -22,11 +22,11 @@
       
       <item>
         <title>CompletableFuture使用笔记</title>
-        <link>https://hugo.jiahongw.com/zh/posts/dev/completable-future/</link>
+        <link>https://hugo.jiahongw.com/zh/20220328/completable-future/</link>
         <pubDate>Mon, 28 Mar 2022 17:38:53 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
         <atom:modified>Mon, 28 Mar 2022 17:38:53 +0800</atom:modified>
-        <guid>https://hugo.jiahongw.com/zh/posts/dev/completable-future/</guid>
+        <guid>https://hugo.jiahongw.com/zh/20220328/completable-future/</guid>
         <description>创建线程池的方法： 1 2 3 4 ExecutorService executorService = Executors.newCachedThreadPool(); ExecutorService executorService = Executors.newFixedThreadPool(3); ScheduledExecutorService executorService = Executors.newScheduledThreadPool(3); ExecutorService executorService = Executors.newSingleThreadExecutor(); https://www.cnblogs.com/pcheng/p/13540619.html 多线程的问题 线程任务是实现了Runnable接口，或者直接写个类继承Thread</description>
         
         <dc:creator>VictorHong</dc:creator>

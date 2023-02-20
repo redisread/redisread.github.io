@@ -22,11 +22,11 @@
       
       <item>
         <title>RSA加密算法</title>
-        <link>https://hugo.jiahongw.com/zh/posts/cryptography/rsa/</link>
+        <link>https://hugo.jiahongw.com/zh/20200506/rsa/</link>
         <pubDate>Wed, 06 May 2020 16:00:46 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
         <atom:modified>Wed, 06 May 2020 16:00:46 +0800</atom:modified>
-        <guid>https://hugo.jiahongw.com/zh/posts/cryptography/rsa/</guid>
+        <guid>https://hugo.jiahongw.com/zh/20200506/rsa/</guid>
         <description>RSA算法 RSA加密算法是一种非对称加密算法，在公开密钥加密和电子商业中被广泛使用。 对极大整数做因数分解的难度决定了 RSA 算法的可靠性。换言之，</description>
         
         <dc:creator>VictorHong</dc:creator>
@@ -56,11 +56,11 @@
       
       <item>
         <title>Aes-高级加密标准</title>
-        <link>https://hugo.jiahongw.com/zh/posts/cryptography/aes/</link>
+        <link>https://hugo.jiahongw.com/zh/20200403/aes/</link>
         <pubDate>Fri, 03 Apr 2020 14:20:19 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
         <atom:modified>Fri, 03 Apr 2020 14:20:19 +0800</atom:modified>
-        <guid>https://hugo.jiahongw.com/zh/posts/cryptography/aes/</guid>
+        <guid>https://hugo.jiahongw.com/zh/20200403/aes/</guid>
         <description>&lt;p&gt;AES算法是继DES之后比较快且比较简单的加密算法.⚖&lt;/p&gt;</description>
         
         <dc:creator>VictorHong</dc:creator>

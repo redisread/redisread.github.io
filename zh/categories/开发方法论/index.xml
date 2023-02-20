@@ -22,11 +22,11 @@
       
       <item>
         <title>CompletableFuture使用笔记</title>
-        <link>https://hugo.jiahongw.com/zh/posts/dev/completable-future/</link>
+        <link>https://hugo.jiahongw.com/zh/20220328/completable-future/</link>
         <pubDate>Mon, 28 Mar 2022 17:38:53 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
         <atom:modified>Mon, 28 Mar 2022 17:38:53 +0800</atom:modified>
-        <guid>https://hugo.jiahongw.com/zh/posts/dev/completable-future/</guid>
+        <guid>https://hugo.jiahongw.com/zh/20220328/completable-future/</guid>
         <description>创建线程池的方法： 1 2 3 4 ExecutorService executorService = Executors.newCachedThreadPool(); ExecutorService executorService = Executors.newFixedThreadPool(3); ScheduledExecutorService executorService = Executors.newScheduledThreadPool(3); ExecutorService executorService = Executors.newSingleThreadExecutor(); https://www.cnblogs.com/pcheng/p/13540619.html 多线程的问题 线程任务是实现了Runnable接口，或者直接写个类继承Thread</description>
         
         <dc:creator>VictorHong</dc:creator>
@@ -60,11 +60,11 @@
       
       <item>
         <title>理解设计模式</title>
-        <link>https://hugo.jiahongw.com/zh/posts/dev/design-pattern/</link>
+        <link>https://hugo.jiahongw.com/zh/20220122/design-pattern/</link>
         <pubDate>Sat, 22 Jan 2022 21:52:34 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
         <atom:modified>Sat, 22 Jan 2022 21:52:34 +0800</atom:modified>
-        <guid>https://hugo.jiahongw.com/zh/posts/dev/design-pattern/</guid>
+        <guid>https://hugo.jiahongw.com/zh/20220122/design-pattern/</guid>
         <description>原则 设计原则 单一职责原则 Single Responsibility Principle，一个类应该只负责一个职责。 开闭原则 Open-Closed Principle, OCP，一个软件实体应当对扩展开放，对修改关闭。即软件</description>
         
         <dc:creator>VictorHong</dc:creator>
@@ -94,11 +94,11 @@
       
       <item>
         <title>git使用笔记</title>
-        <link>https://hugo.jiahongw.com/zh/posts/dev/git-note/</link>
+        <link>https://hugo.jiahongw.com/zh/20210904/git-note/</link>
         <pubDate>Sat, 04 Sep 2021 23:14:21 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
         <atom:modified>Sat, 04 Sep 2021 23:14:21 +0800</atom:modified>
-        <guid>https://hugo.jiahongw.com/zh/posts/dev/git-note/</guid>
+        <guid>https://hugo.jiahongw.com/zh/20210904/git-note/</guid>
         <description>配置信息 git的config的信息又一个全局的配置文件，也有一个局部（当前git项目）的配置文件。他们的位置分别在： 全局配置文件.gitco</description>
         
         <dc:creator>VictorHong</dc:creator>

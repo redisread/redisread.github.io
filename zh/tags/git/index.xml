@@ -22,11 +22,11 @@
       
       <item>
         <title>git使用笔记</title>
-        <link>https://hugo.jiahongw.com/zh/posts/dev/git-note/</link>
+        <link>https://hugo.jiahongw.com/zh/20210904/git-note/</link>
         <pubDate>Sat, 04 Sep 2021 23:14:21 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
         <atom:modified>Sat, 04 Sep 2021 23:14:21 +0800</atom:modified>
-        <guid>https://hugo.jiahongw.com/zh/posts/dev/git-note/</guid>
+        <guid>https://hugo.jiahongw.com/zh/20210904/git-note/</guid>
         <description>配置信息 git的config的信息又一个全局的配置文件，也有一个局部（当前git项目）的配置文件。他们的位置分别在： 全局配置文件.gitco</description>
         
         <dc:creator>VictorHong</dc:creator>

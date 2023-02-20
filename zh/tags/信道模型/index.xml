@@ -22,11 +22,11 @@
       
       <item>
         <title>极化码-信道模型</title>
-        <link>https://hugo.jiahongw.com/zh/posts/polarcode/polar-code-channel-model/</link>
+        <link>https://hugo.jiahongw.com/zh/20210624/polar-code-channel-model/</link>
         <pubDate>Thu, 24 Jun 2021 21:19:45 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
         <atom:modified>Thu, 24 Jun 2021 21:19:45 +0800</atom:modified>
-        <guid>https://hugo.jiahongw.com/zh/posts/polarcode/polar-code-channel-model/</guid>
+        <guid>https://hugo.jiahongw.com/zh/20210624/polar-code-channel-model/</guid>
         <description>在通信过程中，物理层传输的就是电信号，假如我们只用0和1传输信号，并且这些信道互相都没有关系，我们称为二进制离散无记忆信道。信道模型是研究信</description>
         
         <dc:creator>VictorHong</dc:creator>

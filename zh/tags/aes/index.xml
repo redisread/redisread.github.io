@@ -22,11 +22,11 @@
       
       <item>
         <title>Aes-高级加密标准</title>
-        <link>https://hugo.jiahongw.com/zh/posts/cryptography/aes/</link>
+        <link>https://hugo.jiahongw.com/zh/20200403/aes/</link>
         <pubDate>Fri, 03 Apr 2020 14:20:19 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
         <atom:modified>Fri, 03 Apr 2020 14:20:19 +0800</atom:modified>
-        <guid>https://hugo.jiahongw.com/zh/posts/cryptography/aes/</guid>
+        <guid>https://hugo.jiahongw.com/zh/20200403/aes/</guid>
         <description>&lt;p&gt;AES算法是继DES之后比较快且比较简单的加密算法.⚖&lt;/p&gt;</description>
         
         <dc:creator>VictorHong</dc:creator>

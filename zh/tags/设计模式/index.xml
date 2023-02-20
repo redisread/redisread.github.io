@@ -22,11 +22,11 @@
       
       <item>
         <title>理解设计模式</title>
-        <link>https://hugo.jiahongw.com/zh/posts/dev/design-pattern/</link>
+        <link>https://hugo.jiahongw.com/zh/20220122/design-pattern/</link>
         <pubDate>Sat, 22 Jan 2022 21:52:34 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
         <atom:modified>Sat, 22 Jan 2022 21:52:34 +0800</atom:modified>
-        <guid>https://hugo.jiahongw.com/zh/posts/dev/design-pattern/</guid>
+        <guid>https://hugo.jiahongw.com/zh/20220122/design-pattern/</guid>
         <description>原则 设计原则 单一职责原则 Single Responsibility Principle，一个类应该只负责一个职责。 开闭原则 Open-Closed Principle, OCP，一个软件实体应当对扩展开放，对修改关闭。即软件</description>
         
         <dc:creator>VictorHong</dc:creator>

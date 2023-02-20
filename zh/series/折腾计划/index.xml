@@ -22,11 +22,11 @@
       
       <item>
         <title>Freenom 免费域名申请 &amp; 自动域名续费</title>
-        <link>https://hugo.jiahongw.com/zh/posts/hugo/freenom-domain/</link>
+        <link>https://hugo.jiahongw.com/zh/20221127/freenom-domain/</link>
         <pubDate>Sun, 27 Nov 2022 15:12:33 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
         <atom:modified>Sun, 27 Nov 2022 15:12:33 +0800</atom:modified>
-        <guid>https://hugo.jiahongw.com/zh/posts/hugo/freenom-domain/</guid>
+        <guid>https://hugo.jiahongw.com/zh/20221127/freenom-domain/</guid>
         <description>Freenom 是目前为数不多的免费域名提供商，提供 .ga, .ml, .gq, .tk, .cf 五个免费顶级域。当然也有一些付费的域名，对于普通人来说，免费域名就够了。😏 另外，本文后面还提</description>
         
         <dc:creator>VictorHong</dc:creator>
@@ -62,11 +62,11 @@
       
       <item>
         <title>部署HUGO博客</title>
-        <link>https://hugo.jiahongw.com/zh/posts/hugo/hugo_setup/</link>
+        <link>https://hugo.jiahongw.com/zh/20200210/hugo_setup/</link>
         <pubDate>Mon, 10 Feb 2020 20:50:09 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
         <atom:modified>Mon, 10 Feb 2020 20:50:09 +0800</atom:modified>
-        <guid>https://hugo.jiahongw.com/zh/posts/hugo/hugo_setup/</guid>
+        <guid>https://hugo.jiahongw.com/zh/20200210/hugo_setup/</guid>
         <description>HUGO + Github + Github Action 持续集成部署个人博客 安装 HUGO 本地环境 首先在 HUGO 的官网下载Hugo的 Windows 安装包，然后将路径添加到环境变量即可。 step1:下载 hugo step</description>
         
         <dc:creator>VictorHong</dc:creator>
