@@ -14,11 +14,29 @@
     <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
     <webMaster>1427298682@qq.com (VictorHong)</webMaster>
     <copyright>©2021-2023| VictorHong | <a href="https://beian.miit.gov.cn">粤ICP备20043735号</a></copyright>
-    <lastBuildDate>Sun, 27 Nov 2022 15:12:33 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 24 Feb 2023 23:26:32 +0800</lastBuildDate>
     
         <atom:link href="https://hugo.jiahongw.com/en/tags/index.xml" rel="self" type="application/rss+xml" />
     
 
+      
+      <item>
+        <title>elasticsearch</title>
+        <link>https://hugo.jiahongw.com/en/tags/elasticsearch/</link>
+        <pubDate>Fri, 24 Feb 2023 23:26:32 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        
+        <guid>https://hugo.jiahongw.com/en/tags/elasticsearch/</guid>
+        <description></description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
       <item>
         <title>freenom</title>
@@ -57,45 +75,9 @@
       </item>
       
       <item>
-        <title>CompletableFuture</title>
-        <link>https://hugo.jiahongw.com/en/tags/completablefuture/</link>
-        <pubDate>Mon, 28 Mar 2022 17:38:53 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/completablefuture/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>java</title>
-        <link>https://hugo.jiahongw.com/en/tags/java/</link>
-        <pubDate>Mon, 28 Mar 2022 17:38:53 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/java/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
         <title>开发方法论</title>
         <link>https://hugo.jiahongw.com/en/tags/%E5%BC%80%E5%8F%91%E6%96%B9%E6%B3%95%E8%AE%BA/</link>
-        <pubDate>Mon, 28 Mar 2022 17:38:53 +0800</pubDate>
+        <pubDate>Sat, 22 Jan 2022 21:52:34 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
         
         <guid>https://hugo.jiahongw.com/en/tags/%E5%BC%80%E5%8F%91%E6%96%B9%E6%B3%95%E8%AE%BA/</guid>

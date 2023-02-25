@@ -8,14 +8,8 @@
     <loc>https://hugo.jiahongw.com/zh/showcase/hugo/myitem/</loc>
     <lastmod>2020-01-19T21:13:42+09:00</lastmod>
   </url><url>
-    <loc>https://hugo.jiahongw.com/zh/message/</loc>
-    <lastmod>2023-02-19T12:50:46+09:00</lastmod>
-  </url><url>
-    <loc>https://hugo.jiahongw.com/zh/now/</loc>
-    <lastmod>2023-02-19T12:50:46+09:00</lastmod>
-  </url><url>
     <loc>https://hugo.jiahongw.com/zh/</loc>
-    <lastmod>2022-11-27T15:12:33+08:00</lastmod>
+    <lastmod>2023-02-24T23:26:32+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -33,7 +27,7 @@
                 />
   </url><url>
     <loc>https://hugo.jiahongw.com/zh/categories/</loc>
-    <lastmod>2022-11-27T15:12:33+08:00</lastmod>
+    <lastmod>2023-02-24T23:26:32+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -50,27 +44,50 @@
                 href="https://hugo.jiahongw.com/zh/categories/"
                 />
   </url><url>
-    <loc>https://hugo.jiahongw.com/zh/tags/freenom/</loc>
-    <lastmod>2022-11-27T15:12:33+08:00</lastmod>
+    <loc>https://hugo.jiahongw.com/zh/tags/elasticsearch/</loc>
+    <lastmod>2023-02-24T23:26:32+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://hugo.jiahongw.com/en/tags/freenom/"
+                href="https://hugo.jiahongw.com/en/tags/elasticsearch/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://hugo.jiahongw.com/zh/tags/freenom/"
+                href="https://hugo.jiahongw.com/zh/tags/elasticsearch/"
                 />
   </url><url>
-    <loc>https://hugo.jiahongw.com/zh/20221127/freenom-domain/</loc>
-    <lastmod>2022-11-27T15:12:33+08:00</lastmod>
+    <loc>https://hugo.jiahongw.com/zh/categories/elasticsearch/</loc>
+    <lastmod>2023-02-24T23:26:32+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hugo.jiahongw.com/en/categories/elasticsearch/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://hugo.jiahongw.com/zh/categories/elasticsearch/"
+                />
+  </url><url>
+    <loc>https://hugo.jiahongw.com/zh/series/es%E5%8E%9F%E7%90%86%E5%92%8C%E5%AE%9E%E8%B7%B5/</loc>
+    <lastmod>2023-02-24T23:26:32+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hugo.jiahongw.com/en/series/es%E5%8E%9F%E7%90%86%E5%92%8C%E5%AE%9E%E8%B7%B5/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://hugo.jiahongw.com/zh/series/es%E5%8E%9F%E7%90%86%E5%92%8C%E5%AE%9E%E8%B7%B5/"
+                />
   </url><url>
     <loc>https://hugo.jiahongw.com/zh/posts/</loc>
-    <lastmod>2022-11-27T15:12:33+08:00</lastmod>
+    <lastmod>2023-02-24T23:26:32+08:00</lastmod>
   </url><url>
     <loc>https://hugo.jiahongw.com/zh/series/</loc>
-    <lastmod>2022-11-27T15:12:33+08:00</lastmod>
+    <lastmod>2023-02-24T23:26:32+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -88,7 +105,7 @@
                 />
   </url><url>
     <loc>https://hugo.jiahongw.com/zh/tags/</loc>
-    <lastmod>2022-11-27T15:12:33+08:00</lastmod>
+    <lastmod>2023-02-24T23:26:32+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -104,6 +121,31 @@
                 hreflang="zh"
                 href="https://hugo.jiahongw.com/zh/tags/"
                 />
+  </url><url>
+    <loc>https://hugo.jiahongw.com/zh/20230224/es-intro/</loc>
+    <lastmod>2023-02-24T23:26:32+08:00</lastmod>
+  </url><url>
+    <loc>https://hugo.jiahongw.com/zh/message/</loc>
+    <lastmod>2023-02-19T12:50:46+09:00</lastmod>
+  </url><url>
+    <loc>https://hugo.jiahongw.com/zh/now/</loc>
+    <lastmod>2023-02-19T12:50:46+09:00</lastmod>
+  </url><url>
+    <loc>https://hugo.jiahongw.com/zh/tags/freenom/</loc>
+    <lastmod>2022-11-27T15:12:33+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hugo.jiahongw.com/en/tags/freenom/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://hugo.jiahongw.com/zh/tags/freenom/"
+                />
+  </url><url>
+    <loc>https://hugo.jiahongw.com/zh/20221127/freenom-domain/</loc>
+    <lastmod>2022-11-27T15:12:33+08:00</lastmod>
   </url><url>
     <loc>https://hugo.jiahongw.com/zh/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</loc>
     <lastmod>2022-11-27T15:12:33+08:00</lastmod>
@@ -144,37 +186,8 @@
                 href="https://hugo.jiahongw.com/zh/series/%E6%8A%98%E8%85%BE%E8%AE%A1%E5%88%92/"
                 />
   </url><url>
-    <loc>https://hugo.jiahongw.com/zh/tags/completablefuture/</loc>
-    <lastmod>2022-03-28T17:38:53+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://hugo.jiahongw.com/en/tags/completablefuture/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://hugo.jiahongw.com/zh/tags/completablefuture/"
-                />
-  </url><url>
-    <loc>https://hugo.jiahongw.com/zh/20220328/completable-future/</loc>
-    <lastmod>2022-03-28T17:38:53+08:00</lastmod>
-  </url><url>
-    <loc>https://hugo.jiahongw.com/zh/tags/java/</loc>
-    <lastmod>2022-03-28T17:38:53+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://hugo.jiahongw.com/en/tags/java/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://hugo.jiahongw.com/zh/tags/java/"
-                />
-  </url><url>
     <loc>https://hugo.jiahongw.com/zh/tags/%E5%BC%80%E5%8F%91%E6%96%B9%E6%B3%95%E8%AE%BA/</loc>
-    <lastmod>2022-03-28T17:38:53+08:00</lastmod>
+    <lastmod>2022-01-22T21:52:34+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -187,7 +200,7 @@
                 />
   </url><url>
     <loc>https://hugo.jiahongw.com/zh/categories/%E5%BC%80%E5%8F%91%E6%96%B9%E6%B3%95%E8%AE%BA/</loc>
-    <lastmod>2022-03-28T17:38:53+08:00</lastmod>
+    <lastmod>2022-01-22T21:52:34+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"

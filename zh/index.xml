@@ -14,7 +14,7 @@
     <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
     <webMaster>1427298682@qq.com (VictorHong)</webMaster>
     <copyright>©2021-2023| VictorHong | <a href="https://beian.miit.gov.cn">粤ICP备20043735号</a></copyright>
-    <lastBuildDate>Sun, 27 Nov 2022 15:12:33 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 24 Feb 2023 23:26:32 +0800</lastBuildDate>
     
         <atom:link href="https://hugo.jiahongw.com/zh/index.xml" rel="self" type="application/rss+xml" />
     
@@ -36,6 +36,42 @@
         
       
 
+      
+      <item>
+        <title>分布式搜索和分析的利器：ElasticSearch简介</title>
+        <link>https://hugo.jiahongw.com/zh/20230224/es-intro/</link>
+        <pubDate>Fri, 24 Feb 2023 23:26:32 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <atom:modified>Fri, 24 Feb 2023 23:26:32 +0800</atom:modified>
+        <guid>https://hugo.jiahongw.com/zh/20230224/es-intro/</guid>
+        <description>什么是Elasticsearch？ ES的全称是ElasticSearch（下面简称ES），是一个分布式、高扩展、近实时的搜索与数据分析引擎（</description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        <media:content url="https://hugo.jiahongw.comhttps://cos.jiahongw.com/uPic/image-20230225105212461.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>elasticsearch</category>
+            
+          
+        
+        
+          
+            
+              <category>elasticsearch</category>
+            
+          
+        
+        
+          
+            
+              <category>ES原理和实践</category>
+            
+          
+        
+      </item>
       
       <item>
         <title>留言</title>
@@ -110,44 +146,6 @@
               <category>折腾计划</category>
             
           
-        
-      </item>
-      
-      <item>
-        <title>CompletableFuture使用笔记</title>
-        <link>https://hugo.jiahongw.com/zh/20220328/completable-future/</link>
-        <pubDate>Mon, 28 Mar 2022 17:38:53 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Mon, 28 Mar 2022 17:38:53 +0800</atom:modified>
-        <guid>https://hugo.jiahongw.com/zh/20220328/completable-future/</guid>
-        <description>创建线程池的方法： 1 2 3 4 ExecutorService executorService = Executors.newCachedThreadPool(); ExecutorService executorService = Executors.newFixedThreadPool(3); ScheduledExecutorService executorService = Executors.newScheduledThreadPool(3); ExecutorService executorService = Executors.newSingleThreadExecutor(); https://www.cnblogs.com/pcheng/p/13540619.html 多线程的问题 线程任务是实现了Runnable接口，或者直接写个类继承Thread</description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        <media:content url="https://hugo.jiahongw.comhttps://cos.jiahongw.com/uPic/java.png" medium="image"><media:title type="html">featured image</media:title></media:content>
-        
-        
-        
-          
-            
-              <category>java</category>
-            
-          
-            
-              <category>CompletableFuture</category>
-            
-          
-            
-              <category>开发方法论</category>
-            
-          
-        
-        
-          
-            
-              <category>开发方法论</category>
-            
-          
-        
         
       </item>
       
