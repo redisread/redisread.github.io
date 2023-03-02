@@ -8,6 +8,40 @@
     <loc>https://hugo.jiahongw.com/en/zh/showcase/hugo/myitem/</loc>
     <lastmod>2020-01-19T21:13:42+09:00</lastmod>
   </url><url>
+    <loc>https://hugo.jiahongw.com/en/zh/memos/</loc>
+    <lastmod>2023-02-28T12:50:46+09:00</lastmod>
+  </url><url>
+    <loc>https://hugo.jiahongw.com/en/</loc>
+    <lastmod>2023-02-28T12:50:46+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://hugo.jiahongw.com/zh/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://hugo.jiahongw.com/ko/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hugo.jiahongw.com/en/"
+                />
+  </url><url>
+    <loc>https://hugo.jiahongw.com/en/zh/</loc>
+    <lastmod>2023-02-28T12:50:46+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://hugo.jiahongw.com/zh/zh/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hugo.jiahongw.com/en/zh/"
+                />
+  </url><url>
     <loc>https://hugo.jiahongw.com/en/categories/</loc>
     <lastmod>2023-02-24T23:26:32+08:00</lastmod>
     <xhtml:link
@@ -99,37 +133,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://hugo.jiahongw.com/en/tags/"
-                />
-  </url><url>
-    <loc>https://hugo.jiahongw.com/en/</loc>
-    <lastmod>2023-02-24T23:26:32+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://hugo.jiahongw.com/zh/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://hugo.jiahongw.com/ko/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://hugo.jiahongw.com/en/"
-                />
-  </url><url>
-    <loc>https://hugo.jiahongw.com/en/zh/</loc>
-    <lastmod>2023-02-24T23:26:32+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://hugo.jiahongw.com/zh/zh/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://hugo.jiahongw.com/en/zh/"
                 />
   </url><url>
     <loc>https://hugo.jiahongw.com/en/zh/posts/elasticsearch/es-intro/</loc>
