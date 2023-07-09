@@ -1887,7 +1887,7 @@
 <div class="single__infos">
   <time class="single__info" title="创建日期">📅&nbsp;2023年03月03日 </time>
   
-  &nbsp;&middot;&nbsp; <span class="single__info" title="阅读时长"> ☕&nbsp;2&nbsp;分钟 </span>
+  &nbsp;&middot;&nbsp; <span class="single__info" title="阅读时长"> ☕&nbsp;3&nbsp;分钟 </span>
   
   &nbsp;&middot;&nbsp; <span class="single__info" title="作者">🪶&nbsp;VictorHong</span>
   
@@ -1927,20 +1927,40 @@ memos 地址：<a href="https://github.com/usememos/memos">https://github.com/us
 <img src="https://cos.jiahongw.com/PicGo/20230303223541.png" alt="image.png" /></p>
 <p>立即部署之后还不能直接使用，还需要进行后面的一些配置。</p>
 <h2 id="配置端口">配置端口</h2>
-<p>点击 <code>memos</code> 项目，然后配置 <code>Variables</code> 中添加变量PORT，值为5230<br />
+<p>点击 <code>memos</code> 项目，然后配置 <code>Variables</code> 中添加变量 PORT，值为 5230<br />
 <img src="https://cos.jiahongw.com/PicGo/20230303223937.png" alt="image.png" /></p>
-<p>在进行完上面的端口配置之后，Railway会自动进行重新部署，部署完成之后就可以访问了。访问的域名在 <code>Deployment</code> 的最新部署记录中：<br />
+<p>在进行完上面的端口配置之后，Railway 会自动进行重新部署，部署完成之后就可以访问了。访问的域名在 <code>Deployment</code> 的最新部署记录中：<br />
 <img src="https://cos.jiahongw.com/PicGo/20230303224156.png" alt="image.png" /></p>
 <p><img src="https://cos.jiahongw.com/PicGo/20230303224231.png" alt="image.png" /></p>
-<p>之后只要有新代码的提交或者是执行 <code>fork sync</code>，都能够触发Railway的自动部署。</p>
+<p>之后只要有新代码的提交或者是执行 <code>fork sync</code>，都能够触发 Railway 的自动部署。</p>
 <div class="alert alert-info" role="alert" data-dir="ltr"><p>其他部署平台：</p>
 <ul>
 <li><a href="https://vercel.com/">vercel</a>：前端开发人员的平台，提供创新者在灵感迸发时所需的速度和可靠性。</li>
 <li><a href="https://render.com/">render</a>：统一的云服务，提供多种服务进行部署和构建应用程序和网站。也能部署数据存储服务和静态网站。</li>
-<li><a href="https://fly.io/">fly.io</a>：基于Docker的全栈部署工具。</li>
+<li><a href="https://fly.io/">fly.io</a>：基于 Docker 的全栈部署工具。</li>
 <li><a href="https://supabase.com/">Supabase</a>：数据库部署服务网站，也能构建其他应用服务。</li>
 </ul>
 </div>
+<p>[2023-07-09]更新，使用 Railway 的 Volume 可不丢失数据进行更新，下面的具体的指导教程</p>
+<p>Railway 不丢失数据更新：</p>
+<ol>
+<li>参考<a href="https://docs.railway.app/reference/volumes">https://docs.railway.app/reference/volumes</a>这里的说明，使用<code>volume</code>功能需要优先登机会员，参考<a href="https://docs.railway.app/reference/priority-boarding">Priority Boarding | Railway Docs</a>可知道加入的方法即连接官方的<code>Discord</code>即可。
+<ul>
+<li>访问您的 Railway General Settings</li>
+<li>滚动到 Account Settings，连接您的 Railway 帐户到 Discord</li>
+<li>在 Discord 中打开任何频道，输入“/beta”命令并按照提示操作</li>
+<li>现在您应该可以访问“#priority-boarding”频道，并且您的帐户设置中应该显示新的 Priority Boarding 状态</li>
+<li>从此时起，您将自动启用 Priority Boarding 功能<br />
+<img src="https://cos.jiahongw.com/uPic/8xT7xL.jpg" alt="8xT7xL" /></li>
+</ul>
+</li>
+<li>在项目界面，按<code>Commond + K</code>新建一个<code>volume</code><br />
+<img src="https://cos.jiahongw.com/uPic/GYpOOq.png" alt="GYpOOq" /><br />
+volume 的地址填写为<code>/var/opt/memos</code>，名字随便。</li>
+<li>因为 VOLUME 关键字在 Railway 被禁用了，需要修改 memos 的 Dockerfile 文件，将 VOLUME 那一行删除<br />
+<img src="https://cos.jiahongw.com/uPic/ojHt1B.png" alt="ojHt1B" /></li>
+<li>重新部署，记得配置 <code>Variables</code> 中添加变量 PORT，值为 5230，就可以了。</li>
+</ol>
 <hr />
 <p><strong><em>Reference</em></strong>:</p>
 <ul>
