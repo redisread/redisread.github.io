@@ -8,21 +8,26 @@
     <loc>https://hugo.jiahongw.com/en/zh/showcase/hugo/myitem/</loc>
     <lastmod>2020-01-19T21:13:42+09:00</lastmod>
   </url><url>
-    <loc>https://hugo.jiahongw.com/en/tags/obsidian/</loc>
-    <lastmod>2023-06-24T15:07:41+00:00</lastmod>
+    <loc>https://hugo.jiahongw.com/en/categories/</loc>
+    <lastmod>2024-01-02T00:19:50+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://hugo.jiahongw.com/zh/tags/obsidian/"
+                href="https://hugo.jiahongw.com/zh/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://hugo.jiahongw.com/ko/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://hugo.jiahongw.com/en/tags/obsidian/"
+                href="https://hugo.jiahongw.com/en/categories/"
                 />
   </url><url>
     <loc>https://hugo.jiahongw.com/en/tags/</loc>
-    <lastmod>2023-06-24T15:07:41+00:00</lastmod>
+    <lastmod>2024-01-02T00:19:50+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -40,7 +45,7 @@
                 />
   </url><url>
     <loc>https://hugo.jiahongw.com/en/</loc>
-    <lastmod>2023-06-24T15:07:41+00:00</lastmod>
+    <lastmod>2024-01-02T00:19:50+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -58,7 +63,7 @@
                 />
   </url><url>
     <loc>https://hugo.jiahongw.com/en/zh/</loc>
-    <lastmod>2023-06-24T15:07:41+00:00</lastmod>
+    <lastmod>2024-01-02T00:19:50+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -68,6 +73,74 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://hugo.jiahongw.com/en/zh/"
+                />
+  </url><url>
+    <loc>https://hugo.jiahongw.com/en/tags/%E7%A7%91%E6%8A%80/</loc>
+    <lastmod>2024-01-02T00:19:50+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://hugo.jiahongw.com/zh/tags/%E7%A7%91%E6%8A%80/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hugo.jiahongw.com/en/tags/%E7%A7%91%E6%8A%80/"
+                />
+  </url><url>
+    <loc>https://hugo.jiahongw.com/en/categories/%E7%BE%8E%E5%9B%A2/</loc>
+    <lastmod>2024-01-02T00:19:50+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://hugo.jiahongw.com/zh/categories/%E7%BE%8E%E5%9B%A2/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hugo.jiahongw.com/en/categories/%E7%BE%8E%E5%9B%A2/"
+                />
+  </url><url>
+    <loc>https://hugo.jiahongw.com/en/zh/talks/%E9%9B%B6%E5%94%AE%E7%A7%91%E6%8A%80/</loc>
+    <lastmod>2024-01-02T00:19:50+09:00</lastmod>
+  </url><url>
+    <loc>https://hugo.jiahongw.com/en/tags/%E7%BE%8E%E5%9B%A2%E7%99%BE%E7%A7%91/</loc>
+    <lastmod>2024-01-02T00:19:50+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://hugo.jiahongw.com/zh/tags/%E7%BE%8E%E5%9B%A2%E7%99%BE%E7%A7%91/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hugo.jiahongw.com/en/tags/%E7%BE%8E%E5%9B%A2%E7%99%BE%E7%A7%91/"
+                />
+  </url><url>
+    <loc>https://hugo.jiahongw.com/en/tags/%E9%9B%B6%E5%94%AE/</loc>
+    <lastmod>2024-01-02T00:19:50+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://hugo.jiahongw.com/zh/tags/%E9%9B%B6%E5%94%AE/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hugo.jiahongw.com/en/tags/%E9%9B%B6%E5%94%AE/"
+                />
+  </url><url>
+    <loc>https://hugo.jiahongw.com/en/tags/obsidian/</loc>
+    <lastmod>2023-06-24T15:07:41+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://hugo.jiahongw.com/zh/tags/obsidian/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hugo.jiahongw.com/en/tags/obsidian/"
                 />
   </url><url>
     <loc>https://hugo.jiahongw.com/en/zh/posts/hugo/use-obsidian-write-hugo/</loc>
@@ -97,24 +170,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://hugo.jiahongw.com/en/tags/%E7%AC%94%E8%AE%B0/"
-                />
-  </url><url>
-    <loc>https://hugo.jiahongw.com/en/categories/</loc>
-    <lastmod>2023-03-03T21:20:08+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://hugo.jiahongw.com/zh/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://hugo.jiahongw.com/ko/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://hugo.jiahongw.com/en/categories/"
                 />
   </url><url>
     <loc>https://hugo.jiahongw.com/en/tags/memos/</loc>
