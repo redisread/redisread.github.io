@@ -1,0 +1,3588 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head prefix="og: http://ogp.me/ns#">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>美团演讲 – VictorHong&#39;s Blog</title>
+    
+
+  
+  
+    
+    <script defer src="/js/custom.min.47326d238d3078544d08f93ec80c13c0ba3051dd5434d455e866ce5ff917db54.js"></script>
+  
+
+  
+  
+    
+    <script defer src="/js/bb-lmm-mk.min.73cb6b5944d8e90729499b04719456281dedb33380000fc77765a8a8f8f1befc.js"></script>
+  
+
+
+
+
+  
+  <script defer src="/js/fuse.min.32195737929df2c8096e855a5789cbb3f1331224d9169e8705493e7008f47df8.js"></script>
+
+
+
+<script src="/js/enquire.min.dfb99dee1e029d51d6cfb672d847929890b1585402de17f5ed092edd72a688b4.js"></script>
+
+<script defer src="/js/lazysizes.min.fb649fcae62177dfe63e67081ddceb830b5ce1f05a4184e9bbb7d87ac4b8f4e5.js"></script>
+
+<script defer src="/js/helper/getParents.min.086022fb02d7a1517e33c2670bffb976b3e80bcacd9caeee0c6a586064f20e42.js"></script>
+
+<script defer src="/js/helper/fadeinout.min.3ce954c8aea3b69cc5e6f734d8273ba4cd48d3a7987dbdca145849bc4b8fc296.js"></script>
+
+<script defer src="/js/helper/closest.min.js"></script>
+  
+<script>
+  "use strict";
+
+  
+  
+  if (window.NodeList && !NodeList.prototype.forEach) {
+    NodeList.prototype.forEach = Array.prototype.forEach;
+  }
+
+  
+  if (!String.prototype.includes) {
+    String.prototype.includes = function (search, start) {
+      'use strict';
+
+      if (search instanceof RegExp) {
+        throw TypeError('first argument must not be a RegExp');
+      }
+      if (start === undefined) { start = 0; }
+      return this.indexOf(search, start) !== -1;
+    };
+  }
+
+  
+  Document.prototype.append = Element.prototype.append = function append() {
+    this.appendChild(_mutation(arguments));
+  };
+  function _mutation(nodes) {
+    if (!nodes.length) {
+      throw new Error('DOM Exception 8');
+    } else if (nodes.length === 1) {
+      return typeof nodes[0] === 'string' ? document.createTextNode(nodes[0]) : nodes[0];
+    } else {
+      var
+      fragment = document.createDocumentFragment(),
+      length = nodes.length,
+      index = -1,
+      node;
+
+      while (++index < length) {
+        node = nodes[index];
+
+        fragment.appendChild(typeof node === 'string' ? document.createTextNode(node) : node);
+      }
+
+      return fragment;
+    }
+  }
+
+  
+  if (!String.prototype.startsWith) {
+    String.prototype.startsWith = function (searchString, position) {
+      position = position || 0;
+      return this.indexOf(searchString, position) === position;
+    };
+  }
+  
+
+
+  document.addEventListener('DOMContentLoaded', function () {
+    
+    var navCollapseBtn = document.querySelector('.navbar__burger');
+    navCollapseBtn ? navCollapseBtn.addEventListener('click', function (e) {
+      var navCollapse = document.querySelector('.navbarm__collapse');
+
+      if (navCollapse) {
+        var dataOpen = navCollapse.getAttribute('data-open');
+
+        if (dataOpen === 'true') {
+          navCollapse.setAttribute('data-open', 'false');
+          navCollapse.style.maxHeight = 0;
+          navCollapseBtn.classList.remove('is-active');
+        } else {
+          navCollapse.setAttribute('data-open', 'true');
+          navCollapse.style.maxHeight = navCollapse.scrollHeight + "px";
+          navCollapseBtn.classList.add('is-active');
+        }
+      }
+    }) : null;
+    
+
+
+    
+    var tables = document.querySelectorAll('.single__contents > table');
+    for (let i = 0; i < tables.length; i++) {
+      var table = tables[i];
+      var wrapper = document.createElement('div');
+      wrapper.className = 'table-wrapper';
+      table.parentElement.replaceChild(wrapper, table);
+      wrapper.appendChild(table);
+    }
+    
+
+
+    
+    var footNoteRefs = document.querySelectorAll('.footnote-ref');
+    var footNoteBackRefs = document.querySelectorAll('.footnote-backref');
+
+    footNoteRefs ? 
+    footNoteRefs.forEach(function(elem, idx) {
+      elem.onmouseenter = function () {
+        if (navbar.classList.contains('scrolling')) {
+          navbar.classList.remove('scrolling');
+        }
+      }
+
+      elem.onmouseleave = function () {
+        if (!navbar.classList.contains('scrolling')) {
+          setTimeout(function () {
+            navbar.classList.add('scrolling');
+          }, 100);
+        }
+      }
+
+      elem.onclick = function () {
+        if (!navbar.classList.contains('scrolling')) {
+          navbar.classList.remove('navbar--show');
+          navbar.classList.remove('navbar--hide');
+          navbar.classList.add('navbar--hide');
+        }
+      }
+    }) : null;
+
+    footNoteBackRefs ? 
+    footNoteBackRefs.forEach(function(elem, idx) {
+      elem.onmouseenter = function () {
+        if (navbar.classList.contains('scrolling')) {
+          navbar.classList.remove('scrolling');
+        }
+      }
+
+      elem.onmouseleave = function () {
+        if (!navbar.classList.contains('scrolling')) {
+          setTimeout(function() {
+            navbar.classList.add('scrolling');
+          }, 100);
+        }
+      }
+
+      elem.onclick = function () {
+        if (!navbar.classList.contains('scrolling')) {
+          navbar.classList.remove('navbar--show');
+          navbar.classList.remove('navbar--hide');
+          navbar.classList.add('navbar--hide');
+        }
+      }
+    }) : null;
+    
+
+
+    
+    var summaryContainer = document.querySelector('.summary__container');
+    var searchResult = document.querySelector('.search-result');
+    var searchResultCloseBtn = document.querySelector('.search-result__close');
+    searchResultCloseBtn ? searchResultCloseBtn.addEventListener('click', function (e) {
+      searchResult.setAttribute('data-display', 'none');
+      summaryContainer.setAttribute('data-display', 'block');
+    }) : null;
+    
+
+
+    
+    document.querySelectorAll('.tab') ? 
+    document.querySelectorAll('.tab').forEach(function(elem, idx) {
+      var containerId = elem.getAttribute('id');
+      var containerElem = elem;
+      var tabLinks = elem.querySelectorAll('.tab__link');
+      var tabContents = elem.querySelectorAll('.tab__content');
+      var ids = [];
+
+      tabLinks && tabLinks.length > 0 ?
+      tabLinks.forEach(function(link, index, self) {
+        link.onclick = function(e) {
+          for (var i = 0; i < self.length; i++) {
+            if (index === parseInt(i, 10)) {
+              if (!self[i].classList.contains('active')) {
+                self[i].classList.add('active');
+                tabContents[i].style.display = 'block';
+              }
+            } else {
+              self[i].classList.remove('active');
+              tabContents[i].style.display = 'none';
+            }
+          }
+        }
+      }) : null;
+    }) : null;
+    
+
+
+    
+    document.querySelectorAll('.codetab') ? 
+    document.querySelectorAll('.codetab').forEach(function(elem, idx) {
+      var containerId = elem.getAttribute('id');
+      var containerElem = elem;
+      var codetabLinks = elem.querySelectorAll('.codetab__link');
+      var codetabContents = elem.querySelectorAll('.codetab__content');
+      var ids = [];
+
+      codetabLinks && codetabLinks.length > 0 ?
+      codetabLinks.forEach(function(link, index, self) {
+        link.onclick = function(e) {
+          for (var i = 0; i < self.length; i++) {
+            if (index === parseInt(i, 10)) {
+              if (!self[i].classList.contains('active')) {
+                self[i].classList.add('active');
+                codetabContents[i].style.display = 'block';
+              }
+            } else {
+              self[i].classList.remove('active');
+              codetabContents[i].style.display = 'none';
+            }
+          }
+        }
+      }) : null;
+    }) : null;
+    
+
+
+    
+    var gttBtn = document.getElementById("gtt");
+    gttBtn.style.display = "none";
+    gttBtn.addEventListener('click', function () {
+      if (window.document.documentMode) {
+        document.documentElement.scrollTop = 0;
+      } else {
+        scrollToTop(250);
+      }
+    });
+
+    function scrollToTop(scrollDuration) {
+      var scrollStep = -window.scrollY / (scrollDuration / 15);
+      var scrollInterval = setInterval(function () {
+        if (window.scrollY != 0) {
+          window.scrollBy(0, scrollStep);
+        }
+        else clearInterval(scrollInterval);
+      }, 15);
+    }
+
+    var scrollFunction = function () {
+      if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
+        gttBtn.style.display = "block";
+      } else {
+        gttBtn.style.display = "none";
+      }
+    }
+    
+
+
+    
+    var expandBtn = document.querySelectorAll('.expand__button');
+
+    for (let i = 0; i < expandBtn.length; i++) {
+      expandBtn[i].addEventListener("click", function () {
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+          this.querySelector('svg').classList.add('expand-icon__right');
+          this.querySelector('svg').classList.remove('expand-icon__down');
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+          this.querySelector('svg').classList.remove('expand-icon__right');
+          this.querySelector('svg').classList.add('expand-icon__down');
+        }
+      });
+    }
+    
+
+
+    
+    var lastScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    var tocElem = document.querySelector('.toc');
+    var tableOfContentsElem = tocElem ? tocElem.querySelector('#TableOfContents') : null;
+    var toggleTocElem = document.getElementById('toggle-toc');
+    var singleContentsElem = document.querySelector('.single__contents');
+    var navbar = document.querySelector('.navbar');
+    var tocFlexbox = document.querySelector('.toc__flexbox');
+    var tocFlexboxOuter = document.querySelector('.toc__flexbox--outer');
+    var expandContents = document.querySelectorAll('.expand__content');
+    var boxContents = document.querySelectorAll('.box');
+    var notAllowedTitleIds = null;
+
+    
+    var tocFolding = JSON.parse("true");
+    
+    var tocLevels = JSON.parse("[\"h2\",\"h3\",\"h4\"]");
+    
+    if (tocLevels) {
+      tocLevels = tocLevels.toString();
+    } else {
+      tocLevels = "h1, h2, h3, h4, h5, h6";
+    }
+
+    
+    singleContentsElem && singleContentsElem.querySelectorAll(".tab") ?
+    singleContentsElem.querySelectorAll(".tab").forEach(function (elem) {
+      elem.querySelectorAll(tocLevels).forEach(function (element) {
+        notAllowedTitleIds = Array.isArray(notAllowedTitleIds) ?
+          notAllowedTitleIds.concat(element.getAttribute('id')) :
+          [element.getAttribute('id')];
+      });
+    }) : null;
+
+    
+    expandContents ? expandContents.forEach(function(elem) {
+      elem.querySelectorAll(tocLevels).forEach(function (element) {
+        notAllowedTitleIds = Array.isArray(notAllowedTitleIds) ?
+          notAllowedTitleIds.concat(element.getAttribute('id')) :
+          [element.getAttribute('id')];
+      });
+    }) : null;
+
+    
+    boxContents ? boxContents.forEach(function(elem) {
+      elem.querySelectorAll(tocLevels).forEach(function (element) {
+        notAllowedTitleIds = Array.isArray(notAllowedTitleIds) ?
+          notAllowedTitleIds.concat(element.getAttribute('id')) :
+          [element.getAttribute('id')];
+      });
+    }) : null;
+
+    
+    window.onscroll = function () {
+      scrollFunction();
+      
+      var st = window.pageYOffset || document.documentElement.scrollTop;
+      if (st > lastScrollTop) { 
+        if (st < 250) {
+          gttBtn.style.display = "none";
+        } else {
+          gttBtn.style.display = "block";
+        }
+
+        if (st < 45) {
+          return null;
+        }
+
+        if (navbar.classList.contains('scrolling')) {
+          if (!navbar.classList.contains('navbar--hide')) {
+            navbar.classList.add('navbar--hide');
+          } else if (navbar.classList.contains('navbar--show')) {
+            navbar.classList.remove('navbar--show');
+          }
+        }
+
+        if (singleContentsElem) {
+          if (singleContentsElem.querySelectorAll(tocLevels).length > 0) {
+            singleContentsElem.querySelectorAll(tocLevels).forEach(function (elem) {
+              if (toggleTocElem && !toggleTocElem.checked) {
+                return null;
+              }
+
+              if (notAllowedTitleIds && notAllowedTitleIds.includes(elem.getAttribute('id'))) {
+                return null;
+              }
+              
+              if (document.documentElement.scrollTop >= elem.offsetTop) {
+                if (tableOfContentsElem) {
+                  var id = elem.getAttribute('id');
+                  tocElem.querySelectorAll('a').forEach(function (elem) {
+                    elem.classList.remove('active');
+                  });
+                  tocElem.querySelector('a[href="#' + id + '"]') ?
+                    tocElem.querySelector('a[href="#' + id + '"]').classList.add('active') : null;
+
+                  if (false === tocFolding) {
+                    
+                  } else {
+                    tableOfContentsElem.querySelectorAll('ul') ?
+                      tableOfContentsElem.querySelectorAll('ul').forEach(function (rootUl) {
+                        rootUl.querySelectorAll('li').forEach(function (liElem) {
+                          liElem.querySelectorAll('ul').forEach(function (ulElem) {
+                            ulElem.style.display = 'none';
+                          });
+                        });
+                      }) : null;
+                  }
+
+                  var curElem = tableOfContentsElem.querySelector("[href='#" + id + "']");
+                  if (curElem && curElem.nextElementSibling) {
+                    curElem.nextElementSibling.style.display = 'block';
+                  }
+                  getParents(curElem, 'ul') ?
+                    getParents(curElem, 'ul').forEach(function (elem) {
+                      elem.style.display = 'block';
+                    }) : null;
+                }
+              }
+            });
+          } else {
+            if (tocFlexbox) {
+              tocFlexbox.setAttribute('data-position', '');
+              if (!tocFlexbox.classList.contains('hide')) {
+                tocFlexbox.classList.add('hide');
+              }
+            }
+            if (tocFlexboxOuter) {
+              tocFlexboxOuter.setAttribute('data-position', '');
+              if (!tocFlexboxOuter.classList.contains('hide')) {
+                tocFlexboxOuter.classList.add('hide');
+              }
+            }
+          }
+        }
+      } else { 
+        if (st < 250) {
+          gttBtn.style.display = "none";
+        }
+
+        if (navbar.classList.contains('scrolling')) {
+          if (navbar.classList.contains('navbar--hide')) {
+            navbar.classList.remove('navbar--hide');
+          } else if (!navbar.classList.contains('navbar--show')) {
+            navbar.classList.add('navbar--show');
+          }
+        }
+
+        if (singleContentsElem) {
+          if (singleContentsElem.querySelectorAll(tocLevels).length > 0) {
+            singleContentsElem.querySelectorAll(tocLevels).forEach(function (elem) {
+              if (toggleTocElem && !toggleTocElem.checked) {
+                return null;
+              }
+              
+              if (notAllowedTitleIds && notAllowedTitleIds.includes(elem.getAttribute('id'))) {
+                return null;
+              }
+
+              if (document.documentElement.scrollTop >= elem.offsetTop) {
+                if (tableOfContentsElem) {
+                  var id = elem.getAttribute('id');
+                  tocElem.querySelectorAll('a').forEach(function (elem) {
+                    elem.classList.remove('active');
+                  });
+                  tocElem.querySelector('a[href="#' + id + '"]') ?
+                    tocElem.querySelector('a[href="#' + id + '"]').classList.add('active') : null;
+
+                  if (false === tocFolding) {
+                    
+                  } else {
+                    tableOfContentsElem.querySelectorAll('ul') ?
+                      tableOfContentsElem.querySelectorAll('ul').forEach(function (rootUl) {
+                        rootUl.querySelectorAll('li').forEach(function (liElem) {
+                          liElem.querySelectorAll('ul').forEach(function (ulElem) {
+                            ulElem.style.display = 'none';
+                          });
+                        });
+                      }) : null;
+                  }
+
+                  var curElem = tableOfContentsElem.querySelector("[href='#" + id + "']");
+                  if (curElem && curElem.nextElementSibling) {
+                    curElem.nextElementSibling.style.display = 'block';
+                  }
+                  getParents(curElem, 'ul') ?
+                    getParents(curElem, 'ul').forEach(function (elem) {
+                      elem.style.display = 'block';
+                    }) : null;
+                }
+              }
+            });
+          } else {
+            if (tocFlexbox && !tocFlexbox.classList.contains('hide')) {
+              tocFlexbox.classList.add('hide');
+            }
+            if (tocFlexboxOuter && !tocFlexboxOuter.classList.contains('hide')) {
+              tocFlexboxOuter.classList.add('hide');
+            }
+          }
+          
+        }
+
+        if (tableOfContentsElem && document.documentElement.scrollTop < 250) {
+          if (false === tocFolding) {
+
+          } else {
+            tableOfContentsElem.querySelector('ul') ?
+              tableOfContentsElem.querySelector('ul').querySelectorAll('li').forEach(function (liElem) {
+                liElem.querySelectorAll('ul').forEach(function (ulElem) {
+                  ulElem.style.display = 'none';
+                });
+              }) : null;
+          }
+        }
+      }
+      lastScrollTop = st <= 0 ? 0 : st;
+    };
+  
+
+
+  
+    var localTheme = localStorage.getItem('theme');
+    var rootEleme = document.getElementById('root');
+    var selectThemeElem = document.querySelectorAll('.select-theme');
+    var selectThemeItemElem = document.querySelectorAll('.select-theme__item');
+    
+    
+    var skinDarkCode = JSON.parse("\"dark\"");
+    
+    var skinLightCode = JSON.parse("\"light\"");
+    
+    var skinHackerCode = JSON.parse("\"hacker\"");
+    
+    var skinSolarizedCode = JSON.parse("\"solarized\"");
+    
+    var skinKimbieCode = JSON.parse("\"kimbie\"");
+
+    var setMetaColor = function(themeColor) {
+      var metaMsapplicationTileColor = document.getElementsByName('msapplication-TileColor')[0];
+      var metaThemeColor = document.getElementsByName('theme-color')[0];
+      var metaMsapplicationNavbuttonColor = document.getElementsByName('msapplication-navbutton-color')[0];
+      var metaAppleMobileWebAappStatusBarStyle = document.getElementsByName('apple-mobile-web-app-status-bar-style')[0];
+
+      if (themeColor.includes('dark')) {
+        metaMsapplicationTileColor.setAttribute('content', '#fcfcfa');
+        metaThemeColor.setAttribute('content', '#403E41');
+        metaMsapplicationNavbuttonColor.setAttribute('content', '#403E41');
+        metaAppleMobileWebAappStatusBarStyle.setAttribute('content', '#403E41');
+      } else if (themeColor.includes('light')) {
+        metaMsapplicationTileColor.setAttribute('content', '#555');
+        metaThemeColor.setAttribute('content', '#eee');
+        metaMsapplicationNavbuttonColor.setAttribute('content', '#eee');
+        metaAppleMobileWebAappStatusBarStyle.setAttribute('content', '#eee');
+      } else if (themeColor.includes('hacker')) {
+        metaMsapplicationTileColor.setAttribute('content', '#e3cd26');
+        metaThemeColor.setAttribute('content', '#252526');
+        metaMsapplicationNavbuttonColor.setAttribute('content', '#252526');
+        metaAppleMobileWebAappStatusBarStyle.setAttribute('content', '#252526');
+      } else if (themeColor.includes('solarized')) {
+        metaMsapplicationTileColor.setAttribute('content', '#d3af86');
+        metaThemeColor.setAttribute('content', '#51412c');
+        metaMsapplicationNavbuttonColor.setAttribute('content', '#51412c');
+        metaAppleMobileWebAappStatusBarStyle.setAttribute('content', '#51412c');
+      } else if (themeColor.includes('kimbie')) {
+        metaMsapplicationTileColor.setAttribute('content', '#586e75');
+        metaThemeColor.setAttribute('content', '#eee8d5');
+        metaMsapplicationNavbuttonColor.setAttribute('content', '#eee8d5');
+        metaAppleMobileWebAappStatusBarStyle.setAttribute('content', '#eee8d5');
+      }
+    }
+
+    var parseSkinCode = function(themeText) {
+      if (themeText === skinDarkCode) {
+        return 'dark';
+      } else if (themeText === skinLightCode) {
+        return 'light';
+      } else if (themeText === skinHackerCode) {
+        return 'hacker';
+      } else if (themeText === skinSolarizedCode) {
+        return 'solarized';
+      } else if (themeText === skinKimbieCode) {
+        return 'kimbie';
+      }
+    }
+    
+    if (localTheme) {
+      selectThemeItemElem ? 
+      selectThemeItemElem.forEach(function (elem) {
+        if (elem.text.trim() === localTheme) {
+          elem.classList.add('is-active');
+        } else {
+          elem.classList.remove('is-active');
+        }
+      }) : null;
+
+      setMetaColor(localTheme);
+    } else {
+      setMetaColor(rootEleme.className);
+    }
+
+    selectThemeItemElem ? 
+    selectThemeItemElem.forEach(function (v, i) {
+      v.addEventListener('click', function (e) {
+        var selectedThemeVariant = parseSkinCode(e.target.text.trim());
+        localStorage.setItem('theme', selectedThemeVariant);
+        setMetaColor(selectedThemeVariant);
+
+        rootEleme.removeAttribute('class');
+        rootEleme.classList.add('theme__' + selectedThemeVariant);
+        selectThemeElem.forEach(function(rootElem) {
+          rootElem.querySelectorAll('a').forEach(function (elem) {
+            if (elem.classList) {
+              if (elem.text.trim() === selectedThemeVariant) {
+                if (!elem.classList.contains('is-active')) {
+                  elem.classList.add('is-active');
+                }
+              } else {
+                if (elem.classList.contains('is-active')) {
+                  elem.classList.remove('is-active');
+                }
+              }
+            }
+          });
+        });
+
+        if (window.mermaid) {
+          if (selectedThemeVariant === "dark" || selectedThemeVariant === "hacker") {
+            mermaid.initialize({ theme: 'dark' });
+            location.reload();
+          } else {
+            mermaid.initialize({ theme: 'default' });
+            location.reload();
+          }
+        }
+
+        var utterances = document.getElementById('utterances');
+        if (utterances) {
+          utterances.querySelector('iframe').contentWindow.postMessage({
+            type: 'set-theme',
+            theme: selectedThemeVariant === "dark" || selectedThemeVariant === "hacker" ? 'photon-dark' : selectedThemeVariant === 'kimbie' ? 'github-dark-orange' : 'github-light',
+          }, 'https://utteranc.es');
+        }
+
+        var twitterCards = document.querySelectorAll('.twitter-timeline');
+        if (twitterCards) {
+          window.postMessage({
+            type: 'set-twitter-theme',
+            theme: selectedThemeVariant === 'light' || selectedThemeVariant === 'solarized' ? 'light' : 'dark',
+          });
+        }
+      });
+    }) : null;
+  
+
+
+  
+    
+    var baseurl = JSON.parse("\"https://hugo.jiahongw.com\"");
+    
+    var permalink = JSON.parse("\"https://hugo.jiahongw.com/en/zh/talks/%E7%BE%8E%E5%9B%A2%E5%86%85%E9%83%A8%E6%BC%94%E8%AE%B2/\"");
+    
+    var langprefix = JSON.parse("\"/en\"");
+    var searchResults = null;
+    var searchMenu = null;
+    var searchText = null;
+    
+    
+    var enableSearch = JSON.parse("true");
+    
+    var searchDistance = JSON.parse("null");
+    
+    var searchThreshold = JSON.parse("null");
+    
+    var searchContent = JSON.parse("null");
+    
+    var enableSearchHighlight = JSON.parse("true");
+    
+    var searchResultPosition = JSON.parse("\"main\"");
+    
+    var sectionType = JSON.parse("\"zh\"");
+    
+    var kind = JSON.parse("\"page\"");
+    
+    var fuse = null;
+
+    if (enableSearch) {
+      (function initFuse() {
+        var xhr = new XMLHttpRequest();
+        if (sectionType === "publication" && kind !== "page") {
+          xhr.open('GET', permalink + "index.json");
+        } else {
+          xhr.open('GET', baseurl + langprefix + "/index.json");
+        }
+        
+        xhr.setRequestHeader('Content-Type', 'application/json; charset=utf-8');
+        xhr.onload = function () {
+          if (xhr.status === 200) {
+            fuse = new Fuse(JSON.parse(xhr.response.toString('utf-8')), {
+              keys: sectionType.includes('publication') ? ['title', 'abstract'] : 
+                searchContent ? ['title', 'description', 'content'] : ['title', 'description'],
+              includeMatches: enableSearchHighlight,
+              shouldSort: true, 
+              threshold: searchThreshold ? searchThreshold : 0.4, 
+              location: 0, 
+              distance: searchDistance ? searchDistance : 100, 
+              maxPatternLength: 32,
+              minMatchCharLength: 1,
+              isCaseSensitive: false, 
+              findAllMatches: false, 
+              useExtendedSearch: false, 
+            });
+            window.fuse = fuse;
+          }
+          else {
+            console.error('[' + xhr.status + ']Error:', xhr.statusText);
+          }
+        };
+        xhr.send();
+      })();
+    }
+
+    function makeLi(ulElem, obj) {
+      var li = document.createElement('li');
+      li.className = 'search-result__item';
+      
+      var a = document.createElement('a');
+      a.innerHTML = obj.item.title;
+      a.setAttribute('class', 'search-result__item--title');
+      a.setAttribute('href', obj.item.uri);
+
+      var descDiv = document.createElement('div');
+      descDiv.setAttribute('class', 'search-result__item--desc');
+      if (obj.item.description) {
+        descDiv.innerHTML = obj.item.description;
+      } else if (obj.item.content) {
+        descDiv.innerHTML = obj.item.content.substring(0, 225);
+      }
+      
+      li.appendChild(a);
+      li.appendChild(descDiv);
+      ulElem.appendChild(li);
+    }
+
+    function makeHighlightLi(ulElem, obj) {
+      var li = document.createElement('li');
+      li.className = 'search-result__item';
+      var descDiv = null;
+
+      var a = document.createElement('a');
+      a.innerHTML = obj.item.title;
+      a.setAttribute('class', 'search-result__item--title');
+      a.setAttribute('href', obj.item.uri);
+
+      if (obj.matches && obj.matches.length) {
+        for (var i = 0; i < obj.matches.length; i++) {
+          if ('title' === obj.matches[i].key) {
+            a = document.createElement('a');
+            a.innerHTML = generateHighlightedText(obj.matches[i].value, obj.matches[i].indices);
+            a.setAttribute('class', 'search-result__item--title');
+            a.setAttribute('href', obj.item.uri);
+          }
+          
+          if ('description' === obj.matches[i].key) {
+            descDiv = document.createElement('div');
+            descDiv.setAttribute('class', 'search-result__item--desc');
+            descDiv.innerHTML = generateHighlightedText(obj.item.description, obj.matches[i].indices);
+          } else if ('content' === obj.matches[i].key) {
+            if (!descDiv) {
+              descDiv = document.createElement('div');
+              descDiv.setAttribute('class', 'search-result__item--desc');
+              descDiv.innerHTML = generateHighlightedText(obj.item.content.substring(0, 150), obj.matches[i].indices);
+            }
+          } else {
+            if (obj.item.description) {
+              descDiv = document.createElement('div');
+              descDiv.setAttribute('class', 'search-result__item--desc');
+              descDiv.innerHTML = obj.item.description;
+            } else {
+              descDiv = document.createElement('div');
+              descDiv.setAttribute('class', 'search-result__item--desc');
+              descDiv.innerHTML = obj.item.content.substring(0, 150);
+            }
+          }
+        }
+
+        li.appendChild(a);
+        if (descDiv) {
+          li.appendChild(descDiv);
+        }
+        if (li) {
+          ulElem.appendChild(li);
+        }
+      }
+    }
+
+    function renderSearchResultsSide(searchText, results) {
+      searchResults = document.getElementById('search-results');
+      searchMenu = document.getElementById('search-menu');
+      searchResults.setAttribute('class', 'dropdown is-active');
+      
+      var ul = document.createElement('ul');
+      ul.setAttribute('class', 'dropdown-content search-content');
+
+      if (results.length) {
+        results.forEach(function (result) {
+          var li = document.createElement('li');
+          var a = document.createElement('a');
+          a.setAttribute('href', result.uri);
+          a.setAttribute('class', 'dropdown-item');
+          a.appendChild(li);
+
+          var titleDiv = document.createElement('div');
+          titleDiv.innerHTML = result.title;
+          titleDiv.setAttribute('class', 'menu-item__title');
+
+          var descDiv = document.createElement('div');
+          descDiv.setAttribute('class', 'menu-item__desc');
+          if (result.description) {
+            descDiv.innerHTML = result.description;
+          } else if (result.content) {
+            descDiv.innerHTML = result.content.substring(0, 150);
+          }
+
+          li.appendChild(titleDiv);
+          li.appendChild(descDiv);
+          ul.appendChild(a);
+        });
+      } else {
+        var li = document.createElement('li');
+        li.setAttribute('class', 'dropdown-item');
+        li.innerText = 'No results found';
+        ul.appendChild(li);
+      }
+
+      while (searchMenu.hasChildNodes()) {
+        searchMenu.removeChild(
+          searchMenu.lastChild
+        );
+      }
+      
+      searchMenu.appendChild(ul);
+    }
+
+    function renderSearchHighlightResultsSide(searchText, results) {
+      searchResults = document.getElementById('search-results');
+      searchMenu = document.getElementById('search-menu');
+      searchResults.setAttribute('class', 'dropdown is-active');
+
+      var ul = document.createElement('ul');
+      ul.setAttribute('class', 'dropdown-content search-content');
+
+      if (results.length) {
+        results.forEach(function (result) {
+          var li = document.createElement('li');
+          var a = document.createElement('a');
+          var descDiv = null;
+
+          a.setAttribute('href', result.item.uri);
+          a.setAttribute('class', 'dropdown-item');
+          a.appendChild(li);
+
+          var titleDiv = document.createElement('div');
+          titleDiv.innerHTML = result.item.title;
+          titleDiv.setAttribute('class', 'menu-item__title');
+          
+          if (result.matches && result.matches.length) {
+            for (var i = 0; i < result.matches.length; i++) {
+              if ('title' === result.matches[i].key) {
+                titleDiv.innerHTML = generateHighlightedText(result.matches[i].value, result.matches[i].indices);
+              }
+
+              if ('description' === result.matches[i].key) {
+                descDiv = document.createElement('div');
+                descDiv.setAttribute('class', 'menu-item__desc');
+                descDiv.innerHTML = generateHighlightedText(result.item.description, result.matches[i].indices);
+              } else if ('content' === result.matches[i].key) {
+                if (!descDiv) {
+                  descDiv = document.createElement('div');
+                  descDiv.setAttribute('class', 'menu-item__desc');
+                  descDiv.innerHTML = generateHighlightedText(result.item.content.substring(0, 150), result.matches[i].indices);
+                }
+              } else {
+                if (result.item.description) {
+                  descDiv = document.createElement('div');
+                  descDiv.setAttribute('class', 'menu-item__desc');
+                  descDiv.innerHTML = result.item.description;
+                } else {
+                  descDiv = document.createElement('div');
+                  descDiv.setAttribute('class', 'menu-item__desc');
+                  descDiv.innerHTML = result.item.content.substring(0, 150);
+                }
+              }
+            }
+            
+            li.appendChild(titleDiv);
+            if (descDiv) {
+              li.appendChild(descDiv);
+            }
+            ul.appendChild(a);
+          }
+        });
+      } else {
+        var li = document.createElement('li');
+        li.setAttribute('class', 'dropdown-item');
+        li.innerText = 'No results found';
+        ul.appendChild(li);
+      }
+
+      while (searchMenu.hasChildNodes()) {
+        searchMenu.removeChild(
+          searchMenu.lastChild
+        );
+      }
+      searchMenu.appendChild(ul);
+    }
+
+    function renderSearchResultsMobile(searchText, results) {
+      searchResults = document.getElementById('search-mobile-results');
+
+      var content = document.createElement('div');
+      content.setAttribute('class', 'mobile-search__content');
+
+      if (results.length > 0) {
+        results.forEach(function (result) {
+          var item = document.createElement('a');
+          item.setAttribute('href', result.uri);
+          item.innerHTML = '<div class="mobile-search__item"><div class="mobile-search__item--title">📄 ' + result.title + '</div><div class="mobile-search__item--desc">' + (result.description ? result.description : result.content) + '</div></div>';
+          content.appendChild(item);
+        });
+      } else {
+        var item = document.createElement('span');
+        content.appendChild(item);
+      }
+
+      let wrap = document.getElementById('search-mobile-results');
+      while (wrap.firstChild) {
+        wrap.removeChild(wrap.firstChild)
+      }
+      searchResults.appendChild(content);      
+    }
+
+    function renderSearchHighlightResultsMobile(searchText, results) {
+      searchResults = document.getElementById('search-mobile-results');
+
+      var ul = document.createElement('div');
+      ul.setAttribute('class', 'mobile-search__content');
+
+      if (results.length) {
+        results.forEach(function (result) {
+          var li = document.createElement('li');
+          var a = document.createElement('a');
+          var descDiv = null;
+
+          a.setAttribute('href', result.item.uri);
+          a.appendChild(li);
+          li.setAttribute('class', 'mobile-search__item');
+
+          var titleDiv = document.createElement('div');
+          titleDiv.innerHTML = result.item.title;
+          titleDiv.setAttribute('class', 'mobile-search__item--title');
+          
+          if (result.matches && result.matches.length) {
+            for (var i = 0; i < result.matches.length; i++) {
+              if ('title' === result.matches[i].key) {
+                titleDiv.innerHTML = generateHighlightedText(result.matches[i].value, result.matches[i].indices);
+              }
+
+              if ('description' === result.matches[i].key) {
+                descDiv = document.createElement('div');
+                descDiv.setAttribute('class', 'mobile-search__item--desc');
+                descDiv.innerHTML = generateHighlightedText(result.item.description, result.matches[i].indices);
+              } else if ('content' === result.matches[i].key) {
+                if (!descDiv) {
+                  descDiv = document.createElement('div');
+                  descDiv.setAttribute('class', 'mobile-search__item--desc');
+                  descDiv.innerHTML = generateHighlightedText(result.item.content.substring(0, 150), result.matches[i].indices);
+                }
+              } else {
+                if (result.item.description) {
+                  descDiv = document.createElement('div');
+                  descDiv.setAttribute('class', 'mobile-search__item--desc');
+                  descDiv.innerHTML = result.item.description;
+                } else {
+                  descDiv = document.createElement('div');
+                  descDiv.setAttribute('class', 'mobile-search__item--desc');
+                  descDiv.innerHTML = result.item.content.substring(0, 150);
+                }
+              }
+            }
+            
+            li.appendChild(titleDiv);
+            if (descDiv) {
+              li.appendChild(descDiv);
+            }
+            ul.appendChild(a);
+          }
+        });
+      } else {
+        var item = document.createElement('span');
+        ul.appendChild(item);
+      }
+
+      let wrap = document.getElementById('search-mobile-results');
+      while (wrap.firstChild) {
+        wrap.removeChild(wrap.firstChild)
+      }
+      searchResults.appendChild(ul);
+    }
+
+    function generateHighlightedText(text, regions) {
+      if (!regions) {
+        return text;
+      }
+
+      var content = '', nextUnhighlightedRegionStartingIndex = 0;
+
+      regions.forEach(function(region) {
+        if (region[0] === region[1]) {
+          return null;
+        }
+        
+        content += '' +
+          text.substring(nextUnhighlightedRegionStartingIndex, region[0]) +
+          '<span class="search__highlight">' +
+            text.substring(region[0], region[1] + 1) +
+          '</span>' +
+        '';
+        nextUnhighlightedRegionStartingIndex = region[1] + 1;
+      });
+
+      content += text.substring(nextUnhighlightedRegionStartingIndex);
+
+      return content;
+    };
+
+    var searchElem = document.getElementById('search');
+    var searchMobile = document.getElementById('search-mobile');
+    var searchResultsContainer = document.getElementById('search-results');
+
+    searchElem ?
+    searchElem.addEventListener('input', function(e) {
+      if (!e.target.value | window.innerWidth < 770) {
+        searchResultsContainer ? searchResultsContainer.setAttribute('class', 'dropdown') : null;
+        searchResult ? searchResult.setAttribute('data-display', 'none') : null;
+        summaryContainer ? summaryContainer.setAttribute('data-display', 'block') : null;
+        return null;
+      }
+
+      searchText = e.target.value;
+      var results = fuse.search(e.target.value);
+      
+      if (searchResultPosition === "main") {
+        if (enableSearchHighlight) {
+          renderSearchHighlightResultsMain(searchText, results);
+        } else {
+          renderSearchResultsMain(searchText, results);
+        }
+      } else {
+        if (enableSearchHighlight) {
+          renderSearchHighlightResultsSide(searchText, results);
+        } else {
+          renderSearchResultsSide(searchText, results);
+        }
+        
+        var dropdownItems = searchResultsContainer.querySelectorAll('.dropdown-item');
+        dropdownItems ? dropdownItems.forEach(function(item) {
+          item.addEventListener('mousedown', function(e) {
+            e.target.click();
+          });
+        }) : null;
+      }
+    }) : null;
+
+    searchElem ? 
+    searchElem.addEventListener('blur', function() {
+      if (window.innerWidth < 770) {
+        return null;
+      }
+      searchResultsContainer ? searchResultsContainer.setAttribute('class', 'dropdown') : null;
+    }) : null;
+
+    searchElem ? 
+    searchElem.addEventListener('click', function(e) {
+      if (window.innerWidth < 770) {
+        return null;
+      }
+      if (!e.target.value) {
+        searchResultsContainer ? searchResultsContainer.setAttribute('class', 'dropdown') : null;
+        return null;
+      }
+
+      searchText = e.target.value;
+      var results = fuse.search(e.target.value);
+
+      if (searchResultPosition === "main") {
+        if (enableSearchHighlight) {
+          renderSearchHighlightResultsMain(searchText, results);
+        } else {
+          renderSearchResultsMain(searchText, results);
+        }
+      } else{
+        if (enableSearchHighlight) {
+          renderSearchHighlightResultsSide(searchText, results);
+        } else {
+          renderSearchResultsSide(searchText, results);
+        }
+
+        var dropdownItems = searchResultsContainer.querySelectorAll('.dropdown-item');
+        dropdownItems ? dropdownItems.forEach(function (item) {
+          item.addEventListener('mousedown', function (e) {
+            e.target.click();
+          });
+        }) : null;
+      }
+    }) : null;
+
+    var searchMenuElem = document.getElementById("search-menu");
+    var activeItem = document.querySelector('#search-menu .dropdown-item.is-active');
+    var activeIndex = null;
+    var items = null;
+    var searchContainerMaxHeight = 350;
+
+    searchElem ? 
+    searchElem.addEventListener('keydown', function(e) {
+      if (window.innerWidth < 770) {
+        return null;
+      }
+
+      if (e.key === 'Escape') {
+        searchResult ? searchResult.setAttribute('data-display', 'none') : null;
+        summaryContainer ? summaryContainer.setAttribute('data-display', 'block') : null;
+      }
+
+      var items = document.querySelectorAll('#search-menu .dropdown-item');
+      var keyCode = e.which || e.keyCode;
+
+      if (!items || !items.length) {
+        return null;
+      }
+      
+      if (e.key === 'ArrowDown' || keyCode === 40) {
+        if (activeIndex === null) {
+          activeIndex = 0;
+          items[activeIndex].classList.remove('is-active');
+        } else {
+          items[activeIndex].classList.remove('is-active');
+          activeIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
+        }
+        items[activeIndex].classList.add('is-active');
+
+        let overflowedPixel = items[activeIndex].offsetTop + items[activeIndex].clientHeight - searchContainerMaxHeight;
+        if (overflowedPixel > 0) {
+          document.querySelector(".search-content").scrollTop += items[activeIndex].getBoundingClientRect().height;
+        } else if (activeIndex === 0) {
+          document.querySelector(".search-content").scrollTop = 0;
+        }
+      } else if (e.key === 'ArrowUp' || keyCode === 38) {
+        if (activeIndex === null) {
+          activeIndex = items.length - 1;
+          items[activeIndex].classList.remove('is-active');
+        } else {
+          items[activeIndex].classList.remove('is-active');
+          activeIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
+        }
+        items[activeIndex].classList.add('is-active');
+        
+        let overflowedPixel = items[activeIndex].offsetTop + items[activeIndex].clientHeight - searchContainerMaxHeight;
+        if (overflowedPixel < 0) {
+          document.querySelector(".search-content").scrollTop -= items[activeIndex].getBoundingClientRect().height;
+        } else {
+          document.querySelector(".search-content").scrollTop = overflowedPixel + items[activeIndex].getBoundingClientRect().height;
+        }
+      } else if (e.key === 'Enter' || keyCode === 13) {
+        if (items[activeIndex] && items[activeIndex].getAttribute('href')) {
+          location.href = items[activeIndex].getAttribute('href');
+        }
+      } else if (e.key === 'Escape' || keyCode === 27) {
+        e.target.value = null;
+        if (searchResults) {
+          searchResults.classList.remove('is-active');
+        }
+      }
+    }) : null;
+
+    searchMobile ? 
+    searchMobile.addEventListener('input', function(e) {
+      if (!e.target.value) {
+        let wrap = document.getElementById('search-mobile-results');
+        while (wrap.firstChild) {
+          wrap.removeChild(wrap.firstChild);
+        }
+        return null;
+      }
+
+      searchText = e.target.value;
+      var results = fuse.search(e.target.value);
+      renderSearchResultsMobile(searchText, results);
+      if (enableSearchHighlight) {
+        renderSearchHighlightResultsMobile(searchText, results);
+      } else {
+        renderSearchResultsMobile(searchText, results);
+      }
+    }) : null;
+  
+
+
+  
+    var mobileSearchInputElem = document.querySelector('#search-mobile');
+    var mobileSearchClassElem = document.querySelector('.mobile-search');
+    var mobileSearchBtnElems = document.querySelectorAll('.navbar-search');
+    var mobileSearchCloseBtnElem = document.querySelector('#search-mobile-close');
+    var mobileSearchContainer = document.querySelector('#search-mobile-container');
+    var mobileSearchResultsElem = document.querySelector('#search-mobile-results');
+    var htmlElem = document.querySelector('html');
+
+    if (mobileSearchClassElem) {
+      mobileSearchClassElem.style.display = 'none';
+    }
+
+    mobileSearchBtnElems ? 
+    mobileSearchBtnElems.forEach(function (elem, idx) {
+      elem.addEventListener('click', function () {
+        if (mobileSearchContainer) {
+          mobileSearchContainer.style.display = 'block';
+        }
+
+        if (mobileSearchInputElem) {
+          mobileSearchInputElem.focus();
+        }
+
+        if (htmlElem) {
+          htmlElem.style.overflowY = 'hidden';
+        }
+      });
+    }) : null;
+
+    mobileSearchCloseBtnElem ? 
+    mobileSearchCloseBtnElem.addEventListener('click', function() {
+      if (mobileSearchContainer) {
+        mobileSearchContainer.style.display = 'none';
+      }
+
+      if (mobileSearchInputElem) {
+        mobileSearchInputElem.value = '';
+      }
+      
+      if (mobileSearchResultsElem) {
+        while (mobileSearchResultsElem.firstChild) {
+          mobileSearchResultsElem.removeChild(mobileSearchResultsElem.firstChild);
+        }
+      }
+
+      if (htmlElem) {
+        htmlElem.style.overflowY = 'visible';
+      }
+    }) : null;
+
+    mobileSearchInputElem ?
+    mobileSearchInputElem.addEventListener('keydown', function(e) {
+      var keyCode = e.which || e.keyCode;
+      if (e.key === 'Escape' || keyCode === 27) {
+        if (mobileSearchContainer) {
+          mobileSearchContainer.style.display = 'none';
+        }
+        
+        if (mobileSearchInputElem) {
+          mobileSearchInputElem.value = '';
+        }
+
+        if (mobileSearchResultsElem) {
+          while (mobileSearchResultsElem.firstChild) {
+            mobileSearchResultsElem.removeChild(mobileSearchResultsElem.firstChild);
+          }
+        }
+        if (htmlElem) {
+          htmlElem.style.overflowY = 'visible';
+        }
+      }
+    }) : null;
+  
+
+
+  
+    function renderSearchResultsMain(searchText, results) {
+      var searchBody = document.querySelector('.search-result__body');
+      var originUl = searchBody.querySelector('ul');
+      var ul = document.createElement('ul');
+      
+      if (!searchText) {
+        searchResult ? searchResult.setAttribute('data-display', 'none') : null;
+        summaryContainer ? summaryContainer.setAttribute('data-display', 'block') : null;
+      } else if (results) {
+        if (results && results.length) {
+          results.forEach(function (result) {
+            makeLi(ul, result);
+          });
+
+          searchResult ? searchResult.setAttribute('data-display', 'block') : null;
+          summaryContainer ? summaryContainer.setAttribute('data-display', 'none') : null;
+        }
+      }
+
+      originUl.parentNode.replaceChild(ul, originUl);
+    }
+
+    function renderSearchHighlightResultsMain(searchText, results) {
+      var searchBody = document.querySelector('.search-result__body');
+      var originUl = searchBody.querySelector('ul');
+      var ul = document.createElement('ul');
+
+      if (!searchText) {
+        searchResult ? searchResult.setAttribute('data-display', 'none') : null;
+        summaryContainer ? summaryContainer.setAttribute('data-display', 'block') : null;
+      } else if (results) {
+        if (results && results.length) {
+          results.forEach(function (result) {
+            makeHighlightLi(ul, result);
+          });
+
+          searchResult ? searchResult.setAttribute('data-display', 'block') : null;
+          summaryContainer ? summaryContainer.setAttribute('data-display', 'none') : null;
+        }
+      }
+
+      originUl.parentNode.replaceChild(ul, originUl);
+    }
+  
+  });
+</script>
+    
+    
+
+
+<link rel="stylesheet" href="/css/main.min.css">
+
+
+
+  
+  
+    
+    <link rel="stylesheet" href="/scss/custom.min.css">
+  
+
+  
+  
+    
+    <link rel="stylesheet" href="/css/bb-lmm-mk.min.css">
+  
+
+
+    
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="美团百科,科技,零售,王兴,王慧文,零售,O2O,电子商务">
+
+<meta name="created" content="2024-01-03T00:19:50&#43;0900">
+<meta name="modified" content="2024-01-03T00:19:50&#43;0900">
+<meta property="article:published_time" content="2024-01-03T00:19:50&#43;0900">
+
+<meta name="author" content="VictorHong">
+
+
+<meta property="og:site_name" content="VictorHong&#39;s Blog">
+<meta property="og:title" content="美团演讲">
+<meta property="og:url" content="https://hugo.jiahongw.com/en/zh/talks/%E7%BE%8E%E5%9B%A2%E5%86%85%E9%83%A8%E6%BC%94%E8%AE%B2/">
+<meta property="og:type" content="article">
+<meta property="og:description" content="">
+
+  
+    <meta property="og:image" content="https://hugo.jiahongw.com/images/header/hh.jpg">
+    <meta property="og:image:url" content="https://hugo.jiahongw.com/images/header/hh.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:app:name:iphone" content="VictorHong&#39;s Blog">
+    <meta property="twitter:title" content="美团演讲">
+    <meta property="twitter:description" content="">
+  
+
+<meta name="generator" content="Hugo 0.110.0">
+<meta name="msapplication-TileColor" content="#fff">
+
+<meta name="theme-color" content="#fff">
+
+<meta name="msapplication-navbutton-color" content="#fff">
+
+<meta name="apple-mobile-web-app-status-bar-style" content="#fff">
+
+<link rel="canonical" href="https://hugo.jiahongw.com/en/zh/talks/%E7%BE%8E%E5%9B%A2%E5%86%85%E9%83%A8%E6%BC%94%E8%AE%B2/">
+
+<link rel="manifest" href="/manifest.json">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-icon-512x512.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+
+
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "headline": "美团演讲",
+    "datePublished": "2024-01-03T00:19:50+09:00",
+    "dateModified": "2024-01-03T00:19:50+09:00",
+    "url" : "https://hugo.jiahongw.com/en/zh/talks/%E7%BE%8E%E5%9B%A2%E5%86%85%E9%83%A8%E6%BC%94%E8%AE%B2/",
+    "description": "01 美团之初 王兴：团购是超完美的商业模式 时间：2011年 背景：千团大战，美团一周年 1.金字塔结构下，小企业生意的机会 中国商业互联网的发展，有一",
+    "keywords": ["美团百科","科技","零售","王兴","王慧文","零售","O2O","电子商务"],
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://hugo.jiahongw.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "VictorHong's Blog",
+      "url": "https://hugo.jiahongw.com"
+    }
+  }
+</script>
+
+    
+  
+  
+
+
+
+
+
+
+  <script>
+    
+    var baiduAnalyticsId = JSON.parse("\"8ac34c9d30985a71517efff22def1592\"");
+
+    var _hmt = _hmt || [];
+    (function () {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?" + baiduAnalyticsId;
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+    
+</head>
+
+<body id="root" class="theme__dark">
+    <script>
+        var localTheme = localStorage.getItem('theme');
+        if (localTheme) {
+            document.getElementById('root').className = 'theme__' + localTheme;
+        }
+    </script>
+    <div id="container">
+        
+
+
+
+
+
+        <div class="wrapper" data-type="zh" data-kind="page">
+            <nav class="navbar scrolling" role="navigation" aria-label="main navigation" data-dir="ltr">
+  <div class="navbar__brand">
+    
+    <a href="/en/" title="Home" rel="home" class="navbar__logo-link">
+      <img src="/logo.png" alt="Home" class="navbar__logo">
+    </a>
+    
+    
+      <a href="/en/" title="Home" rel="home" class="navbar__title-link">
+        <h6 class="navbar__title">VictorHong</h6>
+      </a>
+    
+  </div>
+
+  
+<div class="theme theme-mobile" data-ani="true">
+  <div class="dropdown">
+    <button class="dropdown-trigger navbar__slide-down" aria-label="Select Theme Button" style="" data-ani="true">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="none" d="M24 0H0v24h24V0z"/><path fill="currentColor" d="M6.34 7.93c-3.12 3.12-3.12 8.19 0 11.31C7.9 20.8 9.95 21.58 12 21.58s4.1-.78 5.66-2.34c3.12-3.12 3.12-8.19 0-11.31l-4.95-4.95c-.39-.39-1.02-.39-1.41 0L6.34 7.93zM12 19.59c-1.6 0-3.11-.62-4.24-1.76C6.62 16.69 6 15.19 6 13.59s.62-3.11 1.76-4.24L12 5.1v14.49z"/></svg>      
+    </button>
+    <div class="dropdown-content select-theme">
+      
+        
+        <a href="#" class="dropdown-item select-theme__item is-active">
+          dark
+        </a>
+        
+        <a href="#" class="dropdown-item select-theme__item ">
+          light
+        </a>
+        
+        <a href="#" class="dropdown-item select-theme__item ">
+          hacker
+        </a>
+        
+        <a href="#" class="dropdown-item select-theme__item ">
+          solarized
+        </a>
+        
+        <a href="#" class="dropdown-item select-theme__item ">
+          kimbie
+        </a>
+        
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="mobile-search__btn navbar-search" data-ani="true">
+  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path d="M15.5 14h-.79l-.28-.27c1.2-1.4 1.82-3.31 1.48-5.34-.47-2.78-2.79-5-5.59-5.34-4.23-.52-7.79 3.04-7.27 7.27.34 2.8 2.56 5.12 5.34 5.59 2.03.34 3.94-.28 5.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+</div>
+
+<div id="search-mobile-container" class="mobile-search hide" data-dir="ltr">
+  <div class="mobile-search__top">
+    <input id="search-mobile" type="text" aria-label="Mobile Search" placeholder="Search" class="mobile-search__top--input"/>
+    <div id="search-mobile-close" class="mobile-search__top--icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path opacity=".87" fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.59-13L12 10.59 8.41 7 7 8.41 10.59 12 7 15.59 8.41 17 12 13.41 15.59 17 17 15.59 13.41 12 17 8.41z"/></svg>
+    </div>
+  </div>
+  <div id="search-mobile-results" class="mobile-search__body">
+    
+  </div>
+</div>
+
+
+<a role="button" class="navbar__burger" aria-label="menu" aria-expanded="false"
+  data-ani="true">
+  <span aria-hidden="true"></span>
+  <span aria-hidden="true"></span>
+  <span aria-hidden="true"></span>
+</a>
+<div class="navbarm__collapse" data-open="false">
+  <ul dir="ltr">
+    
+    
+      
+      
+      
+      
+
+      
+        <li class="navbarm__menu--item ">
+          <a href="/en/about">About</a>
+        </li>
+      
+      
+    
+      
+      
+      
+      
+
+      
+        <li class="navbarm__menu--item ">
+          <a href="/en/archive">Archive</a>
+        </li>
+      
+      
+    
+      
+      
+      
+      
+
+      
+        <li class="navbarm__menu--item ">
+          <a href="/en/posts">Posts</a>
+        </li>
+      
+      
+    
+      
+      
+      
+      
+
+      
+        <li class="navbarm__menu--item ">
+          <a href="/en/showcase">Showcase</a>
+        </li>
+      
+      
+    
+
+    
+  </ul>
+</div>
+  <div class="navbar__menu">
+  
+    <div class="theme">
+  <div class="dropdown">
+    <button class="dropdown-trigger navbar__slide-down navbar-search" aria-label="Search Button" data-ani="true">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path d="M15.5 14h-.79l-.28-.27c1.2-1.4 1.82-3.31 1.48-5.34-.47-2.78-2.79-5-5.59-5.34-4.23-.52-7.79 3.04-7.27 7.27.34 2.8 2.56 5.12 5.34 5.59 2.03.34 3.94-.28 5.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+    </button>
+    <div class="dropdown-content">
+    </div>
+  </div>
+</div>
+  
+  
+  
+<div class="theme" data-ani="true">
+  <div class="dropdown">
+    <button class="dropdown-trigger navbar__slide-down" aria-label="Select Theme Button" data-ani="true">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="none" d="M24 0H0v24h24V0z"/><path fill="currentColor" d="M6.34 7.93c-3.12 3.12-3.12 8.19 0 11.31C7.9 20.8 9.95 21.58 12 21.58s4.1-.78 5.66-2.34c3.12-3.12 3.12-8.19 0-11.31l-4.95-4.95c-.39-.39-1.02-.39-1.41 0L6.34 7.93zM12 19.59c-1.6 0-3.11-.62-4.24-1.76C6.62 16.69 6 15.19 6 13.59s.62-3.11 1.76-4.24L12 5.1v14.49z"/></svg>      
+    </button>
+    <div class="dropdown-content select-theme">
+      
+        
+        <a href="#" class="dropdown-item select-theme__item is-active">
+          dark
+        </a>
+        
+        <a href="#" class="dropdown-item select-theme__item ">
+          light
+        </a>
+        
+        <a href="#" class="dropdown-item select-theme__item ">
+          hacker
+        </a>
+        
+        <a href="#" class="dropdown-item select-theme__item ">
+          solarized
+        </a>
+        
+        <a href="#" class="dropdown-item select-theme__item ">
+          kimbie
+        </a>
+        
+      
+    </div>
+  </div>
+</div>
+
+  
+  
+  
+  
+  
+  
+  
+  <a href="/en/about" class="navbar__menu-item navbar__slide-down " dir="ltr" data-ani="true">About</a>
+  
+  
+  
+  
+  
+  
+  
+  <a href="/en/archive" class="navbar__menu-item navbar__slide-down " dir="ltr" data-ani="true">Archive</a>
+  
+  
+  
+  
+  
+  
+  
+  <a href="/en/posts" class="navbar__menu-item navbar__slide-down " dir="ltr" data-ani="true">Posts</a>
+  
+  
+  
+  
+  
+  
+  
+  <a href="/en/showcase" class="navbar__menu-item navbar__slide-down " dir="ltr" data-ani="true">Showcase</a>
+  
+  
+</div>
+</nav>
+            
+            
+
+<main class="single__main main-main">
+  
+    <nav class="breadcrumb hide" aria-label="breadcrumbs">
+  <script>document.querySelector('.breadcrumb').classList.remove('hide')</script>
+  <ol>
+    
+  
+  
+  
+  
+  
+  
+  
+  <li >
+    
+      <a href="https://hugo.jiahongw.com/en/" class="capitalize">VictorHong&#39;s Blog</a>
+    
+  </li>
+  
+  
+  <li >
+    
+      <a href="https://hugo.jiahongw.com/en/zh/" class="capitalize">Zhs</a>
+    
+  </li>
+  
+  
+  <li >
+    
+      <a href="https://hugo.jiahongw.com/en/zh/talks/" class="capitalize">链接库</a>
+    
+  </li>
+  
+  
+  <li  class="is-active" >
+    
+      <span>美团演讲</span>
+    
+  </li>
+  
+  </ol>
+  
+</nav>
+  
+  
+  <div class="single ">
+    <div class="single__nojs">This page looks best with JavaScript enabled</div>
+    <script>document.querySelector('.single').classList.remove('hide'); document.querySelector('.single__nojs').classList.add('hide');</script>
+    <h2 class="single__title" data-ani="true">美团演讲</h2>
+    <h3 class="single__subtitle"></h3>
+    <div class="single__meta">
+      
+<div class="single__infos">
+  <time class="single__info" title="Written At">📅&nbsp;Jan 3, 2024 </time>
+  
+  &nbsp;&middot;&nbsp; <span class="single__info" title="Reading Time"> ☕&nbsp;40&nbsp;min read </span>
+  
+  <span class="single__info">
+     &middot; 👀<span id="busuanzi_value_page_pv">...</span> views
+  </span>
+</div>
+
+      
+<ul class="single__tags caption">
+  
+  🏷️
+  
+
+  <li><a href="https://hugo.jiahongw.com/en/tags/%E7%BE%8E%E5%9B%A2%E7%99%BE%E7%A7%91/" class="single__tag" title="美团百科">#美团百科</a></li>
+
+  <li><a href="https://hugo.jiahongw.com/en/tags/%E7%A7%91%E6%8A%80/" class="single__tag" title="科技">#科技</a></li>
+
+  <li><a href="https://hugo.jiahongw.com/en/tags/%E7%8E%8B%E5%85%B4/" class="single__tag" title="王兴">#王兴</a></li>
+
+  <li><a href="https://hugo.jiahongw.com/en/tags/%E7%8E%8B%E6%85%A7%E6%96%87/" class="single__tag" title="王慧文">#王慧文</a></li>
+
+  <li><a href="https://hugo.jiahongw.com/en/tags/%E9%9B%B6%E5%94%AE/" class="single__tag" title="零售">#零售</a></li>
+
+  <li><a href="https://hugo.jiahongw.com/en/tags/o2o/" class="single__tag" title="O2O">#O2O</a></li>
+
+  <li><a href="https://hugo.jiahongw.com/en/tags/%E7%94%B5%E5%AD%90%E5%95%86%E5%8A%A1/" class="single__tag" title="电子商务">#电子商务</a></li>
+
+</ul>
+
+    </div>
+    <article class="single__contents" data-dir="ltr" data-ani="true">
+      
+      <h3 id="01-美团之初">01 美团之初</h3>
+<p><strong>王兴：团购是超完美的商业模式</strong></p>
+<p>时间：2011年</p>
+<p>背景：千团大战，美团一周年</p>
+<h4 id="1金字塔结构下小企业生意的机会">1.金字塔结构下，小企业生意的机会 </h4>
+<p>中国商业互联网的发展，有一个金字塔，分三层，代表不同规模、不同数量的企业。所有企业都是需要做推广的，互联网作为一个传播信息很好的平台，它可以作为商业推广的最好方式，但是不同的环境下面，不同规模的企业，它会找到不同的适合它的互联网推广方式。</p>
+<p>最早在2000年左右，中国商业互联网的开端，最大的企业在金字塔的塔尖有世界五百强，像宝洁、宝马，2000年开始做推广，新浪首页放展示广告，按展示付费，只有很少一部分企业参与。</p>
+<p>互联网继续发展，到2005年很多企业，制造企业、外贸企业，它们有推广需求，但是它们没有资金实力去门户投广告，或者效果不够精准，回报不够高，但是2005年它们发现有一种互联网网站，有一种新的商业模式可以帮助它们，那就是搜索，这些中小企业原来不可能按展示付费在门户网站投广告，但是它们可以在搜索引擎，在百度、谷歌里面搜索，按照点击率付费，这样离效果近很多。 </p>
+<p>所以按点击付费的商业模式的企业，通常来讲规模会比上面一层小一些，但是数量大很多。像新浪之类的门户网站，它的广告客户就那么几百家，或者在千家量级，但是像百度，它可以达到几十万个客户。所以，这5年间互联网往前走了一步，之前没法利用互联网做商业推广的企业，找到了新的商业模式。</p>
+<p>但是历史并没有就此停止，一直在往前。 </p>
+<p>又过了5年时间，到了2010年，到了3月4日，美团网在国内开创了团购的方式。这样我们可以满足更多的企业的需求，大家来看金字塔的塔基，在这里面的企业它可能单个规模都比较小，或者说它是本地的服务企业，它的销售半径超过5公里、10公里，客户就不太可能来到这里消费。</p>
+<p>这些企业，这些本地商家，虽然规模比较小，但是数量非常多，按照国家统计局的统计，有700万家（大V商业注：到2017年底，2017年底，中国中小企业数量达2726.3万家），这些企业都需要进行推广。以前门户网站帮不了这些企业，搜索引擎帮不了它们，搜索引擎虽然是按点击付费，但是这么多本地商家可能根本连网站都没有，点击量没有意义。他们不关心展示，不关心点击，他们关心有多少客人到他们店里消费，他们关心交易。</p>
+<p>所以他们希望有一种互联网推广方式能够直接帮助他们带来交易，完全按照效果付费，这个事情美团网可以帮助他们做到。</p>
+<p>我可以非常诚实地说，<strong>我衷心地认为团购的模式是人们有史以来最优美的商业模式之一</strong>。</p>
+<h4 id="2手机端的机会">2.手机端的机会 </h4>
+<p>我们认为手机非常重要，我们已经发布了Android美团客户端，在手机上使用美团网就会更加方便。智能手机里面还有一个重要的平台，iPhone，美团的iPhone已经提交申请。</p>
+<h4 id="3返利和裂变的创新">3.返利和裂变的创新 </h4>
+<p>在过去一年里，从去年3月4日第一天上线起，我们首创一种方式，10元邀请返利，我们不想乱花钱砸广告，我们相信口碑相传。</p>
+<p>今天我们提出一个更劲爆的措施，不需要邀请，直接注册，直接返10元。</p>
+<h4 id="4用户体验的保证">4.用户体验的保证</h4>
+<p> 但是现在美团网要推出“过期退”。所有过期的余额，我们会全额返还，百分之百返还，让之前所有信任美团网，参加美团网团购，到后面不管因为什么原因没有去的会员放心。他以为是损失的，其实没有损失。我们实行的种种措施就是希望消费者尽可能放心，消除消费者选择美团网的后顾之忧。 </p>
+<h4 id="5先进的商业模式最终会胜">5.先进的商业模式最终会胜 </h4>
+<p>关于对商业模式的理解，我想商业模式其实不是最关键的事情，因为一个模式可以非常简单、非常透明，商业模式是共通的，关键是看执行力，这是我对商业模式的理解。</p>
+<p>短期可以有各种各样的花招，但是长期来看生产力决定生产关系，效率高的商业模式一定会胜出，对处在金字塔塔基的这些商家来讲，美团网这种商业模式比门户展示付费和搜索引擎按点击付费更适合他们的需求。所以长期来看，更好的商业模式会胜出。 </p>
+<h4 id="6微创新">6.微创新 </h4>
+<p>单个商家接单能力有限，我们不可能一个单有几十万单，所以这个时候，为了更好地满足客户需求，我们做了适当的划分，每天不止一个团购项目。（注：团购鼻祖Groupon当时还是每日一团）校内网有很多本地化的改动，但是因为它们比较细微，所以大家没有感觉。最早在国内是按邮箱后缀来识别大学的，这个非常简单，非常容易理解，但是我们在2005年做校内网时发现有些学校没有，北航这种很好的学校就没有，所以我们不可能按照这种方式操作，需要按其他方式，在校园里注册，或者按IP来做，这都是很小的差异。人群也是一样，也是一个金字塔。互联网普及最早是从受教育程度最高的人群入手，随着时间的推移，互联网普及会逐渐下沉，在人群上会下沉，越往下越接近本地，越接近线下，整个大的趋势是如此的。</p>
+<h4 id="7精or全">7.精or全 </h4>
+<p>巨大的潮流当中，有很多的机会，每一个机会都会有足够的空间让公司去成长。所以这个阶段，我们没有必要说一下把所有东西糅合在一起，我们选好一个事情，把它做专做精，让在这个行业里面服务的各方都满意，我觉得一定会有很好的前景。</p>
+<h4 id="8重技术">8.重技术</h4>
+<p>另一方面，也可能是被很多人忽视的方面，是我们花在技术研发上面的资金。电子商务的核心是低成本、高效率，这个效率不是完全靠堆人，人要成长，人数要增加，而更多是靠技术平台的研发。不断积累消费者和商户数据，我们才能知道商家需要什么样的消费者，消费者需要什么样的项目。我们能够实现数据积累更精准的匹配，同时能够让客户很方便地用。</p>
+<h4 id="9长期价值">9.长期价值 </h4>
+<p>互联网企业发展至今，没有一个实施的本地化战略能够做大，所以很多人会质疑美团的战略。但是，搜索引擎，在1998年大家认为这是一个完全没有商业模式的行业，之前有那么多人做了，完全没有效果，完全没有商业模式。</p>
+<p>我有一个朋友，2000年读完研究生在北大天网。当时有两个人从国外回来，在北大资源楼租一个办公室，想做搜索引擎，想挖最好的人，很多人去了，他没有去。他认为：“搜索引擎我能做得很好，但是这个事情没有商业模式。”所以他没有去。这个公司就是百度，后来上市，再后来成为中国最大的互联网公司之一，也是全球第五大互联网公司。</p>
+<p>这个故事告诉我们，<strong>一个事情只要它长期有价值，虽然它很有难度，但是过去做不成，不代表将来做不成</strong>。</p>
+<p>本地电子商务是一个庞大市场，因为几百万家企业都需要营销，需要推广，需要销售，之前试过搜索方式不太行，试过评价方式似乎也不那么有效，我们终于到了一个很有趣的历史时间点，终于出现一个很好的商业模式，满足这些存在的需求。问题一直存在，可方法一直没有找到，现在我们可能接近找到了。</p>
+<h4 id="10团队建设">10.团队建设 </h4>
+<p>有些非常年轻的员工，现在22岁（注：王兴此处指的应该就是沈鹏，现水滴互助CEO沈鹏），从去年还没有毕业就加入美团网，到后面开拓外地市场，这样一些年轻人不到一年的成长历程给我们很大的惊喜，也让我们知道，在这个行业里面年轻人是有机会的，年轻人是有优势的。有激情，有干劲，这个事情并不难。</p>
+<p>在接下来的发展中，我们判断一个人是否来美团网，关键不是他的年龄，是他的状态——有干劲，能够理解消费者要什么；有冲劲，朝九晚五不适合我们。那些愿意认同这个目标，愿意投入一切努力去承担一切责任，承担更多责任的人是我们需要的人。</p>
+<p>团队建设，是靠心态，而不是靠年龄。  </p>
+<h3 id="02-成长的策略">02 成长的策略</h3>
+<p><strong>王兴：如何度过行业寒冬</strong></p>
+<p>时间：2012年</p>
+<p>背景：拉手上市失败，千团大战结束前夕</p>
+<h4 id="1每天前进30公里">1.每天前进30公里 </h4>
+<p>在1911年12月之前，没有哪个地球人到过南极点，所以这是一百年前所有最伟大的探险者、所有最有探险精神的人最想做到的事情。而在这个过程中有很有趣的故事，他们的故事和我们将要进行的事情有几分相似，他们的教训、他们的经验对我们来讲有借鉴意义。</p>
+<p>最后两个竞争团队，一个是来自挪威的阿蒙森团队，另一个是斯科特团队。</p>
+<p>阿蒙森团队五个人，斯科特十七个人。他们出发时间是差不多的，这是因为这个世界上竞争从来都非常激烈，当有一个大的机会的时候，没有可能只有你看到了，基本是差不多时候有一帮人也看到了，这跟其他无数的场合竞争都很像，一个真正有吸引力的机会，会在差不多同一时间有不止一个团队、不止一个公司或者不止一个人参与，一定会有激烈的竞争。</p>
+<p>阿蒙森团队在两个多月后，率先到达了南极点，而斯科特团队他们晚到了一个多月，这意味着什么？这就是成功跟失败的区别。</p>
+<p>阿蒙森率先到达南极点，并在21个月之后顺利地返回了原来的基地，一切都按他们原来的计划进行，因为他们做了非常充分的调研，非常精心的准备，储备了足够的物资，对困难有足够的预料，按计划进行。而斯科特团队不断地有人掉队，不断地碰到困难，最后他们没有任何人生还。</p>
+<p><strong>成功跟失败的区别不光是你是否获得荣誉，是否完成目标，而已经是生与死的差别。</strong></p>
+<p>这些前辈进行的探险比我们更困难、更刺激，赌注更大。那么是什么造成这么重大的区别，对我们在做的事情会有些帮助和启发。</p>
+<p>事后有人总结分析两个队的策略和准备，可以看到非常重要的区别。阿蒙森的团队人虽然少，但是物资准备非常非常充分，他们准备了三吨的物资；而斯科特团队的人多，但是准备的东西少，只有一吨的物资。一吨的物资够吗？如果你在这个过程中不犯任何错，完全不犯任何错，刚好够。物资确实是够的，但是前提是你在这两千两百多公里的路程中，不知道地形、不知道天气的情况下，你不能犯任何错。如果你不犯任何错，这一吨物资确实够。大家知道这是多么可怕的事情，理论上可行，但现实中碰到很大的压力、碰到很大的未知困难，你不可避免地会动作走形，会犯很多错。</p>
+<p>所以，<strong>当你的计划订得太紧的时候，当你的准备虽然貌似够，但是不充分、没有富余量的时候，其实是非常非常危险的。</strong></p>
+<p>阿蒙森团队物资有极大的富余量，在行进过程中，他们可能会错过一个事先准备好的补给站，或者说丢掉一些东西，或者说碰到一些比原来想象的温度更低、暴风雨天气更长的时候，但他们依然能够有足够的物资储备。</p>
+<p><strong>只有这种做法才是够的做法，不是将将够，而是充分预知到这个环境多么困难，要做多么多么充足的准备，要给自己留下犯错的空间，或者对我们来讲是学习的空间、成长的空间</strong>。</p>
+<p>所以这是一个非常非常大的区别，资源是否足够，是否有空间。</p>
+<p>另外还有很多区别，例如，他们采用的工具不一样，也就是说他们事先做的准备不一样。阿蒙森是挪威人，他为了去南极做了非常多的准备，首先要去哪个地方，要完成哪个目标，最好的工具是什么？最好的办法是什么？要学习最好的办法，采用最可靠的、最先进的工具。跟南极最像的地方就是北极，他跑去北极和爱斯基摩人住了很长一段时间，包括如何用冰天雪地里最好的工具——狗拉雪橇。</p>
+<p>而斯科特团队犯了很多错，一样要拉雪橇，他选择了比狗更壮、更强悍的马。事实上，这是一个很大的错误，狗和马有很多差别，狗在雪地里是不会出汗的，而马会出汗，一出完汗再一冻就被冻住了。所以马虽然比狗强悍很多，看起来快很多，但其实并不是一个合适的工具，看起来威猛，看起来快，其实它不适应这个环境。</p>
+<p>后来很快发现不行，他们想用更冒险的方法，用最先进的工具——雪地摩托。这是一百年前，雪地摩托整个内燃机都是非常不成熟的，如果雪地摩托这种最先进的工具能用的话，很可能非常快，非常威猛，但事实是，他们搞去的雪地摩托才走一段时间就被发现不行，因为这是一个太新的东西了，虽然理论上可能可行，但是从来没有人在这么严酷的环境下，在没有很完善的情况下用这个东西。</p>
+<p>最后他们不得不沦落为人拉着雪橇走。 </p>
+<p>这是一个很重要的区别，<strong>在同一个环境下面，目标大致相同，你选择什么样的路径，你用什么样的方法，你做什么样的准备，最后很有可能不光是成功与失败的区别，而是生与死的差别</strong>。</p>
+<p>还有一个非常非常重要的策略区别，就是不管天气好坏，阿蒙森团队坚持每天前进大概30公里，这句话听起来非常简单，但是事后总结，这个是阿蒙森团队能够不断成功而且生还的一个非常重要的原则。这里有很多讲究，在一个极限环境下面，你要做到最好，但是你要做到可持续的最好，你就不能太努力，一旦你出汗就非常非常糟糕，一兴奋，出汗了，那么待会儿风一吹就结成冰了。所以任何时候，**太激进其实很有可能会带来长期的负面影响。**做到这点需要高度严守既定的纪律，在事情容易的时候，在环境顺利的时候，不要得意忘形，坚守纪律，当情况好的时候，似乎容易的时候，前进30公里，然后扎营、休息。当天气不好的时候，阿蒙森也坚持带领他的团队，哪怕挪得很慢，也要前进30公里，完成这一天的目标。因为本身设的目标是有富余量的，天气不好就慢一点儿，路陡就慢一点儿，但坚持去完成。</p>
+<p>阿蒙森制订了一个可行的计划，有富余量的计划，虽然他们面对的几乎是一个完全未知的领域和未知的天气，但他们基本按计划执行。相反，斯科特团队，从他们的日志来看，是一个比较随心所欲的团队，天气很好，就走得非常猛，天气不好的时候，就睡在帐篷里，诅咒恶劣的天气，诅咒运气不好，希望尽快天转晴，尽快能够前进。</p>
+<p>这是很自然的反应，很多人容易有这样的想法，容易的时候多搞点儿，不容易的时候，季节不好、天气不好、市场环境不好，就歇一歇。但事后总结，这两种做法很可能是他们最大的区别。</p>
+<p>这个故事它跟今天我们所处的环境、我们要干的事情有很多相似之处。我们相信商品的电子商务和服务的电子商务最终规模是差不多的，它的最后规模都是上万亿，我们同样面临一个目标，要去做本地电子商务。</p>
+<p>最怕的是我们对自己估计不足，对这个情况认识不足，所有困难只要我们意识到它，我们相应地去做准备，去克服，都是有可能克服的，最怕的是我们对情况估计不足。</p>
+<p>我们应该像去探索南极的阿蒙森团队一样，充分利用、学习现有的一切最好的方法，适合我们的方法，对困难有足够的估计，目标清晰，同时制订计划，去坚定地执行。我们在2011年的目标是每个月增长20%，大概一年接近10倍。</p>
+<h4 id="2学习对手学习一切先进超越对手">2.学习对手，学习一切先进，超越对手</h4>
+<p>我们要重视每一个对手，他们有许多可取之处。</p>
+<p>**我们可以从阿里学习很多东西，但是最终我们一定要超过阿里。**我们要向任何一个对手学习，任何一个同行学习，但我们最后目标应该是超越它们，这是整个公司的目标，也应该是每个人的目标，不管你在哪个岗位上，总有办法可以做得更好，学习新的东西，目标是超过它们。</p>
+<h4 id="3关于上市">3.关于上市 </h4>
+<p>上市不是我们的目标，应该是我们在到达一个更长远的目标的过程中，在合适的情况下发生的事情。</p>
+<p>你不能把上市作为目标，而是应该有更坚实的目标，要服务好消费者，服务好商户，让整个企业能够健康持续地运转。那个时候上市是水到渠成的事情。</p>
+<p>在上市之前，另一个事情非常重要，因为公司整个事情是大家一起做出来的，美团最重要的产品、最重要的资产都是人，我们希望上市的时候一方面给公司带来资金，另一方面能让大家分享这个胜利的果实。所以在去年下半年的时候，我们第一次有了全员持股计划，只要加入公司一段时间，足够长的时间，每个人都有的。</p>
+<h4 id="4冬天">4.冬天 </h4>
+<p>2011年上半年大家疯狂投资，各种各样的高得离谱的估值，后来下半年如我们所料，冬天来了，可能不光是团购的冬天，不光是电子商务的冬天，甚至认为是整个互联网、整个投资的冬天。现在也一样，很多人认为市场环境不好，这一切其实都是像他们去南极探险时候的天气好坏变化，有的时候晴天，有的时候阴雨天一样，都大致在可控范围之内。</p>
+<p><strong>我们不依赖运气，我们要像成功的阿蒙森团队一样，像他们每天不管天气好坏坚持前进30公里一样。</strong></p>
+<p>只有这种看起来不那么激动人心的方式，其实是最考验毅力的，也可能是最有产出的。一个简单的事情重复做，越做越好，越做越专业，不管是在哪个岗位上，这个事情听起来似乎很枯燥，但是它其实蕴含着无数的激情，这是真正的激情，并不是莫名其妙的不同的变化，而是你做成的事情，你要希望把它做到最好，做到越来越好，要做到比最好还更好，每天越来越好。</p>
+<p>这是一个很难的事情，但是是一个很激动人心的事情，也是非常值得努力的事情。</p>
+<h3 id="03-定目标"><strong>03 定目标</strong></h3>
+<p><strong>王兴：从美团的三年到O2O的十年</strong></p>
+<p>时间：2013年</p>
+<p>背景：美团成为全国团购的老大，美团外卖年底上线</p>
+<h4 id="1每一次花钱都是在投票投票选择你想要支持的那个世界">1.每一次花钱都是在投票，投票选择你想要支持的那个世界</h4>
+<p> 大概三年前，当美团规模还非常小的时候，曾经有朋友问我，你之前做校内网，做饭否，它是一个社交媒体、社交网络，看起来是不是更能影响信息传播，更有社会意义的事情；做电子商务做美团也很好，但是不是有一点儿俗了。我毫不犹豫地，而且非常理直气壮地告诉他：不俗！</p>
+<p>我觉得一个非常重要的事情是，每个人都有花钱的自由，所以，<strong>我们每一次花钱都像在投票，在用钞票投票，投票给你想要的那个世界</strong>。你用你手里的钞票，没有人能够阻挡你，它作为你的选票，决定你要支持什么样的公司，支持什么样的企业，你要跟什么样的人做生意，你要到什么样的地方消费，你认为什么企业应该在这个竞争中获得更多选票，赚更多钱，能够发展得更好。</p>
+<p>这是每个人的自由，每个人都有选择的权利，有消费的民主，而美团干的就是这样的事情。它给每个人更多选择、更多自由，然后也让那些诚信的、提供优质服务的商家能够在这种投票的选择中获胜，而发展得更好。</p>
+<p>所以，我想反复强调这一点，我们每一次花钱都是在投票，投票选择你想要支持的那个世界。那么每一次投票就是一次交易，交易额代表投票的多少，代表你影响了多少消费者，我认为交易额对美团非常重要。</p>
+<h4 id="2从大趋势中看产业机会">2.从大趋势中看产业机会 </h4>
+<p>淘宝天猫发展得非常好，它的主力是做商品的电子商务，我们完全有理由相信服务的电子商务是一个规模完全不逊于商品的电子商务，甚至更大，是需求更充分的一个市场，这一点也可以从另外一个报告中看出来。</p>
+<p>大家关注宏观形势的话，就可以看得出刚刚2012年全国的GDP和各个产业的分布，<strong>我相信2012年是第三产业产值小于第二产业产值的最后一年</strong>，第三产业就是服务业，跟第二产业工业的产值差距在飞速地缩小，2012年应该是最后一年第三产业小于第二产业，从2013年开始，统计报告肯定会是第三产业服务业总产值大于第二产业，而美团恰恰做的是第三产业，是服务业的电子商务。 </p>
+<h4 id="355亿时敢下1000亿目标">3.55亿时，敢下1,000亿目标</h4>
+<p>回顾过去三年，展望未来一年，还要展望未来三年。所以，这里我想跟大家分享另一个目标：2015年我认为美团应该实现全年1,000亿的目标。（2012年美团55.5亿）</p>
+<p>2015年全年1,000亿，1,000亿是什么意思，难吗？听起来是个很大的数字，但其实并不是遥不可及，因为再难的事情你只要把它分解、分解，再分解，然后每一步都有人负责，都有团队负责，每个人都靠谱，那整个事情就都靠谱。</p>
+<p>如果把1,000亿这个看起来很大的数字稍微分解一下，我们就会发现，只要我们顺利地完成今年188亿的目标，后面2014年、2015年，平均每年只要增长140%，也就是每年2.4倍，<u>到2015年我们就能顺利地完成1,000亿的目标（注：2015年美团交易额1,611亿）</u>。每年增长140%，这是比我们所有过去几年都要慢得多的数字，10倍、3.8倍、3.4倍，完全有理由相信，<strong>只要我们不犯错误，只要我们产品方面更加深入，商品选择更加丰富，能够始终保证高质、低价格，然后保证非常便利</strong>，不光在PC方面，更在手机方面，因为消费者需求是如此旺盛，而商家的需求也是如此强烈，我们有理由非常快速地发展，到2015年我们希望美团全年交易额能够超过1,000亿。</p>
+<p>大家注意看，我的标题是“从美团的三年到O2O的十年”。基本上，本世纪第一个十年是传统电子商务蓬勃发展的十年，到2010年年初，随着团购的发展，O2O才真正开端。</p>
+<p>大胆地展望一下，到这个十年，O2O的前十年结束的时候，<strong>到2020年的时候，我相信美团全年的交易额能超过一万亿</strong><u>（注：2019年美团交易额为6,821亿，YoY 32.3%）</u>。</p>
+<p>我希望跟大家分享一下最简单的事情，从1,000亿到10,000亿是十倍，如果我们给自己五年的时间，平均每年只要增长60%，也就是1.6的5次方是超过10，当整个第三产业是数十万亿的时候，当五年后互联网普及进一步提高，消费者手机上网的普及度进一步提高的时候，我们没有理由不相信这整个产业会是一个巨大的产业，而我们作为这个产业的领跑者，有理由相信应该把目标设定在超过10,000亿上面。所以，这是目标，目标不管宏伟不宏伟，其实你只要去分解它，就可以理解它，而且我相信一个高的目标是会对每个人有激励作用的，这是过去三年给我最大的感受。</p>
+<p>O2O的十年将注定是一个既牛×又苦×的十年，为什么说苦×呢？是因为大家都知道，我们不管在哪一个部门，哪一个环节，竞争都非常激烈，消费者、商家各种各样的需求，而这个事情注定是一个<strong>高品质、低价格、低毛利</strong>的事情。</p>
+<p>这里我们要记住一句话：<strong>你对未来越有信心，你对现在越有耐心</strong>。可能现在过去的三年，接下来一年，接下来两年、三年，都会是非常煎熬的、苦×的事情，但是，整个事情是有非常光明、巨大前景的事情。 </p>
+<h3 id="04-美团离破产只有6个月">04 美团离破产只有6个月</h3>
+<p><strong>王兴：“危机”与“成长”</strong></p>
+<p>时间：2014年</p>
+<p>背景：美团成为团购老大</p>
+<h4 id="1危机">1.危机</h4>
+<p>2013年年初制定了三个目标，我们完成了其中两个，但另一个指标我们没有完成，就是全年交易额188亿，我们完成了160亿。我觉得这个事情没必要隐瞒，它是什么样就是什么样。</p>
+<p>今天当我展望2014年的时候，我想重点说两个词，第一个词是——“危机”。<strong>如果你希望在一个好的创业公司一路高歌猛进的话，每一年都是关键的一年</strong>，这一句话每一年都是对的。</p>
+<p>虽然我们已经做到了团购市场超过50%市场份额，但是我们做的事情是本地电子商务，我们要的不只是全国的领导位置，我们要的是在每个城市都占有领导位置。</p>
+<p>我们现在占据了50%多市场份额的领域，只是300多亿、400亿的份额，Offline有几万亿，Online只占了1%左右，在这个1%里面，我们只占了50%多，这又算什么呢？</p>
+<p>不管是传统互联网的巨头，还是像万达这样传统商业里的巨头，他们都喊O2O，大家都在往这个行业进入的时候，我们需要做得更好，如果我们不能做得更好，我们就处在一个非常危险的状态。甚至可以毫不夸张地说，<strong>美团这个公司永远离破产只有6个月时间</strong>。</p>
+<p>如果你在另一个公司，它认为它可以高枕无忧的话，那么它离死不远。<strong>这个行业、这个时代、这个世界变化特别快。凡是没有危机意识的公司，不战战兢兢的公司，不管它现在看起来多么强大，都是非常危险的，而且它比那些虽然小，但是始终保持非常警惕状态的公司和人更危险。</strong></p>
+<p>在现在的互联网行业里面，腾讯被认为是最强大的公司，但腾讯的leader马化腾曾经说：<strong>“巨人倒下的时候，身体都可能还是温暖的。</strong>”想要在这个时代、这个行业生存下去，我认为每个人、每个公司都要有这样的危机意识。</p>
+<h4 id="2成长">2.成长</h4>
+<p>第二个词是“成长”。很多问题，正是我们成长太快带来的。单从交易额来看，阿里、京东、小米，没有我们快。</p>
+<p>这样一个<strong>快速成长的环境带来了很多很多问题。因为人的成长是需要时间和机会的</strong>，但公司的业务是每年两倍、三倍成长的时候，会带来很多问题，并不是每个人的每一步都能跟上。</p>
+<p><strong>这时候我们需要轮岗的方式，需要更有耐心的方式，能够更好地解决这个问题</strong>。 </p>
+<h3 id="05-决战之年">05 决战之年</h3>
+<p><strong>王兴：2015年是O2O决战年</strong></p>
+<p>时间：2015年</p>
+<p>背景：O2O泡沫破灭</p>
+<p>5年前，那是在美团正式上线之前，在北京海淀区清华东门的华清嘉园，一个三居室，十几个人开了一个简单的座谈会，那时我们还面临很多困难，在那个会上，不少人落泪了，包括我。</p>
+<p>在2012年，我们<strong>狂开站、狂上单、狂拜访</strong>，这一系列事情做下来，2012年底，美团已经初步确定了我们在团购的优势地位。我相信今天大家可以看到，我们之前坚持每天行进三十公里，三年累积下来我们取得了什么样的成绩。</p>
+<h4 id="1鸵鸟原理追求绝对强大">1.鸵鸟原理（追求绝对强大）</h4>
+<p>在遇到问题时，我觉得不管对个人、团队，对整个公司来讲，有一个很多年前长辈告诉我的道理。</p>
+<p>可能很多人听过鸵鸟原理。火鸡比母鸡要大一些，如果从旁观者的角度来看，确实火鸡比母鸡是要大一圈或者大两圈。但是，母鸡看火鸡，其实会觉得大家差不多，母鸡也是不太服气火鸡比我大的，它觉得你可能就比我大那么一点。</p>
+<p>但是，当一只鸵鸟过来的时候，不管是母鸡还是火鸡，不管它们再不服气，在一个强大的反差面前它们都会认同鸵鸟确实确实比我大。这个道理非常深刻，人和人的对比，团队和团队的对比，公司和公司的对比，这个道理同样存在的。</p>
+<p>所以在早期，可能我们认为我们的价值观比对手更正，我们团队比对手更好，我们的基础比别人更好，对手却不服，不要紧，这个时候争论是没有用的，我们要做的是什么？还是回到根本问题，<strong>消费者第一、商户第二、团队第三、股东第四</strong>，我们有足够的资源，足够好的团队，我们去合作足够多足够好的商户，然后和商户一起去把消费者服务好。如今，美团在全国有两亿多用户，在手机上面美团是仅次于淘宝的最大的电商营销平台，比天猫大，比京东大。所以，只要我们能坚持往前走，坚持走得比对手更快，大家可以看到，曾经认为是我们对手的已经被我们远远的甩在身后。</p>
+<h4 id="2bat进入o2o美团到了该建平台生态的一年">2.BAT进入O2O，美团到了该建平台、生态的一年</h4>
+<p>面对未来的挑战，我认为今年会是O2O真真正正大决战的一年。团购的事情我们占60%的市场份额或者更高一些，但还没有完全的结束。</p>
+<p>在电影这个领域，BAT或者其他各种各样的公司，线上线下他们和我们一样，都在做很多尝试。</p>
+<p>**我认为今年应该是美团重点去建平台、建生态的一年。因为我们需要越来越多的产品服务去满足用户的需求，去满足商户的需求，而且不同的产品、不同的业务需要平台。**我们还需要跟外部各种各样的合作伙伴有各种各样的合作方式。所以，今年不管是内部的发展还是外部的发展都需要我们有建平台、建生态的意识。</p>
+<p>我相信今年的竞争会非常激动人心，而建平台、建生态这个事情在今年也是一个开端，是一个非常重要的开端。</p>
+<h4 id="3不要高估两年能发生的变化不要低估十年能发生的变化">3.不要高估两年能发生的变化，不要低估十年能发生的变化</h4>
+<p>我相信比尔·盖茨的话，他说得非常对，“人们总是倾向于高估两年能发生的变化，但是低估十年能发生的变化”（We always overestimate the change that will occur in the next two years and underestimate the change that will occur in the next ten years），五年也是如此，特别是在这个时代，两年看起来是很长的时间，而五年基本上回头看，我相信所有人都会同意发生的变化比大家想象的更多。</p>
+<h3 id="06-互联网下半场">06 互联网下半场</h3>
+<p><strong>王兴：2016年回归服务根本、下半场</strong></p>
+<p>时间：2016年</p>
+<p>背景：美团点评刚完成合并</p>
+<p>2015年是中国互联网历史上一个非常特殊的年份。这一年发生了很多互联网公司的合并，包括滴滴和快的，58和赶集，携程和艺龙、去哪儿。在这个大环境中，美团和大众点评也于2015年10月8号宣布合并。</p>
+<h4 id="1消费者第一商户第二">1.消费者第一、商户第二</h4>
+<p>我认为最简单的判断标准就是<u>你觉得某个服务够好吗？你觉得你可以把它推荐给你的家人和朋友吗？</u>如果我们期望真正做好这个事情，成为一个长远有价值、令人尊敬的，大家也乐于在此工作的公司，我们必须解决好这个问题，回答好这个问题，需要确保我们提供的服务，自己是自豪的，我们是有信心推荐给家人、朋友使用的。（这个判断标准）对各行各业也是如此，而且对我们这个行业尤其如此。因为我们提供的不再是一个简单的信息服务，而是实际接触到他们生活方方面面的服务、各种吃喝玩乐，所以回答这个问题的答案就尤其的重要。我们目前最大的业务是到店餐饮，这个巨大的市场还处在初期，几乎可以非常清楚地看到一个大潮即将到来，这个行业将会有巨大变化。在过去一年里，手机买单是往前迈了一步，部分的形成闭环，部分的改进了体验。</p>
+<h4 id="2少谈一点颠覆多谈一点创新">2.少谈一点颠覆，多谈一点创新</h4>
+<p>互联网在中国发展了十几年，已经到达了一个阶段。我想大胆地做一个判断：**纯互联网创业的黄金时代已经过去，“互联网+”这个更大的机会正在到来。**互联网依然会对人们的生活产生广泛剧烈的影响，但它提供的将是“互联网+各个行业”的服务模式。</p>
+<p>要做好这一点的话，<strong>我们要少谈一点颠覆，多谈一点创新</strong>。如果要谈颠覆的话，最需要担心的是我们自己会不会被一个更新的模式颠覆。我们应该多谈一点创新，创<u>新的最终目标是创造价值，降低行业运作成本，提高行业运作效率，提升用户体验</u>。</p>
+<p>2016年，我们要开始构建开放合作的能力。</p>
+<p>最后，如果大家只能记住我今天谈到的一个事情，我希望大家记住的是：<strong>判断我们的服务是否足够好的标准是，我们是否愿意、放心地把它推荐给我们的家人。</strong></p>
+<h4 id="3中国互联网已经进入下半场">3.中国互联网已经进入“下半场”</h4>
+<p>整个中国的互联网也是刚刚进入“下半场”。之前中国互联网的发展，在很大程度上靠的是人口红利。但是现在这个时代已经过去了，智能手机的年销量已经不增长了，总体网民的增长也大幅趋缓。</p>
+<p>这个时候两条路：<strong>开拓海外市场、精耕细作</strong>。对于整个中国互联网的发展而言，需要增长模式的转变，接下来考验的是大家的真功夫。往后看，“互联网＋”要做的是各个行业从上游到下游的产业互联网化，不是仅仅停留在最末端做营销、做交易那一小段，而是真正能够用互联网、用IT全面提升整个行业的效率。我之前说过“少谈一些颠覆，多谈一些创新”，我认为整天讲“颠覆”是没有意义的，“互联网＋”根本上还是要靠创新服务于各行各业，靠互联网、靠IT技术为各行各业的各个环节提升体验、提高效率、降低成本。</p>
+<p>如果以此为目标，那“互联网＋”需要的能力和之前就不太一样了。之前我们的发展基本还是“上半场模式”，就是猛抓用户、猛接商户，然后做“营销交易”这比较薄的一层。现在进入“下半场”的时候，就需要新的能力，之前我们并没有太多的积累，只能说有一些探索。但总体看，这种积累是有限的，目前我们还没有很完整的深入行业的能力，当然这对我们是巨大的挑战。</p>
+<p>与此同时，我们也要看到，这对我们而言也是机遇，因为绝大部分互联网公司目前也没有这个能力，尤其是一些互联网巨头，他们也没有这方面的能力，甚至某些巨头由于历史原因，更难具备这样的能力，这对我们而言是个好事情。</p>
+<h3 id="07-tob供给侧">07 ToB，供给侧 </h3>
+<p><strong>王慧文：我对宏观经济和产业的判断</strong></p>
+<p>时间：2017年2月</p>
+<p>背景：互联网红利殆尽</p>
+<p>下半场是几个层面，一个是我们美团点评这家公司要进入下半场，一个是互联网和移动互联网这个行业我们认为要进入下半场，一个是中国的产业、中国的经济要进入下半场，全球的经济和政治，我们认为也要进入下半场。</p>
+<h4 id="1宏观经济背景对企业精细化经营的要求">1.宏观经济背景对企业精细化经营的要求 </h4>
+<p>我举一个例子，你们就知道宏观有多重要了。 </p>
+<p>大家知道人在这个地球上已经生存了很多年了，但是在人的生存环境里面有很多东西是非常根本性的东西，只不过在地球上这么多年没怎么变，所以，大家不觉得。比如说空气，比如说水，还有一个比较重要的就是温度。</p>
+<p>人生存对温度有多敏感呢？就是人的大脑，温度上限是42度，如果人的大脑的温度超过42度，人的大脑里面的用来思考记忆的那一部分蛋白质就发生化学反应了。一旦发生化学反应，就永远不可逆，就变成了一个没有生命力的固态物体，就变成痴呆。</p>
+<p>现在很少人看到这种情况，要年纪稍微大一点的人，可能有人说这个人发烧烧痴呆了，发烧烧痴呆了就是大脑超过42度以后，那部分蛋白质发生化学反应。所以，这是人大脑的温度上限。人心脏的对温度也比较敏感，人心脏的温度下限据我了解应该是35度，心脏如果低于35度，就停了，就不泵血了。</p>
+<p>所以，人生存的那个温度带其实非常窄，那这个窄的温度带在整个宇宙里面大概是一个什么水平呢？就是地球离太阳的距离如果变近1%，如果变远了1%，1%就超出那个温度带了，人就没了，整个人类社会就没了。</p>
+<p><strong>宏观一小点点的波动，其实对于微观，对于我们每个生存的实体，我们的人类，我们的企业都是致命的打击，致命的伤害，所以我们这家企业是极度关注宏观的一家企业</strong>。</p>
+<p>2013年的时候，当时有两个概念非常火，<u>一个是O2O，一个是互联网思维。这</u>两个词都火的一塌糊涂，非常巧的是，我在那个时间点去美国搜索O2O和互联网思维的相关资料，发现一个让我非常震惊的事情，这两个词都是中国人造出来的。</p>
+<p>中国人创新能力还挺强，中国人创新的事，中国人不知道自己在创新。美国人真正知道O2O这个词，是怎么知道的呢？是李彦宏说他要花200亿进入O2O这个市场，然后美国资本市场就问，什么是O2O，怎么出现一个O2O的东西，李彦宏要花200亿？美国人完全蒙了：突然出来一个叫O2O的东西，然后一个市值五六百亿美金的公司说要花一半的资金干这个事情，这到底是一个什么事情。</p>
+<p>所以，当时李彦宏花了大量的时间跟他们解释什么是O2O。所以，我们在国内搞了很长时间的O2O，真正把O2O出口到美国的主要就是Robin（李彦宏）。</p>
+<p>所以O2O这个词是中国传播到美国去的，是中国人在教育美国人。我们在世界科技领域的创新里面第一次领先全世界了。回来观察中国的情况。我发现了一个让我非常震惊的事情，O2O这个词不仅是在互联网圈内，投资界、媒体火，而且出现了一个新现象，在传统行业非常火。<u>而且在传统行业比互联网科技和媒体圈还火</u>，这是中国互联网上的第一次。</p>
+<p>中国互联网历史上所有的新概念，新名词的传播规律都是什么？都是投资圈、媒体圈和互联网圈、创业圈先火，火完了之后，然后才是传统行业有选择的跟进。也就是这个传播过去一直是这样一个路径，但是在O2O这个词火的时候，路径反过来了，传统行业这帮人比我们还热衷。</p>
+<p>而且很有意思的是在O2O之前，我去参加所有的互联网会议，很少见到传统行业的人来参加。即便来参加，他们也说是来学习的。O2O这个词火了之后，发现很多传统行业的人来参加，而且他们也在大谈O2O。而且很有意思的是，我们说到底什么是O2O，他给我解释半天，发现两个人说得还不太一样。</p>
+<p>这就是2012年、2013年发生在中国一个非常奇葩的事情。那么到底是什么导致O2O这个词在中国这么火呢？在中国传统行业这么火呢？其实原因非常简单，2012年发生的事情，2012年中国的自有服装品牌都出现了大规模的整个全行业的库存积压。服装行业的库存积压是非常恐怖的，基本上出不了就倒闭。</p>
+<p>那服装行业为什么在2012年出现库存积压呢？中国的服装品牌基本上都是在90年代成立的，在过去的这些年，他们活的太滋润了，他们活的方法太简单了。</p>
+<p>服装企业基本上就做几件事这个公司就能成，第一，在央视打广告。第二，扩张发展开店。</p>
+<p>但是变化出现了。<strong>第一，新一代的90后成为消费主体的时候</strong>，他们的个人追求跟我们这一代，不是不一样，是走到了完全相反的方向。<strong>第二，消费者的注意力从电视里走出</strong>，玩游戏，在网上看小说，在网上看视频。传播消费者消费的注意力的平台发生了变化。</p>
+<h4 id="2很多你们想象不到的公司会死掉"><strong>2.很多你们想象不到的公司会死掉</strong></h4>
+<p>而现在2012年之后，互联网公司终于可以在A股上市了。</p>
+<p>比如说暴风影音，某企业，全都鸡犬升天，估值高的一塌糊涂。我当时就问了投行的人，我说怎么出现这种情况，估值怎么这么高呢？投行的人给了我一个答复，我认为这个答案是非常深刻的。他说你觉得估值高对不对？那我问你一个问题，你去看一下传统企业他们的增长评估。</p>
+<p>比如说你看美国，某著名连锁餐饮品牌的增长率是多少你知道吗？</p>
+<p> 2%。</p>
+<p>资本市场有非常多的钱，但是传统行业又不涨。**钱没有地方可去的时候，就是有个人跟他讲一个可能性，他都愿意去掏钱。**因为传统行业是没有可能性了，是注定死亡，所以钱就不会去了。</p>
+<p>钱可投资的标的变少了，比如说，欧洲多个经济体出现了负利率。整个互联网在A股被炒上天了。某企业的老板跟我说他完全没有想到他能上市，他感觉这家公司都快倒闭了，他在A股上市是700亿人民币，对应100亿美金。这是中国2012年、2013年发生的事情，整个中国传统经济走到2012年、2013年的时候，掉了一个非常深的坑。其实从那之后，会出现互联网的泡沫，在2014年、2015年出现了非常大的互联网泡沫，原因非常简单。</p>
+<p>就是当整个传统经济都不涨的时候，钱没有地方可去，所以他们就开始投互联网，大家不懂市场，网民、投资人都不懂互联网市场。因为钱没有地方可去，这时候看互联网公司都做得很好，就投资互联网。一开始在二级市场买股票，就在A股买股票。</p>
+<p>后来发现在A股买股票，股票没啥买，就不去A股买了，咱们去买没上市公司的股票。所以，他们组基金，人民币组基金买没上市公司的股票。没上市公司的股票过了一段价格也搞上去了，公司融资是天使ABCDE轮，然后一直往下，最后上市。</p>
+<p>所以，就会出现一个公司还什么都没有，刚起一个团队，估值就2亿美金了。光一个团队刚开始就2亿美金了。</p>
+<p>走到2015年到2016年，整个互联网和移动互联网出现了新的症状。</p>
+<p><strong>第一，从互联网到移动互联网的转型基本完成了，智能手机用户量不怎么增加了</strong>。事实上整个移动互联网的体量就是几个数乘起来的，一是手机数，二是手机上的APP数，三是每个APP的使用时长，就这几个数乘出来的。所以最大的第一个数手机数没了。</p>
+<p>第二，我们观察到了一种非常可怕的现象，用户在手机上，过去一段时间里是不断地装APP，现在在不断地删APP。</p>
+<p><strong>我们给非常牛逼的投资人做了非常广泛的调研，只有11个APP能稳定在留在消费者手机上</strong>。</p>
+<p>所以最近一段时间大家看风投都不投钱了，因为没有新兴公司出来能拿到钱。还有一个非常恐怖的，在互联网时代，因为它是浏览器模式使用网站，所以用浏览器打开一个网站的时候，是从一个网站跳转到另外一个网站的门槛是非常低的，很多时候你都不知道你跳到另外一个网站，随便一点链接就跳过去了，这是其一。</p>
+<p>其二，有搜索引擎这么奇葩的东西，可以把用户的流量分发到各个网站上去，<u>但是到了移动互联网时代里面，你想从一个APP跳到另外一个APP，门槛是非常高的，大量的APP之间是不支持跳转的</u>。因为不支持跳转，导致用户都被留在一个APP上去了，因为没有这种搜索引擎的分布式、去中心化的流量分发渠道，现在在移动互联网上的流量分发渠道，APP你要不下载怎么办？只有两个途径，<u>一是买电子市场排名，二是买手机厂商预装。只有这两个选择，这两个渠道能推的量非常非常少，所以马太效应非常强。</u></p>
+<p>手机厂商业务不涨的时候就要赚钱，赚钱怎么赚呢？因为消费者买了手机，手机就那么贵，他赚钱的方式就是向预装和电子市场要做推广的人收费，而且每年涨得非常厉害。</p>
+<p>我们估测2017年预装费和电子市场费用会比2016年涨30%，这些要素加在一起，对移动互联网公司来说是非常恐怖的，<strong>第一，手机数不涨了，第二，消费者的卸载，第三，推广费用涨30%</strong>。所以整个中国移动互联网在2016年我认为就是一个分水岭，未来中国的移动互联网，明年移动互联网会非常惨烈，很多你们想象不到的公司会死掉。</p>
+<h4 id="3to-b">3.To B </h4>
+<p>企业发展是三个阶段，是<strong>市场驱动发展、领导力驱动发展和创新驱动发展</strong>。全球、中国的互联网的话，全球经济、中国经济和互联网经济都是同一个问题就是市场驱动的发展结束了。</p>
+<p>市场驱动的发展有另外一个词叫红利，全球经济体在过去这些年的红利就是<strong>全球化</strong>和<strong>科技</strong>。</p>
+<p><u>糟糕的是，从2012年到现在为止，这两个引擎熄火了，科技已经很久没有突破了，如果科技在未来的十年里没有突破，未来的二十年就一定会有战争。</u></p>
+<p>Peter Thiel在二零零几年的时候就说到我们的科技很久没有突破了，我们要出问题了。</p>
+<p>中国经济在过去一段时间市场红利第一是<strong>人口红利</strong>，第二是<strong>房地产</strong>，第三是<strong>消费</strong>。糟糕的是，这三个驱动力都没了，因为我们的房地产老涨，出口的红利没了，人口红利没了，我们现在人口老龄化非常严重，人口红利没了。我们的劳动力在飞快地减少。</p>
+<p>互联网也是一样，过去这些年，全都靠网民增长，靠CPU速度变快，互联网的第一大红利是<strong>网民增长</strong>，第二大增长是<strong>摩尔定律</strong>，现在网民增长到头了，所以市场红利全都结束了，红利期结束。</p>
+<p>在面临这些问题的时候，<strong>如果按照企业发展三段论的话，应该从市场驱动切换到领导力驱动和创新驱动</strong>。</p>
+<p>如果看领导力驱动和创新驱动这两个解药的话，这两个方案里面，欧洲都已经用过了，欧洲他们已经非常发达了，创新也没了，所以欧洲是无解了。美国还有几年，因为美国没有把它自己的牌拿过来，所以美国应该问题不太大，欧洲注定要完蛋了，你们如果心怀梦想打算去欧洲旅游的话尽早去，晚了可能去了就有生命安全问题了。现在就已经有了，巴黎已经是一个很危险的城市了。</p>
+<p>供给侧改革。整个产业都是两部分，一部分是需求侧，一部分是供给侧，需求侧就是消费者和市场，供给侧就是企业和供应商，就是商家。做哪些变化呢？<strong>效率提升，成本降低，创新业务，提升用户体验</strong>。我在2013年的时候做了一个事，美国科技界或者互联网圈的资本市场、科技业和互联网信息产业，美国的上市公司，我把它拉了一个名单，中国也拉一个名单，事实上中国从总体上来说发展是跟着美国走的，因为美国可能很多创新技术先到了，所以我当时看说有哪些产业在美国已经产生了很牛逼的公司在中国还没被真正做起来，而且这个产业将来如果时机具备的话也会在中国是很牛逼的公司。</p>
+<p>这个方法论非常简单，我就把美国拉一个名单，把中国拉一个名单，来对比，我这个对比完了之后发现一个让我非常震惊的事，美国的互联网公司，很牛逼的比如Facebook、Google、亚马逊，都是非常牛逼的，但是美国上市的科技公司里还有另外一派，也非常牛逼，只不过是这一派没有像互联网公司这种曝光多，名气大。</p>
+<p>但是这一派其实都很挣钱，比如说Salesforce，他们基本占据科技业的另外一半，在科技业的一半是toC的公司，他们占了一半的市值，在2012、2013年的时候，to B的这些公司占了另外一半市值，比如说Oracle，他们占了另外一半市值。所以其实还有很多很牛逼的公司，但是我们把这个来看中国的话发现中国to C的公司都很牛逼，最大的是阿里，然后是腾讯、百度，to B的公司居然找不到，就是说有活着的，但是活得很惨。</p>
+<p>所以我就很纳闷，为什么中国这些to B的企业活这么惨呢？我就找了一些我认为比较有真知灼见的人交流，其中有一个人还是比较牛逼的，给了我一个答案，我认为这个答案是比较真实的，他说你看这是美国的toB科技企业做出来的，都是给企业或者给商家提供解决方案的。</p>
+<p>我刚才说的Salesforce是销售团队管理解决方案，Workday是HR解决方案，都是给企业和商家提供解决方案的。为什么这些提供解决方案的公司在美国活得很好，在中国活得不好呢？原因非常简单，就是美国这个国家商业周期非常长，因为商业周期长，所以任何一个企业所有能用来竞争和发展的东西基本上都用光了，他们的发展出现瓶颈了，当他们出现瓶颈的时候就开始搞内部提高效率，降低成本，创新服务。而他们要搞内部提高效率、降低成本、创新服务的时候，他们没有这些技术支持做不了，所以说白了就是<strong>美国的企业在过去这些年率先遇到了市场红利枯竭的状态，因为遇到市场红利枯竭，它就要寻求自己的效率成本和创新，它要寻求自身的效率成本和创新的时候就对各种新式的能提高效率降低成本的各种工具开始产生兴趣</strong>。</p>
+<p>而过去中国这些年是什么情况呢？傻逼经营一个企业都能赚钱，这么说好像我们比傻逼还不如，我们还亏钱呢，我们是战略性亏损。中国过去这些年实在是赚钱太容易了，大部分人存在的问题是不具备可能知道这个事情很容易赚钱的认知或者不具备进入这个行业的资本，其实中国过去很多行业是极其赚钱的，非常多。</p>
+<p>过去这些年整个中国市场、中国企业的发展特别容易，靠市场红利驱动就能发展，就能赚钱，所以他们对于新工具、新方法的采用意愿特别特别低。</p>
+<p>走到今天，我认为这个事情发生变化了，所有的企业，所有的商家的经营因为遇到障碍了，所以当它的销售额不涨、利润不涨。</p>
+<p>最近一段时间里面，我的判断是下一波中国互联网如果想回暖的话，一个非常重要的方向是供应链和to B行业的创新，是他们驱动的。供给侧如果要做改革的话，可能有哪些变化。</p>
+<h3 id="08-上市前夕">08 上市前夕</h3>
+<p><strong>王兴：上天、入地、全球化</strong></p>
+<p>时间：2017年4月</p>
+<p>背景：第二年，美团上市</p>
+<p>三个大方向是最激动人心的，上天、入地、全球化。 </p>
+<h4 id="1上天从商业模式创新到科技创新">1.上天：从商业模式创新到科技创新 </h4>
+<p>二十年前，互联网本身就是高科技，但到今天，多数互联网企业只是传统科技。不管是20多年互联网的发展，还是更长时间接近50年的信息和通信技术的发展，底层都是有它的原理的，这是摩尔定律，65年因特尔创始人之一摩尔提出来，大概半导体的密度，平均每18个月或者24个月翻一番。</p>
+<p>摩尔定律在传统意义上已经到一个相对的固定临界，将来的全球增长的要素，可能是不同的方式，现在总的芯片数量越来越多，因为全世界的能力不外乎整个芯片的计算能力，要看是不是芯片数量的增长，这个有点抽象，在底层跟我们的所有事情都相关。</p>
+<p>每一个人需要很多的芯片，手机、电脑，但是车更多，一辆车近百个芯片，所以会有越来越多的数据，越来越多的计算和需求。</p>
+<p>这里还只是高科技的一部分，我经常跟朋友交流，有一些朋友说，每次去硅谷回来，就觉得我们干的事情很low。</p>
+<p>高科技方面创业，中国会有越来越多的空间，有越来越多的需求，这个创业不太一样，这不再是一个学生在车库里，或者在宿舍里捣鼓几天，就能做出翻天覆地的事情，他可能需要很多底层的积累，还有很大的投入，这个也需要耐心。</p>
+<p>中国互联网有很大的成功，但更多人认为是商业模式的创新，而不是科技的创新，这个在过去是对的，因为中国总体是落后的，现在发展到这个阶段，甚至可能会超越美国，往后可能确实在底层上有很多投入，有很多AI专家说，AI方面国内并不落后，但是还有更多领域是需要更长时间投入的，因为我们说，摩尔定律以外，我们总体人才是在增加，这是需要国家投入的支持。</p>
+<p>高科技是未来五到十年一个很大的驱动力，但是并不是单做，就像互联网跟各行各业结合在一起。 </p>
+<h4 id="2人造肉">2.人造肉</h4>
+<p>或者另一个例子高科技，因为美团是做吃的事情，2017年春节的时候，我看过一家公司，是不可能的食物，是一个教授创始的，当了26年的生物化学教授，他认为人们都喜欢吃肉，我们为了吃肉，需要草，去喂牛羊，他觉得这个效率很低，浪费是很严重的，他觉得应该用科技，把直接的食物蛋白变成动物蛋白，跳过饲养动物这个环节，他做出来了，他现场推出来一个，用他们做出来的肉吃了一下，很好吃，在美国六七家餐厅集中用他们的人造肉的汉堡很好吃。</p>
+<p><strong>这个是一个完全颠覆性的事情，因为牛羊不会进化的</strong>，几万年来，牛肉吃草产生肉的速度基本固定的，进化很慢，<strong>而这家公司用高科技的技术去突破的话，就是革命性的事情，瞬间他会颠覆饲养牛肉的方面，也是更健康的肉</strong>，之前养牛羊，有抗生素，有什么添加剂，他们在实验室里会控制更精确，所以这是跟吃相关的，看起来是最基础的事情，但是有可能是很高科技的突破，当然中国作为最大的农业产品消耗国，我们知道我们在这方面的技术，我觉得这个是很值得关注的。 </p>
+<h4 id="3入地不只是c端要深入b端和产业链">3.入地：不只是C端，要深入B端和产业链</h4>
+<p>创业需要接地气，所谓接地气不光是你触及地下，而是要到达充分养分的地底下去。现在如果你还在C端联系是不够的，这是一个无奈，也是一个现实。</p>
+<p>现在共享单车非常火爆，我觉得回头看，摩拜我相信他们是正确的。真正好的事情，根据客户需求，根据新的场景和模式，你的车从体验上，成本上（来看），我认为创造这样的人，不光需要接地气，还是要陆地。</p>
+<p>以美团为例，餐饮行业大众点评2003年做最早的第三方餐厅评价，美团2011年做团购，2013年做外卖，我们做C端，我们不能停留在连接上，所以在餐饮的B端，服务的各行各业的B端，我们已经做了很多投入，包括餐饮的压力系统，收银系统，也包括酒店里面的系统，在B端，他的PMS，客房管理。</p>
+<h4 id="4全球化中美两强竞争发展中国家机会广阔">4.全球化：中美两强竞争，发展中国家机会广阔 </h4>
+<p>全球互联网在下半场，我认为是中美的竞争，因为互联网最早是美国发明的，二十年后，只有中美两国出了互联网公司，我们看到腾讯非常厉害，已经是光靠中国一个市场，就做到前段时间全球十大。</p>
+<p>但这是不够的，真的放开来看的话，<strong>企业的价值取决于问题价值大小，取决于市场大小，取决于经济体的大小，中国虽然经济体越来越发达，但我们是全世界六分之一的人</strong>，如果只做这个事情，做到头，你也是不如另一部分大，因为美国的强大在于，美国互联网公司不光做美国市场，他做几乎全球的市场，除了中国市场以外，<strong>所以如果中国的企业不能真的很好的走出去，不能更好的服务更大的经济体的话，长期来看是缺乏竞争力的，因为我们回到上天这个事情，高科技是需要高投入的，如果你没有足够大的市场和规模，你就无法有足够大的投入去竞争，长期来看你是没有竞争力的</strong>。</p>
+<p>对比来看，全球化是中国企业很大的机会，也是中国未来必须要做的事情。</p>
+<p>另一方面我觉得有机会的是，虽然在高科技领域，美国比中国强，但是在很多商业模式方面，尤其创新方面，中国已经做出了很多的努力，已经在很多地方领先。</p>
+<p><strong>往海外做，我觉得简单来看是往上做还是往下做，底是人均经济比重更发达的，还是经济比重更落后的，我觉得在座的中国行业都可以尝试</strong>，我们可能更大的机会是在于第三世界国家，发展中国家，跟中国比较类似的国家，或者比中国落后的国家，我们知道那里发生了什么事情，在什么阶段，我们在那个地方更好落地这个事。</p>
+<p>日本的扩展海外，有日本的银行，日本的媒体，日本的企业，他们一起去做，我觉得中国互联网企业也应该如此，因为不可能一个人做出去了，有做分发的，有做电商的，有做金融的，有做O2O的，一起的话会有更强的战斗力，这里我认为是非常好的一个机会，中国现在GDP增速不是那么快，你看印度，东南亚，他们市场也不小，东南亚有六亿人，有中国的一半，这里面他们基础设施比我们落后一点，但也在蓬勃发展，我2016年去了各国看了一下，一个很大的感触，中国大量的人才，很多国家的人才是不够的，他们计算能力是不够的，我觉得这是我看到的互联网下半场最激动的三条，上天、入地、全球化。</p>
+
+    </article>
+    
+    
+<script defer src="/js/clipboard.min.1626706afc88d95ebe1173b553ec732c6dc82a576989315fdf5e7779af738a44.js"></script>
+
+<script defer src="/js/helper/prev.min.js"></script>
+
+<script defer src="/js/helper/prop.min.js"></script>
+<script>
+  'use strict';
+  document.addEventListener('DOMContentLoaded', function () {
+    
+    var clipInit = false;
+    var preChromaElem = document.querySelectorAll('pre.chroma');
+    var langCodeElem = document.querySelectorAll('.language-code');
+    var dollarCodeElem = document.querySelectorAll('div.language-\\$');
+    var gtCodeElem = document.querySelectorAll('div.language-\\>');
+
+    var makeClipboard = function(elem) {
+      var code = elem,
+          text = elem.textContent;
+        
+      if (text.length > 15) {
+        if (!clipInit) {
+          var text, clip = new ClipboardJS('.copy-to-clipboard', {
+            text: function (trigger) {
+              var codeElem = prev(trigger).querySelectorAll('code');
+              if (codeElem.length > 1) {
+                text = prev(trigger).querySelector('code[class^="language-"]').textContent;
+              } else {
+                text = prev(trigger).querySelector('code').textContent;
+              }
+
+              return text.replace(/^\$\s/gm, '');
+            }
+          });
+
+          var inPre;
+          clip.on('success', function (e) {
+            e.clearSelection();
+            inPre = prop(e.trigger.parentNode, 'tagName') == 'PRE';
+            e.trigger.setAttribute('aria-label', 'Copied to clipboard!');
+            e.trigger.classList.add('tooltipped');
+            e.trigger.classList.add('tooltipped-w');
+          });
+
+          clip.on('error', function (e) {
+            inPre = prop(e.trigger.parentNode, 'tagName') == 'PRE';
+            e.trigger.setAttribute('aria-label', e.action.toString());
+            e.trigger.classList.add('tooltipped');
+            e.trigger.classList.add('tooltipped-w');
+          });
+
+          clipInit = true;
+        }
+
+        var notAllowedClass = ['language-mermaid', 'language-viz', 'language-wave', 'language-chart', 'language-msc', 'language-flowchart'];
+        var isNotAllowedIncluded = false;
+        var curClassName = code.getAttribute('class');
+
+        for (var i = 0; i < notAllowedClass.length; i++) {
+          if (curClassName && curClassName.startsWith(notAllowedClass[i])) {
+            isNotAllowedIncluded = true;
+            break;
+          }
+        }
+
+        if (!isNotAllowedIncluded) {
+          if (curClassName) {
+            var newClipboardElem = document.createElement('span');
+            newClipboardElem.setAttribute('class', 'copy-to-clipboard');
+            newClipboardElem.setAttribute('title', 'Copy to clipboard');
+            elem.parentNode.parentNode.insertBefore(newClipboardElem, elem.parentNode.nextElementSibling);
+          }
+        }
+      }
+    }
+
+    var makeSymbolClipboard = function(elem) {
+      var clipboardSpan = document.createElement('span');
+      clipboardSpan.setAttribute('class', 'copy-to-clipboard');
+      clipboardSpan.setAttribute('title', 'Copy to clipboard');
+      elem.parentNode.parentNode.insertBefore(clipboardSpan, elem.parentNode.nextElementSibling);
+    }
+
+    preChromaElem ? 
+    preChromaElem.forEach(function(elem) {
+      elem.querySelectorAll('code').forEach(function(codeElem) {
+        makeClipboard(codeElem);
+      });
+    }) : null;
+    
+    langCodeElem ? 
+    langCodeElem.forEach(function(elem) {
+      elem.querySelectorAll('code').forEach(function (codeElem) {
+        makeClipboard(codeElem);
+      });
+    }) : null;
+
+    dollarCodeElem ? 
+    dollarCodeElem.forEach(function(elem) {
+      elem.querySelectorAll('code').forEach(function (codeElem) {
+        makeSymbolClipboard(codeElem);
+      });
+    }) : null;
+
+    gtCodeElem ?
+    gtCodeElem.forEach(function(elem) {
+      elem.querySelectorAll('code').forEach(function (codeElem) {
+        makeSymbolClipboard(codeElem);
+      });
+    }) : null;
+    
+  });
+</script>
+    <script>
+  'use strict';
+  
+  function wrap(el, wrapper) {
+    el.parentNode.insertBefore(wrapper, el);
+    wrapper.appendChild(el);
+  }
+
+  (function () {
+    var singleContentsElem = document.querySelector('.single__contents');
+    singleContentsElem ? 
+    singleContentsElem.querySelectorAll('pre > code').forEach(function(elem) {
+      var dataLang = elem.getAttribute('data-lang');
+      var dataLangWrapper = document.createElement('div');
+      var code = null;
+      var codeTitle = null;
+
+      if (dataLang && dataLang.includes(':')) {
+        code = dataLang.split(':')[0];
+        codeTitle = dataLang.split(':')[1];
+
+        dataLangWrapper.className = 'language-' + code;
+        dataLangWrapper.setAttribute('data-lang', codeTitle);
+
+        elem.className = 'language-' + code;
+        elem.setAttribute('data-lang', codeTitle);
+        elem.setAttribute('id', codeTitle);
+      } else if (!dataLang) {
+        dataLangWrapper.setAttribute('data-lang', 'Code');
+        dataLangWrapper.className = 'language-code';
+      }
+
+      if (!dataLang || codeTitle) {
+        wrap(elem.parentNode, dataLangWrapper);
+      }
+
+    }) : null;
+  })();
+
+  var langCodeElem = document.querySelectorAll('.language-code');
+  langCodeElem ? langCodeElem.forEach(function (elem) {
+    var newElem = document.createElement('span');
+    newElem.className = 'copy-to-clipboard';
+    newElem.setAttribute('title', 'Copy to clipboard');
+    elem.append(newElem);
+  }) : null;
+  
+
+  
+
+  
+  var dollarCodeElem = document.querySelectorAll('div.language-\\$');
+  var gtCodeElem = document.querySelectorAll('div.language-\\>');
+
+  dollarCodeElem ?
+  dollarCodeElem.forEach(function(elem) {
+    var lnts = elem.parentNode.parentNode ? elem.parentNode.parentNode.querySelectorAll('.lnt') : null;
+    lnts ? 
+    lnts.forEach(function(lnt) {
+      lnt.innerHTML = '$<br/>';
+    }) : null;
+  }) : null;
+
+  gtCodeElem ?
+  gtCodeElem.forEach(function(elem) {
+    var lnts = elem.parentNode.parentNode ? elem.parentNode.parentNode.querySelectorAll('.lnt') : null;
+    lnts ? 
+    lnts.forEach(function(lnt) {
+      lnt.innerHTML = '><br/>';
+    }) : null;
+  }) : null;
+  
+</script>
+    
+
+    
+    
+<div class="whoami__gutter"></div>
+<hr class="hr-slash whoami-hr"/>
+<section class="whoami">
+  <div class="whoami__image-wrapper">
+    
+    
+      
+        <img data-src="/images/whoami/avatar.jpg" src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%23aaa' d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4.44-6.19l-2.35 3.02-1.56-1.88c-.2-.25-.58-.24-.78.01l-1.74 2.23c-.26.33-.02.81.39.81h8.98c.41 0 .65-.47.4-.8l-2.55-3.39c-.19-.26-.59-.26-.79 0z'/%3E%3C/svg%3E" alt="VictorHong" class="lazyload whoami__image"/>
+      
+    
+  </div>
+  <div class="whoami__contents">
+    <div class="whoami__written-by">
+      WRITTEN BY
+    </div>
+    <div class="whoami__title">
+      
+        VictorHong
+      
+    </div>
+    <div class="whoami__desc">
+      
+        📚Learner🤓Nerd🌐Developer 努力做有价值的事情
+      
+    </div>
+    <div class="whoami__social">
+      
+      
+      <a href="https://blog.csdn.net/weixin_41263449" title="csdn" aria-label="csdn">
+        <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25"><path fill="currentColor" d="M11.705 9.681l-.03.247c-.035.288-.3.484-.585.439-.47-.081-1.135-.151-1.64-.151-.765 0-1.16.267-1.19.56-.035.368.365.389 1.355.681 1.345.378 1.935.913 1.855 1.741C11.38 14.172 10.31 15 8.165 15c-.655 0-1.24-.096-1.675-.222-.24-.066-.395-.293-.37-.545l.035-.288c.045-.232.25-.404.49-.404.035 0 .065.005.095.01.01 0 1.057.237 1.61.202.808-.051 1.26-.247 1.3-.636.03-.353-.3-.404-1.22-.646-1.265-.343-2.075-.878-1.995-1.731C6.53 9.752 7.72 9 9.555 9 10.2 9 10.83 9.035 11.3 9.121 11.56 9.167 11.74 9.414 11.705 9.681zM18.79 9.814c.019-.223.184-.409.404-.45 4.533-.849 4.929.926 4.782 2.502l-.241 2.54c-.024.257-.24.453-.498.453h-.546c-.295 0-.526-.254-.498-.547l.207-2.182c.056-.601.405-1.776-1.281-1.732-.186.005-.343.017-.469.032-.235.027-.414.218-.433.455-.021.255-.05.595-.083.88l-.251 2.642c-.024.257-.24.453-.498.453h-.514c-.296 0-.527-.255-.498-.549l.247-2.501L18.79 9.814zM17.115 9.846c-.615-.5-1.611-.696-2.84-.735-.531-.017-1.087.024-1.265.05-.192.029-.345.19-.385.38-.01.035-.015.07-.015.11l-.43 4.635c-.03.275.17.52.44.545.425.045.91.065 1.41.065 1.205 0 2.005-.18 2.64-.59.695-.44 1.17-1.15 1.265-2.16C18.035 11.056 17.665 10.306 17.115 9.846zM16.435 12.106c-.085.935-.955 1.605-2.185 1.605-.305 0-.46-.025-.58-.05l.3-3.355c.125-.025.36-.025.525-.025C15.795 10.271 16.565 10.746 16.435 12.106zM5.367 14.461c-.021.227-.19.41-.415.448C4.623 14.966 4.163 15 3.595 15c-2.427 0-3.737-1.254-3.583-2.913C.198 10.112 2.139 9 4.264 9c.559 0 .961.034 1.304.093.259.045.437.286.408.547L5.941 9.965c-.031.283-.292.487-.573.439-.326-.055-.724-.093-1.071-.093-1.25 0-2.312.41-2.434 1.707-.109 1.16.637 1.714 2.044 1.714.271 0 .614-.024.922-.064.318-.041.592.222.562.541L5.367 14.461z"/></svg>
+      </a>
+      
+      
+      
+      
+      
+      
+      
+      <a href="mailto:1427298682@qq.com" title="email" aria-label="email">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-.4 4.25l-7.07 4.42c-.32.2-.74.2-1.06 0L4.4 8.25c-.25-.16-.4-.43-.4-.72 0-.67.73-1.07 1.3-.72L12 11l6.7-4.19c.57-.35 1.3.05 1.3.72 0 .29-.15.56-.4.72z"/></svg>
+      </a>
+      
+      
+      
+      
+      
+      
+      
+      <a href="https://github.com/redisread/" title="github" aria-label="github">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" viewBox="0 0 24 24" version="1.1">
+<g id="surface3680">
+<path fill="currentColor" d="M 10.898438 2.101562 C 6.300781 2.601562 2.601562 6.300781 2.101562 10.800781 C 1.601562 15.5 4.300781 19.699219 8.398438 21.300781 C 8.699219 21.398438 9 21.199219 9 20.800781 L 9 19.199219 C 9 19.199219 8.601562 19.300781 8.101562 19.300781 C 6.699219 19.300781 6.101562 18.101562 6 17.398438 C 5.898438 17 5.699219 16.699219 5.398438 16.398438 C 5.101562 16.300781 5 16.300781 5 16.199219 C 5 16 5.300781 16 5.398438 16 C 6 16 6.5 16.699219 6.699219 17 C 7.199219 17.800781 7.800781 18 8.101562 18 C 8.5 18 8.800781 17.898438 9 17.800781 C 9.101562 17.101562 9.398438 16.398438 10 16 C 7.699219 15.5 6 14.199219 6 12 C 6 10.898438 6.5 9.800781 7.199219 9 C 7.101562 8.800781 7 8.300781 7 7.601562 C 7 7.199219 7 6.601562 7.300781 6 C 7.300781 6 8.699219 6 10.101562 7.300781 C 10.601562 7.101562 11.300781 7 12 7 C 12.699219 7 13.398438 7.101562 14 7.300781 C 15.300781 6 16.800781 6 16.800781 6 C 17 6.601562 17 7.199219 17 7.601562 C 17 8.398438 16.898438 8.800781 16.800781 9 C 17.5 9.800781 18 10.800781 18 12 C 18 14.199219 16.300781 15.5 14 16 C 14.601562 16.5 15 17.398438 15 18.300781 L 15 20.898438 C 15 21.199219 15.300781 21.5 15.699219 21.398438 C 19.398438 19.898438 22 16.300781 22 12.101562 C 22 6.101562 16.898438 1.398438 10.898438 2.101562 Z M 10.898438 2.101562 "/>
+</g>
+</svg>
+
+      </a>
+      
+      
+      
+      
+      
+      
+      
+      <a href="https://www.instagram.com/jiahong.wu.581/" title="instagram" aria-label="instagram">
+        <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="25" height="25"><path fill="currentColor" d="M 11.46875 5 C 7.917969 5 5 7.914063 5 11.46875 L 5 20.53125 C 5 24.082031 7.914063 27 11.46875 27 L 20.53125 27 C 24.082031 27 27 24.085938 27 20.53125 L 27 11.46875 C 27 7.917969 24.085938 5 20.53125 5 Z M 11.46875 7 L 20.53125 7 C 23.003906 7 25 8.996094 25 11.46875 L 25 20.53125 C 25 23.003906 23.003906 25 20.53125 25 L 11.46875 25 C 8.996094 25 7 23.003906 7 20.53125 L 7 11.46875 C 7 8.996094 8.996094 7 11.46875 7 Z M 21.90625 9.1875 C 21.402344 9.1875 21 9.589844 21 10.09375 C 21 10.597656 21.402344 11 21.90625 11 C 22.410156 11 22.8125 10.597656 22.8125 10.09375 C 22.8125 9.589844 22.410156 9.1875 21.90625 9.1875 Z M 16 10 C 12.699219 10 10 12.699219 10 16 C 10 19.300781 12.699219 22 16 22 C 19.300781 22 22 19.300781 22 16 C 22 12.699219 19.300781 10 16 10 Z M 16 12 C 18.222656 12 20 13.777344 20 16 C 20 18.222656 18.222656 20 16 20 C 13.777344 20 12 18.222656 12 16 C 12 13.777344 13.777344 12 16 12 Z"/></svg>
+      </a>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </div>
+  </div>
+</section>
+<hr class="hr-slash whoami-hr" />
+
+
+    <section class="related">
+    
+    
+    <h1 class="related__title">
+      <hr class="hr-dots"/>
+      <div>
+        See Also
+      </div>
+      <hr class="hr-dots"/>
+    </h1>
+    <ul class="related-ul">
+        
+        <li>
+          <a href="/en/zh/talks/%E9%9B%B6%E5%94%AE%E7%A7%91%E6%8A%80/" class="related__link">美团-零售&#43;科技</a>
+        </li>
+        
+    </ul>
+    
+  </section>
+    <div class="grow"></div>
+<nav class="pagination-single">
+  
+    
+      <a href="https://hugo.jiahongw.com/en/zh/talks/%E9%9B%B6%E5%94%AE%E7%A7%91%E6%8A%80/" class="pagination-single__left">
+        <div class="pagination-single__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M19 11H7.83l4.88-4.88c.39-.39.39-1.03 0-1.42-.39-.39-1.02-.39-1.41 0l-6.59 6.59c-.39.39-.39 1.02 0 1.41l6.59 6.59c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L7.83 13H19c.55 0 1-.45 1-1s-.45-1-1-1z"/></svg>
+        </div>
+        <div class="pagination-single__left-title">美团-零售&#43;科技</div>      
+      </a>
+    
+    <div class="grow"></div>
+    
+  
+</nav>
+    
+  
+    <div id="utterances"></div>
+<noscript>Please enable JavaScript to view the <a href="https://github.com/utterance">comments powered by utterances.</a></noscript>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    function checkTheme(local, base) {
+      var currentTheme = local || base;
+
+      if (currentTheme === "dark") {
+        return "photon-dark";
+      } else if (currentTheme === "hacker") {
+        return "photon-dark";
+      } else if (currentTheme === "kimbie") {
+        return "github-dark-orange";
+      } else {
+        return "github-light";
+      }
+    }
+
+    try {
+      
+      var owner = JSON.parse("\"redisread\"");
+      
+      var repo = JSON.parse("\"redisread.github.io\"");
+      
+      var baseTheme = JSON.parse("\"dark\"");
+      var localTheme = localStorage.getItem('theme');
+      var utterTheme = checkTheme(localTheme, baseTheme);
+      var myScript = document.createElement('script');
+      myScript.setAttribute('src', 'https://utteranc.es/client.js');
+      myScript.setAttribute('repo', `${owner}/${repo}`);
+      myScript.setAttribute('issue-term', 'pathname');
+      myScript.setAttribute('theme', utterTheme);
+      myScript.setAttribute('crossorigin', 'anonymous');
+      myScript.setAttribute('async', '');
+      myScript.onload = function() {
+      }
+
+      
+
+      document.getElementById('utterances').appendChild(myScript);
+    } catch (err) {
+      console.log(err);
+    }
+  });
+</script>
+
+<div id="comments-fallback" class="viaemail">
+    <div class="utterances__message">
+        
+        <a href="https://github.com/redisread/redisread.github.io/issues/" target="_blank" rel="noreferrer">&nbsp;</a>
+    </div>
+</div>
+
+  
+
+    <div class="modal micromodal-slide" id="modal" aria-hidden="true">
+  <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+    <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      
+      <div class="modal__content" id="modal-content">
+        <div id="mySwipe" class="swipe">
+          <div class="swipe-wrap">
+          </div>
+        </div>
+      </div>
+
+      <span class="modal__items">
+        
+        <span class="modal__header">
+          <div class="modal__paging" title="Page Info" aria-label="Current Page">
+          </div>
+          <div class="modal__icon modal__toolbar modal__toolbar--close" title="Close" aria-label="Close Button" data-micromodal-close>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" width="25" height="25"><path fill="currentColor" d="M 21.734375 19.640625 L 19.636719 21.734375 C 19.253906 22.121094 18.628906 22.121094 18.242188 21.734375 L 13 16.496094 L 7.761719 21.734375 C 7.375 22.121094 6.746094 22.121094 6.363281 21.734375 L 4.265625 19.640625 C 3.878906 19.253906 3.878906 18.628906 4.265625 18.242188 L 9.503906 13 L 4.265625 7.761719 C 3.882813 7.371094 3.882813 6.742188 4.265625 6.363281 L 6.363281 4.265625 C 6.746094 3.878906 7.375 3.878906 7.761719 4.265625 L 13 9.507813 L 18.242188 4.265625 C 18.628906 3.878906 19.257813 3.878906 19.636719 4.265625 L 21.734375 6.359375 C 22.121094 6.746094 22.121094 7.375 21.738281 7.761719 L 16.496094 13 L 21.734375 18.242188 C 22.121094 18.628906 22.121094 19.253906 21.734375 19.640625 Z"/></svg>
+          </div>
+          <div class="modal__icon modal__toolbar modal__toolbar--full" title="Full Screen" aria-label="Full Screen Button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25"><path fill="currentColor" d="M 5 3 C 3.9069372 3 3 3.9069372 3 5 L 3 8 A 1.0001 1.0001 0 1 0 5 8 L 5 5 L 8 5 A 1.0001 1.0001 0 1 0 8 3 L 5 3 z M 16 3 A 1.0001 1.0001 0 1 0 16 5 L 19 5 L 19 8 A 1.0001 1.0001 0 1 0 21 8 L 21 5 C 21 3.9069372 20.093063 3 19 3 L 16 3 z M 3.984375 14.986328 A 1.0001 1.0001 0 0 0 3 16 L 3 19 C 3 20.093063 3.9069372 21 5 21 L 8 21 A 1.0001 1.0001 0 1 0 8 19 L 5 19 L 5 16 A 1.0001 1.0001 0 0 0 3.984375 14.986328 z M 19.984375 14.986328 A 1.0001 1.0001 0 0 0 19 16 L 19 19 L 16 19 A 1.0001 1.0001 0 1 0 16 21 L 19 21 C 20.093063 21 21 20.093063 21 19 L 21 16 A 1.0001 1.0001 0 0 0 19.984375 14.986328 z"/></svg>
+          </div>
+          <div class="modal__icon modal__toolbar modal__toolbar--normal" title="Normal Screen" aria-label="Normal Screen Button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="25" height="25"><path fill="currentColor" d="M 16.96875 4.972656 C 15.867188 4.988281 14.984375 5.894531 15 7 L 15 15 L 7 15 C 6.277344 14.988281 5.609375 15.367188 5.246094 15.992188 C 4.878906 16.613281 4.878906 17.386719 5.246094 18.007813 C 5.609375 18.632813 6.277344 19.011719 7 19 L 19 19 L 19 7 C 19.007813 6.460938 18.796875 5.941406 18.414063 5.558594 C 18.03125 5.175781 17.511719 4.964844 16.96875 4.972656 Z M 32.96875 4.972656 C 31.921875 4.988281 31.0625 5.8125 31.003906 6.859375 C 31 6.90625 31 6.953125 31 7 L 31 19 L 43 19 C 43.066406 19 43.132813 19 43.199219 18.992188 C 44.269531 18.894531 45.070313 17.972656 45.015625 16.902344 C 44.964844 15.828125 44.074219 14.988281 43 15 L 35 15 L 35 7 C 35.007813 6.460938 34.796875 5.941406 34.414063 5.558594 C 34.03125 5.175781 33.511719 4.964844 32.96875 4.972656 Z M 7 31 C 6.277344 30.988281 5.609375 31.367188 5.246094 31.992188 C 4.878906 32.613281 4.878906 33.386719 5.246094 34.007813 C 5.609375 34.632813 6.277344 35.011719 7 35 L 15 35 L 15 43 C 14.988281 43.722656 15.367188 44.390625 15.992188 44.753906 C 16.613281 45.121094 17.386719 45.121094 18.007813 44.753906 C 18.632813 44.390625 19.011719 43.722656 19 43 L 19 31 Z M 31 31 L 31 43 C 30.988281 43.722656 31.367188 44.390625 31.992188 44.753906 C 32.613281 45.121094 33.386719 45.121094 34.007813 44.753906 C 34.632813 44.390625 35.011719 43.722656 35 43 L 35 35 L 43 35 C 43.722656 35.011719 44.390625 34.632813 44.753906 34.007813 C 45.121094 33.386719 45.121094 32.613281 44.753906 31.992188 C 44.390625 31.367188 43.722656 30.988281 43 31 Z"/></svg>
+          </div>
+        </span>
+        
+        <div class="modal__icon modal__arrow modal__arrow--left" title="Arrow Left" aria-label="Arrow Left Button">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" width="28" height="28"><path fill="currentColor" d="M 23.28125 11 L 10 10 L 10 6.851563 C 10 6.523438 9.839844 6.277344 9.519531 6.03125 C 9.199219 5.949219 8.878906 5.949219 8.640625 6.113281 C 5.359375 8.410156 2.238281 12.257813 2.160156 12.421875 C 2.082031 12.578125 2.007813 12.8125 2.003906 12.976563 C 2.003906 12.980469 2 12.988281 2 12.992188 C 2 13.15625 2.078125 13.402344 2.160156 13.484375 C 2.238281 13.648438 5.28125 17.507813 8.640625 19.804688 C 8.960938 19.96875 9.28125 20.050781 9.519531 19.886719 C 9.839844 19.722656 10 19.476563 10 19.148438 L 10 16 L 23.28125 15 C 23.679688 14.679688 24 13.875 24 12.992188 C 24 12.195313 23.761719 11.320313 23.28125 11 Z"/></svg>
+        </div>
+        
+        <div class="modal__icon modal__arrow modal__arrow--right" title="Arrow Right" aria-label="Arrow Right Button">
+
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" width="28" height="28"><path fill="currentColor" d="M 2.71875 11.023438 L 16 10.023438 L 16 6.875 C 16 6.546875 16.160156 6.300781 16.480469 6.054688 C 16.800781 5.972656 17.121094 5.972656 17.359375 6.136719 C 20.640625 8.433594 23.761719 12.28125 23.839844 12.445313 C 23.917969 12.601563 23.992188 12.835938 23.996094 13 C 23.996094 13.003906 24 13.011719 24 13.015625 C 24 13.179688 23.921875 13.425781 23.839844 13.507813 C 23.761719 13.671875 20.71875 17.53125 17.359375 19.828125 C 17.039063 19.992188 16.71875 20.074219 16.480469 19.910156 C 16.160156 19.746094 16 19.5 16 19.171875 L 16 16.023438 L 2.71875 15.023438 C 2.320313 14.703125 2 13.898438 2 13.015625 C 2 12.21875 2.238281 11.34375 2.71875 11.023438 Z"/></svg>
+        </div>
+
+        <div class="modal__caption">
+          <div class="modal__caption--text">
+          </div>
+        </div>
+
+      </span>
+    </div>
+  </div>
+</div>
+
+
+<script defer src="/js/swipe.min.feb438efb7ca009ecd7fc2ac3ad2fced4840990b2798d81f87137f2dc6281f05.js"></script>
+
+<script defer src="/js/micromodal.min.de01b44b2f383056bbcaf6ee921fd385d79108ec1129afd0eb2f3f5a07e11f45.js"></script>
+
+<script defer src="/js/helper/fadeinout.min.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  
+   
+  var docElem = document.documentElement;
+
+   
+  function openFullscreen() {
+    if (docElem.requestFullscreen) {
+      docElem.requestFullscreen();
+    } else if (docElem.mozRequestFullScreen) {  
+      docElem.mozRequestFullScreen();
+    } else if (docElem.webkitRequestFullscreen) {  
+      docElem.webkitRequestFullscreen();
+    } else if (docElem.msRequestFullscreen) {  
+      docElem.msRequestFullscreen();
+    }
+  }
+
+   
+  function closeFullscreen() {
+    if (document.fullscreenElement ||
+      document.webkitFullscreenElement ||
+      document.mozFullScreenElement) {
+      if (document.exitFullscreen) {
+        document.exitFullscreen();
+      } else if (document.mozCancelFullScreen) {  
+        document.mozCancelFullScreen();
+      } else if (document.webkitExitFullscreen) {  
+        document.webkitExitFullscreen();
+      } else if (document.msExitFullscreen) {  
+        document.msExitFullscreen();
+      }
+    }
+  }
+
+  var modal = document.getElementById('modal');
+  var galleryContainerElem = document.querySelector('.gallery__container');
+  var swipeWrapElem = document.querySelector('.swipe-wrap');
+  var mySwipeElem = document.getElementById('mySwipe');
+  var arrowLeftElem = document.querySelector('.modal__arrow--left');
+  var arrowRightElem = document.querySelector('.modal__arrow--right');
+  var closeElem = document.querySelector('.modal__toolbar--close');
+  var fullElem = document.querySelector('.modal__toolbar--full');
+  var normalElem = document.querySelector('.modal__toolbar--normal');
+  var captionElem = document.querySelector('.modal__caption');
+  var pagingElem = document.querySelector('.modal__paging');
+  var itemsElem = document.querySelector('.modal__items');
+  var imgTotalNum = null;
+  var myFadeTimeout = null;
+  var mySwipe = null;
+  var keydownFunction = function (e) {
+    if (e.key === 'ArrowRight') {
+      if (modal && modal.classList.contains('is-open')) {
+        mySwipe.next();
+      }
+    } else if (e.key === 'ArrowLeft') {
+      if (modal && modal.classList.contains('is-open')) {
+        mySwipe.prev();
+      }
+    }
+  }
+
+  if (galleryContainerElem) {
+    imgTotalNum = galleryContainerElem.querySelectorAll('img').length;
+  } else {
+    galleryContainerElem = document.querySelector('.single__contents');
+    imgTotalNum = galleryContainerElem.querySelectorAll('img').length;
+  }
+
+  MicroModal.init({
+    onClose: function () {
+      if (mySwipe) {
+        mySwipe.kill();
+        mySwipe = null;
+        closeFullscreen();
+      }
+      window.removeEventListener('keydown', keydownFunction);
+    },
+    disableScroll: true,
+    disableFocus: true,
+    awaitOpenAnimation: false,
+    awaitCloseAnimation: false,
+    debugMode: false,
+  });
+
+  var imageLoad = function(src) {
+    return new Promise(function(resolve, reject) {
+      var newImg = new Image;
+      newImg.onload = function() {
+        resolve(newImg);
+      }
+      newImg.onerror = reject;
+      newImg.src = src;
+    });
+  }
+
+  galleryContainerElem.querySelectorAll('img').forEach(function (elem, idx) {
+    elem.style.cursor = 'pointer';
+
+    var clonedElem = elem.cloneNode(true);
+    clonedElem.style.maxHeight = '100%';
+    clonedElem.style.maxWidth = '100%';
+    clonedElem.onclick = function (e) {
+      e.stopPropagation();
+    }
+
+    var wrapper = document.createElement('div');
+    wrapper.style.width = '100%';
+    wrapper.style.height = '100vh';
+    wrapper.setAttribute('data-micromodal-close', '');
+    wrapper.onclick = function () {
+      if (mySwipe) {
+        mySwipe.kill();
+        mySwipe = null;
+      }
+    }
+    wrapper.onmouseenter = function () {
+      clearTimeout(myFadeTimeout);
+      fadeIn(itemsElem, 200);
+    };
+    wrapper.onmouseleave = function () {
+      myFadeTimeout = setTimeout(function () {
+        fadeOut(itemsElem, 200);
+      }, 2500);
+    }
+    wrapper.ontouchstart = function() {
+      fadeIn(itemsElem, 200);
+    }
+    wrapper.append(clonedElem);
+    swipeWrapElem.append(wrapper);
+
+    elem.addEventListener('click', async function (e) {
+      MicroModal.show('modal');
+      if (mySwipe) {
+        mySwipe.kill();
+        mySwipe = null;
+      }
+
+      var imgSrc = e.target.getAttribute('data-src') || e.target.getAttribute('src');
+      var img = await imageLoad(imgSrc);
+      clonedElem.style.width = img.width + 'px';
+      clonedElem.style.height = img.height + 'px';
+      
+      
+      mySwipe = new Swipe(mySwipeElem, {
+        startSlide: idx,
+        draggable: true,
+        autoRestart: false,
+        continuous: false,
+        disableScroll: true,
+        stopPropagation: true,
+        callback: async function (index, element) {
+          
+          var imgElem = element.querySelector('img');
+          var imgSrc = imgElem.getAttribute('data-src') || imgElem.getAttribute('src');
+          var img = await imageLoad(imgSrc);
+          imgElem.style.width = img.width + 'px';
+          imgElem.style.height = img.height + 'px';
+
+          
+          if (captionElem && imgElem) {
+            var caption = null;
+            if (imgElem.getAttribute('data-caption')) {
+              caption = imgElem.getAttribute('data-caption');
+            } else if (imgElem.getAttribute('title')) {
+              caption = imgElem.getAttribute('title');
+            } else if (imgElem.getAttribute('alt')) {
+              caption = imgElem.getAttribute('alt');
+            } else {
+              caption = imgElem.getAttribute('src');
+            }
+
+            captionElem.querySelector('.modal__caption--text').innerText = caption;
+            pagingElem.innerText = (index + 1) + ' / ' + imgTotalNum;
+
+            clearTimeout(myFadeTimeout);
+            fadeIn(itemsElem, 200);
+          }
+        },
+      });
+
+      fadeIn(itemsElem);
+
+      
+      if (captionElem) {
+        var caption = null;
+        if (e.target.getAttribute('data-caption')) {
+          caption = e.target.getAttribute('data-caption');
+        } else if (e.target.getAttribute('title')) {
+          caption = e.target.getAttribute('title');
+        } else if (e.target.getAttribute('alt')) {
+          caption = e.target.getAttribute('alt');
+        } else {
+          caption = e.target.getAttribute('src');
+        }
+
+        captionElem.querySelector('.modal__caption--text').innerText = caption;
+        pagingElem.innerText = (idx + 1) + ' / ' + imgTotalNum;
+      }
+
+      if (normalElem && fullElem) {
+        normalElem.style.zIndex = -1;
+        normalElem.style.opacity = 0;
+        fullElem.style.zIndex = 25;
+        fullElem.style.opacity = 1;
+      }
+    });
+
+    window.addEventListener('keydown', keydownFunction);
+  });
+
+  arrowLeftElem ?
+    arrowLeftElem.addEventListener('click', function (e) {
+      if (mySwipe) {
+        mySwipe.prev();
+      }
+    }) : null;
+  arrowRightElem ?
+    arrowRightElem.addEventListener('click', function (e) {
+      if (mySwipe) {
+        mySwipe.next();
+      }
+    }) : null;
+
+  closeElem ?
+    closeElem.addEventListener('click', function () {
+      if (mySwipe) {
+        mySwipe.kill();
+        mySwipe = null;
+      }
+      closeFullscreen();
+      MicroModal.close('modal');
+    }) : null;
+
+  fullElem ?
+    fullElem.addEventListener('click', function (e) {
+      openFullscreen();
+      if (normalElem) {
+        normalElem.style.zIndex = 25;
+        normalElem.style.opacity = 1;
+        fullElem.style.zIndex = -1;
+        fullElem.style.opacity = 0;
+      }
+    }) : null;
+
+  normalElem ?
+    normalElem.addEventListener('click', function (e) {
+      closeFullscreen();
+      if (fullElem) {
+        fullElem.style.zIndex = 25;
+        fullElem.style.opacity = 1;
+        normalElem.style.zIndex = -1;
+        normalElem.style.opacity = 0;
+      }
+    }) : null;
+  
+});
+</script>
+
+    <div class="hide">
+      
+
+<div class="search">
+  <span class="icon">
+    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path d="M15.5 14h-.79l-.28-.27c1.2-1.4 1.82-3.31 1.48-5.34-.47-2.78-2.79-5-5.59-5.34-4.23-.52-7.79 3.04-7.27 7.27.34 2.8 2.56 5.12 5.34 5.59 2.03.34 3.94-.28 5.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+  </span>
+  <input id="search" aria-label="Site Search" class="input" type="text" placeholder="Search" autocomplete="off">
+  <div id="search-results" class="dropdown">
+    <div id="search-menu" class="dropdown-menu" role="menu">
+    </div>
+  </div>
+</div>
+
+
+    </div>
+  </div>
+</main>
+
+
+<aside class="single__side main-side">
+  
+
+
+<section class="sidebar hide">
+  <script>document.querySelector('.sidebar').classList.remove('hide')</script>
+  <div class="toc__flexbox" data-position="fixed">
+    <h6 class="toc__title" data-ani="true">What&#39;s on this Page</h6>
+    
+      <label class="switch" data-ani="true">
+        <input id="toggle-toc" aria-label="Toggle TOC" type="checkbox" checked>
+        <span class="slider round"></span>
+      </label>
+    
+  </div>
+  <div class="toc " data-dir="ltr" data-folding="true" data-ani="true">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#01-美团之初">01 美团之初</a>
+          <ul>
+            <li><a href="#1金字塔结构下小企业生意的机会">1.金字塔结构下，小企业生意的机会 </a></li>
+            <li><a href="#2手机端的机会">2.手机端的机会 </a></li>
+            <li><a href="#3返利和裂变的创新">3.返利和裂变的创新 </a></li>
+            <li><a href="#4用户体验的保证">4.用户体验的保证</a></li>
+            <li><a href="#5先进的商业模式最终会胜">5.先进的商业模式最终会胜 </a></li>
+            <li><a href="#6微创新">6.微创新 </a></li>
+            <li><a href="#7精or全">7.精or全 </a></li>
+            <li><a href="#8重技术">8.重技术</a></li>
+            <li><a href="#9长期价值">9.长期价值 </a></li>
+            <li><a href="#10团队建设">10.团队建设 </a></li>
+          </ul>
+        </li>
+        <li><a href="#02-成长的策略">02 成长的策略</a>
+          <ul>
+            <li><a href="#1每天前进30公里">1.每天前进30公里 </a></li>
+            <li><a href="#2学习对手学习一切先进超越对手">2.学习对手，学习一切先进，超越对手</a></li>
+            <li><a href="#3关于上市">3.关于上市 </a></li>
+            <li><a href="#4冬天">4.冬天 </a></li>
+          </ul>
+        </li>
+        <li><a href="#03-定目标"><strong>03 定目标</strong></a>
+          <ul>
+            <li><a href="#1每一次花钱都是在投票投票选择你想要支持的那个世界">1.每一次花钱都是在投票，投票选择你想要支持的那个世界</a></li>
+            <li><a href="#2从大趋势中看产业机会">2.从大趋势中看产业机会 </a></li>
+            <li><a href="#355亿时敢下1000亿目标">3.55亿时，敢下1,000亿目标</a></li>
+          </ul>
+        </li>
+        <li><a href="#04-美团离破产只有6个月">04 美团离破产只有6个月</a>
+          <ul>
+            <li><a href="#1危机">1.危机</a></li>
+            <li><a href="#2成长">2.成长</a></li>
+          </ul>
+        </li>
+        <li><a href="#05-决战之年">05 决战之年</a>
+          <ul>
+            <li><a href="#1鸵鸟原理追求绝对强大">1.鸵鸟原理（追求绝对强大）</a></li>
+            <li><a href="#2bat进入o2o美团到了该建平台生态的一年">2.BAT进入O2O，美团到了该建平台、生态的一年</a></li>
+            <li><a href="#3不要高估两年能发生的变化不要低估十年能发生的变化">3.不要高估两年能发生的变化，不要低估十年能发生的变化</a></li>
+          </ul>
+        </li>
+        <li><a href="#06-互联网下半场">06 互联网下半场</a>
+          <ul>
+            <li><a href="#1消费者第一商户第二">1.消费者第一、商户第二</a></li>
+            <li><a href="#2少谈一点颠覆多谈一点创新">2.少谈一点颠覆，多谈一点创新</a></li>
+            <li><a href="#3中国互联网已经进入下半场">3.中国互联网已经进入“下半场”</a></li>
+          </ul>
+        </li>
+        <li><a href="#07-tob供给侧">07 ToB，供给侧 </a>
+          <ul>
+            <li><a href="#1宏观经济背景对企业精细化经营的要求">1.宏观经济背景对企业精细化经营的要求 </a></li>
+            <li><a href="#2很多你们想象不到的公司会死掉"><strong>2.很多你们想象不到的公司会死掉</strong></a></li>
+            <li><a href="#3to-b">3.To B </a></li>
+          </ul>
+        </li>
+        <li><a href="#08-上市前夕">08 上市前夕</a>
+          <ul>
+            <li><a href="#1上天从商业模式创新到科技创新">1.上天：从商业模式创新到科技创新 </a></li>
+            <li><a href="#2人造肉">2.人造肉</a></li>
+            <li><a href="#3入地不只是c端要深入b端和产业链">3.入地：不只是C端，要深入B端和产业链</a></li>
+            <li><a href="#4全球化中美两强竞争发展中国家机会广阔">4.全球化：中美两强竞争，发展中国家机会广阔 </a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</section>
+
+
+
+</aside>
+
+<script>
+  
+  
+  
+
+  var enableToc = JSON.parse("true");
+  var toc = JSON.parse("null");
+  var tocPosition = JSON.parse("\"inner\"");
+  
+  var singleMainElem = document.querySelector('.single__main');
+  var singleSideElem = document.querySelector('.single__side');
+
+  enquire.register("screen and (max-width: 769px)", {
+    match: function () {
+      if ((enableToc || toc) && tocPosition !== "outer") {
+        if (singleMainElem && singleSideElem) {
+          singleMainElem.classList.remove('main-main');
+          singleMainElem.classList.add('main');
+          singleSideElem.classList.remove('main-side');
+          singleSideElem.classList.add('hide');
+        }
+      } else if (tocPosition === "outer") {
+        if (singleMainElem && !singleMainElem.classList.contains('main-main')) {
+          singleMainElem.classList.remove('main-main');
+          singleMainElem.classList.add('main');
+        }
+        if (singleSideElem && !singleSideElem.classList.contains('hide')) {
+          singleSideElem.classList.add('hide');
+        }
+      }
+    },
+    unmatch: function () {
+      if ((enableToc || toc) && tocPosition !== "outer") {
+        singleMainElem.classList.remove('main');
+        singleMainElem.classList.add('main-main');
+        singleSideElem.classList.remove('hide');
+        singleSideElem.classList.add('main-side');
+      } else if (tocPosition === "outer") {
+        if (singleMainElem && !singleMainElem.classList.contains('main-main')) {
+          singleMainElem.classList.remove('main-main');
+          singleMainElem.classList.add('main');
+        }
+        if (singleSideElem && !singleSideElem.classList.contains('hide')) {
+          singleSideElem.classList.add('hide');
+        }
+      }
+
+      var navCollapseBtn = document.querySelector('.navbar__burger');
+      var navCollapse = document.getElementsByClassName('navbarm__collapse')[0];
+      if (navCollapse) {
+        navCollapse.setAttribute('data-open', false);
+        navCollapse.style.maxHeight = 0;
+        navCollapseBtn.classList.remove('is-active');
+      }
+      document.getElementsByClassName('navbar__menu')[0].classList.remove('is-active');
+      document.getElementsByClassName('mobile-search')[0].classList.add('hide');
+    },
+    setup: function () { },
+    deferSetup: true,
+    destroy: function () { },
+  });
+</script>
+
+
+
+
+
+<script defer src="/js/helper/getParents.min.js"></script>
+
+<script defer src="/js/helper/closest.min.js"></script>
+
+<script defer src="/js/helper/prev.min.js"></script>
+
+<script defer src="/js/helper/prop.min.js"></script>
+
+<script defer src="/js/helper/fadeinout.min.js"></script>
+
+<script defer src="/js/helper/throttle.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  'use strict';
+
+  window.onload = function() {
+    var navbar = document.querySelector('.navbar');
+    var singleContentsElem = document.querySelector('.single__contents');
+
+    
+    
+    
+    var enableBusuanzi = JSON.parse("true");
+    var busuanziPagePV = JSON.parse("true");
+    
+    if (enableBusuanzi && busuanziPagePV) {
+      var pagePvElem = document.querySelector('#busuanzi_value_page_pv');
+      pagePvElem.textContent = pagePvElem.textContent.replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
+    }    
+    
+
+
+
+    
+    
+    
+    
+    
+    
+    var enableToc = JSON.parse("true");
+    var toc = JSON.parse("null");
+    var hideToc = JSON.parse("false");
+    var tocFlexbox = document.querySelector('.toc__flexbox');
+    var tocFlexboxOuter = document.querySelector('.toc__flexbox--outer');
+    var tocFolding = JSON.parse("true");
+    
+    if ((enableToc || toc) && document.querySelector('.toc')) {
+      var tableOfContentsElem = document.querySelector('.toc').querySelector('#TableOfContents');
+
+      tableOfContentsElem.onmouseenter = function() {
+        if (navbar.classList.contains('scrolling')) {
+          navbar.classList.remove('scrolling');
+        }
+      }
+
+      tableOfContentsElem.onmouseleave = function() {
+        if (!navbar.classList.contains('scrolling')) {
+          navbar.classList.add('scrolling');
+        }
+      }
+
+      if (false === tocFolding) {
+
+      } else {
+        tableOfContentsElem.querySelectorAll('ul') ?
+          tableOfContentsElem.querySelectorAll('ul').forEach(function (rootUl) {
+            rootUl.querySelectorAll('li').forEach(function (liElem) {
+              liElem.querySelectorAll('ul').forEach(function (ulElem) {
+                ulElem.style.display = 'none';
+              });
+            });
+          }) : null;
+      }
+
+      if (tableOfContentsElem) {
+        if (tableOfContentsElem.querySelectorAll('a').length > 0) {
+          tableOfContentsElem.querySelectorAll('a').forEach(function (elem) {
+            elem.addEventListener('click', function () {
+              var id = elem.getAttribute('id');
+
+              if (!navbar.classList.contains('scrolling')) {
+                navbar.classList.remove('navbar--show');
+                navbar.classList.remove('navbar--hide');
+                navbar.classList.add('navbar--hide');
+              }
+              
+              document.querySelector('.toc').querySelectorAll('a').forEach(function (elem) {
+                elem.classList.remove('active');
+              });
+              elem.classList.add('active');
+
+              var curElem = tableOfContentsElem.querySelector('[href="#' + id + '"]');
+              if (curElem && curElem.nextElementSibling) {
+                curElem.nextElementSibling.style.display = 'block';
+              }
+              if (curElem) {
+                getParents(curElem, 'ul') ?
+                  getParents(curElem, 'ul').forEach(function (elem) {
+                    elem.style.display = 'block';
+                  }) : null;
+              }
+            });
+          });
+        } else {
+          if (tocFlexbox) {
+            tocFlexbox.setAttribute('data-position', '');
+            if (!tocFlexbox.classList.contains('hide')) {
+              tocFlexbox.classList.add('hide');
+            }
+          }
+          if (tocFlexboxOuter) {
+            tocFlexboxOuter.setAttribute('data-position', '');
+            if (!tocFlexboxOuter.classList.contains('hide')) {
+              tocFlexboxOuter.classList.add('hide');
+            }
+          }
+        }
+      }
+
+      
+      var toggleTocElem = document.getElementById("toggle-toc");
+      var visibleTocElem = document.getElementById('visible-toc');
+      var tocElem = document.querySelector('.toc');
+      var mainElem = document.querySelector('main');
+      var sideElem = document.querySelector('side');
+      var tocFlexboxElem = document.querySelector('.toc__flexbox');
+
+      toggleTocElem ? 
+      toggleTocElem.addEventListener('change', function(e) {
+        if (e.target.checked) {
+          if (tocElem) {
+            fadeIn(tocElem, 200);
+          }
+          if (tocFlexboxElem) {
+            tocFlexboxElem.setAttribute('data-position', 'fixed');
+          }
+
+          if (mainElem) {
+            mainElem.classList.remove('main-main');
+            mainElem.classList.remove('main');
+            mainElem.classList.add('main-main');
+          }
+          if (sideElem) {
+            sideElem.classList.remove('main-side');
+          }
+        } else {
+          if (tocElem) {
+            fadeOut(tocElem, 200);
+          }
+          if (tocFlexboxElem) {
+            tocFlexboxElem.setAttribute('data-position', 'absolute');
+          }
+
+          if (mainElem) {
+            mainElem.classList.remove('main-main');
+            mainElem.classList.remove('main');
+            mainElem.classList.add('main');
+          }
+          if (sideElem) {
+            sideElem.classList.remove('main-side');
+          }
+        }
+      }) : null;
+
+      visibleTocElem ?
+      visibleTocElem.addEventListener('change', function(e) {
+        if (e.target.checked) {
+          if (tocElem) {
+            fadeIn(tocElem, 200);
+          }
+        } else {
+          if (tocElem) {
+            fadeOut(tocElem, 200);
+          }
+        }
+      }) : null;
+    }
+    
+    
+    
+    
+    
+    var topOffset = 120;
+    var botOffset = 70;
+    var handleWindowResize = function () {
+      if (tocElem) {
+        tocElem.style.maxHeight = (window.innerHeight - topOffset - botOffset) + 'px';
+      }
+    }
+    var throttledWindowResize = throttle(handleWindowResize, 300);
+    throttledWindowResize()
+
+    
+    window.addEventListener('resize', throttledWindowResize);
+    
+
+
+
+    
+    var text, clip = new ClipboardJS('.anchor');
+    var headers = singleContentsElem.querySelectorAll("h1, h2, h3, h4");
+
+    
+    var languagedir = JSON.parse("\"ltr\"");
+
+    headers ? 
+    headers.forEach(function (elem) {
+      var size = parseInt(elem.tagName.substr(1), 10) * 2;
+      var url = encodeURI(document.location.origin + document.location.pathname);
+      var link = url + "#" + elem.getAttribute('id');
+      var newElemOuter = document.createElement('span');
+      newElemOuter.classList.add('anchor');
+      newElemOuter.classList.add('hide');
+      newElemOuter.setAttribute('data-clipboard-text', decodeURI(link));
+      newElemOuter.style.position = 'relative';
+
+      var newElemInner = document.createElement('span');
+      newElemInner.style.position = 'absolute';
+      newElemInner.style.top = '50%';
+      newElemInner.style.left = '0.75rem';
+      newElemInner.style.transform = 'translateY(-50%)';
+      newElemInner.innerHTML = `
+<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="${32 - size}px" height="${32 - size}px"><path d="M 5.5625 0 C 4.136719 0 2.707031 0.542969 1.625 1.625 C -0.539063 3.789063 -0.539063 7.335938 1.625 9.5 L 5.28125 13.15625 C 5.667969 13.554688 6.304688 13.558594 6.703125 13.171875 C 7.101563 12.785156 7.105469 12.148438 6.71875 11.75 L 3.03125 8.0625 C 1.632813 6.664063 1.632813 4.429688 3.03125 3.03125 C 4.429688 1.632813 6.664063 1.632813 8.0625 3.03125 L 12.96875 7.9375 C 14.367188 9.335938 14.367188 11.570313 12.96875 12.96875 C 12.804688 13.132813 12.621094 13.25 12.4375 13.375 C 11.980469 13.6875 11.859375 14.308594 12.171875 14.765625 C 12.484375 15.222656 13.105469 15.34375 13.5625 15.03125 C 13.847656 14.835938 14.125 14.625 14.375 14.375 C 16.539063 12.210938 16.539063 8.664063 14.375 6.5 L 9.5 1.625 C 8.417969 0.542969 6.988281 0 5.5625 0 Z M 10.78125 8.875 C 10.738281 8.882813 10.695313 8.894531 10.65625 8.90625 C 10.507813 8.9375 10.371094 9 10.25 9.09375 C 10.039063 9.253906 9.820313 9.429688 9.625 9.625 C 7.460938 11.789063 7.460938 15.335938 9.625 17.5 L 14.5 22.375 C 16.664063 24.539063 20.210938 24.539063 22.375 22.375 C 24.539063 20.210938 24.539063 16.664063 22.375 14.5 L 18.71875 10.875 C 18.476563 10.578125 18.089844 10.441406 17.714844 10.527344 C 17.34375 10.613281 17.050781 10.90625 16.964844 11.277344 C 16.878906 11.652344 17.015625 12.039063 17.3125 12.28125 L 20.96875 15.9375 C 22.367188 17.335938 22.367188 19.570313 20.96875 20.96875 C 19.570313 22.367188 17.335938 22.367188 15.9375 20.96875 L 11.03125 16.0625 C 9.632813 14.664063 9.632813 12.429688 11.03125 11.03125 C 11.152344 10.90625 11.300781 10.820313 11.4375 10.71875 C 11.839844 10.472656 12.015625 9.976563 11.855469 9.53125 C 11.699219 9.085938 11.25 8.8125 10.78125 8.875 Z"/></svg>`;
+
+      if (languagedir === "rtl") {
+        newElemInner.style.left = '-2rem';
+      } else {
+        newElemInner.style.right = '-2rem';
+      }
+
+      newElemOuter.append(newElemInner);
+      elem.append(newElemOuter);
+
+      elem.addEventListener('mouseenter', function() {
+        this.querySelector('.anchor').classList.remove('hide');
+      });
+      elem.addEventListener('mouseleave', function () {
+        this.querySelector('.anchor').classList.add('hide');
+      });
+    }) : null;
+
+    document.querySelectorAll('.anchor').forEach(function(elem) {
+      elem.addEventListener('mouseleave', function() {
+        elem.setAttribute('aria-label', null);
+        elem.classList.remove('tooltipped');
+        elem.classList.remove('tooltipped-s');
+        elem.classList.remove('tooltipped-w');
+      });
+    });
+
+    clip.on('success', function (e) {
+      e.clearSelection();
+      e.trigger.setAttribute('aria-label', 'Link copied to clipboard!');
+      e.trigger.classList.add('tooltipped');
+      e.trigger.classList.add('tooltipped-s');
+    });
+    // =================================================================
+
+
+
+    
+    
+    var lib = JSON.parse("null");
+
+    if (lib && lib.includes('mermaid')) {
+      
+      var themeVariant = localStorage.getItem('theme') || JSON.parse("\"dark\"");
+
+      if (themeVariant === "dark" || themeVariant === "hacker") {
+        mermaid.initialize({ theme: 'dark' });
+      } else {
+        mermaid.initialize({ theme: 'default' });
+      }
+      
+      var mermaids = [];
+      [].push.apply(mermaids, document.getElementsByClassName('language-mermaid'));
+      mermaids.forEach(function(elem) {
+        var elemParentNode = elem.parentNode;
+
+        if (elemParentNode !== document.body) {
+          elemParentNode.parentNode.insertBefore(elem, elemParentNode);
+          elemParentNode.parentNode.removeChild(elemParentNode);
+        }
+
+        var newElemWrapper = document.createElement('div');
+        newElemWrapper.classList.add('mermaid');
+        newElemWrapper.style.padding = '34px 4px 6px';
+        newElemWrapper.innerHTML = elem.innerHTML;
+        elem.replaceWith(newElemWrapper);
+      });
+    }
+    
+
+    
+
+    
+    if (lib && lib.includes('katex')) {
+      var mathElements = document.getElementsByClassName('math');
+      var options = {
+        delimiters: [
+          { left: "$$", right: "$$", display: true },
+          { left: "\\[", right: "\\]", display: true },
+          { left: "$", right: "$", display: false },
+          { left: "\\(", right: "\\)", display: false }
+        ],
+      };
+
+      renderMathInElement(document.querySelector('.single__contents'), options);
+    }
+    
+
+
+
+    
+    if (lib && lib.includes('flowchartjs')) {
+      
+      var options = JSON.parse("{\"arrow-end\":\"block\",\"element-color\":\"black\",\"fill\":\"white\",\"flowstate\":{\"approved\":{\"fill\":\"#58C4A3\",\"font-size\":12,\"no-text\":\"n/a\",\"yes-text\":\"APPROVED\"},\"current\":{\"fill\":\"yellow\",\"font-color\":\"red\",\"font-weight\":\"bold\"},\"future\":{\"fill\":\"#FFFF99\"},\"invalid\":{\"fill\":\"#444444\"},\"past\":{\"fill\":\"#CCCCCC\",\"font-size\":12},\"rejected\":{\"fill\":\"#C45879\",\"font-size\":12,\"no-text\":\"REJECTED\",\"yes-text\":\"n/a\"},\"request\":{\"fill\":\"blue\"}},\"font-color\":\"black\",\"font-size\":14,\"line-color\":\"black\",\"line-length\":50,\"line-width\":3,\"no-text\":\"no\",\"scale\":1,\"symbols\":{\"end\":{\"class\":\"end-element\"},\"start\":{\"element-color\":\"green\",\"fill\":\"yellow\",\"font-color\":\"red\"}},\"text-margin\":10,\"x\":0,\"y\":0,\"yes-text\":\"yes\"}");
+      var jsonContent = null;
+
+      var flowchartPrefix = "language-flowchart";
+      var index = 0;
+      Array.prototype.forEach.call(document.querySelectorAll("[class^=" + flowchartPrefix + "]"), function(x){
+          x.style.display = 'none'
+          x.parentNode.style.backgroundColor = "transparent"
+          jsonContent = x.innerText;
+
+          var node0 = document.createElement('div');
+          node0.id = 'flowchart' + index;
+          x.parentNode.insertBefore(node0, x);
+
+          var diagram = flowchart.parse(jsonContent);
+          diagram.drawSVG("flowchart"+index, options);
+
+          index +=1;
+      });      
+    }
+    
+
+    
+
+    
+    document.querySelectorAll("mjx-container").forEach(function (x) {
+      x.parentElement.classList += 'has-jax'
+    });
+    
+
+
+
+    
+    if (lib && lib.includes('msc')) {
+      
+      var options = JSON.parse("{\"theme\":\"hand\"}");
+      var jsonContent = null;
+
+      var index = 0;
+      var chartPrefix = "language-msc";
+      Array.prototype.forEach.call(document.querySelectorAll("[class^=" + chartPrefix + "]"), function (x) {
+        x.style.display = 'none'
+        x.parentNode.style.backgroundColor = "transparent"
+        jsonContent = x.innerText;
+        var node0 = document.createElement('div');
+        node0.id = 'msc' + index;
+        x.parentNode.insertBefore(node0, x);
+        var diagram = Diagram.parse(jsonContent);
+        diagram.drawSVG("msc" + index, options);
+        index += 1;
+      });
+    }
+    
+
+
+
+    
+    if (lib && lib.includes('chart')) {
+      var borderColor = "#666";
+      var bgColor = "#ddd";
+      var borderWidth = 2;
+
+      Chart.defaults.global.elements.rectangle.borderWidth = borderWidth;
+      Chart.defaults.global.elements.rectangle.borderColor = borderColor;
+      Chart.defaults.global.elements.rectangle.backgroundColor = bgColor;
+
+      Chart.defaults.global.elements.line.borderWidth = borderWidth;
+      Chart.defaults.global.elements.line.borderColor = borderColor;
+      Chart.defaults.global.elements.line.backgroundColor = bgColor;
+
+      Chart.defaults.global.elements.point.borderWidth = borderWidth;
+      Chart.defaults.global.elements.point.borderColor = borderColor;
+      Chart.defaults.global.elements.point.backgroundColor = bgColor;
+
+      var chartPrefix = "language-chart";
+      var index = 0;
+      var jsonContent = null;
+
+      Array.prototype.forEach.call(document.querySelectorAll("[class^=" + chartPrefix + "]"), function (x) {
+        x.style.display = 'none'
+        x.parentNode.style.backgroundColor = "transparent"
+        jsonContent = x.innerText;
+        var node0 = document.createElement('canvas');
+        var source = null;
+        node0.height = 200;
+        node0.style.height = 200;
+        node0.id = 'myChart' + index;
+        source = JSON.parse(jsonContent);
+        x.parentNode.insertBefore(node0, x);
+        var ctx = document.getElementById('myChart' + index).getContext('2d');
+        var myChart = new Chart(ctx, source);
+        index += 1;
+      });            
+    }
+    
+
+
+
+    
+    if (lib && lib.includes('wavedrom')) {
+      var wavePrefix = "language-wave";
+      var index = 0;
+      var jsonContent = null;
+      
+      Array.prototype.forEach.call(document.querySelectorAll("[class^=" + wavePrefix + "]"), function (x) {
+        x.style.display = 'none'
+        x.parentNode.style.backgroundColor = "transparent"
+        jsonContent = x.innerText;
+        var node0 = document.createElement('div');
+        var source = null;
+        node0.id = 'WaveDrom_Display_' + index;
+        source = JSON.parse(jsonContent);
+        x.parentNode.insertBefore(node0, x);
+        WaveDrom.RenderWaveForm(index, source, "WaveDrom_Display_");
+        index += 1;
+      });
+    }
+    
+
+
+
+    
+    if (lib && lib.includes('viz')) {
+      var vizPrefix = "language-viz-";
+      Array.prototype.forEach.call(document.querySelectorAll("[class^=" + vizPrefix + "]"), function (x) {
+        x.style.display = 'none'
+        x.parentNode.style.backgroundColor = "transparent"
+        var engine;
+        x.getAttribute("class").split(" ").forEach(function (cls) {
+          if (cls.startsWith(vizPrefix)) {
+            engine = cls.substr(vizPrefix.length);
+          }
+        });
+        var viz = new Viz();
+        viz.renderSVGElement(x.innerText, { engine: engine })
+          .then(function (element) {
+            element.style.width = "100%";
+            x.parentNode.insertBefore(element, x);
+          })
+      });
+    }
+    
+    
+  }
+</script>
+
+
+            
+            <footer class="footer">
+    
+    
+<div class="footer__social">
+  <div class="social">
+    
+      
+      <a href="https://blog.csdn.net/weixin_41263449" title="csdn" aria-label="csdn">
+        <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"><path fill="currentColor" d="M11.705 9.681l-.03.247c-.035.288-.3.484-.585.439-.47-.081-1.135-.151-1.64-.151-.765 0-1.16.267-1.19.56-.035.368.365.389 1.355.681 1.345.378 1.935.913 1.855 1.741C11.38 14.172 10.31 15 8.165 15c-.655 0-1.24-.096-1.675-.222-.24-.066-.395-.293-.37-.545l.035-.288c.045-.232.25-.404.49-.404.035 0 .065.005.095.01.01 0 1.057.237 1.61.202.808-.051 1.26-.247 1.3-.636.03-.353-.3-.404-1.22-.646-1.265-.343-2.075-.878-1.995-1.731C6.53 9.752 7.72 9 9.555 9 10.2 9 10.83 9.035 11.3 9.121 11.56 9.167 11.74 9.414 11.705 9.681zM18.79 9.814c.019-.223.184-.409.404-.45 4.533-.849 4.929.926 4.782 2.502l-.241 2.54c-.024.257-.24.453-.498.453h-.546c-.295 0-.526-.254-.498-.547l.207-2.182c.056-.601.405-1.776-1.281-1.732-.186.005-.343.017-.469.032-.235.027-.414.218-.433.455-.021.255-.05.595-.083.88l-.251 2.642c-.024.257-.24.453-.498.453h-.514c-.296 0-.527-.255-.498-.549l.247-2.501L18.79 9.814zM17.115 9.846c-.615-.5-1.611-.696-2.84-.735-.531-.017-1.087.024-1.265.05-.192.029-.345.19-.385.38-.01.035-.015.07-.015.11l-.43 4.635c-.03.275.17.52.44.545.425.045.91.065 1.41.065 1.205 0 2.005-.18 2.64-.59.695-.44 1.17-1.15 1.265-2.16C18.035 11.056 17.665 10.306 17.115 9.846zM16.435 12.106c-.085.935-.955 1.605-2.185 1.605-.305 0-.46-.025-.58-.05l.3-3.355c.125-.025.36-.025.525-.025C15.795 10.271 16.565 10.746 16.435 12.106zM5.367 14.461c-.021.227-.19.41-.415.448C4.623 14.966 4.163 15 3.595 15c-2.427 0-3.737-1.254-3.583-2.913C.198 10.112 2.139 9 4.264 9c.559 0 .961.034 1.304.093.259.045.437.286.408.547L5.941 9.965c-.031.283-.292.487-.573.439-.326-.055-.724-.093-1.071-.093-1.25 0-2.312.41-2.434 1.707-.109 1.16.637 1.714 2.044 1.714.271 0 .614-.024.922-.064.318-.041.592.222.562.541L5.367 14.461z"/></svg>
+      </a>
+            
+    
+            
+    
+            
+    
+      
+      <a href="mailto:1427298682@qq.com" title="email" aria-label="email">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-.4 4.25l-7.07 4.42c-.32.2-.74.2-1.06 0L4.4 8.25c-.25-.16-.4-.43-.4-.72 0-.67.73-1.07 1.3-.72L12 11l6.7-4.19c.57-.35 1.3.05 1.3.72 0 .29-.15.56-.4.72z"/></svg>
+      </a>
+            
+    
+            
+    
+            
+    
+      
+      <a href="https://github.com/redisread/" title="github" aria-label="github">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 24 24" version="1.1">
+<g id="surface3680">
+<path fill="currentColor" d="M 10.898438 2.101562 C 6.300781 2.601562 2.601562 6.300781 2.101562 10.800781 C 1.601562 15.5 4.300781 19.699219 8.398438 21.300781 C 8.699219 21.398438 9 21.199219 9 20.800781 L 9 19.199219 C 9 19.199219 8.601562 19.300781 8.101562 19.300781 C 6.699219 19.300781 6.101562 18.101562 6 17.398438 C 5.898438 17 5.699219 16.699219 5.398438 16.398438 C 5.101562 16.300781 5 16.300781 5 16.199219 C 5 16 5.300781 16 5.398438 16 C 6 16 6.5 16.699219 6.699219 17 C 7.199219 17.800781 7.800781 18 8.101562 18 C 8.5 18 8.800781 17.898438 9 17.800781 C 9.101562 17.101562 9.398438 16.398438 10 16 C 7.699219 15.5 6 14.199219 6 12 C 6 10.898438 6.5 9.800781 7.199219 9 C 7.101562 8.800781 7 8.300781 7 7.601562 C 7 7.199219 7 6.601562 7.300781 6 C 7.300781 6 8.699219 6 10.101562 7.300781 C 10.601562 7.101562 11.300781 7 12 7 C 12.699219 7 13.398438 7.101562 14 7.300781 C 15.300781 6 16.800781 6 16.800781 6 C 17 6.601562 17 7.199219 17 7.601562 C 17 8.398438 16.898438 8.800781 16.800781 9 C 17.5 9.800781 18 10.800781 18 12 C 18 14.199219 16.300781 15.5 14 16 C 14.601562 16.5 15 17.398438 15 18.300781 L 15 20.898438 C 15 21.199219 15.300781 21.5 15.699219 21.398438 C 19.398438 19.898438 22 16.300781 22 12.101562 C 22 6.101562 16.898438 1.398438 10.898438 2.101562 Z M 10.898438 2.101562 "/>
+</g>
+</svg>
+
+      </a>
+            
+    
+            
+    
+            
+    
+      
+      <a href="https://www.instagram.com/jiahong.wu.581/" title="instagram" aria-label="instagram">
+        <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32"><path fill="currentColor" d="M 11.46875 5 C 7.917969 5 5 7.914063 5 11.46875 L 5 20.53125 C 5 24.082031 7.914063 27 11.46875 27 L 20.53125 27 C 24.082031 27 27 24.085938 27 20.53125 L 27 11.46875 C 27 7.917969 24.085938 5 20.53125 5 Z M 11.46875 7 L 20.53125 7 C 23.003906 7 25 8.996094 25 11.46875 L 25 20.53125 C 25 23.003906 23.003906 25 20.53125 25 L 11.46875 25 C 8.996094 25 7 23.003906 7 20.53125 L 7 11.46875 C 7 8.996094 8.996094 7 11.46875 7 Z M 21.90625 9.1875 C 21.402344 9.1875 21 9.589844 21 10.09375 C 21 10.597656 21.402344 11 21.90625 11 C 22.410156 11 22.8125 10.597656 22.8125 10.09375 C 22.8125 9.589844 22.410156 9.1875 21.90625 9.1875 Z M 16 10 C 12.699219 10 10 12.699219 10 16 C 10 19.300781 12.699219 22 16 22 C 19.300781 22 22 19.300781 22 16 C 22 12.699219 19.300781 10 16 10 Z M 16 12 C 18.222656 12 20 13.777344 20 16 C 20 18.222656 18.222656 20 16 20 C 13.777344 20 12 18.222656 12 16 C 12 13.777344 13.777344 12 16 12 Z"/></svg>
+      </a>
+            
+    
+            
+    
+            
+    
+            
+    
+            
+    
+            
+    
+            
+    
+            
+    
+            
+    
+            
+    
+            
+    
+            
+    
+            
+    
+            
+    
+            
+    
+            
+    
+            
+    
+            
+    
+    
+  
+  
+    
+      <a href="https://hugo.jiahongw.com/en/zh/index.xml" type="application/rss+xml" title="RSS" aria-label="RSS Feed Link">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><circle fill="currentColor" cx="6.18" cy="17.82" r="2.18"/><path fill="currentColor" d="M5.59 10.23c-.84-.14-1.59.55-1.59 1.4 0 .71.53 1.28 1.23 1.4 2.92.51 5.22 2.82 5.74 5.74.12.7.69 1.23 1.4 1.23.85 0 1.54-.75 1.41-1.59-.68-4.2-3.99-7.51-8.19-8.18zm-.03-5.71C4.73 4.43 4 5.1 4 5.93c0 .73.55 1.33 1.27 1.4 6.01.6 10.79 5.38 11.39 11.39.07.73.67 1.28 1.4 1.28.84 0 1.5-.73 1.42-1.56-.73-7.34-6.57-13.19-13.92-13.92z"/></svg>
+      </a>
+    
+  
+
+
+  </div>
+</div>
+
+    
+<div id="gtt">
+  <div class="gtt">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M8.12 14.71L12 10.83l3.88 3.88c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L12.7 8.71c-.39-.39-1.02-.39-1.41 0L6.7 13.3c-.39.39-.39 1.02 0 1.41.39.38 1.03.39 1.42 0z"/></svg>
+  </div>
+</div>
+
+    <hr />
+
+    <div class="basicflex flexwrap">
+        
+            
+        
+            
+        
+    </div>
+
+    <div class="footer__poweredby">
+        
+  <div class="busuanzi">
+    
+    
+      <div class="busuanzi__item">
+        <span class="busuanzi__item--label">
+          Total visitors
+        </span>
+        <span id="busuanzi_value_site_uv" class="busuanzi__item--number">...</span>
+      </div>
+    
+
+    
+      <div class="busuanzi__item">
+        <span class="busuanzi__item--label">
+          Total views
+        </span>
+        <span id="busuanzi_value_site_pv" class="busuanzi__item--number">...</span>
+      </div>
+    
+
+  </div>
+
+                
+            <p class="caption">
+                
+                    ©2021-2024| VictorHong | <a href="https://beian.miit.gov.cn">粤ICP备20043735号</a>
+                
+            </p>
+        
+
+        
+            <p class="caption">Powered by <a href="https://gohugo.io/" target="_blank" rel="noreferrer">Hugo</a> and the <a href="https://github.com/zzossig/hugo-theme-zzo" target="_blank" rel="noreferrer">Zzo theme</a></p>
+        
+        
+    </div> 
+</footer>
+        </div>
+        
+
+
+
+
+
+<div class="wrapper__right hide" data-pad="true" dir="ltr">
+  <script>document.querySelector('.wrapper__right').classList.remove('hide')</script>
+  
+</div>
+
+    </div>
+</body>
+
+</html>
