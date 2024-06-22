@@ -14,20 +14,52 @@
     <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
     <webMaster>1427298682@qq.com (VictorHong)</webMaster>
     <copyright>©2021-2024| VictorHong | <a href="https://beian.miit.gov.cn">粤ICP备20043735号</a></copyright>
-    <lastBuildDate>Sat, 24 Jun 2023 23:26:32 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 24 Jun 2023 15:07:41 +0000</lastBuildDate>
     
         <atom:link href="https://hugo.jiahongw.com/zh/posts/index.xml" rel="self" type="application/rss+xml" />
     
 
       
       <item>
-        <title>ES原理和实践：底层lucene</title>
-        <link>https://hugo.jiahongw.com/zh/20230624/es-lucene-inside/</link>
-        <pubDate>Sat, 24 Jun 2023 23:26:32 +0800</pubDate>
+        <title>使用Obsidian编写Hugo博客</title>
+        <link>https://hugo.jiahongw.com/zh/20230624/use-obsidian-write-hugo/</link>
+        <pubDate>Sat, 24 Jun 2023 15:07:41 +0000</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sat, 24 Jun 2023 23:26:32 +0800</atom:modified>
-        <guid>https://hugo.jiahongw.com/zh/20230624/es-lucene-inside/</guid>
-        <description>ES 和 lucene 的关系 lucene：lucene 是一个 Java 信息检索程序库。可以类比为封装的底层 API，程序引用这个库之后可以使用其中的一些功能。 ES：E</description>
+        <atom:modified>Sat, 24 Jun 2023 15:07:41 +0000</atom:modified>
+        <guid>https://hugo.jiahongw.com/zh/20230624/use-obsidian-write-hugo/</guid>
+        <description>使用 Obsidian 编写 Hugo 博客的原因之一是，Obsidian 有插件能够支持配置模板，这样我新建文章的时候，只需要一个指令就能够帮我构建好一个文章的基本框架</description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        <media:content url="https://hugo.jiahongw.comhttps://cos.jiahongw.com/uPic/PqMz2x.jpg" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>Obsidian</category>
+            
+          
+            
+              <category>笔记</category>
+            
+          
+            
+              <category>效率</category>
+            
+          
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>ES原理和实践:底层查询优化</title>
+        <link>https://hugo.jiahongw.com/zh/20230529/es-query-optimization/</link>
+        <pubDate>Mon, 29 May 2023 23:26:32 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <atom:modified>Mon, 29 May 2023 23:26:32 +0800</atom:modified>
+        <guid>https://hugo.jiahongw.com/zh/20230529/es-query-optimization/</guid>
+        <description>多条件查询优化 ES 在进行联合索引查询的时候，使用多个条件去进行筛选，那么多个筛选条件会获得多个倒排列表，如果这两个条件是一个&amp;quot;且&amp;q</description>
         
         <dc:creator>VictorHong</dc:creator>
         <media:content url="https://hugo.jiahongw.comhttps://cos.jiahongw.com/uPic/image-20230225105212461.png" medium="image"><media:title type="html">featured image</media:title></media:content>
@@ -61,34 +93,42 @@
       </item>
       
       <item>
-        <title>使用Obsidian编写Hugo博客</title>
-        <link>https://hugo.jiahongw.com/zh/20230624/use-obsidian-write-hugo/</link>
-        <pubDate>Sat, 24 Jun 2023 15:07:41 +0000</pubDate>
+        <title>ES原理和实践:底层lucene</title>
+        <link>https://hugo.jiahongw.com/zh/20230524/es-lucene-inside/</link>
+        <pubDate>Wed, 24 May 2023 23:26:32 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
-        <atom:modified>Sat, 24 Jun 2023 15:07:41 +0000</atom:modified>
-        <guid>https://hugo.jiahongw.com/zh/20230624/use-obsidian-write-hugo/</guid>
-        <description>使用 Obsidian 编写 Hugo 博客的原因之一是，Obsidian 有插件能够支持配置模板，这样我新建文章的时候，只需要一个指令就能够帮我构建好一个文章的基本框架</description>
+        <atom:modified>Wed, 24 May 2023 23:26:32 +0800</atom:modified>
+        <guid>https://hugo.jiahongw.com/zh/20230524/es-lucene-inside/</guid>
+        <description>ES 和 lucene 的关系 lucene: lucene 是一个 Java 信息检索程序库。可以类比为封装的底层 API，程序引用这个库之后可以使用其中的一些功能。 ES: ES 是基于 lucene 这个包基础上进行构</description>
         
         <dc:creator>VictorHong</dc:creator>
-        <media:content url="https://hugo.jiahongw.comhttps://cos.jiahongw.com/uPic/PqMz2x.jpg" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://hugo.jiahongw.comhttps://cos.jiahongw.com/uPic/image-20230225105212461.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
           
             
-              <category>Obsidian</category>
+              <category>elasticsearch</category>
             
           
             
-              <category>笔记</category>
-            
-          
-            
-              <category>效率</category>
+              <category>lucene</category>
             
           
         
         
+          
+            
+              <category>elasticsearch</category>
+            
+          
+        
+        
+          
+            
+              <category>ES原理和实践</category>
+            
+          
         
       </item>
       
@@ -133,7 +173,7 @@
       </item>
       
       <item>
-        <title>ES原理和实践：ElasticSearch简介</title>
+        <title>ES原理和实践:ElasticSearch简介</title>
         <link>https://hugo.jiahongw.com/zh/20230224/es-intro/</link>
         <pubDate>Fri, 24 Feb 2023 23:26:32 +0800</pubDate>
         <author>1427298682@qq.com (VictorHong)</author>
