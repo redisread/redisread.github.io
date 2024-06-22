@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>lucene on ✏VictorHong&#39;s Blog</title>
+    <link>https://hugo.jiahongw.com/zh/tags/lucene/</link>
+    <description>Recent content in lucene on ✏VictorHong&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
+    <webMaster>1427298682@qq.com (VictorHong)</webMaster>
+    <copyright>©2021-2024| VictorHong | <a href="https://beian.miit.gov.cn">粤ICP备20043735号</a></copyright>
+    <lastBuildDate>Sat, 24 Jun 2023 23:26:32 +0800</lastBuildDate>
+    
+        <atom:link href="https://hugo.jiahongw.com/zh/tags/lucene/index.xml" rel="self" type="application/rss+xml" />
+    
+
+      
+      <item>
+        <title>ES原理和实践：底层lucene</title>
+        <link>https://hugo.jiahongw.com/zh/20230624/es-lucene-inside/</link>
+        <pubDate>Sat, 24 Jun 2023 23:26:32 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <atom:modified>Sat, 24 Jun 2023 23:26:32 +0800</atom:modified>
+        <guid>https://hugo.jiahongw.com/zh/20230624/es-lucene-inside/</guid>
+        <description>ES 和 lucene 的关系 lucene：lucene 是一个 Java 信息检索程序库。可以类比为封装的底层 API，程序引用这个库之后可以使用其中的一些功能。 ES：E</description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        <media:content url="https://hugo.jiahongw.comhttps://cos.jiahongw.com/uPic/image-20230225105212461.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>elasticsearch</category>
+            
+          
+            
+              <category>lucene</category>
+            
+          
+        
+        
+          
+            
+              <category>elasticsearch</category>
+            
+          
+        
+        
+          
+            
+              <category>ES原理和实践</category>
+            
+          
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

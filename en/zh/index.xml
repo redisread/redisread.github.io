@@ -21,6 +21,46 @@
 
       
       <item>
+        <title>ES原理和实践：底层lucene</title>
+        <link>https://hugo.jiahongw.com/en/zh/posts/elasticsearch/es-lucene-inside/</link>
+        <pubDate>Sat, 24 Jun 2023 23:26:32 +0800</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <atom:modified>Sat, 24 Jun 2023 23:26:32 +0800</atom:modified>
+        <guid>https://hugo.jiahongw.com/en/zh/posts/elasticsearch/es-lucene-inside/</guid>
+        <description>ES 和 lucene 的关系 lucene：lucene 是一个 Java 信息检索程序库。可以类比为封装的底层 API，程序引用这个库之后可以使用其中的一些功能。 ES：E</description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        <media:content url="https://hugo.jiahongw.comhttps://cos.jiahongw.com/uPic/image-20230225105212461.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>elasticsearch</category>
+            
+          
+            
+              <category>lucene</category>
+            
+          
+        
+        
+          
+            
+              <category>elasticsearch</category>
+            
+          
+        
+        
+          
+            
+              <category>ES原理和实践</category>
+            
+          
+        
+      </item>
+      
+      <item>
         <title>使用Obsidian编写Hugo博客</title>
         <link>https://hugo.jiahongw.com/en/zh/posts/hugo/use-obsidian-write-hugo/</link>
         <pubDate>Sat, 24 Jun 2023 15:07:41 +0000</pubDate>
@@ -999,7 +1039,7 @@
         <author>1427298682@qq.com (VictorHong)</author>
         <atom:modified>Sat, 25 Jan 2020 06:40:51 +0900</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/hugo/shortcodes/</guid>
-        <description>盒子 支持 Markdown 语法的盒子 语法： 1 This is boxmd shortcode 或者： 1 &amp;lt;div class=&amp;#34;box&amp;#34;&amp;gt;This is &amp;lt;strong&amp;gt;boxmd&amp;lt;/strong&amp;gt; shortcode&amp;lt;/div&amp;gt; 渲染显示： This is boxmd shortcode 简单盒子 语法： 渲染显示： This is **box** shortcode 代码选项卡 可以在不同的代码块之间切换</description>
+        <description>盒子 支持 Markdown 语法的盒子 语法： 或者： 1 &amp;lt;div class=&amp;#34;box&amp;#34;&amp;gt;This is &amp;lt;strong&amp;gt;boxmd&amp;lt;/strong&amp;gt; shortcode&amp;lt;/div&amp;gt; 渲染显示： This is boxmd shortcode 简单盒子 语法： 渲染显示： This is **box** shortcode 代码选项卡 可以在不同的代码块之间切换，语法： 渲</description>
         
         <dc:creator>VictorHong</dc:creator>
         <media:content url="https://hugo.jiahongw.comimages/feature3/code-file.png" medium="image"><media:title type="html">featured image</media:title></media:content>
