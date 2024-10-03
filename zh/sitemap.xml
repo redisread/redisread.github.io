@@ -151,6 +151,12 @@
                 href="https://hugo.jiahongw.com/zh/categories/%E7%94%9F%E6%B4%BB/"
                 />
   </url><url>
+    <loc>https://hugo.jiahongw.com/zh/gallery/</loc>
+    <lastmod>2024-02-10T22:20:16+09:00</lastmod>
+  </url><url>
+    <loc>https://hugo.jiahongw.com/zh/gallery/tailand/</loc>
+    <lastmod>2024-02-10T22:20:16+09:00</lastmod>
+  </url><url>
     <loc>https://hugo.jiahongw.com/zh/tags/o2o/</loc>
     <lastmod>2024-01-03T00:19:50+09:00</lastmod>
     <xhtml:link
@@ -556,9 +562,6 @@
                 hreflang="zh"
                 href="https://hugo.jiahongw.com/zh/tags/%E7%94%9F%E6%B4%BB/"
                 />
-  </url><url>
-    <loc>https://hugo.jiahongw.com/zh/gallery/</loc>
-    <lastmod>2021-09-12T10:20:16+09:00</lastmod>
   </url><url>
     <loc>https://hugo.jiahongw.com/zh/gallery/beijing/</loc>
     <lastmod>2021-09-12T10:20:16+09:00</lastmod>
