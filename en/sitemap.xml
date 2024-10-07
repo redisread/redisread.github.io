@@ -8,6 +8,40 @@
     <loc>https://hugo.jiahongw.com/en/zh/showcase/hugo/myitem/</loc>
     <lastmod>2020-01-19T21:13:42+09:00</lastmod>
   </url><url>
+    <loc>https://hugo.jiahongw.com/en/</loc>
+    <lastmod>2024-10-09T10:20:16+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://hugo.jiahongw.com/zh/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://hugo.jiahongw.com/ko/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hugo.jiahongw.com/en/"
+                />
+  </url><url>
+    <loc>https://hugo.jiahongw.com/en/zh/</loc>
+    <lastmod>2024-10-09T10:20:16+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://hugo.jiahongw.com/zh/zh/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hugo.jiahongw.com/en/zh/"
+                />
+  </url><url>
+    <loc>https://hugo.jiahongw.com/en/zh/gallery/beijing-202409/</loc>
+    <lastmod>2024-10-09T10:20:16+09:00</lastmod>
+  </url><url>
     <loc>https://hugo.jiahongw.com/en/categories/</loc>
     <lastmod>2024-09-16T01:53:24+00:00</lastmod>
     <xhtml:link
@@ -60,37 +94,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://hugo.jiahongw.com/en/tags/"
-                />
-  </url><url>
-    <loc>https://hugo.jiahongw.com/en/</loc>
-    <lastmod>2024-09-16T01:53:24+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://hugo.jiahongw.com/zh/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://hugo.jiahongw.com/ko/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://hugo.jiahongw.com/en/"
-                />
-  </url><url>
-    <loc>https://hugo.jiahongw.com/en/zh/</loc>
-    <lastmod>2024-09-16T01:53:24+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://hugo.jiahongw.com/zh/zh/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://hugo.jiahongw.com/en/zh/"
                 />
   </url><url>
     <loc>https://hugo.jiahongw.com/en/tags/%E6%97%85%E8%A1%8C/</loc>

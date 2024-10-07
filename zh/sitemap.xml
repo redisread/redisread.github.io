@@ -9,7 +9,7 @@
     <lastmod>2020-01-19T21:13:42+09:00</lastmod>
   </url><url>
     <loc>https://hugo.jiahongw.com/zh/</loc>
-    <lastmod>2024-09-16T01:53:24+00:00</lastmod>
+    <lastmod>2024-10-09T10:20:16+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -25,6 +25,12 @@
                 hreflang="zh"
                 href="https://hugo.jiahongw.com/zh/"
                 />
+  </url><url>
+    <loc>https://hugo.jiahongw.com/zh/gallery/</loc>
+    <lastmod>2024-10-09T10:20:16+09:00</lastmod>
+  </url><url>
+    <loc>https://hugo.jiahongw.com/zh/gallery/beijing-202409/</loc>
+    <lastmod>2024-10-09T10:20:16+09:00</lastmod>
   </url><url>
     <loc>https://hugo.jiahongw.com/zh/categories/</loc>
     <lastmod>2024-09-16T01:53:24+00:00</lastmod>
@@ -150,9 +156,6 @@
                 hreflang="zh"
                 href="https://hugo.jiahongw.com/zh/categories/%E7%94%9F%E6%B4%BB/"
                 />
-  </url><url>
-    <loc>https://hugo.jiahongw.com/zh/gallery/</loc>
-    <lastmod>2024-02-10T22:20:16+09:00</lastmod>
   </url><url>
     <loc>https://hugo.jiahongw.com/zh/gallery/tailand/</loc>
     <lastmod>2024-02-10T22:20:16+09:00</lastmod>
