@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>weekly on VictorHong&#39;s Blog</title>
+    <link>https://hugo.jiahongw.com/en/tags/weekly/</link>
+    <description>Recent content in weekly on VictorHong&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <follow_challenge>
+        <feedId>74349588616178697</feedId>
+        <userId>68207800989737984</userId>
+    </follow_challenge>
+    <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
+    <webMaster>1427298682@qq.com (VictorHong)</webMaster>
+    <copyright>©2021-2024| VictorHong | <a href="https://beian.miit.gov.cn">粤ICP备20043735号</a></copyright>
+    <lastBuildDate>Sun, 10 Nov 2024 00:19:50 +0900</lastBuildDate>
+    
+        <atom:link href="https://hugo.jiahongw.com/en/tags/weekly/index.xml" rel="self" type="application/rss+xml" />
+    
+
+      
+      <item>
+        <title>2024-45 Weekly Log</title>
+        <link>https://hugo.jiahongw.com/en/zh/weekly/weekly-log-2024-45/</link>
+        <pubDate>Sun, 10 Nov 2024 00:19:50 +0900</pubDate>
+        <author>1427298682@qq.com (VictorHong)</author>
+        <atom:modified>Sun, 10 Nov 2024 00:19:50 +0900</atom:modified>
+        <guid>https://hugo.jiahongw.com/en/zh/weekly/weekly-log-2024-45/</guid>
+        <description>Link &amp;amp; Article Tools &amp;amp; Software Life Music Images Think &amp;amp; Different </description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>weekly</category>
+            
+          
+        
+        
+          
+            
+              <category>weekly</category>
+            
+          
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>
