@@ -15,9 +15,9 @@
         <feedId>74349588616178697</feedId>
         <userId>68207800989737984</userId>
     </follow_challenge>
-    <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
-    <webMaster>1427298682@qq.com (VictorHong)</webMaster>
-    <copyright>©2021-2024| VictorHong | <a href="https://beian.miit.gov.cn">粤ICP备20043735号</a></copyright>
+    <managingEditor>wujiahong2013@gmail.com (VictorHong)</managingEditor>
+    <webMaster>wujiahong2013@gmail.com (VictorHong)</webMaster>
+    <copyright>©2021-2025 | VictorHong</copyright>
     <lastBuildDate>Mon, 29 May 2023 23:26:32 +0800</lastBuildDate>
     
         <atom:link href="https://hugo.jiahongw.com/zh/series/es%E5%8E%9F%E7%90%86%E5%92%8C%E5%AE%9E%E8%B7%B5/index.xml" rel="self" type="application/rss+xml" />
@@ -28,7 +28,7 @@
         <title>ES原理和实践:底层查询优化</title>
         <link>https://hugo.jiahongw.com/zh/20230529/es-query-optimization/</link>
         <pubDate>Mon, 29 May 2023 23:26:32 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
+        <author>wujiahong2013@gmail.com (VictorHong)</author>
         <atom:modified>Mon, 29 May 2023 23:26:32 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/zh/20230529/es-query-optimization/</guid>
         <description>多条件查询优化 ES 在进行联合索引查询的时候，使用多个条件去进行筛选，那么多个筛选条件会获得多个倒排列表，如果这两个条件是一个&amp;quot;且&amp;q</description>
@@ -68,7 +68,7 @@
         <title>ES原理和实践:底层lucene</title>
         <link>https://hugo.jiahongw.com/zh/20230524/es-lucene-inside/</link>
         <pubDate>Wed, 24 May 2023 23:26:32 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
+        <author>wujiahong2013@gmail.com (VictorHong)</author>
         <atom:modified>Wed, 24 May 2023 23:26:32 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/zh/20230524/es-lucene-inside/</guid>
         <description>ES 和 lucene 的关系 lucene: lucene 是一个 Java 信息检索程序库。可以类比为封装的底层 API，程序引用这个库之后可以使用其中的一些功能。 ES: ES 是基于 lucene 这个包基础上进行构</description>
@@ -108,7 +108,7 @@
         <title>ES原理和实践:ElasticSearch简介</title>
         <link>https://hugo.jiahongw.com/zh/20230224/es-intro/</link>
         <pubDate>Fri, 24 Feb 2023 23:26:32 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
+        <author>wujiahong2013@gmail.com (VictorHong)</author>
         <atom:modified>Fri, 24 Feb 2023 23:26:32 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/zh/20230224/es-intro/</guid>
         <description>什么是Elasticsearch？ ES的全称是ElasticSearch（下面简称ES），是一个分布式、高扩展、近实时的搜索与数据分析引擎（</description>

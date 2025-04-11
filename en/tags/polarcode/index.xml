@@ -15,9 +15,9 @@
         <feedId>74349588616178697</feedId>
         <userId>68207800989737984</userId>
     </follow_challenge>
-    <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
-    <webMaster>1427298682@qq.com (VictorHong)</webMaster>
-    <copyright>©2021-2024| VictorHong | <a href="https://beian.miit.gov.cn">粤ICP备20043735号</a></copyright>
+    <managingEditor>wujiahong2013@gmail.com (VictorHong)</managingEditor>
+    <webMaster>wujiahong2013@gmail.com (VictorHong)</webMaster>
+    <copyright>©2021-2025 | VictorHong</copyright>
     <lastBuildDate>Tue, 18 May 2021 14:01:12 +0800</lastBuildDate>
     
         <atom:link href="https://hugo.jiahongw.com/en/tags/polarcode/index.xml" rel="self" type="application/rss+xml" />
@@ -28,7 +28,7 @@
         <title>5G下的极化码</title>
         <link>https://hugo.jiahongw.com/en/zh/posts/polarcode/polar-code-intro/</link>
         <pubDate>Tue, 18 May 2021 14:01:12 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
+        <author>wujiahong2013@gmail.com (VictorHong)</author>
         <atom:modified>Tue, 18 May 2021 14:01:12 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/polarcode/polar-code-intro/</guid>
         <description>5G下的极化码 这个专栏介绍极化码的相关原理，一方面是因为我目前的毕业设计是关于5G极化码方向的，另一方面我想将自己所学的一些知识记录或者分享</description>

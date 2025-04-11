@@ -15,9 +15,9 @@
         <feedId>74349588616178697</feedId>
         <userId>68207800989737984</userId>
     </follow_challenge>
-    <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
-    <webMaster>1427298682@qq.com (VictorHong)</webMaster>
-    <copyright>©2021-2024| VictorHong | <a href="https://beian.miit.gov.cn">粤ICP备20043735号</a></copyright>
+    <managingEditor>wujiahong2013@gmail.com (VictorHong)</managingEditor>
+    <webMaster>wujiahong2013@gmail.com (VictorHong)</webMaster>
+    <copyright>©2021-2025 | VictorHong</copyright>
     <lastBuildDate>Mon, 15 Jun 2020 09:43:11 +0800</lastBuildDate>
     
         <atom:link href="https://hugo.jiahongw.com/en/categories/ue4%E5%BC%80%E5%8F%91/index.xml" rel="self" type="application/rss+xml" />
@@ -28,7 +28,7 @@
         <title>UE编辑器下模拟使用HitProxy</title>
         <link>https://hugo.jiahongw.com/en/zh/posts/ue/ue-hitproxy/</link>
         <pubDate>Mon, 15 Jun 2020 09:43:11 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
+        <author>wujiahong2013@gmail.com (VictorHong)</author>
         <atom:modified>Mon, 15 Jun 2020 09:43:11 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/ue/ue-hitproxy/</guid>
         <description>需要从 UGameViewportClient 类继承 修改返回值为true,路径：\Source\Runtime\Engine\Private\GameViewportClient</description>
@@ -66,7 +66,7 @@
         <title>UE4获取深度值</title>
         <link>https://hugo.jiahongw.com/en/zh/posts/ue/ue-depth/</link>
         <pubDate>Mon, 15 Jun 2020 09:42:11 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
+        <author>wujiahong2013@gmail.com (VictorHong)</author>
         <atom:modified>Mon, 15 Jun 2020 09:42:11 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/ue/ue-depth/</guid>
         <description>&lt;p&gt;在UE4中获取深度缓存，调用渲染命令读取。&lt;/p&gt;</description>
@@ -104,7 +104,7 @@
         <title>UE游戏、渲染线程</title>
         <link>https://hugo.jiahongw.com/en/zh/posts/ue/ue-game-render/</link>
         <pubDate>Wed, 03 Jun 2020 09:42:11 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
+        <author>wujiahong2013@gmail.com (VictorHong)</author>
         <atom:modified>Wed, 03 Jun 2020 09:42:11 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/ue/ue-game-render/</guid>
         <description>&lt;p&gt;探索UE4游戏线程的进入&lt;/p&gt;</description>
@@ -142,7 +142,7 @@
         <title>UE4渲染过程</title>
         <link>https://hugo.jiahongw.com/en/zh/posts/ue/ue4-render/</link>
         <pubDate>Fri, 29 May 2020 09:42:11 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
+        <author>wujiahong2013@gmail.com (VictorHong)</author>
         <atom:modified>Fri, 29 May 2020 09:42:11 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/ue/ue4-render/</guid>
         <description>&lt;p&gt;大概介绍以下UE4的主要渲染过程。&lt;/p&gt;</description>

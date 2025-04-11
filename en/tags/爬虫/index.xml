@@ -15,9 +15,9 @@
         <feedId>74349588616178697</feedId>
         <userId>68207800989737984</userId>
     </follow_challenge>
-    <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
-    <webMaster>1427298682@qq.com (VictorHong)</webMaster>
-    <copyright>©2021-2024| VictorHong | <a href="https://beian.miit.gov.cn">粤ICP备20043735号</a></copyright>
+    <managingEditor>wujiahong2013@gmail.com (VictorHong)</managingEditor>
+    <webMaster>wujiahong2013@gmail.com (VictorHong)</webMaster>
+    <copyright>©2021-2025 | VictorHong</copyright>
     <lastBuildDate>Wed, 04 Mar 2020 16:35:09 +0800</lastBuildDate>
     
         <atom:link href="https://hugo.jiahongw.com/en/tags/%E7%88%AC%E8%99%AB/index.xml" rel="self" type="application/rss+xml" />
@@ -28,7 +28,7 @@
         <title>使用Scrapy框架编写爬虫</title>
         <link>https://hugo.jiahongw.com/en/zh/posts/dev/scrapy-exercise/</link>
         <pubDate>Wed, 04 Mar 2020 16:35:09 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
+        <author>wujiahong2013@gmail.com (VictorHong)</author>
         <atom:modified>Wed, 04 Mar 2020 16:35:09 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/dev/scrapy-exercise/</guid>
         <description>&lt;p&gt;使用Scrapy爬取文章的一个小项目..&lt;/p&gt;</description>

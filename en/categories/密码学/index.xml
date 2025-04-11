@@ -15,9 +15,9 @@
         <feedId>74349588616178697</feedId>
         <userId>68207800989737984</userId>
     </follow_challenge>
-    <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
-    <webMaster>1427298682@qq.com (VictorHong)</webMaster>
-    <copyright>©2021-2024| VictorHong | <a href="https://beian.miit.gov.cn">粤ICP备20043735号</a></copyright>
+    <managingEditor>wujiahong2013@gmail.com (VictorHong)</managingEditor>
+    <webMaster>wujiahong2013@gmail.com (VictorHong)</webMaster>
+    <copyright>©2021-2025 | VictorHong</copyright>
     <lastBuildDate>Wed, 06 May 2020 16:00:46 +0800</lastBuildDate>
     
         <atom:link href="https://hugo.jiahongw.com/en/categories/%E5%AF%86%E7%A0%81%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" />
@@ -28,7 +28,7 @@
         <title>RSA加密算法</title>
         <link>https://hugo.jiahongw.com/en/zh/posts/cryptography/rsa/</link>
         <pubDate>Wed, 06 May 2020 16:00:46 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
+        <author>wujiahong2013@gmail.com (VictorHong)</author>
         <atom:modified>Wed, 06 May 2020 16:00:46 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/cryptography/rsa/</guid>
         <description>RSA算法 RSA加密算法是一种非对称加密算法，在公开密钥加密和电子商业中被广泛使用。 对极大整数做因数分解的难度决定了 RSA 算法的可靠性。换言之，</description>
@@ -62,7 +62,7 @@
         <title>Aes-高级加密标准</title>
         <link>https://hugo.jiahongw.com/en/zh/posts/cryptography/aes/</link>
         <pubDate>Fri, 03 Apr 2020 14:20:19 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
+        <author>wujiahong2013@gmail.com (VictorHong)</author>
         <atom:modified>Fri, 03 Apr 2020 14:20:19 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/cryptography/aes/</guid>
         <description>&lt;p&gt;AES算法是继DES之后比较快且比较简单的加密算法.⚖&lt;/p&gt;</description>

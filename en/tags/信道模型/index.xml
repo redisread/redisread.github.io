@@ -15,9 +15,9 @@
         <feedId>74349588616178697</feedId>
         <userId>68207800989737984</userId>
     </follow_challenge>
-    <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
-    <webMaster>1427298682@qq.com (VictorHong)</webMaster>
-    <copyright>©2021-2024| VictorHong | <a href="https://beian.miit.gov.cn">粤ICP备20043735号</a></copyright>
+    <managingEditor>wujiahong2013@gmail.com (VictorHong)</managingEditor>
+    <webMaster>wujiahong2013@gmail.com (VictorHong)</webMaster>
+    <copyright>©2021-2025 | VictorHong</copyright>
     <lastBuildDate>Thu, 24 Jun 2021 21:19:45 +0800</lastBuildDate>
     
         <atom:link href="https://hugo.jiahongw.com/en/tags/%E4%BF%A1%E9%81%93%E6%A8%A1%E5%9E%8B/index.xml" rel="self" type="application/rss+xml" />
@@ -28,7 +28,7 @@
         <title>极化码-信道模型</title>
         <link>https://hugo.jiahongw.com/en/zh/posts/polarcode/polar-code-channel-model/</link>
         <pubDate>Thu, 24 Jun 2021 21:19:45 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
+        <author>wujiahong2013@gmail.com (VictorHong)</author>
         <atom:modified>Thu, 24 Jun 2021 21:19:45 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/en/zh/posts/polarcode/polar-code-channel-model/</guid>
         <description>在通信过程中，物理层传输的就是电信号，假如我们只用0和1传输信号，并且这些信道互相都没有关系，我们称为二进制离散无记忆信道。信道模型是研究信</description>

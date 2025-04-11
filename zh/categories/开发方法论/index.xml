@@ -15,9 +15,9 @@
         <feedId>74349588616178697</feedId>
         <userId>68207800989737984</userId>
     </follow_challenge>
-    <managingEditor>1427298682@qq.com (VictorHong)</managingEditor>
-    <webMaster>1427298682@qq.com (VictorHong)</webMaster>
-    <copyright>©2021-2024| VictorHong | <a href="https://beian.miit.gov.cn">粤ICP备20043735号</a></copyright>
+    <managingEditor>wujiahong2013@gmail.com (VictorHong)</managingEditor>
+    <webMaster>wujiahong2013@gmail.com (VictorHong)</webMaster>
+    <copyright>©2021-2025 | VictorHong</copyright>
     <lastBuildDate>Sat, 22 Jan 2022 21:52:34 +0800</lastBuildDate>
     
         <atom:link href="https://hugo.jiahongw.com/zh/categories/%E5%BC%80%E5%8F%91%E6%96%B9%E6%B3%95%E8%AE%BA/index.xml" rel="self" type="application/rss+xml" />
@@ -28,7 +28,7 @@
         <title>理解设计模式</title>
         <link>https://hugo.jiahongw.com/zh/20220122/design-pattern/</link>
         <pubDate>Sat, 22 Jan 2022 21:52:34 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
+        <author>wujiahong2013@gmail.com (VictorHong)</author>
         <atom:modified>Sat, 22 Jan 2022 21:52:34 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/zh/20220122/design-pattern/</guid>
         <description>原则 设计原则 单一职责原则 Single Responsibility Principle，一个类应该只负责一个职责。 开闭原则 Open-Closed Principle, OCP，一个软件实体应当对扩展开放，对修改关闭。即软件</description>
@@ -62,7 +62,7 @@
         <title>git使用笔记</title>
         <link>https://hugo.jiahongw.com/zh/20210904/git-note/</link>
         <pubDate>Sat, 04 Sep 2021 23:14:21 +0800</pubDate>
-        <author>1427298682@qq.com (VictorHong)</author>
+        <author>wujiahong2013@gmail.com (VictorHong)</author>
         <atom:modified>Sat, 04 Sep 2021 23:14:21 +0800</atom:modified>
         <guid>https://hugo.jiahongw.com/zh/20210904/git-note/</guid>
         <description>配置信息 git的config的信息又一个全局的配置文件，也有一个局部（当前git项目）的配置文件。他们的位置分别在： 全局配置文件.gitco</description>
