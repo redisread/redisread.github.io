@@ -18,7 +18,7 @@
     <managingEditor>wujiahong2013@gmail.com (VictorHong)</managingEditor>
     <webMaster>wujiahong2013@gmail.com (VictorHong)</webMaster>
     <copyright>©2021-2025 | VictorHong</copyright>
-    <lastBuildDate>Sun, 24 Nov 2024 00:16:10 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 06 May 2025 13:31:35 +0800</lastBuildDate>
     
         <atom:link href="https://hugo.jiahongw.com/zh/index.xml" rel="self" type="application/rss+xml" />
     
@@ -40,6 +40,40 @@
         
       
 
+      
+      <item>
+        <title>使用Java开发 MCP Server 指南</title>
+        <link>https://hugo.jiahongw.com/zh/20250506/java-mcp-server-dev/</link>
+        <pubDate>Tue, 06 May 2025 13:31:35 +0800</pubDate>
+        <author>wujiahong2013@gmail.com (VictorHong)</author>
+        <atom:modified>Tue, 06 May 2025 13:31:35 +0800</atom:modified>
+        <guid>https://hugo.jiahongw.com/zh/20250506/java-mcp-server-dev/</guid>
+        <description>前言：MCP 核心概念 什么是MCP协议，参考：MCP 协议 Resources 资源：客户端可读取的类文件数据（如 API 响应或文件内容） 资源是模型上下文协议（MCP）中</description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        <media:content url="https://hugo.jiahongw.comhttps://cos.jiahongw.com/uPic/JpmSSA.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>AI</category>
+            
+          
+            
+              <category>MCP</category>
+            
+          
+        
+        
+          
+            
+              <category>AI</category>
+            
+          
+        
+        
+      </item>
       
       <item>
         <title>2024-47 Weekly Log</title>

@@ -8,11 +8,34 @@
     <loc>https://hugo.jiahongw.com/en/zh/showcase/hugo/myitem/</loc>
     <lastmod>2020-01-19T21:13:42+09:00</lastmod>
   </url><url>
-    <loc>https://hugo.jiahongw.com/en/zh/weekly/weekly-log-2024-47/</loc>
-    <lastmod>2024-11-24T00:16:10+08:00</lastmod>
+    <loc>https://hugo.jiahongw.com/en/tags/ai/</loc>
+    <lastmod>2025-05-06T13:31:35+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://hugo.jiahongw.com/zh/tags/ai/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hugo.jiahongw.com/en/tags/ai/"
+                />
+  </url><url>
+    <loc>https://hugo.jiahongw.com/en/categories/ai/</loc>
+    <lastmod>2025-05-06T13:31:35+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://hugo.jiahongw.com/zh/categories/ai/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hugo.jiahongw.com/en/categories/ai/"
+                />
   </url><url>
     <loc>https://hugo.jiahongw.com/en/categories/</loc>
-    <lastmod>2024-11-24T00:16:10+08:00</lastmod>
+    <lastmod>2025-05-06T13:31:35+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -29,8 +52,21 @@
                 href="https://hugo.jiahongw.com/en/categories/"
                 />
   </url><url>
+    <loc>https://hugo.jiahongw.com/en/tags/mcp/</loc>
+    <lastmod>2025-05-06T13:31:35+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://hugo.jiahongw.com/zh/tags/mcp/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hugo.jiahongw.com/en/tags/mcp/"
+                />
+  </url><url>
     <loc>https://hugo.jiahongw.com/en/tags/</loc>
-    <lastmod>2024-11-24T00:16:10+08:00</lastmod>
+    <lastmod>2025-05-06T13:31:35+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -48,7 +84,7 @@
                 />
   </url><url>
     <loc>https://hugo.jiahongw.com/en/</loc>
-    <lastmod>2024-11-24T00:16:10+08:00</lastmod>
+    <lastmod>2025-05-06T13:31:35+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -64,6 +100,25 @@
                 hreflang="en"
                 href="https://hugo.jiahongw.com/en/"
                 />
+  </url><url>
+    <loc>https://hugo.jiahongw.com/en/zh/</loc>
+    <lastmod>2025-05-06T13:31:35+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://hugo.jiahongw.com/zh/zh/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hugo.jiahongw.com/en/zh/"
+                />
+  </url><url>
+    <loc>https://hugo.jiahongw.com/en/zh/posts/ai/java-mcp-server-dev/</loc>
+    <lastmod>2025-05-06T13:31:35+08:00</lastmod>
+  </url><url>
+    <loc>https://hugo.jiahongw.com/en/zh/weekly/weekly-log-2024-47/</loc>
+    <lastmod>2024-11-24T00:16:10+08:00</lastmod>
   </url><url>
     <loc>https://hugo.jiahongw.com/en/tags/weekly/</loc>
     <lastmod>2024-11-24T00:16:10+08:00</lastmod>
@@ -89,19 +144,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://hugo.jiahongw.com/en/categories/weekly/"
-                />
-  </url><url>
-    <loc>https://hugo.jiahongw.com/en/zh/</loc>
-    <lastmod>2024-11-24T00:16:10+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://hugo.jiahongw.com/zh/zh/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://hugo.jiahongw.com/en/zh/"
                 />
   </url><url>
     <loc>https://hugo.jiahongw.com/en/zh/weekly/weekly-log-2024-46/</loc>
