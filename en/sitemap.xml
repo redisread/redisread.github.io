@@ -8,26 +8,8 @@
     <loc>https://hugo.jiahongw.com/en/zh/showcase/hugo/myitem/</loc>
     <lastmod>2020-01-19T21:13:42+09:00</lastmod>
   </url><url>
-    <loc>https://hugo.jiahongw.com/en/tags/</loc>
-    <lastmod>2025-05-18T00:19:50+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://hugo.jiahongw.com/zh/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://hugo.jiahongw.com/ko/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://hugo.jiahongw.com/en/tags/"
-                />
-  </url><url>
     <loc>https://hugo.jiahongw.com/en/</loc>
-    <lastmod>2025-05-18T00:19:50+09:00</lastmod>
+    <lastmod>2025-07-06T22:20:16+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -45,7 +27,7 @@
                 />
   </url><url>
     <loc>https://hugo.jiahongw.com/en/zh/</loc>
-    <lastmod>2025-05-18T00:19:50+09:00</lastmod>
+    <lastmod>2025-07-06T22:20:16+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -55,6 +37,27 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://hugo.jiahongw.com/en/zh/"
+                />
+  </url><url>
+    <loc>https://hugo.jiahongw.com/en/zh/gallery/shenzhen-20250629-yinhushan/</loc>
+    <lastmod>2025-07-06T22:20:16+09:00</lastmod>
+  </url><url>
+    <loc>https://hugo.jiahongw.com/en/tags/</loc>
+    <lastmod>2025-05-18T00:19:50+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://hugo.jiahongw.com/zh/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://hugo.jiahongw.com/ko/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hugo.jiahongw.com/en/tags/"
                 />
   </url><url>
     <loc>https://hugo.jiahongw.com/en/zh/talks/%E5%87%86%E5%A4%87%E5%A4%AA%E4%B9%85-%E4%BD%A0%E5%B0%B1%E6%B2%A1%E5%8A%9E%E6%B3%95%E5%BC%80%E5%A7%8B%E4%BA%86/</loc>

@@ -9,7 +9,7 @@
     <lastmod>2020-01-19T21:13:42+09:00</lastmod>
   </url><url>
     <loc>https://hugo.jiahongw.com/zh/</loc>
-    <lastmod>2025-05-18T00:19:50+09:00</lastmod>
+    <lastmod>2025-07-06T22:20:16+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -25,6 +25,12 @@
                 hreflang="zh"
                 href="https://hugo.jiahongw.com/zh/"
                 />
+  </url><url>
+    <loc>https://hugo.jiahongw.com/zh/gallery/</loc>
+    <lastmod>2025-07-06T22:20:16+09:00</lastmod>
+  </url><url>
+    <loc>https://hugo.jiahongw.com/zh/gallery/shenzhen-20250629-yinhushan/</loc>
+    <lastmod>2025-07-06T22:20:16+09:00</lastmod>
   </url><url>
     <loc>https://hugo.jiahongw.com/zh/tags/</loc>
     <lastmod>2025-05-18T00:19:50+09:00</lastmod>
@@ -173,9 +179,6 @@
   </url><url>
     <loc>https://hugo.jiahongw.com/zh/weekly/weekly-log-2024-45/</loc>
     <lastmod>2024-11-10T00:19:50+09:00</lastmod>
-  </url><url>
-    <loc>https://hugo.jiahongw.com/zh/gallery/</loc>
-    <lastmod>2024-10-09T10:20:16+09:00</lastmod>
   </url><url>
     <loc>https://hugo.jiahongw.com/zh/gallery/beijing-202409/</loc>
     <lastmod>2024-10-09T10:20:16+09:00</lastmod>
