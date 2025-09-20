@@ -18,11 +18,49 @@
     <managingEditor>wujiahong2013@gmail.com (VictorHong)</managingEditor>
     <webMaster>wujiahong2013@gmail.com (VictorHong)</webMaster>
     <copyright>©2021-2025 | VictorHong</copyright>
-    <lastBuildDate>Tue, 06 May 2025 13:31:35 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 20 Sep 2025 10:00:00 +0800</lastBuildDate>
     
         <atom:link href="https://hugo.jiahongw.com/zh/posts/index.xml" rel="self" type="application/rss+xml" />
     
 
+      
+      <item>
+        <title>《鱼不存在》</title>
+        <link>https://hugo.jiahongw.com/zh/20250920/fish-does-not-exist/</link>
+        <pubDate>Sat, 20 Sep 2025 10:00:00 +0800</pubDate>
+        <author>wujiahong2013@gmail.com (VictorHong)</author>
+        <atom:modified>Sat, 20 Sep 2025 10:00:00 +0800</atom:modified>
+        <guid>https://hugo.jiahongw.com/zh/20250920/fish-does-not-exist/</guid>
+        <description>书籍简介 《鱼不存在》: 《鱼不存在》是美国作家露露·米勒（Lulu Miller）的一部非虚构作品，这本书结合了科学史、哲学思考和个人成长故事，</description>
+        
+        <dc:creator>Victor</dc:creator>
+        <media:content url="https://hugo.jiahongw.comhttps://cos.jiahongw.com/uPic/why-fish-dont-exist.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>读书笔记</category>
+            
+          
+            
+              <category>科学哲学</category>
+            
+          
+            
+              <category>自我认知</category>
+            
+          
+        
+        
+          
+            
+              <category>每周一书</category>
+            
+          
+        
+        
+      </item>
       
       <item>
         <title>使用Java开发 MCP Server 指南</title>
