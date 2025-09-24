@@ -9,7 +9,7 @@
     <lastmod>2020-01-19T21:13:42+09:00</lastmod>
   </url><url>
     <loc>https://hugo.jiahongw.com/zh/</loc>
-    <lastmod>2025-09-20T10:00:00+08:00</lastmod>
+    <lastmod>2025-09-24T22:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -26,11 +26,8 @@
                 href="https://hugo.jiahongw.com/zh/"
                 />
   </url><url>
-    <loc>https://hugo.jiahongw.com/zh/20250920/fish-does-not-exist/</loc>
-    <lastmod>2025-09-20T10:00:00+08:00</lastmod>
-  </url><url>
     <loc>https://hugo.jiahongw.com/zh/categories/</loc>
-    <lastmod>2025-09-20T10:00:00+08:00</lastmod>
+    <lastmod>2025-09-24T22:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -48,10 +45,10 @@
                 />
   </url><url>
     <loc>https://hugo.jiahongw.com/zh/posts/</loc>
-    <lastmod>2025-09-20T10:00:00+08:00</lastmod>
+    <lastmod>2025-09-24T22:00:00+00:00</lastmod>
   </url><url>
     <loc>https://hugo.jiahongw.com/zh/tags/</loc>
-    <lastmod>2025-09-20T10:00:00+08:00</lastmod>
+    <lastmod>2025-09-24T22:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -67,6 +64,51 @@
                 hreflang="zh"
                 href="https://hugo.jiahongw.com/zh/tags/"
                 />
+  </url><url>
+    <loc>https://hugo.jiahongw.com/zh/tags/%E4%BF%A1%E6%81%AF%E6%BA%90/</loc>
+    <lastmod>2025-09-24T22:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hugo.jiahongw.com/en/tags/%E4%BF%A1%E6%81%AF%E6%BA%90/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://hugo.jiahongw.com/zh/tags/%E4%BF%A1%E6%81%AF%E6%BA%90/"
+                />
+  </url><url>
+    <loc>https://hugo.jiahongw.com/zh/20250924/quality-information-sources/</loc>
+    <lastmod>2025-09-24T22:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hugo.jiahongw.com/zh/tags/%E7%9F%A5%E8%AF%86%E7%AE%A1%E7%90%86/</loc>
+    <lastmod>2025-09-24T22:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hugo.jiahongw.com/en/tags/%E7%9F%A5%E8%AF%86%E7%AE%A1%E7%90%86/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://hugo.jiahongw.com/zh/tags/%E7%9F%A5%E8%AF%86%E7%AE%A1%E7%90%86/"
+                />
+  </url><url>
+    <loc>https://hugo.jiahongw.com/zh/categories/%E7%9F%A5%E8%AF%86%E7%AE%A1%E7%90%86/</loc>
+    <lastmod>2025-09-24T22:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hugo.jiahongw.com/en/categories/%E7%9F%A5%E8%AF%86%E7%AE%A1%E7%90%86/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://hugo.jiahongw.com/zh/categories/%E7%9F%A5%E8%AF%86%E7%AE%A1%E7%90%86/"
+                />
+  </url><url>
+    <loc>https://hugo.jiahongw.com/zh/20250920/fish-does-not-exist/</loc>
+    <lastmod>2025-09-20T10:00:00+08:00</lastmod>
   </url><url>
     <loc>https://hugo.jiahongw.com/zh/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2025-09-20T10:00:00+08:00</lastmod>
