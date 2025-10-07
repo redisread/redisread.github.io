@@ -9,7 +9,7 @@
     <lastmod>2020-01-19T21:13:42+09:00</lastmod>
   </url><url>
     <loc>https://hugo.jiahongw.com/zh/</loc>
-    <lastmod>2025-09-24T22:00:00+00:00</lastmod>
+    <lastmod>2025-10-08T10:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -26,8 +26,11 @@
                 href="https://hugo.jiahongw.com/zh/"
                 />
   </url><url>
+    <loc>https://hugo.jiahongw.com/zh/20251008/the-sovereign-individual/</loc>
+    <lastmod>2025-10-08T10:00:00+08:00</lastmod>
+  </url><url>
     <loc>https://hugo.jiahongw.com/zh/categories/</loc>
-    <lastmod>2025-09-24T22:00:00+00:00</lastmod>
+    <lastmod>2025-10-08T10:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -45,10 +48,10 @@
                 />
   </url><url>
     <loc>https://hugo.jiahongw.com/zh/posts/</loc>
-    <lastmod>2025-09-24T22:00:00+00:00</lastmod>
+    <lastmod>2025-10-08T10:00:00+08:00</lastmod>
   </url><url>
     <loc>https://hugo.jiahongw.com/zh/tags/</loc>
-    <lastmod>2025-09-24T22:00:00+00:00</lastmod>
+    <lastmod>2025-10-08T10:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -63,6 +66,32 @@
                 rel="alternate"
                 hreflang="zh"
                 href="https://hugo.jiahongw.com/zh/tags/"
+                />
+  </url><url>
+    <loc>https://hugo.jiahongw.com/zh/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2025-10-08T10:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hugo.jiahongw.com/en/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://hugo.jiahongw.com/zh/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"
+                />
+  </url><url>
+    <loc>https://hugo.jiahongw.com/zh/categories/%E6%AF%8F%E5%91%A8%E4%B8%80%E4%B9%A6/</loc>
+    <lastmod>2025-10-08T10:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hugo.jiahongw.com/en/categories/%E6%AF%8F%E5%91%A8%E4%B8%80%E4%B9%A6/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://hugo.jiahongw.com/zh/categories/%E6%AF%8F%E5%91%A8%E4%B8%80%E4%B9%A6/"
                 />
   </url><url>
     <loc>https://hugo.jiahongw.com/zh/tags/%E4%BF%A1%E6%81%AF%E6%BA%90/</loc>
@@ -110,19 +139,6 @@
     <loc>https://hugo.jiahongw.com/zh/20250920/fish-does-not-exist/</loc>
     <lastmod>2025-09-20T10:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://hugo.jiahongw.com/zh/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2025-09-20T10:00:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://hugo.jiahongw.com/en/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://hugo.jiahongw.com/zh/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"
-                />
-  </url><url>
     <loc>https://hugo.jiahongw.com/zh/tags/%E7%A7%91%E5%AD%A6%E5%93%B2%E5%AD%A6/</loc>
     <lastmod>2025-09-20T10:00:00+08:00</lastmod>
     <xhtml:link
@@ -134,19 +150,6 @@
                 rel="alternate"
                 hreflang="zh"
                 href="https://hugo.jiahongw.com/zh/tags/%E7%A7%91%E5%AD%A6%E5%93%B2%E5%AD%A6/"
-                />
-  </url><url>
-    <loc>https://hugo.jiahongw.com/zh/categories/%E6%AF%8F%E5%91%A8%E4%B8%80%E4%B9%A6/</loc>
-    <lastmod>2025-09-20T10:00:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://hugo.jiahongw.com/en/categories/%E6%AF%8F%E5%91%A8%E4%B8%80%E4%B9%A6/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://hugo.jiahongw.com/zh/categories/%E6%AF%8F%E5%91%A8%E4%B8%80%E4%B9%A6/"
                 />
   </url><url>
     <loc>https://hugo.jiahongw.com/zh/tags/%E8%87%AA%E6%88%91%E8%AE%A4%E7%9F%A5/</loc>
