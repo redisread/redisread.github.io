@@ -18,53 +18,11 @@
     <managingEditor>wujiahong2013@gmail.com (VictorHong)</managingEditor>
     <webMaster>wujiahong2013@gmail.com (VictorHong)</webMaster>
     <copyright>©2021-2026 | VictorHong</copyright>
-    <lastBuildDate>Mon, 16 Feb 2026 14:30:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 06 May 2025 13:31:35 +0800</lastBuildDate>
     
         <atom:link href="https://hugo.jiahongw.com/zh/categories/ai/index.xml" rel="self" type="application/rss+xml" />
     
 
-      
-      <item>
-        <title>那些改变世界的科技产品，都有一个有趣的起点</title>
-        <link>https://hugo.jiahongw.com/zh/20260216/product-stories-2026/</link>
-        <pubDate>Mon, 16 Feb 2026 14:30:00 +0000</pubDate>
-        <author>wujiahong2013@gmail.com (VictorHong)</author>
-        <atom:modified>Mon, 16 Feb 2026 14:30:00 +0000</atom:modified>
-        <guid>https://hugo.jiahongw.com/zh/20260216/product-stories-2026/</guid>
-        <description>你有没有想过，你正在用的那些改变世界的科技产品，最初可能只是一个「失败」的产物？ Notion：差点 50 美元被卖掉 2015 年的一个深夜，Notion 创</description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        <media:content url="https://hugo.jiahongw.comhttps://cos.jiahongw.com/uPic/2026/02/16/product-stories-cover.jpg" medium="image"><media:title type="html">featured image</media:title></media:content>
-        
-        
-        
-          
-            
-              <category>科技</category>
-            
-          
-            
-              <category>产品</category>
-            
-          
-            
-              <category>创业</category>
-            
-          
-            
-              <category>故事</category>
-            
-          
-        
-        
-          
-            
-              <category>AI</category>
-            
-          
-        
-        
-      </item>
       
       <item>
         <title>使用Java开发 MCP Server 指南</title>
