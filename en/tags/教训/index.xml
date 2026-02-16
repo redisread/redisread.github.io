@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>教训 on VictorHong&#39;s Blog</title>
+    <link>https://hugo.jiahongw.com/en/tags/%E6%95%99%E8%AE%AD/</link>
+    <description>Recent content in 教训 on VictorHong&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <follow_challenge>
+        <feedId>74349588616178697</feedId>
+        <userId>68207800989737984</userId>
+    </follow_challenge>
+    <managingEditor>wujiahong2013@gmail.com (VictorHong)</managingEditor>
+    <webMaster>wujiahong2013@gmail.com (VictorHong)</webMaster>
+    <copyright>©2021-2026 | VictorHong</copyright>
+    <lastBuildDate>Mon, 16 Feb 2026 22:27:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://hugo.jiahongw.com/en/tags/%E6%95%99%E8%AE%AD/index.xml" rel="self" type="application/rss+xml" />
+    
+
+      
+      <item>
+        <title>产品故事｜大学时代的第一次产品失败</title>
+        <link>https://hugo.jiahongw.com/en/zh/posts/ai/product-story-first-failure/</link>
+        <pubDate>Mon, 16 Feb 2026 22:27:00 +0000</pubDate>
+        <author>wujiahong2013@gmail.com (VictorHong)</author>
+        <atom:modified>Mon, 16 Feb 2026 22:27:00 +0000</atom:modified>
+        <guid>https://hugo.jiahongw.com/en/zh/posts/ai/product-story-first-failure/</guid>
+        <description>2014年秋天，读大二的张宇做了一个&amp;quot;帮助学生拼车&amp;quot;的app。他花了两个月生活费外包开发，上线两周，只有23个用户——其</description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        <media:content url="https://hugo.jiahongw.comhttps://cos.jiahongw.com/uPic/2024/12/abc123.jpg" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>产品故事</category>
+            
+          
+            
+              <category>创业</category>
+            
+          
+            
+              <category>教训</category>
+            
+          
+        
+        
+          
+            
+              <category>AI</category>
+            
+          
+            
+              <category>产品</category>
+            
+          
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>
