@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>开发者 on ✏VictorHong&#39;s Blog</title>
+    <link>https://hugo.jiahongw.com/zh/tags/%E5%BC%80%E5%8F%91%E8%80%85/</link>
+    <description>Recent content in 开发者 on ✏VictorHong&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <follow_challenge>
+        <feedId>74349588616178697</feedId>
+        <userId>68207800989737984</userId>
+    </follow_challenge>
+    <managingEditor>wujiahong2013@gmail.com (VictorHong)</managingEditor>
+    <webMaster>wujiahong2013@gmail.com (VictorHong)</webMaster>
+    <copyright>©2021-2026 | VictorHong</copyright>
+    <lastBuildDate>Mon, 16 Feb 2026 18:30:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://hugo.jiahongw.com/zh/tags/%E5%BC%80%E5%8F%91%E8%80%85/index.xml" rel="self" type="application/rss+xml" />
+    
+
+      
+      <item>
+        <title>产品故事｜那个拯救了周末的彩蛋</title>
+        <link>https://hugo.jiahongw.com/zh/20260216/product-story-github-easter-egg/</link>
+        <pubDate>Mon, 16 Feb 2026 18:30:00 +0000</pubDate>
+        <author>wujiahong2013@gmail.com (VictorHong)</author>
+        <atom:modified>Mon, 16 Feb 2026 18:30:00 +0000</atom:modified>
+        <guid>https://hugo.jiahongw.com/zh/20260216/product-story-github-easter-egg/</guid>
+        <description>2017年某个周五下午，开发者李然遭遇了职业生涯最可怕的一刻——他误操作执行了 git push --force，把团队三天的代码全部覆盖了。 就在他准备告诉</description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        <media:content url="https://hugo.jiahongw.comhttps://cos.jiahongw.com/uPic/2024/12/abc123.jpg" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>GitHub</category>
+            
+          
+            
+              <category>产品故事</category>
+            
+          
+            
+              <category>开发者</category>
+            
+          
+        
+        
+          
+            
+              <category>AI</category>
+            
+          
+            
+              <category>产品</category>
+            
+          
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>
