@@ -9,7 +9,7 @@
     <lastmod>2020-01-19T21:13:42+09:00</lastmod>
   </url><url>
     <loc>https://hugo.jiahongw.com/zh/</loc>
-    <lastmod>2025-10-10T10:00:00+08:00</lastmod>
+    <lastmod>2026-02-16T14:35:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -26,11 +26,21 @@
                 href="https://hugo.jiahongw.com/zh/"
                 />
   </url><url>
-    <loc>https://hugo.jiahongw.com/zh/20251010/why-greatness-cannot-be-planned/</loc>
-    <lastmod>2025-10-10T10:00:00+08:00</lastmod>
+    <loc>https://hugo.jiahongw.com/zh/categories/ai/</loc>
+    <lastmod>2026-02-16T14:35:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hugo.jiahongw.com/en/categories/ai/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://hugo.jiahongw.com/zh/categories/ai/"
+                />
   </url><url>
     <loc>https://hugo.jiahongw.com/zh/categories/</loc>
-    <lastmod>2025-10-10T10:00:00+08:00</lastmod>
+    <lastmod>2026-02-16T14:35:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -47,11 +57,27 @@
                 href="https://hugo.jiahongw.com/zh/categories/"
                 />
   </url><url>
+    <loc>https://hugo.jiahongw.com/zh/tags/notion/</loc>
+    <lastmod>2026-02-16T14:35:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hugo.jiahongw.com/en/tags/notion/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://hugo.jiahongw.com/zh/tags/notion/"
+                />
+  </url><url>
+    <loc>https://hugo.jiahongw.com/zh/20260216/notion-50-dollars/</loc>
+    <lastmod>2026-02-16T14:35:00+00:00</lastmod>
+  </url><url>
     <loc>https://hugo.jiahongw.com/zh/posts/</loc>
-    <lastmod>2025-10-10T10:00:00+08:00</lastmod>
+    <lastmod>2026-02-16T14:35:00+00:00</lastmod>
   </url><url>
     <loc>https://hugo.jiahongw.com/zh/tags/</loc>
-    <lastmod>2025-10-10T10:00:00+08:00</lastmod>
+    <lastmod>2026-02-16T14:35:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -67,6 +93,35 @@
                 hreflang="zh"
                 href="https://hugo.jiahongw.com/zh/tags/"
                 />
+  </url><url>
+    <loc>https://hugo.jiahongw.com/zh/tags/%E4%BA%A7%E5%93%81%E6%95%85%E4%BA%8B/</loc>
+    <lastmod>2026-02-16T14:35:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hugo.jiahongw.com/en/tags/%E4%BA%A7%E5%93%81%E6%95%85%E4%BA%8B/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://hugo.jiahongw.com/zh/tags/%E4%BA%A7%E5%93%81%E6%95%85%E4%BA%8B/"
+                />
+  </url><url>
+    <loc>https://hugo.jiahongw.com/zh/tags/%E5%88%9B%E4%B8%9A/</loc>
+    <lastmod>2026-02-16T14:35:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hugo.jiahongw.com/en/tags/%E5%88%9B%E4%B8%9A/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://hugo.jiahongw.com/zh/tags/%E5%88%9B%E4%B8%9A/"
+                />
+  </url><url>
+    <loc>https://hugo.jiahongw.com/zh/20251010/why-greatness-cannot-be-planned/</loc>
+    <lastmod>2025-10-10T10:00:00+08:00</lastmod>
   </url><url>
     <loc>https://hugo.jiahongw.com/zh/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2025-10-10T10:00:00+08:00</lastmod>
@@ -217,19 +272,6 @@
                 rel="alternate"
                 hreflang="zh"
                 href="https://hugo.jiahongw.com/zh/tags/ai/"
-                />
-  </url><url>
-    <loc>https://hugo.jiahongw.com/zh/categories/ai/</loc>
-    <lastmod>2025-05-06T13:31:35+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://hugo.jiahongw.com/en/categories/ai/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://hugo.jiahongw.com/zh/categories/ai/"
                 />
   </url><url>
     <loc>https://hugo.jiahongw.com/zh/tags/mcp/</loc>
