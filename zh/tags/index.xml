@@ -18,11 +18,83 @@
     <managingEditor>wujiahong2013@gmail.com (VictorHong)</managingEditor>
     <webMaster>wujiahong2013@gmail.com (VictorHong)</webMaster>
     <copyright>©2021-2026 | VictorHong</copyright>
-    <lastBuildDate>Fri, 10 Oct 2025 10:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 23 Feb 2026 18:05:00 +0800</lastBuildDate>
     
         <atom:link href="https://hugo.jiahongw.com/zh/tags/index.xml" rel="self" type="application/rss+xml" />
     
 
+      
+      <item>
+        <title>Agentic Engineering</title>
+        <link>https://hugo.jiahongw.com/zh/tags/agentic-engineering/</link>
+        <pubDate>Mon, 23 Feb 2026 18:05:00 +0800</pubDate>
+        <author>wujiahong2013@gmail.com (VictorHong)</author>
+        
+        <guid>https://hugo.jiahongw.com/zh/tags/agentic-engineering/</guid>
+        <description></description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>AI</title>
+        <link>https://hugo.jiahongw.com/zh/tags/ai/</link>
+        <pubDate>Mon, 23 Feb 2026 18:05:00 +0800</pubDate>
+        <author>wujiahong2013@gmail.com (VictorHong)</author>
+        
+        <guid>https://hugo.jiahongw.com/zh/tags/ai/</guid>
+        <description></description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>编程</title>
+        <link>https://hugo.jiahongw.com/zh/tags/%E7%BC%96%E7%A8%8B/</link>
+        <pubDate>Mon, 23 Feb 2026 18:05:00 +0800</pubDate>
+        <author>wujiahong2013@gmail.com (VictorHong)</author>
+        
+        <guid>https://hugo.jiahongw.com/zh/tags/%E7%BC%96%E7%A8%8B/</guid>
+        <description></description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>开发方法论</title>
+        <link>https://hugo.jiahongw.com/zh/tags/%E5%BC%80%E5%8F%91%E6%96%B9%E6%B3%95%E8%AE%BA/</link>
+        <pubDate>Mon, 23 Feb 2026 18:05:00 +0800</pubDate>
+        <author>wujiahong2013@gmail.com (VictorHong)</author>
+        
+        <guid>https://hugo.jiahongw.com/zh/tags/%E5%BC%80%E5%8F%91%E6%96%B9%E6%B3%95%E8%AE%BA/</guid>
+        <description></description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
       <item>
         <title>读书笔记</title>
@@ -139,24 +211,6 @@
         <author>wujiahong2013@gmail.com (VictorHong)</author>
         
         <guid>https://hugo.jiahongw.com/zh/tags/%E5%93%B2%E7%90%86/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>AI</title>
-        <link>https://hugo.jiahongw.com/zh/tags/ai/</link>
-        <pubDate>Tue, 06 May 2025 13:31:35 +0800</pubDate>
-        <author>wujiahong2013@gmail.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/zh/tags/ai/</guid>
         <description></description>
         
         <dc:creator>VictorHong</dc:creator>
@@ -565,24 +619,6 @@
       </item>
       
       <item>
-        <title>开发方法论</title>
-        <link>https://hugo.jiahongw.com/zh/tags/%E5%BC%80%E5%8F%91%E6%96%B9%E6%B3%95%E8%AE%BA/</link>
-        <pubDate>Sat, 22 Jan 2022 21:52:34 +0800</pubDate>
-        <author>wujiahong2013@gmail.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/zh/tags/%E5%BC%80%E5%8F%91%E6%96%B9%E6%B3%95%E8%AE%BA/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
         <title>设计模式</title>
         <link>https://hugo.jiahongw.com/zh/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</link>
         <pubDate>Sat, 22 Jan 2022 21:52:34 +0800</pubDate>
@@ -661,24 +697,6 @@
         <author>wujiahong2013@gmail.com (VictorHong)</author>
         
         <guid>https://hugo.jiahongw.com/zh/tags/youtube/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>编程</title>
-        <link>https://hugo.jiahongw.com/zh/tags/%E7%BC%96%E7%A8%8B/</link>
-        <pubDate>Sat, 21 Aug 2021 16:15:37 +0800</pubDate>
-        <author>wujiahong2013@gmail.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/zh/tags/%E7%BC%96%E7%A8%8B/</guid>
         <description></description>
         
         <dc:creator>VictorHong</dc:creator>
