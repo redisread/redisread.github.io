@@ -9,14 +9,14 @@
   </sitemap>
   
   <sitemap>
-    <loc>https://hugo.jiahongw.com/ko/sitemap.xml</loc>
+    <loc>https://hugo.jiahongw.com/zh/sitemap.xml</loc>
+    
+      <lastmod>2025-10-10T10:00:00+08:00</lastmod>
     
   </sitemap>
   
   <sitemap>
-    <loc>https://hugo.jiahongw.com/zh/sitemap.xml</loc>
-    
-      <lastmod>2025-10-10T10:00:00+08:00</lastmod>
+    <loc>https://hugo.jiahongw.com/ko/sitemap.xml</loc>
     
   </sitemap>
   
