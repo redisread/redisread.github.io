@@ -8,21 +8,8 @@
     <loc>https://hugo.jiahongw.com/en/zh/showcase/hugo/myitem/</loc>
     <lastmod>2020-01-19T21:13:42+09:00</lastmod>
   </url><url>
-    <loc>https://hugo.jiahongw.com/en/tags/agentic-engineering/</loc>
-    <lastmod>2026-02-23T18:05:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://hugo.jiahongw.com/zh/tags/agentic-engineering/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://hugo.jiahongw.com/en/tags/agentic-engineering/"
-                />
-  </url><url>
     <loc>https://hugo.jiahongw.com/en/tags/ai/</loc>
-    <lastmod>2026-02-23T18:05:00+08:00</lastmod>
+    <lastmod>2026-02-24T10:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -34,8 +21,24 @@
                 href="https://hugo.jiahongw.com/en/tags/ai/"
                 />
   </url><url>
+    <loc>https://hugo.jiahongw.com/en/categories/ai/</loc>
+    <lastmod>2026-02-24T10:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://hugo.jiahongw.com/zh/categories/ai/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hugo.jiahongw.com/en/categories/ai/"
+                />
+  </url><url>
+    <loc>https://hugo.jiahongw.com/en/zh/posts/ai/ai-era-interesting-life/</loc>
+    <lastmod>2026-02-24T10:00:00+08:00</lastmod>
+  </url><url>
     <loc>https://hugo.jiahongw.com/en/categories/</loc>
-    <lastmod>2026-02-23T18:05:00+08:00</lastmod>
+    <lastmod>2026-02-24T10:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -53,7 +56,7 @@
                 />
   </url><url>
     <loc>https://hugo.jiahongw.com/en/tags/</loc>
-    <lastmod>2026-02-23T18:05:00+08:00</lastmod>
+    <lastmod>2026-02-24T10:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -71,7 +74,7 @@
                 />
   </url><url>
     <loc>https://hugo.jiahongw.com/en/</loc>
-    <lastmod>2026-02-23T18:05:00+08:00</lastmod>
+    <lastmod>2026-02-24T10:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -89,7 +92,7 @@
                 />
   </url><url>
     <loc>https://hugo.jiahongw.com/en/zh/</loc>
-    <lastmod>2026-02-23T18:05:00+08:00</lastmod>
+    <lastmod>2026-02-24T10:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -99,6 +102,58 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://hugo.jiahongw.com/en/zh/"
+                />
+  </url><url>
+    <loc>https://hugo.jiahongw.com/en/tags/%E4%B8%AA%E4%BA%BA%E6%88%90%E9%95%BF/</loc>
+    <lastmod>2026-02-24T10:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://hugo.jiahongw.com/zh/tags/%E4%B8%AA%E4%BA%BA%E6%88%90%E9%95%BF/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hugo.jiahongw.com/en/tags/%E4%B8%AA%E4%BA%BA%E6%88%90%E9%95%BF/"
+                />
+  </url><url>
+    <loc>https://hugo.jiahongw.com/en/tags/%E5%88%9B%E4%BD%9C%E8%80%85/</loc>
+    <lastmod>2026-02-24T10:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://hugo.jiahongw.com/zh/tags/%E5%88%9B%E4%BD%9C%E8%80%85/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hugo.jiahongw.com/en/tags/%E5%88%9B%E4%BD%9C%E8%80%85/"
+                />
+  </url><url>
+    <loc>https://hugo.jiahongw.com/en/tags/%E7%8B%AC%E7%AB%8B%E6%80%9D%E8%80%83/</loc>
+    <lastmod>2026-02-24T10:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://hugo.jiahongw.com/zh/tags/%E7%8B%AC%E7%AB%8B%E6%80%9D%E8%80%83/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hugo.jiahongw.com/en/tags/%E7%8B%AC%E7%AB%8B%E6%80%9D%E8%80%83/"
+                />
+  </url><url>
+    <loc>https://hugo.jiahongw.com/en/tags/agentic-engineering/</loc>
+    <lastmod>2026-02-23T18:05:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://hugo.jiahongw.com/zh/tags/agentic-engineering/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hugo.jiahongw.com/en/tags/agentic-engineering/"
                 />
   </url><url>
     <loc>https://hugo.jiahongw.com/en/zh/posts/dev/code-is-cheap/</loc>
@@ -279,19 +334,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://hugo.jiahongw.com/en/tags/%E8%A1%8C%E5%8A%A8/"
-                />
-  </url><url>
-    <loc>https://hugo.jiahongw.com/en/categories/ai/</loc>
-    <lastmod>2025-05-06T13:31:35+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://hugo.jiahongw.com/zh/categories/ai/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://hugo.jiahongw.com/en/categories/ai/"
                 />
   </url><url>
     <loc>https://hugo.jiahongw.com/en/tags/mcp/</loc>

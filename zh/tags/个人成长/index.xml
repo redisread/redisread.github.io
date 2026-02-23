@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>个人成长 on ✏VictorHong&#39;s Blog</title>
+    <link>https://hugo.jiahongw.com/zh/tags/%E4%B8%AA%E4%BA%BA%E6%88%90%E9%95%BF/</link>
+    <description>Recent content in 个人成长 on ✏VictorHong&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <follow_challenge>
+        <feedId>74349588616178697</feedId>
+        <userId>68207800989737984</userId>
+    </follow_challenge>
+    <managingEditor>wujiahong2013@gmail.com (VictorHong)</managingEditor>
+    <webMaster>wujiahong2013@gmail.com (VictorHong)</webMaster>
+    <copyright>©2021-2026 | VictorHong</copyright>
+    <lastBuildDate>Tue, 24 Feb 2026 10:00:00 +0800</lastBuildDate>
+    
+        <atom:link href="https://hugo.jiahongw.com/zh/tags/%E4%B8%AA%E4%BA%BA%E6%88%90%E9%95%BF/index.xml" rel="self" type="application/rss+xml" />
+    
+
+      
+      <item>
+        <title>AI 时代，你更需要过一种有趣的生活</title>
+        <link>https://hugo.jiahongw.com/zh/20260224/ai-era-interesting-life/</link>
+        <pubDate>Tue, 24 Feb 2026 10:00:00 +0800</pubDate>
+        <author>wujiahong2013@gmail.com (VictorHong)</author>
+        <atom:modified>Tue, 24 Feb 2026 10:00:00 +0800</atom:modified>
+        <guid>https://hugo.jiahongw.com/zh/20260224/ai-era-interesting-life/</guid>
+        <description>你的经历正在成为稀缺资产 Ryan Holiday 在他的推文里讲了一个故事：刚开始写作时，一位作家告诉他——&amp;ldquo;想写出好东西，先去经历好东西。&amp;rdqu</description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        <media:content url="https://hugo.jiahongw.comhttps://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>AI</category>
+            
+          
+            
+              <category>个人成长</category>
+            
+          
+            
+              <category>独立思考</category>
+            
+          
+            
+              <category>创作者</category>
+            
+          
+        
+        
+          
+            
+              <category>AI</category>
+            
+          
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>
