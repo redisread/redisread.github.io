@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>Skills on ✏VictorHong&#39;s Blog</title>
+    <link>https://hugo.jiahongw.com/zh/tags/skills/</link>
+    <description>Recent content in Skills on ✏VictorHong&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <follow_challenge>
+        <feedId>74349588616178697</feedId>
+        <userId>68207800989737984</userId>
+    </follow_challenge>
+    <managingEditor>wujiahong2013@gmail.com (VictorHong)</managingEditor>
+    <webMaster>wujiahong2013@gmail.com (VictorHong)</webMaster>
+    <copyright>©2021-2026 | VictorHong</copyright>
+    <lastBuildDate>Mon, 23 Feb 2026 18:35:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://hugo.jiahongw.com/zh/tags/skills/index.xml" rel="self" type="application/rss+xml" />
+    
+
+      
+      <item>
+        <title>Claude Code Skills 完全指南：从重复劳动到自动化工作流</title>
+        <link>https://hugo.jiahongw.com/zh/20260223/claude-code-skills-complete-guide/</link>
+        <pubDate>Mon, 23 Feb 2026 18:35:00 +0000</pubDate>
+        <author>wujiahong2013@gmail.com (VictorHong)</author>
+        <atom:modified>Mon, 23 Feb 2026 18:35:00 +0000</atom:modified>
+        <guid>https://hugo.jiahongw.com/zh/20260223/claude-code-skills-complete-guide/</guid>
+        <description>引言：为什么你需要 Skills？ 想象一下这个场景： 你刚加入一个新团队，需要向新同事解释你们的技术规范——&amp;ldquo;我们的 API 要遵循 RESTful 设计&amp;</description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        <media:content url="https://hugo.jiahongw.comhttps://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>Claude</category>
+            
+          
+            
+              <category>AI</category>
+            
+          
+            
+              <category>Skills</category>
+            
+          
+            
+              <category>效率工具</category>
+            
+          
+            
+              <category>工作流自动化</category>
+            
+          
+        
+        
+          
+            
+              <category>AI</category>
+            
+          
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>
