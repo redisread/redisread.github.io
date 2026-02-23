@@ -18,49 +18,11 @@
     <managingEditor>wujiahong2013@gmail.com (VictorHong)</managingEditor>
     <webMaster>wujiahong2013@gmail.com (VictorHong)</webMaster>
     <copyright>©2021-2026 | VictorHong</copyright>
-    <lastBuildDate>Mon, 16 Feb 2026 14:35:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 06 May 2025 13:31:35 +0800</lastBuildDate>
     
         <atom:link href="https://hugo.jiahongw.com/en/categories/ai/index.xml" rel="self" type="application/rss+xml" />
     
 
-      
-      <item>
-        <title>Notion 差点 50 美元被卖掉</title>
-        <link>https://hugo.jiahongw.com/en/zh/posts/ai/notion-50-dollars/</link>
-        <pubDate>Mon, 16 Feb 2026 14:35:00 +0000</pubDate>
-        <author>wujiahong2013@gmail.com (VictorHong)</author>
-        <atom:modified>Mon, 16 Feb 2026 14:35:00 +0000</atom:modified>
-        <guid>https://hugo.jiahongw.com/en/zh/posts/ai/notion-50-dollars/</guid>
-        <description>2015 年的一个深夜，Notion 创始人 Ivan Zhao 做了一个梦。他梦见自己把公司卖了，仅 50 美元。 那个梦如此真实，以至于他惊醒后立刻把这件事写进了公司手册。</description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        <media:content url="https://hugo.jiahongw.com/images/notion-cover.jpg" medium="image"><media:title type="html">featured image</media:title></media:content>
-        
-        
-        
-          
-            
-              <category>Notion</category>
-            
-          
-            
-              <category>创业</category>
-            
-          
-            
-              <category>产品故事</category>
-            
-          
-        
-        
-          
-            
-              <category>AI</category>
-            
-          
-        
-        
-      </item>
       
       <item>
         <title>使用Java开发 MCP Server 指南</title>
