@@ -144,7 +144,7 @@
                 />
   </url><url>
     <loc>https://hugo.jiahongw.com/en/tags/agent/</loc>
-    <lastmod>2026-02-23T18:45:00+00:00</lastmod>
+    <lastmod>2026-02-23T19:30:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -154,6 +154,61 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://hugo.jiahongw.com/en/tags/agent/"
+                />
+  </url><url>
+    <loc>https://hugo.jiahongw.com/en/zh/posts/ai/ai-agent-productivity-revolution/</loc>
+    <lastmod>2026-02-23T19:30:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hugo.jiahongw.com/en/tags/claude/</loc>
+    <lastmod>2026-02-23T19:30:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://hugo.jiahongw.com/zh/tags/claude/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hugo.jiahongw.com/en/tags/claude/"
+                />
+  </url><url>
+    <loc>https://hugo.jiahongw.com/en/tags/openclaw/</loc>
+    <lastmod>2026-02-23T19:30:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://hugo.jiahongw.com/zh/tags/openclaw/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hugo.jiahongw.com/en/tags/openclaw/"
+                />
+  </url><url>
+    <loc>https://hugo.jiahongw.com/en/tags/%E5%88%9B%E4%BD%9C%E8%80%85%E7%BB%8F%E6%B5%8E/</loc>
+    <lastmod>2026-02-23T19:30:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://hugo.jiahongw.com/zh/tags/%E5%88%9B%E4%BD%9C%E8%80%85%E7%BB%8F%E6%B5%8E/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hugo.jiahongw.com/en/tags/%E5%88%9B%E4%BD%9C%E8%80%85%E7%BB%8F%E6%B5%8E/"
+                />
+  </url><url>
+    <loc>https://hugo.jiahongw.com/en/tags/%E7%94%9F%E4%BA%A7%E5%8A%9B/</loc>
+    <lastmod>2026-02-23T19:30:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://hugo.jiahongw.com/zh/tags/%E7%94%9F%E4%BA%A7%E5%8A%9B/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hugo.jiahongw.com/en/tags/%E7%94%9F%E4%BA%A7%E5%8A%9B/"
                 />
   </url><url>
     <loc>https://hugo.jiahongw.com/en/tags/vibe-coding/</loc>
@@ -196,19 +251,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://hugo.jiahongw.com/en/tags/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/"
-                />
-  </url><url>
-    <loc>https://hugo.jiahongw.com/en/tags/claude/</loc>
-    <lastmod>2026-02-23T18:35:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://hugo.jiahongw.com/zh/tags/claude/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://hugo.jiahongw.com/en/tags/claude/"
                 />
   </url><url>
     <loc>https://hugo.jiahongw.com/en/zh/posts/ai/claude-code-skills-complete-guide/</loc>
