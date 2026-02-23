@@ -18,65 +18,11 @@
     <managingEditor>wujiahong2013@gmail.com (VictorHong)</managingEditor>
     <webMaster>wujiahong2013@gmail.com (VictorHong)</webMaster>
     <copyright>©2021-2026 | VictorHong</copyright>
-    <lastBuildDate>Mon, 23 Feb 2026 12:22:39 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 10 Oct 2025 10:00:00 +0800</lastBuildDate>
     
         <atom:link href="https://hugo.jiahongw.com/zh/tags/index.xml" rel="self" type="application/rss+xml" />
     
 
-      
-      <item>
-        <title>OpenClaw</title>
-        <link>https://hugo.jiahongw.com/zh/tags/openclaw/</link>
-        <pubDate>Mon, 23 Feb 2026 12:22:39 +0800</pubDate>
-        <author>wujiahong2013@gmail.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/zh/tags/openclaw/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>部署</title>
-        <link>https://hugo.jiahongw.com/zh/tags/%E9%83%A8%E7%BD%B2/</link>
-        <pubDate>Mon, 23 Feb 2026 12:22:39 +0800</pubDate>
-        <author>wujiahong2013@gmail.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/zh/tags/%E9%83%A8%E7%BD%B2/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>爬虫</title>
-        <link>https://hugo.jiahongw.com/zh/tags/%E7%88%AC%E8%99%AB/</link>
-        <pubDate>Mon, 23 Feb 2026 12:22:39 +0800</pubDate>
-        <author>wujiahong2013@gmail.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/zh/tags/%E7%88%AC%E8%99%AB/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
       
       <item>
         <title>读书笔记</title>
@@ -913,6 +859,24 @@
         <author>wujiahong2013@gmail.com (VictorHong)</author>
         
         <guid>https://hugo.jiahongw.com/zh/tags/scrapy/</guid>
+        <description></description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>爬虫</title>
+        <link>https://hugo.jiahongw.com/zh/tags/%E7%88%AC%E8%99%AB/</link>
+        <pubDate>Wed, 04 Mar 2020 16:35:09 +0800</pubDate>
+        <author>wujiahong2013@gmail.com (VictorHong)</author>
+        
+        <guid>https://hugo.jiahongw.com/zh/tags/%E7%88%AC%E8%99%AB/</guid>
         <description></description>
         
         <dc:creator>VictorHong</dc:creator>
