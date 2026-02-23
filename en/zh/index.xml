@@ -18,11 +18,49 @@
     <managingEditor>wujiahong2013@gmail.com (VictorHong)</managingEditor>
     <webMaster>wujiahong2013@gmail.com (VictorHong)</webMaster>
     <copyright>©2021-2026 | VictorHong</copyright>
-    <lastBuildDate>Fri, 10 Oct 2025 10:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 23 Feb 2026 12:22:39 +0800</lastBuildDate>
     
         <atom:link href="https://hugo.jiahongw.com/en/zh/index.xml" rel="self" type="application/rss+xml" />
     
 
+      
+      <item>
+        <title>如何部署 OpenClaw</title>
+        <link>https://hugo.jiahongw.com/en/zh/posts/deploy-openclaw/</link>
+        <pubDate>Mon, 23 Feb 2026 12:22:39 +0800</pubDate>
+        <author>wujiahong2013@gmail.com (VictorHong)</author>
+        <atom:modified>Mon, 23 Feb 2026 12:22:39 +0800</atom:modified>
+        <guid>https://hugo.jiahongw.com/en/zh/posts/deploy-openclaw/</guid>
+        <description>什么是 OpenClaw OpenClaw 是一个开源的爬虫工具，具有以下特点： 易于部署：提供 Docker 镜像，一键启动 可视化界面：Web UI 管理爬虫任务 分布式支持：支持多节点爬取 灵活配</description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>爬虫</category>
+            
+          
+            
+              <category>OpenClaw</category>
+            
+          
+            
+              <category>部署</category>
+            
+          
+        
+        
+          
+            
+              <category>开发</category>
+            
+          
+        
+        
+      </item>
       
       <item>
         <title>《为什么伟大不能被计划》关于目标的思考</title>

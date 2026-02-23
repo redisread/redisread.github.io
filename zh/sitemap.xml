@@ -9,7 +9,7 @@
     <lastmod>2020-01-19T21:13:42+09:00</lastmod>
   </url><url>
     <loc>https://hugo.jiahongw.com/zh/</loc>
-    <lastmod>2025-10-10T10:00:00+08:00</lastmod>
+    <lastmod>2026-02-23T12:22:39+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -26,11 +26,8 @@
                 href="https://hugo.jiahongw.com/zh/"
                 />
   </url><url>
-    <loc>https://hugo.jiahongw.com/zh/20251010/why-greatness-cannot-be-planned/</loc>
-    <lastmod>2025-10-10T10:00:00+08:00</lastmod>
-  </url><url>
     <loc>https://hugo.jiahongw.com/zh/categories/</loc>
-    <lastmod>2025-10-10T10:00:00+08:00</lastmod>
+    <lastmod>2026-02-23T12:22:39+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -47,11 +44,24 @@
                 href="https://hugo.jiahongw.com/zh/categories/"
                 />
   </url><url>
+    <loc>https://hugo.jiahongw.com/zh/tags/openclaw/</loc>
+    <lastmod>2026-02-23T12:22:39+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hugo.jiahongw.com/en/tags/openclaw/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://hugo.jiahongw.com/zh/tags/openclaw/"
+                />
+  </url><url>
     <loc>https://hugo.jiahongw.com/zh/posts/</loc>
-    <lastmod>2025-10-10T10:00:00+08:00</lastmod>
+    <lastmod>2026-02-23T12:22:39+08:00</lastmod>
   </url><url>
     <loc>https://hugo.jiahongw.com/zh/tags/</loc>
-    <lastmod>2025-10-10T10:00:00+08:00</lastmod>
+    <lastmod>2026-02-23T12:22:39+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -67,6 +77,51 @@
                 hreflang="zh"
                 href="https://hugo.jiahongw.com/zh/tags/"
                 />
+  </url><url>
+    <loc>https://hugo.jiahongw.com/zh/tags/%E9%83%A8%E7%BD%B2/</loc>
+    <lastmod>2026-02-23T12:22:39+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hugo.jiahongw.com/en/tags/%E9%83%A8%E7%BD%B2/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://hugo.jiahongw.com/zh/tags/%E9%83%A8%E7%BD%B2/"
+                />
+  </url><url>
+    <loc>https://hugo.jiahongw.com/zh/categories/%E5%BC%80%E5%8F%91/</loc>
+    <lastmod>2026-02-23T12:22:39+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hugo.jiahongw.com/en/categories/%E5%BC%80%E5%8F%91/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://hugo.jiahongw.com/zh/categories/%E5%BC%80%E5%8F%91/"
+                />
+  </url><url>
+    <loc>https://hugo.jiahongw.com/zh/tags/%E7%88%AC%E8%99%AB/</loc>
+    <lastmod>2026-02-23T12:22:39+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hugo.jiahongw.com/en/tags/%E7%88%AC%E8%99%AB/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://hugo.jiahongw.com/zh/tags/%E7%88%AC%E8%99%AB/"
+                />
+  </url><url>
+    <loc>https://hugo.jiahongw.com/zh/20260223/deploy-openclaw/</loc>
+    <lastmod>2026-02-23T12:22:39+08:00</lastmod>
+  </url><url>
+    <loc>https://hugo.jiahongw.com/zh/20251010/why-greatness-cannot-be-planned/</loc>
+    <lastmod>2025-10-10T10:00:00+08:00</lastmod>
   </url><url>
     <loc>https://hugo.jiahongw.com/zh/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2025-10-10T10:00:00+08:00</lastmod>
@@ -1082,19 +1137,6 @@
                 rel="alternate"
                 hreflang="zh"
                 href="https://hugo.jiahongw.com/zh/tags/scrapy/"
-                />
-  </url><url>
-    <loc>https://hugo.jiahongw.com/zh/tags/%E7%88%AC%E8%99%AB/</loc>
-    <lastmod>2020-03-04T16:35:09+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://hugo.jiahongw.com/en/tags/%E7%88%AC%E8%99%AB/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://hugo.jiahongw.com/zh/tags/%E7%88%AC%E8%99%AB/"
                 />
   </url><url>
     <loc>https://hugo.jiahongw.com/zh/20200304/scrapy-exercise/</loc>
