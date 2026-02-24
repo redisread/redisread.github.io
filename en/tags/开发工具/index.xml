@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>开发工具 on VictorHong&#39;s Blog</title>
+    <link>https://hugo.jiahongw.com/en/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/</link>
+    <description>Recent content in 开发工具 on VictorHong&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <follow_challenge>
+        <feedId>74349588616178697</feedId>
+        <userId>68207800989737984</userId>
+    </follow_challenge>
+    <managingEditor>wujiahong2013@gmail.com (VictorHong)</managingEditor>
+    <webMaster>wujiahong2013@gmail.com (VictorHong)</webMaster>
+    <copyright>©2021-2026 | VictorHong</copyright>
+    <lastBuildDate>Tue, 24 Feb 2026 09:30:00 +0800</lastBuildDate>
+    
+        <atom:link href="https://hugo.jiahongw.com/en/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml" />
+    
+
+      
+      <item>
+        <title>Claude Code 模式切换实战指南：从新手到高手的四个境界</title>
+        <link>https://hugo.jiahongw.com/en/zh/posts/ai/claude-code-modes/</link>
+        <pubDate>Tue, 24 Feb 2026 09:30:00 +0800</pubDate>
+        <author>wujiahong2013@gmail.com (VictorHong)</author>
+        <atom:modified>Tue, 24 Feb 2026 09:30:00 +0800</atom:modified>
+        <guid>https://hugo.jiahongw.com/en/zh/posts/ai/claude-code-modes/</guid>
+        <description>Claude Code 模式切换实战指南：从新手到高手的四个境界 作为每天和 Claude Code 打交道的开发者，我最初也以为它就是个高级聊天机器人。直到某天，我在一个复杂的重构任</description>
+        
+        <dc:creator>Victor</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>Claude</category>
+            
+          
+            
+              <category>AI</category>
+            
+          
+            
+              <category>开发工具</category>
+            
+          
+            
+              <category>编程效率</category>
+            
+          
+        
+        
+          
+            
+              <category>AI</category>
+            
+          
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>
