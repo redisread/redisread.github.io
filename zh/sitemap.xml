@@ -9,7 +9,7 @@
     <lastmod>2020-01-19T21:13:42+09:00</lastmod>
   </url><url>
     <loc>https://hugo.jiahongw.com/zh/</loc>
-    <lastmod>2026-02-24T10:00:00+08:00</lastmod>
+    <lastmod>2026-02-26T05:15:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -24,6 +24,113 @@
                 rel="alternate"
                 hreflang="zh"
                 href="https://hugo.jiahongw.com/zh/"
+                />
+  </url><url>
+    <loc>https://hugo.jiahongw.com/zh/categories/</loc>
+    <lastmod>2026-02-26T05:15:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hugo.jiahongw.com/en/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://hugo.jiahongw.com/ko/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://hugo.jiahongw.com/zh/categories/"
+                />
+  </url><url>
+    <loc>https://hugo.jiahongw.com/zh/tags/macos/</loc>
+    <lastmod>2026-02-26T05:15:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hugo.jiahongw.com/en/tags/macos/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://hugo.jiahongw.com/zh/tags/macos/"
+                />
+  </url><url>
+    <loc>https://hugo.jiahongw.com/zh/posts/</loc>
+    <lastmod>2026-02-26T05:15:00+08:00</lastmod>
+  </url><url>
+    <loc>https://hugo.jiahongw.com/zh/tags/</loc>
+    <lastmod>2026-02-26T05:15:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hugo.jiahongw.com/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://hugo.jiahongw.com/ko/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://hugo.jiahongw.com/zh/tags/"
+                />
+  </url><url>
+    <loc>https://hugo.jiahongw.com/zh/tags/tmux/</loc>
+    <lastmod>2026-02-26T05:15:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hugo.jiahongw.com/en/tags/tmux/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://hugo.jiahongw.com/zh/tags/tmux/"
+                />
+  </url><url>
+    <loc>https://hugo.jiahongw.com/zh/20260226/tmux-best-practices-mac/</loc>
+    <lastmod>2026-02-26T05:15:00+08:00</lastmod>
+  </url><url>
+    <loc>https://hugo.jiahongw.com/zh/categories/%E5%B7%A5%E5%85%B7/</loc>
+    <lastmod>2026-02-26T05:15:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hugo.jiahongw.com/en/categories/%E5%B7%A5%E5%85%B7/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://hugo.jiahongw.com/zh/categories/%E5%B7%A5%E5%85%B7/"
+                />
+  </url><url>
+    <loc>https://hugo.jiahongw.com/zh/tags/%E6%95%88%E7%8E%87/</loc>
+    <lastmod>2026-02-26T05:15:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hugo.jiahongw.com/en/tags/%E6%95%88%E7%8E%87/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://hugo.jiahongw.com/zh/tags/%E6%95%88%E7%8E%87/"
+                />
+  </url><url>
+    <loc>https://hugo.jiahongw.com/zh/tags/%E7%BB%88%E7%AB%AF/</loc>
+    <lastmod>2026-02-26T05:15:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hugo.jiahongw.com/en/tags/%E7%BB%88%E7%AB%AF/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://hugo.jiahongw.com/zh/tags/%E7%BB%88%E7%AB%AF/"
                 />
   </url><url>
     <loc>https://hugo.jiahongw.com/zh/tags/ai/</loc>
@@ -54,45 +161,6 @@
   </url><url>
     <loc>https://hugo.jiahongw.com/zh/20260224/ai-era-interesting-life/</loc>
     <lastmod>2026-02-24T10:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://hugo.jiahongw.com/zh/categories/</loc>
-    <lastmod>2026-02-24T10:00:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://hugo.jiahongw.com/en/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://hugo.jiahongw.com/ko/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://hugo.jiahongw.com/zh/categories/"
-                />
-  </url><url>
-    <loc>https://hugo.jiahongw.com/zh/posts/</loc>
-    <lastmod>2026-02-24T10:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://hugo.jiahongw.com/zh/tags/</loc>
-    <lastmod>2026-02-24T10:00:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://hugo.jiahongw.com/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://hugo.jiahongw.com/ko/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://hugo.jiahongw.com/zh/tags/"
-                />
   </url><url>
     <loc>https://hugo.jiahongw.com/zh/tags/%E5%88%9B%E4%BD%9C%E8%80%85/</loc>
     <lastmod>2026-02-24T10:00:00+08:00</lastmod>
@@ -810,19 +878,6 @@
   </url><url>
     <loc>https://hugo.jiahongw.com/zh/20230624/use-obsidian-write-hugo/</loc>
     <lastmod>2023-06-24T15:07:41+00:00</lastmod>
-  </url><url>
-    <loc>https://hugo.jiahongw.com/zh/tags/%E6%95%88%E7%8E%87/</loc>
-    <lastmod>2023-06-24T15:07:41+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://hugo.jiahongw.com/en/tags/%E6%95%88%E7%8E%87/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://hugo.jiahongw.com/zh/tags/%E6%95%88%E7%8E%87/"
-                />
   </url><url>
     <loc>https://hugo.jiahongw.com/zh/tags/elasticsearch/</loc>
     <lastmod>2023-05-29T23:26:32+08:00</lastmod>

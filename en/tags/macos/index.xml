@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>macOS on VictorHong&#39;s Blog</title>
+    <link>https://hugo.jiahongw.com/en/tags/macos/</link>
+    <description>Recent content in macOS on VictorHong&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <follow_challenge>
+        <feedId>74349588616178697</feedId>
+        <userId>68207800989737984</userId>
+    </follow_challenge>
+    <managingEditor>wujiahong2013@gmail.com (VictorHong)</managingEditor>
+    <webMaster>wujiahong2013@gmail.com (VictorHong)</webMaster>
+    <copyright>©2021-2026 | VictorHong</copyright>
+    <lastBuildDate>Thu, 26 Feb 2026 05:15:00 +0800</lastBuildDate>
+    
+        <atom:link href="https://hugo.jiahongw.com/en/tags/macos/index.xml" rel="self" type="application/rss+xml" />
+    
+
+      
+      <item>
+        <title>Tmux 最佳实践：Mac 用户的终端效率指南</title>
+        <link>https://hugo.jiahongw.com/en/zh/posts/dev/tmux-best-practices-mac/</link>
+        <pubDate>Thu, 26 Feb 2026 05:15:00 +0800</pubDate>
+        <author>wujiahong2013@gmail.com (VictorHong)</author>
+        <atom:modified>Thu, 26 Feb 2026 05:15:00 +0800</atom:modified>
+        <guid>https://hugo.jiahongw.com/en/zh/posts/dev/tmux-best-practices-mac/</guid>
+        <description>Tmux 最佳实践：Mac 用户的终端效率指南 没用过 tmux？你损失的可不只是时间。 本文面向 macOS 用户，iTerm2 + tmux 是 Mac 终端的黄金组合。 1. 为什么要用 t</description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        <media:content url="https://hugo.jiahongw.comhttps://cos.jiahongw.com/uPic/tmux-cover.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>tmux</category>
+            
+          
+            
+              <category>macOS</category>
+            
+          
+            
+              <category>终端</category>
+            
+          
+            
+              <category>效率</category>
+            
+          
+        
+        
+          
+            
+              <category>工具</category>
+            
+          
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>
