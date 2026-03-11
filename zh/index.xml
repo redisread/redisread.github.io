@@ -18,7 +18,7 @@
     <managingEditor>wujiahong2013@gmail.com (VictorHong)</managingEditor>
     <webMaster>wujiahong2013@gmail.com (VictorHong)</webMaster>
     <copyright>©2021-2026 | VictorHong</copyright>
-    <lastBuildDate>Thu, 26 Feb 2026 05:15:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 11 Mar 2026 01:45:00 +0000</lastBuildDate>
     
         <atom:link href="https://hugo.jiahongw.com/zh/index.xml" rel="self" type="application/rss+xml" />
     
@@ -40,6 +40,60 @@
         
       
 
+      
+      <item>
+        <title>Lovable &#43; Supabase &#43; Stripe &#43; Vercel 技术栈最佳实践</title>
+        <link>https://hugo.jiahongw.com/zh/20260311/lovable-stack-best-practices/</link>
+        <pubDate>Wed, 11 Mar 2026 01:45:00 +0000</pubDate>
+        <author>wujiahong2013@gmail.com (VictorHong)</author>
+        <atom:modified>Wed, 11 Mar 2026 01:45:00 +0000</atom:modified>
+        <guid>https://hugo.jiahongw.com/zh/20260311/lovable-stack-best-practices/</guid>
+        <description>概述 本文总结自 r/vibecoding 社区的一个技术选型讨论，深入分析 Lovable + Supabase + Stripe + Vercel 这套&amp;quot;AI原生&amp;quot;全栈方案的适用场景、潜在风险与长期演进路径</description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        <media:content url="https://hugo.jiahongw.comhttps://cos.jiahongw.com/uPic/lovable-stack.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>Lovable</category>
+            
+          
+            
+              <category>Supabase</category>
+            
+          
+            
+              <category>Stripe</category>
+            
+          
+            
+              <category>Vercel</category>
+            
+          
+            
+              <category>全栈开发</category>
+            
+          
+            
+              <category>AI编程</category>
+            
+          
+            
+              <category>技术栈</category>
+            
+          
+        
+        
+          
+            
+              <category>dev</category>
+            
+          
+        
+        
+      </item>
       
       <item>
         <title>Tmux 最佳实践：Mac 用户的终端效率指南</title>

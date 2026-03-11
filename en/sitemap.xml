@@ -8,8 +8,21 @@
     <loc>https://hugo.jiahongw.com/en/zh/showcase/hugo/myitem/</loc>
     <lastmod>2020-01-19T21:13:42+09:00</lastmod>
   </url><url>
+    <loc>https://hugo.jiahongw.com/en/tags/ai%E7%BC%96%E7%A8%8B/</loc>
+    <lastmod>2026-03-11T01:45:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://hugo.jiahongw.com/zh/tags/ai%E7%BC%96%E7%A8%8B/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hugo.jiahongw.com/en/tags/ai%E7%BC%96%E7%A8%8B/"
+                />
+  </url><url>
     <loc>https://hugo.jiahongw.com/en/categories/</loc>
-    <lastmod>2026-02-26T05:15:00+08:00</lastmod>
+    <lastmod>2026-03-11T01:45:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -26,21 +39,63 @@
                 href="https://hugo.jiahongw.com/en/categories/"
                 />
   </url><url>
-    <loc>https://hugo.jiahongw.com/en/tags/macos/</loc>
-    <lastmod>2026-02-26T05:15:00+08:00</lastmod>
+    <loc>https://hugo.jiahongw.com/en/categories/dev/</loc>
+    <lastmod>2026-03-11T01:45:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://hugo.jiahongw.com/zh/tags/macos/"
+                href="https://hugo.jiahongw.com/zh/categories/dev/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://hugo.jiahongw.com/en/tags/macos/"
+                href="https://hugo.jiahongw.com/en/categories/dev/"
+                />
+  </url><url>
+    <loc>https://hugo.jiahongw.com/en/tags/lovable/</loc>
+    <lastmod>2026-03-11T01:45:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://hugo.jiahongw.com/zh/tags/lovable/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hugo.jiahongw.com/en/tags/lovable/"
+                />
+  </url><url>
+    <loc>https://hugo.jiahongw.com/en/zh/posts/dev/lovable-stack-best-practices/</loc>
+    <lastmod>2026-03-11T01:45:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hugo.jiahongw.com/en/tags/stripe/</loc>
+    <lastmod>2026-03-11T01:45:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://hugo.jiahongw.com/zh/tags/stripe/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hugo.jiahongw.com/en/tags/stripe/"
+                />
+  </url><url>
+    <loc>https://hugo.jiahongw.com/en/tags/supabase/</loc>
+    <lastmod>2026-03-11T01:45:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://hugo.jiahongw.com/zh/tags/supabase/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hugo.jiahongw.com/en/tags/supabase/"
                 />
   </url><url>
     <loc>https://hugo.jiahongw.com/en/tags/</loc>
-    <lastmod>2026-02-26T05:15:00+08:00</lastmod>
+    <lastmod>2026-03-11T01:45:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -57,24 +112,21 @@
                 href="https://hugo.jiahongw.com/en/tags/"
                 />
   </url><url>
-    <loc>https://hugo.jiahongw.com/en/tags/tmux/</loc>
-    <lastmod>2026-02-26T05:15:00+08:00</lastmod>
+    <loc>https://hugo.jiahongw.com/en/tags/vercel/</loc>
+    <lastmod>2026-03-11T01:45:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://hugo.jiahongw.com/zh/tags/tmux/"
+                href="https://hugo.jiahongw.com/zh/tags/vercel/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://hugo.jiahongw.com/en/tags/tmux/"
+                href="https://hugo.jiahongw.com/en/tags/vercel/"
                 />
   </url><url>
-    <loc>https://hugo.jiahongw.com/en/zh/posts/dev/tmux-best-practices-mac/</loc>
-    <lastmod>2026-02-26T05:15:00+08:00</lastmod>
-  </url><url>
     <loc>https://hugo.jiahongw.com/en/</loc>
-    <lastmod>2026-02-26T05:15:00+08:00</lastmod>
+    <lastmod>2026-03-11T01:45:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -92,7 +144,7 @@
                 />
   </url><url>
     <loc>https://hugo.jiahongw.com/en/zh/</loc>
-    <lastmod>2026-02-26T05:15:00+08:00</lastmod>
+    <lastmod>2026-03-11T01:45:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -103,6 +155,61 @@
                 hreflang="en"
                 href="https://hugo.jiahongw.com/en/zh/"
                 />
+  </url><url>
+    <loc>https://hugo.jiahongw.com/en/tags/%E5%85%A8%E6%A0%88%E5%BC%80%E5%8F%91/</loc>
+    <lastmod>2026-03-11T01:45:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://hugo.jiahongw.com/zh/tags/%E5%85%A8%E6%A0%88%E5%BC%80%E5%8F%91/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hugo.jiahongw.com/en/tags/%E5%85%A8%E6%A0%88%E5%BC%80%E5%8F%91/"
+                />
+  </url><url>
+    <loc>https://hugo.jiahongw.com/en/tags/%E6%8A%80%E6%9C%AF%E6%A0%88/</loc>
+    <lastmod>2026-03-11T01:45:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://hugo.jiahongw.com/zh/tags/%E6%8A%80%E6%9C%AF%E6%A0%88/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hugo.jiahongw.com/en/tags/%E6%8A%80%E6%9C%AF%E6%A0%88/"
+                />
+  </url><url>
+    <loc>https://hugo.jiahongw.com/en/tags/macos/</loc>
+    <lastmod>2026-02-26T05:15:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://hugo.jiahongw.com/zh/tags/macos/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hugo.jiahongw.com/en/tags/macos/"
+                />
+  </url><url>
+    <loc>https://hugo.jiahongw.com/en/tags/tmux/</loc>
+    <lastmod>2026-02-26T05:15:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://hugo.jiahongw.com/zh/tags/tmux/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hugo.jiahongw.com/en/tags/tmux/"
+                />
+  </url><url>
+    <loc>https://hugo.jiahongw.com/en/zh/posts/dev/tmux-best-practices-mac/</loc>
+    <lastmod>2026-02-26T05:15:00+08:00</lastmod>
   </url><url>
     <loc>https://hugo.jiahongw.com/en/categories/%E5%B7%A5%E5%85%B7/</loc>
     <lastmod>2026-02-26T05:15:00+08:00</lastmod>
