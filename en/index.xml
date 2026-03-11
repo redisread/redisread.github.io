@@ -18,7 +18,7 @@
     <managingEditor>wujiahong2013@gmail.com (VictorHong)</managingEditor>
     <webMaster>wujiahong2013@gmail.com (VictorHong)</webMaster>
     <copyright>©2021-2026 | VictorHong</copyright>
-    <lastBuildDate>Wed, 11 Mar 2026 16:45:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Mar 2026 17:25:00 +0000</lastBuildDate>
     
         <atom:link href="https://hugo.jiahongw.com/en/index.xml" rel="self" type="application/rss+xml" />
     
@@ -73,6 +73,60 @@
         
         
         
+        
+        
+      </item>
+      
+      <item>
+        <title>Pencil 最佳实践：IDE 内设计到代码的完整工作流</title>
+        <link>https://hugo.jiahongw.com/en/zh/posts/dev/pencil-best-practices/</link>
+        <pubDate>Wed, 11 Mar 2026 17:25:00 +0000</pubDate>
+        <author>wujiahong2013@gmail.com (VictorHong)</author>
+        <atom:modified>Wed, 11 Mar 2026 17:25:00 +0000</atom:modified>
+        <guid>https://hugo.jiahongw.com/en/zh/posts/dev/pencil-best-practices/</guid>
+        <description>概述 Pencil 是一个嵌入 IDE 的矢量设计工具，支持在 VS Code/Cursor 中直接绘制 UI 设计稿，并通过 AI 自动生成代码，还能实现设计与代码的双向同步。本文从核心定位到实战配置</description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        <media:content url="https://hugo.jiahongw.comhttps://openclaw.cos.jiahongw.com/blog/pencil-best-practices-cover.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>Pencil</category>
+            
+          
+            
+              <category>设计工具</category>
+            
+          
+            
+              <category>AI编程</category>
+            
+          
+            
+              <category>VS Code</category>
+            
+          
+            
+              <category>Cursor</category>
+            
+          
+            
+              <category>Design Token</category>
+            
+          
+            
+              <category>设计到代码</category>
+            
+          
+        
+        
+          
+            
+              <category>dev</category>
+            
+          
         
         
       </item>
