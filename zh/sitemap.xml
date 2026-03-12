@@ -227,6 +227,87 @@
                 href="https://hugo.jiahongw.com/zh/tags/%E4%B8%AD%E6%96%87%E7%94%A8%E6%88%B7/"
                 />
   </url><url>
+    <loc>https://hugo.jiahongw.com/zh/tags/agent/</loc>
+    <lastmod>2026-03-12T17:50:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hugo.jiahongw.com/en/tags/agent/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://hugo.jiahongw.com/zh/tags/agent/"
+                />
+  </url><url>
+    <loc>https://hugo.jiahongw.com/zh/tags/ai/</loc>
+    <lastmod>2026-03-12T17:50:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hugo.jiahongw.com/en/tags/ai/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://hugo.jiahongw.com/zh/tags/ai/"
+                />
+  </url><url>
+    <loc>https://hugo.jiahongw.com/zh/tags/claude/</loc>
+    <lastmod>2026-03-12T17:50:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hugo.jiahongw.com/en/tags/claude/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://hugo.jiahongw.com/zh/tags/claude/"
+                />
+  </url><url>
+    <loc>https://hugo.jiahongw.com/zh/20260312/claude-code-complete-guide/</loc>
+    <lastmod>2026-03-12T17:50:00+08:00</lastmod>
+  </url><url>
+    <loc>https://hugo.jiahongw.com/zh/tags/%E7%BC%96%E7%A8%8B%E6%95%88%E7%8E%87/</loc>
+    <lastmod>2026-03-12T17:50:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hugo.jiahongw.com/en/tags/%E7%BC%96%E7%A8%8B%E6%95%88%E7%8E%87/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://hugo.jiahongw.com/zh/tags/%E7%BC%96%E7%A8%8B%E6%95%88%E7%8E%87/"
+                />
+  </url><url>
+    <loc>https://hugo.jiahongw.com/zh/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/</loc>
+    <lastmod>2026-03-12T17:50:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hugo.jiahongw.com/en/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://hugo.jiahongw.com/zh/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"
+                />
+  </url><url>
+    <loc>https://hugo.jiahongw.com/zh/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/</loc>
+    <lastmod>2026-03-12T17:50:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hugo.jiahongw.com/en/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://hugo.jiahongw.com/zh/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"
+                />
+  </url><url>
     <loc>https://hugo.jiahongw.com/zh/tags/ai-agent/</loc>
     <lastmod>2026-03-12T09:43:00+00:00</lastmod>
     <xhtml:link
@@ -564,19 +645,6 @@
                 href="https://hugo.jiahongw.com/zh/tags/%E7%BB%88%E7%AB%AF/"
                 />
   </url><url>
-    <loc>https://hugo.jiahongw.com/zh/tags/ai/</loc>
-    <lastmod>2026-02-24T10:00:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://hugo.jiahongw.com/en/tags/ai/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://hugo.jiahongw.com/zh/tags/ai/"
-                />
-  </url><url>
     <loc>https://hugo.jiahongw.com/zh/categories/ai/</loc>
     <lastmod>2026-02-24T10:00:00+08:00</lastmod>
     <xhtml:link
@@ -632,60 +700,8 @@
                 href="https://hugo.jiahongw.com/zh/tags/%E4%B8%AA%E4%BA%BA%E6%88%90%E9%95%BF/"
                 />
   </url><url>
-    <loc>https://hugo.jiahongw.com/zh/tags/claude/</loc>
-    <lastmod>2026-02-24T09:39:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://hugo.jiahongw.com/en/tags/claude/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://hugo.jiahongw.com/zh/tags/claude/"
-                />
-  </url><url>
     <loc>https://hugo.jiahongw.com/zh/20260224/claude-code-modes/</loc>
     <lastmod>2026-02-24T09:39:00+08:00</lastmod>
-  </url><url>
-    <loc>https://hugo.jiahongw.com/zh/tags/%E7%BC%96%E7%A8%8B%E6%95%88%E7%8E%87/</loc>
-    <lastmod>2026-02-24T09:39:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://hugo.jiahongw.com/en/tags/%E7%BC%96%E7%A8%8B%E6%95%88%E7%8E%87/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://hugo.jiahongw.com/zh/tags/%E7%BC%96%E7%A8%8B%E6%95%88%E7%8E%87/"
-                />
-  </url><url>
-    <loc>https://hugo.jiahongw.com/zh/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/</loc>
-    <lastmod>2026-02-24T09:39:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://hugo.jiahongw.com/en/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://hugo.jiahongw.com/zh/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"
-                />
-  </url><url>
-    <loc>https://hugo.jiahongw.com/zh/tags/agent/</loc>
-    <lastmod>2026-02-23T19:30:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://hugo.jiahongw.com/en/tags/agent/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://hugo.jiahongw.com/zh/tags/agent/"
-                />
   </url><url>
     <loc>https://hugo.jiahongw.com/zh/20260223/ai-agent-productivity-revolution/</loc>
     <lastmod>2026-02-23T19:30:00+00:00</lastmod>

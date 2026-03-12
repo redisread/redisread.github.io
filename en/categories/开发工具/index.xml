@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>开发工具 on VictorHong&#39;s Blog</title>
+    <link>https://hugo.jiahongw.com/en/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/</link>
+    <description>Recent content in 开发工具 on VictorHong&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <follow_challenge>
+        <feedId>74349588616178697</feedId>
+        <userId>68207800989737984</userId>
+    </follow_challenge>
+    <managingEditor>wujiahong2013@gmail.com (VictorHong)</managingEditor>
+    <webMaster>wujiahong2013@gmail.com (VictorHong)</webMaster>
+    <copyright>©2021-2026 | VictorHong</copyright>
+    <lastBuildDate>Thu, 12 Mar 2026 17:50:00 +0800</lastBuildDate>
+    
+        <atom:link href="https://hugo.jiahongw.com/en/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml" />
+    
+
+      
+      <item>
+        <title>Claude Code 完全指南：从聊天工具到 AI 工程环境</title>
+        <link>https://hugo.jiahongw.com/en/zh/posts/dev/claude-code-complete-guide/</link>
+        <pubDate>Thu, 12 Mar 2026 17:50:00 +0800</pubDate>
+        <author>wujiahong2013@gmail.com (VictorHong)</author>
+        <atom:modified>Thu, 12 Mar 2026 17:50:00 +0800</atom:modified>
+        <guid>https://hugo.jiahongw.com/en/zh/posts/dev/claude-code-complete-guide/</guid>
+        <description>参考 r/promptingmagic 社区精华，结合个人实践，解锁 Claude Code 的隐藏能力 为什么你只用到了 Claude Code 的 10% 大多数开发者打开 Claude Code，问它生成代码，然后关闭。这没问题，但完全</description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        <media:content url="https://hugo.jiahongw.comhttps://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>Claude</category>
+            
+          
+            
+              <category>AI</category>
+            
+          
+            
+              <category>开发工具</category>
+            
+          
+            
+              <category>编程效率</category>
+            
+          
+            
+              <category>Agent</category>
+            
+          
+        
+        
+          
+            
+              <category>开发工具</category>
+            
+          
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>
