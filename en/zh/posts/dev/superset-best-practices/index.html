@@ -1836,6 +1836,7 @@ if (!doNotTrack) {
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="12-superset-如何利用-worktree">1.2 Superset 如何利用 Worktree？</h3>
+<p><img src="https://openclaw.cos.jiahongw.com/blog/illustrations/superset/01-worktree.png" alt="Git Worktree 原理" /></p>
 <p>Superset 为每个 Workspace 创建一个独立的 worktree：</p>
 <pre tabindex="0"><code>~/superset-worktrees/
 ├── my-project/
@@ -1852,6 +1853,7 @@ if (!doNotTrack) {
 <hr />
 <h2 id="二workspace-设计策略">二、Workspace 设计策略</h2>
 <h3 id="21-任务粒度划分">2.1 任务粒度划分</h3>
+<p><img src="https://openclaw.cos.jiahongw.com/blog/illustrations/superset/02-workspace.png" alt="Workspace 任务划分" /></p>
 <p>不要一个 Workspace 干太多事。建议的划分维度：</p>
 <table>
 <thead>
@@ -2172,6 +2174,7 @@ spike/tanstack-query-migration
 </tbody>
 </table>
 <h3 id="42-并行任务组合示例">4.2 并行任务组合示例</h3>
+<p><img src="https://openclaw.cos.jiahongw.com/blog/illustrations/superset/03-agents.png" alt="Agent 并行工作" /></p>
 <p><strong>场景：大型功能开发</strong></p>
 <p>假设你要开发一个支付系统，可以这样拆分：</p>
 <pre tabindex="0"><code>Workspace 1: feature/payment-api
