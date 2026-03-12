@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Superset 最佳实践：AI Agent 并行编排完全指南 – ✏VictorHong&#39;s Blog</title>
+    <title>Superset 最佳实践：把 AI 变成你的并行工程团队 – ✏VictorHong&#39;s Blog</title>
     
 
   
@@ -667,7 +667,7 @@
     
     var baseurl = JSON.parse("\"https://hugo.jiahongw.com\"");
     
-    var permalink = JSON.parse("\"https://hugo.jiahongw.com/zh/20260311/superset-best-practices/\"");
+    var permalink = JSON.parse("\"https://hugo.jiahongw.com/zh/20260312/superset-best-practices/\"");
     
     var langprefix = JSON.parse("\"/zh\"");
     var searchResults = null;
@@ -1359,32 +1359,32 @@
 
 
     
-<meta name="description" content="详解如何使用 Superset 在单机上同时运行 10&#43; 个 Claude Code、Codex 等 Agent，涵盖 Git worktree 机制、Workspace 设计、Setup/Teardown 配置、Agent 并行策略与 Review 工作流" />
+<meta name="description" content="核心思想：你不是在用一个 AI 助手，而是在管理一支 10 人工程团队。详解 Superset 的并行 Agent &#43; Git worktree 隔离机制，以及微任务拆分、Agent 分工、Review 工作流等实战策略" />
 
 
 <meta name="keywords" content="Superset,AI Agent,Claude Code,Codex,Git Worktree,并行开发,效率工具">
 
-<meta name="created" content="2026-03-11T16:45:00&#43;0000">
-<meta name="modified" content="2026-03-11T16:45:00&#43;0000">
-<meta property="article:published_time" content="2026-03-11T16:45:00&#43;0000">
+<meta name="created" content="2026-03-12T09:43:00&#43;0000">
+<meta name="modified" content="2026-03-12T09:43:00&#43;0000">
+<meta property="article:published_time" content="2026-03-12T09:43:00&#43;0000">
 
 <meta name="author" content="VictorHong">
-<meta property="article:author" content="https://hugo.jiahongw.com/zh/20260311/superset-best-practices/@VictorHong">
+<meta property="article:author" content="https://hugo.jiahongw.com/zh/20260312/superset-best-practices/@VictorHong">
 
 
 <meta property="og:site_name" content="✏VictorHong&#39;s Blog">
-<meta property="og:title" content="Superset 最佳实践：AI Agent 并行编排完全指南">
-<meta property="og:url" content="https://hugo.jiahongw.com/zh/20260311/superset-best-practices/">
+<meta property="og:title" content="Superset 最佳实践：把 AI 变成你的并行工程团队">
+<meta property="og:url" content="https://hugo.jiahongw.com/zh/20260312/superset-best-practices/">
 <meta property="og:type" content="article">
-<meta property="og:description" content="详解如何使用 Superset 在单机上同时运行 10&#43; 个 Claude Code、Codex 等 Agent，涵盖 Git worktree 机制、Workspace 设计、Setup/Teardown 配置、Agent 并行策略与 Review 工作流">
+<meta property="og:description" content="核心思想：你不是在用一个 AI 助手，而是在管理一支 10 人工程团队。详解 Superset 的并行 Agent &#43; Git worktree 隔离机制，以及微任务拆分、Agent 分工、Review 工作流等实战策略">
 
   
     <meta property="og:image" content="https://openclaw.cos.jiahongw.com/blog/superset-best-practices-cover.png">
     <meta property="og:image:url" content="https://openclaw.cos.jiahongw.com/blog/superset-best-practices-cover.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:app:name:iphone" content="✏VictorHong&#39;s Blog">
-    <meta property="twitter:title" content="Superset 最佳实践：AI Agent 并行编排完全指南">
-    <meta property="twitter:description" content="详解如何使用 Superset 在单机上同时运行 10&#43; 个 Claude Code、Codex 等 Agent，涵盖 Git worktree 机制、Workspace 设计、Setup/Teardown 配置、Agent 并行策略与 Review 工作流">
+    <meta property="twitter:title" content="Superset 最佳实践：把 AI 变成你的并行工程团队">
+    <meta property="twitter:description" content="核心思想：你不是在用一个 AI 助手，而是在管理一支 10 人工程团队。详解 Superset 的并行 Agent &#43; Git worktree 隔离机制，以及微任务拆分、Agent 分工、Review 工作流等实战策略">
   
 
 <meta name="generator" content="Hugo 0.110.0">
@@ -1396,7 +1396,7 @@
 
 <meta name="apple-mobile-web-app-status-bar-style" content="#fff">
 
-<link rel="canonical" href="https://hugo.jiahongw.com/zh/20260311/superset-best-practices/">
+<link rel="canonical" href="https://hugo.jiahongw.com/zh/20260312/superset-best-practices/">
 
 <link rel="manifest" href="/manifest.json">
 
@@ -1422,11 +1422,11 @@
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "headline": "Superset 最佳实践：AI Agent 并行编排完全指南",
-    "datePublished": "2026-03-11T16:45:00Z",
-    "dateModified": "2026-03-11T16:45:00Z",
-    "url" : "https://hugo.jiahongw.com/zh/20260311/superset-best-practices/",
-    "description": "详解如何使用 Superset 在单机上同时运行 10+ 个 Claude Code、Codex 等 Agent，涵盖 Git worktree 机制、Workspace 设计、Setup/Teardown 配置、Agent 并行策略与 Review 工作流",
+    "headline": "Superset 最佳实践：把 AI 变成你的并行工程团队",
+    "datePublished": "2026-03-12T09:43:00Z",
+    "dateModified": "2026-03-12T09:43:00Z",
+    "url" : "https://hugo.jiahongw.com/zh/20260312/superset-best-practices/",
+    "description": "核心思想：你不是在用一个 AI 助手，而是在管理一支 10 人工程团队。详解 Superset 的并行 Agent + Git worktree 隔离机制，以及微任务拆分、Agent 分工、Review 工作流等实战策略",
     "keywords": ["Superset","AI Agent","Claude Code","Codex","Git Worktree","并行开发","效率工具"],
     "image" : "https://openclaw.cos.jiahongw.com/blog/superset-best-practices-cover.png",
     "author": {
@@ -1868,7 +1868,7 @@ if (!doNotTrack) {
   
   <li  class="is-active" >
     
-      <span>Superset 最佳实践：AI Agent 并行编排完全指南</span>
+      <span>Superset 最佳实践：把 AI 变成你的并行工程团队</span>
     
   </li>
   
@@ -1880,14 +1880,14 @@ if (!doNotTrack) {
   <div class="single ">
     <div class="single__nojs">Please enable Javascript to view the contents</div>
     <script>document.querySelector('.single').classList.remove('hide'); document.querySelector('.single__nojs').classList.add('hide');</script>
-    <h2 class="single__title" data-ani="true">Superset 最佳实践：AI Agent 并行编排完全指南</h2>
+    <h2 class="single__title" data-ani="true">Superset 最佳实践：把 AI 变成你的并行工程团队</h2>
     <h3 class="single__subtitle"></h3>
     <div class="single__meta">
       
 <div class="single__infos">
-  <time class="single__info" title="创建日期">📅&nbsp;2026年03月11日 </time>
+  <time class="single__info" title="创建日期">📅&nbsp;2026年03月12日 </time>
   
-  &nbsp;&middot;&nbsp; <span class="single__info" title="阅读时长"> ☕&nbsp;6&nbsp;分钟 </span>
+  &nbsp;&middot;&nbsp; <span class="single__info" title="阅读时长"> ☕&nbsp;8&nbsp;分钟 </span>
   
   &nbsp;&middot;&nbsp; <span class="single__info" title="作者">🪶&nbsp;VictorHong</span>
   
@@ -1921,10 +1921,210 @@ if (!doNotTrack) {
     </div>
     <article class="single__contents" data-dir="ltr" data-ani="true">
       
-      <h2 id="概述">概述</h2>
-<p>Superset 是一个基于 Git worktree 的 AI Agent 并行编排工具，让你可以在单机上同时运行 10+ 个 Claude Code、Codex、Cursor 等 Agent，而不会互相踩脚。本文从核心机制到实战配置，提供一份完整的使用指南。</p>
+      <blockquote>
+<p><strong>核心思想：你不是在用一个 AI 助手，而是在管理一支 10 人工程团队。</strong></p>
+</blockquote>
+<p>Superset 是一个基于 Git worktree 的 AI Agent 并行编排工具。与传统 AI 编程（任务 → 等待 Agent → Review → 下一个任务）不同，Superset 让你可以同时启动多个 Agent 并行工作，然后集中 Review。</p>
+<p>本文从核心理念到实战配置，提供一份完整的使用指南。</p>
 <hr />
-<h2 id="一理解核心机制git-worktree">一、理解核心机制：Git Worktree</h2>
+<h2 id="一两种工作流对比">一、两种工作流对比</h2>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>传统 AI 编程</th>
+<th>Superset</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>执行方式</td>
+<td>串行</td>
+<td>并行</td>
+</tr>
+<tr>
+<td>任务粒度</td>
+<td>越大越好</td>
+<td>越小越好</td>
+</tr>
+<tr>
+<td>你的角色</td>
+<td>程序员</td>
+<td>架构师/Tech Lead</td>
+</tr>
+<tr>
+<td>AI 角色</td>
+<td>Copilot</td>
+<td>10 个 Junior Engineer</td>
+</tr>
+<tr>
+<td>时间分配</td>
+<td>写代码 70%</td>
+<td>设计 10% + Review 10%</td>
+</tr>
+</tbody>
+</table>
+<p><strong>关键机制：</strong></p>
+<ul>
+<li>每个任务自动创建独立 Git worktree</li>
+<li>Agent 在隔离环境执行</li>
+<li>完成后统一 review / merge</li>
+<li>支持 Claude Code / Codex / Cursor 等多种 CLI agent</li>
+</ul>
+<p>所以最佳实践不是&quot;怎么写 prompt&quot;，而是<strong>怎么管理 Agent pipeline</strong>。</p>
+<hr />
+<h2 id="二核心原则任务必须拆成微任务">二、核心原则：任务必须拆成&quot;微任务&quot;</h2>
+<p>并行 Agent 最怕什么？<strong>一个任务过大。</strong></p>
+<h3 id="理想任务粒度">理想任务粒度</h3>
+<table>
+<thead>
+<tr>
+<th>粒度</th>
+<th>示例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>一个函数</td>
+<td>实现 <code>validateEmail()</code></td>
+</tr>
+<tr>
+<td>一个 API</td>
+<td>写 <code>POST /api/login</code></td>
+</tr>
+<tr>
+<td>一个组件</td>
+<td>写 <code>LoginForm.tsx</code></td>
+</tr>
+<tr>
+<td>一个 bug</td>
+<td>修复 #123 的 null pointer</td>
+</tr>
+<tr>
+<td>一个 test</td>
+<td>写 <code>auth.test.ts</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="-错误示范">❌ 错误示范</h3>
+<pre tabindex="0"><code>实现用户系统
+</code></pre><h3 id="-正确示范">✅ 正确示范</h3>
+<pre tabindex="0"><code>1. 实现 user schema
+2. 写 register API
+3. 写 login API
+4. 写 auth middleware
+5. 写单元测试
+</code></pre><p>这样你可以<strong>同时启动 5 个 agent</strong>。</p>
+<hr />
+<h2 id="三agent-分工策略">三、Agent 分工策略</h2>
+<p><strong>不要混合任务类型。</strong></p>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>用途</th>
+<th>示例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Feature</td>
+<td>新功能</td>
+<td>实现支付接口</td>
+</tr>
+<tr>
+<td>Bugfix</td>
+<td>修 bug</td>
+<td>修复内存泄漏</td>
+</tr>
+<tr>
+<td>Refactor</td>
+<td>重构</td>
+<td>提取公共组件</td>
+</tr>
+<tr>
+<td>Test</td>
+<td>测试</td>
+<td>写集成测试</td>
+</tr>
+<tr>
+<td>Docs</td>
+<td>文档</td>
+<td>更新 API 文档</td>
+</tr>
+</tbody>
+</table>
+<p><strong>推荐配置：</strong></p>
+<pre tabindex="0"><code>Agent 1 → 写 API
+Agent 2 → 写前端组件
+Agent 3 → 写测试
+Agent 4 → 写文档
+</code></pre><p>这样几乎不会冲突。</p>
+<hr />
+<h2 id="四git-分支命名规范">四、Git 分支命名规范</h2>
+<p>Superset 自动用 git worktree 隔离代码。</p>
+<h3 id="-推荐命名">✅ 推荐命名</h3>
+<pre tabindex="0"><code>feature/auth-api
+feature/auth-ui
+test/auth-tests
+refactor/auth-utils
+</code></pre><h3 id="-避免命名">❌ 避免命名</h3>
+<pre tabindex="0"><code>feature/auth
+</code></pre><p>多个 agent 改同一个目录 = 冲突地狱。</p>
+<hr />
+<h2 id="五prompt-工程模板">五、Prompt 工程模板</h2>
+<p>不要写随意 prompt，用<strong>工程 spec 模板</strong>：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl"><span class="gu">## Goal
+</span></span></span><span class="line"><span class="cl"><span class="gu"></span>实现 JWT 登录 API
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="gu">## Requirements
+</span></span></span><span class="line"><span class="cl"><span class="gu"></span><span class="k">-</span> POST /api/login
+</span></span><span class="line"><span class="cl"><span class="k">-</span> 输入 email + password
+</span></span><span class="line"><span class="cl"><span class="k">-</span> 返回 JWT token
+</span></span><span class="line"><span class="cl"><span class="k">-</span> 错误码规范
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="gu">## Constraints
+</span></span></span><span class="line"><span class="cl"><span class="gu"></span><span class="k">-</span> Node.js + Express
+</span></span><span class="line"><span class="cl"><span class="k">-</span> 使用现有 db util（/lib/db.ts）
+</span></span><span class="line"><span class="cl"><span class="k">-</span> 必须写单元测试
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="gu">## Output
+</span></span></span><span class="line"><span class="cl"><span class="gu"></span><span class="k">-</span> 完整代码
+</span></span><span class="line"><span class="cl"><span class="k">-</span> 测试文件
+</span></span><span class="line"><span class="cl"><span class="k">-</span> 修改的文件列表
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="给-agent-上下文">给 Agent 上下文</h3>
+<pre tabindex="0"><code>read:
+- /docs/architecture.md
+- /lib/db.ts
+- /api/user.ts
+</code></pre><h3 id="让-agent-先规划">让 Agent 先规划</h3>
+<pre tabindex="0"><code>First produce a plan. Then implement.
+</code></pre><hr />
+<h2 id="六理解核心机制git-worktree">六、理解核心机制：Git Worktree</h2>
 <p>Superset 的魔法建立在 Git worktree 之上。理解这一点，才能用好它。</p>
 <h3 id="11-什么是-git-worktree">1.1 什么是 Git Worktree？</h3>
 <p>Git worktree 允许你在同一仓库的多个分支上同时工作，每个分支有独立的工作目录，但共享同一个 <code>.git</code> 目录。</p>
@@ -2246,7 +2446,7 @@ spike/tanstack-query-migration
 </div>
 </div><p><strong>注意</strong>：如果 teardown 失败，Superset 会提示 &ldquo;Delete Anyway&rdquo;，但建议先查看日志修复问题，避免资源泄漏。</p>
 <hr />
-<h2 id="四agent-并行策略">四、Agent 并行策略</h2>
+<h2 id="七并行-agent-调度策略">七、并行 Agent 调度策略</h2>
 <h3 id="41-任务类型与-agent-选择">4.1 任务类型与 Agent 选择</h3>
 <p>不同任务适合不同 Agent：</p>
 <table>
@@ -2366,7 +2566,7 @@ Workspace 4: feature/payment-docs
 </span></span></code></pre></td></tr></table>
 </div>
 </div><hr />
-<h2 id="五review-与合并工作流">五、Review 与合并工作流</h2>
+<h2 id="八review-与合并工作流">八、Review 与合并工作流</h2>
 <h3 id="51-changes-面板使用技巧">5.1 Changes 面板使用技巧</h3>
 <p>Superset 内置 diff viewer，但高效 review 需要策略：</p>
 <p><strong>Step 1: 快速筛选</strong></p>
@@ -2432,7 +2632,7 @@ Workspace 4: feature/payment-docs
 </span></span></code></pre></td></tr></table>
 </div>
 </div><hr />
-<h2 id="六性能优化与故障排查">六、性能优化与故障排查</h2>
+<h2 id="九性能优化与故障排查">九、性能优化与故障排查</h2>
 <h3 id="61-磁盘空间管理">6.1 磁盘空间管理</h3>
 <p>每个 worktree 都会占用磁盘空间，定期清理：</p>
 <div class="highlight"><div class="chroma">
@@ -2494,7 +2694,7 @@ Workspace 4: feature/payment-docs
 <li>检查是否在正确的 worktree 目录里工作</li>
 </ul>
 <hr />
-<h2 id="七高级技巧">七、高级技巧</h2>
+<h2 id="十高级技巧">十、高级技巧</h2>
 <h3 id="71-与-cicd-集成">7.1 与 CI/CD 集成</h3>
 <p>Superset 生成的分支可以直接走 CI：</p>
 <div class="highlight"><div class="chroma">
@@ -2557,7 +2757,75 @@ Workspace 4: feature/payment-docs
 ⌘⇧R: 重新运行 setup 脚本
 ⌘⇧D: 删除当前 workspace
 </code></pre><hr />
-<h2 id="八总结">八、总结</h2>
+<h2 id="十一完整-workflow-示例">十一、完整 Workflow 示例</h2>
+<p><strong>任务：做一个 notification 系统</strong></p>
+<table>
+<thead>
+<tr>
+<th>Agent</th>
+<th>任务</th>
+<th>分支</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Agent 1</td>
+<td>DB schema</td>
+<td><code>feature/notification-db</code></td>
+</tr>
+<tr>
+<td>Agent 2</td>
+<td>Backend API</td>
+<td><code>feature/notification-api</code></td>
+</tr>
+<tr>
+<td>Agent 3</td>
+<td>React 组件</td>
+<td><code>feature/notification-ui</code></td>
+</tr>
+<tr>
+<td>Agent 4</td>
+<td>集成测试</td>
+<td><code>test/notification</code></td>
+</tr>
+<tr>
+<td>Agent 5</td>
+<td>文档</td>
+<td><code>docs/notification</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>30 分钟后：</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git merge feature/notification-db
+</span></span><span class="line"><span class="cl">git merge feature/notification-api
+</span></span><span class="line"><span class="cl">git merge feature/notification-ui
+</span></span><span class="line"><span class="cl"><span class="c1"># ...</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>完成。</p>
+<hr />
+<h2 id="十二常见错误">十二、常见错误</h2>
+<h3 id="1-agent-太多">1. Agent 太多</h3>
+<blockquote>
+<p>5 agents ≈ 最佳</p>
+</blockquote>
+<p>超过你的 review 能力 = 质量下降。</p>
+<h3 id="2-任务太大">2. 任务太大</h3>
+<p>一个 agent 写 1000 行代码 = 灾难。</p>
+<h3 id="3-没有测试">3. 没有测试</h3>
+<p><strong>必须有：</strong></p>
+<pre tabindex="0"><code>Agent A → 写功能
+Agent B → 写测试
+</code></pre><hr />
+<h2 id="十三总结">十三、总结</h2>
 <p>Superset 的核心价值不是 &ldquo;能同时开多个 Agent&rdquo;，而是 <strong>结构化地管理并行开发任务</strong>。</p>
 <p>用好它的关键：</p>
 <ol>
@@ -2567,6 +2835,37 @@ Workspace 4: feature/payment-docs
 <li><strong>建立 review 流程</strong> —— Agent 的产出必须经过人工检查</li>
 </ol>
 <p>最后提醒：Agent 是加速器，不是替代品。最终的责任和判断还是在你。</p>
+<hr />
+<p><strong>核心思想总结：</strong></p>
+<blockquote>
+<p>把 AI agent 当成<strong>并行工程团队</strong>，而不是 Copilot。</p>
+</blockquote>
+<p><strong>你的角色：</strong> Architect / Tech Lead<br />
+<strong>AI 的角色：</strong> 10 个 Junior Engineers</p>
+<p><strong>开发节奏：</strong></p>
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>占比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>设计</td>
+<td>10%</td>
+</tr>
+<tr>
+<td>并行开发</td>
+<td>80%</td>
+</tr>
+<tr>
+<td>Review</td>
+<td>10%</td>
+</tr>
+</tbody>
+</table>
+<p>而不是：写代码 70%。</p>
 <hr />
 <p><strong>参考链接</strong>：</p>
 <ul>
@@ -2912,21 +3211,14 @@ Workspace 4: feature/payment-docs
 <nav class="pagination-single">
   
     
-      <a href="https://hugo.jiahongw.com/zh/20260311/lovable-stack-best-practices/" class="pagination-single__left">
+      <a href="https://hugo.jiahongw.com/zh/20260311/pencil-best-practices/" class="pagination-single__left">
         <div class="pagination-single__icon">
           <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M19 11H7.83l4.88-4.88c.39-.39.39-1.03 0-1.42-.39-.39-1.02-.39-1.41 0l-6.59 6.59c-.39.39-.39 1.02 0 1.41l6.59 6.59c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L7.83 13H19c.55 0 1-.45 1-1s-.45-1-1-1z"/></svg>
         </div>
-        <div class="pagination-single__left-title">Lovable &#43; Supabase &#43; Stripe &#43; Vercel 技术栈最佳实践</div>      
+        <div class="pagination-single__left-title">Pencil 最佳实践：IDE 内设计到代码的完整工作流</div>      
       </a>
     
     <div class="grow"></div>
-    
-      <a href="https://hugo.jiahongw.com/zh/20260311/pencil-best-practices/" class="pagination-single__right">      
-        <div class="pagination-single__right-title">Pencil 最佳实践：IDE 内设计到代码的完整工作流</div>
-        <div class="pagination-single__icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 1.42.39.39 1.02.39 1.41 0l6.59-6.59c.39-.39.39-1.02 0-1.41l-6.58-6.6c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41L16.17 11H5c-.55 0-1 .45-1 1s.45 1 1 1z"/></svg>
-        </div>
-      </a>
     
   
 </nav>
@@ -3338,8 +3630,28 @@ document.addEventListener('DOMContentLoaded', function () {
   <div class="toc " data-dir="ltr" data-folding="true" data-ani="true">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#概述">概述</a></li>
-    <li><a href="#一理解核心机制git-worktree">一、理解核心机制：Git Worktree</a>
+    <li><a href="#一两种工作流对比">一、两种工作流对比</a></li>
+    <li><a href="#二核心原则任务必须拆成微任务">二、核心原则：任务必须拆成&quot;微任务&quot;</a>
+      <ul>
+        <li><a href="#理想任务粒度">理想任务粒度</a></li>
+        <li><a href="#-错误示范">❌ 错误示范</a></li>
+        <li><a href="#-正确示范">✅ 正确示范</a></li>
+      </ul>
+    </li>
+    <li><a href="#三agent-分工策略">三、Agent 分工策略</a></li>
+    <li><a href="#四git-分支命名规范">四、Git 分支命名规范</a>
+      <ul>
+        <li><a href="#-推荐命名">✅ 推荐命名</a></li>
+        <li><a href="#-避免命名">❌ 避免命名</a></li>
+      </ul>
+    </li>
+    <li><a href="#五prompt-工程模板">五、Prompt 工程模板</a>
+      <ul>
+        <li><a href="#给-agent-上下文">给 Agent 上下文</a></li>
+        <li><a href="#让-agent-先规划">让 Agent 先规划</a></li>
+      </ul>
+    </li>
+    <li><a href="#六理解核心机制git-worktree">六、理解核心机制：Git Worktree</a>
       <ul>
         <li><a href="#11-什么是-git-worktree">1.1 什么是 Git Worktree？</a></li>
         <li><a href="#12-superset-如何利用-worktree">1.2 Superset 如何利用 Worktree？</a></li>
@@ -3359,34 +3671,42 @@ document.addEventListener('DOMContentLoaded', function () {
         <li><a href="#34-teardown-最佳实践">3.4 Teardown 最佳实践</a></li>
       </ul>
     </li>
-    <li><a href="#四agent-并行策略">四、Agent 并行策略</a>
+    <li><a href="#七并行-agent-调度策略">七、并行 Agent 调度策略</a>
       <ul>
         <li><a href="#41-任务类型与-agent-选择">4.1 任务类型与 Agent 选择</a></li>
         <li><a href="#42-并行任务组合示例">4.2 并行任务组合示例</a></li>
         <li><a href="#43-避免资源冲突">4.3 避免资源冲突</a></li>
       </ul>
     </li>
-    <li><a href="#五review-与合并工作流">五、Review 与合并工作流</a>
+    <li><a href="#八review-与合并工作流">八、Review 与合并工作流</a>
       <ul>
         <li><a href="#51-changes-面板使用技巧">5.1 Changes 面板使用技巧</a></li>
         <li><a href="#52-合并策略">5.2 合并策略</a></li>
       </ul>
     </li>
-    <li><a href="#六性能优化与故障排查">六、性能优化与故障排查</a>
+    <li><a href="#九性能优化与故障排查">九、性能优化与故障排查</a>
       <ul>
         <li><a href="#61-磁盘空间管理">6.1 磁盘空间管理</a></li>
         <li><a href="#62-内存优化">6.2 内存优化</a></li>
         <li><a href="#63-常见问题排查">6.3 常见问题排查</a></li>
       </ul>
     </li>
-    <li><a href="#七高级技巧">七、高级技巧</a>
+    <li><a href="#十高级技巧">十、高级技巧</a>
       <ul>
         <li><a href="#71-与-cicd-集成">7.1 与 CI/CD 集成</a></li>
         <li><a href="#72-workspace-模板">7.2 Workspace 模板</a></li>
         <li><a href="#73-快捷键自定义">7.3 快捷键自定义</a></li>
       </ul>
     </li>
-    <li><a href="#八总结">八、总结</a></li>
+    <li><a href="#十一完整-workflow-示例">十一、完整 Workflow 示例</a></li>
+    <li><a href="#十二常见错误">十二、常见错误</a>
+      <ul>
+        <li><a href="#1-agent-太多">1. Agent 太多</a></li>
+        <li><a href="#2-任务太大">2. 任务太大</a></li>
+        <li><a href="#3-没有测试">3. 没有测试</a></li>
+      </ul>
+    </li>
+    <li><a href="#十三总结">十三、总结</a></li>
   </ul>
 </nav>
   </div>

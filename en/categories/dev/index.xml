@@ -18,11 +18,65 @@
     <managingEditor>wujiahong2013@gmail.com (VictorHong)</managingEditor>
     <webMaster>wujiahong2013@gmail.com (VictorHong)</webMaster>
     <copyright>©2021-2026 | VictorHong</copyright>
-    <lastBuildDate>Wed, 11 Mar 2026 17:25:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Mar 2026 09:43:00 +0000</lastBuildDate>
     
         <atom:link href="https://hugo.jiahongw.com/en/categories/dev/index.xml" rel="self" type="application/rss+xml" />
     
 
+      
+      <item>
+        <title>Superset 最佳实践：把 AI 变成你的并行工程团队</title>
+        <link>https://hugo.jiahongw.com/en/zh/posts/dev/superset-best-practices/</link>
+        <pubDate>Thu, 12 Mar 2026 09:43:00 +0000</pubDate>
+        <author>wujiahong2013@gmail.com (VictorHong)</author>
+        <atom:modified>Thu, 12 Mar 2026 09:43:00 +0000</atom:modified>
+        <guid>https://hugo.jiahongw.com/en/zh/posts/dev/superset-best-practices/</guid>
+        <description>核心思想：你不是在用一个 AI 助手，而是在管理一支 10 人工程团队。 Superset 是一个基于 Git worktree 的 AI Agent 并行编排工具。与传统 AI 编程（任务 → 等待 Agent → Review → 下一个任务）</description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        <media:content url="https://hugo.jiahongw.comhttps://openclaw.cos.jiahongw.com/blog/superset-best-practices-cover.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>Superset</category>
+            
+          
+            
+              <category>AI Agent</category>
+            
+          
+            
+              <category>Claude Code</category>
+            
+          
+            
+              <category>Codex</category>
+            
+          
+            
+              <category>Git Worktree</category>
+            
+          
+            
+              <category>并行开发</category>
+            
+          
+            
+              <category>效率工具</category>
+            
+          
+        
+        
+          
+            
+              <category>dev</category>
+            
+          
+        
+        
+      </item>
       
       <item>
         <title>Pencil 最佳实践：IDE 内设计到代码的完整工作流</title>
@@ -65,60 +119,6 @@
           
             
               <category>设计到代码</category>
-            
-          
-        
-        
-          
-            
-              <category>dev</category>
-            
-          
-        
-        
-      </item>
-      
-      <item>
-        <title>Superset 最佳实践：AI Agent 并行编排完全指南</title>
-        <link>https://hugo.jiahongw.com/en/zh/posts/dev/superset-best-practices/</link>
-        <pubDate>Wed, 11 Mar 2026 16:45:00 +0000</pubDate>
-        <author>wujiahong2013@gmail.com (VictorHong)</author>
-        <atom:modified>Wed, 11 Mar 2026 16:45:00 +0000</atom:modified>
-        <guid>https://hugo.jiahongw.com/en/zh/posts/dev/superset-best-practices/</guid>
-        <description>概述 Superset 是一个基于 Git worktree 的 AI Agent 并行编排工具，让你可以在单机上同时运行 10+ 个 Claude Code、Codex、Cursor 等 Agent，而不会互相踩脚。本文从</description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        <media:content url="https://hugo.jiahongw.comhttps://openclaw.cos.jiahongw.com/blog/superset-best-practices-cover.png" medium="image"><media:title type="html">featured image</media:title></media:content>
-        
-        
-        
-          
-            
-              <category>Superset</category>
-            
-          
-            
-              <category>AI Agent</category>
-            
-          
-            
-              <category>Claude Code</category>
-            
-          
-            
-              <category>Codex</category>
-            
-          
-            
-              <category>Git Worktree</category>
-            
-          
-            
-              <category>并行开发</category>
-            
-          
-            
-              <category>效率工具</category>
             
           
         
