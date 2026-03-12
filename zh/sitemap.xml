@@ -9,7 +9,7 @@
     <lastmod>2020-01-19T21:13:42+09:00</lastmod>
   </url><url>
     <loc>https://hugo.jiahongw.com/zh/</loc>
-    <lastmod>2026-03-12T13:00:00+00:00</lastmod>
+    <lastmod>2026-03-12T13:50:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -26,21 +26,8 @@
                 href="https://hugo.jiahongw.com/zh/"
                 />
   </url><url>
-    <loc>https://hugo.jiahongw.com/zh/tags/ai%E8%87%AA%E5%8A%A8%E5%8C%96/</loc>
-    <lastmod>2026-03-12T13:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://hugo.jiahongw.com/en/tags/ai%E8%87%AA%E5%8A%A8%E5%8C%96/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://hugo.jiahongw.com/zh/tags/ai%E8%87%AA%E5%8A%A8%E5%8C%96/"
-                />
-  </url><url>
     <loc>https://hugo.jiahongw.com/zh/categories/</loc>
-    <lastmod>2026-03-12T13:00:00+00:00</lastmod>
+    <lastmod>2026-03-12T13:50:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -58,7 +45,7 @@
                 />
   </url><url>
     <loc>https://hugo.jiahongw.com/zh/categories/dev/</loc>
-    <lastmod>2026-03-12T13:00:00+00:00</lastmod>
+    <lastmod>2026-03-12T13:50:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -68,6 +55,108 @@
                 rel="alternate"
                 hreflang="zh"
                 href="https://hugo.jiahongw.com/zh/categories/dev/"
+                />
+  </url><url>
+    <loc>https://hugo.jiahongw.com/zh/tags/excalidraw/</loc>
+    <lastmod>2026-03-12T13:50:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hugo.jiahongw.com/en/tags/excalidraw/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://hugo.jiahongw.com/zh/tags/excalidraw/"
+                />
+  </url><url>
+    <loc>https://hugo.jiahongw.com/zh/20260312/excalidraw-best-practices/</loc>
+    <lastmod>2026-03-12T13:50:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hugo.jiahongw.com/zh/posts/</loc>
+    <lastmod>2026-03-12T13:50:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hugo.jiahongw.com/zh/tags/</loc>
+    <lastmod>2026-03-12T13:50:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hugo.jiahongw.com/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://hugo.jiahongw.com/ko/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://hugo.jiahongw.com/zh/tags/"
+                />
+  </url><url>
+    <loc>https://hugo.jiahongw.com/zh/tags/%E5%8F%AF%E8%A7%86%E5%8C%96/</loc>
+    <lastmod>2026-03-12T13:50:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hugo.jiahongw.com/en/tags/%E5%8F%AF%E8%A7%86%E5%8C%96/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://hugo.jiahongw.com/zh/tags/%E5%8F%AF%E8%A7%86%E5%8C%96/"
+                />
+  </url><url>
+    <loc>https://hugo.jiahongw.com/zh/tags/%E7%94%9F%E4%BA%A7%E5%8A%9B%E5%B7%A5%E5%85%B7/</loc>
+    <lastmod>2026-03-12T13:50:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hugo.jiahongw.com/en/tags/%E7%94%9F%E4%BA%A7%E5%8A%9B%E5%B7%A5%E5%85%B7/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://hugo.jiahongw.com/zh/tags/%E7%94%9F%E4%BA%A7%E5%8A%9B%E5%B7%A5%E5%85%B7/"
+                />
+  </url><url>
+    <loc>https://hugo.jiahongw.com/zh/tags/%E6%89%8B%E7%BB%98%E9%A3%8E%E6%A0%BC/</loc>
+    <lastmod>2026-03-12T13:50:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hugo.jiahongw.com/en/tags/%E6%89%8B%E7%BB%98%E9%A3%8E%E6%A0%BC/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://hugo.jiahongw.com/zh/tags/%E6%89%8B%E7%BB%98%E9%A3%8E%E6%A0%BC/"
+                />
+  </url><url>
+    <loc>https://hugo.jiahongw.com/zh/tags/%E5%9B%BE%E8%A1%A8%E5%B7%A5%E5%85%B7/</loc>
+    <lastmod>2026-03-12T13:50:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hugo.jiahongw.com/en/tags/%E5%9B%BE%E8%A1%A8%E5%B7%A5%E5%85%B7/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://hugo.jiahongw.com/zh/tags/%E5%9B%BE%E8%A1%A8%E5%B7%A5%E5%85%B7/"
+                />
+  </url><url>
+    <loc>https://hugo.jiahongw.com/zh/tags/ai%E8%87%AA%E5%8A%A8%E5%8C%96/</loc>
+    <lastmod>2026-03-12T13:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hugo.jiahongw.com/en/tags/ai%E8%87%AA%E5%8A%A8%E5%8C%96/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://hugo.jiahongw.com/zh/tags/ai%E8%87%AA%E5%8A%A8%E5%8C%96/"
                 />
   </url><url>
     <loc>https://hugo.jiahongw.com/zh/tags/openclaw/</loc>
@@ -85,27 +174,6 @@
   </url><url>
     <loc>https://hugo.jiahongw.com/zh/20260312/openclaw-usecases-guide/</loc>
     <lastmod>2026-03-12T13:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hugo.jiahongw.com/zh/posts/</loc>
-    <lastmod>2026-03-12T13:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hugo.jiahongw.com/zh/tags/</loc>
-    <lastmod>2026-03-12T13:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://hugo.jiahongw.com/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://hugo.jiahongw.com/ko/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://hugo.jiahongw.com/zh/tags/"
-                />
   </url><url>
     <loc>https://hugo.jiahongw.com/zh/tags/%E7%94%9F%E4%BA%A7%E5%8A%9B/</loc>
     <lastmod>2026-03-12T13:00:00+00:00</lastmod>

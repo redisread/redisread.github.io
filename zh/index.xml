@@ -18,7 +18,7 @@
     <managingEditor>wujiahong2013@gmail.com (VictorHong)</managingEditor>
     <webMaster>wujiahong2013@gmail.com (VictorHong)</webMaster>
     <copyright>©2021-2026 | VictorHong</copyright>
-    <lastBuildDate>Thu, 12 Mar 2026 13:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Mar 2026 13:50:00 +0000</lastBuildDate>
     
         <atom:link href="https://hugo.jiahongw.com/zh/index.xml" rel="self" type="application/rss+xml" />
     
@@ -40,6 +40,52 @@
         
       
 
+      
+      <item>
+        <title>Excalidraw 最佳实践：手绘风格图表的完整工作流</title>
+        <link>https://hugo.jiahongw.com/zh/20260312/excalidraw-best-practices/</link>
+        <pubDate>Thu, 12 Mar 2026 13:50:00 +0000</pubDate>
+        <author>wujiahong2013@gmail.com (VictorHong)</author>
+        <atom:modified>Thu, 12 Mar 2026 13:50:00 +0000</atom:modified>
+        <guid>https://hugo.jiahongw.com/zh/20260312/excalidraw-best-practices/</guid>
+        <description>什么是 Excalidraw？ Excalidraw 是一个开源的虚拟手绘白板工具，让你可以用手绘风格创建图表、流程图、线框图和示意图。它的独特之处在于既保持了手绘</description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>Excalidraw</category>
+            
+          
+            
+              <category>图表工具</category>
+            
+          
+            
+              <category>手绘风格</category>
+            
+          
+            
+              <category>可视化</category>
+            
+          
+            
+              <category>生产力工具</category>
+            
+          
+        
+        
+          
+            
+              <category>dev</category>
+            
+          
+        
+        
+      </item>
       
       <item>
         <title>OpenClaw 实战指南：从 176 个案例中提炼的 10 个高价值场景</title>

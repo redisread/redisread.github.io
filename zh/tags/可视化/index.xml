@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>可视化 on ✏VictorHong&#39;s Blog</title>
+    <link>https://hugo.jiahongw.com/zh/tags/%E5%8F%AF%E8%A7%86%E5%8C%96/</link>
+    <description>Recent content in 可视化 on ✏VictorHong&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <follow_challenge>
+        <feedId>74349588616178697</feedId>
+        <userId>68207800989737984</userId>
+    </follow_challenge>
+    <managingEditor>wujiahong2013@gmail.com (VictorHong)</managingEditor>
+    <webMaster>wujiahong2013@gmail.com (VictorHong)</webMaster>
+    <copyright>©2021-2026 | VictorHong</copyright>
+    <lastBuildDate>Thu, 12 Mar 2026 13:50:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://hugo.jiahongw.com/zh/tags/%E5%8F%AF%E8%A7%86%E5%8C%96/index.xml" rel="self" type="application/rss+xml" />
+    
+
+      
+      <item>
+        <title>Excalidraw 最佳实践：手绘风格图表的完整工作流</title>
+        <link>https://hugo.jiahongw.com/zh/20260312/excalidraw-best-practices/</link>
+        <pubDate>Thu, 12 Mar 2026 13:50:00 +0000</pubDate>
+        <author>wujiahong2013@gmail.com (VictorHong)</author>
+        <atom:modified>Thu, 12 Mar 2026 13:50:00 +0000</atom:modified>
+        <guid>https://hugo.jiahongw.com/zh/20260312/excalidraw-best-practices/</guid>
+        <description>什么是 Excalidraw？ Excalidraw 是一个开源的虚拟手绘白板工具，让你可以用手绘风格创建图表、流程图、线框图和示意图。它的独特之处在于既保持了手绘</description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>Excalidraw</category>
+            
+          
+            
+              <category>图表工具</category>
+            
+          
+            
+              <category>手绘风格</category>
+            
+          
+            
+              <category>可视化</category>
+            
+          
+            
+              <category>生产力工具</category>
+            
+          
+        
+        
+          
+            
+              <category>dev</category>
+            
+          
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>
