@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>性能优化 on VictorHong&#39;s Blog</title>
+    <link>https://hugo.jiahongw.com/en/tags/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/</link>
+    <description>Recent content in 性能优化 on VictorHong&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <follow_challenge>
+        <feedId>74349588616178697</feedId>
+        <userId>68207800989737984</userId>
+    </follow_challenge>
+    <managingEditor>wujiahong2013@gmail.com (VictorHong)</managingEditor>
+    <webMaster>wujiahong2013@gmail.com (VictorHong)</webMaster>
+    <copyright>©2021-2026 | VictorHong</copyright>
+    <lastBuildDate>Fri, 13 Mar 2026 12:30:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://hugo.jiahongw.com/en/tags/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/index.xml" rel="self" type="application/rss+xml" />
+    
+
+      
+      <item>
+        <title>AI 自动研究：Shopify CEO 如何用编码智能体优化 20 年老代码库</title>
+        <link>https://hugo.jiahongw.com/en/zh/posts/dev/autoresearch-performance-optimization/</link>
+        <pubDate>Fri, 13 Mar 2026 12:30:00 +0000</pubDate>
+        <author>wujiahong2013@gmail.com (VictorHong)</author>
+        <atom:modified>Fri, 13 Mar 2026 12:30:00 +0000</atom:modified>
+        <guid>https://hugo.jiahongw.com/en/zh/posts/dev/autoresearch-performance-optimization/</guid>
+        <description>参考 Simon Willison 的 Link Blog，本文深入解析 Shopify CEO 如何使用 AI 自动研究模式优化 20 年历史的老代码库。 事件背景 2026 年 3 月，Shopify CEO Tobias Lütke（Tobi</description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>AI自动研究</category>
+            
+          
+            
+              <category>性能优化</category>
+            
+          
+            
+              <category>Shopify</category>
+            
+          
+            
+              <category>Liquid</category>
+            
+          
+            
+              <category>编码智能体</category>
+            
+          
+            
+              <category>Tobi Lütke</category>
+            
+          
+        
+        
+          
+            
+              <category>dev</category>
+            
+          
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

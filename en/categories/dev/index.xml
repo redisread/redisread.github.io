@@ -18,11 +18,61 @@
     <managingEditor>wujiahong2013@gmail.com (VictorHong)</managingEditor>
     <webMaster>wujiahong2013@gmail.com (VictorHong)</webMaster>
     <copyright>©2021-2026 | VictorHong</copyright>
-    <lastBuildDate>Fri, 13 Mar 2026 03:30:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Mar 2026 12:30:00 +0000</lastBuildDate>
     
         <atom:link href="https://hugo.jiahongw.com/en/categories/dev/index.xml" rel="self" type="application/rss+xml" />
     
 
+      
+      <item>
+        <title>AI 自动研究：Shopify CEO 如何用编码智能体优化 20 年老代码库</title>
+        <link>https://hugo.jiahongw.com/en/zh/posts/dev/autoresearch-performance-optimization/</link>
+        <pubDate>Fri, 13 Mar 2026 12:30:00 +0000</pubDate>
+        <author>wujiahong2013@gmail.com (VictorHong)</author>
+        <atom:modified>Fri, 13 Mar 2026 12:30:00 +0000</atom:modified>
+        <guid>https://hugo.jiahongw.com/en/zh/posts/dev/autoresearch-performance-optimization/</guid>
+        <description>参考 Simon Willison 的 Link Blog，本文深入解析 Shopify CEO 如何使用 AI 自动研究模式优化 20 年历史的老代码库。 事件背景 2026 年 3 月，Shopify CEO Tobias Lütke（Tobi</description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>AI自动研究</category>
+            
+          
+            
+              <category>性能优化</category>
+            
+          
+            
+              <category>Shopify</category>
+            
+          
+            
+              <category>Liquid</category>
+            
+          
+            
+              <category>编码智能体</category>
+            
+          
+            
+              <category>Tobi Lütke</category>
+            
+          
+        
+        
+          
+            
+              <category>dev</category>
+            
+          
+        
+        
+      </item>
       
       <item>
         <title>MCP 深度解析：模型上下文协议原理与最佳实践</title>
