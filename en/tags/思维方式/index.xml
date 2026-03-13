@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>思维方式 on VictorHong&#39;s Blog</title>
+    <link>https://hugo.jiahongw.com/en/tags/%E6%80%9D%E7%BB%B4%E6%96%B9%E5%BC%8F/</link>
+    <description>Recent content in 思维方式 on VictorHong&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <follow_challenge>
+        <feedId>74349588616178697</feedId>
+        <userId>68207800989737984</userId>
+    </follow_challenge>
+    <managingEditor>wujiahong2013@gmail.com (VictorHong)</managingEditor>
+    <webMaster>wujiahong2013@gmail.com (VictorHong)</webMaster>
+    <copyright>©2021-2026 | VictorHong</copyright>
+    <lastBuildDate>Fri, 13 Mar 2026 01:40:00 +0800</lastBuildDate>
+    
+        <atom:link href="https://hugo.jiahongw.com/en/tags/%E6%80%9D%E7%BB%B4%E6%96%B9%E5%BC%8F/index.xml" rel="self" type="application/rss+xml" />
+    
+
+      
+      <item>
+        <title>第一性原理 × AI：回归本质的思考</title>
+        <link>https://hugo.jiahongw.com/en/zh/posts/dev/first-principles-ai/</link>
+        <pubDate>Fri, 13 Mar 2026 01:40:00 +0800</pubDate>
+        <author>wujiahong2013@gmail.com (VictorHong)</author>
+        <atom:modified>Fri, 13 Mar 2026 01:40:00 +0800</atom:modified>
+        <guid>https://hugo.jiahongw.com/en/zh/posts/dev/first-principles-ai/</guid>
+        <description>马斯克推崇的第一性原理，在 AI 时代变得更重要。不是问&amp;quot;怎么做&amp;quot;，而是问&amp;quot;是什么&amp;quot;。 什么是第一性原理 第一</description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        <media:content url="https://hugo.jiahongw.comhttps://images.unsplash.com/photo-1507413245164-6160d8298b31?w=1200" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>第一性原理</category>
+            
+          
+            
+              <category>AI</category>
+            
+          
+            
+              <category>思维方式</category>
+            
+          
+            
+              <category>马斯克</category>
+            
+          
+            
+              <category>生产力</category>
+            
+          
+        
+        
+          
+            
+              <category>思考</category>
+            
+          
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>
