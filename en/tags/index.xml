@@ -18,11 +18,119 @@
     <managingEditor>wujiahong2013@gmail.com (VictorHong)</managingEditor>
     <webMaster>wujiahong2013@gmail.com (VictorHong)</webMaster>
     <copyright>©2021-2026 | VictorHong</copyright>
-    <lastBuildDate>Fri, 13 Mar 2026 01:40:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 13 Mar 2026 03:30:00 +0000</lastBuildDate>
     
         <atom:link href="https://hugo.jiahongw.com/en/tags/index.xml" rel="self" type="application/rss+xml" />
     
 
+      
+      <item>
+        <title>AI协议</title>
+        <link>https://hugo.jiahongw.com/en/tags/ai%E5%8D%8F%E8%AE%AE/</link>
+        <pubDate>Fri, 13 Mar 2026 03:30:00 +0000</pubDate>
+        <author>wujiahong2013@gmail.com (VictorHong)</author>
+        
+        <guid>https://hugo.jiahongw.com/en/tags/ai%E5%8D%8F%E8%AE%AE/</guid>
+        <description></description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>Claude</title>
+        <link>https://hugo.jiahongw.com/en/tags/claude/</link>
+        <pubDate>Fri, 13 Mar 2026 03:30:00 +0000</pubDate>
+        <author>wujiahong2013@gmail.com (VictorHong)</author>
+        
+        <guid>https://hugo.jiahongw.com/en/tags/claude/</guid>
+        <description></description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>LLM集成</title>
+        <link>https://hugo.jiahongw.com/en/tags/llm%E9%9B%86%E6%88%90/</link>
+        <pubDate>Fri, 13 Mar 2026 03:30:00 +0000</pubDate>
+        <author>wujiahong2013@gmail.com (VictorHong)</author>
+        
+        <guid>https://hugo.jiahongw.com/en/tags/llm%E9%9B%86%E6%88%90/</guid>
+        <description></description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>MCP</title>
+        <link>https://hugo.jiahongw.com/en/tags/mcp/</link>
+        <pubDate>Fri, 13 Mar 2026 03:30:00 +0000</pubDate>
+        <author>wujiahong2013@gmail.com (VictorHong)</author>
+        
+        <guid>https://hugo.jiahongw.com/en/tags/mcp/</guid>
+        <description></description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>Model Context Protocol</title>
+        <link>https://hugo.jiahongw.com/en/tags/model-context-protocol/</link>
+        <pubDate>Fri, 13 Mar 2026 03:30:00 +0000</pubDate>
+        <author>wujiahong2013@gmail.com (VictorHong)</author>
+        
+        <guid>https://hugo.jiahongw.com/en/tags/model-context-protocol/</guid>
+        <description></description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>技术架构</title>
+        <link>https://hugo.jiahongw.com/en/tags/%E6%8A%80%E6%9C%AF%E6%9E%B6%E6%9E%84/</link>
+        <pubDate>Fri, 13 Mar 2026 03:30:00 +0000</pubDate>
+        <author>wujiahong2013@gmail.com (VictorHong)</author>
+        
+        <guid>https://hugo.jiahongw.com/en/tags/%E6%8A%80%E6%9C%AF%E6%9E%B6%E6%9E%84/</guid>
+        <description></description>
+        
+        <dc:creator>VictorHong</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
       <item>
         <title>AI</title>
@@ -301,24 +409,6 @@
         <author>wujiahong2013@gmail.com (VictorHong)</author>
         
         <guid>https://hugo.jiahongw.com/en/tags/agent/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>Claude</title>
-        <link>https://hugo.jiahongw.com/en/tags/claude/</link>
-        <pubDate>Thu, 12 Mar 2026 17:50:00 +0800</pubDate>
-        <author>wujiahong2013@gmail.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/claude/</guid>
         <description></description>
         
         <dc:creator>VictorHong</dc:creator>
@@ -1141,24 +1231,6 @@
       </item>
       
       <item>
-        <title>MCP</title>
-        <link>https://hugo.jiahongw.com/en/tags/mcp/</link>
-        <pubDate>Tue, 06 May 2025 13:31:35 +0800</pubDate>
-        <author>wujiahong2013@gmail.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/mcp/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
         <title>weekly</title>
         <link>https://hugo.jiahongw.com/en/tags/weekly/</link>
         <pubDate>Sun, 24 Nov 2024 00:16:10 +0800</pubDate>
@@ -1741,78 +1813,6 @@
         <author>wujiahong2013@gmail.com (VictorHong)</author>
         
         <guid>https://hugo.jiahongw.com/en/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>AES</title>
-        <link>https://hugo.jiahongw.com/en/tags/aes/</link>
-        <pubDate>Fri, 03 Apr 2020 14:20:19 +0800</pubDate>
-        <author>wujiahong2013@gmail.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/aes/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>scrapy</title>
-        <link>https://hugo.jiahongw.com/en/tags/scrapy/</link>
-        <pubDate>Wed, 04 Mar 2020 16:35:09 +0800</pubDate>
-        <author>wujiahong2013@gmail.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/scrapy/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>爬虫</title>
-        <link>https://hugo.jiahongw.com/en/tags/%E7%88%AC%E8%99%AB/</link>
-        <pubDate>Wed, 04 Mar 2020 16:35:09 +0800</pubDate>
-        <author>wujiahong2013@gmail.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/%E7%88%AC%E8%99%AB/</guid>
-        <description></description>
-        
-        <dc:creator>VictorHong</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>github</title>
-        <link>https://hugo.jiahongw.com/en/tags/github/</link>
-        <pubDate>Mon, 10 Feb 2020 20:50:09 +0800</pubDate>
-        <author>wujiahong2013@gmail.com (VictorHong)</author>
-        
-        <guid>https://hugo.jiahongw.com/en/tags/github/</guid>
         <description></description>
         
         <dc:creator>VictorHong</dc:creator>
