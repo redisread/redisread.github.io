@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>编程 on ✏VictorHong's Blog</title><link>https://hugo.jiahongw.com/tags/%E7%BC%96%E7%A8%8B/</link><description>Recent content in 编程 on ✏VictorHong's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh</language><follow_challenge><feedId>74349588616178697</feedId><userId>68207800989737984</userId></follow_challenge><managingEditor>wujiahong2013@gmail.com (VictorHong)</managingEditor><webMaster>wujiahong2013@gmail.com (VictorHong)</webMaster><copyright>©2021-2026 | VictorHong</copyright><lastBuildDate>Mon, 23 Feb 2026 18:05:00 +0800</lastBuildDate><atom:link href="https://hugo.jiahongw.com/tags/%E7%BC%96%E7%A8%8B/index.xml" rel="self" type="application/rss+xml"/><item><title>代码很便宜了，但写好代码依然很贵</title><link>https://hugo.jiahongw.com/20260223/code-is-cheap/</link><pubDate>Mon, 23 Feb 2026 18:05:00 +0800</pubDate><author>wujiahong2013@gmail.com (VictorHong)</author><atom:modified>Mon, 23 Feb 2026 18:05:00 +0800</atom:modified><guid>https://hugo.jiahongw.com/20260223/code-is-cheap/</guid><description>基于 Simon Willison 的 Agentic Engineering Patterns 写在前面 前几天看到 Simon Willison 的一篇文章，标题很直接：《Writing code is cheap now》。作为一个写了 5 年代码、最近疯狂用 AI 辅助开发的工</description><content:encoded>&lt;blockquote>
+&lt;p>基于 Simon Willison 的 &lt;a href="https://simonwillison.net/guides/agentic-engineering-patterns/code-is-cheap/">Agentic Engineering Patterns&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="写在前面">写在前面&lt;/h2>
+&lt;p>前几天看到 Simon Willison 的一篇文章，标题很直接：《Writing code is cheap now》。作为一个写了 5 年代码、最近疯狂用 AI 辅助开发的工程师，这篇文章点破了我最近一直困惑的一个问题——&lt;strong>为什么有了 AI 写代码反而更累了？&lt;/strong>&lt;/p>
+&lt;p>答案很简单：&lt;strong>我们还在用旧习惯处理新工具&lt;/strong>。&lt;/p>
+&lt;hr />
+&lt;h2 id="代码一直很贵">代码一直很贵&lt;/h2>
+&lt;p>在 AI 出现之前，写代码是昂贵的。&lt;/p>
+&lt;p>一个熟练的开发者，写出几百行干净、可测试的代码，通常需要一整天甚至更多。这个成本约束塑造了我们所有的工程习惯：&lt;/p>
+&lt;p>&lt;strong>宏观层面：&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>开会讨论需求，确保每行代码都花在刀刃上&lt;/li>
+&lt;li>功能必须 ROI 为正，而且要赚回开发成本的好几倍才值得做&lt;/li>
+&lt;li>技术选型谨慎，因为重构成本极高&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>微观层面：&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&amp;ldquo;这个函数重构一下会更优雅，但要花一小时，值吗？&amp;rdquo;&lt;/li>
+&lt;li>&amp;ldquo;这个边界情况需要加测试吗？&amp;rdquo;&lt;/li>
+&lt;li>&amp;ldquo;要不要为这个 bug 专门做个调试界面？&amp;rdquo;&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>每一个决定背后都是时间成本。&lt;/strong>&lt;/p>
+&lt;hr />
+&lt;h2 id="ai-让代码几乎免费">AI 让代码几乎免费&lt;/h2>
+&lt;p>现在呢？&lt;/p>
+&lt;p>你描述需求，AI 10 分钟生成代码。你可以同时开三个会话，让 AI 分别写功能、写测试、写文档。并行开发不再是团队特权，一个人就能做到。&lt;/p>
+&lt;p>&lt;strong>敲键盘的成本趋近于零。&lt;/strong>&lt;/p>
+&lt;p>这意味着过去很多&amp;quot;不值得&amp;quot;的决定，现在都值得重新评估。&lt;/p>
+&lt;hr />
+&lt;h2 id="但好代码依然很贵">但&amp;quot;好代码&amp;quot;依然很贵&lt;/h2>
+&lt;p>Simon 列了一个&amp;quot;好代码&amp;quot;的 checklist，我逐条看了，发现 AI 只能帮你完成一半：&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>维度&lt;/th>
+&lt;th>AI 能帮&lt;/th>
+&lt;th>你必须做&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>生成代码&lt;/td>
+&lt;td>✅&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>验证代码真的能跑&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>✅&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>确认解决的是正确问题&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>✅&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>优雅处理错误情况&lt;/td>
+&lt;td>✅ 部分&lt;/td>
+&lt;td>✅ 关键判断&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>保持简单可维护&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>✅&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>写测试&lt;/td>
+&lt;td>✅&lt;/td>
+&lt;td>✅ 设计测试策略&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>写文档&lt;/td>
+&lt;td>✅&lt;/td>
+&lt;td>✅ 确保文档准确&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>可扩展性设计&lt;/td>
+&lt;td>&lt;/td>
+&lt;td>✅&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>&lt;strong>AI 降低了&amp;quot;写&amp;quot;的成本，但没降低&amp;quot;判断&amp;quot;的成本。&lt;/strong>&lt;/p>
+&lt;p>生成一堆能跑但没人看得懂的代码，比不写还糟。&lt;/p>
+&lt;p>&lt;img src="https://cos.jiahongw.com/posts/code-is-cheap/img3.jpg" alt="AI 与人类判断" />&lt;/p>
+&lt;hr />
+&lt;h2 id="需要培养的新习惯">需要培养的新习惯&lt;/h2>
+&lt;p>Simon 的建议很直接，我翻译一下：&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;strong>每当你的直觉说&amp;quot;这个功能不值得花时间做&amp;quot;，反手就丢给 AI 试试。&lt;/strong>&lt;/p>
+&lt;/blockquote>
+&lt;p>最坏结果：浪费几毛钱 token，10 分钟后发现确实不行。&lt;br />
+最好结果：白捡一个功能，还能顺便生成测试和文档。&lt;/p>
+&lt;p>&lt;strong>关键转变：从&amp;quot;时间成本思维&amp;quot;切换到&amp;quot;验证成本思维&amp;quot;。&lt;/strong>&lt;/p>
+&lt;p>以前：做这个值不值一整天？&lt;br />
+现在：验证 AI 生成的结果值不值 10 分钟？&lt;/p>
+&lt;hr />
+&lt;h2 id="我的实践建议">我的实践建议&lt;/h2>
+&lt;p>基于过去几个月的高强度 AI 辅助开发，分享几个正在形成的新习惯：&lt;/p>
+&lt;h3 id="1-先跑再说原则">1. &amp;ldquo;先跑再说&amp;quot;原则&lt;/h3>
+&lt;p>不确定的功能，先让 AI 写个 MVP 出来看效果。比脑补快 10 倍。&lt;/p>
+&lt;h3 id="2-并行分支开发">2. 并行分支开发&lt;/h3>
+&lt;p>同一个功能，让 AI 用不同方案各实现一遍。对比后再决定，而不是提前纠结。&lt;/p>
+&lt;h3 id="3-强制-review-清单">3. 强制 Review 清单&lt;/h3>
+&lt;p>AI 生成的代码必须过这几关：&lt;/p>
+&lt;ul>
+&lt;li>&lt;input disabled="" type="checkbox" /> 我能在 30 秒内看懂它在干嘛吗？&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox" /> 错误处理覆盖了哪些情况？&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox" /> 有对应的测试吗？&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox" /> 如果半年后回来看，我能快速理解吗？&lt;/li>
+&lt;/ul>
+&lt;h3 id="4-文档即代码">4. 文档即代码&lt;/h3>
+&lt;p>AI 写的文档要随代码一起审。代码变了文档没更新，就是技术债。&lt;/p>
+&lt;hr />
+&lt;h2 id="最后">最后&lt;/h2>
+&lt;p>Agentic Engineering 不是让开发者变懒，而是让我们从&amp;quot;写代码&amp;quot;转向&amp;quot;判断代码&amp;rdquo;。&lt;/p>
+&lt;p>写代码确实便宜了，但&lt;strong>设计、验证、维护&lt;/strong>的成本还在。真正的效率提升，来自于承认这个现实，然后重新设计我们的工作流。&lt;/p>
+&lt;p>Simon 说得好：这些最佳实践还在被整个行业摸索中。我们每个人都是实验者。&lt;/p></content:encoded><dc:creator>VictorHong</dc:creator><media:content url="https://hugo.jiahongw.comhttps://cos.jiahongw.com/posts/code-is-cheap/cover-20261016-d3.png" medium="image"><media:title type="html">featured image</media:title></media:content><category>AI</category><category>编程</category><category>开发方法论</category><category>Agentic Engineering</category><category>AI编程</category></item></channel></rss>

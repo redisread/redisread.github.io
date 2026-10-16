@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>rsa on ✏VictorHong's Blog</title><link>https://hugo.jiahongw.com/tags/rsa/</link><description>Recent content in rsa on ✏VictorHong's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh</language><follow_challenge><feedId>74349588616178697</feedId><userId>68207800989737984</userId></follow_challenge><managingEditor>wujiahong2013@gmail.com (VictorHong)</managingEditor><webMaster>wujiahong2013@gmail.com (VictorHong)</webMaster><copyright>©2021-2026 | VictorHong</copyright><lastBuildDate>Wed, 06 May 2020 16:00:46 +0800</lastBuildDate><atom:link href="https://hugo.jiahongw.com/tags/rsa/index.xml" rel="self" type="application/rss+xml"/><item><title>RSA加密算法</title><link>https://hugo.jiahongw.com/20200506/rsa/</link><pubDate>Wed, 06 May 2020 16:00:46 +0800</pubDate><author>wujiahong2013@gmail.com (VictorHong)</author><atom:modified>Wed, 06 May 2020 16:00:46 +0800</atom:modified><guid>https://hugo.jiahongw.com/20200506/rsa/</guid><description>RSA算法 RSA加密算法是一种非对称加密算法，在公开密钥加密和电子商业中被广泛使用。 对极大整数做因数分解的难度决定了 RSA 算法的可靠性。换言之，</description><content:encoded>&lt;h1 id="rsa算法">RSA算法&lt;/h1>
+&lt;p>&lt;code>RSA&lt;/code>加密算法是一种非对称加密算法，在公开密钥加密和电子商业中被广泛使用。&lt;/p>
+&lt;blockquote>
+&lt;p>对极大整数做因数分解的难度决定了 RSA 算法的可靠性。换言之，对一极大整数做因数分解愈困难，RSA 算法愈可靠。假如有人找到一种快速因数分解的算法的话，那么用 RSA 加密的信息的可靠性就会极度下降。但找到这样的算法的可能性是非常小的。今天只有短的 RSA 钥匙才可能被强力方式破解。到当前为止，世界上还没有任何可靠的攻击RSA算法的方式。只要其钥匙的长度足够长，用RSA加密的信息实际上是不能被破解的。&lt;/p>
+&lt;/blockquote>
+&lt;p>公钥/双密钥/非对称 加密 涉及到两个密钥的使用:&lt;/p>
+&lt;ul>
+&lt;li>一个公钥, 可以被任何人知道，用于加密消息和验证签名&lt;/li>
+&lt;li>一个私钥, 只有接收方才知道，用于解密消息和创造签名&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://gitee.com/wujiahong1998/MyBed/raw/master/kunpeng/20200427231659.png" alt="RSA加密解密流程" />&lt;/p>
+&lt;h2 id="rsa实现过程">RSA实现过程&lt;/h2>
+&lt;h3 id="1-公钥与私钥的产生">1. 公钥与私钥的产生&lt;/h3>
+&lt;p>生成公钥e和私钥d的步骤如下：&lt;/p>
+&lt;ol>
+&lt;li>随意选择两个大的质数$p$和$q$，$p$不等于$q$，计算$n=pq$。&lt;/li>
+&lt;li>根据欧拉函数，求$r = \varphi (N) = \varphi (p)\varphi (q) = (p - 1)(q - 1)$&lt;/li>
+&lt;li>选择一个小于$r$的整数$e$，使$e$与$r$互质。并求得$e$关于$r$的模反元素，命名为$d$(求$d$令$ed \equiv 1(\bmod ;r)$)。(模反元素存在，当且仅当$e$与$r$互质)&lt;/li>
+&lt;li>将$p$和$q$的记录销毁&lt;/li>
+&lt;/ol>
+&lt;p>经过上面四个步骤最终可以得到公钥$(n,e)$和私钥$(n,d)$。&lt;/p>
+&lt;p>接收消息的人将自己的公钥$(n,e)$发送给发送消息的人,发送的人使用这个公钥加密信息发送给接收方，而接收方将私钥$(n,d)$保存起来用于解密。&lt;/p>
+&lt;p>下面实现RSA类&lt;/p>
+&lt;blockquote>
+&lt;p>参考资料：&lt;/p>
+&lt;ol>
+&lt;li>&lt;a href="https://www.cnblogs.com/skyivben/archive/2010/07/10/1775001.html">米勒-拉宾素性检验&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.cnblogs.com/Silenceneo-xw/p/6718334.html">RSA加密算法 C++实现&lt;/a>&lt;/li>
+&lt;/ol>
+&lt;/blockquote>
+&lt;h2 id="实验步骤与结果">实验步骤与结果&lt;/h2>
+&lt;h3 id="1实现大整数类">1.实现大整数类&lt;/h3>
+&lt;p>因为该加密算法涉及的数可能很大，而C++中并没有像Java一样，内置大整数类&lt;code>BigInteger&lt;/code>，故需自己实现，这里我参考了网上的一些资料设计了&lt;code>BigInteger&lt;/code>类，实现了加减乘除以及模幂等运算，也实现了运算符重载，具体参考实现的方法如下：&lt;/p>
+&lt;p>&lt;img src="https://i.loli.net/2020/05/06/yUJHFzLc6g1bD5x.png" alt="大整数方法" />&lt;/p>
+&lt;h3 id="2-设计rsa类">2. 设计RSA类&lt;/h3>
+&lt;p>编写&lt;code>rsa.h&lt;/code>头文件，定义&lt;code>RSA&lt;/code>类，其中包含的成员以及成员函数如下：&lt;/p>
+&lt;p>&lt;img src="https://i.loli.net/2020/05/06/zmYJrDVlEiIt1sU.png" alt="RSA类定义" />&lt;/p>
+&lt;p>下面分别实现上述的各个方法&lt;/p>
+&lt;p>首先要生成密钥对，即生成公钥和私钥，那么，我们首先需要生成两个大素数&lt;code>p&lt;/code>和&lt;code>q&lt;/code>,显然，素数是不可能是偶数的，故定义一个生成随机奇数的函数&lt;code>BigInteger createOddNum(unsigned len)&lt;/code>参数为奇数的长度。&lt;/p>
+&lt;p>使用16进制的随机字母，然后随机选取其中的&lt;code>len/4&lt;/code>个得到一个随机的大奇数，只需要末尾那个数为奇数即可，最后返回&lt;code>BigInteger&lt;/code>类型的奇数大整数，关键代码如下：&lt;/p>
+&lt;p>&lt;img src="https://i.loli.net/2020/05/06/FKC4NDOpjflsB1T.png" alt="生成奇数大素数" />&lt;/p>
+&lt;p>然后定义一个生成素数的函数，其中用到米勒-拉宾素性检验算法判断生成的素数是否为素数素数：&lt;/p>
+&lt;h4 id="米勒-拉宾素性检测算法">米勒-拉宾素性检测算法&lt;/h4>
+&lt;p>基于以下定理：&lt;/p>
+&lt;ul>
+&lt;li>费马小定理&lt;/li>
+&lt;/ul>
+&lt;p>要测试$N$是否为素数，首先将$N−1$分解为$2^{s}d$。在每次测试开始时，先随机选一个介于$[1,N−1]$的整数$a$，之后如果对所有的$r∈[0,s−1]$，若${a^d}\bmod N \ne 1$且${a^{{2^r}d}}\bmod N \ne - 1$，则$N$是合数。否则，$N$有$3/4$的概率为素数。&lt;/p>
+&lt;p>关键代码如下：&lt;/p>
+&lt;p>&lt;img src="https://i.loli.net/2020/05/06/kfmRJFo6eihSzxT.png" alt="image-20200506125953975" />&lt;/p>
+&lt;p>生成素数的逻辑就是首先使用函数&lt;code>createOddNum&lt;/code>生成一个大奇数，然后调用&lt;code>isPrime&lt;/code>判断是否为一个素数，是的话就可以return，不然继续寻找，知道生成一个素数。&lt;/p>
+&lt;p>接下来计算n值，n值的计算很简单，直接使用$n = p * q$ 这个式子就能够计算出来；计算欧拉值也一样，可以使用$\varphi(n) = (p-1) * (q-1)$得出。其中比较难的是生成的私钥&lt;code>d&lt;/code>。&lt;/p>
+&lt;p>下面定义一个&lt;code>RSA&lt;/code>类的初始化函数&lt;code>init()​&lt;/code>，生成&lt;code>p、q&lt;/code>以及密钥对，如下：&lt;/p>
+&lt;p>&lt;img src="https://i.loli.net/2020/05/06/u9eirWshtaVRcS1.png" alt="image-20200506120944543" />&lt;/p>
+&lt;p>在创建公钥e和私钥d的函数&lt;code>createExponent(eul)&lt;/code>中，首先创建一个比欧拉值小的公钥e，其中e为一个素数，直接调用函数&lt;code>createPrime()&lt;/code>生成，然后使用大整数类中的求模逆元，即求出私钥d。&lt;/p>
+&lt;h4 id="扩展欧几里得算法">扩展欧几里得算法&lt;/h4>
+&lt;blockquote>
+&lt;p>&lt;strong>逆元&lt;/strong>&lt;/p>
+&lt;p>逆元是模运算中的一个概念，我们通常说 A 是 B 模 C 的逆元，实际上是指 A * B = 1 mod C，也就是说 A 与 B 的乘积模 C 的余数为 1。可表示为 A = B^(-1) mod C。&lt;/p>
+&lt;p>打个比方，7 模 11 的逆元，即：7^(-1) mod 11 = 8，这是因为 7 × 8 = 5 × 11 + 1，所以说 7 模 11 的逆元是 8。&lt;/p>
+&lt;/blockquote>
+&lt;p>扩展欧几里得算法是欧几里得算法（又叫辗转相除法）的扩展。已知整数a、b，扩展欧几里得算法可以在求得a、b的最大公约数的同时，能找到整数x、y（其中一个很可能是负数），使它们满足贝祖等式&lt;br />
+$$&lt;br />
+ax{\rm{ }} + {\rm{ }}by{\rm{ }} = {\rm{ }}gcd\left( {a,b} \right).&lt;br />
+$$&lt;br />
+在RSA算法中求私钥中的整数d时，需要使得 (e * d ) % n = 1，该方程等价于 e * d = 1 + y * n （y为整数），也等价于 e * d - y * n = 1。&lt;/p>
+&lt;p>因此求解d的过程就是求解该二元一次方程组（e和n已知，求解d），即求e模n的逆元。&lt;/p>
+&lt;p>关键代码如下：&lt;/p>
+&lt;p>&lt;img src="https://i.loli.net/2020/05/06/1ruC5pgc7xMaAhN.png" alt="image-20200506121552198" />&lt;/p>
+&lt;p>我们知道，RSA的加密与解密其实就是一个模幂的运算，而这个模幂的运算已经在大整数类中实现了，如下：&lt;/p>
+&lt;p>&lt;img src="https://i.loli.net/2020/05/06/HSJGUX8rjVTdeCv.png" alt="模幂运算" />&lt;/p>
+&lt;p>使用RSA类进行加密解密的函数只需要调用这个模幂运算即可，例如私钥加密可以这样调用：&lt;/p>
+&lt;p>&lt;img src="https://i.loli.net/2020/05/06/NH6qEwCKO53gI8X.png" alt="image-20200506130806031" />&lt;/p>
+&lt;p>以上就设计完了RSA类的相关操作，主要是包括密钥的生成。下面将RSA加密解密的操作封装在一个类中。&lt;/p>
+&lt;h3 id="3-设计加密解密类encryptdecrypt">3. 设计加密解密类EncryptDecrypt&lt;/h3>
+&lt;p>主要的方法及成员如下：&lt;/p>
+&lt;p>&lt;img src="https://i.loli.net/2020/05/06/7DHXv9A6jYKeoRf.png" alt="image-20200506124130928" />&lt;/p>
+&lt;h4 id="实现rsa加密解密字符串">实现RSA加密解密字符串&lt;/h4>
+&lt;p>加密字符串的逻辑是，先将字符串以每两个字符 一组，转化为一个16进制数据序列，使用vector容器保存，之后调用rsa的公钥加密函数进行加密，如下是关键代码：&lt;/p>
+&lt;p>&lt;img src="https://i.loli.net/2020/05/06/C4ezJUdBg2Huvhi.png" alt="image-20200506131134118" />&lt;/p>
+&lt;p>解密函数其实是接受一个加密后的16进制序列，然后对这个序列调用RSA的私钥解密函数进行解密，然后得到解密后的16进制数据序列，最后还有一步就是需要将这个16进制序列最终转化为原来的字符串，只需要根据ascii码的数值即可得到，这里编写了一个hex2string函数，关键代码如下：&lt;/p>
+&lt;p>&lt;img src="https://i.loli.net/2020/05/06/fdpeSmgNZIKwh59.png" alt="image-20200506131545266" />&lt;/p>
+&lt;p>&lt;strong>实现效果&lt;/strong>&lt;/p>
+&lt;p>首先显示密钥：&lt;br />
+&lt;img src="https://i.loli.net/2020/05/06/9cTwOmGzovKEpMr.png" alt="image-20200506132134667" />&lt;/p>
+&lt;p>加密字符串&lt;/p>
+&lt;p>&lt;img src="https://i.loli.net/2020/05/06/yN8LzoliucstEka.png" alt="image-20200506132417202" />&lt;/p>
+&lt;p>解密字符串&lt;/p>
+&lt;p>&lt;img src="https://i.loli.net/2020/05/06/UWawrx1StnOzYod.png" alt="image-20200506132517706" />&lt;/p>
+&lt;h4 id="实现rsa加密解密文件">实现RSA加密解密文件&lt;/h4>
+&lt;p>实现RSA加密解密文件时基于RSA加密解密字符串实现的，其中主要的加密逻辑就是将一个文件看作是一行一行的字符串文本，没每读取一行，就调用加密字符串的函数进行加密，然后将加密得到的16进制序列写入到另外一个文件中，而这个文件也就是加密后的文件，主要关键代码如下：&lt;/p>
+&lt;p>&lt;img src="https://i.loli.net/2020/05/06/gm1GHncYTi5uWRK.png" alt="image-20200506132917403" />&lt;/p>
+&lt;p>解密文件的函数稍微有点不一样，是从打开的待解密文件中循环读取每一个16进制数据，然后对每一个16进制数据调用解密函数得到解密后的16进制数据，将16进制数据转为字符串后再相继的写到另外一个文件中，即解密后的文件，关键代码如下：&lt;/p>
+&lt;p>&lt;img src="https://i.loli.net/2020/05/06/2XD8PbiEIAKhFuG.png" alt="image-20200506133309175" />&lt;/p>
+&lt;p>实现效果&lt;/p>
+&lt;p>加密文件&lt;/p>
+&lt;p>&lt;img src="https://i.loli.net/2020/05/06/vVqiHScx8PfjAOI.png" alt="image-20200506133619559" />&lt;/p>
+&lt;p>解密文件&lt;/p>
+&lt;p>&lt;img src="https://i.loli.net/2020/05/06/9GXrUBv4j5wbNPT.png" alt="image-20200506133951034" />&lt;/p>
+&lt;p>加密文件解密文件对比&lt;/p>
+&lt;p>&lt;img src="https://i.loli.net/2020/05/06/F8JAfuXULPb3Gdq.png" alt="image-20200506134149379" />&lt;/p>
+&lt;h4 id="实现rsa数字签名及验证">实现RSA数字签名及验证&lt;/h4>
+&lt;p>实现数字签名方案，按照以下的流程图进行操作。&lt;/p>
+&lt;p>&lt;img src="https://i.loli.net/2020/05/06/swCKFEanv1VfXIx.png" alt="image-20200506125549277" />&lt;/p>
+&lt;p>首先需要对文件进行信息的摘要，得到Hash值，这里选择的Hash算法是SHA512算法，可以直接对文件进行信息摘要。&lt;br />
+可以直接include C++ 实现的&amp;quot;sha512.h&amp;quot;文件头，然后使用以下的语句就能够生成一个长度为512的Hash值，如下：&lt;/p>
+&lt;p>&lt;img src="https://i.loli.net/2020/05/06/s7jUeDMcl1LabVk.png" alt="image-20200506135156371" />&lt;/p>
+&lt;p>可以在命令行输出文件的Hash摘要值如下:&lt;/p>
+&lt;p>&lt;img src="https://i.loli.net/2020/05/06/L3Cbcu5hsOG4r9E.png" alt="image-20200506125648409" />&lt;/p>
+&lt;p>数字签名的实现类似字符串加密，对文件的hash值进行加密得到后面的16进制序列，然后将16进制序列伴随文件发送出去，签名的关键代码就是对hash值进行加密，如下：&lt;/p>
+&lt;p>&lt;img src="https://i.loli.net/2020/05/06/emXWxVC1o6kEO72.png" alt="image-20200506135435563" />&lt;/p>
+&lt;p>验证函数直接将16进制序列进行解密，然后还原成字符串再与收到的文件的hash值进行比较，如果相等，那么验证成功；否则验证失败，关键代码如下：&lt;/p>
+&lt;p>&lt;img src="https://i.loli.net/2020/05/06/BT5hE1jKVSdplGM.png" alt="image-20200506135708129" />&lt;/p>
+&lt;p>实现效果&lt;/p>
+&lt;p>数字签名&lt;/p>
+&lt;p>&lt;img src="https://i.loli.net/2020/05/06/vG2cWwbsl64OANz.png" alt="image-20200506134900524" />&lt;/p>
+&lt;p>验证数字签名&lt;/p>
+&lt;p>&lt;img src="https://i.loli.net/2020/05/06/TdVjeUwyiKoCXP9.png" alt="image-20200506135042256" />&lt;/p></content:encoded><dc:creator>VictorHong</dc:creator><media:content url="https://hugo.jiahongw.comhttps://i.loli.net/2020/05/06/g6cJXue3kVqS2WT.png" medium="image"><media:title type="html">featured image</media:title></media:content><category>rsa</category><category>密码学</category><category>技术实践</category></item></channel></rss>

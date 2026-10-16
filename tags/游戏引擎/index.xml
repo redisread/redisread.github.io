@@ -1,0 +1,1245 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>游戏引擎 on ✏VictorHong's Blog</title><link>https://hugo.jiahongw.com/tags/%E6%B8%B8%E6%88%8F%E5%BC%95%E6%93%8E/</link><description>Recent content in 游戏引擎 on ✏VictorHong's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh</language><follow_challenge><feedId>74349588616178697</feedId><userId>68207800989737984</userId></follow_challenge><managingEditor>wujiahong2013@gmail.com (VictorHong)</managingEditor><webMaster>wujiahong2013@gmail.com (VictorHong)</webMaster><copyright>©2021-2026 | VictorHong</copyright><lastBuildDate>Mon, 15 Jun 2020 09:43:11 +0800</lastBuildDate><atom:link href="https://hugo.jiahongw.com/tags/%E6%B8%B8%E6%88%8F%E5%BC%95%E6%93%8E/index.xml" rel="self" type="application/rss+xml"/><item><title>UE编辑器下模拟使用HitProxy</title><link>https://hugo.jiahongw.com/20200615/ue-hitproxy/</link><pubDate>Mon, 15 Jun 2020 09:43:11 +0800</pubDate><author>wujiahong2013@gmail.com (VictorHong)</author><atom:modified>Mon, 15 Jun 2020 09:43:11 +0800</atom:modified><guid>https://hugo.jiahongw.com/20200615/ue-hitproxy/</guid><description>需要从 UGameViewportClient 类继承 修改返回值为true,路径：\Source\Runtime\Engine\Private\GameViewportClient</description><content:encoded>&lt;h3 id="需要从-ugameviewportclient-类继承">需要从 UGameViewportClient 类继承&lt;/h3>
+&lt;p>修改返回值为&lt;code>true&lt;/code>,路径：&lt;code>\Source\Runtime\Engine\Private\GameViewportClient.h&lt;/code>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-cpp" data-lang="cpp">&lt;span class="line">&lt;span class="cl">&lt;span class="k">virtual&lt;/span> &lt;span class="kt">bool&lt;/span> &lt;span class="nf">RequiresHitProxyStorage&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="k">override&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="k">return&lt;/span> &lt;span class="nb">true&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="在fviewportclient类中新建drawhitproxy函数">在FViewportClient类中新建DrawHitProxy函数&lt;/h3>
+&lt;p>文件&lt;code>UnrealClient.h&lt;/code>&lt;/p>
+&lt;p>&lt;img src="https://i.loli.net/2020/06/22/KRtGXzvkAian4me.png" alt="DrawHitProxy" />&lt;/p>
+&lt;h3 id="在gameviewportclient类中声明并且实现">在GameViewportClient类中声明并且实现&lt;/h3>
+&lt;p>声明：&lt;code>\Source\Runtime\Engine\Private\GameViewportClient.h&lt;/code>&lt;/p>
+&lt;p>&lt;img src="https://i.loli.net/2020/06/22/3D84rt6TeIjWx1F.png" alt="声明" />&lt;/p>
+&lt;p>将&lt;code>GameViewportClient&lt;/code>类中的函数&lt;code>Draw()&lt;/code>内容复制到该函数&lt;code>DrawHitProxy&lt;/code>，修改下面的的地方：&lt;/p>
+&lt;p>&lt;img src="https://i.loli.net/2020/06/22/qi93OJSarCGkyhI.png" alt="修改" />&lt;/p>
+&lt;h3 id="修改fviewport类中的getrawhitproxydata函数">修改FViewport类中的GetRawHitProxyData函数&lt;/h3>
+&lt;p>在&lt;code>GetRawHitProxyData&lt;/code>函数中进行以下的修改：&lt;code>Engine\Source\Runtime\Engine\Private\UnrealClient.cpp&lt;/code>&lt;/p>
+&lt;p>&lt;img src="https://i.loli.net/2020/06/24/d5QIToUrGFPYv6g.png" alt="修改" />&lt;/p>
+&lt;h2 id="调用--获取屏幕坐标hitproxy">调用&amp;ndash;获取屏幕坐标Hitproxy&lt;/h2>
+&lt;p>&lt;img src="https://i.loli.net/2020/06/22/QzmroPdVKHn35i1.png" alt="use" />&lt;/p>
+&lt;h2 id="相关类型">相关类型&lt;/h2>
+&lt;p>&lt;strong>HHitProxy&lt;/strong>：用于检测用户界面命中的基类&lt;/p>
+&lt;p>&lt;strong>FHitProxyMap&lt;/strong>：从2D坐标到缓存命中代理的地图。&lt;/p>
+&lt;hr />
+&lt;p>参考：&lt;/p>
+&lt;ol>
+&lt;li>&lt;a href="https://forums.unrealengine.com/development-discussion/c-gameplay-programming/37946-how-to-select-an-actor-in-game-using-gethitproxy">How to select an actor in-game using GetHitProxy?&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.acros.me/c/unreal-engine-4-%e7%bc%96%e8%be%91%e5%99%a8%e7%9a%84%e5%85%89%e6%a0%87%e6%8b%be%e5%8f%96%ef%bc%88cursor-query%ef%bc%89%e5%8a%9f%e8%83%bd%e5%b0%8f%e8%ae%b0/">UE4 编辑器的光标拾取&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://arenas0.com/2019/04/20/UE4_Learn_HitProxy/">编辑器Viewport窗口中的鼠标拾取原理&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://blog.csdn.net/jiangdengc/article/details/59486288">场景基本对象&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://blue2rgb.sydneyzh.com/ue4-deferred-shading-pipeline.html">渲染总流程&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.unrealengine.com/zh-CN/Programming/Rendering/MeshDrawingPipeline/index.html">https://docs.unrealengine.com/zh-CN/Programming/Rendering/MeshDrawingPipeline/index.html&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://papalqi.cn/index.php/2019/11/10/unreal-mesh-drawing%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/">Unreal Mesh Drawing源码分析&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.cnblogs.com/BaiPao-XD/p/9863580.html">白袍笑道&lt;/a>&lt;/li>
+&lt;/ol>
+&lt;hr /></content:encoded><dc:creator>VictorHong</dc:creator><media:content url="https://hugo.jiahongw.comhttps://i.loli.net/2020/06/15/ivEDkwYhIQ5xVn7.png" medium="image"><media:title type="html">featured image</media:title></media:content><category>c++</category><category>UE4</category><category>游戏引擎</category><category>专业领域</category></item><item><title>UE4获取深度值</title><link>https://hugo.jiahongw.com/20200615/ue-depth/</link><pubDate>Mon, 15 Jun 2020 09:42:11 +0800</pubDate><author>wujiahong2013@gmail.com (VictorHong)</author><atom:modified>Mon, 15 Jun 2020 09:42:11 +0800</atom:modified><guid>https://hugo.jiahongw.com/20200615/ue-depth/</guid><description>&lt;p>在UE4中获取深度缓存，调用渲染命令读取。&lt;/p></description><content:encoded>&lt;p>在UE4中获取深度缓存，调用渲染命令读取。&lt;/p>
+&lt;h1 id="获取深度缓存">获取深度缓存&lt;/h1>
+&lt;h2 id="深度像素格式">深度像素格式&lt;/h2>
+&lt;p>&lt;img src="https://i.loli.net/2020/06/15/G3emJyTbYv5Zx4H.png" alt="DepthPixel" />&lt;/p>
+&lt;p>键入命令vis scenedepthz uv0以查看实际使用的深度缓冲区。UE4对场景使用“反向”深度缓冲区。&lt;/p>
+&lt;h2 id="way1直接使用enqueue_render_command命令获取效率较低">Way1：直接使用ENQUEUE_RENDER_COMMAND命令获取(效率较低)&lt;/h2>
+&lt;p>在任意&lt;code>tick&lt;/code>函数或者其他函数添加以下的命令：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;span class="lnt">25
+&lt;/span>&lt;span class="lnt">26
+&lt;/span>&lt;span class="lnt">27
+&lt;/span>&lt;span class="lnt">28
+&lt;/span>&lt;span class="lnt">29
+&lt;/span>&lt;span class="lnt">30
+&lt;/span>&lt;span class="lnt">31
+&lt;/span>&lt;span class="lnt">32
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-c++" data-lang="c++">&lt;span class="line">&lt;span class="cl">&lt;span class="k">struct&lt;/span> &lt;span class="nc">DepthPixel&lt;/span> &lt;span class="c1">//定义深度像素结构体
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kt">float&lt;/span> &lt;span class="n">depth&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kt">char&lt;/span> &lt;span class="n">stencil&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kt">char&lt;/span> &lt;span class="n">unused1&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kt">char&lt;/span> &lt;span class="n">unused2&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kt">char&lt;/span> &lt;span class="n">unused3&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">};&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kt">float&lt;/span>&lt;span class="o">*&lt;/span> &lt;span class="n">cpuDataPtr&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="c1">// Texture深度值数组首地址
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="n">TArray&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="n">DepthPixel&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="n">mydata&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="c1">//最终获取色深度值数据
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="n">FIntPoint&lt;/span> &lt;span class="n">buffsize&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="c1">//深度长宽大小X和Y
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">ENQUEUE_RENDER_COMMAND&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">ReadSurfaceFloatCommand&lt;/span>&lt;span class="p">)(&lt;/span> &lt;span class="c1">// 将读取深度数据的命令推给渲染线程进行执行
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="o">&amp;amp;&lt;/span>&lt;span class="n">cpuDataPtr&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="o">&amp;amp;&lt;/span>&lt;span class="n">mydata&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="o">&amp;amp;&lt;/span>&lt;span class="n">buffsize&lt;/span>&lt;span class="p">](&lt;/span>&lt;span class="n">FRHICommandListImmediate&lt;/span>&lt;span class="o">&amp;amp;&lt;/span> &lt;span class="n">RHICmdList&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1">//&amp;amp;cpuDataPtr, &amp;amp;mydata, &amp;amp;buffsize为传入的外部参数
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">FSceneRenderTargets&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="n">Get&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">RHICmdList&lt;/span>&lt;span class="p">).&lt;/span>&lt;span class="n">AdjustGBufferRefCount&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">RHICmdList&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">FTexture2DRHIRef&lt;/span> &lt;span class="n">uTex2DRes&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">FSceneRenderTargets&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="n">Get&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">RHICmdList&lt;/span>&lt;span class="p">).&lt;/span>&lt;span class="n">GetSceneDepthSurface&lt;/span>&lt;span class="p">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">buffsize&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">uTex2DRes&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="n">GetSizeXY&lt;/span>&lt;span class="p">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">uint32&lt;/span> &lt;span class="n">sx&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">buffsize&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">X&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">uint32&lt;/span> &lt;span class="n">sy&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">buffsize&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">Y&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">mydata&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">AddUninitialized&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">sx&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="n">sy&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">uint32&lt;/span> &lt;span class="n">Lolstrid&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">cpuDataPtr&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="kt">float&lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="n">RHILockTexture2D&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">uTex2DRes&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="n">RLM_ReadOnly&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="n">Lolstrid&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="nb">true&lt;/span>&lt;span class="p">);&lt;/span> &lt;span class="c1">// 加锁 获取可读depth Texture深度值数组首地址
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="n">memcpy&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">mydata&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">GetData&lt;/span>&lt;span class="p">(),&lt;/span> &lt;span class="n">cpuDataPtr&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">sx&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="n">sy&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="k">sizeof&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">DepthPixel&lt;/span>&lt;span class="p">));&lt;/span> &lt;span class="c1">//复制深度数据
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="n">RHIUnlockTexture2D&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">uTex2DRes&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nb">true&lt;/span>&lt;span class="p">);&lt;/span> &lt;span class="c1">//解锁
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="n">FSceneRenderTargets&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="n">Get&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">RHICmdList&lt;/span>&lt;span class="p">).&lt;/span>&lt;span class="n">AdjustGBufferRefCount&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">RHICmdList&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">});&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">FlushRenderingCommands&lt;/span>&lt;span class="p">();&lt;/span> &lt;span class="c1">//等待渲染线程执行
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">mydata&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="c1">//最终获取深度数据
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>最终返回的&lt;code>mydata&lt;/code>数据就是最终的深度值数组，其中每个深度值的结构是&lt;code>DepthPixel&lt;/code>，其中一个成员为&lt;code>depth&lt;/code>，另外四个不不使用。其中使用上面的几个命令需要添加&amp;quot;&lt;code>RHI.h&lt;/code>&amp;ldquo;头文件&lt;/p>
+&lt;h2 id="way2写个请求类读取">Way2：写个请求类读取&lt;/h2>
+&lt;p>UML图：&lt;br />
+&lt;img src="https://i.loli.net/2020/06/29/BrpD1iKkXm3P2Qn.png" alt="depth_UML" />&lt;br />
+流程图：&lt;br />
+&lt;img src="https://i.loli.net/2020/06/29/JRovQn1dOH9hL7I.png" alt="depth-flowchat" />&lt;/p>
+&lt;h3 id="1-首先在项目的buildcs文件添加">1. 首先在项目的build.cs文件添加：&lt;/h3>
+&lt;p>添加引擎源码地址&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;span class="lnt">9
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-c#" data-lang="c#">&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// 添加引擎源码地址&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kt">string&lt;/span> &lt;span class="n">EnginePath&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s">&amp;#34;C:/Program Files (x86)/UE4+VS2017/UnrealEngine/&amp;#34;&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">PrivateIncludePaths&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">AddRange&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">new&lt;/span> &lt;span class="kt">string&lt;/span>&lt;span class="p">[]&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">EnginePath&lt;/span> &lt;span class="p">+&lt;/span> &lt;span class="s">&amp;#34;Source/Runtime/Renderer/Private&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">EnginePath&lt;/span> &lt;span class="p">+&lt;/span> &lt;span class="s">&amp;#34;Source/Runtime/Renderer/Private/CompositionLighting&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">EnginePath&lt;/span> &lt;span class="p">+&lt;/span> &lt;span class="s">&amp;#34;Source/Runtime/Renderer/Private/PostProcess&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>添加引依赖项&lt;/p>
+&lt;p>&lt;img src="https://i.loli.net/2020/06/14/16zcGinV2vbgt8d.png" alt="依赖项" />&lt;/p>
+&lt;h3 id="2-类实现">2. 类实现&lt;/h3>
+&lt;p>将下面类代码复制到&lt;code>PostProcessing.h&lt;/code>文件任意位置：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;span class="lnt">25
+&lt;/span>&lt;span class="lnt">26
+&lt;/span>&lt;span class="lnt">27
+&lt;/span>&lt;span class="lnt">28
+&lt;/span>&lt;span class="lnt">29
+&lt;/span>&lt;span class="lnt">30
+&lt;/span>&lt;span class="lnt">31
+&lt;/span>&lt;span class="lnt">32
+&lt;/span>&lt;span class="lnt">33
+&lt;/span>&lt;span class="lnt">34
+&lt;/span>&lt;span class="lnt">35
+&lt;/span>&lt;span class="lnt">36
+&lt;/span>&lt;span class="lnt">37
+&lt;/span>&lt;span class="lnt">38
+&lt;/span>&lt;span class="lnt">39
+&lt;/span>&lt;span class="lnt">40
+&lt;/span>&lt;span class="lnt">41
+&lt;/span>&lt;span class="lnt">42
+&lt;/span>&lt;span class="lnt">43
+&lt;/span>&lt;span class="lnt">44
+&lt;/span>&lt;span class="lnt">45
+&lt;/span>&lt;span class="lnt">46
+&lt;/span>&lt;span class="lnt">47
+&lt;/span>&lt;span class="lnt">48
+&lt;/span>&lt;span class="lnt">49
+&lt;/span>&lt;span class="lnt">50
+&lt;/span>&lt;span class="lnt">51
+&lt;/span>&lt;span class="lnt">52
+&lt;/span>&lt;span class="lnt">53
+&lt;/span>&lt;span class="lnt">54
+&lt;/span>&lt;span class="lnt">55
+&lt;/span>&lt;span class="lnt">56
+&lt;/span>&lt;span class="lnt">57
+&lt;/span>&lt;span class="lnt">58
+&lt;/span>&lt;span class="lnt">59
+&lt;/span>&lt;span class="lnt">60
+&lt;/span>&lt;span class="lnt">61
+&lt;/span>&lt;span class="lnt">62
+&lt;/span>&lt;span class="lnt">63
+&lt;/span>&lt;span class="lnt">64
+&lt;/span>&lt;span class="lnt">65
+&lt;/span>&lt;span class="lnt">66
+&lt;/span>&lt;span class="lnt">67
+&lt;/span>&lt;span class="lnt">68
+&lt;/span>&lt;span class="lnt">69
+&lt;/span>&lt;span class="lnt">70
+&lt;/span>&lt;span class="lnt">71
+&lt;/span>&lt;span class="lnt">72
+&lt;/span>&lt;span class="lnt">73
+&lt;/span>&lt;span class="lnt">74
+&lt;/span>&lt;span class="lnt">75
+&lt;/span>&lt;span class="lnt">76
+&lt;/span>&lt;span class="lnt">77
+&lt;/span>&lt;span class="lnt">78
+&lt;/span>&lt;span class="lnt">79
+&lt;/span>&lt;span class="lnt">80
+&lt;/span>&lt;span class="lnt">81
+&lt;/span>&lt;span class="lnt">82
+&lt;/span>&lt;span class="lnt">83
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-c++" data-lang="c++">&lt;span class="line">&lt;span class="cl">&lt;span class="cm">/*****************************************Get Depth Class*******************************************************/&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cm">/* 存储一个像素的缓存
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cm"> depth 深度缓存
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cm"> stencil （抠图缓存）*/&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">struct&lt;/span> &lt;span class="nc">DepthPixel&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kt">float&lt;/span> &lt;span class="n">depth&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kt">char&lt;/span> &lt;span class="n">stencil&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kt">char&lt;/span> &lt;span class="n">unused1&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kt">char&lt;/span> &lt;span class="n">unused2&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kt">char&lt;/span> &lt;span class="n">unused3&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">};&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cm">/* 存储整个视窗的缓存
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cm"> data 像素缓存数组
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cm"> bufferSizeX 缓存大小X
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cm"> bufferSizeY 缓存大小Y
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cm"> pixelSizeBytes 像素缓存字节数*/&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">struct&lt;/span> &lt;span class="nc">DepthResult&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">TArray&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="n">DepthPixel&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="n">data&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kt">int&lt;/span> &lt;span class="n">bufferSizeX&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kt">int&lt;/span> &lt;span class="n">bufferSizeY&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kt">int&lt;/span> &lt;span class="n">pixelSizeBytes&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">};&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cm">/* 获取深度缓存的类 */&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">class&lt;/span> &lt;span class="nc">RENDERER_API&lt;/span> &lt;span class="n">DepthCapture&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">public&lt;/span>&lt;span class="o">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="cm">/* 静态成员，当用户发出一个获取深度缓存的请求后，waitForCapture长度加1，新增DepthResult内容为空
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cm"> 当系统完成一个深度缓存的请求后，waitForCapture长度减一 */&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">static&lt;/span> &lt;span class="n">TQueue&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="n">DepthResult&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">EQueueMode&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="n">Mpsc&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="n">waitForCapture&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="cm">/* 静态成员，当系统完成一个深度缓存的请求后，finishedCapture长度加1，
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cm"> 新增DepthResult含有深度缓存信息 */&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">static&lt;/span> &lt;span class="n">TQueue&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="n">DepthResult&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">EQueueMode&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="n">Mpsc&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="n">finishedCapture&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">public&lt;/span>&lt;span class="o">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="cm">/*用户发出一个获取深度缓存的请求时调用*/&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">static&lt;/span> &lt;span class="kt">void&lt;/span> &lt;span class="n">AddCapture&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">waitForCapture&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">Enqueue&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">new&lt;/span> &lt;span class="n">DepthResult&lt;/span>&lt;span class="p">());&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="cm">/*系统完成一个深度缓存请求后调用*/&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">static&lt;/span> &lt;span class="kt">void&lt;/span> &lt;span class="nf">FinishedCapture&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">DepthResult&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="n">result&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">finishedCapture&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">Enqueue&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">result&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="cm">/*返回是否存在已经完成的请求*/&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">static&lt;/span> &lt;span class="kt">bool&lt;/span> &lt;span class="nf">HasFinishedCapture&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="o">!&lt;/span>&lt;span class="n">finishedCapture&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">IsEmpty&lt;/span>&lt;span class="p">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="cm">/*如果存在已完成的请求，返回一个深度结果*/&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">static&lt;/span> &lt;span class="n">DepthResult&lt;/span>&lt;span class="o">*&lt;/span> &lt;span class="nf">GetIfExistFinished&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">DepthResult&lt;/span>&lt;span class="o">*&lt;/span> &lt;span class="n">result&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nb">NULL&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="o">!&lt;/span>&lt;span class="n">finishedCapture&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">IsEmpty&lt;/span>&lt;span class="p">())&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">finishedCapture&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">Dequeue&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">result&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">result&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="cm">/*返回是否存在等待系统执行的请求*/&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">static&lt;/span> &lt;span class="kt">bool&lt;/span> &lt;span class="nf">HasCaptureRequest&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="o">!&lt;/span>&lt;span class="n">waitForCapture&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">IsEmpty&lt;/span>&lt;span class="p">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="cm">/*如果存在待完成的请求，返回一个深度结果（为空）*/&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">static&lt;/span> &lt;span class="n">DepthResult&lt;/span>&lt;span class="o">*&lt;/span> &lt;span class="nf">GetIfExistRequest&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">DepthResult&lt;/span>&lt;span class="o">*&lt;/span> &lt;span class="n">result&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nb">NULL&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="o">!&lt;/span>&lt;span class="n">waitForCapture&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">IsEmpty&lt;/span>&lt;span class="p">())&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">waitForCapture&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">Dequeue&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">result&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">result&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">//friend void AddPostProcessingPasses(FRDGBuilder&amp;amp; GraphBuilder, const FViewInfo&amp;amp; View, const FPostProcessingInputs&amp;amp; Inputs);
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="p">};&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cm">/*****************************************end******************************************************/&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>将下面类中静态成员初始化和添加执行获取代码代码复制到&lt;code>PostProcessing.cpp&lt;/code>文件任意位置：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;span class="lnt">25
+&lt;/span>&lt;span class="lnt">26
+&lt;/span>&lt;span class="lnt">27
+&lt;/span>&lt;span class="lnt">28
+&lt;/span>&lt;span class="lnt">29
+&lt;/span>&lt;span class="lnt">30
+&lt;/span>&lt;span class="lnt">31
+&lt;/span>&lt;span class="lnt">32
+&lt;/span>&lt;span class="lnt">33
+&lt;/span>&lt;span class="lnt">34
+&lt;/span>&lt;span class="lnt">35
+&lt;/span>&lt;span class="lnt">36
+&lt;/span>&lt;span class="lnt">37
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-c++" data-lang="c++">&lt;span class="line">&lt;span class="cl">&lt;span class="cm">/*类静态成员的定义*/&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">TQueue&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="n">DepthResult&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">EQueueMode&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="n">Mpsc&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="n">DepthCapture&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="n">waitForCapture&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">TQueue&lt;/span>&lt;span class="o">&amp;lt;&lt;/span> &lt;span class="n">DepthResult&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">EQueueMode&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="n">Mpsc&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="n">DepthCapture&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="n">finishedCapture&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cm">/*获取深度缓存*/&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kt">void&lt;/span> &lt;span class="nf">AddDepthInspectorPass&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">FRDGBuilder&lt;/span>&lt;span class="o">&amp;amp;&lt;/span> &lt;span class="n">GraphBuilder&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="k">const&lt;/span> &lt;span class="n">FViewInfo&lt;/span>&lt;span class="o">&amp;amp;&lt;/span> &lt;span class="n">View&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">DepthResult&lt;/span>&lt;span class="o">*&lt;/span> &lt;span class="n">result&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">RDG_EVENT_SCOPE&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">GraphBuilder&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s">&amp;#34;DepthInspector&amp;#34;&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// 获取渲染对象
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="n">FSceneRenderTargets&lt;/span>&lt;span class="o">&amp;amp;&lt;/span> &lt;span class="n">renderTargets&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">FSceneRenderTargets&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="n">Get&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">GRHICommandList&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">GetImmediateCommandList&lt;/span>&lt;span class="p">());&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// 定义拷贝参数
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="n">uint32&lt;/span> &lt;span class="n">striped&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">FIntPoint&lt;/span> &lt;span class="n">size&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">renderTargets&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">GetBufferSizeXY&lt;/span>&lt;span class="p">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">result&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="n">bufferSizeX&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">size&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">X&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">result&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="n">bufferSizeY&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">size&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">Y&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">result&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="n">data&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">AddUninitialized&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">size&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">X&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="n">size&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">Y&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// 获取视窗某一帧的深度缓存对象
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="n">FRHITexture2D&lt;/span>&lt;span class="o">*&lt;/span> &lt;span class="n">depthTexture&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">FRHITexture2D&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="n">renderTargets&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">SceneDepthZ&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="n">GetRenderTargetItem&lt;/span>&lt;span class="p">().&lt;/span>&lt;span class="n">TargetableTexture&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">GetReference&lt;/span>&lt;span class="p">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// 执行拷贝深度缓存操作，将GPU显存中的缓存信息拷贝到CPU内存中，返回指向这块CPU内存的首地址
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="kt">void&lt;/span>&lt;span class="o">*&lt;/span> &lt;span class="n">buffer&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">RHILockTexture2D&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">depthTexture&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">EResourceLockMode&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="n">RLM_ReadOnly&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">striped&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nb">true&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// 将缓存结果拷贝到result，用于输出
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="n">memcpy&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">result&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="n">data&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">GetData&lt;/span>&lt;span class="p">(),&lt;/span> &lt;span class="n">buffer&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">size&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">X&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="n">size&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">Y&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="mi">8&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// 必须执行解锁语句，否则被锁住的GPU缓存信息将不能释放
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="n">RHIUnlockTexture2D&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">depthTexture&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nb">true&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// 拷贝结果入队
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="n">DepthCapture&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="n">FinishedCapture&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">result&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">////////////////////////////////////////
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;code>PostProcessing.cpp&lt;/code>中该位置添加以下代码：&lt;/p>
+&lt;p>&lt;img src="https://i.loli.net/2020/06/15/w7NKxStlWrdGyBZ.png" alt="添加代码" />&lt;/p>
+&lt;p>代码如下：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-c++" data-lang="c++">&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// Capture depth buffer，otherwise the buffer will be changed
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">DepthCapture&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="n">HasCaptureRequest&lt;/span>&lt;span class="p">())&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">DepthResult&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="n">reuslt&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">reuslt&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">DepthCapture&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="n">GetIfExistRequest&lt;/span>&lt;span class="p">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">reuslt&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">AddDepthInspectorPass&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">GraphBuilder&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">View&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">reuslt&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="3-调用">3. 调用&lt;/h3>
+&lt;p>使用以下的代码可以获取深度值，获取的结果为&lt;code>result&lt;/code>：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-c++" data-lang="c++">&lt;span class="line">&lt;span class="cl">&lt;span class="kt">int&lt;/span> &lt;span class="n">tickcount&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// Called every frame
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="kt">void&lt;/span> &lt;span class="n">ATestPawn&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="n">Tick&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="kt">float&lt;/span> &lt;span class="n">DeltaTime&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">tickcount&lt;/span>&lt;span class="o">++&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">tickcount&lt;/span> &lt;span class="o">%&lt;/span> &lt;span class="mi">2&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1">// 设计几帧调用
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="n">DepthCapture&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="n">AddCapture&lt;/span>&lt;span class="p">();&lt;/span> &lt;span class="c1">// 定时发出获取深度缓存的请求
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// 如果存在已完成的深度缓存请求
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">DepthCapture&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="n">HasFinishedCapture&lt;/span>&lt;span class="p">())&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">DepthResult&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="n">result&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// 获取已完成的深度缓存结果
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="n">result&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">DepthCapture&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="n">GetIfExistFinished&lt;/span>&lt;span class="p">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">result&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kt">int&lt;/span> &lt;span class="n">n&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">result&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="n">data&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">Num&lt;/span>&lt;span class="p">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">//this is test
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="n">GEngine&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="n">AddOnScreenDebugMessage&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">FColor&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="n">Blue&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">FString&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="n">Printf&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">TEXT&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s">&amp;#34;Get Depth Size: %d &amp;#34;&lt;/span>&lt;span class="p">),&lt;/span> &lt;span class="n">n&lt;/span>&lt;span class="p">));&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></content:encoded><dc:creator>VictorHong</dc:creator><media:content url="https://hugo.jiahongw.comhttps://i.loli.net/2020/06/15/ivEDkwYhIQ5xVn7.png" medium="image"><media:title type="html">featured image</media:title></media:content><category>c++</category><category>UE4</category><category>游戏引擎</category><category>专业领域</category></item><item><title>UE游戏、渲染线程</title><link>https://hugo.jiahongw.com/20200603/ue-game-render/</link><pubDate>Wed, 03 Jun 2020 09:42:11 +0800</pubDate><author>wujiahong2013@gmail.com (VictorHong)</author><atom:modified>Wed, 03 Jun 2020 09:42:11 +0800</atom:modified><guid>https://hugo.jiahongw.com/20200603/ue-game-render/</guid><description>&lt;p>探索UE4游戏线程的进入&lt;/p></description><content:encoded>&lt;p>探索UE4游戏线程的进入&lt;/p>
+&lt;h1 id="游戏线程--渲染线程">游戏线程 &amp;amp; 渲染线程&lt;/h1>
+&lt;h2 id="ue4游戏线程启动">UE4游戏线程启动&lt;/h2>
+&lt;p>游戏线程每一帧更新所有内容。&lt;/p>
+&lt;p>&lt;img src="https://i.loli.net/2020/06/03/6G8g1SuDJYdNUvj.png" alt="Engine-tick" />&lt;/p>
+&lt;p>这个tick是哪里打开的？&lt;/p>
+&lt;p>头文件：&lt;code>Engine\Source\Runtime\Launch\Private\Launch.cpp&lt;/code>&lt;/p>
+&lt;p>&lt;img src="https://i.loli.net/2020/06/03/aUNMnRZjwWKtG9D.png" alt="image-20200603204559269" />&lt;/p>
+&lt;p>&lt;code>Lauch.cpp&lt;/code>定义了一个全局的变量&lt;code>FEngineLoop GEngineLoop;&lt;/code>&lt;/p>
+&lt;p>&lt;img src="https://i.loli.net/2020/06/03/iTmBd3hLfEpAlSj.png" alt="image-20200603204743789" />&lt;/p>
+&lt;p>该类路径：&lt;code>Engine\Source\Runtime\Launch\Public\LaunchEngineLoop.h&lt;/code>，继承一个接口类&lt;code>IEngineLoop&lt;/code>，定义如下：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt"> 10
+&lt;/span>&lt;span class="lnt"> 11
+&lt;/span>&lt;span class="lnt"> 12
+&lt;/span>&lt;span class="lnt"> 13
+&lt;/span>&lt;span class="lnt"> 14
+&lt;/span>&lt;span class="lnt"> 15
+&lt;/span>&lt;span class="lnt"> 16
+&lt;/span>&lt;span class="lnt"> 17
+&lt;/span>&lt;span class="lnt"> 18
+&lt;/span>&lt;span class="lnt"> 19
+&lt;/span>&lt;span class="lnt"> 20
+&lt;/span>&lt;span class="lnt"> 21
+&lt;/span>&lt;span class="lnt"> 22
+&lt;/span>&lt;span class="lnt"> 23
+&lt;/span>&lt;span class="lnt"> 24
+&lt;/span>&lt;span class="lnt"> 25
+&lt;/span>&lt;span class="lnt"> 26
+&lt;/span>&lt;span class="lnt"> 27
+&lt;/span>&lt;span class="lnt"> 28
+&lt;/span>&lt;span class="lnt"> 29
+&lt;/span>&lt;span class="lnt"> 30
+&lt;/span>&lt;span class="lnt"> 31
+&lt;/span>&lt;span class="lnt"> 32
+&lt;/span>&lt;span class="lnt"> 33
+&lt;/span>&lt;span class="lnt"> 34
+&lt;/span>&lt;span class="lnt"> 35
+&lt;/span>&lt;span class="lnt"> 36
+&lt;/span>&lt;span class="lnt"> 37
+&lt;/span>&lt;span class="lnt"> 38
+&lt;/span>&lt;span class="lnt"> 39
+&lt;/span>&lt;span class="lnt"> 40
+&lt;/span>&lt;span class="lnt"> 41
+&lt;/span>&lt;span class="lnt"> 42
+&lt;/span>&lt;span class="lnt"> 43
+&lt;/span>&lt;span class="lnt"> 44
+&lt;/span>&lt;span class="lnt"> 45
+&lt;/span>&lt;span class="lnt"> 46
+&lt;/span>&lt;span class="lnt"> 47
+&lt;/span>&lt;span class="lnt"> 48
+&lt;/span>&lt;span class="lnt"> 49
+&lt;/span>&lt;span class="lnt"> 50
+&lt;/span>&lt;span class="lnt"> 51
+&lt;/span>&lt;span class="lnt"> 52
+&lt;/span>&lt;span class="lnt"> 53
+&lt;/span>&lt;span class="lnt"> 54
+&lt;/span>&lt;span class="lnt"> 55
+&lt;/span>&lt;span class="lnt"> 56
+&lt;/span>&lt;span class="lnt"> 57
+&lt;/span>&lt;span class="lnt"> 58
+&lt;/span>&lt;span class="lnt"> 59
+&lt;/span>&lt;span class="lnt"> 60
+&lt;/span>&lt;span class="lnt"> 61
+&lt;/span>&lt;span class="lnt"> 62
+&lt;/span>&lt;span class="lnt"> 63
+&lt;/span>&lt;span class="lnt"> 64
+&lt;/span>&lt;span class="lnt"> 65
+&lt;/span>&lt;span class="lnt"> 66
+&lt;/span>&lt;span class="lnt"> 67
+&lt;/span>&lt;span class="lnt"> 68
+&lt;/span>&lt;span class="lnt"> 69
+&lt;/span>&lt;span class="lnt"> 70
+&lt;/span>&lt;span class="lnt"> 71
+&lt;/span>&lt;span class="lnt"> 72
+&lt;/span>&lt;span class="lnt"> 73
+&lt;/span>&lt;span class="lnt"> 74
+&lt;/span>&lt;span class="lnt"> 75
+&lt;/span>&lt;span class="lnt"> 76
+&lt;/span>&lt;span class="lnt"> 77
+&lt;/span>&lt;span class="lnt"> 78
+&lt;/span>&lt;span class="lnt"> 79
+&lt;/span>&lt;span class="lnt"> 80
+&lt;/span>&lt;span class="lnt"> 81
+&lt;/span>&lt;span class="lnt"> 82
+&lt;/span>&lt;span class="lnt"> 83
+&lt;/span>&lt;span class="lnt"> 84
+&lt;/span>&lt;span class="lnt"> 85
+&lt;/span>&lt;span class="lnt"> 86
+&lt;/span>&lt;span class="lnt"> 87
+&lt;/span>&lt;span class="lnt"> 88
+&lt;/span>&lt;span class="lnt"> 89
+&lt;/span>&lt;span class="lnt"> 90
+&lt;/span>&lt;span class="lnt"> 91
+&lt;/span>&lt;span class="lnt"> 92
+&lt;/span>&lt;span class="lnt"> 93
+&lt;/span>&lt;span class="lnt"> 94
+&lt;/span>&lt;span class="lnt"> 95
+&lt;/span>&lt;span class="lnt"> 96
+&lt;/span>&lt;span class="lnt"> 97
+&lt;/span>&lt;span class="lnt"> 98
+&lt;/span>&lt;span class="lnt"> 99
+&lt;/span>&lt;span class="lnt">100
+&lt;/span>&lt;span class="lnt">101
+&lt;/span>&lt;span class="lnt">102
+&lt;/span>&lt;span class="lnt">103
+&lt;/span>&lt;span class="lnt">104
+&lt;/span>&lt;span class="lnt">105
+&lt;/span>&lt;span class="lnt">106
+&lt;/span>&lt;span class="lnt">107
+&lt;/span>&lt;span class="lnt">108
+&lt;/span>&lt;span class="lnt">109
+&lt;/span>&lt;span class="lnt">110
+&lt;/span>&lt;span class="lnt">111
+&lt;/span>&lt;span class="lnt">112
+&lt;/span>&lt;span class="lnt">113
+&lt;/span>&lt;span class="lnt">114
+&lt;/span>&lt;span class="lnt">115
+&lt;/span>&lt;span class="lnt">116
+&lt;/span>&lt;span class="lnt">117
+&lt;/span>&lt;span class="lnt">118
+&lt;/span>&lt;span class="lnt">119
+&lt;/span>&lt;span class="lnt">120
+&lt;/span>&lt;span class="lnt">121
+&lt;/span>&lt;span class="lnt">122
+&lt;/span>&lt;span class="lnt">123
+&lt;/span>&lt;span class="lnt">124
+&lt;/span>&lt;span class="lnt">125
+&lt;/span>&lt;span class="lnt">126
+&lt;/span>&lt;span class="lnt">127
+&lt;/span>&lt;span class="lnt">128
+&lt;/span>&lt;span class="lnt">129
+&lt;/span>&lt;span class="lnt">130
+&lt;/span>&lt;span class="lnt">131
+&lt;/span>&lt;span class="lnt">132
+&lt;/span>&lt;span class="lnt">133
+&lt;/span>&lt;span class="lnt">134
+&lt;/span>&lt;span class="lnt">135
+&lt;/span>&lt;span class="lnt">136
+&lt;/span>&lt;span class="lnt">137
+&lt;/span>&lt;span class="lnt">138
+&lt;/span>&lt;span class="lnt">139
+&lt;/span>&lt;span class="lnt">140
+&lt;/span>&lt;span class="lnt">141
+&lt;/span>&lt;span class="lnt">142
+&lt;/span>&lt;span class="lnt">143
+&lt;/span>&lt;span class="lnt">144
+&lt;/span>&lt;span class="lnt">145
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-c++" data-lang="c++">&lt;span class="line">&lt;span class="cl">&lt;span class="cm">/**
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cm"> * Implements the main engine loop.
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cm"> */&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">class&lt;/span> &lt;span class="nc">FEngineLoop&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cp">#if WITH_ENGINE
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cp">&lt;/span> &lt;span class="o">:&lt;/span> &lt;span class="k">public&lt;/span> &lt;span class="n">IEngineLoop&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cp">#endif
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cp">&lt;/span>&lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">public&lt;/span>&lt;span class="o">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="cm">/** Default constructor. */&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">FEngineLoop&lt;/span>&lt;span class="p">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">virtual&lt;/span> &lt;span class="o">~&lt;/span>&lt;span class="n">FEngineLoop&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">public&lt;/span>&lt;span class="o">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="cm">/**
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cm"> * Pre-Initialize the main loop, and generates the commandline from standard ArgC/ArgV from main().
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cm"> *
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cm"> * @param ArgC The number of strings in ArgV.
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cm"> * @param ArgV The command line parameters (ArgV[0] is expected to be the executable name).
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cm"> * @param AdditionalCommandLine Optional string to append to the command line (after ArgV is put together).
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cm"> * @return Returns the error level, 0 if successful and &amp;gt; 0 if there were errors.
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cm"> */&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">int32&lt;/span> &lt;span class="n">PreInit&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">int32&lt;/span> &lt;span class="n">ArgC&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">TCHAR&lt;/span>&lt;span class="o">*&lt;/span> &lt;span class="n">ArgV&lt;/span>&lt;span class="p">[],&lt;/span> &lt;span class="k">const&lt;/span> &lt;span class="n">TCHAR&lt;/span>&lt;span class="o">*&lt;/span> &lt;span class="n">AdditionalCommandline&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="k">nullptr&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="cm">/**
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cm"> * Pre-Initialize the main loop - parse command line, sets up GIsEditor, etc.
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cm"> *
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cm"> * @param CmdLine The command line.
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cm"> * @return The error level; 0 if successful, &amp;gt; 0 if there were errors.
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cm"> */&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">int32&lt;/span> &lt;span class="nf">PreInit&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">const&lt;/span> &lt;span class="n">TCHAR&lt;/span>&lt;span class="o">*&lt;/span> &lt;span class="n">CmdLine&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="cm">/** First part of PreInit. */&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">int32&lt;/span> &lt;span class="nf">PreInitPreStartupScreen&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">const&lt;/span> &lt;span class="n">TCHAR&lt;/span>&lt;span class="o">*&lt;/span> &lt;span class="n">CmdLine&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="cm">/** Second part of PreInit. */&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">int32&lt;/span> &lt;span class="nf">PreInitPostStartupScreen&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">const&lt;/span> &lt;span class="n">TCHAR&lt;/span>&lt;span class="o">*&lt;/span> &lt;span class="n">CmdLine&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="cm">/** Load all modules needed before Init. */&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kt">void&lt;/span> &lt;span class="nf">LoadPreInitModules&lt;/span>&lt;span class="p">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="cm">/** Load core modules. */&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kt">bool&lt;/span> &lt;span class="nf">LoadCoreModules&lt;/span>&lt;span class="p">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="cm">/** Clean up PreInit context. */&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kt">void&lt;/span> &lt;span class="nf">CleanupPreInitContext&lt;/span>&lt;span class="p">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cp">#if WITH_ENGINE
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cp">&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="cm">/** Load all core modules needed at startup time. */&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kt">bool&lt;/span> &lt;span class="nf">LoadStartupCoreModules&lt;/span>&lt;span class="p">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="cm">/** Load all modules needed at startup time. */&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kt">bool&lt;/span> &lt;span class="nf">LoadStartupModules&lt;/span>&lt;span class="p">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="cm">/**
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cm"> * Initialize the main loop (the rest of the initialization).
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cm"> *
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cm"> * @return The error level; 0 if successful, &amp;gt; 0 if there were errors.
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cm"> */&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">virtual&lt;/span> &lt;span class="n">int32&lt;/span> &lt;span class="nf">Init&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="k">override&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="cm">/** Initialize the timing options from the command line. */&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kt">void&lt;/span> &lt;span class="nf">InitTime&lt;/span>&lt;span class="p">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="cm">/** Performs shut down. */&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kt">void&lt;/span> &lt;span class="nf">Exit&lt;/span>&lt;span class="p">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="cm">/** Whether the engine should operate in an idle mode that uses no CPU or GPU time. */&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kt">bool&lt;/span> &lt;span class="nf">ShouldUseIdleMode&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="k">const&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// Advances the main loop.推进主循环
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="k">virtual&lt;/span> &lt;span class="kt">void&lt;/span> &lt;span class="nf">Tick&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="k">override&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="cm">/** Removes references to any objects pending cleanup by deleting them. */&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">virtual&lt;/span> &lt;span class="kt">void&lt;/span> &lt;span class="nf">ClearPendingCleanupObjects&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="k">override&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cp">#endif &lt;/span>&lt;span class="c1">// WITH_ENGINE
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="cm">/** RHI post-init initialization */&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">static&lt;/span> &lt;span class="kt">void&lt;/span> &lt;span class="nf">PostInitRHI&lt;/span>&lt;span class="p">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="cm">/** Pre-init HMD device (if necessary). */&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">static&lt;/span> &lt;span class="kt">void&lt;/span> &lt;span class="nf">PreInitHMDDevice&lt;/span>&lt;span class="p">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">public&lt;/span>&lt;span class="o">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="cm">/** Initializes the application. */&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">static&lt;/span> &lt;span class="kt">bool&lt;/span> &lt;span class="n">AppInit&lt;/span>&lt;span class="p">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="cm">/**
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cm"> * Prepares the application for shutdown.
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cm"> *
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cm"> * This function is called from within guarded exit code, only during non-error exits.
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cm"> */&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">static&lt;/span> &lt;span class="kt">void&lt;/span> &lt;span class="nf">AppPreExit&lt;/span>&lt;span class="p">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="cm">/**
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cm"> * Shuts down the application.
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cm"> *
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cm"> * This function called outside guarded exit code, during all exits (including error exits).
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cm"> */&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">static&lt;/span> &lt;span class="kt">void&lt;/span> &lt;span class="nf">AppExit&lt;/span>&lt;span class="p">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">private&lt;/span>&lt;span class="o">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="cm">/** Utility function that processes Slate operations. */&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kt">void&lt;/span> &lt;span class="n">ProcessLocalPlayerSlateOperations&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="k">const&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">protected&lt;/span>&lt;span class="o">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="cm">/** Holds a dynamically expanding array of frame times in milliseconds (if FApp::IsBenchmarking() is set). */&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">TArray&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="kt">float&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="n">FrameTimes&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="cm">/** Holds the total time spent ticking engine. */&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kt">double&lt;/span> &lt;span class="n">TotalTickTime&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="cm">/** Holds the maximum number of seconds engine should be ticked. */&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kt">double&lt;/span> &lt;span class="n">MaxTickTime&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="cm">/** Holds the maximum number of frames to render in benchmarking mode. */&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">uint64&lt;/span> &lt;span class="n">MaxFrameCounter&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="cm">/** Holds the number of cycles in the last frame. */&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">uint32&lt;/span> &lt;span class="n">LastFrameCycles&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cp">#if WITH_ENGINE
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cp">&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="cm">/** Holds the objects which need to be cleaned up when the rendering thread finishes the previous frame. */&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">FPendingCleanupObjects&lt;/span>&lt;span class="o">*&lt;/span> &lt;span class="n">PendingCleanupObjects&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cp">#endif &lt;/span>&lt;span class="c1">//WITH_ENGINE
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">private&lt;/span>&lt;span class="o">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cp">#if WITH_ENGINE
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cp">&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="cm">/** Holds the engine service. */&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">FEngineService&lt;/span>&lt;span class="o">*&lt;/span> &lt;span class="n">EngineService&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="cm">/** Holds the application session service. */&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">TSharedPtr&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="n">ISessionService&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="n">SessionService&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cp">#endif &lt;/span>&lt;span class="c1">// WITH_ENGINE
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="n">FPreInitContext&lt;/span> &lt;span class="n">PreInitContext&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">};&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>该文件只需&lt;code>#include &amp;quot;CoreMinimal.h&amp;quot;&lt;/code>，最多加上&lt;code>#include &amp;quot;UnrealEngine.h&amp;quot;&lt;/code>&lt;/p>
+&lt;/blockquote>
+&lt;p>接口类，位于路径&lt;code>Engine\Source\Runtime\Engine\Public\UnrealEngine.h&lt;/code>：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;span class="lnt">9
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-c++" data-lang="c++">&lt;span class="line">&lt;span class="cl">&lt;span class="cm">/** Public interface to FEngineLoop so we can call it from editor or editor code */&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">class&lt;/span> &lt;span class="nc">IEngineLoop&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">public&lt;/span>&lt;span class="o">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">virtual&lt;/span> &lt;span class="n">int32&lt;/span> &lt;span class="n">Init&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">virtual&lt;/span> &lt;span class="kt">void&lt;/span> &lt;span class="nf">Tick&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="cm">/** Removes references to any objects pending cleanup by deleting them. */&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">virtual&lt;/span> &lt;span class="kt">void&lt;/span> &lt;span class="nf">ClearPendingCleanupObjects&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">};&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>开启Tick函数之前需要初始化，初始化函数在&lt;code>Launch.cpp&lt;/code>这个文件中：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-c++" data-lang="c++">&lt;span class="line">&lt;span class="cl">&lt;span class="cm">/* Inits the engine loop */&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">int32&lt;/span> &lt;span class="nf">EngineInit&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">int32&lt;/span> &lt;span class="n">ErrorLevel&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">GEngineLoop&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">Init&lt;/span>&lt;span class="p">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span>&lt;span class="p">(&lt;/span> &lt;span class="n">ErrorLevel&lt;/span> &lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;code>GEngineLoop.Init()&lt;/code>函数：&lt;/p>
+&lt;p>&lt;img src="https://i.loli.net/2020/06/03/rwpz7L14h9xPnZ8.png" alt="image-20200603212333812" />&lt;/p>
+&lt;p>其中会判断是进入那种引擎模式，分为Game模式与Editor模式。&lt;/p>
+&lt;p>结束引擎的函数为：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-c++" data-lang="c++">&lt;span class="line">&lt;span class="cl">&lt;span class="cm">/**
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cm"> * Shuts down the engine
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cm"> */&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kt">void&lt;/span> &lt;span class="nf">EngineExit&lt;/span>&lt;span class="p">(&lt;/span> &lt;span class="kt">void&lt;/span> &lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// Make sure this is set
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="n">RequestEngineExit&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">TEXT&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s">&amp;#34;EngineExit() was called&amp;#34;&lt;/span>&lt;span class="p">));&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">GEngineLoop&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">Exit&lt;/span>&lt;span class="p">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>也在&lt;code>Launch.cpp&lt;/code>&lt;/p>
+&lt;p>&lt;code>Launch.cpp&lt;/code>中的函数多次使用&lt;code>GEngine&lt;/code>这个外部变量，这个变量在上面的初始化函数会自定设置为相应的引擎，即Game引擎或者Editor引擎：&lt;/p>
+&lt;blockquote>
+&lt;p>所在文件&lt;code>Engine.h&lt;/code>&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;img src="https://i.loli.net/2020/06/03/zRKn8ihmTPvtJHX.png" alt="image-20200603212911727" />&lt;/p>
+&lt;p>在&lt;code>FEngineLoop::Tick()&lt;/code>函数会调用&lt;code>GEngine&lt;/code>的Tick函数：&lt;/p>
+&lt;p>&lt;img src="https://i.loli.net/2020/06/03/oJxdiA2URfC8rqH.png" alt="image-20200603213738709" />&lt;/p>
+&lt;p>也就是本文开始的那个&lt;code>Tick&lt;/code>函数。&lt;/p></content:encoded><dc:creator>VictorHong</dc:creator><media:content url="https://hugo.jiahongw.comhttps://i.loli.net/2020/06/15/ivEDkwYhIQ5xVn7.png" medium="image"><media:title type="html">featured image</media:title></media:content><category>c++</category><category>UE4</category><category>游戏引擎</category><category>专业领域</category></item><item><title>UE4渲染过程</title><link>https://hugo.jiahongw.com/20200529/ue4-render/</link><pubDate>Fri, 29 May 2020 09:42:11 +0800</pubDate><author>wujiahong2013@gmail.com (VictorHong)</author><atom:modified>Fri, 29 May 2020 09:42:11 +0800</atom:modified><guid>https://hugo.jiahongw.com/20200529/ue4-render/</guid><description>&lt;p>大概介绍以下UE4的主要渲染过程。&lt;/p></description><content:encoded>&lt;p>大概介绍以下UE4的主要渲染过程。&lt;/p>
+&lt;h1 id="ue4渲染过程">UE4渲染过程&lt;/h1>
+&lt;h3 id="延迟渲染">延迟渲染&lt;/h3>
+&lt;p>所谓延迟渲染，是指将一个场景的几何体（3D模型、多边形）的光照、阴影、质感搁置到一旁，先着手于绘画，然后在后半段再对光照、阴影、质感进行处理的处理方式。即给人一种把原本的多边形先绘制出来的印象，实际上不仅要绘制多边形，前者的参数还需要配合后面光照和阴影的处理。其输出目标，在成为复数缓冲时具有普遍性，但是这里的缓冲我们称之为&amp;quot;物理缓冲&amp;quot;。物体缓冲是指使用后照明和后处理特效的中间过渡环节&lt;/p>
+&lt;h2 id="相关术语">相关术语&lt;/h2>
+&lt;p>&lt;strong>RHI&lt;/strong>&lt;/p>
+&lt;p>渲染硬件接口，是为不同平台抽象出不同图形API的一层。所有渲染命令均通过RHI层传递，以转换为适用的渲染器。&lt;/p>
+&lt;p>&lt;strong>延迟渲染&lt;/strong>&lt;/p>
+&lt;p>虚幻引擎4中的默认渲染器。它因将照明/阴影计算推迟到全屏过程而不是绘制每个网格时而得名。&lt;/p>
+&lt;p>&lt;strong>顶点工厂&lt;/strong>&lt;/p>
+&lt;p>顶点工厂是封装顶点数据源并链接到顶点着色器上的输入的类。静态网格物体，骨架网格物体和过程网格组件均使用不同的顶点工厂。&lt;/p>
+&lt;p>&lt;strong>着色器&lt;/strong>&lt;/p>
+&lt;p>在虚幻引擎中，着色器是HLSL代码（以.ush / .usf文件的形式）和材质图的内容的组合。在Unreal中创建材质时，它会根据设置（如着色模式）和用法来编译多个着色器排列。&lt;/p>
+&lt;h2 id="渲染数据">渲染数据&lt;/h2>
+&lt;p>相关的渲染的数据包括深度值及一些Gbuffer，如下图：&lt;/p>
+&lt;p>&lt;img src="https://i.loli.net/2020/06/15/g9iFMPohRBTr4L2.jpg" alt="Gbuffer" />&lt;/p>
+&lt;h2 id="几个pass">几个Pass&lt;/h2>
+&lt;h3 id="z-pre-pass">Z Pre Pass&lt;/h3>
+&lt;p>UE4的渲染管道，是在Bass Pass的物体缓冲写出来之前，在仅预处理深度值（Z值）之后，运行Z预阶段。&lt;/p>
+&lt;p>事先预处理深度值的目的，是将最终影像和同一深度缓冲的内容结果，在透视前获得。Z预阶段之后的Base Pass则是，参考预先得出的深度值缓冲进行Z预测试，因此通过在最终的画面里不留下像素痕迹（即编写后又被消去的像素），以回避像素着色器的运行。&lt;/p>
+&lt;p>Base Pass&lt;/p>
+&lt;p>使用Base Pass输出物体缓冲需要注意的两点：&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>不绘制没进入视线的对象&lt;/p>
+&lt;p>这种&amp;quot;投影剔除&amp;quot;（Frustum Culling），一般是通过CPU端来处理；为了整体覆盖被称为&amp;quot;包围球&amp;quot;（Bounding sphere）的各个3D对象，对象是否在视野内的判定标准，是通过预先设定的包围球来实行的。&lt;/p>
+&lt;blockquote>
+&lt;p>什么程度的剔除会成功，可以通过Stat初始视图（Stat InitViews）指令的&amp;quot;视锥体裁剪基元（Frustum Culled Primitives）&amp;ldquo;进行确认。&lt;/p>
+&lt;/blockquote>
+&lt;/li>
+&lt;li>
+&lt;p>不计算多余的像素&lt;/p>
+&lt;p>在图像处理的流程中，使用像素着色器实际处理前，会有运行深度测试（Z 测试）的&amp;quot;Pre Z 测试&amp;quot;这一步骤。从这里着手处理的像素，会因为被某个东西所遮挡而无法绘制出来，这时可以进行撤销处理。&lt;/p>
+&lt;blockquote>
+&lt;p>但是，像半透明对象这种会伴随α测试的绘制、视差遮蔽映射这种像素着色器处理后会重新编写深度值的情况，就不进行Pre Z测试，而通过处理实行分路迂回。&lt;/p>
+&lt;/blockquote>
+&lt;/li>
+&lt;/ol>
+&lt;blockquote>
+&lt;p>UE4 绘制策略DrawingPolicy&lt;/p>
+&lt;p>绘制策略在UE4渲染中使用很多， 中文也不好翻译。 其实就是根据策略 使用了哪些 着色器 。&lt;/p>
+&lt;/blockquote>
+&lt;p>&amp;hellip;&amp;hellip;&amp;hellip;.&lt;/p>
+&lt;h2 id="ue4渲染一帧">UE4渲染一帧&lt;/h2>
+&lt;p>&lt;img src="https://interplayoflight.files.wordpress.com/2017/10/image2.png?w=515&amp;amp;h=708" alt="img" />&lt;/p>
+&lt;h2 id="渲染管道">渲染管道&lt;/h2>
+&lt;img src="https://i.loli.net/2020/05/30/P6KEDtS1HkOg9fF.jpg" alt="preview" style="zoom: 200%;" />
+&lt;p>首先，虚幻的渲染由三个线程共同完成。分别是CPU线程，DRAW线程，和GPU线程。&lt;/p>
+&lt;p>知乎：https://zhuanlan.zhihu.com/p/57158725&lt;/p>
+&lt;p>&lt;img src="https://i.loli.net/2020/05/30/YZuyDGO7c3mRXfd.jpg" alt="渲染流水线" />&lt;/p>
+&lt;h2 id="render模块">Render模块&lt;/h2>
+&lt;p>调用Render()函数在Render模块&lt;code>RendererModule.h&lt;/code>中，以下函数：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-c++" data-lang="c++">&lt;span class="line">&lt;span class="cl">&lt;span class="k">class&lt;/span> &lt;span class="nc">FRendererModule&lt;/span> &lt;span class="o">:&lt;/span> &lt;span class="k">public&lt;/span> &lt;span class="n">IRendererModule&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// 开始渲染视图族
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="k">virtual&lt;/span> &lt;span class="kt">void&lt;/span> &lt;span class="nf">BeginRenderingViewFamily&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">FCanvas&lt;/span>&lt;span class="o">*&lt;/span> &lt;span class="n">Canvas&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="n">FSceneViewFamily&lt;/span>&lt;span class="o">*&lt;/span> &lt;span class="n">ViewFamily&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="k">override&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>==谁最终调用了Render？==&lt;/p>
+&lt;p>&lt;img src="https://i.loli.net/2020/06/02/FyKugnqzODMvslW.png" alt="调用Render" />&lt;/p>
+&lt;h3 id="实时渲染流程图">实时渲染流程图：&lt;/h3>
+&lt;p>part1:https://i.loli.net/2020/05/30/qU8vN2WZVbt9hkF.jpg&lt;/p>
+&lt;p>part2:https://i.loli.net/2020/05/30/3trKVpOMU5sTQfB.jpg&lt;/p>
+&lt;h2 id="渲染函数render">渲染函数Render&lt;/h2>
+&lt;p>路径：&lt;code>Engine \ Source \ Runtime \ Renderer \ Private \ DeferredShadingRenderer.cpp（660）&lt;/code>&lt;/p>
+&lt;p>函数：&lt;code>FDeferredShadingSceneRenderer :: Render（）&lt;/code>渲染路径&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>全局系统纹理初始化&lt;/th>
+&lt;th>DeferredShadingRenderer.cpp（677） GSystemTextures.InitializeTextures（）&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>保护 必要的渲染目标您是否已确保可以保护的最大目标数目？&lt;/td>
+&lt;td>DeferredShadingRenderer.cpp（680） GSceneRenderTargets.Allocate（）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>初始化每个视口 设置视口显示的对象，选择使用动态阴影时显示的对象，对半透明对象进行排序&lt;/td>
+&lt;td>DeferredShadingRenderer.cpp（683） InitViews()（）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>FXSystem预处理 GPU粒子正在被仿真&lt;/td>
+&lt;td>DeferredShadingRenderer.cpp（758） FXSystem-&amp;gt; PreRender（）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>启用Z Pre-Pass时执行的早期Z绘制 不绘制Tile渲染的硬件（移动设备，Android或iOS）对于 PC或PS4，将生成深度缓冲区和HiZ，因此后续绘制速度很快成为？&lt;/td>
+&lt;td>DeferredShadingRenderer.cpp（768） RenderPrePass（）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>安全GBuffer&lt;/td>
+&lt;td>DeferredShadingRenderer.cpp（774） GSceneRenderTargets.AllocGBufferTargets（）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>透明光传播量&lt;/td>
+&lt;td>DeferredShadingRenderer.cpp（779） ClearLPVs（）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>使用DBuffer时绘制延期贴图&lt;a href="https://monsho.blog63.fc2.com/blog-entry-139.html">单击此处&lt;/a>获取 DBuffer和延期贴图&lt;/td>
+&lt;td>DeferredShadingRenderer.cpp（796） GCompositionLighting.ProcessBeforeBasePass（）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>如有必要，请 在绘制线框图时清除GBuffer透明颜色缓冲区， 有些游戏在发行游戏时无法清除GBuffer或屏幕。&lt;/td>
+&lt;td>DeferredShadingRenderer.cpp（805） SetAndClearViewGBuffer（） DeferredShadingRenderer.cpp（816） RHICmdList.Clear（）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>渲染不透明的对象渲染 项目，这些项目根据它们是Masked还是Default，是否有LightMap等按每种排序顺序进行了精细分类&lt;/td>
+&lt;td>DeferredShadingRenderer.cpp（828） RenderBasePass（）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>清除 GBuffer 的未绘制部分如果事先清除GBuffer，则不必要。&lt;/td>
+&lt;td>DeferredShadingRenderer.cpp（851） ClearGBufferAtMaxZ（）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>绘制 自定义深度请参见&lt;a href="https://monsho.blog63.fc2.com/blog-entry-138.html">此处&lt;/a>以获取自定义深度&lt;/td>
+&lt;td>DeferredShadingRenderer.cpp（860） RenderCustomDepthPass（）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>在这里再次模拟GPU粒子除了在这里 处理使用深度缓冲区执行碰撞检测的 粒子外，还对GPU粒子进行排序&lt;/td>
+&lt;td>DeferredShadingRenderer.cpp（865） 场景-&amp;gt; FXSystem-&amp;gt; PostRenderOpaque（）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>为SceneDepthTexture创建一个半分辨率（每个方面为1/4分辨率）的缓冲区&lt;/td>
+&lt;td>DeferredShadingRenderer.cpp（875） UpdateDownsampledDepthSurface（）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>执行阻塞测试 HZB的构建，执行提交 的HZB &lt;a href="https://twitter.com/tempkinder">Attotempkinder&lt;/a>的&lt;a href="https://darakemonodarake.hatenablog.jp/entry/2014/12/17/000422">这篇文章&lt;/a>指&lt;/td>
+&lt;td>DeferredShadingRenderer.cpp（881） BeginOcclusionTests（）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>开始写 因为有点复杂，所以要写一些细节&lt;/td>
+&lt;td>DeferredShadingRenderer.cpp（890）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>不使用DBuffer绘制延迟的贴图&lt;/td>
+&lt;td>CompositionLighting.cpp（293） AddDeferredDecalsBeforeLighting（）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>在屏幕空间中绘制环境光遮挡&lt;/td>
+&lt;td>CompositionLighting.cpp（300） AddPostProcessingAmbientOcclusion（）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>后期处理环境立方体贴图&lt;/td>
+&lt;td>CompositionLighting.cpp（305） AddPostProcessingAmbientCubemap（）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>到这里为止的一系列处理&lt;/td>
+&lt;td>DeferredShadingRenderer.cpp（904） GCompositionLighting.ProcessAfterBasePass（）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>透明的体积光缓冲液可提高透明度&lt;/td>
+&lt;td>DeferredShadingRenderer.cpp（908） ClearTranslucentVolumeLighting（）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>从此处开始的主要照明设备 收集要绘制的灯光并将其排序 不要投影，不使用灯光功能的灯光将使用“ 基于图块” 绘制（如果可能）如果不能使用“ 基于图块”关于延迟渲染，&lt;a href="https://sites.google.com/site/monshonosuana/directxno-hanashi-1/directx-125">这&lt;/a>是味o，但请参见&lt;a href="https://sites.google.com/site/monshonosuana/directxno-hanashi-1/directx-125">此处&lt;/a>&lt;/td>
+&lt;td>LightRendering.cpp（312-348） LightRendering.cpp（423） RenderTiledDeferredLighting（） LightRendering.cpp（429） RenderSimpleLightsStandardDeferred（）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>它不会阴影，也不会使用灯光功能，但是似乎无法使用TBDR绘制的灯光 被称为标准延迟灯光。&lt;/td>
+&lt;td>LightRendering.cpp（445） RenderLight（）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>如果用于半透明的体积光是有效的，则将每个光注入到体积光中 ，从而在3D纹理上绘制光效果。&lt;/td>
+&lt;td>LightRendering.cpp（455） InjectTranslucentVolumeLightingArray（） LightRendering.cpp（461） InjectSimpleTranslucentVolumeLightingArray（）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>使用灯光功能投射阴影的灯光将单独处理&lt;/td>
+&lt;td>LightRendering.cpp（468-552）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>首先，我在&lt;a href="https://sites.google.com/site/monshonosuana/directxno-hanashi-1/directx-137">投射&lt;/a>阴影时 绘制了一个阴影贴图；在这里我还绘制了一个 半透明的阴影贴图；我记得半透明的当然是&lt;a href="https://sites.google.com/site/monshonosuana/directxno-hanashi-1/directx-137">傅立叶不透明度贴图&lt;/a>。&lt;/td>
+&lt;td>LightRendering.cpp（495） RenderTranslucentProjectedShadows（） LightRendering.cpp（497） RenderProjectedShadows（）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>使用LPV时绘制&lt;a href="https://d.hatena.ne.jp/hanecci/20100731/1280596856">反射阴影贴图&lt;/a>&lt;/td>
+&lt;td>LightRendering.cpp（508） RenderReflectiveShadowMaps（）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>灯光功能图 阴影指示器图&lt;/td>
+&lt;td>LightRendering.cpp（515） RenderLightFunction（） LightRendering.cpp（522） RenderPreviewShadowsIndicator（）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>衰减缓冲器中的分辨 光的衰减信息是否曾经被吸入另一个缓冲器中？&lt;/td>
+&lt;td>LightRendering.cpp（534） GSceneRenderTargets.FinishRenderingLightAttenuation（）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>注入体积光以获得半透明&lt;/td>
+&lt;td>LightRendering.cpp（541） InjectTranslucentVolumeLighting（）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>这 是使用光功能投射阴影的光处理的结束。&lt;/td>
+&lt;td>LightRendering.cpp（550） RenderLight（）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>这 是每个光的LPV 的主要注入照明过程的结尾&lt;/td>
+&lt;td>LightRendering.cpp（561-593） Lpv-&amp;gt; InjectLightDirect（）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>注入体积光以实现环境立方体贴图的半透明&lt;/td>
+&lt;td>DeferredShadingRenderer.cpp（916） InjectAmbientCubemapTranslucentVolumeLighting（）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>过滤体积光以获得半透明&lt;/td>
+&lt;td>DeferredShadingRenderer.cpp（919） FilterTranslucentVolumeLighting（）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>LPV传输过程 此外，第921行的注释上写有“ copypimis”，例如“ Clear LPV buffer”。&lt;/td>
+&lt;td>DeferredShadingRenderer.cpp（924） PropagateLPVs（）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>动态天光绘图&lt;/td>
+&lt;td>DeferredShadingRenderer.cpp（928） RenderDynamicSkyLighting（）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>延迟的反射图形 捕获的反射图形而不是屏幕空间&lt;/td>
+&lt;td>DeferredShadingRenderer.cpp（931） RenderDeferredReflections（）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>LPV的GI绘图&lt;/td>
+&lt;td>CompositionLighting.cpp（344） AddPostProcessingLpvIndirect（）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>屏幕空间次表面散射（SSSSS）的后处理&lt;/td>
+&lt;td>CompositionLighting.cpp（347-376）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>如果启用了“光轴”，则绘制“光轴遮挡”&lt;/td>
+&lt;td>DeferredShadingRenderer.cpp（953） RenderLightShaftOcclusion（）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="https://docs.unrealengine.com/latest/INT/Engine/Actors/FogEffects/AtmosphericFog/index.html">大气雾&lt;/a>图&lt;/td>
+&lt;td>DeferredShadingRenderer.cpp（977） RenderAtmosphere（）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>绘图雾 这是&lt;a href="https://docs.unrealengine.com/latest/INT/Engine/Actors/FogEffects/HeightFog/index.html">高度&lt;/a>雾吗？&lt;/td>
+&lt;td>DeferredShadingRenderer.cpp（986） RenderFog（）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>画一个半透明的物体 在这里也画一个单独的半透明的东西&lt;/td>
+&lt;td>DeferredShadingRenderer.cpp（1000） RenderTranslucency（）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>折射变形处理&lt;/td>
+&lt;td>DeferredShadingRenderer.cpp（1008） RenderDistortion（）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>光轴的起霜处理&lt;/td>
+&lt;td>DeferredShadingRenderer.cpp（1013） RenderLightShaftBloom（）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>距离场AO处理不能在 当前不支持多个视口 的分屏游戏中使用吗？&lt;/td>
+&lt;td>DeferredShadingRenderer.cpp（1019） RenderDistanceFieldAOSurfaceCache（）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>它只是在查看网格的“距离场”的可视化处理结果吗？&lt;/td>
+&lt;td>DeferredShadingRenderer.cpp（1024） RenderMeshDistanceFieldVisualization（）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>由于速度模糊而绘制运动对象的速度&lt;/td>
+&lt;td>DeferredShadingRenderer.cpp（1034） RenderVelocities（）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>从这里到最后的发布过程， 这也很复杂而且很长&lt;/td>
+&lt;td>DeferredShadingRenderer.cpp（1047） GPostProcessing.Process（）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>使用BeforeTranslucency设置绘制后处理材料&lt;/td>
+&lt;td>PostProcessing.cpp（878） AddPostProcessMaterial（）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>景深处理 通过高斯模糊进行DOF 处理之后，正在执行散焦处理（使用指定的光圈形状的纹理进行绘制）， 在此阶段似乎合并了单独的半透明缓冲区&lt;/td>
+&lt;td>PostProcessing.cpp（888） AddPostProcessDepthOfFieldGaussian（） PostProcessing.cpp（898） AddPostProcessDepthOfFieldBokeh（） PostProcessing.cpp（905） FRCPassPostProcessBokehDOFRecombine （如果未启用模糊）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>使用BeforeTonemapping设置绘制后处理材料&lt;/td>
+&lt;td>PostProcessing.cpp（913） AddPostProcessMaterial（）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>如果要使用TemporalAA ，请在此处绘制，如果使用FXAA，请稍后再绘制&lt;/td>
+&lt;td>PostProcessing.cpp（921） AddTemporalAA（） PostProcessing.cpp（928） AddTemporalAA（） （如果不使用速度缓冲区，请单击此处）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>运动模糊处理 设置，分辨率下采样，高斯模糊，运动模糊绘制，组合处理&lt;/td>
+&lt;td>PostProcessing.cpp（932-994） FRCPassPostProcessMotionBlurSetup FRCPassPostProcessDownsample RenderGaussianBlur（） FRCPassPostProcessMotionBlur FRCPassPostProcessMotionBlurRecombine&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>SceneColor下采样&lt;/td>
+&lt;td>PostProcessing.cpp（1000） FRCPassPostProcessDownsample&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>直方图&lt;/td>
+&lt;td>PostProcessing.cpp（1006-1040） FRCPassPostProcessHistogram FRCPassPostProcessHistogramReduce&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>此处需要&lt;a href="https://docs.unrealengine.com/latest/INT/Engine/Rendering/PostProcessEffects/AutomaticExposure/index.html">眼睛适应&lt;/a>图直方图&lt;/td>
+&lt;td>PostProcessing.cpp（1046） AddPostProcessEyeAdaptation（）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>布卢姆绘图&lt;/td>
+&lt;td>PostProcessing.cpp（1057） AddBloom（） PostProcessing.cpp（1060-1148） （对于移动设备，请单击此处）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>色调映射 仅替换ReplacecingTonemapper设置工程图的一种后处理材料，但是 如果存在该材料，则执行默认色调映射&lt;/td>
+&lt;td>PostProcessing.cpp（1155） AddSinglePostProcessMaterial（） PostProcessing.cpp（1171） AddTonemapper（） （默认色调映射）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>如果启用了FXAA，请在此处处理&lt;/td>
+&lt;td>PostProcessing.cpp（1177） AddPostProcessAA（）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>绘制一些编辑器（如选定的轮廓）， 然后使用AfterTonemapping设置绘制后期处理材料&lt;/td>
+&lt;td>PostProcessing.cpp（1244） AddPostProcessMaterial（）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>用于地下和GBuffer的可视化 调试&lt;/td>
+&lt;td>PostProcessing.cpp（1246-1254）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>用于HMD的后处理 Oculus或Morpheus&lt;/td>
+&lt;td>PostProcessing.cpp（1256-1277） FRCPassPostProcessHMD FRCPassPostProcessMorpheus&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>之后，调试和高分辨率屏幕截图功能等。 之后，进行后处理并结束！ 谢谢！&lt;/td>
+&lt;td>PostProcessing.cpp（1279-）&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>哦，很长。&lt;/p>
+&lt;hr />
+&lt;p>参考链接：&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;a href="https://stackoverflow.com/questions/37578939/how-to-read-data-from-a-utexture2d-in-c">如何在C ++中从UTexture2D读取数据&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://forums.unrealengine.com/development-discussion/c-gameplay-programming/1422920-casting-converting-frhitexture-to-utexture">https://forums.unrealengine.com/development-discussion/c-gameplay-programming/1422920-casting-converting-frhitexture-to-utexture&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://my.oschina.net/u/4362845/blog/3636853">Unreal渲染相关的缓冲区&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://qiita.com/mechamogera/items/a0c369a3b853a3042cae">https://qiita.com/mechamogera/items/a0c369a3b853a3042cae&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://answers.unrealengine.com/questions/17862/access-color-and-depth-buffer-of-each-frame.html">https://answers.unrealengine.com/questions/17862/access-color-and-depth-buffer-of-each-frame.html&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://segmentfault.com/a/1190000012737548">https://segmentfault.com/a/1190000012737548&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://zhuanlan.zhihu.com/p/36840778">Gbuff数据&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://img-blog.csdnimg.cn/2018120510265318.png">渲染系统概述&lt;/a> 图片&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="heading">&lt;/h2></content:encoded><dc:creator>VictorHong</dc:creator><media:content url="https://hugo.jiahongw.comhttps://i.loli.net/2020/06/15/ivEDkwYhIQ5xVn7.png" medium="image"><media:title type="html">featured image</media:title></media:content><category>c++</category><category>UE4</category><category>游戏引擎</category><category>专业领域</category></item></channel></rss>

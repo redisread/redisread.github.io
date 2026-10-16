@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>zzo on ✏VictorHong's Blog</title><link>https://hugo.jiahongw.com/tags/zzo/</link><description>Recent content in zzo on ✏VictorHong's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh</language><follow_challenge><feedId>74349588616178697</feedId><userId>68207800989737984</userId></follow_challenge><managingEditor>wujiahong2013@gmail.com (VictorHong)</managingEditor><webMaster>wujiahong2013@gmail.com (VictorHong)</webMaster><copyright>©2021-2026 | VictorHong</copyright><lastBuildDate>Sat, 25 Jan 2020 06:40:51 +0900</lastBuildDate><atom:link href="https://hugo.jiahongw.com/tags/zzo/index.xml" rel="self" type="application/rss+xml"/><item><title>Shortcodes使用参考</title><link>https://hugo.jiahongw.com/20200125/shortcodes/</link><pubDate>Sat, 25 Jan 2020 06:40:51 +0900</pubDate><author>wujiahong2013@gmail.com (VictorHong)</author><atom:modified>Sat, 25 Jan 2020 06:40:51 +0900</atom:modified><guid>https://hugo.jiahongw.com/20200125/shortcodes/</guid><description>盒子 支持 Markdown 语法的盒子 语法： 或者： 1 &amp;lt;div class=&amp;#34;box&amp;#34;&amp;gt;This is &amp;lt;strong&amp;gt;boxmd&amp;lt;/strong&amp;gt; shortcode&amp;lt;/div&amp;gt; 渲染显示： This is boxmd shortcode 简单盒子 语法： 渲染显示： This is **box** shortcode 代码选项卡 可以在不同的代码块之间切换，语法： 渲</description><content:encoded>&lt;h2 id="盒子">盒子&lt;/h2>
+&lt;h3 id="支持-markdown-语法的盒子">支持 Markdown 语法的盒子&lt;/h3>
+&lt;p>语法：&lt;br />
+&lt;img src="https://raw.githubusercontent.com/redisread/Image/master/Blog/image-20210822151028711.png" alt="boxmd" style="zoom: 67%;" />&lt;/p>
+&lt;p>或者：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">div&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;box&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>This is &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">strong&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>boxmd&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">strong&lt;/span>&lt;span class="p">&amp;gt;&lt;/span> shortcode&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">div&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>渲染显示：&lt;/p>
+&lt;div class="box">This is &lt;strong>boxmd&lt;/strong> shortcode&lt;/div>
+&lt;h3 id="简单盒子">简单盒子&lt;/h3>
+&lt;p>语法：&lt;/p>
+&lt;img src="https://raw.githubusercontent.com/redisread/Image/master/Blog/image-20210822151055228.png" alt="box" style="zoom: 67%;" />
+&lt;p>渲染显示：&lt;/p>
+&lt;div class="box">
+This is **box** shortcode
+&lt;/div>
+&lt;h2 id="代码选项卡">代码选项卡&lt;/h2>
+&lt;p>可以在不同的代码块之间切换，语法：&lt;/p>
+&lt;img src="https://raw.githubusercontent.com/redisread/Image/master/Blog/image-20210822151330018.png" alt="code-tab" style="zoom:50%;" />
+&lt;p>渲染显示：&lt;/p>
+&lt;div id="da1032d9fd076e62" class="codetab">
+&lt;div class="codetab__links">
+&lt;button class="codetab__link" aria-label="Tab link">java&lt;/button>
+&lt;button class="codetab__link" aria-label="Tab link">javascript&lt;/button>
+&lt;/div>
+&lt;div id="f5245009c64b2310" class="codetab__content">
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-java" data-lang="java">&lt;span class="line">&lt;span class="cl">&lt;span class="n">System&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="na">out&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="na">println&lt;/span>&lt;span class="o">(&lt;/span>&lt;span class="err">&amp;#39;&lt;/span>&lt;span class="n">Hello&lt;/span> &lt;span class="n">World&lt;/span>&lt;span class="o">!&lt;/span>&lt;span class="err">&amp;#39;&lt;/span>&lt;span class="o">);&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div id="419052156b73e54e" class="codetab__content">
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-javascript" data-lang="javascript">&lt;span class="line">&lt;span class="cl">&lt;span class="nx">console&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">log&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;Hello World!&amp;#39;&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;script>
+'use strict';
+var containerId = JSON.parse("\"da1032d9fd076e62\"");
+var containerElem = document.getElementById(containerId);
+var codetabLinks = null;
+var codetabContents = null;
+var ids = [];
+if (containerElem) {
+codetabLinks = containerElem.querySelectorAll('.codetab__link');
+codetabContents = containerElem.querySelectorAll('.codetab__content');
+}
+for (var i = 0; i &lt; codetabContents.length; i++) {
+ids = ids.concat(codetabContents[i].getAttribute('id'));
+codetabContents[i].style.display = 'none';
+if (0 === parseInt(i, 10) &amp;&amp; !codetabContents[i].classList.contains('active')) {
+codetabContents[i].classList.add('active');
+}
+}
+for (var i = 0; i &lt; codetabLinks.length; i++) {
+codetabLinks[i].setAttribute('id', ids[i]);
+if (0 === parseInt(i, 10) &amp;&amp; !codetabLinks[i].classList.contains('active')) {
+codetabLinks[i].classList.add('active');
+} else {
+codetabLinks[i].classList.remove('active');
+}
+}
+if (codetabContents.length > 0) {
+codetabContents[0].style.display = 'block';
+}
+&lt;/script>
+&lt;h2 id="常规选项卡">常规选项卡&lt;/h2>
+&lt;p>这个和代码选项卡类似，不同的是，这种选项卡更加“常规”。语法：&lt;/p>
+&lt;img src="https://raw.githubusercontent.com/redisread/Image/master/Blog/image-20210822151412190.png" alt="tab" style="zoom:50%;" />
+&lt;p>渲染显示：&lt;/p>
+&lt;div id="123726eb420d1656" class="tab">
+&lt;div class="tab__links">
+&lt;button class="tab__link" aria-label="Tab link">Windows&lt;/button>
+&lt;button class="tab__link" aria-label="Tab link">MacOS&lt;/button>
+&lt;button class="tab__link" aria-label="Tab link">Ubuntu&lt;/button>
+&lt;/div>
+&lt;div id="a10c9aba18e66d33" class="tab__content">
+&lt;h3 id="windows-section">Windows section&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-javascript" data-lang="javascript">&lt;span class="line">&lt;span class="cl">&lt;span class="nx">console&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">log&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;Hello World!&amp;#39;&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>⚠️Becareful that the content in the tab should be different from each other. The tab makes unique id hashes depending on the tab contents. So, If you just copy-paste the tabs with multiple times, since it has the same contents, the tab will not work.&lt;/p>
+&lt;/div>
+&lt;div id="f1d21df226a035d4" class="tab__content">
+&lt;h3 id="macos-section">MacOS section&lt;/h3>
+&lt;p>Hello world!
+&lt;/div>
+&lt;div id="7b78ff335144cbf5" class="tab__content">
+&lt;h3 id="ubuntu-section">Ubuntu section&lt;/h3>
+&lt;p>Great!
+&lt;/div>
+&lt;/div>
+&lt;script>
+'use strict';
+var containerId = JSON.parse("\"123726eb420d1656\"");
+var containerElem = document.getElementById(containerId);
+var tabLinks = null;
+var tabContents = null;
+var ids = [];
+if (containerElem) {
+tabLinks = containerElem.querySelectorAll('.tab__link');
+tabContents = containerElem.querySelectorAll('.tab__content');
+}
+for (var i = 0; i &lt; tabContents.length; i++) {
+ids = ids.concat(tabContents[i].getAttribute('id'));
+tabContents[i].style.display = 'none';
+if (0 === parseInt(i, 10) &amp;&amp; !tabContents[i].classList.contains('active')) {
+tabContents[i].classList.add('active');
+}
+}
+for (var i = 0; i &lt; tabLinks.length; i++) {
+tabLinks[i].setAttribute('id', ids[i]);
+if (0 === parseInt(i, 10) &amp;&amp; !tabLinks[i].classList.contains('active')) {
+tabLinks[i].classList.add('active');
+} else {
+tabLinks[i].classList.remove('active');
+}
+}
+if (tabContents.length > 0) {
+tabContents[0].style.display = 'block';
+}
+&lt;/script>
+&lt;h2 id="展开栏">展开栏&lt;/h2>
+&lt;p>语法：&lt;/p>
+&lt;img src="https://raw.githubusercontent.com/redisread/Image/master/Blog/image-20210822151433085.png" alt="expand" style="zoom:50%;" />
+&lt;p>渲染显示：&lt;/p>
+&lt;div class="expand">
+&lt;button type="button" class="expand__button" aria-label="Expand Button">
+&lt;span class="expand-icon expand-icon__right">
+&lt;svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">&lt;path fill="currentColor" d="M9.29 15.88L13.17 12 9.29 8.12c-.39-.39-.39-1.02 0-1.41.39-.39 1.02-.39 1.41 0l4.59 4.59c.39.39.39 1.02 0 1.41L10.7 17.3c-.39.39-1.02.39-1.41 0-.38-.39-.39-1.03 0-1.42z"/>&lt;/svg>
+&lt;/span>
+Expand me
+&lt;/button>
+&lt;div class="expand__content">
+&lt;h3 id="title">Title&lt;/h3>
+&lt;p>contents
+&lt;/div>
+&lt;/div>
+&lt;div class="expand">
+&lt;button type="button" class="expand__button" aria-label="Expand Button">
+&lt;span class="expand-icon expand-icon__right">
+&lt;svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">&lt;path fill="currentColor" d="M9.29 15.88L13.17 12 9.29 8.12c-.39-.39-.39-1.02 0-1.41.39-.39 1.02-.39 1.41 0l4.59 4.59c.39.39.39 1.02 0 1.41L10.7 17.3c-.39.39-1.02.39-1.41 0-.38-.39-.39-1.03 0-1.42z"/>&lt;/svg>
+&lt;/span>
+Expand me2
+&lt;/button>
+&lt;div class="expand__content">
+&lt;h3 id="title2">Title2&lt;/h3>
+&lt;p>contents2
+&lt;/div>
+&lt;/div>
+&lt;h2 id="彩色文本框">彩色文本框&lt;/h2>
+&lt;p>语法：&lt;/p>
+&lt;img src="https://raw.githubusercontent.com/redisread/Image/master/Blog/image-20210822151517314.png" alt="color-box" style="zoom:50%;" />
+&lt;p>渲染显示：&lt;/p>
+&lt;div class="alert alert-warning" role="alert" data-dir="ltr">&lt;strong>this&lt;/strong> is a text&lt;/div>
+&lt;div class="alert alert-info" role="alert" data-dir="ltr">&lt;strong>this&lt;/strong> is a text&lt;/div>
+&lt;div class="alert alert-success" role="alert" data-dir="ltr">&lt;strong>this&lt;/strong> is a text&lt;/div>
+&lt;div class="alert alert-danger" role="alert" data-dir="ltr">&lt;strong>this&lt;/strong> is a text&lt;/div>
+&lt;h2 id="彩色注意框">彩色注意框&lt;/h2>
+&lt;p>语法：&lt;/p>
+&lt;img src="https://raw.githubusercontent.com/redisread/Image/master/Blog/image-20210822151605088.png" alt="notice-box" style="zoom:50%;" />
+&lt;p>渲染显示：&lt;/p>
+&lt;div class="notices success" data-title="Success">
+success text
+&lt;/div>
+&lt;div class="notices info" data-title="Info">
+info text
+&lt;/div>
+&lt;div class="notices warning" data-title="Warning">
+warning text
+&lt;/div>
+&lt;div class="notices error" data-title="Error">
+error text
+&lt;/div>
+&lt;h2 id="图片描述">图片描述&lt;/h2>
+&lt;p>使用语法：&lt;/p>
+&lt;img src="https://raw.githubusercontent.com/redisread/Image/master/Blog/image-20210822152923916.png" alt="image" style="zoom: 50%;" />
+&lt;p>渲染显示：&lt;/p>
+&lt;figure >
+&lt;img data-src="https://i.loli.net/2021/06/23/bfAkG5v4X8qQpRD.jpg" alt="image alt" data-caption="Image with title, caption, alt, ..." src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='700px' height='' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%23aaa' d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4.44-6.19l-2.35 3.02-1.56-1.88c-.2-.25-.58-.24-.78.01l-1.74 2.23c-.26.33-.02.81.39.81h8.98c.41 0 .65-.47.4-.8l-2.55-3.39c-.19-.26-.59-.26-.79 0z'/%3E%3C/svg%3E" class="lazyload" style="width:700px;height:;"/>
+&lt;figcaption style="text-align: center;">
+&lt;strong>Sample Image&lt;/strong>:
+Image with title, caption, alt, ...
+&lt;/figcaption>
+&lt;/figure>
+&lt;h2 id="按钮">按钮&lt;/h2>
+&lt;p>语法：&lt;/p>
+&lt;img src="https://raw.githubusercontent.com/redisread/Image/master/Blog/image-20210822151228564.png" alt="button" style="zoom:50%;" />
+&lt;p>简单按钮：&lt;/p>
+&lt;a href="https://hugo.jiahongw.com/zh/posts/hugo/shortcodes/" class="button" style="width: 72px; height: 30px;" data-color="default" target="_blank" rel="noreferrer">
+&lt;span class="button__text">
+button
+&lt;/span>
+&lt;/a>
+&lt;p>设置宽度高度：&lt;/p>
+&lt;a href="https://hugo.jiahongw.com/zh/posts/hugo/shortcodes/" class="button" style="width: 100px; height: 36px;" data-color="default" target="_blank" rel="noreferrer">
+&lt;span class="button__text">
+button
+&lt;/span>
+&lt;/a>
+&lt;p>设置颜色：&lt;/p>
+&lt;a href="https://hugo.jiahongw.com/zh/posts/hugo/shortcodes/" class="button" style="width: 100px; height: 36px;" data-color="primary" target="_blank" rel="noreferrer">
+&lt;span class="button__text">
+button
+&lt;/span>
+&lt;/a></content:encoded><dc:creator>VictorHong</dc:creator><media:content url="https://hugo.jiahongw.comimages/feature3/code-file.png" medium="image"><media:title type="html">featured image</media:title></media:content><category>shortcode</category><category>zzo</category><category>博客搭建</category><category>工具折腾</category></item></channel></rss>

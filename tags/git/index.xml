@@ -1,0 +1,765 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>git on ✏VictorHong's Blog</title><link>https://hugo.jiahongw.com/tags/git/</link><description>Recent content in git on ✏VictorHong's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh</language><follow_challenge><feedId>74349588616178697</feedId><userId>68207800989737984</userId></follow_challenge><managingEditor>wujiahong2013@gmail.com (VictorHong)</managingEditor><webMaster>wujiahong2013@gmail.com (VictorHong)</webMaster><copyright>©2021-2026 | VictorHong</copyright><lastBuildDate>Sat, 04 Sep 2021 23:14:21 +0800</lastBuildDate><atom:link href="https://hugo.jiahongw.com/tags/git/index.xml" rel="self" type="application/rss+xml"/><item><title>git使用笔记</title><link>https://hugo.jiahongw.com/20210904/git-note/</link><pubDate>Sat, 04 Sep 2021 23:14:21 +0800</pubDate><author>wujiahong2013@gmail.com (VictorHong)</author><atom:modified>Sat, 04 Sep 2021 23:14:21 +0800</atom:modified><guid>https://hugo.jiahongw.com/20210904/git-note/</guid><description>配置信息 git的config的信息又一个全局的配置文件，也有一个局部（当前git项目）的配置文件。他们的位置分别在： 全局配置文件.gitco</description><content:encoded>&lt;h2 id="配置信息">配置信息&lt;/h2>
+&lt;p>git的config的信息又一个全局的配置文件，也有一个局部（当前git项目）的配置文件。他们的位置分别在：&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>全局配置文件.gitconfig：&lt;code>~/.gitconfig&lt;/code>(用户根目录下)&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>局部配置文件.gitconfig：&lt;code>.git/config&lt;/code>(当前项目下相对路径)&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>配置文件内容：&lt;/p>
+&lt;pre tabindex="0">&lt;code class="language-config" data-lang="config">[core]
+editor = vim
+[color &amp;#34;diff&amp;#34;]
+whitespace = red reverse
+[include]
+path = ~/.gitconfig.user
+[user]
+name = xxx
+email = xxx@xxx.com
+&lt;/code>&lt;/pre>&lt;p>配置文件的信息主要包括：&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>git使用的编辑器&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>diff的配置&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>include可以包括用户的自定义信息&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>用户的信息（用户名和邮箱）&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>配置多个账号：&lt;br />
+Mac配置多个Git账号，例如一个公司账号，一个个人账号。&lt;/p>
+&lt;p>&lt;a href="https://www.jianshu.com/p/698f82e72415">https://www.jianshu.com/p/698f82e72415&lt;/a>&lt;/p>
+&lt;p>首先unset全部全局的数据，然后参考上面的分别设置多个账号的公钥。最后设置config的时候，公司的不设置，直接设置成global的。&lt;/p>
+&lt;p>其他无需更改。&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="通过命令行进行配置">通过命令行进行配置&lt;/h3>
+&lt;p>设置用户信息：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 设置提交代码时的用户信息&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ git config &lt;span class="o">[&lt;/span>--global&lt;span class="o">]&lt;/span> user.name &lt;span class="s2">&amp;#34;[name]&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ git config &lt;span class="o">[&lt;/span>--global&lt;span class="o">]&lt;/span> user.email &lt;span class="s2">&amp;#34;[email address]&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>查看git配置信息：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Bash" data-lang="Bash">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 局部配置信息&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git config --list
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 全局配置信息&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git config --global --list
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>编辑git配置信息可以使用命令行打开：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 编辑Git配置文件&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ git config -e &lt;span class="o">[&lt;/span>--global&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>修改远程仓库的地址信息：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 设置远程地址&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git remote set-url origin &lt;span class="o">[&lt;/span>url&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 删除本地地址&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git remote rm origin
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 没有设置远程地址的情况下使用此命令添加远程仓库地址&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git remote add origin &lt;span class="o">[&lt;/span>url&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="通过配置文件进行修改">通过配置文件进行修改&lt;/h3>
+&lt;pre tabindex="0">&lt;code class="language-config" data-lang="config">[user]
+name = 用户名
+email = 邮箱
+[remote &amp;#34;origin&amp;#34;]
+url = 远程仓库地址
+fetch = +refs/heads/*:refs/remotes/origin/*
+[branch &amp;#34;master&amp;#34;]
+remote = origin
+merge = refs/heads/master
+&lt;/code>&lt;/pre>&lt;h3 id="配置git代理源">配置git代理源&lt;/h3>
+&lt;p>常见的 github 加速方法如修改 &lt;code>hosts&lt;/code> 文件、魔法上网、设置 &lt;code>proxy&lt;/code> 等方法。&lt;/p>
+&lt;h4 id="加速地址一览">加速地址一览&lt;/h4>
+&lt;ul>
+&lt;li>**&lt;a href="https://hub.fastgit.org/">fastgit.org&lt;/a>：**&lt;a href="https://doc.fastgit.org/">https://doc.fastgit.org/&lt;/a>&lt;/li>
+&lt;li>**cnpmjs.org：**&lt;a href="https://github.com.cnpmjs.org/">https://github.com.cnpmjs.org/&lt;/a>&lt;/li>
+&lt;li>**gitclone.com：**&lt;a href="https://gitclone.com/">https://gitclone.com/&lt;/a>&lt;/li>
+&lt;li>**gitee：**&lt;a href="https://gitee.com/mirrors">https://gitee.com/mirrors&lt;/a>&lt;/li>
+&lt;li>GitHub 文件加速：https://gh.api.99988866.xyz/&lt;/li>
+&lt;li>Github 仓库加速：https://github.zhlh6.cn/&lt;/li>
+&lt;li>Github 仓库加速：http://toolwa.com/github/&lt;/li>
+&lt;/ul>
+&lt;h4 id="github-国内镜像服务加速">github 国内镜像服务加速&lt;/h4>
+&lt;p>不进行多余网络配置的情况下，直接使用提供了 github 国内镜像服务的网站进行 github 各种资源拉取加速。&lt;/p>
+&lt;p>加速&lt;code>clone&lt;/code>：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 方法一：手动替换地址&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#原地址&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ git clone https://github.com/kubernetes/kubernetes.git
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#改为&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ git clone https://github.com.cnpmjs.org/kubernetes/kubernetes.git
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#或者&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ git clone https://hub.fastgit.org/kubernetes/kubernetes.git
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#或者&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ git clone https://gitclone.com/github.com/kubernetes/kubernetes.git
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 方法二：配置git自动替换&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ git config --global url.&lt;span class="s2">&amp;#34;https://hub.fastgit.org&amp;#34;&lt;/span>.insteadOf https://github.com
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 测试&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ git clone https://github.com/kubernetes/kubernetes.git
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 查看git配置信息&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ git config --global --list
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 取消设置&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ git config --global --unset url.https://github.com/.insteadof
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>加速 &lt;code>release&lt;/code>:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 原地址&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">wget https://github.com/goharbor/harbor/releases/download/v2.0.2/harbor-offline-installer-v2.0.2.tgz
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 加速下载方法一&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">wget https://download.fastgit.org/goharbor/harbor/releases/download/v2.0.2/harbor-offline-installer-v2.0.2.tgz
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 加速下载方法二&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">wget https://hub.fastgit.org/goharbor/harbor/releases/download/v2.0.2/harbor-offline-installer-v2.0.2.tgz
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>加速 &lt;code>raw&lt;/code>:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 原地址&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ wget https://raw.githubusercontent.com/kubernetes/kubernetes/master/README.md
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 加速下载方法一&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ wget https://raw.staticdn.net/kubernetes/kubernetes/master/README.md
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 加速下载方法二&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ wget https://raw.fastgit.org/kubernetes/kubernetes/master/README.md
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="设置proxy">设置proxy&lt;/h4>
+&lt;p>命令行设置和取消代理：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">git config --global https.proxy http://127.0.0.1:1080
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git config --global https.proxy https://127.0.0.1:1080
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git config --global --unset http.proxy
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git config --global --unset https.proxy
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#只对github.com&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git config --global http.https://github.com.proxy socks5://127.0.0.1:1080
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#取消代理&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git config --global --unset http.https://github.com.proxy&lt;span class="o">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">npm config delete proxy
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>配置文件配置：&lt;/p>
+&lt;pre tabindex="0">&lt;code>[http]
+proxy = socks5://127.0.0.1:1080
+[https]
+proxy = socks5://127.0.0.1:1080
+#只对github.com 方案2
+[http &amp;#34;https://github.com&amp;#34;]
+proxy = socks5://192.168.10.120:7890
+&lt;/code>&lt;/pre>&lt;blockquote>
+&lt;p>注意：&lt;/p>
+&lt;p>1, https.proxy设置是无用的, 只需要设置http.proxy&lt;br />
+2, socks5h://更好, 远端DNS&lt;/p>
+&lt;/blockquote>
+&lt;hr />
+&lt;p>Ref：&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://blog.frytea.com/archives/504/">无需代理直接加速各种 GitHub 资源拉取 | 国内镜像赋能 | 助力开发 - Frytea&amp;rsquo;s Blog&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://gist.github.com/laispace/666dd7b27e9116faece6">git 设置和取消代理&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.huiyingwu.com/3756/">Linux安装并使用ssr客户端 - 灰鹦鹉&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="关键命令">关键命令&lt;/h2>
+&lt;p>下图展示了常用的git命令：&lt;/p>
+&lt;p>&lt;img src="https://raw.githubusercontent.com/redisread/Image/master/Blog/image.png" alt="img" />&lt;/p>
+&lt;h2 id="基本操作">基本操作&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;span class="lnt">9
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 初始化git仓库&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git init
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 添加文件到暂存区域&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git add filename
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#添加所有更改的文件到暂存区&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git add . &lt;span class="o">(&lt;/span>git add --all&lt;span class="o">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 提交&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git commit
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 提交到远程仓库&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>删除git add操作的文件&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 删除工作区文件，并且将这次删除放入暂存区&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git rm &lt;span class="o">[&lt;/span>file1&lt;span class="o">]&lt;/span> &lt;span class="o">[&lt;/span>file2&lt;span class="o">]&lt;/span> ..
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 改名文件，并且将这个改名放入暂存区&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git mv &lt;span class="o">[&lt;/span>file-original&lt;span class="o">]&lt;/span> &lt;span class="o">[&lt;/span>file-renamed&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="撤销更改">撤销更改&lt;/h2>
+&lt;h3 id="未commit需要取消更改">未commit，需要取消更改&lt;/h3>
+&lt;p>已经git add的情况下，使用git checkout . 取消更改。&lt;/p>
+&lt;h3 id="已commit需要取消更改">已commit，需要取消更改&lt;/h3>
+&lt;p>关键字：checkout，clean&lt;/p>
+&lt;pre tabindex="0">&lt;code class="language-Git" data-lang="Git">$ git checkout # 撤销项目下所有的修改
+$ git checkout . # 撤销当前文件夹下所有的修改
+$ git checkout xx/xx.py xx/xx2.py # 撤销某几个文件的修改
+$ git clean -f # untracked状态，撤销新增的文件
+$ git clean -df # untracked状态，撤销新增的文件和文件夹
+&lt;/code>&lt;/pre>&lt;p>最好不要使用git clean这个命令。&lt;/p>
+&lt;p>删除commit&lt;/p>
+&lt;h2 id="版本回退">版本回退&lt;/h2>
+&lt;p>hash_value是在git log查询到的对应提交的哈希值。&lt;/p>
+&lt;pre tabindex="0">&lt;code class="language-Git" data-lang="Git">git reset --hard hash_value
+&lt;/code>&lt;/pre>&lt;p>也可以&lt;/p>
+&lt;pre tabindex="0">&lt;code class="language-Git" data-lang="Git">$ git reset --hard origin/master # 回退与本地远程仓库一致
+$ git reset --hard HEAD^ # 回退到本地仓库上一个版本
+$ git reset --hard &amp;lt;hash code&amp;gt; # 回退到任意版本
+$ git reset --soft/git reset # 回退且回到已修改状态，修改仍保留在工作区中。
+&lt;/code>&lt;/pre>&lt;h3 id="git标签tag的使用">Git标签tag的使用&lt;/h3>
+&lt;h3 id="git-stash使用">git stash使用&lt;/h3>
+&lt;h3 id="git区域">Git区域&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;ol>
+&lt;li>工作区(Working Area)&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>
+&lt;ol start="2">
+&lt;li>暂存区(Stage)&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>
+&lt;ol start="3">
+&lt;li>本地仓库(Local Repository)&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>
+&lt;ol start="4">
+&lt;li>远程仓库(Remote Repository)&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="状态">状态&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;ol>
+&lt;li>未修改(Origin)&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>
+&lt;ol start="2">
+&lt;li>已修改(Modified)&amp;amp;未追踪(Untracked)&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>
+&lt;ol start="3">
+&lt;li>已暂存(Staged)&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>
+&lt;ol start="4">
+&lt;li>已提交(Committed)&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>
+&lt;ol start="5">
+&lt;li>已推送(Pushed)&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ul>
+&lt;p>git add . 是把文件添加到暂存区中。&lt;/p>
+&lt;p>git commit 把暂存区中的所有内容提交到当前分支。&lt;/p>
+&lt;p>git push 是将本版本库库中的当前的修改版本推送到远程仓库。&lt;/p>
+&lt;p>git pull 将远程仓库的修改版本推送到本地版本库中&lt;/p>
+&lt;p>取消commit：&lt;/p>
+&lt;pre tabindex="0">&lt;code class="language-Git" data-lang="Git"># 不删除工作空间改动代码
+git reset --soft HEAD^
+&lt;/code>&lt;/pre>&lt;p>几个参数：&lt;/p>
+&lt;ul>
+&lt;li>–mixed：不删除工作空间改动代码，撤销conmit，并且撤销git add .操作。（这个参数为默认参数）&lt;/li>
+&lt;li>–soft：不删除工作空间改动代码，撤销commit，不撤销git add .&lt;/li>
+&lt;li>–hard：删除工作空间改动代码，撤销commit，撤销git add .&lt;/li>
+&lt;/ul>
+&lt;p>添加远程仓库：&lt;/p>
+&lt;h2 id="冲突解决">冲突解决&lt;/h2>
+&lt;ul>
+&lt;li>强制提交：git push origin branch-name &amp;ndash;force&lt;/li>
+&lt;/ul>
+&lt;p>在进行pull和push的时候或者merge的时候，可能会发生冲突，这个时候需要我们手动进行修改冲突的内容。&lt;/p>
+&lt;h2 id="git-合并多个commit">git 合并多个commit&lt;/h2>
+&lt;p>最简单的单步操作方法：&lt;/p>
+&lt;pre tabindex="0">&lt;code class="language-Git" data-lang="Git"># 使用一次新的commit，替代上一次提交
+# 如果代码没有任何新变化，则用来改写上一次commit的提交信息
+$ git commit --amend -m [message]
+&lt;/code>&lt;/pre>&lt;p>重置上次commit的信息：&lt;/p>
+&lt;pre tabindex="0">&lt;code class="language-Git" data-lang="Git"># 重做上一次commit，并包括指定文件的新变化
+$ git commit --amend [file1] [file2] ...
+&lt;/code>&lt;/pre>&lt;p>压缩当前版本到指定版本之间的commit为一个commit（不包括命令中的commit）：&lt;/p>
+&lt;pre tabindex="0">&lt;code class="language-Git" data-lang="Git">git log
+git rebase -i 版本
+&lt;/code>&lt;/pre>&lt;p>版本不参与合并，文件中最上边的commit不需要修改s。&lt;/p>
+&lt;blockquote>
+&lt;p>可以删除不需要的commit&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;strong>之后选择需要合并的commit的前面的pick改为s，然后保存推出，有冲突按照提示修改即可。&lt;/strong>&lt;/p>
+&lt;h1 id="git将单个commit拆分成多个commit">Git将单个commit拆分成多个commit&lt;/h1>
+&lt;p>参考：&lt;a href="https://codemelody.wordpress.com/2012/12/04/git-%E5%A6%82%E4%BD%95%E5%B0%86%E4%B8%80%E4%B8%AAcommit%E6%8B%86%E5%88%86%E6%88%90%E5%A4%9A%E4%B8%AA/">Git : 如何将一个commit拆分成多个 | 一个程序员的自我修养&lt;/a>&lt;/p>
+&lt;h2 id="git查看某次提交的内容">Git查看某次提交的内容&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">git show commitId
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>查看某个文件某次提交的内容:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">git show commitId fileName
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="git-分支操作">git 分支操作&lt;/h2>
+&lt;p>游戏学习分支操作：https://learngitbranching.js.org/?locale=zh_CN&lt;/p>
+&lt;p>HEAD表示当前的分支节点：&lt;/p>
+&lt;ul>
+&lt;li>使用 &lt;code>^&lt;/code> 向上移动 1 个提交记录&lt;/li>
+&lt;li>使用 &lt;code>~&amp;lt;num&amp;gt;&lt;/code> 向上移动多个提交记录，如 &lt;code>~3&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;p>我使用相对引用最多的就是移动分支。可以直接使用 &lt;code>-f&lt;/code> 选项让分支指向另一个提交。例如:&lt;/p>
+&lt;pre tabindex="0">&lt;code>git branch -f main HEAD~3
+&lt;/code>&lt;/pre>&lt;p>上面将main分支移动到当前节点的前三个提交。&lt;/p>
+&lt;p>clone指定分支：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">git clone -b master http://gitslab.yiqing.com/declare/about.git
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>更新远程分支：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">git remote update origin --prune
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>rebase的坑&lt;/p>
+&lt;p>撤销操作：&lt;/p>
+&lt;p>虽然在你的本地分支中使用 &lt;code>git reset&lt;/code> 很方便，但是这种“改写历史”的方法对大家一起使用的远程分支是无效的哦！&lt;/p>
+&lt;p>为了撤销更改并&lt;strong>分享&lt;/strong>给别人，我们需要使用 &lt;code>git revert&lt;/code>。来看演示：&lt;/p>
+&lt;p>这里要注意下，如果你的remote branch不是在origin下，按你得把origin换成你的名字。&lt;/p>
+&lt;p>合并分支到此分支:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 合并master分支到此分支&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git merge master
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>合并到目标分支：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 合并此分支到master分支&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git rebase master
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>列出所有分支：&lt;/p>
+&lt;pre tabindex="0">&lt;code class="language-Git" data-lang="Git"># 列出本地所有分支
+git branch
+# 列出本地和远程所有分支
+git branch -a
+&lt;/code>&lt;/pre>&lt;p>删除分支：&lt;/p>
+&lt;pre tabindex="0">&lt;code class="language-Git" data-lang="Git"># 删除分支
+$ git branch -d [branch-name]
+# 删除远程分支
+$ git push origin --delete [branch-name]
+$ git branch -dr [remote/branch]
+&lt;/code>&lt;/pre>&lt;p>新建和切换分支：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 创建dev分支&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git branch dev
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 切换到dev分支&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git checkout dev
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 创建dev分支并且切换到该分支&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git checkout -b dev
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 新建一个分支，指向指定commit&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git branch &lt;span class="o">[&lt;/span>branch&lt;span class="o">]&lt;/span> &lt;span class="o">[&lt;/span>commit&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 切换到上一个分支&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git checkout -
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>重命名分支（本地不存在feature/ones分支）：&lt;/p>
+&lt;pre tabindex="0">&lt;code class="language-git" data-lang="git"># 把远端feature/ones分支名称重命名为feature/12345/ones
+git checkout -b feature/ones origin/feature/ones
+git pull
+&lt;/code>&lt;/pre>&lt;p>重命名feature/ones分支&lt;/p>
+&lt;pre tabindex="0">&lt;code class="language-git" data-lang="git">git branch -m feature/ones feature/12345/ones
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>提交分支&lt;/li>
+&lt;/ul>
+&lt;p>提交到feature/12345/ones分支&lt;/p>
+&lt;pre tabindex="0">&lt;code class="language-git" data-lang="git">git push origin feature/12345/ones
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>删除远端分支&lt;/li>
+&lt;/ul>
+&lt;p>删除远端feature/ones分支&lt;/p>
+&lt;pre tabindex="0">&lt;code class="language-git" data-lang="git">git push -d feature/ones
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>合并分支&lt;/li>
+&lt;/ul>
+&lt;p>将文件合并到master，即合并dev分支到master中去&lt;/p>
+&lt;pre tabindex="0">&lt;code class="language-git" data-lang="git">git merge dev
+&lt;/code>&lt;/pre>&lt;p>拉取远程分支：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 拉取远程分支并创建本地分支&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git checkout -b 本地分支名x origin/远程分支名x
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 拉取远程分支，但是不切换到该分支&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git fetch origin 远程分支名x:本地分支名x
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>查看本地分支与远程分支的映射关系&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">git branch -vv
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>建立当前分支与远程分支的映射关系:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">git branch -u origin/addFile
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git branch --set-upstream-to origin/addFile
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>撤销本地分支与远程分支的映射关系:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git branch --unset-upstream
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>ref:&lt;a href="++">git upstream&lt;/a>&lt;/p>
+&lt;p>&amp;lt;++&amp;gt;&lt;/p>
+&lt;h3 id="代码回滚">代码回滚&lt;/h3>
+&lt;h3 id="冲突解决-1">冲突解决&lt;/h3>
+&lt;p>生成发布压缩包&lt;/p>
+&lt;pre tabindex="0">&lt;code class="language-Git" data-lang="Git">git archive
+&lt;/code>&lt;/pre>&lt;h2 id="标签使用">标签使用&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;span class="lnt">25
+&lt;/span>&lt;span class="lnt">26
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 列出所有tag&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ git tag
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 新建一个tag在当前commit&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ git tag &lt;span class="o">[&lt;/span>tag&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 新建一个tag在指定commit&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ git tag &lt;span class="o">[&lt;/span>tag&lt;span class="o">]&lt;/span> &lt;span class="o">[&lt;/span>commit&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 删除本地tag&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ git tag -d &lt;span class="o">[&lt;/span>tag&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 删除远程tag&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ git push origin :refs/tags/&lt;span class="o">[&lt;/span>tagName&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 查看tag信息&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ git show &lt;span class="o">[&lt;/span>tag&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 提交指定tag&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ git push &lt;span class="o">[&lt;/span>remote&lt;span class="o">]&lt;/span> &lt;span class="o">[&lt;/span>tag&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 提交所有tag&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ git push &lt;span class="o">[&lt;/span>remote&lt;span class="o">]&lt;/span> --tags
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 新建一个分支，指向某个tag&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ git checkout -b &lt;span class="o">[&lt;/span>branch&lt;span class="o">]&lt;/span> &lt;span class="o">[&lt;/span>tag&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="git规范">Git规范&lt;/h2>
+&lt;h3 id="分支命名">分支命名&lt;/h3>
+&lt;p>&lt;strong>master 分支&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>master 为主分支，也是用于部署生产环境的分支，确保master分支稳定性&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>master 分支一般由develop以及hotfix分支合并，任何时间都不能直接修改代码&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>develop 分支&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>develop 为开发分支，始终保持最新完成以及bug修复后的代码&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>一般开发的新功能时，feature分支都是基于develop分支下创建的&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>feature 分支&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>开发新功能时，以develop为基础创建feature分支&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>分支命名: feature/ 开头的为特性分支， 命名规则: feature/user_module、 feature/cart_module&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>release分支&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>release 为预上线分支，发布提测阶段，会release分支代码为基准提测&lt;/li>
+&lt;/ul>
+&lt;p>    当有一组feature开发完成，首先会合并到develop分支，进入提测时，会创建release分支。&lt;/p>
+&lt;p>    如果测试过程中若存在bug需要修复，则直接由开发者在release分支修复并提交。&lt;/p>
+&lt;p>    当测试完成之后，合并release分支到master和develop分支，此时master为最新代码，用作上线。&lt;/p>
+&lt;p>    复制代码&lt;/p>
+&lt;p>&lt;strong>hotfix 分支&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>分支命名: hotfix/ 开头的为修复分支，它的命名规则与 feature 分支类似&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>线上出现紧急问题时，需要及时修复，以master分支为基线，创建hotfix分支，修复完成后，需要合并到master分支和develop分支&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://raw.githubusercontent.com/redisread/Image/master/Blog/image_2.png" alt="git规范流程" />&lt;/p>
+&lt;h3 id="日志规范">日志规范&lt;/h3>
+&lt;p>当前业界应用的比较广泛的是 &lt;a href="https://link.juejin.cn/?target=https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#-git-commit-guidelines">Angular Git Commit Guidelines&lt;/a>&lt;/p>
+&lt;p>Commit message格式：&lt;/p>
+&lt;p>每次提交，Commit message 都包括三个部分：header，body 和 footer。&lt;/p>
+&lt;pre tabindex="0">&lt;code class="language-Git" data-lang="Git">&amp;lt;type&amp;gt;(&amp;lt;scope&amp;gt;): &amp;lt;subject&amp;gt;
+&amp;lt;BLANK LINE&amp;gt;
+&amp;lt;body&amp;gt;
+&amp;lt;BLANK LINE&amp;gt;
+&amp;lt;footer&amp;gt;
+&lt;/code>&lt;/pre>&lt;p>其中，header 是必需的，body 和 footer 可以省略。&lt;/p>
+&lt;p>type: 本次 commit 的类型，诸如 bugfix docs style 等&lt;br />
+scope: 本次 commit 波及的范围&lt;br />
+subject: 简明扼要的阐述下本次 commit 的主旨，在原文中特意强调了几点 1. 使用祈使句，是不是很熟悉又陌生的一个词，来传送门在此 祈使句 2. 首字母不要大写 3. 结尾无需添加标点&lt;br />
+body: 同样使用祈使句，在主体内容中我们需要把本次 commit 详细的描述一下，比如此次变更的动机，如需换行，则使用 |&lt;br />
+footer: 描述下与之关联的 issue 或 break change，详见案例&lt;/p>
+&lt;p>Header部分只有一行，包括三个字段：&lt;code>type&lt;/code>（必需）、&lt;code>scope&lt;/code>（可选）和&lt;code>subject&lt;/code>（必需）。&lt;/p>
+&lt;ul>
+&lt;li>feat: 添加新特性&lt;/li>
+&lt;li>fix: 修复bug&lt;/li>
+&lt;li>docs: 仅仅修改了文档&lt;/li>
+&lt;li>style: 仅仅修改了空格、格式缩进、都好等等，不改变代码逻辑&lt;/li>
+&lt;li>refactor: 代码重构，没有加新功能或者修复bug&lt;/li>
+&lt;li>perf: 增加代码进行性能测试&lt;/li>
+&lt;li>test: 增加测试用例&lt;/li>
+&lt;li>chore: 改变构建流程、或者增加依赖库、工具等&lt;/li>
+&lt;/ul>
+&lt;p>使用gitmoji：&lt;a href="https://dev.to/javidjms/git-write-better-commits-with-gitmoji-3193">🔨 [git]: Write better commits with Gitmoji - DEV Community&lt;/a>&lt;/p>
+&lt;h3 id="最佳实践">最佳实践&lt;/h3>
+&lt;p>本地代码双分支，一个提交分支，一个开发分支。&lt;/p>
+&lt;p>假如从远程仓库那边拉取的分支是&lt;/p>
+&lt;p>git commit &amp;ndash;amend修改push到远程分支的提交&lt;/p>
+&lt;p>&lt;a href="https://blog.csdn.net/ecjtuhq/article/details/80358656">https://blog.csdn.net/ecjtuhq/article/details/80358656&lt;/a>&lt;/p>
+&lt;hr />
+&lt;p>参考：&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;a href="https://blog.csdn.net/ivan820819/article/details/78816578">https://blog.csdn.net/ivan820819/article/details/78816578&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://segmentfault.com/a/1190000007748862">https://segmentfault.com/a/1190000007748862&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://www.jianshu.com/p/964de879904a">https://www.jianshu.com/p/964de879904a&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://blog.csdn.net/huangjhai/article/details/109557946">https://blog.csdn.net/huangjhai/article/details/109557946&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://juejin.cn/post/6844903635533594632">https://juejin.cn/post/6844903635533594632&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://segmentfault.com/a/1190000009048911">https://segmentfault.com/a/1190000009048911&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://www.cnblogs.com/jiuyi/p/7690615.html">https://www.cnblogs.com/jiuyi/p/7690615.html&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html">https://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol></content:encoded><dc:creator>VictorHong</dc:creator><media:content url="https://hugo.jiahongw.comhttps://cos.jiahongw.com/uPic/VpfE08.jpg" medium="image"><media:title type="html">featured image</media:title></media:content><category>git</category><category>开发方法论</category><category>技术实践</category></item></channel></rss>

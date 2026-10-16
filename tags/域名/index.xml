@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>域名 on ✏VictorHong's Blog</title><link>https://hugo.jiahongw.com/tags/%E5%9F%9F%E5%90%8D/</link><description>Recent content in 域名 on ✏VictorHong's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh</language><follow_challenge><feedId>74349588616178697</feedId><userId>68207800989737984</userId></follow_challenge><managingEditor>wujiahong2013@gmail.com (VictorHong)</managingEditor><webMaster>wujiahong2013@gmail.com (VictorHong)</webMaster><copyright>©2021-2026 | VictorHong</copyright><lastBuildDate>Sun, 27 Nov 2022 15:12:33 +0800</lastBuildDate><atom:link href="https://hugo.jiahongw.com/tags/%E5%9F%9F%E5%90%8D/index.xml" rel="self" type="application/rss+xml"/><item><title>Freenom 免费域名申请 &amp; 自动域名续费</title><link>https://hugo.jiahongw.com/20221127/freenom-domain/</link><pubDate>Sun, 27 Nov 2022 15:12:33 +0800</pubDate><author>wujiahong2013@gmail.com (VictorHong)</author><atom:modified>Sun, 27 Nov 2022 15:12:33 +0800</atom:modified><guid>https://hugo.jiahongw.com/20221127/freenom-domain/</guid><description>Freenom 是目前为数不多的免费域名提供商，提供 .ga, .ml, .gq, .tk, .cf 五个免费顶级域。当然也有一些付费的域名，对于普通人来说，免费域名就够了。😏 另外，本文后面还提</description><content:encoded>
+&lt;div class="featured-image__wrapper">
+&lt;img src="https://my.freenom.com/templates/freenom/img/logo.png" alt="Featured Image" class="featured-image" style="width: ;height: ;">
+&lt;/div>
+&lt;p>&lt;a href="https://my.freenom.com/">Freenom&lt;/a> 是目前为数不多的免费域名提供商，提供 &lt;code>.ga&lt;/code>, &lt;code>.ml&lt;/code>, &lt;code>.gq&lt;/code>, &lt;code>.tk&lt;/code>, &lt;code>.cf&lt;/code> 五个免费顶级域。当然也有一些付费的域名，对于普通人来说，免费域名就够了。&lt;span>&lt;code>😏&lt;/code>&lt;/span>&lt;/p>
+&lt;p>另外，本文后面还提供了一种自动续租 Freenom 免费域名的方法。&lt;/p>
+&lt;h2 id="1-找域名">1 找域名&lt;/h2>
+&lt;blockquote>
+&lt;p>Freenom 地址：&lt;a href="freenom.com">freenom.com&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;p>打开&lt;a href="https://my.freenom.com/">Freenom&lt;/a>，登陆后直接在搜索栏搜索自己想要的域名名字，然后系统会返回可以使用的免费域名，选择一个结算即可&lt;/p>
+&lt;p>&lt;img src="https://cos.jiahongw.com/uPic/20200213152156.png" alt="freenom网站寻找可以申请的免费域名" />&lt;/p>
+&lt;h2 id="2-配置解析服务">2 配置解析服务&lt;/h2>
+&lt;blockquote>
+&lt;p>这一步是可选的，也可以直接使用 Freenom 自己的 DNS 解析服务，或者不使用 cloudflare，用其他的 DNS 解析服务也可以。&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="使用cloudflarehttpsdashcloudflarecom解析服务">使用&lt;a href="https://dash.cloudflare.com/">cloudflare&lt;/a>解析服务&lt;/h3>
+&lt;blockquote>
+&lt;p>Cloudflare 网址：&lt;a href="cloudflare.com">cloudflare.com&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;p>打开&lt;a href="https://dash.cloudflare.com/">cloudflare&lt;/a>，首先需要注册一个账号。然后他会要求输入需要解析的域名&lt;/p>
+&lt;p>&lt;img src="https://cos.jiahongw.com/uPic/20200213170834.png" alt="添加待解析域名" />&lt;/p>
+&lt;p>填写相应的 DNS 信息，并且将下面的 NS 信息填写到 freenom 的&lt;strong>custom nameservers&lt;/strong>&lt;/p>
+&lt;p>&lt;img src="https://cos.jiahongw.com/uPic/20200213172405-20221127164521841.png" alt="填写DNS信息" />&lt;/p>
+&lt;p>等待个几分钟就好了。Over &lt;span>&lt;code>🤞&lt;/code>&lt;/span>&lt;/p>
+&lt;p>&lt;img src="https://cos.jiahongw.com/uPic/20200213173948.png" alt="等待完成" />&lt;/p>
+&lt;h2 id="3-自动续租">3 自动续租&lt;/h2>
+&lt;blockquote>
+&lt;p>参考：&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/luolongfei/freenom">luolongfei/freenom: Freenom 域名自动续期。Freenom domain name renews automatically.&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>常见问题：&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://blog.csdn.net/qq_44275213/article/details/119347467?app_version=5.11.1&amp;amp;csdn_share_tail=%7B%22type%22%3A%22blog%22%2C%22rType%22%3A%22article%22%2C%22rId%22%3A%22119347467%22%2C%22source%22%3A%22unlogin%22%7D&amp;amp;utm_source=app">freenom 域名注册失败的解决办法_未名编程的博客-CSDN 博客_some of your domains could not be registered becau&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/blockquote>
+&lt;p>参考这个&lt;a href="https://github.com/luolongfei/freenom">github 仓库&lt;/a>进行下面的操作：&lt;/p>
+&lt;blockquote>
+&lt;p>通过 Koyeb 部署：&lt;a href="https://github.com/luolongfei/freenom/wiki/%E9%80%9A%E8%BF%87-Koyeb-%E9%83%A8%E7%BD%B2">通过 Koyeb 部署 · luolongfei/freenom Wiki&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;ol>
+&lt;li>
+&lt;p>注册 Koyeb 账户&lt;/p>
+&lt;p>在新标签页打开链接 &lt;a href="https://app.koyeb.com/auth/signup">https://app.koyeb.com/auth/signup&lt;/a> ，完成注册，并登录&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>一键部署&lt;/p>
+&lt;p>右击在新标签页打开链接 &lt;a href="https://app.koyeb.com/deploy?type=docker&amp;amp;name=freenom&amp;amp;ports=80;http;/&amp;amp;env%5BFF_TOKEN%5D=20190214&amp;amp;env%5BSHOW_SERVER_INFO%5D=1&amp;amp;env%5BMOSAIC_SENSITIVE_INFO%5D=1&amp;amp;env%5BFREENOM_USERNAME%5D=&amp;amp;env%5BFREENOM_PASSWORD%5D=&amp;amp;env%5BMULTIPLE_ACCOUNTS%5D=&amp;amp;env%5BTELEGRAM_CHAT_ID%5D=&amp;amp;env%5BTELEGRAM_BOT_TOKEN%5D=&amp;amp;env%5BTELEGRAM_BOT_ENABLE%5D=0&amp;amp;image=docker.io/luolongfei/freenom:koyeb">&lt;img src="https://camo.githubusercontent.com/dbd49fd11e4dea39effabf3572eb66edafb50d32aadb31c7458fe7e42ac93790/68747470733a2f2f7777772e6b6f7965622e636f6d2f7374617469632f696d616765732f6465706c6f792f627574746f6e2e737667" alt="Deploy to Koyeb" />&lt;/a> ，来到部署画面：&lt;/p>
+&lt;p>&lt;img src="https://cos.jiahongw.com/uPic/image-20221127165152174.png" alt="编辑部署信息" />&lt;/p>
+&lt;p>主要填写 token 和 freenom 的账号和密码，&lt;strong>token 是登陆后台的密码，需要自己保存&lt;/strong>。&lt;/p>
+&lt;p>然后点击 deploy 或者 create service。&lt;/p>
+&lt;p>&lt;img src="https://cos.jiahongw.com/uPic/image-20221127165316877.png" alt="deploy" />&lt;/p>
+&lt;p>点击应用地址，跳到工具管理画面：&lt;/p>
+&lt;p>&lt;img src="https://cos.jiahongw.com/uPic/image-20221127165348022.png" alt="点击地址" />&lt;/p>
+&lt;p>输入 token 值进行验证（点击送信）：&lt;/p>
+&lt;p>&lt;img src="https://cos.jiahongw.com/uPic/image-20221127165411395.png" alt="进入后台，触发续租" />&lt;/p>
+&lt;p>返回类似下面的结果：&lt;/p>
+&lt;p>&lt;img src="https://cos.jiahongw.com/uPic/image-20221127165503732.png" alt="返回" />&lt;/p>
+&lt;p>默认会周期进行定时调用，不需要手动触发，上面只是为了展示进行触发的。&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;hr />
+&lt;p>&lt;em>&lt;strong>Reference&lt;/strong>&lt;/em>：&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://www.koyeb.com/">The fastest way to deploy applications globally - Koyeb&lt;/a>&lt;/li>
+&lt;/ul></content:encoded><dc:creator>VictorHong</dc:creator><media:content url="https://hugo.jiahongw.comhttps://my.freenom.com/templates/freenom/img/logo.png" medium="image"><media:title type="html">featured image</media:title></media:content><category>域名</category><category>freenom</category><category>工具折腾</category><category>折腾计划</category></item></channel></rss>
