@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>设计模式 on ✏VictorHong's Blog</title><link>https://hugo.jiahongw.com/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</link><description>Recent content in 设计模式 on ✏VictorHong's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh</language><managingEditor>wujiahong2013@gmail.com (VictorHong)</managingEditor><webMaster>wujiahong2013@gmail.com (VictorHong)</webMaster><copyright>&amp;copy;2021-{year} | VictorHong</copyright><lastBuildDate>Sat, 22 Jan 2022 21:52:34 +0800</lastBuildDate><atom:link href="https://hugo.jiahongw.com/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/index.xml" rel="self" type="application/rss+xml"/><item><title>理解设计模式</title><link>https://hugo.jiahongw.com/20220122/design-pattern/</link><pubDate>Sat, 22 Jan 2022 21:52:34 +0800</pubDate><author>wujiahong2013@gmail.com (VictorHong)</author><atom:modified>Sat, 22 Jan 2022 21:52:34 +0800</atom:modified><guid>https://hugo.jiahongw.com/20220122/design-pattern/</guid><description>&lt;div class="featured-image__wrapper"&gt;
+&lt;img src="https://cos.jiahongw.com/uPic/pexels-jessica-lewis-creative-998587.jpg" alt="Featured Image" class="featured-image" style="width: ;height: ;"&gt;
+&lt;/div&gt;
+&lt;h2 id="原则"&gt;原则&lt;/h2&gt;
+&lt;h3 id="设计原则"&gt;设计原则&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;单一职责原则&lt;/p&gt;
+&lt;p&gt;Single Responsibility Principle，一个类应该只负责一个职责。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;开闭原则&lt;/p&gt;
+&lt;p&gt;Open-Closed Principle, OCP，一个软件实体应当对扩展开放，对修改关闭。即软件实体应尽量在不修改原有代码的情况下进行扩展。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;里氏替换原则&lt;/p&gt;
+&lt;p&gt;Liskov Substitution Principle, LSP，所有引用基类（父类）的地方必须能透明地使用其子类的对象。（其实就是使用多态）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;依赖注入原则&lt;/p&gt;
+&lt;p&gt;Dependence Inversion Principle, DIP，抽象不应该依赖于细节，细节应当依赖于抽象。换言之，要针对接口编程，而不是针对实现编程。&lt;/p&gt;
+&lt;p&gt;关键点为：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;高层模块不应该依赖低层模块，两者都应该依赖其抽象&lt;/li&gt;
+&lt;li&gt;抽象不应该依赖细节&lt;/li&gt;
+&lt;li&gt;细节应该依赖抽象&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;接口分离原则&lt;/p&gt;
+&lt;p&gt;Interface Segregation Principle, ISP，使用多个专门的接口，而不使用单一的总接口，即客户端不应该依赖那些它不需要的接口。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;迪米特原则&lt;/p&gt;
+&lt;p&gt;Law of Demeter 又名Least Knowledge Principle, LoD，一个软件实体应当尽可能少地与其他实体发生相互作用。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;体现了封装的思想。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</description><content:encoded>
+&lt;div class="featured-image__wrapper"&gt;
+&lt;img src="https://cos.jiahongw.com/uPic/pexels-jessica-lewis-creative-998587.jpg" alt="Featured Image" class="featured-image" style="width: ;height: ;"&gt;
+&lt;/div&gt;
+&lt;h2 id="原则"&gt;原则&lt;/h2&gt;
+&lt;h3 id="设计原则"&gt;设计原则&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;单一职责原则&lt;/p&gt;
+&lt;p&gt;Single Responsibility Principle，一个类应该只负责一个职责。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;开闭原则&lt;/p&gt;
+&lt;p&gt;Open-Closed Principle, OCP，一个软件实体应当对扩展开放，对修改关闭。即软件实体应尽量在不修改原有代码的情况下进行扩展。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;里氏替换原则&lt;/p&gt;
+&lt;p&gt;Liskov Substitution Principle, LSP，所有引用基类（父类）的地方必须能透明地使用其子类的对象。（其实就是使用多态）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;依赖注入原则&lt;/p&gt;
+&lt;p&gt;Dependence Inversion Principle, DIP，抽象不应该依赖于细节，细节应当依赖于抽象。换言之，要针对接口编程，而不是针对实现编程。&lt;/p&gt;
+&lt;p&gt;关键点为：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;高层模块不应该依赖低层模块，两者都应该依赖其抽象&lt;/li&gt;
+&lt;li&gt;抽象不应该依赖细节&lt;/li&gt;
+&lt;li&gt;细节应该依赖抽象&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;接口分离原则&lt;/p&gt;
+&lt;p&gt;Interface Segregation Principle, ISP，使用多个专门的接口，而不使用单一的总接口，即客户端不应该依赖那些它不需要的接口。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;迪米特原则&lt;/p&gt;
+&lt;p&gt;Law of Demeter 又名Least Knowledge Principle, LoD，一个软件实体应当尽可能少地与其他实体发生相互作用。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;体现了封装的思想。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="设计模式分类一览"&gt;设计模式分类一览&lt;/h2&gt;
+&lt;h3 id="单例模式"&gt;单例模式&lt;/h3&gt;
+&lt;figure &gt;
+&lt;img data-src="https://cos.jiahongw.com/uPic/singleton.png" alt="image alt" data-caption="单例模式是一种创建型设计模式， 让你能够保证一个类只有一个实例， 并提供一个访问该实例的全局节点" src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='300px' height='' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%23aaa' d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4.44-6.19l-2.35 3.02-1.56-1.88c-.2-.25-.58-.24-.78.01l-1.74 2.23c-.26.33-.02.81.39.81h8.98c.41 0 .65-.47.4-.8l-2.55-3.39c-.19-.26-.59-.26-.79 0z'/%3E%3C/svg%3E" class="lazyload" style="width:300px;height:;"/&gt;
+&lt;figcaption style="text-align: left;"&gt;
+&lt;strong&gt;单例模式&lt;/strong&gt;:
+单例模式是一种创建型设计模式， 让你能够保证一个类只有一个实例， 并提供一个访问该实例的全局节点
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;定义：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;单例设计模式&lt;/strong&gt;（Singleton Design Pattern）理解起来非常简单。一个类只允许创建一个对象（或者实例），那这个类就是一个单例类，这种设计模式就叫作单例设计模式，简称单例模式。&lt;/p&gt;
+&lt;p&gt;架构：比较简单，不画了。&lt;/p&gt;
+&lt;p&gt;使用场景：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;线程池&lt;/li&gt;
+&lt;li&gt;缓存&lt;/li&gt;
+&lt;li&gt;对话框&lt;/li&gt;
+&lt;li&gt;注册表对象&lt;/li&gt;
+&lt;li&gt;日志对象&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="状态模式"&gt;状态模式&lt;/h3&gt;
+&lt;figure &gt;
+&lt;img data-src="https://cos.jiahongw.com/uPic/1960558.png" alt="image alt" data-caption="状态模式允许对象在内部状态发生改变时改变它的行为" src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='300px' height='' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%23aaa' d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4.44-6.19l-2.35 3.02-1.56-1.88c-.2-.25-.58-.24-.78.01l-1.74 2.23c-.26.33-.02.81.39.81h8.98c.41 0 .65-.47.4-.8l-2.55-3.39c-.19-.26-.59-.26-.79 0z'/%3E%3C/svg%3E" class="lazyload" style="width:300px;height:;"/&gt;
+&lt;figcaption style="text-align: left;"&gt;
+&lt;strong&gt;状态模式&lt;/strong&gt;:
+状态模式允许对象在内部状态发生改变时改变它的行为
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;定义：&lt;/p&gt;
+&lt;p&gt;状态模式允许对象在内部状态发生改变时改变它的行为。（对象看起来好像改变了它的类）&lt;/p&gt;
+&lt;p&gt;架构：&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://cos.jiahongw.com/uPic/StatePattern-UML.svg" alt="状态模式UML"&gt;&lt;/p&gt;
+&lt;p&gt;实现方法：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;分支逻辑法&lt;/li&gt;
+&lt;li&gt;查表法&lt;/li&gt;
+&lt;li&gt;状态模式&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;使用场景：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;状态模式一般用来实现状态机，而状态机常用在&lt;strong&gt;游戏、工作流引擎等系统开发&lt;/strong&gt;中。或者在一些单据的流转上也可以使用状态模式。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="notices warning" data-title="状态模式和策略模式的区别"&gt;
+状态模式可以随着时间改变状态，从而执行不同的行为；但是策略模式是事先准备好多种策略，在开始的时候选择了一种策略就是一直使用这种策略进行处理。（可以说，状态模式运行时使用了所有的状态，而策略模式在运行时只使用了一种策略）
+&lt;/div&gt;
+&lt;h3 id="策略模式"&gt;策略模式&lt;/h3&gt;
+&lt;figure &gt;
+&lt;img data-src="https://cos.jiahongw.com/uPic/image-20220327140807638.png" alt="image alt" data-caption="策略模式定义了算法族，分别封装起来，让他们之间可以互相替换" src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='300px' height='' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%23aaa' d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4.44-6.19l-2.35 3.02-1.56-1.88c-.2-.25-.58-.24-.78.01l-1.74 2.23c-.26.33-.02.81.39.81h8.98c.41 0 .65-.47.4-.8l-2.55-3.39c-.19-.26-.59-.26-.79 0z'/%3E%3C/svg%3E" class="lazyload" style="width:300px;height:;"/&gt;
+&lt;figcaption style="text-align: left;"&gt;
+&lt;strong&gt;策略模式&lt;/strong&gt;:
+策略模式定义了算法族，分别封装起来，让他们之间可以互相替换
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;定义：&lt;/p&gt;
+&lt;p&gt;策略模式定义了算法族，分别封装起来，让他们之间可以互相替换。&lt;strong&gt;此模式让算法的变化独立于使用算法的客户&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;架构：&lt;/p&gt;
+&lt;p&gt;策略定义：&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code class="language-mermaid" data-lang="mermaid"&gt;classDiagram
+Strategy &amp;lt;|-- StrategyA : implements
+Strategy &amp;lt;|-- StrategyB : implements
+Strategy : algorithmInterface()
+StrategyA : algorithmInterface()
+StrategyB : algorithmInterface()
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;策略创建：&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code class="language-mermaid" data-lang="mermaid"&gt;classDiagram
+Strategy &amp;lt;|-- StrategyA : implements
+Strategy &amp;lt;|-- StrategyB : implements
+Strategy : algorithmInterface()
+StrategyA : algorithmInterface()
+StrategyB : algorithmInterface()
+StrategyFactory --&amp;gt; Strategy : 关联
+StrategyFactory : getStrategy(type)
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;无状态策略：无状态的策略因为不会变，可以进行缓存，一开始就创建好所有的策略即可。（直接从map中拿取）&lt;/li&gt;
+&lt;li&gt;有状态策略：有状态的策略因为会改变，所以每次创建都需要是一个最新的策略对象。（在工厂类中存在if-else判断）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;策略使用：&lt;/p&gt;
+&lt;p&gt;​&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code class="language-mermaid" data-lang="mermaid"&gt;graph TD;
+拿取策略:getStrategy--&amp;gt;使用策略接口:algorithmInterface;
+&lt;/code&gt;&lt;/pre&gt;&lt;ol&gt;
+&lt;li&gt;从工厂类中拿取策略。&lt;/li&gt;
+&lt;li&gt;调用策略对应的接口函数。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;使用场景：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;避免冗长的if-else或switch分支判断&lt;/li&gt;
+&lt;li&gt;提供框架的扩展点&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id="模版方法模式"&gt;模版方法模式&lt;/h3&gt;
+&lt;figure &gt;
+&lt;img data-src="https://cos.jiahongw.com/uPic/560009.png" alt="image alt" data-caption="模板方法模式是对抽象的有一种体现，这次，抽象的是算法流程。模板方法定义了一个算法的步骤，将允许子类为一个或者多个步骤提供实现" src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='300px' height='' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%23aaa' d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4.44-6.19l-2.35 3.02-1.56-1.88c-.2-.25-.58-.24-.78.01l-1.74 2.23c-.26.33-.02.81.39.81h8.98c.41 0 .65-.47.4-.8l-2.55-3.39c-.19-.26-.59-.26-.79 0z'/%3E%3C/svg%3E" class="lazyload" style="width:300px;height:;"/&gt;
+&lt;figcaption style="text-align: left;"&gt;
+&lt;strong&gt;模版方法模式&lt;/strong&gt;:
+模板方法模式是对抽象的有一种体现，这次，抽象的是算法流程。模板方法定义了一个算法的步骤，将允许子类为一个或者多个步骤提供实现
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;定义：&lt;/p&gt;
+&lt;p&gt;模板方法模式在一个方法中定义一个算法的架构，而将一些步骤延迟到子类中。模板方法使得子类可以在不改变算法结构的情况下，重新定义算法中的某些步骤。&lt;/p&gt;
+&lt;p&gt;架构：&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://cos.jiahongw.com/uPic/TemplateMethodPattern-UML.svg" alt="模版方法模式UML"&gt;&lt;/p&gt;
+&lt;p&gt;使用场景：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;复用&lt;/p&gt;
+&lt;p&gt;因为模板方法是基于继承实现，可以将固定的算法步骤封装在抽象类，抽象类可以实现一些固定的步骤，子类直接进行复用就可以了。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;框架拓展性&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;HttpServlet的service()方法就是一个模板方法，它实现了整个http请求的执行流程，而doGet()和doPost()是模板中可以由子类自定义的部分。相当于框架为用户提供了拓展点，使得不需要修改框架源码就能将拓展点添加到框架中。&lt;/li&gt;
+&lt;li&gt;Junit框架也提供了一些功能拓展点setUp()和setDown()，可以在开始和结束的时候做一些事情，而runBase()函数是一个模板方法，定义了执行测试用例的整体流程。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="notices info" data-title="策略模式和模板方法模式区别"&gt;
+&lt;ul&gt;
+&lt;li&gt;策略模式和模板方法模式都封装算法，但是一个组合，一个继承。&lt;/li&gt;
+&lt;li&gt;工厂方法是模板方法的一个特殊版本。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;h3 id="适配器模式"&gt;适配器模式&lt;/h3&gt;
+&lt;p&gt;适配器使得新的调用可以适配老的接口而不需要修改旧的代码。达到了对拓展开发，对修改关闭的设计原则。&lt;/p&gt;
+&lt;p&gt;定义：&lt;/p&gt;
+&lt;p&gt;适配器将一个类的接口，转换成客户端期望的另一个接口。适配器让原本不兼容的类达到兼容。（可以让客户从实现的接口解耦）&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;USB转接头就是一个适配器！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;架构:&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://cos.jiahongw.com/uPic/%E9%80%82%E9%85%8D%E5%99%A8%E6%A8%A1%E5%BC%8FUML.svg" alt="适配器模式"&gt;&lt;/p&gt;
+&lt;p&gt;在支持多重继承的语言中，可以使用类适配器是这样的：&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://cos.jiahongw.com/uPic/adaptor-pattern.svg" alt="多重继承适配器模式"&gt;&lt;/p&gt;
+&lt;p&gt;使用场景：&lt;/p&gt;
+&lt;div class="notices success" data-title="Success"&gt;
+一般来说，适配器模式可以看作是一宗“补偿模式”，用来补救设计上的缺陷，也是一种无奈之举。一般也不会优先推荐使用这种模式。
+&lt;/div&gt;
+&lt;/br&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;封装有缺陷的接口&lt;/p&gt;
+&lt;p&gt;例如外部引入的接口都是静态方法，会影响代码的可测试性。此时使用适配器进行适配接口，将静态方法都“封装“起来，这样就可以进行测试了。&lt;/p&gt;
+&lt;p&gt;”缺陷“可以理解为在某些方面不足。通过封装之后达到解决问题的效果就是适配器作用。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;替换依赖的外部系统&lt;/p&gt;
+&lt;p&gt;当需要将外部依赖的一个系统替换成另一个系统的时候，也就是一些系统迁移或者接口切换的场景，使用适配器模式可以减少对代码的改动。&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://cos.jiahongw.com/uPic/adaptor0.png" alt="适配接口"&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;兼容老版本的接口&lt;/p&gt;
+&lt;p&gt;在进行一些版本升级的时候，对于一些废弃的接口，我们不会直接删除，而是暂时保留，并且标注为deprecate，并且将内部实现逻辑委托为新的实现逻辑。&lt;/p&gt;
+&lt;p&gt;例如JDK中包含一个遍历集合容器的类Enumeration，JDK2.0对这个类进行了重构，将它改名为Iterator类，并且对它的代码实现做了优化。但是如果将Enumeration直接从JDK2.0删除，那么那些从JDK1.0升级到JDK2.0的项目，就会编译报错。但是修改散落在各处的Enumeration调用又多又杂，导致升级困难。为了避免这种情况，可以暂时保留Enumeration类，并且将其内部实现替换为Iterator的实现。&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt; 1
+&lt;/span&gt;&lt;span class="lnt"&gt; 2
+&lt;/span&gt;&lt;span class="lnt"&gt; 3
+&lt;/span&gt;&lt;span class="lnt"&gt; 4
+&lt;/span&gt;&lt;span class="lnt"&gt; 5
+&lt;/span&gt;&lt;span class="lnt"&gt; 6
+&lt;/span&gt;&lt;span class="lnt"&gt; 7
+&lt;/span&gt;&lt;span class="lnt"&gt; 8
+&lt;/span&gt;&lt;span class="lnt"&gt; 9
+&lt;/span&gt;&lt;span class="lnt"&gt;10
+&lt;/span&gt;&lt;span class="lnt"&gt;11
+&lt;/span&gt;&lt;span class="lnt"&gt;12
+&lt;/span&gt;&lt;span class="lnt"&gt;13
+&lt;/span&gt;&lt;span class="lnt"&gt;14
+&lt;/span&gt;&lt;span class="lnt"&gt;15
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-java" data-lang="java"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="kd"&gt;public&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kd"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;Collections&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kd"&gt;public&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kd"&gt;static&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Emueration&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;emumeration&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;final&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Collection&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;c&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;return&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;new&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Enumeration&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Iterator&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;c&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;iterator&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kd"&gt;public&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kt"&gt;boolean&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;hasMoreElments&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;return&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;hashNext&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kd"&gt;public&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Object&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;nextElement&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;return&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;next&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="notices warning" data-title="装饰器和适配器的区别"&gt;
+装饰器包装一个实现同一个接口的类对象，添加一些责任，并且接口不变；适配器则包装实现不同接口的被适配的对象，进行接口的转换和适配，以达到兼容的效果。
+&lt;/div&gt;
+&lt;h3 id="工厂方法模式"&gt;工厂方法模式&lt;/h3&gt;
+&lt;figure &gt;
+&lt;img data-src="https://cos.jiahongw.com/uPic/3992944_factory_chimney_company_smoke_icon.png" alt="image alt" data-caption="相对于直接new来创建对象，用工厂模式来创建会更加灵活" src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='300px' height='' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%23aaa' d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4.44-6.19l-2.35 3.02-1.56-1.88c-.2-.25-.58-.24-.78.01l-1.74 2.23c-.26.33-.02.81.39.81h8.98c.41 0 .65-.47.4-.8l-2.55-3.39c-.19-.26-.59-.26-.79 0z'/%3E%3C/svg%3E" class="lazyload" style="width:300px;height:;"/&gt;
+&lt;figcaption style="text-align: left;"&gt;
+&lt;strong&gt;工厂方法模式&lt;/strong&gt;:
+相对于直接new来创建对象，用工厂模式来创建会更加灵活
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;当我们使用new创建一个对象的时候，需要指定一个具体类，这就是针对实现进行编程。当我们将创建对象的过程封装成一个方法或者接口的时候，就可以避免针对实现编程，变成针对接口编程。&lt;/p&gt;
+&lt;p&gt;定义：&lt;/p&gt;
+&lt;p&gt;工厂方法模式定义了一个创建对象的接口，但由子类决定要实例化的类是哪一个。工厂方法将实例化推迟到子类。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;核心在将创建对象的过程解耦出来。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;架构：&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://cos.jiahongw.com/uPic/FactoryMethodPattern-UML.svg" alt="工厂方法模式UML"&gt;&lt;/p&gt;
+&lt;p&gt;工厂模式体现了一个原则：依赖倒置原则。（Spring叫依赖反转）&lt;/p&gt;
+&lt;p&gt;关键点:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;工厂只有一个功能——创建指定的类。（单一职责）&lt;/li&gt;
+&lt;li&gt;将原来的if-else判断，转换成对象进行处理。&lt;/li&gt;
+&lt;li&gt;抽象成一个方法 -》 抽象成一个类 -〉 抽象成一个接口&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;抽象工厂模式&lt;/p&gt;
+&lt;p&gt;定义：抽象工厂模式提供一个接口，用于创建相关或者依赖对象的家族，而不需要明确指定具体类&lt;/p&gt;
+&lt;p&gt;架构：&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code class="language-mermaid" data-lang="mermaid"&gt;classDiagram
+class AbstractFactory {
+&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;
++ createProductA()
++ createProductB()
+}
+class ConcreteFactoory1 {
++ createProductA()
++ createProductB()
+}
+class ConcreteFactoory2 {
++ createProductA()
++ createProductB()
+}
+class AbstractProductA {
+&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;
+}
+class ProducttA1
+class ProducttA2
+ProducttA1 ..|&amp;gt; AbstractProductA : 实现
+ProducttA2 ..|&amp;gt; AbstractProductA : 实现
+class AbstractProductB {
+&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;
+}
+class ProducttB1
+class ProducttB2
+ProducttB1 ..|&amp;gt; AbstractProductB : 实现
+ProducttB2 ..|&amp;gt; AbstractProductB : 实现
+AbstractFactory &amp;lt;|.. ConcreteFactoory1 : 实现
+AbstractFactory &amp;lt;|.. ConcreteFactoory2 : 实现
+ConcreteFactoory1 --&amp;gt;ProducttA1 : 创建
+ConcreteFactoory1 --&amp;gt;ProducttB1 : 创建
+ConcreteFactoory2 --&amp;gt;ProducttA2 : 创建
+ConcreteFactoory2 --&amp;gt;ProducttB2 : 创建
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;抽象工厂模式类似于一个二维的分类，将更加复杂的系统进行整理并且划分。以达到解耦的效果。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;使用场景：&lt;/p&gt;
+&lt;h3 id="建造者模式"&gt;建造者模式&lt;/h3&gt;
+&lt;figure &gt;
+&lt;img data-src="https://cos.jiahongw.com/uPic/image-20220327140530127.png" alt="image alt" data-caption="建造者模式主要是为了解决调用构造函数的时候，参数太多，并且有一些是可选参数不填的情况。这种情况下，使用建造者模式会更加灵活。" src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='300px' height='' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%23aaa' d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4.44-6.19l-2.35 3.02-1.56-1.88c-.2-.25-.58-.24-.78.01l-1.74 2.23c-.26.33-.02.81.39.81h8.98c.41 0 .65-.47.4-.8l-2.55-3.39c-.19-.26-.59-.26-.79 0z'/%3E%3C/svg%3E" class="lazyload" style="width:300px;height:;"/&gt;
+&lt;figcaption style="text-align: left;"&gt;
+&lt;strong&gt;建造者模式&lt;/strong&gt;:
+建造者模式主要是为了解决调用构造函数的时候，参数太多，并且有一些是可选参数不填的情况。这种情况下，使用建造者模式会更加灵活。
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;待补充&amp;hellip;&amp;hellip;&lt;/p&gt;
+&lt;h3 id="命令模式"&gt;命令模式&lt;/h3&gt;
+&lt;figure &gt;
+&lt;img data-src="https://cos.jiahongw.com/uPic/command.png" alt="image alt" data-caption="命令模式将“请求”封装成对象，以便使用不同的请求、队列或者日志来参数化其他对象。命令模式也可以支持撤销的操作。" src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='300px' height='' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%23aaa' d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4.44-6.19l-2.35 3.02-1.56-1.88c-.2-.25-.58-.24-.78.01l-1.74 2.23c-.26.33-.02.81.39.81h8.98c.41 0 .65-.47.4-.8l-2.55-3.39c-.19-.26-.59-.26-.79 0z'/%3E%3C/svg%3E" class="lazyload" style="width:300px;height:;"/&gt;
+&lt;figcaption style="text-align: left;"&gt;
+&lt;strong&gt;命令模式&lt;/strong&gt;:
+命令模式将“请求”封装成对象，以便使用不同的请求、队列或者日志来参数化其他对象。命令模式也可以支持撤销的操作。
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;定义：&lt;/p&gt;
+&lt;p&gt;命令模式将“请求”封装成对象，以便使用不同的请求、队列或者日志来参数化其他对象。命令模式也可以支持撤销的操作。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;命令模式主要是将“命令的请求者”从“命令的执行者”对象中解耦。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;架构：&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://cos.jiahongw.com/uPic/CommondPattern-UML.svg" alt="命令模式UML"&gt;&lt;/p&gt;
+&lt;p&gt;命令模式对象可以包含接受者的引用，也可以不包含，因为在远程调用的情况下，不能获取引用。&lt;/p&gt;
+&lt;p&gt;使用场景：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;异步、延迟、排队执行命令、撤销重做命令、存储命令、命令记录日志&lt;/li&gt;
+&lt;li&gt;Hystix&lt;strong&gt;熔断&lt;/strong&gt;框架就用到了命令模式&lt;/li&gt;
+&lt;li&gt;redis使用命令模式处理指令&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="组合模式"&gt;组合模式&lt;/h3&gt;
+&lt;figure &gt;
+&lt;img data-src="https://cos.jiahongw.com/uPic/blood-cells.png" alt="image alt" data-caption="组合模式跟我们之前讲的面向对象设计中的“组合关系(通过组合来组装两个类)”，完全是两码事。这里讲的“组合模式”，主要是用来处理树形结构数据" src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='300px' height='' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%23aaa' d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4.44-6.19l-2.35 3.02-1.56-1.88c-.2-.25-.58-.24-.78.01l-1.74 2.23c-.26.33-.02.81.39.81h8.98c.41 0 .65-.47.4-.8l-2.55-3.39c-.19-.26-.59-.26-.79 0z'/%3E%3C/svg%3E" class="lazyload" style="width:300px;height:;"/&gt;
+&lt;figcaption style="text-align: left;"&gt;
+&lt;strong&gt;z组合模式&lt;/strong&gt;:
+组合模式跟我们之前讲的面向对象设计中的“组合关系(通过组合来组装两个类)”，完全是两码事。这里讲的“组合模式”，主要是用来处理树形结构数据
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;定义：&lt;/p&gt;
+&lt;p&gt;组合模式允许你将对象组合成树形结构来表示“整体/部分”的层次结构。组合能够让客户以一致的方式处理个别对象以及对象组合。&lt;/p&gt;
+&lt;p&gt;架构：&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://cos.jiahongw.com/uPic/CompositePattern-UML.svg" alt="组合模式UML"&gt;&lt;/p&gt;
+&lt;p&gt;使用场景：&lt;/p&gt;
+&lt;p&gt;使用组合模式的前提在于，你的业务场景必须能够表示成树形结构。所以，组合模式的应用场景也比较局限，它并不是一种很常用的设计模式。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;需要理解“整体和部分”的关系。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id="装饰器模式"&gt;装饰器模式&lt;/h3&gt;
+&lt;figure &gt;
+&lt;img data-src="https://cos.jiahongw.com/uPic/2549942.png" alt="image alt" data-caption="装饰器模式动态的将责任附加到对象上，若要拓展功能，装饰者提供了比继承更有弹性的替代方案" src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='300px' height='' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%23aaa' d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4.44-6.19l-2.35 3.02-1.56-1.88c-.2-.25-.58-.24-.78.01l-1.74 2.23c-.26.33-.02.81.39.81h8.98c.41 0 .65-.47.4-.8l-2.55-3.39c-.19-.26-.59-.26-.79 0z'/%3E%3C/svg%3E" class="lazyload" style="width:300px;height:;"/&gt;
+&lt;figcaption style="text-align: left;"&gt;
+&lt;strong&gt;装饰器模式&lt;/strong&gt;:
+装饰器模式动态的将责任附加到对象上，若要拓展功能，装饰者提供了比继承更有弹性的替代方案
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;定义：&lt;/p&gt;
+&lt;p&gt;装饰器模式动态的将责任附加到对象上，若要拓展功能，装饰者提供了比继承更有弹性的替代方案。&lt;/p&gt;
+&lt;p&gt;架构：&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code class="language-mermaid" data-lang="mermaid"&gt;classDiagram
+class Component {
+&amp;lt;&amp;lt;abstract&amp;gt;&amp;gt;
++ methodA()
++ methodB()
+}
+class ConcreateComponent {
++ methodA()
++ methodB()
+}
+class Decrator {
+&amp;lt;&amp;lt;abstract&amp;gt;&amp;gt;
++ methodA()
++ methodB()
+}
+class ConcreateDecratorA {
++ methodA()
++ methodB()
++ newMethod()
+}
+class ConcreateDecratorB {
++ methodA()
++ methodB()
+}
+ConcreateComponent --|&amp;gt; Component : 继承
+Decrator --|&amp;gt; Component : 继承
+ConcreateDecratorA --|&amp;gt; Decrator : 继承
+ConcreateDecratorB --|&amp;gt; Decrator : 继承
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;装饰的技巧可以在不修改任何底层代码的情况下增强功能。&lt;/p&gt;
+&lt;p&gt;使用场景：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Java IO类库（InputStream、OutputStream）&lt;/p&gt;
+&lt;img src="https://cos.jiahongw.com/uPic/image-20220109160325214.png" alt="image-20220109160325214" style="zoom:50%;" /&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在不影响其他对象的情况下，以动态、透明的方式给单个对象添加职责。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="notices warning" data-title="Warning"&gt;
+使用装饰器模式，常常造成设计中有大量的类
+&lt;/div&gt;
+&lt;h3 id="迭代器模式"&gt;迭代器模式&lt;/h3&gt;
+&lt;figure &gt;
+&lt;img data-src="https://cos.jiahongw.com/uPic/5069096.png" alt="image alt" data-caption="迭代器模式提供了一种方法顺序访问一个聚合对象中的各个元素，而不暴露其内部的表示" src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='300px' height='' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%23aaa' d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4.44-6.19l-2.35 3.02-1.56-1.88c-.2-.25-.58-.24-.78.01l-1.74 2.23c-.26.33-.02.81.39.81h8.98c.41 0 .65-.47.4-.8l-2.55-3.39c-.19-.26-.59-.26-.79 0z'/%3E%3C/svg%3E" class="lazyload" style="width:300px;height:;"/&gt;
+&lt;figcaption style="text-align: left;"&gt;
+&lt;strong&gt;迭代器模式&lt;/strong&gt;:
+迭代器模式提供了一种方法顺序访问一个聚合对象中的各个元素，而不暴露其内部的表示
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;定义：&lt;/p&gt;
+&lt;p&gt;迭代器模式提供了一种方法顺序访问一个聚合对象中的各个元素，而不暴露其内部的表示。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;迭代器模式封装了遍历。并且迭代器模式还将在元素之间进行游走的责任交给迭代器，使得职责更加单一。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;架构：&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://cos.jiahongw.com/uPic/IteratorPattern-UML.svg" alt="迭代器模式UML"&gt;&lt;/p&gt;
+&lt;p&gt;使用场景：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Java Iterator&lt;/li&gt;
+&lt;li&gt;解耦容器代码和遍历代码，使得职责更加单一&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="观察者模式"&gt;观察者模式&lt;/h3&gt;
+&lt;figure &gt;
+&lt;img data-src="https://cos.jiahongw.com/uPic/3881299.png" alt="image alt" data-caption="一个比喻，报纸订阅（出版者和订阅者）" src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='300px' height='' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%23aaa' d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4.44-6.19l-2.35 3.02-1.56-1.88c-.2-.25-.58-.24-.78.01l-1.74 2.23c-.26.33-.02.81.39.81h8.98c.41 0 .65-.47.4-.8l-2.55-3.39c-.19-.26-.59-.26-.79 0z'/%3E%3C/svg%3E" class="lazyload" style="width:300px;height:;"/&gt;
+&lt;figcaption style="text-align: left;"&gt;
+&lt;strong&gt;观察者模式&lt;/strong&gt;:
+一个比喻，报纸订阅（出版者和订阅者）
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;定义：&lt;/p&gt;
+&lt;p&gt;观察者模式定义了对象之间的&lt;strong&gt;一对多&lt;/strong&gt;依赖，这样一来，当一个对象改变状态时，它的所有依赖者都会收到通知并且自动更新。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;一个比喻：报纸订阅（出版者和订阅者）&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;架构：&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code class="language-mermaid" data-lang="mermaid"&gt;classDiagram
+class Subject {
+&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;
++ registerObserver()
++ removeObserver()
++ notifyObserver()
+}
+class ConcreteSubject {
+- List&amp;lt;Observer&amp;gt; observers
++ registerObserver()
++ removeObserver()
++ notifyObserver()
+}
+class Observer {
+&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;
++ update()
+}
+class ConcreteObeserver {
+- Subject subject
++ update()
+}
+Subject --&amp;gt; Observer : 多个观察者
+ConcreteSubject ..|&amp;gt; Subject : 实现
+ConcreteObeserver ..|&amp;gt; Observer : 实现
+ConcreteObeserver --&amp;gt; ConcreteSubject : 订阅主题
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;观察者依赖主题。观察者模式提供了一种对象设计，让主题和观察者之间松耦合。他们依然可以交互，但是不必清楚彼此的细节。&lt;/p&gt;
+&lt;p&gt;使用场景：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;消息队列&lt;/li&gt;
+&lt;li&gt;回调就是一种观察者模式&lt;/li&gt;
+&lt;li&gt;Google EventBus&lt;/li&gt;
+&lt;li&gt;邮件订阅&lt;/li&gt;
+&lt;li&gt;RSS&lt;/li&gt;
+&lt;li&gt;反应式RxJava&lt;/li&gt;
+&lt;li&gt;JDK(CompletableFuture)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id="代理模式"&gt;代理模式&lt;/h3&gt;
+&lt;figure &gt;
+&lt;img data-src="https://cos.jiahongw.com/uPic/5139710.png" alt="image alt" data-caption="代理模式为另一个对象提供一个替身或者占位符以控制这个对象的访问" src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='300px' height='' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%23aaa' d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4.44-6.19l-2.35 3.02-1.56-1.88c-.2-.25-.58-.24-.78.01l-1.74 2.23c-.26.33-.02.81.39.81h8.98c.41 0 .65-.47.4-.8l-2.55-3.39c-.19-.26-.59-.26-.79 0z'/%3E%3C/svg%3E" class="lazyload" style="width:300px;height:;"/&gt;
+&lt;figcaption style="text-align: left;"&gt;
+&lt;strong&gt;代理模式&lt;/strong&gt;:
+代理模式为另一个对象提供一个替身或者占位符以控制这个对象的访问
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;定义：&lt;/p&gt;
+&lt;p&gt;代理模式为另一个对象提供一个替身或者占位符以控制这个对象的访问。&lt;/p&gt;
+&lt;p&gt;架构：&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://cos.jiahongw.com/uPic/ProxyPattern-UML.svg" alt="代理模式UML"&gt;&lt;/p&gt;
+&lt;p&gt;使用场景：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;远程代理：远程代理可以作为另一个JVM上对象的本地代表。常见的是RPC框架。&lt;/li&gt;
+&lt;li&gt;虚拟代理：虚拟代理作为创建开销大的对象的代表。当对象没有得到的情况下执行一些操作。常见的是图片的加载。&lt;/li&gt;
+&lt;li&gt;缓存代理：缓存代理会维护之前的对象，在可能的情况下会返回缓存对象。&lt;/li&gt;
+&lt;li&gt;保护代理：可以根据客户的角色来决定是否允许客户访问特定的方法。（Java动态代理）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;其他代理：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;防火墙代理：控制网络资源的访问，保护访问坏网络。&lt;/li&gt;
+&lt;li&gt;智能引用代理：例如计算一个对象被引用的次数。&lt;/li&gt;
+&lt;li&gt;同步代理：在多线程的情况下为主题提供安全的访问。&lt;/li&gt;
+&lt;li&gt;写入时复制代理：用于控制对象的复制，方法是延迟对象的复制，发那个客户真的需要（也就是需要写入时）才进行复制。是虚拟代理的变体。（Java5的CopyOnWriteArrayList）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="notices info" data-title="代理模式和装饰器模式的区别"&gt;
+&lt;ul&gt;
+&lt;li&gt;装饰器模式是为对象增加行为，而代理模式是控制对象的访问。&lt;/li&gt;
+&lt;li&gt;适配器会改变对象适配的接口，而代理则实现相同的接口&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;h3 id="外观模式"&gt;外观模式&lt;/h3&gt;
+&lt;figure &gt;
+&lt;img data-src="https://cos.jiahongw.com/uPic/facade.png" alt="image alt" data-caption="外观模式也叫做门面模式，外观模式定义了一个统一的接口，用来访问子系统中的一群接口。外观定义了一个高层接口，让子系统更容易使用" src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='300px' height='' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%23aaa' d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4.44-6.19l-2.35 3.02-1.56-1.88c-.2-.25-.58-.24-.78.01l-1.74 2.23c-.26.33-.02.81.39.81h8.98c.41 0 .65-.47.4-.8l-2.55-3.39c-.19-.26-.59-.26-.79 0z'/%3E%3C/svg%3E" class="lazyload" style="width:300px;height:;"/&gt;
+&lt;figcaption style="text-align: left;"&gt;
+&lt;strong&gt;外观模式&lt;/strong&gt;:
+外观模式也叫做门面模式，外观模式定义了一个统一的接口，用来访问子系统中的一群接口。外观定义了一个高层接口，让子系统更容易使用
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;定义：&lt;/p&gt;
+&lt;p&gt;外观模式定义了一个统一的接口，用来访问子系统中的一群接口。外观定义了一个高层接口，&lt;strong&gt;让子系统更容易使用。&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;外观模式可以解决接口的复用性和易用性的问题，并且，外观模式可以让层级更加清晰，满足最少知识原则，让暴露的接口或者函数更加少。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;架构：&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://cos.jiahongw.com/uPic/FacadePattern-UML.svg" alt="外观模式UML"&gt;&lt;/p&gt;
+&lt;p&gt;使用场景：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;解决易用性&lt;/p&gt;
+&lt;p&gt;当接口越来越多，越来越复杂的时候，提供一层更加简单易用，更加高层的接口。例子：Linux系统调用函数封装了Linux内核调用、Linux的Shell命令封装了复杂的系统调用。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;单独起起一个API网关层服务做转发和聚合也很类似门面设计模式。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;解决性能问题&lt;/p&gt;
+&lt;p&gt;将多个接口调用封装成一个简单的门面接口，在一些需要多次请求的网络通信中可以减少通信的次数，降低网络通信的成本，提高APP响应的速度。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;解决分布式事务问题&lt;/p&gt;
+&lt;p&gt;门面接口可以将一个事务的多个接口封装在一个接口中，方面进行事务的回滚或者重试。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="notices info" data-title="外观模式和适配器模式的区别"&gt;
+&lt;ul&gt;
+&lt;li&gt;适配器是做接口转换，解决的是原接口和目标接口不匹配的问题。门面模式做接口整合，解决的是多接口调用带来的问题。&lt;/li&gt;
+&lt;li&gt;适配器模式注重的是兼容性，而门面模式注重的是易用性。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;h3 id="复合模式"&gt;复合模式&lt;/h3&gt;
+&lt;p&gt;复合模式属于是模式的模式了。复合模式在一个解决方案中结合两个或者多个模式，以解决一般或者重复发生的问题。&lt;/p&gt;
+&lt;p&gt;MVC架构（模型、视图、控制器）就使用了多种设计模式的复合。其中包括：观察者模式、策略模式、组合模式。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;观察者模式：模型通知视图和控制器关于自己的改变。&lt;/li&gt;
+&lt;li&gt;策略模式：视图和控制器实现了策略模式，视图可以有多个控制器，相当于有多个策略行为可以互相替换。&lt;/li&gt;
+&lt;li&gt;组合模式：视图内通过组合模式管理窗口显示。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Reference&lt;/strong&gt;&lt;/em&gt;:&lt;/p&gt;</content:encoded><dc:creator>VictorHong</dc:creator><media:content url="https://cos.jiahongw.com/uPic/pexels-jessica-lewis-creative-998587.jpg" medium="image"><media:title type="html">featured image</media:title></media:content><category>设计模式</category><category>开发方法论</category><category>技术实践</category></item></channel></rss>

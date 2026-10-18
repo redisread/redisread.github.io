@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>笔记 on ✏VictorHong's Blog</title><link>https://hugo.jiahongw.com/tags/%E7%AC%94%E8%AE%B0/</link><description>Recent content in 笔记 on ✏VictorHong's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh</language><managingEditor>wujiahong2013@gmail.com (VictorHong)</managingEditor><webMaster>wujiahong2013@gmail.com (VictorHong)</webMaster><copyright>&amp;copy;2021-{year} | VictorHong</copyright><lastBuildDate>Sat, 24 Jun 2023 15:07:41 +0000</lastBuildDate><atom:link href="https://hugo.jiahongw.com/tags/%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml"/><item><title>使用Obsidian编写Hugo博客</title><link>https://hugo.jiahongw.com/20230624/use-obsidian-write-hugo/</link><pubDate>Sat, 24 Jun 2023 15:07:41 +0000</pubDate><author>wujiahong2013@gmail.com (VictorHong)</author><atom:modified>Sat, 24 Jun 2023 15:07:41 +0000</atom:modified><guid>https://hugo.jiahongw.com/20230624/use-obsidian-write-hugo/</guid><description>&lt;p&gt;使用 Obsidian 编写 Hugo 博客的原因之一是，Obsidian 有插件能够支持配置模板，这样我新建文章的时候，只需要一个指令就能够帮我构建好一个文章的基本框架内容了。而这个支持快速配置模板进行创建文章的插件，就是 &lt;code&gt;QuickAdd&lt;/code&gt; 插件。&lt;/p&gt;</description><content:encoded>&lt;p&gt;使用 Obsidian 编写 Hugo 博客的原因之一是，Obsidian 有插件能够支持配置模板，这样我新建文章的时候，只需要一个指令就能够帮我构建好一个文章的基本框架内容了。而这个支持快速配置模板进行创建文章的插件，就是 &lt;code&gt;QuickAdd&lt;/code&gt; 插件。&lt;/p&gt;
+&lt;h2 id="quickadd-插件配置"&gt;QuickAdd 插件配置&lt;/h2&gt;
+&lt;p&gt;首先在插件市场里面找到 quickAdd 这个插件，下载之后进入插件的设置页面，点击新建 template 的 choice，然后在选择对应的模板文件地址，并且配置新建文件所在的文件夹，我这里配置的新建文件所在的文件夹设置的是项目目录下的&lt;code&gt;content/zh/posts&lt;/code&gt;下。&lt;br /&gt;
+&lt;img src="https://cos.jiahongw.com/uPic/E3rx1R.jpg" alt="QuickAdd配置"&gt;&lt;/p&gt;
+&lt;p&gt;对应的模版文件是：&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;---
+title: {{NAME}}
+subtitle:
+date: {{DATE:YYYY-MM-DD HH:mm:ss}}
+publishDate: {{DATE:YYYY-MM-DD HH:mm:ss}}
+aliases: []
+description:
+image:
+draft: false
+hideToc: false
+enableToc: true
+enableTocContent: false
+tocPosition: inner # outer
+author: VictorHong
+authorEmoji: 🪶
+authorImageUrl:
+tocLevels: [&amp;#34;h2&amp;#34;, &amp;#34;h3&amp;#34;, &amp;#34;h4&amp;#34;]
+libraries: [katex, mathjax, mermaid, chart, flowchartjs, msc, viz, wavedrom]
+tags: []
+series: []
+categories: [&amp;#34;工具折腾&amp;#34;]
+---
+---
+***Reference***:
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;其中，文章的名称是我在输入新建指令的时候输入的。&lt;/p&gt;
+&lt;p&gt;使用插件直接在 Obsidian 中输入&lt;code&gt;Commond + P&lt;/code&gt; ，输入&lt;code&gt;QuickAdd&lt;/code&gt;&lt;br /&gt;
+&lt;img src="https://cos.jiahongw.com/uPic/LSpNQl.png" alt="LSpNQl"&gt;&lt;/p&gt;
+&lt;p&gt;然后选择新建博客，输入文件名就会在指定文件夹下面出现对应的文件&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://cos.jiahongw.com/uPic/BSImD0.png" alt="BSImD0"&gt;&lt;/p&gt;
+&lt;h2 id="其他插件"&gt;其他插件&lt;/h2&gt;
+&lt;p&gt;其他插件例如图片上传的插件&lt;a href="https://github.com/renmu123/obsidian-image-auto-upload-plugin/blob/master/readme-zh.md"&gt;Obsidian Image Auto Upload Plugin&lt;/a&gt;以及自动 git 提交的插件&lt;a href="https://github.com/denolehov/obsidian-git"&gt;Obsidian Git&lt;/a&gt;，目前来看都不是必须的，暂且不安装使用。&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/Natumsol/obsidian-pangu"&gt;Obsidian Pangu&lt;/a&gt; 这个插件还可以，可以在英文与中文之间自动添加空格，使用方法为&lt;code&gt;Commond + Shift + S&lt;/code&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Reference&lt;/em&gt;&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://blog.zhangyingwei.com/posts/2022m4d11h19m42s28/"&gt;Hugo 博客写作最佳实践 | 胡说&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://immmmm.com/hugo-with-obsidian/"&gt;Hugo With Obsidian :: 木木木木木&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded><dc:creator>VictorHong</dc:creator><media:content url="https://cos.jiahongw.com/uPic/PqMz2x.jpg" medium="image"><media:title type="html">featured image</media:title></media:content><category>Obsidian</category><category>笔记</category><category>效率</category><category>工具折腾</category></item></channel></rss>
